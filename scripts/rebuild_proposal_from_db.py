@@ -572,23 +572,28 @@ def _attach_media_mix(yoy: dict, periods: dict, conn: sqlite3.Connection | None 
     # Baseline 25–26 (WC verificado)
     g_base_roas = float(g_r["roas"] or 2.34)
     m_base_roas = float(m_r["roas"] or 0.77)
-    # Objetivos plan 26–27: mejora operativa (Search+brand + Meta remarketing)
-    g_target_roas = round(max(g_base_roas * 1.2, g_base_roas + 0.4), 2)  # ~2.81
-    m_target_roas = round(max(1.15, m_base_roas * 1.5), 2)  # ~1.15
 
-    g_lead = float(g_r["cvrLeadPct"] or 3.7)
-    m_lead = float(m_r["cvrLeadPct"] or 8.4)
+    g_lead_base = float(g_r["cvrLeadPct"] or 3.7)
+    g_sale_base = float(g_r["leadToSalePct"] or 13)
+    m_lead_base = float(m_r["cvrLeadPct"] or 8.4)
+    m_sale_base = float(m_r["leadToSalePct"] or 2)
     m_cpc = float(m_r["cpc"] or 0.48)
+    g_cpc_hist = float(g_r["cpc"] or 0.48)
 
-    # ROAS ≈ (CR lead × CR venta × AOV) / CPC  → despejamos CR venta del objetivo
-    # El CPC KW del estimador (~0,67) es > CPC real Ads (~0,48); sin calibrar el ROAS
-    # simulado cae a ~1,7× aunque el histórico sea 2,34×.
-    g_sale = _safe_div(g_target_roas * model_cpc * 100, aov * (g_lead / 100.0), g_r["leadToSalePct"] or 13)
-    g_sale = round(min(28.0, max(float(g_r["leadToSalePct"] or 13), g_sale)), 2)
-    m_sale = _safe_div(m_target_roas * m_cpc * 100, aov * (m_lead / 100.0), m_r["leadToSalePct"] or 2)
-    m_sale = round(min(4.5, max(float(m_r["leadToSalePct"] or 2), m_sale)), 2)
+    # Subidas lógicas (relativas al baseline), no ROAS forzado
+    # Clic→lead: LP + formularios + extensiones (+10–12%)
+    # Lead→pedido: nurture + remarketing + brand (+20–30%; Meta más margen)
+    g_lead = round(min(5.5, g_lead_base * 1.12), 2)
+    g_sale = round(min(18.0, g_sale_base * 1.25), 2)
+    m_lead = round(min(11.0, m_lead_base * 1.10), 2)
+    m_sale = round(min(3.2, m_sale_base * 1.30), 2)
 
-    g_plan_roas = round(_safe_div((g_lead / 100.0) * (g_sale / 100.0) * aov, model_cpc), 2)
+    # CPC KW del estimador suele ser > CPC real Ads: escalamos coste Google
+    # para no castigar el ROAS del plan sin inventar CRs irreales
+    cpc_scale = round(min(1.0, _safe_div(g_cpc_hist, model_cpc, 1.0)), 3) if model_cpc else 1.0
+    g_cpc_eff = model_cpc * cpc_scale
+
+    g_plan_roas = round(_safe_div((g_lead / 100.0) * (g_sale / 100.0) * aov, g_cpc_eff), 2)
     m_plan_roas = round(_safe_div((m_lead / 100.0) * (m_sale / 100.0) * aov, m_cpc), 2)
     blend_plan = round(g_share * g_plan_roas + m_share * m_plan_roas, 2)
     blend_base = round(g_share * g_base_roas + m_share * m_base_roas, 2)
@@ -604,6 +609,7 @@ def _attach_media_mix(yoy: dict, periods: dict, conn: sqlite3.Connection | None 
     d["cvrLeadPct"] = d["googleCvrLeadPct"]
     d["leadToSalePct"] = d["googleLeadToSalePct"]
     d["googleModelCpc"] = model_cpc
+    d["googleCpcScale"] = cpc_scale
     d["planGoogleRoas"] = g_plan_roas
     d["planMetaRoas"] = m_plan_roas
     if conn is not None:
@@ -628,23 +634,34 @@ def _attach_media_mix(yoy: dict, periods: dict, conn: sqlite3.Connection | None 
         "recommended": {"googleShare": g_share, "metaShare": m_share},
         "google": g_r,
         "meta": m_r,
-        "baseline": {"googleRoas": g_base_roas, "metaRoas": m_base_roas, "blendRoas": blend_base},
+        "baseline": {
+            "googleRoas": g_base_roas,
+            "metaRoas": m_base_roas,
+            "blendRoas": blend_base,
+            "googleCvrLeadPct": g_lead_base,
+            "googleLeadToSalePct": g_sale_base,
+            "metaCvrLeadPct": m_lead_base,
+            "metaLeadToSalePct": m_sale_base,
+        },
         "planTargets": {
             "googleRoas": g_plan_roas,
             "metaRoas": m_plan_roas,
             "blendRoas": blend_plan,
+            "googleCvrLeadPct": g_lead,
             "googleLeadToSalePct": g_sale,
+            "metaCvrLeadPct": m_lead,
             "metaLeadToSalePct": m_sale,
             "googleModelCpc": model_cpc,
-            "note": "Simulador 26–27 usa CRs de plan (mejora vs 25–26), no los CRs crudos del curso actual.",
+            "googleCpcScale": cpc_scale,
+            "note": "Mejoras lógicas vs 25–26: clic→lead +10–12%, lead→pedido +25–30%. CPC Google escalado al real Ads.",
         },
         "declared_social": declared,
         "headline": "Sí a los dos canales, con Google como motor de eficiencia y Meta como apoyo de volumen/remarketing.",
         "bullets": [
-            f"Baseline 25–26 (WC): Google ROAS {g_base_roas}× · Meta {m_base_roas}× · blend mix ~{int(g_share*100)}/{int(m_share*100)} ≈ {blend_base}×.",
-            f"Objetivo plan 26–27: Google ~{g_plan_roas}× (+{round((g_plan_roas/g_base_roas-1)*100)}% vs actual) · Meta ~{m_plan_roas}× (lead→pedido {m_sale}% vs {m_r['leadToSalePct']}%) · blend ≈ {blend_plan}×.",
-            f"Por qué el estimador no puede pegar el 2,34× con los CR crudos: CPC KW del plan ~{model_cpc:.2f} € vs CPC real Ads {g_r['cpc']} €. Calibramos subiendo lead→pedido Google a {g_sale}% (vs {g_r['leadToSalePct']}%) para reflejar eficiencia real + mejora Search/brand.",
-            f"Meta: más remarketing/lookalikes de compradores WC (menos frío) para acercar ROAS a ~{m_plan_roas}×.",
+            f"Baseline 25–26 (WC): Google ROAS {g_base_roas}× · Meta {m_base_roas}× · clic→lead {g_lead_base}%/{m_lead_base}% · lead→pedido {g_sale_base}%/{m_sale_base}%.",
+            f"Plan 26–27 (subida lógica): Google clic→lead {g_lead}% · lead→pedido {g_sale}% · ROAS ~{g_plan_roas}×. Meta {m_lead}% → {m_sale}% · ROAS ~{m_plan_roas}×. Blend ≈ {blend_plan}×.",
+            "Cómo subir clic→lead: landings por certificado, formularios cortos, call/whatsapp extensions, velocidad móvil, congruencia anuncio→LP.",
+            "Cómo subir lead→pedido: SLA <1h, secuencia email/WhatsApp 7–14 días, remarketing compradores WC, brand Search always-on, cortar leads fríos sin intent.",
             f"Instagram/Facebook declarados: {declared['instagram']['orders']+declared['facebook']['orders']} pedidos ≠ Meta Ads verificado ({m_r['orders']} WC).",
         ],
         "do": [
@@ -1473,7 +1490,10 @@ function estimateGoogleProduct(p, monthIdx=null) {
   if (!searches) searches = p.monthlySearches || 0;
   const season = seasonFactor(p, monthIdx);
   searches = searches * season;
-  const cpc = bidN ? (bidW / bidN) : (p.cpc || 0.48);
+  const rawCpc = bidN ? (bidW / bidN) : (p.cpc || 0.48);
+  const cpcScale = ((YOY_PLAN.plan.defaults||{}).googleCpcScale != null)
+    ? Number(YOY_PLAN.plan.defaults.googleCpcScale) : 1;
+  const cpc = rawCpc * (isFinite(cpcScale) && cpcScale > 0 ? cpcScale : 1);
   const isBrand = !!(p.brand || p.id === 'bps home');
   const stored = (planState.productIs || {})[p.id];
   const isPct = stored != null ? stored : (isBrand ? 90 : (planState.isrPct || 50));
