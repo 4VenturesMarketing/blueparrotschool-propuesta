@@ -4,8 +4,8 @@ Materiales del diagnóstico YoY (24–25 vs 25–26), estimador Google Ads y sim
 
 ## Enlaces
 
-- **Propuesta online:** https://4ventures.es/propuestas/blueparrotschool/
-- **Repo (equipo):** este repositorio en `marketing4ventures`
+- **URL canónica:** https://4ventures.es/propuestas/blueparrotschool/
+- **Repo (cuenta marketing@4ventures.es):** https://github.com/4VenturesMarketing/blueparrotschool-propuesta
 
 ## Qué hay aquí
 

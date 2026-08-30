@@ -323,10 +323,13 @@ def _sync_plan_from_estimator(yoy: dict) -> None:
         com_prev, com_cur, com_yoy = _split_prev_cur(com_avg, com_yoy)
         info_prev, info_cur, info_yoy = _split_prev_cur(info_avg, info_yoy)
 
+        label = sp.get("label") or pid
+        if bool(sp.get("brand")) or pid == "bps home":
+            label = "BPS"
         products.append(
             {
                 "id": pid,
-                "label": sp.get("label") or pid,
+                "label": label,
                 "enabled": enabled,
                 "brand": bool(sp.get("brand")),
                 "budgetShare": 0.25,
@@ -600,16 +603,6 @@ function tableHtml(cols, rows) {
   if (!rows.length) return '<p style="color:var(--muted)">Sin datos.</p>';
   return `<div class="table-scroll"><table class="data"><thead><tr>${cols.map(c=>`<th>${c}</th>`).join('')}</tr></thead><tbody>${rows.map(r=>`<tr>${r.map(c=>`<td>${c}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`;
 }
-function compareBarChart(prodP, prodC) {
-  const labels = [...new Set([...prodP.map(r=>r.label), ...prodC.map(r=>r.label)])];
-  const rows = labels.map(label => {
-    const a = prodP.find(r=>r.label===label)||{rev:0};
-    const b = prodC.find(r=>r.label===label)||{rev:0};
-    return {label, prev:a.rev||0, cur:b.rev||0};
-  }).sort((a,b)=>b.cur-a.cur).slice(0,10);
-  const max = Math.max(...rows.flatMap(r=>[r.prev,r.cur]),1);
-  return `<div class="compare-legend"><span class="l-prev">2024–25</span><span class="l-cur">2025–26</span></div><div class="bar-chart">${rows.map(r=>`<div class="compare-bar-row"><span>${r.label.slice(0,24)}</span><div class="compare-bars"><div class="bar-track"><div class="bar-fill purple" style="width:${100*r.prev/max}%"></div></div><div class="bar-track"><div class="bar-fill green" style="width:${100*r.cur/max}%"></div></div></div><strong>${EUR(r.cur,0)}</strong></div>`).join('')}</div>`;
-}
 function P(id) { return PAYLOAD.periods[id] || {}; }
 function inSyMonth(m, syId) {
   const sy = PAYLOAD.SY.prev.id===syId?PAYLOAD.SY.prev:PAYLOAD.SY.cur;
@@ -718,29 +711,27 @@ function renderDiagnostico() {
     ${tableHtml(['KPI','Meta 24–25','Meta 25–26','Google Ads 24–25','Google Ads 25–26'], platRows)}`;
 
   document.getElementById('panelDiagProducto').innerHTML =
-    compareBarChart(p.products||[], c.products||[]) +
-    tableHtml(['Familia','Ud. 24–25','Ing. 24–25','Ud. 25–26','Ing. 25–26','Δ ing.'],
-      [...new Set([...(p.products||[]).map(x=>x.label),...(c.products||[]).map(x=>x.label)])].map(label=>{
-        const a=(p.products||[]).find(x=>x.label===label)||{qty:0,rev:0};
-        const b=(c.products||[]).find(x=>x.label===label)||{qty:0,rev:0};
-        return [label, NUM(a.qty), EUR(a.rev,0), NUM(b.qty), EUR(b.rev,0), deltaHtml(b.rev,a.rev)];
-      }).sort((a,b)=>parseFloat(String(b[4]).replace(/[^\\d,-]/g,''))-parseFloat(String(a[4]).replace(/[^\\d,-]/g,'')))) +
-    `<div class="chart-card" style="margin-top:16px">
-      <h4>Pedidos WC por producto · 24–25 vs 25–26</h4>
+    `<div class="chart-card">
+      <h4>Pedidos WC y facturación por familia · 24–25 vs 25–26</h4>
       <div style="display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:8px 0 6px">
         <button type="button" id="productChartAll" style="font:inherit;font-size:.78rem;padding:4px 10px;border:1px solid var(--line);border-radius:8px;background:#fff;cursor:pointer">Todos</button>
         <button type="button" id="productChartTop" style="font:inherit;font-size:.78rem;padding:4px 10px;border:1px solid var(--line);border-radius:8px;background:#fff;cursor:pointer">Top 4</button>
         <button type="button" id="productChartNone" style="font:inherit;font-size:.78rem;padding:4px 10px;border:1px solid var(--line);border-radius:8px;background:#fff;cursor:pointer">Ninguno</button>
       </div>
       <div id="productChartToggles" style="display:flex;flex-wrap:wrap;gap:6px 12px;margin:0 0 10px"></div>
-      <p style="font-size:.82rem;color:var(--muted);margin:0 0 6px">Totales del curso (selección)</p>
-      <div class="chart-wrap" style="height:260px"><canvas id="chartProductYoy"></canvas></div>
+      <div class="chart-wrap" style="height:300px"><canvas id="chartProductYoy"></canvas></div>
       <div style="display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:16px 0 6px">
-        <p style="font-size:.82rem;color:var(--muted);margin:0">Estacionalidad mensual</p>
+        <p style="font-size:.82rem;color:var(--muted);margin:0">Estacionalidad mensual (pedidos)</p>
         <select id="productMonthFocus" style="font:inherit;font-size:.85rem;padding:4px 8px;border:1px solid var(--line);border-radius:8px"></select>
       </div>
       <div class="chart-wrap" style="height:260px"><canvas id="chartProductMonthly"></canvas></div>
      </div>
+    ${tableHtml(['Familia','Ud. 24–25','Ing. 24–25','Ud. 25–26','Ing. 25–26','Δ ing.'],
+      [...new Set([...(p.products||[]).map(x=>x.label),...(c.products||[]).map(x=>x.label)])].map(label=>{
+        const a=(p.products||[]).find(x=>x.label===label)||{qty:0,rev:0};
+        const b=(c.products||[]).find(x=>x.label===label)||{qty:0,rev:0};
+        return [label, NUM(a.qty), EUR(a.rev,0), NUM(b.qty), EUR(b.rev,0), deltaHtml(b.rev,a.rev)];
+      }).sort((a,b)=>parseFloat(String(b[4]).replace(/[^\\d,-]/g,''))-parseFloat(String(a[4]).replace(/[^\\d,-]/g,''))))}
      <h3 style="font-size:1rem;margin:22px 0 8px">Demanda keywords por curso · 24–25 vs 25–26</h3>
      <p style="font-size:.85rem;color:var(--muted);margin:0 0 8px">YoY comercial e informacional ponderado por volumen de keywords (Keyword Planner).</p>
      <div class="chart-card" style="margin-bottom:14px">
@@ -774,7 +765,10 @@ function renderDiagnostico() {
   }
   if (!window._kwChartSel) {
     window._kwChartSel = new Set(
-      YOY_PLAN.plan.products.filter(p=>p.enabled!==false).slice(0,6).map(p=>p.id)
+      YOY_PLAN.plan.products
+        .filter(p => p.enabled !== false && !p.brand && p.id !== 'bps home')
+        .slice(0, 6)
+        .map(p => p.id)
     );
   }
   renderProductChartToggles();
@@ -836,13 +830,14 @@ function productFamilyRank() {
 }
 function productYearTotals(f) {
   const pm = (PAYLOAD.product_monthly || {})[f] || {};
-  let prev=0, cur=0;
+  let prev=0, cur=0, prevRev=0, curRev=0;
   for (const [m, cell] of Object.entries(pm)) {
     const qty = cell.qty || 0;
-    if (m >= '2024-09' && m < '2025-09') prev += qty;
-    else if (m >= '2025-09' && m < '2026-09') cur += qty;
+    const rev = cell.rev || 0;
+    if (m >= '2024-09' && m < '2025-09') { prev += qty; prevRev += rev; }
+    else if (m >= '2025-09' && m < '2026-09') { cur += qty; curRev += rev; }
   }
-  return {prev, cur};
+  return {prev, cur, prevRev, curRev};
 }
 function renderProductChartToggles() {
   const el = document.getElementById('productChartToggles');
@@ -922,29 +917,38 @@ function renderProductYoyChart() {
     data:{
       labels: families,
       datasets:[
-        {label:'2024–25', data:totals.map(t=>Math.round(t.prev)), backgroundColor:'#9B8FE8', borderRadius:4},
-        {label:'2025–26', data:totals.map(t=>Math.round(t.cur)), backgroundColor:'#0080E0', borderRadius:4},
+        {label:'Pedidos WC 24–25', data:totals.map(t=>Math.round(t.prev)), backgroundColor:'#9B8FE8', borderRadius:4, yAxisID:'y'},
+        {label:'Pedidos WC 25–26', data:totals.map(t=>Math.round(t.cur)), backgroundColor:'#0080E0', borderRadius:4, yAxisID:'y'},
+        {label:'Facturación 24–25', data:totals.map(t=>Math.round(t.prevRev||0)), backgroundColor:'rgba(155,143,232,.35)', borderColor:'#5B54C9', borderWidth:1, borderRadius:4, yAxisID:'y1'},
+        {label:'Facturación 25–26', data:totals.map(t=>Math.round(t.curRev||0)), backgroundColor:'rgba(0,128,224,.35)', borderColor:'#0B1F3A', borderWidth:1, borderRadius:4, yAxisID:'y1'},
       ]
     },
     options:{
       responsive:true, maintainAspectRatio:false,
       interaction:{mode:'index',intersect:false},
       plugins:{
-        legend:{position:'bottom',labels:{boxWidth:10,font:{size:11}}},
+        legend:{position:'bottom',labels:{boxWidth:12,font:{size:11}}},
         tooltip:{callbacks:{
+          label:(c)=>{
+            const v=c.raw||0;
+            if ((c.dataset.label||'').startsWith('Facturación')) return ` ${c.dataset.label}: ${EUR(v,0)}`;
+            return ` ${c.dataset.label}: ${NUM(v)}`;
+          },
           afterBody:(items)=>{
             if (!items.length) return '';
             const i=items[0].dataIndex;
             const t=totals[i];
-            if (!t.prev) return 'Sin base 24–25';
-            const d=((t.cur-t.prev)/t.prev*100);
-            return `Δ ${(d>0?'+':'')+d.toFixed(1)}%`;
+            const lines=[];
+            if (t.prev) lines.push(`Δ pedidos ${(((t.cur-t.prev)/t.prev)*100)>0?'+':''}${(((t.cur-t.prev)/t.prev)*100).toFixed(1)}%`);
+            if (t.prevRev) lines.push(`Δ facturación ${(((t.curRev-t.prevRev)/t.prevRev)*100)>0?'+':''}${(((t.curRev-t.prevRev)/t.prevRev)*100).toFixed(1)}%`);
+            return lines;
           }
         }}
       },
       scales:{
         x:{grid:{display:false}},
-        y:{beginAtZero:true, ticks:{precision:0}, title:{display:true,text:'Pedidos WC'}}
+        y:{position:'left', beginAtZero:true, ticks:{precision:0}, title:{display:true,text:'Pedidos WC'}},
+        y1:{position:'right', beginAtZero:true, grid:{drawOnChartArea:false}, ticks:{callback:(v)=>EUR(v,0)}, title:{display:true,text:'Facturación €'}}
       }
     }
   });
@@ -1064,10 +1068,13 @@ function topShare(entries, n=2) {
   return entries.slice(0,n).map(([k,v])=>({label:k, pct: Math.round(100*v/total)}));
 }
 function prettyAge(label) {
-  return String(label||'').replace(/^AGE_RANGE_/,'').replace(/_/g,'-').replace('65-UP','65+').toLowerCase();
+  const s = String(label||'').replace(/^AGE_RANGE_/,'').replace(/_/g,'-').replace('65-UP','65+').toLowerCase();
+  if (/undetermined|unknown|not.?specified/.test(s)) return 'sin clasificar';
+  return s;
 }
 function prettyGender(label) {
   const s=String(label||'').toLowerCase();
+  if (/undetermined|unknown|not.?specified/.test(s)) return 'sin clasificar';
   if (s.includes('female')||s==='mujer') return 'mujer';
   if (s.includes('male')||s==='hombre') return 'hombre';
   return s;
@@ -1083,7 +1090,13 @@ function renderDiagDemo() {
   const mujer = (bp.gender_primary||[])[0];
 
   const sumDemo = (rows, key, syId) => {
-    const m={}; for (const r of rows) if (inSyMonth(r.month,syId)) { const k=r[key]||'?'; if(!/unknown/i.test(k)) m[k]=(m[k]||0)+(r.spend||0); }
+    const m={};
+    for (const r of rows) {
+      if (!inSyMonth(r.month,syId)) continue;
+      const k=r[key]||'?';
+      if (/unknown|undetermined|not.?specified|^\?$/i.test(k)) continue;
+      m[k]=(m[k]||0)+(r.spend||0);
+    }
     return Object.entries(m).sort((a,b)=>b[1]-a[1]);
   };
   const ma = sumDemo(DEMO.meta_demo_monthly||[],'dim_1',CUR);
@@ -1117,7 +1130,7 @@ function renderDiagDemo() {
       </div>
       <div class="persona-box">
         <h3>Audiencia Google</h3>
-        <p><strong>${gGen[0]?gGen[0].label:'—'} ${gAge[0]?gAge[0].label:''}</strong> (mix de inversión 25–26).</p>
+        <p><strong>${gGen[0]?gGen[0].label:'—'} ${gAge[0]?gAge[0].label:''}</strong> (mix de inversión 25–26 · excl. undetermined).</p>
         <ul>
           <li>Edad: ${gAge.map(x=>x.label+' '+x.pct+'%').join(' · ')||'—'}</li>
           <li>Género: ${gGen.map(x=>x.label+' '+x.pct+'%').join(' · ')||'—'}</li>
@@ -1290,6 +1303,57 @@ function calcPlanYear() {
     sumRev: months.reduce((s,m)=>s+m.rev,0),
   };
 }
+function applyPlanIsr(isrPct) {
+  planState.isrPct = isrPct;
+  if (!planState.productIs) planState.productIs = Object.assign({}, YOY_PLAN.plan.productIs || {});
+  YOY_PLAN.plan.products.forEach(p => {
+    if (!p.brand && p.id !== 'bps home') planState.productIs[p.id] = isrPct;
+  });
+}
+function googleSpendCurrent() {
+  let cost = 0;
+  for (const p of YOY_PLAN.plan.products) {
+    if (planState.products[p.id]?.enabled === false) continue;
+    cost += estimateGoogleProduct(p).spend;
+  }
+  return cost;
+}
+function googleShareFrac() {
+  const metaOn = planState.channels?.meta?.enabled !== false;
+  const googleOn = planState.channels?.google?.enabled !== false;
+  if (!googleOn) return 0;
+  if (!metaOn) return 1;
+  const gShare = ((YOY_PLAN.plan.channels || []).find(c => c.id === 'google') || {}).budgetShare;
+  return (gShare != null && gShare > 0) ? gShare : 0.55;
+}
+function budgetFromIsr() {
+  const g = googleSpendCurrent();
+  const share = googleShareFrac();
+  if (!share) return Math.max(100, Math.round(g));
+  return Math.max(100, Math.round(g / share));
+}
+function isrFromBudget(budget) {
+  const share = googleShareFrac();
+  const target = share ? budget * share : budget;
+  const savedIs = planState.isrPct;
+  const savedPi = Object.assign({}, planState.productIs || {});
+  applyPlanIsr(20);
+  const c20 = googleSpendCurrent();
+  applyPlanIsr(40);
+  const c40 = googleSpendCurrent();
+  planState.isrPct = savedIs;
+  planState.productIs = savedPi;
+  const k = (c40 - c20) / 20;
+  if (!(k > 0.01)) {
+    // casi todo es marca fija: no se puede bajar con IS
+    return Math.max(5, Math.min(100, Math.round(savedIs / 5) * 5));
+  }
+  const brandPart = c20 - 20 * k;
+  let isr = (target - brandPart) / k;
+  if (!isFinite(isr)) isr = savedIs;
+  isr = Math.max(5, Math.min(100, Math.round(isr / 5) * 5));
+  return isr;
+}
 function bindPlanControls() {
   const readNum = (id, fallback) => {
     const el = document.getElementById(id);
@@ -1297,23 +1361,34 @@ function bindPlanControls() {
     const v = parseFloat(el.value);
     return (isFinite(v) && v >= 0) ? v : fallback;
   };
-  const sync = () => {
-    planState.monthlyBudget = readNum('planBudget', planState.monthlyBudget);
-    const prevIs = planState.isrPct;
-    planState.isrPct = readNum('planIsr', planState.isrPct);
+  const sync = (ev) => {
+    const src = ev && ev.target ? ev.target.id : '';
     planState.aov = readNum('planAov', planState.aov);
     planState.cvrLeadPct = readNum('planCvrLead', planState.cvrLeadPct);
     planState.leadToSalePct = readNum('planLeadSale', planState.leadToSalePct);
-    const isrVal = document.getElementById('planIsrVal');
-    if (isrVal) isrVal.textContent = planState.isrPct + '%';
-    if (planState.isrPct !== prevIs) {
-      if (!planState.productIs) planState.productIs = Object.assign({}, YOY_PLAN.plan.productIs || {});
-      YOY_PLAN.plan.products.forEach(p => {
-        if (!p.brand && p.id !== 'bps home') planState.productIs[p.id] = planState.isrPct;
-      });
-    }
     document.querySelectorAll('[data-ch]').forEach(el=>{ planState.channels[el.dataset.ch]={enabled:el.checked}; });
     document.querySelectorAll('[data-prod]').forEach(el=>{ planState.products[el.dataset.prod]={enabled:el.checked}; });
+
+    if (src === 'planIsr') {
+      applyPlanIsr(readNum('planIsr', planState.isrPct));
+      planState.monthlyBudget = budgetFromIsr();
+      const budEl = document.getElementById('planBudget');
+      if (budEl) budEl.value = planState.monthlyBudget;
+    } else if (src === 'planBudget') {
+      planState.monthlyBudget = readNum('planBudget', planState.monthlyBudget);
+      const nextIs = isrFromBudget(planState.monthlyBudget);
+      applyPlanIsr(nextIs);
+      const isrEl = document.getElementById('planIsr');
+      if (isrEl) isrEl.value = planState.isrPct;
+    } else {
+      planState.monthlyBudget = readNum('planBudget', planState.monthlyBudget);
+      const prevIs = planState.isrPct;
+      planState.isrPct = readNum('planIsr', planState.isrPct);
+      if (planState.isrPct !== prevIs) applyPlanIsr(planState.isrPct);
+    }
+
+    const isrVal = document.getElementById('planIsrVal');
+    if (isrVal) isrVal.textContent = planState.isrPct + '%';
     renderPlanResults();
     renderRoadmap();
   };
