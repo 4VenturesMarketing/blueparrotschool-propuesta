@@ -1142,12 +1142,17 @@ function renderDiagDemo() {
 
 function initPlanState() {
   const d = YOY_PLAN.plan.defaults;
+  const cvrLead = d.cvrLeadPct != null ? d.cvrLeadPct : 4.2;
+  const leadSale = d.leadToSalePct != null ? d.leadToSalePct : 16;
   planState = {
     monthlyBudget: d.monthlyBudget || 1000,
     isrPct: d.isrPct || 50,
     aov: d.aov || 230,
-    cvrLeadPct: d.cvrLeadPct != null ? d.cvrLeadPct : 4.2,
-    leadToSalePct: d.leadToSalePct != null ? d.leadToSalePct : 16,
+    cvrLeadPct: cvrLead,
+    leadToSalePct: leadSale,
+    // Bases a presupuesto de referencia; el volumen ajusta la CR efectiva
+    cvrLeadBase: cvrLead,
+    leadSaleBase: leadSale,
     products: Object.fromEntries(YOY_PLAN.plan.products.map(p=>[p.id,{enabled:p.enabled!==false}])),
     channels: Object.fromEntries((YOY_PLAN.plan.channels||[]).filter(c=>c.type!=='organic').map(c=>[c.id,{enabled:c.enabled!==false}])),
     productIs: Object.assign({}, YOY_PLAN.plan.productIs || {}),
@@ -1332,6 +1337,31 @@ function budgetFromIsr() {
   if (!share) return Math.max(100, Math.round(g));
   return Math.max(100, Math.round(g / share));
 }
+function volumeCrFactor(budget) {
+  const ref = (YOY_PLAN.plan.defaults || {}).monthlyBudget || 1000;
+  // Más ppto → audiencia más amplia → CR un poco peores (rendimientos decrecientes)
+  const f = Math.pow(ref / Math.max(budget, 100), 0.22);
+  return Math.max(0.55, Math.min(1.45, f));
+}
+function applyVolumeCrs(budget) {
+  const f = volumeCrFactor(budget);
+  const d = YOY_PLAN.plan.defaults || {};
+  const baseL = planState.cvrLeadBase != null ? planState.cvrLeadBase : (d.cvrLeadPct != null ? d.cvrLeadPct : 4.2);
+  const baseS = planState.leadSaleBase != null ? planState.leadSaleBase : (d.leadToSalePct != null ? d.leadToSalePct : 16);
+  planState.cvrLeadPct = Math.max(0.5, Math.min(25, Math.round(baseL * f * 10) / 10));
+  planState.leadToSalePct = Math.max(2, Math.min(50, Math.round(baseS * f * 10) / 10));
+  const elL = document.getElementById('planCvrLead');
+  const elS = document.getElementById('planLeadSale');
+  if (elL) elL.value = planState.cvrLeadPct;
+  if (elS) elS.value = planState.leadToSalePct;
+}
+function setCrsFromUser(cvrLead, leadSale, budget) {
+  const f = volumeCrFactor(budget);
+  planState.cvrLeadPct = cvrLead;
+  planState.leadToSalePct = leadSale;
+  planState.cvrLeadBase = f ? (cvrLead / f) : cvrLead;
+  planState.leadSaleBase = f ? (leadSale / f) : leadSale;
+}
 function isrFromBudget(budget) {
   const share = googleShareFrac();
   const target = share ? budget * share : budget;
@@ -1364,27 +1394,36 @@ function bindPlanControls() {
   const sync = (ev) => {
     const src = ev && ev.target ? ev.target.id : '';
     planState.aov = readNum('planAov', planState.aov);
-    planState.cvrLeadPct = readNum('planCvrLead', planState.cvrLeadPct);
-    planState.leadToSalePct = readNum('planLeadSale', planState.leadToSalePct);
     document.querySelectorAll('[data-ch]').forEach(el=>{ planState.channels[el.dataset.ch]={enabled:el.checked}; });
     document.querySelectorAll('[data-prod]').forEach(el=>{ planState.products[el.dataset.prod]={enabled:el.checked}; });
 
-    if (src === 'planIsr') {
+    if (src === 'planCvrLead' || src === 'planLeadSale') {
+      planState.monthlyBudget = readNum('planBudget', planState.monthlyBudget);
+      setCrsFromUser(
+        readNum('planCvrLead', planState.cvrLeadPct),
+        readNum('planLeadSale', planState.leadToSalePct),
+        planState.monthlyBudget
+      );
+    } else if (src === 'planIsr') {
       applyPlanIsr(readNum('planIsr', planState.isrPct));
       planState.monthlyBudget = budgetFromIsr();
       const budEl = document.getElementById('planBudget');
       if (budEl) budEl.value = planState.monthlyBudget;
+      applyVolumeCrs(planState.monthlyBudget);
     } else if (src === 'planBudget') {
       planState.monthlyBudget = readNum('planBudget', planState.monthlyBudget);
       const nextIs = isrFromBudget(planState.monthlyBudget);
       applyPlanIsr(nextIs);
       const isrEl = document.getElementById('planIsr');
       if (isrEl) isrEl.value = planState.isrPct;
+      applyVolumeCrs(planState.monthlyBudget);
     } else {
       planState.monthlyBudget = readNum('planBudget', planState.monthlyBudget);
       const prevIs = planState.isrPct;
       planState.isrPct = readNum('planIsr', planState.isrPct);
       if (planState.isrPct !== prevIs) applyPlanIsr(planState.isrPct);
+      planState.cvrLeadPct = readNum('planCvrLead', planState.cvrLeadPct);
+      planState.leadToSalePct = readNum('planLeadSale', planState.leadToSalePct);
     }
 
     const isrVal = document.getElementById('planIsrVal');
@@ -1440,6 +1479,7 @@ function renderPlanResults() {
     <p style="font-size:.9rem;color:var(--muted);margin:8px 0">
       Canales: <strong>${(r.active||[]).join(' · ')||'ninguno'}</strong>
       · Google = búsquedas × IS × CTR × CPC
+      · CR se ajustan al volumen de ppto (rendimientos decrecientes)
       ${r.overBudget?` · <span style="color:#E25B4C">Google ${EUR(r.googleNeeded,0)} &gt; presupuesto ${EUR(planState.monthlyBudget,0)} — baja IS% o sube ppto</span>`:''}
     </p>
     <div class="plan-kpi-row">
