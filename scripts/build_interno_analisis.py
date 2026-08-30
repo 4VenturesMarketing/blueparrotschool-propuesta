@@ -118,6 +118,7 @@ ul{padding-left:18px}table{width:100%;border-collapse:collapse;font-size:.8rem;m
 th,td{padding:7px 8px;border-bottom:1px solid var(--line);text-align:right}th:first-child,td:first-child{text-align:left}
 th{font-size:.65rem;text-transform:uppercase;color:var(--muted);background:#f7fafc}
 .bad{color:var(--coral);font-weight:700}.good{color:var(--green);font-weight:700}
+.muted{color:var(--muted);font-weight:400;font-size:.75rem}
 .tag{display:inline-block;font-size:.65rem;font-weight:700;text-transform:uppercase;letter-spacing:.04em;background:#e8f4ff;color:var(--blue);padding:2px 6px;border-radius:4px;margin-left:6px;vertical-align:middle}
 .scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
 .footer{font-size:.8rem;color:var(--muted);margin-top:28px}
@@ -567,13 +568,57 @@ def main():
 
     g_roas = f"{float(g['roas']):.2f}×" if g.get("roas") else "—"
     m_roas = f"{float(m['roas']):.2f}×" if m.get("roas") else "—"
-    summer = [
-        r
-        for r in (prop.get("wc_monthly") or [])
-        if r["month"] in ("2025-06", "2025-07", "2025-08", "2026-06", "2026-07", "2026-08")
+
+    # Full school-year WC monthly YoY (Sep–Ago): 24–25 vs 25–26
+    wc_by = {r["month"]: r for r in (prop.get("wc_monthly") or [])}
+    sy_month_labels = [
+        ("09", "Sep"),
+        ("10", "Oct"),
+        ("11", "Nov"),
+        ("12", "Dic"),
+        ("01", "Ene"),
+        ("02", "Feb"),
+        ("03", "Mar"),
+        ("04", "Abr"),
+        ("05", "May"),
+        ("06", "Jun"),
+        ("07", "Jul"),
+        ("08", "Ago"),
     ]
-    summer_rows = "".join(
-        f"<tr><td>{r['month']}</td><td>{num(r['orders'])}</td><td>{eur(r['rev'], 0)}</td></tr>" for r in summer
+    season_rows = ""
+    tot_o24 = tot_o25 = tot_r24 = tot_r25 = 0
+    for mm, lab in sy_month_labels:
+        # calendar year for mm: Sep–Dec → start year; Jan–Aug → end year
+        y24 = "2024" if int(mm) >= 9 else "2025"
+        y25 = "2025" if int(mm) >= 9 else "2026"
+        a = wc_by.get(f"{y24}-{mm}", {})
+        b = wc_by.get(f"{y25}-{mm}", {})
+        o24, o25 = int(a.get("orders") or 0), int(b.get("orders") or 0)
+        r24, r25 = float(a.get("rev") or 0), float(b.get("rev") or 0)
+        tot_o24 += o24
+        tot_o25 += o25
+        tot_r24 += r24
+        tot_r25 += r25
+        do, dr = o25 - o24, r25 - r24
+        cls_o = "good" if do >= 0 else "bad"
+        cls_r = "good" if dr >= 0 else "bad"
+        d_o = ("+" + num(do)) if do >= 0 else num(do)
+        d_r = ("+" + eur(dr, 0)) if dr >= 0 else eur(dr, 0)
+        note = " <span class=\"muted\">(parcial)</span>" if (y25 == "2026" and mm == "08") else ""
+        season_rows += (
+            f"<tr><td>{lab}{note}</td>"
+            f"<td>{num(o24)}</td><td>{num(o25)}</td><td class=\"{cls_o}\">{d_o}</td>"
+            f"<td>{eur(r24, 0)}</td><td>{eur(r25, 0)}</td><td class=\"{cls_r}\">{d_r}</td></tr>"
+        )
+    do_tot, dr_tot = tot_o25 - tot_o24, tot_r25 - tot_r24
+    cls_ot = "good" if do_tot >= 0 else "bad"
+    cls_rt = "good" if dr_tot >= 0 else "bad"
+    season_rows += (
+        f"<tr><td><strong>Total curso</strong></td>"
+        f"<td><strong>{num(tot_o24)}</strong></td><td><strong>{num(tot_o25)}</strong></td>"
+        f"<td class=\"{cls_ot}\"><strong>{('+' + num(do_tot)) if do_tot >= 0 else num(do_tot)}</strong></td>"
+        f"<td><strong>{eur(tot_r24, 0)}</strong></td><td><strong>{eur(tot_r25, 0)}</strong></td>"
+        f"<td class=\"{cls_rt}\"><strong>{('+' + eur(dr_tot, 0)) if dr_tot >= 0 else eur(dr_tot, 0)}</strong></td></tr>"
     )
     blend = (mix.get("planTargets") or {}).get("blendRoas")
 
@@ -598,14 +643,23 @@ def main():
   </table>
 </div>
 <div class="card">
-  <h2>Estacionalidad WC (verano)</h2>
-  <table><tr><th>Mes</th><th>Pedidos</th><th>Ingresos</th></tr>{summer_rows}</table>
-  <p>Julio es pico. Jun–Jul: <strong>más</strong> IS/ppto Google certs.</p>
+  <h2>Estacionalidad WC · YoY por mes (cursos 24–25 vs 25–26)</h2>
+  <p>Pedidos e ingresos WooCommerce por mes del curso (sep–ago). Ago 26 puede ser parcial.</p>
+  <div class="scroll"><table>
+    <tr>
+      <th>Mes</th>
+      <th>Ped. 24–25</th><th>Ped. 25–26</th><th>Δ ped.</th>
+      <th>Ing. 24–25</th><th>Ing. 25–26</th><th>Δ ing.</th>
+    </tr>
+    {season_rows}
+  </table></div>
+  <p>Julio sigue siendo pico en ambos cursos. Mar 25 fue excepcional (187 ped.); 25–26 va por debajo casi todo el año — Jun–jul siguen siendo la ventana clave para subir IS/ppto Google certs, no hibernar.</p>
   <h3>Acciones</h3>
   <ul>
     <li>Mix ~75% Google / 25% Meta.</li>
     <li>Google certs + brand; Meta remarketing/cualificado.</li>
     <li>Medir lead→pedido WC, no solo CPL/pixel.</li>
+    <li>Planificar ppto mensual con esta curva YoY (pico jul, valle dic/abr).</li>
   </ul>
 </div>
 """
