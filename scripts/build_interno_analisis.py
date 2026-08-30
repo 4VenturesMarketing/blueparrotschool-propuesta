@@ -544,7 +544,7 @@ def main():
 </div>
 <div class="card">
   <h2>Landings orgánicas con compra (GA4 · YoY 24–25 vs 25–26)</h2>
-  <p>Top conversores del curso actual (por purchases). Valores del curso anterior emparejados por URL (barra final normalizada).{f' · {org_new_n} nuevas en el top.' if org_new_n else ''}</p>
+  <p>Top conversores del curso actual (por purchases). Valores del curso anterior emparejados por URL (barra final normalizada).{f' · {org_new_n} nuevas en el top.' if org_new_n else ''} Revenue 24–25 = 0 en el export GA4 (solo sessions/purchases comparables YoY; Δ rev refleja el alta de revenue en 25–26).</p>
   <div class="scroll"><table>
     <tr>
       <th>Landing</th>
