@@ -456,6 +456,37 @@ def _safe_div(a, b, default=0.0):
         return default
 
 
+def _meta_seasonality_from_db(conn: sqlite3.Connection, period_id: str = "sy-2025-26") -> list[float]:
+    """Factores mensuales Meta (ene–dic) normalizados a media 1.0 desde gasto real."""
+    rows = conn.execute(
+        """SELECT substr(date,1,7) AS month, SUM(spend) AS spend
+           FROM fact_meta_daily WHERE period_id=? GROUP BY 1 ORDER BY 1""",
+        (period_id,),
+    ).fetchall()
+    by_cal = {}
+    for month, spend in rows:
+        if not month or spend is None:
+            continue
+        cal = int(month.split("-")[1]) - 1  # 0=ene
+        by_cal[cal] = by_cal.get(cal, 0.0) + float(spend)
+    if not by_cal:
+        return [1.0] * 12
+    avg = sum(by_cal.values()) / len(by_cal)
+    if avg <= 0:
+        return [1.0] * 12
+    out = []
+    for i in range(12):
+        if i in by_cal:
+            out.append(round(by_cal[i] / avg, 3))
+        else:
+            out.append(1.0)
+    # Renormalizar a media exacta 1.0
+    mean = sum(out) / 12.0
+    if mean > 0:
+        out = [round(x / mean, 3) for x in out]
+    return out
+
+
 def _weighted_google_cpc(plan: dict, isr_pct: float) -> float:
     """CPC medio ponderado del estimador KW (suele ser > CPC real Ads)."""
     products = plan.get("products") or []
@@ -475,7 +506,7 @@ def _weighted_google_cpc(plan: dict, isr_pct: float) -> float:
     return round(spend / clicks, 4) if clicks else 0.48
 
 
-def _attach_media_mix(yoy: dict, periods: dict) -> None:
+def _attach_media_mix(yoy: dict, periods: dict, conn: sqlite3.Connection | None = None) -> None:
     """Benchmarks reales por canal + recomendación de mix (no tratar Meta=Google)."""
     cur = periods.get("sy-2025-26") or {}
     meta = (cur.get("paid") or {}).get("meta") or {}
@@ -575,6 +606,10 @@ def _attach_media_mix(yoy: dict, periods: dict) -> None:
     d["googleModelCpc"] = model_cpc
     d["planGoogleRoas"] = g_plan_roas
     d["planMetaRoas"] = m_plan_roas
+    if conn is not None:
+        d["metaSeasonality"] = _meta_seasonality_from_db(conn, "sy-2025-26")
+    else:
+        d.setdefault("metaSeasonality", [1.0] * 12)
 
     for ch in plan.get("channels") or []:
         if ch.get("id") == "google":
@@ -763,7 +798,7 @@ def export_payload() -> dict:
     yoy = json.loads((DATA / "proposal-yoy-plan.json").read_text())
     wc_buyer = _load_wc_buyer()
     _enrich_buyer_profile(yoy, wc_buyer, periods)
-    _attach_media_mix(yoy, periods)
+    _attach_media_mix(yoy, periods, conn)
 
     wc_monthly = q(
         """SELECT substr(order_date,1,7) AS month, COUNT(*) AS orders, SUM(total) AS rev
@@ -1417,6 +1452,14 @@ function seasonFactor(p, monthIdx=null) {
   const cal = [8,9,10,11,0,1,2,3,4,5,6,7][monthIdx];
   return s[cal] != null ? s[cal] : 1;
 }
+function metaSeasonFactor(monthIdx=null) {
+  if (monthIdx==null) return 1;
+  const s = (YOY_PLAN.plan.defaults||{}).metaSeasonality;
+  if (!Array.isArray(s) || !s.length) return 1;
+  const cal = [8,9,10,11,0,1,2,3,4,5,6,7][monthIdx];
+  const f = s[cal];
+  return (f != null && isFinite(f) && f > 0) ? f : 1;
+}
 function estimateGoogleProduct(p, monthIdx=null) {
   const intents = new Set((YOY_PLAN.plan.defaults||{}).intents || ['comercial','informacional','marca']);
   let searches = 0, bidW = 0, bidN = 0;
@@ -1495,15 +1538,16 @@ function calcPlan(monthIdx=null) {
   let meta = {imp:0,clk:0,cost:0,leads:0,orders:0,rev:0};
   if (metaOn && byId.meta) {
     const share = (byId.meta.budgetShare != null ? byId.meta.budgetShare : (dflt.metaShare || 0.35));
-    // Meta siempre recibe su % del ppto total (no el sobrante tras Google)
-    const cost = googleOn ? (monthlyBudget * share) : monthlyBudget;
+    // Base = % del ppto medio; con monthIdx aplica estacionalidad real Meta 25–26
+    const baseCost = googleOn ? (monthlyBudget * share) : monthlyBudget;
+    const cost = baseCost * metaSeasonFactor(monthIdx);
     if (cost >= 50) {
       const clk = Math.round(cost / Math.max(metaCpc,0.05));
       const imp = Math.round(clk / Math.max(metaCtr,0.001));
       const leads = Math.round(clk * metaLeadRate);
       const orders = Math.round(leads * metaL2O);
       const rev = orders * aov;
-      meta = {imp, clk, cost, leads, orders, rev};
+      meta = {imp, clk, cost, leads, orders, rev, season: metaSeasonFactor(monthIdx)};
       rows.push({ch: byId.meta, budget:cost, cost, imp, clk, leads, orders, rev, cpc:metaCpc, ctr:metaCtr, active:true});
     }
   }
@@ -1840,6 +1884,9 @@ function renderPlan() {
 function renderPlanResults() {
   if (!planState) initPlanState();
   const r = calcPlan();
+  const y = calcPlanYear();
+  const gYear = ((y.byCampaign||{}).google?.cost || []).reduce((s,v)=>s+(v||0),0);
+  const mYear = ((y.byCampaign||{}).meta?.cost || []).reduce((s,v)=>s+(v||0),0);
   const el = document.getElementById('planResults');
   if (!el) return;
   const g = r.googleOnly || {};
@@ -1943,8 +1990,8 @@ function renderPlanResults() {
     </div>
     <p style="font-size:.9rem;color:var(--muted);margin:8px 0">
       Canales: <strong>${(r.active||[]).join(' · ')||'ninguno'}</strong>
-      · Google = demanda KW × IS × CTR × CPC (ratios Search)
-      · Meta = ppto × sus propios CPC/CTR/CR (benchmark 25–26)
+      · Google = demanda KW × IS × CTR × CPC (rates Search) + estacionalidad KW
+      · Meta = ppto × share × estacionalidad gasto Meta 25–26 × CPC/CTR/CR propios
       ${r.overBudget?` · <span style="color:#E25B4C">Google ${EUR(r.googleNeeded,0)} &gt; cupo Google ${EUR(planState.monthlyBudget * googleShareFrac(),0)} — baja IS% o sube ppto</span>`:''}
     </p>
     <div class="plan-kpi-row">
@@ -1954,6 +2001,12 @@ function renderPlanResults() {
       <div class="stat"><strong>${NUM(r.totOrders)}</strong><span>Pedidos WC/mes</span></div>
       <div class="stat"><strong>${EUR(r.totRev,0)}</strong><span>Ingresos/mes</span></div>
       <div class="stat"><strong>${r.totCost?(r.totRev/r.totCost).toFixed(2)+'×':'—'}</strong><span>ROAS conjunto</span></div>
+    </div>
+    <div class="plan-kpi-row" style="margin-top:8px">
+      <div class="stat"><strong>${EUR(y.sumCost,0)}</strong><span>Ppto curso 26–27</span><div class="delta">Google ${EUR(gYear,0)} · Meta ${EUR(mYear,0)} · con estacionalidad</div></div>
+      <div class="stat"><strong>${NUM(y.sumOrders)}</strong><span>Pedidos WC/curso</span></div>
+      <div class="stat"><strong>${EUR(y.sumRev,0)}</strong><span>Ingresos paid/curso</span></div>
+      <div class="stat"><strong>${y.sumCost?(y.sumRev/y.sumCost).toFixed(2)+'×':'—'}</strong><span>ROAS curso</span></div>
     </div>
     <h3 style="font-size:.95rem;margin:12px 0 6px">Qué aporta cada canal (simulación)</h3>
     ${tableHtml(['Canal','Inversión','Impr.','Clics','CPC','CTR','Leads','Pedidos WC','CAC','ROAS','Ingresos'], chCompare)}
@@ -2017,7 +2070,9 @@ function renderPlanMonthlyChart() {
 
 function renderRoadmap() {
   if (!planState) initPlanState();
-  const r = calcPlan();
+  const y = calcPlanYear();
+  const gYear = ((y.byCampaign||{}).google?.cost || []).reduce((s,v)=>s+(v||0),0);
+  const mYear = ((y.byCampaign||{}).meta?.cost || []).reduce((s,v)=>s+(v||0),0);
   const quarters = YOY_PLAN.plan.roadmap || [
     {q:'Q1 · Sep–Nov', items:['Escalar certificados (APTIS/Cambridge) en Google + Meta','Remarketing leads sin compra','Brand Search always-on']},
     {q:'Q2 · Dic–Feb', items:['Empuje convocatorias invierno','Recortar audiencias frías sin lead→pedido','SEO landings top']},
@@ -2026,9 +2081,10 @@ function renderRoadmap() {
   ];
   document.getElementById('panelRoadmap').innerHTML = `
     <div class="stat-row" style="margin-bottom:14px">
-      <div class="stat"><strong>~${NUM(r.totOrders*10)}</strong><span>Pedidos paid/año (est.)</span></div>
-      <div class="stat"><strong>~${EUR(r.totRev*10,0)}</strong><span>Ingresos paid/año (est.)</span></div>
-      <div class="stat"><strong>${EUR(planState.monthlyBudget,0)}</strong><span>Presupuesto / mes</span></div>
+      <div class="stat"><strong>${EUR(y.sumCost,0)}</strong><span>Ppto curso 26–27</span><div class="delta">Google ${EUR(gYear,0)} · Meta ${EUR(mYear,0)}</div></div>
+      <div class="stat"><strong>${NUM(y.sumOrders)}</strong><span>Pedidos paid/curso</span></div>
+      <div class="stat"><strong>${EUR(y.sumRev,0)}</strong><span>Ingresos paid/curso</span></div>
+      <div class="stat"><strong>${EUR(planState.monthlyBudget,0)}</strong><span>Presupuesto medio / mes</span></div>
     </div>
     <div class="roadmap-grid">${quarters.map(q=>`
       <div class="card action"><h3>${q.q}</h3><ul>${q.items.map(i=>`<li>${i}</li>`).join('')}</ul></div>
