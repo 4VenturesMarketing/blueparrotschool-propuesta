@@ -1,0 +1,213 @@
+{
+  "method": "nombre de pila ES (billing full_name) + compuestos Maria/Jose",
+  "sy-2024-25": {
+    "orders": 1285,
+    "coverage_pct": 88.6,
+    "mujer_of_known_pct": 63.9,
+    "hombre_of_known_pct": 36.1,
+    "gender": {
+      "mujer": {
+        "orders": 728,
+        "rev": 156615.4,
+        "pct_all": 56.7
+      },
+      "hombre": {
+        "orders": 411,
+        "rev": 88416.6,
+        "pct_all": 32.0
+      },
+      "desconocido": {
+        "orders": 146,
+        "rev": 31750.1,
+        "pct_all": 11.4
+      }
+    },
+    "top_unknown": [
+      [
+        "mar",
+        2
+      ],
+      [
+        "polina",
+        1
+      ],
+      [
+        "rut",
+        1
+      ],
+      [
+        "eliana",
+        1
+      ],
+      [
+        "alice",
+        1
+      ],
+      [
+        "auxiliadora",
+        1
+      ],
+      [
+        "maciel",
+        1
+      ],
+      [
+        "irache",
+        1
+      ],
+      [
+        "khalid",
+        1
+      ],
+      [
+        "joaquin",
+        1
+      ],
+      [
+        "sukeina",
+        1
+      ],
+      [
+        "eias",
+        1
+      ],
+      [
+        "yasmin",
+        1
+      ],
+      [
+        "belinda",
+        1
+      ],
+      [
+        "bakarne",
+        1
+      ],
+      [
+        "begona",
+        1
+      ],
+      [
+        "nazaret",
+        1
+      ],
+      [
+        "stefany",
+        1
+      ],
+      [
+        "erica",
+        1
+      ],
+      [
+        "sukaina",
+        1
+      ]
+    ]
+  },
+  "sy-2025-26": {
+    "orders": 899,
+    "coverage_pct": 86.8,
+    "mujer_of_known_pct": 67.6,
+    "hombre_of_known_pct": 32.4,
+    "gender": {
+      "mujer": {
+        "orders": 527,
+        "rev": 121826.55,
+        "pct_all": 58.6
+      },
+      "hombre": {
+        "orders": 253,
+        "rev": 60100.55,
+        "pct_all": 28.1
+      },
+      "desconocido": {
+        "orders": 119,
+        "rev": 27015.7,
+        "pct_all": 13.2
+      }
+    },
+    "top_unknown": [
+      [
+        "moescasur",
+        5
+      ],
+      [
+        "mar",
+        3
+      ],
+      [
+        "joaquin",
+        3
+      ],
+      [
+        "francis",
+        2
+      ],
+      [
+        "ara",
+        1
+      ],
+      [
+        "ivena",
+        1
+      ],
+      [
+        "aurea",
+        1
+      ],
+      [
+        "fatiha",
+        1
+      ],
+      [
+        "madelen",
+        1
+      ],
+      [
+        "agostina",
+        1
+      ],
+      [
+        "isabella",
+        1
+      ],
+      [
+        "ikram",
+        1
+      ],
+      [
+        "widad",
+        1
+      ],
+      [
+        "lina",
+        1
+      ],
+      [
+        "mehdy",
+        1
+      ],
+      [
+        "mirian",
+        1
+      ],
+      [
+        "carmem",
+        1
+      ],
+      [
+        "yo",
+        1
+      ],
+      [
+        "adelaida",
+        1
+      ],
+      [
+        "yadira",
+        1
+      ]
+    ]
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "source": "WooCommerce REST meta_data via bps-facturacion credentials",
+  "birth_field": "billing_birth / _billing_birth",
+  "gender_field_found": true,
+  "interesting_meta_keys": {
+    "_billing_birth": 2016,
+    "billing_birth": 2016,
+    "_wc_order_attribution_session_pages": 2301,
+    "_wc_order_attribution_user_agent": 2301
+  },
+  "sy-2024-25": {
+    "orders": 1285,
+    "with_birth": 1174,
+    "with_gender": 0,
+    "age": {
+      "sin fecha": {
+        "orders": 111,
+        "rev": 25145.45
+      },
+      "18-24": {
+        "orders": 517,
+        "rev": 114958.45
+      },
+      "25-34": {
+        "orders": 421,
+        "rev": 87616.55
+      },
+      "55-64": {
+        "orders": 11,
+        "rev": 2399.95
+      },
+      "35-44": {
+        "orders": 147,
+        "rev": 30473.0
+      },
+      "45-54": {
+        "orders": 60,
+        "rev": 12407.0
+      },
+      "<18": {
+        "orders": 14,
+        "rev": 2865.55
+      },
+      "65+": {
+        "orders": 4,
+        "rev": 916.15
+      }
+    },
+    "gender": {
+      "sin dato": {
+        "orders": 1285,
+        "rev": 276782.1
+      }
+    },
+    "gender_raw": {}
+  },
+  "sy-2025-26": {
+    "orders": 904,
+    "with_birth": 747,
+    "with_gender": 0,
+    "age": {
+      "25-34": {
+        "orders": 234,
+        "rev": 55868.45
+      },
+      "45-54": {
+        "orders": 59,
+        "rev": 12960.1
+      },
+      "sin fecha": {
+        "orders": 157,
+        "rev": 37194.1
+      },
+      "18-24": {
+        "orders": 337,
+        "rev": 78384.9
+      },
+      "35-44": {
+        "orders": 90,
+        "rev": 19396.45
+      },
+      "<18": {
+        "orders": 9,
+        "rev": 2024.3
+      },
+      "55-64": {
+        "orders": 15,
+        "rev": 3309.8
+      },
+      "65+": {
+        "orders": 3,
+        "rev": 690.6
+      }
+    },
+    "gender": {
+      "sin dato": {
+        "orders": 904,
+        "rev": 209828.7
+      }
+    },
+    "gender_raw": {}
+  }
+}

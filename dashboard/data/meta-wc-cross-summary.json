@@ -1,0 +1,561 @@
+{
+  "generatedAt": "2026-08-28T12:11:29",
+  "sources": {
+    "meta_csv_files": {
+      "10_Mayo_2026_OK.csv": {
+        "n": 1559,
+        "with_email": 1559,
+        "with_phone": 1550
+      },
+      "1to1_Plataforma.csv": {
+        "n": 22,
+        "with_email": 22,
+        "with_phone": 21
+      },
+      "1to1_Plataforma_julio_2026.csv": {
+        "n": 29,
+        "with_email": 29,
+        "with_phone": 29
+      },
+      "Formulario_Abril_II_2025_M__laga.csv": {
+        "n": 87,
+        "with_email": 87,
+        "with_phone": 87
+      },
+      "Formulario_Abril_II_2025_Madrid.csv": {
+        "n": 72,
+        "with_email": 72,
+        "with_phone": 70
+      },
+      "Formulario_sin_t__tulo_09_08_24__2_07_p__m.csv": {
+        "n": 1,
+        "with_email": 1,
+        "with_phone": 1
+      },
+      "lead.csv": {
+        "n": 1,
+        "with_email": 0,
+        "with_phone": 0
+      }
+    },
+    "meta_csv_n": 1771,
+    "clientify_n_total": 11405,
+    "clientify_n_added": 9516,
+    "wc_orders": 4831,
+    "note": "CSV Meta Lead Ads + Clientify facebook-leads (API Lead Ads bloqueada: falta pages_manage_ads). Match: email > teléfono > nombre completo. Lead ≤ pedido+1 día."
+  },
+  "universe": {
+    "leads_unified": 11287,
+    "leads_with_email": 11285,
+    "leads_with_phone": 11215,
+    "orders_wc": 4831,
+    "lead_date_min": "2021-10-14",
+    "lead_date_max": "2026-08-28"
+  },
+  "match_all": {
+    "orders_matched": 306,
+    "leads_converted": 297,
+    "unique_buyers": 300,
+    "revenue_matched": 65400.7,
+    "aov_matched": 213.73,
+    "conv_lead_to_order_pct": 2.63,
+    "methods": {
+      "email": 288,
+      "phone": 12,
+      "name": 6
+    },
+    "lag": {
+      "median": 6,
+      "p90": 84,
+      "same_day_or_7d": 178,
+      "within_30d": 242,
+      "within_90d": 276
+    },
+    "meta_spend_insights": 74047.49,
+    "cac_orders_all_spend": 241.99,
+    "roas_all_spend": 0.88,
+    "cac_2025plus": 242.78,
+    "roas_2025plus": 0.88,
+    "orders_2025plus": 305,
+    "rev_2025plus": 65201.7
+  },
+  "periods": {
+    "all": {
+      "leads": 11287,
+      "orders": 306,
+      "rev": 65400.7,
+      "buyers": 300,
+      "spend": 74047.49,
+      "cac": 241.99,
+      "roas": 0.88,
+      "conv_pct": 2.63,
+      "methods": {
+        "email": 288,
+        "phone": 12,
+        "name": 6
+      }
+    },
+    "sy-2024-25": {
+      "leads": 4422,
+      "orders": 154,
+      "rev": 31529.8,
+      "buyers": 153,
+      "spend": 29846.78,
+      "cac": 193.81,
+      "roas": 1.06,
+      "conv_pct": 3.46,
+      "methods": {
+        "email": 151,
+        "phone": 3
+      }
+    },
+    "sy-2025-26": {
+      "leads": 6841,
+      "orders": 152,
+      "rev": 33870.9,
+      "buyers": 149,
+      "spend": 44200.71,
+      "cac": 290.79,
+      "roas": 0.77,
+      "conv_pct": 2.15,
+      "methods": {
+        "name": 6,
+        "email": 137,
+        "phone": 9
+      }
+    },
+    "2026-ytd": {
+      "leads": 3458,
+      "orders": 100,
+      "rev": 22387.25,
+      "buyers": 99,
+      "spend": 25408.04,
+      "cac": 254.08,
+      "roas": 0.88,
+      "conv_pct": 2.83,
+      "methods": {
+        "email": 90,
+        "phone": 7,
+        "name": 3
+      }
+    },
+    "2025": {
+      "leads": 7791,
+      "orders": 205,
+      "rev": 42814.45,
+      "buyers": 203,
+      "spend": 48639.45,
+      "cac": 237.27,
+      "roas": 0.88,
+      "conv_pct": 2.61,
+      "methods": {
+        "email": 197,
+        "phone": 5,
+        "name": 3
+      }
+    }
+  },
+  "monthly": [
+    {
+      "month": "2021-10",
+      "leads": 1,
+      "leads_csv": 0,
+      "leads_cf": 1,
+      "orders": 0,
+      "rev": 0.0,
+      "spend": 0
+    },
+    {
+      "month": "2023-04",
+      "leads": 1,
+      "leads_csv": 1,
+      "leads_cf": 0,
+      "orders": 0,
+      "rev": 0.0,
+      "spend": 0
+    },
+    {
+      "month": "2024-01",
+      "leads": 1,
+      "leads_csv": 0,
+      "leads_cf": 1,
+      "orders": 0,
+      "rev": 0.0,
+      "spend": 0
+    },
+    {
+      "month": "2024-02",
+      "leads": 2,
+      "leads_csv": 0,
+      "leads_cf": 2,
+      "orders": 0,
+      "rev": 0.0,
+      "spend": 0
+    },
+    {
+      "month": "2024-03",
+      "leads": 2,
+      "leads_csv": 0,
+      "leads_cf": 2,
+      "orders": 0,
+      "rev": 0.0,
+      "spend": 0
+    },
+    {
+      "month": "2024-04",
+      "leads": 3,
+      "leads_csv": 0,
+      "leads_cf": 3,
+      "orders": 0,
+      "rev": 0.0,
+      "spend": 0
+    },
+    {
+      "month": "2024-05",
+      "leads": 1,
+      "leads_csv": 0,
+      "leads_cf": 1,
+      "orders": 0,
+      "rev": 0.0,
+      "spend": 0
+    },
+    {
+      "month": "2024-06",
+      "leads": 2,
+      "leads_csv": 0,
+      "leads_cf": 2,
+      "orders": 0,
+      "rev": 0.0,
+      "spend": 0
+    },
+    {
+      "month": "2024-07",
+      "leads": 4,
+      "leads_csv": 0,
+      "leads_cf": 4,
+      "orders": 0,
+      "rev": 0.0,
+      "spend": 0
+    },
+    {
+      "month": "2024-08",
+      "leads": 3,
+      "leads_csv": 0,
+      "leads_cf": 3,
+      "orders": 0,
+      "rev": 0.0,
+      "spend": 0
+    },
+    {
+      "month": "2024-09",
+      "leads": 1,
+      "leads_csv": 0,
+      "leads_cf": 1,
+      "orders": 0,
+      "rev": 0.0,
+      "spend": 0
+    },
+    {
+      "month": "2024-10",
+      "leads": 8,
+      "leads_csv": 0,
+      "leads_cf": 8,
+      "orders": 0,
+      "rev": 0.0,
+      "spend": 0
+    },
+    {
+      "month": "2024-11",
+      "leads": 2,
+      "leads_csv": 0,
+      "leads_cf": 2,
+      "orders": 1,
+      "rev": 199.0,
+      "spend": 0
+    },
+    {
+      "month": "2024-12",
+      "leads": 3,
+      "leads_csv": 0,
+      "leads_cf": 3,
+      "orders": 0,
+      "rev": 0.0,
+      "spend": 0
+    },
+    {
+      "month": "2025-01",
+      "leads": 134,
+      "leads_csv": 0,
+      "leads_cf": 134,
+      "orders": 4,
+      "rev": 727.6,
+      "spend": 3352.52
+    },
+    {
+      "month": "2025-02",
+      "leads": 433,
+      "leads_csv": 0,
+      "leads_cf": 433,
+      "orders": 24,
+      "rev": 4282.65,
+      "spend": 2884.73
+    },
+    {
+      "month": "2025-03",
+      "leads": 725,
+      "leads_csv": 1,
+      "leads_cf": 724,
+      "orders": 41,
+      "rev": 8160.2,
+      "spend": 4098.93
+    },
+    {
+      "month": "2025-04",
+      "leads": 549,
+      "leads_csv": 0,
+      "leads_cf": 549,
+      "orders": 18,
+      "rev": 3927.6,
+      "spend": 3541.0
+    },
+    {
+      "month": "2025-05",
+      "leads": 579,
+      "leads_csv": 0,
+      "leads_cf": 579,
+      "orders": 11,
+      "rev": 2586.5,
+      "spend": 3458.06
+    },
+    {
+      "month": "2025-06",
+      "leads": 457,
+      "leads_csv": 0,
+      "leads_cf": 457,
+      "orders": 16,
+      "rev": 3726.4,
+      "spend": 3332.63
+    },
+    {
+      "month": "2025-07",
+      "leads": 786,
+      "leads_csv": 0,
+      "leads_cf": 786,
+      "orders": 24,
+      "rev": 4744.2,
+      "spend": 5139.8
+    },
+    {
+      "month": "2025-08",
+      "leads": 745,
+      "leads_csv": 0,
+      "leads_cf": 745,
+      "orders": 15,
+      "rev": 3175.65,
+      "spend": 4039.11
+    },
+    {
+      "month": "2025-09",
+      "leads": 1186,
+      "leads_csv": 0,
+      "leads_cf": 1186,
+      "orders": 18,
+      "rev": 4172.95,
+      "spend": 6508.71
+    },
+    {
+      "month": "2025-10",
+      "leads": 892,
+      "leads_csv": 0,
+      "leads_cf": 892,
+      "orders": 8,
+      "rev": 1633.35,
+      "spend": 4913.49
+    },
+    {
+      "month": "2025-11",
+      "leads": 786,
+      "leads_csv": 0,
+      "leads_cf": 786,
+      "orders": 18,
+      "rev": 3980.1,
+      "spend": 4166.69
+    },
+    {
+      "month": "2025-12",
+      "leads": 519,
+      "leads_csv": 0,
+      "leads_cf": 519,
+      "orders": 8,
+      "rev": 1697.25,
+      "spend": 3203.78
+    },
+    {
+      "month": "2026-01",
+      "leads": 313,
+      "leads_csv": 0,
+      "leads_cf": 313,
+      "orders": 21,
+      "rev": 4889.8,
+      "spend": 2701.93
+    },
+    {
+      "month": "2026-02",
+      "leads": 210,
+      "leads_csv": 0,
+      "leads_cf": 210,
+      "orders": 11,
+      "rev": 2329.35,
+      "spend": 2389.56
+    },
+    {
+      "month": "2026-03",
+      "leads": 473,
+      "leads_csv": 0,
+      "leads_cf": 473,
+      "orders": 14,
+      "rev": 2999.85,
+      "spend": 3399.82
+    },
+    {
+      "month": "2026-04",
+      "leads": 301,
+      "leads_csv": 0,
+      "leads_cf": 301,
+      "orders": 7,
+      "rev": 1644.0,
+      "spend": 3356.86
+    },
+    {
+      "month": "2026-05",
+      "leads": 401,
+      "leads_csv": 25,
+      "leads_cf": 376,
+      "orders": 15,
+      "rev": 3597.15,
+      "spend": 3687.16
+    },
+    {
+      "month": "2026-06",
+      "leads": 566,
+      "leads_csv": 552,
+      "leads_cf": 14,
+      "orders": 10,
+      "rev": 2264.85,
+      "spend": 3233.63
+    },
+    {
+      "month": "2026-07",
+      "leads": 556,
+      "leads_csv": 552,
+      "leads_cf": 4,
+      "orders": 12,
+      "rev": 2891.05,
+      "spend": 3495.16
+    },
+    {
+      "month": "2026-08",
+      "leads": 642,
+      "leads_csv": 640,
+      "leads_cf": 2,
+      "orders": 10,
+      "rev": 1771.2,
+      "spend": 3143.92
+    }
+  ],
+  "by_form": [
+    {
+      "form": "Clientify · facebook-leads",
+      "leads": 9516,
+      "orders": 285,
+      "rev": 61054.45,
+      "conv_pct": 2.99
+    },
+    {
+      "form": "10-Mayo-2026-OK",
+      "leads": 1559,
+      "orders": 18,
+      "rev": 3735.0,
+      "conv_pct": 1.15
+    },
+    {
+      "form": "1to1+Plataforma-julio 2026",
+      "leads": 29,
+      "orders": 2,
+      "rev": 436.95,
+      "conv_pct": 6.9
+    },
+    {
+      "form": "1to1+Plataforma",
+      "leads": 22,
+      "orders": 1,
+      "rev": 174.3,
+      "conv_pct": 4.55
+    },
+    {
+      "form": "Formulario Abril II 2025-Málaga",
+      "leads": 87,
+      "orders": 0,
+      "rev": 0.0,
+      "conv_pct": 0.0
+    },
+    {
+      "form": "Formulario Abril II 2025-Madrid",
+      "leads": 72,
+      "orders": 0,
+      "rev": 0.0,
+      "conv_pct": 0.0
+    },
+    {
+      "form": "Formulario sin título 09/08/24, 2:07 p. m.",
+      "leads": 1,
+      "orders": 0,
+      "rev": 0.0,
+      "conv_pct": 0.0
+    },
+    {
+      "form": "lead",
+      "leads": 1,
+      "orders": 0,
+      "rev": 0.0,
+      "conv_pct": 0.0
+    }
+  ],
+  "by_campaign": [
+    {
+      "campaign": "CBO | CP 2026 | CERTIFICADOS",
+      "leads": 1109,
+      "orders": 14,
+      "rev": 2794.65,
+      "conv_pct": 1.26
+    },
+    {
+      "campaign": "A+ | CP 2026 | CERTIFICADOS-NICHOS",
+      "leads": 198,
+      "orders": 3,
+      "rev": 766.05,
+      "conv_pct": 1.52
+    },
+    {
+      "campaign": "A+ | CP 2026 | 1to1 + PLATAFORMA",
+      "leads": 59,
+      "orders": 3,
+      "rev": 611.25,
+      "conv_pct": 5.08
+    },
+    {
+      "campaign": "CBO | CP 2026 | OTROS-IDIOMAS",
+      "leads": 125,
+      "orders": 1,
+      "rev": 174.3,
+      "conv_pct": 0.8
+    },
+    {
+      "campaign": "CBO | CP 2026 | ACADEMIAS",
+      "leads": 277,
+      "orders": 0,
+      "rev": 0.0,
+      "conv_pct": 0.0
+    }
+  ]
+}

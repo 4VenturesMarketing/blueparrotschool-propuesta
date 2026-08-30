@@ -1,0 +1,3364 @@
+{
+  "generatedAt": "2026-08-28T12:19:23",
+  "compareLabel": "vs periodo anterior (YoY)",
+  "periods": {
+    "sy-2025-26": {
+      "label": "2025–26",
+      "start": "2025-09-01",
+      "end": "2026-08-27",
+      "orders": 904,
+      "rev": 210288.75,
+      "aov": 232.62,
+      "channels": {
+        "Google Orgánico": {
+          "orders": 317,
+          "rev": 75110.6
+        },
+        "Web / Internet": {
+          "orders": 111,
+          "rev": 26273.6
+        },
+        "Otros buscadores": {
+          "orders": 5,
+          "rev": 1230.5
+        },
+        "Directo": {
+          "orders": 166,
+          "rev": 38857.0
+        },
+        "Instagram": {
+          "orders": 104,
+          "rev": 23317.6
+        },
+        "WhatsApp": {
+          "orders": 10,
+          "rev": 2115.9
+        },
+        "Referidos": {
+          "orders": 119,
+          "rev": 26539.8
+        },
+        "ChatGPT / IA": {
+          "orders": 7,
+          "rev": 1968.3
+        },
+        "Facebook": {
+          "orders": 20,
+          "rev": 4176.6
+        },
+        "Meta Ads": {
+          "orders": 1,
+          "rev": 262.65
+        },
+        "Redes (otros)": {
+          "orders": 3,
+          "rev": 838.95
+        },
+        "Google Ads": {
+          "orders": 38,
+          "rev": 8855.65
+        },
+        "Sin clasificar": {
+          "orders": 1,
+          "rev": 262.65
+        },
+        "Email / CRM": {
+          "orders": 2,
+          "rev": 478.95
+        }
+      },
+      "meta": {
+        "spend": 44200.71,
+        "leads": 7773,
+        "cpl": 5.69
+      },
+      "google": {
+        "spend": 3755.93,
+        "conv": 326.0,
+        "clicks": 7853,
+        "cpa": 11.52
+      },
+      "products": {
+        "APTIS": {
+          "qty": 400,
+          "rev": 85685.95
+        },
+        "Cambridge": {
+          "qty": 191,
+          "rev": 51205.8
+        },
+        "Italiano": {
+          "qty": 88,
+          "rev": 18078.3
+        },
+        "Otros cursos": {
+          "qty": 27,
+          "rev": 5030.55
+        },
+        "Francés": {
+          "qty": 94,
+          "rev": 23399.6
+        },
+        "Alemán": {
+          "qty": 64,
+          "rev": 13555.05
+        },
+        "Intensivos (otros)": {
+          "qty": 30,
+          "rev": 7060.8
+        },
+        "IELTS": {
+          "qty": 25,
+          "rev": 6272.7
+        }
+      },
+      "provinces": {
+        "Madrid": {
+          "orders": 290,
+          "rev": 67717.8
+        },
+        "Barcelona": {
+          "orders": 34,
+          "rev": 7708.05
+        },
+        "Soria": {
+          "orders": 4,
+          "rev": 821.7
+        },
+        "Las Palmas": {
+          "orders": 6,
+          "rev": 1451.25
+        },
+        "Málaga": {
+          "orders": 163,
+          "rev": 38535.3
+        },
+        "Toledo": {
+          "orders": 16,
+          "rev": 3966.9
+        },
+        "Almería": {
+          "orders": 9,
+          "rev": 2076.15
+        },
+        "S.C. Tenerife": {
+          "orders": 5,
+          "rev": 1135.35
+        },
+        "Valladolid": {
+          "orders": 14,
+          "rev": 3258.15
+        },
+        "Murcia": {
+          "orders": 22,
+          "rev": 5047.45
+        },
+        "Teruel": {
+          "orders": 2,
+          "rev": 463.3
+        },
+        "Granada": {
+          "orders": 25,
+          "rev": 5691.45
+        },
+        "Ciudad Real": {
+          "orders": 9,
+          "rev": 2134.4
+        },
+        "Sevilla": {
+          "orders": 54,
+          "rev": 11381.7
+        },
+        "Valencia": {
+          "orders": 32,
+          "rev": 7833.7
+        },
+        "Huelva": {
+          "orders": 7,
+          "rev": 1504.2
+        },
+        "Zaragoza": {
+          "orders": 16,
+          "rev": 4174.5
+        },
+        "Badajoz": {
+          "orders": 9,
+          "rev": 1862.7
+        },
+        "Jaén": {
+          "orders": 9,
+          "rev": 2177.1
+        },
+        "Palencia": {
+          "orders": 3,
+          "rev": 572.7
+        },
+        "Ceuta": {
+          "orders": 1,
+          "rev": 211.65
+        },
+        "Baleares": {
+          "orders": 11,
+          "rev": 2465.55
+        },
+        "Tarragona": {
+          "orders": 7,
+          "rev": 1622.1
+        },
+        "Ávila": {
+          "orders": 3,
+          "rev": 658.05
+        },
+        "Pontevedra": {
+          "orders": 13,
+          "rev": 2874.6
+        },
+        "Burgos": {
+          "orders": 7,
+          "rev": 1967.95
+        },
+        "Cádiz": {
+          "orders": 18,
+          "rev": 3973.7
+        },
+        "Albacete": {
+          "orders": 6,
+          "rev": 1359.45
+        },
+        "Álava": {
+          "orders": 2,
+          "rev": 398.4
+        },
+        "León": {
+          "orders": 3,
+          "rev": 597.6
+        },
+        "Alicante": {
+          "orders": 15,
+          "rev": 3473.55
+        },
+        "Gipuzkoa": {
+          "orders": 6,
+          "rev": 1382.8
+        },
+        "Bizkaia": {
+          "orders": 6,
+          "rev": 1504.8
+        },
+        "A Coruña": {
+          "orders": 5,
+          "rev": 1035.0
+        },
+        "Navarra": {
+          "orders": 9,
+          "rev": 2599.95
+        },
+        "Cáceres": {
+          "orders": 8,
+          "rev": 2027.1
+        },
+        "Girona": {
+          "orders": 4,
+          "rev": 1030.5
+        },
+        "Guadalajara": {
+          "orders": 2,
+          "rev": 498.0
+        },
+        "Melilla": {
+          "orders": 3,
+          "rev": 732.3
+        },
+        "Lugo": {
+          "orders": 1,
+          "rev": 174.3
+        },
+        "Segovia": {
+          "orders": 3,
+          "rev": 572.7
+        },
+        "Cantabria": {
+          "orders": 2,
+          "rev": 412.5
+        },
+        "Huesca": {
+          "orders": 3,
+          "rev": 698.4
+        },
+        "Castellón": {
+          "orders": 2,
+          "rev": 474.3
+        },
+        "Córdoba": {
+          "orders": 10,
+          "rev": 2147.75
+        },
+        "Cuenca": {
+          "orders": 1,
+          "rev": 262.65
+        },
+        "Salamanca": {
+          "orders": 5,
+          "rev": 1146.6
+        },
+        "Ourense": {
+          "orders": 2,
+          "rev": 410.85
+        },
+        "Asturias": {
+          "orders": 2,
+          "rev": 558.0
+        },
+        "Lleida": {
+          "orders": 1,
+          "rev": 249.0
+        }
+      },
+      "demo_meta": {
+        "age": {
+          "18-24": 7566.4400000000005,
+          "25-34": 12230.769999999997,
+          "35-44": 10545.81,
+          "45-54": 9423.019999999999,
+          "55-64": 3173.7500000000005,
+          "65+": 1259.5199999999998
+        },
+        "gender": {
+          "female": 30536.749999999996,
+          "male": 13212.919999999996
+        }
+      },
+      "demo_google": {
+        "age": {
+          "AGE_RANGE_65_UP": 41.58,
+          "AGE_RANGE_UNDETERMINED": 413.8564,
+          "AGE_RANGE_25_34": 118.1354,
+          "AGE_RANGE_35_44": 64.96,
+          "AGE_RANGE_45_54": 81.80879999999999,
+          "AGE_RANGE_18_24": 37.96,
+          "AGE_RANGE_55_64": 43.147999999999996
+        },
+        "gender": {
+          "FEMALE": 237.7371,
+          "UNDETERMINED": 422.3764,
+          "MALE": 141.3351
+        }
+      }
+    },
+    "sy-2025-26_yoy": {
+      "label": "YoY ref 2025–26",
+      "start": "2024-09-01",
+      "end": "2025-08-27",
+      "orders": 1294,
+      "rev": 278809.15,
+      "aov": 215.46,
+      "channels": {
+        "Otros": {
+          "orders": 14,
+          "rev": 3180.9
+        },
+        "Google Orgánico": {
+          "orders": 480,
+          "rev": 105317.65
+        },
+        "Web / Internet": {
+          "orders": 160,
+          "rev": 36549.8
+        },
+        "Instagram": {
+          "orders": 198,
+          "rev": 40970.05
+        },
+        "WhatsApp": {
+          "orders": 47,
+          "rev": 9031.1
+        },
+        "Directo": {
+          "orders": 160,
+          "rev": 34084.25
+        },
+        "Referidos": {
+          "orders": 194,
+          "rev": 41804.7
+        },
+        "Meta Ads": {
+          "orders": 1,
+          "rev": 259.0
+        },
+        "Facebook": {
+          "orders": 23,
+          "rev": 4812.4
+        },
+        "Redes (otros)": {
+          "orders": 5,
+          "rev": 957.9
+        },
+        "Otros buscadores": {
+          "orders": 4,
+          "rev": 738.0
+        },
+        "Email / CRM": {
+          "orders": 7,
+          "rev": 825.3
+        },
+        "ChatGPT / IA": {
+          "orders": 1,
+          "rev": 278.1
+        }
+      },
+      "meta": {
+        "spend": 29846.78,
+        "leads": 5112,
+        "cpl": 5.84
+      },
+      "google": {
+        "spend": 0,
+        "conv": 0,
+        "clicks": 0,
+        "cpa": null
+      },
+      "products": {
+        "IELTS": {
+          "qty": 36,
+          "rev": 8926.4
+        },
+        "Italiano": {
+          "qty": 165,
+          "rev": 31020.35
+        },
+        "APTIS": {
+          "qty": 673,
+          "rev": 137522.95
+        },
+        "Alemán": {
+          "qty": 86,
+          "rev": 16834.55
+        },
+        "Francés": {
+          "qty": 84,
+          "rev": 21253.85
+        },
+        "Cambridge": {
+          "qty": 197,
+          "rev": 53707.3
+        },
+        "Otros cursos": {
+          "qty": 42,
+          "rev": 5514.15
+        },
+        "Intensivos (otros)": {
+          "qty": 21,
+          "rev": 4029.6
+        }
+      },
+      "provinces": {
+        "Málaga": {
+          "orders": 293,
+          "rev": 65180.85
+        },
+        "Madrid": {
+          "orders": 371,
+          "rev": 82315.35
+        },
+        "Ceuta": {
+          "orders": 1,
+          "rev": 199.0
+        },
+        "Asturias": {
+          "orders": 16,
+          "rev": 3346.15
+        },
+        "Barcelona": {
+          "orders": 44,
+          "rev": 9932.3
+        },
+        "Zaragoza": {
+          "orders": 20,
+          "rev": 4087.15
+        },
+        "Valencia": {
+          "orders": 32,
+          "rev": 7421.55
+        },
+        "Sevilla": {
+          "orders": 66,
+          "rev": 13248.45
+        },
+        "Bizkaia": {
+          "orders": 14,
+          "rev": 2878.45
+        },
+        "A Coruña": {
+          "orders": 1,
+          "rev": 319.0
+        },
+        "Navarra": {
+          "orders": 17,
+          "rev": 3344.7
+        },
+        "Teruel": {
+          "orders": 5,
+          "rev": 1186.4
+        },
+        "Huelva": {
+          "orders": 6,
+          "rev": 1144.4
+        },
+        "Girona": {
+          "orders": 9,
+          "rev": 1891.3
+        },
+        "Huesca": {
+          "orders": 6,
+          "rev": 1167.65
+        },
+        "Jaén": {
+          "orders": 15,
+          "rev": 3095.6
+        },
+        "Albacete": {
+          "orders": 12,
+          "rev": 2347.05
+        },
+        "Valladolid": {
+          "orders": 22,
+          "rev": 4416.3
+        },
+        "Granada": {
+          "orders": 22,
+          "rev": 4529.0
+        },
+        "Cuenca": {
+          "orders": 3,
+          "rev": 715.8
+        },
+        "Cádiz": {
+          "orders": 34,
+          "rev": 7091.95
+        },
+        "Lleida": {
+          "orders": 6,
+          "rev": 1235.75
+        },
+        "Córdoba": {
+          "orders": 17,
+          "rev": 3390.15
+        },
+        "Segovia": {
+          "orders": 4,
+          "rev": 936.1
+        },
+        "Alicante": {
+          "orders": 34,
+          "rev": 6504.7
+        },
+        "Murcia": {
+          "orders": 28,
+          "rev": 5855.1
+        },
+        "Lugo": {
+          "orders": 2,
+          "rev": 410.65
+        },
+        "S.C. Tenerife": {
+          "orders": 9,
+          "rev": 1866.8
+        },
+        "Cantabria": {
+          "orders": 6,
+          "rev": 1231.75
+        },
+        "Baleares": {
+          "orders": 11,
+          "rev": 2251.35
+        },
+        "Ourense": {
+          "orders": 3,
+          "rev": 547.4
+        },
+        "Toledo": {
+          "orders": 19,
+          "rev": 3956.4
+        },
+        "Ciudad Real": {
+          "orders": 13,
+          "rev": 2640.6
+        },
+        "Burgos": {
+          "orders": 7,
+          "rev": 1533.35
+        },
+        "Las Palmas": {
+          "orders": 11,
+          "rev": 2395.5
+        },
+        "Guadalajara": {
+          "orders": 10,
+          "rev": 2125.5
+        },
+        "Cáceres": {
+          "orders": 7,
+          "rev": 1561.45
+        },
+        "Tarragona": {
+          "orders": 6,
+          "rev": 1251.65
+        },
+        "Pontevedra": {
+          "orders": 10,
+          "rev": 2104.15
+        },
+        "Melilla": {
+          "orders": 6,
+          "rev": 1061.0
+        },
+        "León": {
+          "orders": 5,
+          "rev": 1092.85
+        },
+        "Gipuzkoa": {
+          "orders": 6,
+          "rev": 1495.65
+        },
+        "Ávila": {
+          "orders": 3,
+          "rev": 600.95
+        },
+        "Palencia": {
+          "orders": 1,
+          "rev": 199.0
+        },
+        "Soria": {
+          "orders": 2,
+          "rev": 219.15
+        },
+        "Castellón": {
+          "orders": 6,
+          "rev": 1410.85
+        },
+        "Almería": {
+          "orders": 8,
+          "rev": 1762.5
+        },
+        "Badajoz": {
+          "orders": 13,
+          "rev": 2457.05
+        },
+        "Salamanca": {
+          "orders": 2,
+          "rev": 353.4
+        }
+      },
+      "demo_meta": {
+        "age": {
+          "18-24": 4709.880000000001,
+          "25-34": 9221.429999999998,
+          "35-44": 7359.980000000002,
+          "45-54": 5624.709999999999,
+          "55-64": 1971.5899999999997,
+          "65+": 959.19
+        },
+        "gender": {
+          "female": 19561.76,
+          "male": 9979.869999999999
+        }
+      },
+      "demo_google": {
+        "age": {},
+        "gender": {}
+      }
+    },
+    "sy-2024-25": {
+      "label": "2024–25",
+      "start": "2024-09-01",
+      "end": "2025-08-31",
+      "orders": 1294,
+      "rev": 278809.15,
+      "aov": 215.46,
+      "channels": {
+        "Otros": {
+          "orders": 14,
+          "rev": 3180.9
+        },
+        "Google Orgánico": {
+          "orders": 480,
+          "rev": 105317.65
+        },
+        "Web / Internet": {
+          "orders": 160,
+          "rev": 36549.8
+        },
+        "Instagram": {
+          "orders": 198,
+          "rev": 40970.05
+        },
+        "WhatsApp": {
+          "orders": 47,
+          "rev": 9031.1
+        },
+        "Directo": {
+          "orders": 160,
+          "rev": 34084.25
+        },
+        "Referidos": {
+          "orders": 194,
+          "rev": 41804.7
+        },
+        "Meta Ads": {
+          "orders": 1,
+          "rev": 259.0
+        },
+        "Facebook": {
+          "orders": 23,
+          "rev": 4812.4
+        },
+        "Redes (otros)": {
+          "orders": 5,
+          "rev": 957.9
+        },
+        "Otros buscadores": {
+          "orders": 4,
+          "rev": 738.0
+        },
+        "Email / CRM": {
+          "orders": 7,
+          "rev": 825.3
+        },
+        "ChatGPT / IA": {
+          "orders": 1,
+          "rev": 278.1
+        }
+      },
+      "meta": {
+        "spend": 29846.78,
+        "leads": 5112,
+        "cpl": 5.84
+      },
+      "google": {
+        "spend": 0,
+        "conv": 0,
+        "clicks": 0,
+        "cpa": null
+      },
+      "products": {
+        "IELTS": {
+          "qty": 36,
+          "rev": 8926.4
+        },
+        "Italiano": {
+          "qty": 165,
+          "rev": 31020.35
+        },
+        "APTIS": {
+          "qty": 673,
+          "rev": 137522.95
+        },
+        "Alemán": {
+          "qty": 86,
+          "rev": 16834.55
+        },
+        "Francés": {
+          "qty": 84,
+          "rev": 21253.85
+        },
+        "Cambridge": {
+          "qty": 197,
+          "rev": 53707.3
+        },
+        "Otros cursos": {
+          "qty": 42,
+          "rev": 5514.15
+        },
+        "Intensivos (otros)": {
+          "qty": 21,
+          "rev": 4029.6
+        }
+      },
+      "provinces": {
+        "Málaga": {
+          "orders": 293,
+          "rev": 65180.85
+        },
+        "Madrid": {
+          "orders": 371,
+          "rev": 82315.35
+        },
+        "Ceuta": {
+          "orders": 1,
+          "rev": 199.0
+        },
+        "Asturias": {
+          "orders": 16,
+          "rev": 3346.15
+        },
+        "Barcelona": {
+          "orders": 44,
+          "rev": 9932.3
+        },
+        "Zaragoza": {
+          "orders": 20,
+          "rev": 4087.15
+        },
+        "Valencia": {
+          "orders": 32,
+          "rev": 7421.55
+        },
+        "Sevilla": {
+          "orders": 66,
+          "rev": 13248.45
+        },
+        "Bizkaia": {
+          "orders": 14,
+          "rev": 2878.45
+        },
+        "A Coruña": {
+          "orders": 1,
+          "rev": 319.0
+        },
+        "Navarra": {
+          "orders": 17,
+          "rev": 3344.7
+        },
+        "Teruel": {
+          "orders": 5,
+          "rev": 1186.4
+        },
+        "Huelva": {
+          "orders": 6,
+          "rev": 1144.4
+        },
+        "Girona": {
+          "orders": 9,
+          "rev": 1891.3
+        },
+        "Huesca": {
+          "orders": 6,
+          "rev": 1167.65
+        },
+        "Jaén": {
+          "orders": 15,
+          "rev": 3095.6
+        },
+        "Albacete": {
+          "orders": 12,
+          "rev": 2347.05
+        },
+        "Valladolid": {
+          "orders": 22,
+          "rev": 4416.3
+        },
+        "Granada": {
+          "orders": 22,
+          "rev": 4529.0
+        },
+        "Cuenca": {
+          "orders": 3,
+          "rev": 715.8
+        },
+        "Cádiz": {
+          "orders": 34,
+          "rev": 7091.95
+        },
+        "Lleida": {
+          "orders": 6,
+          "rev": 1235.75
+        },
+        "Córdoba": {
+          "orders": 17,
+          "rev": 3390.15
+        },
+        "Segovia": {
+          "orders": 4,
+          "rev": 936.1
+        },
+        "Alicante": {
+          "orders": 34,
+          "rev": 6504.7
+        },
+        "Murcia": {
+          "orders": 28,
+          "rev": 5855.1
+        },
+        "Lugo": {
+          "orders": 2,
+          "rev": 410.65
+        },
+        "S.C. Tenerife": {
+          "orders": 9,
+          "rev": 1866.8
+        },
+        "Cantabria": {
+          "orders": 6,
+          "rev": 1231.75
+        },
+        "Baleares": {
+          "orders": 11,
+          "rev": 2251.35
+        },
+        "Ourense": {
+          "orders": 3,
+          "rev": 547.4
+        },
+        "Toledo": {
+          "orders": 19,
+          "rev": 3956.4
+        },
+        "Ciudad Real": {
+          "orders": 13,
+          "rev": 2640.6
+        },
+        "Burgos": {
+          "orders": 7,
+          "rev": 1533.35
+        },
+        "Las Palmas": {
+          "orders": 11,
+          "rev": 2395.5
+        },
+        "Guadalajara": {
+          "orders": 10,
+          "rev": 2125.5
+        },
+        "Cáceres": {
+          "orders": 7,
+          "rev": 1561.45
+        },
+        "Tarragona": {
+          "orders": 6,
+          "rev": 1251.65
+        },
+        "Pontevedra": {
+          "orders": 10,
+          "rev": 2104.15
+        },
+        "Melilla": {
+          "orders": 6,
+          "rev": 1061.0
+        },
+        "León": {
+          "orders": 5,
+          "rev": 1092.85
+        },
+        "Gipuzkoa": {
+          "orders": 6,
+          "rev": 1495.65
+        },
+        "Ávila": {
+          "orders": 3,
+          "rev": 600.95
+        },
+        "Palencia": {
+          "orders": 1,
+          "rev": 199.0
+        },
+        "Soria": {
+          "orders": 2,
+          "rev": 219.15
+        },
+        "Castellón": {
+          "orders": 6,
+          "rev": 1410.85
+        },
+        "Almería": {
+          "orders": 8,
+          "rev": 1762.5
+        },
+        "Badajoz": {
+          "orders": 13,
+          "rev": 2457.05
+        },
+        "Salamanca": {
+          "orders": 2,
+          "rev": 353.4
+        }
+      },
+      "demo_meta": {
+        "age": {
+          "18-24": 4709.880000000001,
+          "25-34": 9221.429999999998,
+          "35-44": 7359.980000000002,
+          "45-54": 5624.709999999999,
+          "55-64": 1971.5899999999997,
+          "65+": 959.19
+        },
+        "gender": {
+          "female": 19561.76,
+          "male": 9979.869999999999
+        }
+      },
+      "demo_google": {
+        "age": {},
+        "gender": {}
+      }
+    },
+    "sy-2024-25_yoy": {
+      "label": "YoY ref 2024–25",
+      "start": "2023-09-01",
+      "end": "2024-08-31",
+      "orders": 736,
+      "rev": 152171.05,
+      "aov": 206.75,
+      "channels": {
+        "Facebook": {
+          "orders": 13,
+          "rev": 2977.55
+        },
+        "Instagram": {
+          "orders": 92,
+          "rev": 19009.85
+        },
+        "WhatsApp": {
+          "orders": 127,
+          "rev": 22958.75
+        },
+        "Referidos": {
+          "orders": 104,
+          "rev": 21265.8
+        },
+        "Meta Ads": {
+          "orders": 1,
+          "rev": 199.0
+        },
+        "Google Orgánico": {
+          "orders": 259,
+          "rev": 56703.95
+        },
+        "Otros": {
+          "orders": 7,
+          "rev": 1406.9
+        },
+        "Web / Internet": {
+          "orders": 69,
+          "rev": 15101.9
+        },
+        "Directo": {
+          "orders": 57,
+          "rev": 11153.95
+        },
+        "Otros buscadores": {
+          "orders": 4,
+          "rev": 836.2
+        },
+        "Redes (otros)": {
+          "orders": 3,
+          "rev": 557.2
+        }
+      },
+      "meta": {
+        "spend": 0,
+        "leads": 0,
+        "cpl": null
+      },
+      "google": {
+        "spend": 0,
+        "conv": 0,
+        "clicks": 0,
+        "cpa": null
+      },
+      "products": {
+        "Cambridge": {
+          "qty": 115,
+          "rev": 30818.25
+        },
+        "Alemán": {
+          "qty": 73,
+          "rev": 13583.3
+        },
+        "APTIS": {
+          "qty": 244,
+          "rev": 48773.7
+        },
+        "Francés": {
+          "qty": 42,
+          "rev": 10441.7
+        },
+        "Italiano": {
+          "qty": 226,
+          "rev": 40341.75
+        },
+        "Otros cursos": {
+          "qty": 12,
+          "rev": 2774.4
+        },
+        "IELTS": {
+          "qty": 8,
+          "rev": 1955.45
+        },
+        "Intensivos (otros)": {
+          "qty": 19,
+          "rev": 3482.5
+        }
+      },
+      "provinces": {
+        "Málaga": {
+          "orders": 128,
+          "rev": 29278.65
+        },
+        "Madrid": {
+          "orders": 211,
+          "rev": 43494.3
+        },
+        "Ciudad Real": {
+          "orders": 8,
+          "rev": 1573.35
+        },
+        "A Coruña": {
+          "orders": 9,
+          "rev": 1804.75
+        },
+        "Barcelona": {
+          "orders": 36,
+          "rev": 7440.85
+        },
+        "Valencia": {
+          "orders": 31,
+          "rev": 6040.7
+        },
+        "Córdoba": {
+          "orders": 18,
+          "rev": 3820.8
+        },
+        "Salamanca": {
+          "orders": 3,
+          "rev": 611.2
+        },
+        "Bizkaia": {
+          "orders": 7,
+          "rev": 1317.65
+        },
+        "Burgos": {
+          "orders": 3,
+          "rev": 667.1
+        },
+        "Albacete": {
+          "orders": 6,
+          "rev": 1374.0
+        },
+        "S.C. Tenerife": {
+          "orders": 6,
+          "rev": 1094.5
+        },
+        "Granada": {
+          "orders": 22,
+          "rev": 4168.5
+        },
+        "Alicante": {
+          "orders": 15,
+          "rev": 3099.15
+        },
+        "Toledo": {
+          "orders": 8,
+          "rev": 1512.7
+        },
+        "Pontevedra": {
+          "orders": 5,
+          "rev": 979.35
+        },
+        "Castellón": {
+          "orders": 8,
+          "rev": 1476.85
+        },
+        "Sevilla": {
+          "orders": 30,
+          "rev": 5749.8
+        },
+        "Guadalajara": {
+          "orders": 4,
+          "rev": 796.3
+        },
+        "Almería": {
+          "orders": 14,
+          "rev": 2636.85
+        },
+        "Teruel": {
+          "orders": 7,
+          "rev": 1414.45
+        },
+        "Huesca": {
+          "orders": 3,
+          "rev": 637.1
+        },
+        "Soria": {
+          "orders": 3,
+          "rev": 717.0
+        },
+        "Navarra": {
+          "orders": 6,
+          "rev": 1274.2
+        },
+        "Lleida": {
+          "orders": 5,
+          "rev": 1163.3
+        },
+        "Asturias": {
+          "orders": 8,
+          "rev": 1422.6
+        },
+        "Badajoz": {
+          "orders": 7,
+          "rev": 1483.2
+        },
+        "Cuenca": {
+          "orders": 5,
+          "rev": 1095.1
+        },
+        "Murcia": {
+          "orders": 15,
+          "rev": 2960.05
+        },
+        "Cantabria": {
+          "orders": 5,
+          "rev": 1079.3
+        },
+        "Zaragoza": {
+          "orders": 12,
+          "rev": 2416.7
+        },
+        "Las Palmas": {
+          "orders": 5,
+          "rev": 915.4
+        },
+        "Cádiz": {
+          "orders": 14,
+          "rev": 2856.6
+        },
+        "Baleares": {
+          "orders": 7,
+          "rev": 1453.3
+        },
+        "Girona": {
+          "orders": 3,
+          "rev": 647.2
+        },
+        "Álava": {
+          "orders": 4,
+          "rev": 736.3
+        },
+        "Jaén": {
+          "orders": 7,
+          "rev": 1333.3
+        },
+        "Gipuzkoa": {
+          "orders": 5,
+          "rev": 915.4
+        },
+        "Melilla": {
+          "orders": 4,
+          "rev": 956.1
+        },
+        "Lugo": {
+          "orders": 3,
+          "rev": 617.2
+        },
+        "Cáceres": {
+          "orders": 4,
+          "rev": 816.2
+        },
+        "León": {
+          "orders": 3,
+          "rev": 537.3
+        },
+        "Valladolid": {
+          "orders": 5,
+          "rev": 995.3
+        },
+        "Huelva": {
+          "orders": 4,
+          "rev": 836.1
+        },
+        "Tarragona": {
+          "orders": 2,
+          "rev": 438.1
+        },
+        "Palencia": {
+          "orders": 3,
+          "rev": 577.1
+        },
+        "Ourense": {
+          "orders": 2,
+          "rev": 358.2
+        },
+        "Ávila": {
+          "orders": 1,
+          "rev": 233.1
+        }
+      },
+      "demo_meta": {
+        "age": {},
+        "gender": {}
+      },
+      "demo_google": {
+        "age": {},
+        "gender": {}
+      }
+    },
+    "2026-ytd": {
+      "label": "2026 YTD",
+      "start": "2026-01-01",
+      "end": "2026-08-27",
+      "orders": 578,
+      "rev": 136140.45,
+      "aov": 235.54,
+      "channels": {
+        "Google Orgánico": {
+          "orders": 177,
+          "rev": 42807.65
+        },
+        "Instagram": {
+          "orders": 65,
+          "rev": 14749.4
+        },
+        "Directo": {
+          "orders": 100,
+          "rev": 23787.2
+        },
+        "Web / Internet": {
+          "orders": 71,
+          "rev": 16941.7
+        },
+        "Referidos": {
+          "orders": 89,
+          "rev": 20243.5
+        },
+        "Facebook": {
+          "orders": 18,
+          "rev": 3748.65
+        },
+        "Meta Ads": {
+          "orders": 1,
+          "rev": 262.65
+        },
+        "Otros buscadores": {
+          "orders": 2,
+          "rev": 520.65
+        },
+        "Redes (otros)": {
+          "orders": 3,
+          "rev": 838.95
+        },
+        "ChatGPT / IA": {
+          "orders": 5,
+          "rev": 1410.3
+        },
+        "Google Ads": {
+          "orders": 38,
+          "rev": 8855.65
+        },
+        "WhatsApp": {
+          "orders": 6,
+          "rev": 1232.55
+        },
+        "Sin clasificar": {
+          "orders": 1,
+          "rev": 262.65
+        },
+        "Email / CRM": {
+          "orders": 2,
+          "rev": 478.95
+        }
+      },
+      "meta": {
+        "spend": 25408.04,
+        "leads": 3913,
+        "cpl": 6.49
+      },
+      "google": {
+        "spend": 3755.93,
+        "conv": 326.0,
+        "clicks": 7853,
+        "cpa": 11.52
+      },
+      "products": {
+        "Cambridge": {
+          "qty": 132,
+          "rev": 35616.15
+        },
+        "Alemán": {
+          "qty": 40,
+          "rev": 8612.4
+        },
+        "Francés": {
+          "qty": 56,
+          "rev": 14206.7
+        },
+        "APTIS": {
+          "qty": 254,
+          "rev": 54635.3
+        },
+        "IELTS": {
+          "qty": 20,
+          "rev": 5160.3
+        },
+        "Intensivos (otros)": {
+          "qty": 16,
+          "rev": 3762.45
+        },
+        "Otros cursos": {
+          "qty": 17,
+          "rev": 3117.65
+        },
+        "Italiano": {
+          "qty": 53,
+          "rev": 11029.5
+        }
+      },
+      "provinces": {
+        "Madrid": {
+          "orders": 176,
+          "rev": 41373.0
+        },
+        "Barcelona": {
+          "orders": 23,
+          "rev": 5314.05
+        },
+        "Las Palmas": {
+          "orders": 3,
+          "rev": 736.95
+        },
+        "Córdoba": {
+          "orders": 10,
+          "rev": 2147.75
+        },
+        "Cádiz": {
+          "orders": 13,
+          "rev": 2793.8
+        },
+        "Navarra": {
+          "orders": 7,
+          "rev": 2101.95
+        },
+        "Tarragona": {
+          "orders": 5,
+          "rev": 1161.45
+        },
+        "Málaga": {
+          "orders": 117,
+          "rev": 27331.5
+        },
+        "Sevilla": {
+          "orders": 32,
+          "rev": 7134.55
+        },
+        "Ciudad Real": {
+          "orders": 6,
+          "rev": 1443.8
+        },
+        "Pontevedra": {
+          "orders": 9,
+          "rev": 2020.5
+        },
+        "Segovia": {
+          "orders": 2,
+          "rev": 410.85
+        },
+        "Baleares": {
+          "orders": 10,
+          "rev": 2253.9
+        },
+        "Zaragoza": {
+          "orders": 10,
+          "rev": 2877.3
+        },
+        "Valencia": {
+          "orders": 18,
+          "rev": 4550.65
+        },
+        "Soria": {
+          "orders": 1,
+          "rev": 211.65
+        },
+        "Murcia": {
+          "orders": 16,
+          "rev": 3877.15
+        },
+        "Bizkaia": {
+          "orders": 5,
+          "rev": 1255.8
+        },
+        "Alicante": {
+          "orders": 12,
+          "rev": 2718.9
+        },
+        "Girona": {
+          "orders": 3,
+          "rev": 818.85
+        },
+        "S.C. Tenerife": {
+          "orders": 4,
+          "rev": 948.6
+        },
+        "Valladolid": {
+          "orders": 6,
+          "rev": 1494.15
+        },
+        "Cáceres": {
+          "orders": 7,
+          "rev": 1815.45
+        },
+        "Albacete": {
+          "orders": 3,
+          "rev": 774.3
+        },
+        "Granada": {
+          "orders": 13,
+          "rev": 3098.7
+        },
+        "Gipuzkoa": {
+          "orders": 5,
+          "rev": 1104.7
+        },
+        "Huelva": {
+          "orders": 6,
+          "rev": 1292.55
+        },
+        "Castellón": {
+          "orders": 1,
+          "rev": 262.65
+        },
+        "Toledo": {
+          "orders": 7,
+          "rev": 1915.5
+        },
+        "Melilla": {
+          "orders": 2,
+          "rev": 423.3
+        },
+        "Cuenca": {
+          "orders": 1,
+          "rev": 262.65
+        },
+        "Salamanca": {
+          "orders": 5,
+          "rev": 1146.6
+        },
+        "Ourense": {
+          "orders": 2,
+          "rev": 410.85
+        },
+        "A Coruña": {
+          "orders": 2,
+          "rev": 410.85
+        },
+        "Burgos": {
+          "orders": 5,
+          "rev": 1245.85
+        },
+        "Guadalajara": {
+          "orders": 1,
+          "rev": 249.0
+        },
+        "Badajoz": {
+          "orders": 4,
+          "rev": 846.6
+        },
+        "Almería": {
+          "orders": 6,
+          "rev": 1288.2
+        },
+        "Huesca": {
+          "orders": 2,
+          "rev": 486.75
+        },
+        "Ávila": {
+          "orders": 2,
+          "rev": 446.4
+        },
+        "Álava": {
+          "orders": 1,
+          "rev": 211.65
+        },
+        "León": {
+          "orders": 1,
+          "rev": 211.65
+        },
+        "Cantabria": {
+          "orders": 1,
+          "rev": 211.65
+        },
+        "Asturias": {
+          "orders": 2,
+          "rev": 558.0
+        },
+        "Jaén": {
+          "orders": 3,
+          "rev": 707.85
+        },
+        "Lleida": {
+          "orders": 1,
+          "rev": 249.0
+        },
+        "Palencia": {
+          "orders": 1,
+          "rev": 149.4
+        }
+      },
+      "demo_meta": {
+        "age": {
+          "18-24": 4145.52,
+          "25-34": 7186.280000000002,
+          "35-44": 6138.1100000000015,
+          "45-54": 5601.02,
+          "55-64": 1728.9800000000002,
+          "65+": 607.24
+        },
+        "gender": {
+          "female": 17745.609999999997,
+          "male": 7412.600000000002
+        }
+      },
+      "demo_google": {
+        "age": {
+          "AGE_RANGE_65_UP": 41.58,
+          "AGE_RANGE_UNDETERMINED": 413.8564,
+          "AGE_RANGE_25_34": 118.1354,
+          "AGE_RANGE_35_44": 64.96,
+          "AGE_RANGE_45_54": 81.80879999999999,
+          "AGE_RANGE_18_24": 37.96,
+          "AGE_RANGE_55_64": 43.147999999999996
+        },
+        "gender": {
+          "FEMALE": 237.7371,
+          "UNDETERMINED": 422.3764,
+          "MALE": 141.3351
+        }
+      }
+    },
+    "2026-ytd_yoy": {
+      "label": "YoY ref 2026 YTD",
+      "start": "2025-01-01",
+      "end": "2025-08-27",
+      "orders": 976,
+      "rev": 210143.0,
+      "aov": 215.31,
+      "channels": {
+        "Google Orgánico": {
+          "orders": 325,
+          "rev": 72243.85
+        },
+        "Web / Internet": {
+          "orders": 114,
+          "rev": 25764.25
+        },
+        "Instagram": {
+          "orders": 166,
+          "rev": 34327.35
+        },
+        "Referidos": {
+          "orders": 142,
+          "rev": 30765.4
+        },
+        "Directo": {
+          "orders": 140,
+          "rev": 29752.5
+        },
+        "Redes (otros)": {
+          "orders": 5,
+          "rev": 957.9
+        },
+        "Facebook": {
+          "orders": 19,
+          "rev": 3868.9
+        },
+        "WhatsApp": {
+          "orders": 43,
+          "rev": 8274.9
+        },
+        "Otros": {
+          "orders": 10,
+          "rev": 2346.55
+        },
+        "Otros buscadores": {
+          "orders": 4,
+          "rev": 738.0
+        },
+        "Email / CRM": {
+          "orders": 7,
+          "rev": 825.3
+        },
+        "ChatGPT / IA": {
+          "orders": 1,
+          "rev": 278.1
+        }
+      },
+      "meta": {
+        "spend": 29846.78,
+        "leads": 5112,
+        "cpl": 5.84
+      },
+      "google": {
+        "spend": 0,
+        "conv": 0,
+        "clicks": 0,
+        "cpa": null
+      },
+      "products": {
+        "Alemán": {
+          "qty": 70,
+          "rev": 13987.4
+        },
+        "APTIS": {
+          "qty": 493,
+          "rev": 101564.75
+        },
+        "Cambridge": {
+          "qty": 137,
+          "rev": 37634.7
+        },
+        "Francés": {
+          "qty": 61,
+          "rev": 15488.45
+        },
+        "IELTS": {
+          "qty": 25,
+          "rev": 6388.2
+        },
+        "Italiano": {
+          "qty": 140,
+          "rev": 26848.75
+        },
+        "Otros cursos": {
+          "qty": 37,
+          "rev": 4370.3
+        },
+        "Intensivos (otros)": {
+          "qty": 20,
+          "rev": 3860.45
+        }
+      },
+      "provinces": {
+        "Córdoba": {
+          "orders": 12,
+          "rev": 2496.6
+        },
+        "Málaga": {
+          "orders": 215,
+          "rev": 47838.1
+        },
+        "Madrid": {
+          "orders": 271,
+          "rev": 59639.3
+        },
+        "Valencia": {
+          "orders": 24,
+          "rev": 5521.35
+        },
+        "Ciudad Real": {
+          "orders": 10,
+          "rev": 1912.45
+        },
+        "Barcelona": {
+          "orders": 31,
+          "rev": 7043.9
+        },
+        "Sevilla": {
+          "orders": 48,
+          "rev": 9730.35
+        },
+        "Toledo": {
+          "orders": 16,
+          "rev": 3399.2
+        },
+        "Baleares": {
+          "orders": 10,
+          "rev": 1992.35
+        },
+        "Bizkaia": {
+          "orders": 10,
+          "rev": 2062.25
+        },
+        "Navarra": {
+          "orders": 12,
+          "rev": 2429.3
+        },
+        "Cáceres": {
+          "orders": 5,
+          "rev": 1195.05
+        },
+        "Melilla": {
+          "orders": 5,
+          "rev": 891.85
+        },
+        "Granada": {
+          "orders": 17,
+          "rev": 3493.9
+        },
+        "Tarragona": {
+          "orders": 5,
+          "rev": 1092.45
+        },
+        "Lleida": {
+          "orders": 3,
+          "rev": 597.4
+        },
+        "Cuenca": {
+          "orders": 2,
+          "rev": 516.8
+        },
+        "S.C. Tenerife": {
+          "orders": 8,
+          "rev": 1607.8
+        },
+        "Valladolid": {
+          "orders": 19,
+          "rev": 3959.1
+        },
+        "Ávila": {
+          "orders": 3,
+          "rev": 600.95
+        },
+        "Albacete": {
+          "orders": 6,
+          "rev": 1093.05
+        },
+        "Zaragoza": {
+          "orders": 15,
+          "rev": 3153.6
+        },
+        "Jaén": {
+          "orders": 11,
+          "rev": 2231.4
+        },
+        "Burgos": {
+          "orders": 6,
+          "rev": 1326.15
+        },
+        "Palencia": {
+          "orders": 1,
+          "rev": 199.0
+        },
+        "Gipuzkoa": {
+          "orders": 5,
+          "rev": 1275.5
+        },
+        "Alicante": {
+          "orders": 31,
+          "rev": 6014.35
+        },
+        "Las Palmas": {
+          "orders": 8,
+          "rev": 1859.95
+        },
+        "Pontevedra": {
+          "orders": 9,
+          "rev": 1905.15
+        },
+        "Soria": {
+          "orders": 2,
+          "rev": 219.15
+        },
+        "Castellón": {
+          "orders": 6,
+          "rev": 1410.85
+        },
+        "Cádiz": {
+          "orders": 27,
+          "rev": 5708.6
+        },
+        "Murcia": {
+          "orders": 25,
+          "rev": 5247.9
+        },
+        "Almería": {
+          "orders": 8,
+          "rev": 1762.5
+        },
+        "Badajoz": {
+          "orders": 13,
+          "rev": 2457.05
+        },
+        "Girona": {
+          "orders": 6,
+          "rev": 1212.65
+        },
+        "Segovia": {
+          "orders": 3,
+          "rev": 737.1
+        },
+        "Cantabria": {
+          "orders": 4,
+          "rev": 833.75
+        },
+        "Ourense": {
+          "orders": 2,
+          "rev": 348.4
+        },
+        "Huelva": {
+          "orders": 2,
+          "rev": 348.4
+        },
+        "Asturias": {
+          "orders": 12,
+          "rev": 2490.15
+        },
+        "Guadalajara": {
+          "orders": 8,
+          "rev": 1767.3
+        },
+        "Salamanca": {
+          "orders": 2,
+          "rev": 353.4
+        },
+        "Lugo": {
+          "orders": 1,
+          "rev": 211.65
+        },
+        "Teruel": {
+          "orders": 3,
+          "rev": 698.4
+        },
+        "León": {
+          "orders": 4,
+          "rev": 923.7
+        },
+        "Huesca": {
+          "orders": 4,
+          "rev": 709.65
+        }
+      },
+      "demo_meta": {
+        "age": {
+          "18-24": 4709.880000000001,
+          "25-34": 9221.429999999998,
+          "35-44": 7359.980000000002,
+          "45-54": 5624.709999999999,
+          "55-64": 1971.5899999999997,
+          "65+": 959.19
+        },
+        "gender": {
+          "female": 19561.76,
+          "male": 9979.869999999999
+        }
+      },
+      "demo_google": {
+        "age": {},
+        "gender": {}
+      }
+    },
+    "2025": {
+      "label": "2025",
+      "start": "2025-01-01",
+      "end": "2025-12-31",
+      "orders": 1302,
+      "rev": 284291.3,
+      "aov": 218.35,
+      "channels": {
+        "Google Orgánico": {
+          "orders": 465,
+          "rev": 104546.8
+        },
+        "Web / Internet": {
+          "orders": 154,
+          "rev": 35096.15
+        },
+        "Instagram": {
+          "orders": 205,
+          "rev": 42895.55
+        },
+        "Referidos": {
+          "orders": 172,
+          "rev": 37061.7
+        },
+        "Directo": {
+          "orders": 206,
+          "rev": 44822.3
+        },
+        "Redes (otros)": {
+          "orders": 5,
+          "rev": 957.9
+        },
+        "Facebook": {
+          "orders": 21,
+          "rev": 4296.85
+        },
+        "WhatsApp": {
+          "orders": 47,
+          "rev": 9158.25
+        },
+        "Otros": {
+          "orders": 10,
+          "rev": 2346.55
+        },
+        "Otros buscadores": {
+          "orders": 7,
+          "rev": 1447.85
+        },
+        "Email / CRM": {
+          "orders": 7,
+          "rev": 825.3
+        },
+        "ChatGPT / IA": {
+          "orders": 3,
+          "rev": 836.1
+        }
+      },
+      "meta": {
+        "spend": 48639.45,
+        "leads": 8972,
+        "cpl": 5.42
+      },
+      "google": {
+        "spend": 0,
+        "conv": 0,
+        "clicks": 0,
+        "cpa": null
+      },
+      "products": {
+        "Alemán": {
+          "qty": 94,
+          "rev": 18930.05
+        },
+        "APTIS": {
+          "qty": 639,
+          "rev": 132615.4
+        },
+        "Cambridge": {
+          "qty": 196,
+          "rev": 53224.35
+        },
+        "Francés": {
+          "qty": 99,
+          "rev": 24681.35
+        },
+        "IELTS": {
+          "qty": 30,
+          "rev": 7500.6
+        },
+        "Italiano": {
+          "qty": 175,
+          "rev": 33897.55
+        },
+        "Otros cursos": {
+          "qty": 47,
+          "rev": 6283.2
+        },
+        "Intensivos (otros)": {
+          "qty": 34,
+          "rev": 7158.8
+        }
+      },
+      "provinces": {
+        "Córdoba": {
+          "orders": 12,
+          "rev": 2496.6
+        },
+        "Málaga": {
+          "orders": 261,
+          "rev": 59041.9
+        },
+        "Madrid": {
+          "orders": 385,
+          "rev": 85984.1
+        },
+        "Valencia": {
+          "orders": 38,
+          "rev": 8804.4
+        },
+        "Ciudad Real": {
+          "orders": 13,
+          "rev": 2603.05
+        },
+        "Barcelona": {
+          "orders": 42,
+          "rev": 9437.9
+        },
+        "Sevilla": {
+          "orders": 70,
+          "rev": 13977.5
+        },
+        "Toledo": {
+          "orders": 25,
+          "rev": 5450.6
+        },
+        "Baleares": {
+          "orders": 11,
+          "rev": 2204.0
+        },
+        "Bizkaia": {
+          "orders": 11,
+          "rev": 2311.25
+        },
+        "Navarra": {
+          "orders": 14,
+          "rev": 2927.3
+        },
+        "Cáceres": {
+          "orders": 6,
+          "rev": 1406.7
+        },
+        "Melilla": {
+          "orders": 6,
+          "rev": 1200.85
+        },
+        "Granada": {
+          "orders": 29,
+          "rev": 6086.65
+        },
+        "Tarragona": {
+          "orders": 7,
+          "rev": 1553.1
+        },
+        "Lleida": {
+          "orders": 3,
+          "rev": 597.4
+        },
+        "Cuenca": {
+          "orders": 2,
+          "rev": 516.8
+        },
+        "S.C. Tenerife": {
+          "orders": 9,
+          "rev": 1794.55
+        },
+        "Valladolid": {
+          "orders": 27,
+          "rev": 5723.1
+        },
+        "Ávila": {
+          "orders": 4,
+          "rev": 812.6
+        },
+        "Albacete": {
+          "orders": 9,
+          "rev": 1678.2
+        },
+        "Zaragoza": {
+          "orders": 21,
+          "rev": 4450.8
+        },
+        "Jaén": {
+          "orders": 17,
+          "rev": 3700.65
+        },
+        "Burgos": {
+          "orders": 8,
+          "rev": 2048.25
+        },
+        "Palencia": {
+          "orders": 3,
+          "rev": 622.3
+        },
+        "Gipuzkoa": {
+          "orders": 6,
+          "rev": 1553.6
+        },
+        "Alicante": {
+          "orders": 34,
+          "rev": 6769.0
+        },
+        "Las Palmas": {
+          "orders": 11,
+          "rev": 2574.25
+        },
+        "Pontevedra": {
+          "orders": 13,
+          "rev": 2759.25
+        },
+        "Soria": {
+          "orders": 5,
+          "rev": 829.2
+        },
+        "Castellón": {
+          "orders": 7,
+          "rev": 1622.5
+        },
+        "Cádiz": {
+          "orders": 32,
+          "rev": 6888.5
+        },
+        "Murcia": {
+          "orders": 31,
+          "rev": 6418.2
+        },
+        "Almería": {
+          "orders": 11,
+          "rev": 2550.45
+        },
+        "Badajoz": {
+          "orders": 18,
+          "rev": 3473.15
+        },
+        "Girona": {
+          "orders": 7,
+          "rev": 1424.3
+        },
+        "Segovia": {
+          "orders": 4,
+          "rev": 898.95
+        },
+        "Cantabria": {
+          "orders": 5,
+          "rev": 1034.6
+        },
+        "Ourense": {
+          "orders": 2,
+          "rev": 348.4
+        },
+        "Huelva": {
+          "orders": 3,
+          "rev": 560.05
+        },
+        "Asturias": {
+          "orders": 12,
+          "rev": 2490.15
+        },
+        "Guadalajara": {
+          "orders": 9,
+          "rev": 2016.3
+        },
+        "Salamanca": {
+          "orders": 2,
+          "rev": 353.4
+        },
+        "Lugo": {
+          "orders": 2,
+          "rev": 385.95
+        },
+        "Teruel": {
+          "orders": 5,
+          "rev": 1161.7
+        },
+        "León": {
+          "orders": 6,
+          "rev": 1309.65
+        },
+        "Huesca": {
+          "orders": 5,
+          "rev": 921.3
+        },
+        "Ceuta": {
+          "orders": 1,
+          "rev": 211.65
+        },
+        "Álava": {
+          "orders": 1,
+          "rev": 186.75
+        },
+        "A Coruña": {
+          "orders": 3,
+          "rev": 624.15
+        }
+      },
+      "demo_meta": {
+        "age": {
+          "18-24": 8130.800000000001,
+          "25-34": 14265.919999999996,
+          "35-44": 11767.680000000002,
+          "45-54": 9446.709999999997,
+          "55-64": 3416.3599999999997,
+          "65+": 1611.4700000000003
+        },
+        "gender": {
+          "female": 32352.899999999998,
+          "male": 15780.189999999999
+        }
+      },
+      "demo_google": {
+        "age": {},
+        "gender": {}
+      }
+    },
+    "2025_yoy": {
+      "label": "YoY ref 2025",
+      "start": "2024-01-01",
+      "end": "2024-12-31",
+      "orders": 1054,
+      "rev": 220837.2,
+      "aov": 209.52,
+      "channels": {
+        "Facebook": {
+          "orders": 17,
+          "rev": 3921.05
+        },
+        "Instagram": {
+          "orders": 124,
+          "rev": 25652.55
+        },
+        "WhatsApp": {
+          "orders": 131,
+          "rev": 23714.95
+        },
+        "Referidos": {
+          "orders": 156,
+          "rev": 32305.1
+        },
+        "Meta Ads": {
+          "orders": 2,
+          "rev": 458.0
+        },
+        "Google Orgánico": {
+          "orders": 414,
+          "rev": 89777.75
+        },
+        "Otros": {
+          "orders": 11,
+          "rev": 2241.25
+        },
+        "Web / Internet": {
+          "orders": 115,
+          "rev": 25887.45
+        },
+        "Directo": {
+          "orders": 77,
+          "rev": 15485.7
+        },
+        "Otros buscadores": {
+          "orders": 4,
+          "rev": 836.2
+        },
+        "Redes (otros)": {
+          "orders": 3,
+          "rev": 557.2
+        }
+      },
+      "meta": {
+        "spend": 0,
+        "leads": 0,
+        "cpl": null
+      },
+      "google": {
+        "spend": 0,
+        "conv": 0,
+        "clicks": 0,
+        "cpa": null
+      },
+      "products": {
+        "Cambridge": {
+          "qty": 175,
+          "rev": 46890.85
+        },
+        "Alemán": {
+          "qty": 89,
+          "rev": 16430.45
+        },
+        "APTIS": {
+          "qty": 424,
+          "rev": 84731.9
+        },
+        "Francés": {
+          "qty": 65,
+          "rev": 16207.1
+        },
+        "Italiano": {
+          "qty": 251,
+          "rev": 44513.35
+        },
+        "Otros cursos": {
+          "qty": 17,
+          "rev": 3918.25
+        },
+        "IELTS": {
+          "qty": 19,
+          "rev": 4493.65
+        },
+        "Intensivos (otros)": {
+          "qty": 20,
+          "rev": 3651.65
+        }
+      },
+      "provinces": {
+        "Málaga": {
+          "orders": 206,
+          "rev": 46621.4
+        },
+        "Madrid": {
+          "orders": 311,
+          "rev": 66170.35
+        },
+        "Ciudad Real": {
+          "orders": 11,
+          "rev": 2301.5
+        },
+        "A Coruña": {
+          "orders": 10,
+          "rev": 2123.75
+        },
+        "Barcelona": {
+          "orders": 49,
+          "rev": 10329.25
+        },
+        "Valencia": {
+          "orders": 39,
+          "rev": 7940.9
+        },
+        "Córdoba": {
+          "orders": 23,
+          "rev": 4714.35
+        },
+        "Salamanca": {
+          "orders": 3,
+          "rev": 611.2
+        },
+        "Bizkaia": {
+          "orders": 11,
+          "rev": 2133.85
+        },
+        "Burgos": {
+          "orders": 4,
+          "rev": 874.3
+        },
+        "Albacete": {
+          "orders": 12,
+          "rev": 2628.0
+        },
+        "S.C. Tenerife": {
+          "orders": 7,
+          "rev": 1353.5
+        },
+        "Granada": {
+          "orders": 27,
+          "rev": 5203.6
+        },
+        "Alicante": {
+          "orders": 18,
+          "rev": 3589.5
+        },
+        "Toledo": {
+          "orders": 11,
+          "rev": 2069.9
+        },
+        "Pontevedra": {
+          "orders": 6,
+          "rev": 1178.35
+        },
+        "Castellón": {
+          "orders": 8,
+          "rev": 1476.85
+        },
+        "Sevilla": {
+          "orders": 48,
+          "rev": 9267.9
+        },
+        "Guadalajara": {
+          "orders": 6,
+          "rev": 1154.5
+        },
+        "Almería": {
+          "orders": 14,
+          "rev": 2636.85
+        },
+        "Teruel": {
+          "orders": 9,
+          "rev": 1902.45
+        },
+        "Huesca": {
+          "orders": 5,
+          "rev": 1095.1
+        },
+        "Soria": {
+          "orders": 3,
+          "rev": 717.0
+        },
+        "Navarra": {
+          "orders": 11,
+          "rev": 2189.6
+        },
+        "Lleida": {
+          "orders": 8,
+          "rev": 1801.65
+        },
+        "Asturias": {
+          "orders": 12,
+          "rev": 2278.6
+        },
+        "Badajoz": {
+          "orders": 7,
+          "rev": 1483.2
+        },
+        "Cuenca": {
+          "orders": 6,
+          "rev": 1294.1
+        },
+        "Murcia": {
+          "orders": 18,
+          "rev": 3567.25
+        },
+        "Cantabria": {
+          "orders": 7,
+          "rev": 1477.3
+        },
+        "Zaragoza": {
+          "orders": 17,
+          "rev": 3350.25
+        },
+        "Las Palmas": {
+          "orders": 8,
+          "rev": 1450.95
+        },
+        "Cádiz": {
+          "orders": 21,
+          "rev": 4239.95
+        },
+        "Baleares": {
+          "orders": 8,
+          "rev": 1712.3
+        },
+        "Girona": {
+          "orders": 6,
+          "rev": 1325.85
+        },
+        "Álava": {
+          "orders": 4,
+          "rev": 736.3
+        },
+        "Jaén": {
+          "orders": 11,
+          "rev": 2197.5
+        },
+        "Gipuzkoa": {
+          "orders": 6,
+          "rev": 1135.55
+        },
+        "Melilla": {
+          "orders": 5,
+          "rev": 1125.25
+        },
+        "Lugo": {
+          "orders": 4,
+          "rev": 816.2
+        },
+        "Cáceres": {
+          "orders": 6,
+          "rev": 1182.6
+        },
+        "León": {
+          "orders": 4,
+          "rev": 706.45
+        },
+        "Valladolid": {
+          "orders": 8,
+          "rev": 1452.5
+        },
+        "Huelva": {
+          "orders": 8,
+          "rev": 1632.1
+        },
+        "Tarragona": {
+          "orders": 3,
+          "rev": 597.3
+        },
+        "Palencia": {
+          "orders": 3,
+          "rev": 577.1
+        },
+        "Ourense": {
+          "orders": 3,
+          "rev": 557.2
+        },
+        "Ávila": {
+          "orders": 1,
+          "rev": 233.1
+        },
+        "Ceuta": {
+          "orders": 1,
+          "rev": 199.0
+        },
+        "Segovia": {
+          "orders": 1,
+          "rev": 199.0
+        }
+      },
+      "demo_meta": {
+        "age": {},
+        "gender": {}
+      },
+      "demo_google": {
+        "age": {},
+        "gender": {}
+      }
+    },
+    "2024": {
+      "label": "2024",
+      "start": "2024-01-01",
+      "end": "2024-12-31",
+      "orders": 1054,
+      "rev": 220837.2,
+      "aov": 209.52,
+      "channels": {
+        "Facebook": {
+          "orders": 17,
+          "rev": 3921.05
+        },
+        "Instagram": {
+          "orders": 124,
+          "rev": 25652.55
+        },
+        "WhatsApp": {
+          "orders": 131,
+          "rev": 23714.95
+        },
+        "Referidos": {
+          "orders": 156,
+          "rev": 32305.1
+        },
+        "Meta Ads": {
+          "orders": 2,
+          "rev": 458.0
+        },
+        "Google Orgánico": {
+          "orders": 414,
+          "rev": 89777.75
+        },
+        "Otros": {
+          "orders": 11,
+          "rev": 2241.25
+        },
+        "Web / Internet": {
+          "orders": 115,
+          "rev": 25887.45
+        },
+        "Directo": {
+          "orders": 77,
+          "rev": 15485.7
+        },
+        "Otros buscadores": {
+          "orders": 4,
+          "rev": 836.2
+        },
+        "Redes (otros)": {
+          "orders": 3,
+          "rev": 557.2
+        }
+      },
+      "meta": {
+        "spend": 0,
+        "leads": 0,
+        "cpl": null
+      },
+      "google": {
+        "spend": 0,
+        "conv": 0,
+        "clicks": 0,
+        "cpa": null
+      },
+      "products": {
+        "Cambridge": {
+          "qty": 175,
+          "rev": 46890.85
+        },
+        "Alemán": {
+          "qty": 89,
+          "rev": 16430.45
+        },
+        "APTIS": {
+          "qty": 424,
+          "rev": 84731.9
+        },
+        "Francés": {
+          "qty": 65,
+          "rev": 16207.1
+        },
+        "Italiano": {
+          "qty": 251,
+          "rev": 44513.35
+        },
+        "Otros cursos": {
+          "qty": 17,
+          "rev": 3918.25
+        },
+        "IELTS": {
+          "qty": 19,
+          "rev": 4493.65
+        },
+        "Intensivos (otros)": {
+          "qty": 20,
+          "rev": 3651.65
+        }
+      },
+      "provinces": {
+        "Málaga": {
+          "orders": 206,
+          "rev": 46621.4
+        },
+        "Madrid": {
+          "orders": 311,
+          "rev": 66170.35
+        },
+        "Ciudad Real": {
+          "orders": 11,
+          "rev": 2301.5
+        },
+        "A Coruña": {
+          "orders": 10,
+          "rev": 2123.75
+        },
+        "Barcelona": {
+          "orders": 49,
+          "rev": 10329.25
+        },
+        "Valencia": {
+          "orders": 39,
+          "rev": 7940.9
+        },
+        "Córdoba": {
+          "orders": 23,
+          "rev": 4714.35
+        },
+        "Salamanca": {
+          "orders": 3,
+          "rev": 611.2
+        },
+        "Bizkaia": {
+          "orders": 11,
+          "rev": 2133.85
+        },
+        "Burgos": {
+          "orders": 4,
+          "rev": 874.3
+        },
+        "Albacete": {
+          "orders": 12,
+          "rev": 2628.0
+        },
+        "S.C. Tenerife": {
+          "orders": 7,
+          "rev": 1353.5
+        },
+        "Granada": {
+          "orders": 27,
+          "rev": 5203.6
+        },
+        "Alicante": {
+          "orders": 18,
+          "rev": 3589.5
+        },
+        "Toledo": {
+          "orders": 11,
+          "rev": 2069.9
+        },
+        "Pontevedra": {
+          "orders": 6,
+          "rev": 1178.35
+        },
+        "Castellón": {
+          "orders": 8,
+          "rev": 1476.85
+        },
+        "Sevilla": {
+          "orders": 48,
+          "rev": 9267.9
+        },
+        "Guadalajara": {
+          "orders": 6,
+          "rev": 1154.5
+        },
+        "Almería": {
+          "orders": 14,
+          "rev": 2636.85
+        },
+        "Teruel": {
+          "orders": 9,
+          "rev": 1902.45
+        },
+        "Huesca": {
+          "orders": 5,
+          "rev": 1095.1
+        },
+        "Soria": {
+          "orders": 3,
+          "rev": 717.0
+        },
+        "Navarra": {
+          "orders": 11,
+          "rev": 2189.6
+        },
+        "Lleida": {
+          "orders": 8,
+          "rev": 1801.65
+        },
+        "Asturias": {
+          "orders": 12,
+          "rev": 2278.6
+        },
+        "Badajoz": {
+          "orders": 7,
+          "rev": 1483.2
+        },
+        "Cuenca": {
+          "orders": 6,
+          "rev": 1294.1
+        },
+        "Murcia": {
+          "orders": 18,
+          "rev": 3567.25
+        },
+        "Cantabria": {
+          "orders": 7,
+          "rev": 1477.3
+        },
+        "Zaragoza": {
+          "orders": 17,
+          "rev": 3350.25
+        },
+        "Las Palmas": {
+          "orders": 8,
+          "rev": 1450.95
+        },
+        "Cádiz": {
+          "orders": 21,
+          "rev": 4239.95
+        },
+        "Baleares": {
+          "orders": 8,
+          "rev": 1712.3
+        },
+        "Girona": {
+          "orders": 6,
+          "rev": 1325.85
+        },
+        "Álava": {
+          "orders": 4,
+          "rev": 736.3
+        },
+        "Jaén": {
+          "orders": 11,
+          "rev": 2197.5
+        },
+        "Gipuzkoa": {
+          "orders": 6,
+          "rev": 1135.55
+        },
+        "Melilla": {
+          "orders": 5,
+          "rev": 1125.25
+        },
+        "Lugo": {
+          "orders": 4,
+          "rev": 816.2
+        },
+        "Cáceres": {
+          "orders": 6,
+          "rev": 1182.6
+        },
+        "León": {
+          "orders": 4,
+          "rev": 706.45
+        },
+        "Valladolid": {
+          "orders": 8,
+          "rev": 1452.5
+        },
+        "Huelva": {
+          "orders": 8,
+          "rev": 1632.1
+        },
+        "Tarragona": {
+          "orders": 3,
+          "rev": 597.3
+        },
+        "Palencia": {
+          "orders": 3,
+          "rev": 577.1
+        },
+        "Ourense": {
+          "orders": 3,
+          "rev": 557.2
+        },
+        "Ávila": {
+          "orders": 1,
+          "rev": 233.1
+        },
+        "Ceuta": {
+          "orders": 1,
+          "rev": 199.0
+        },
+        "Segovia": {
+          "orders": 1,
+          "rev": 199.0
+        }
+      },
+      "demo_meta": {
+        "age": {},
+        "gender": {}
+      },
+      "demo_google": {
+        "age": {},
+        "gender": {}
+      }
+    },
+    "2024_yoy": {
+      "label": "YoY ref 2024",
+      "start": "2023-01-01",
+      "end": "2023-12-31",
+      "orders": 0,
+      "rev": 0,
+      "aov": 0,
+      "channels": {},
+      "meta": {
+        "spend": 0,
+        "leads": 0,
+        "cpl": null
+      },
+      "google": {
+        "spend": 0,
+        "conv": 0,
+        "clicks": 0,
+        "cpa": null
+      },
+      "products": {},
+      "provinces": {},
+      "demo_meta": {
+        "age": {},
+        "gender": {}
+      },
+      "demo_google": {
+        "age": {},
+        "gender": {}
+      }
+    }
+  },
+  "buyerProfile": {
+    "period": "2025–26",
+    "n_orders": 904,
+    "aov": 232.11,
+    "top_product": "APTIS",
+    "product_mix": [
+      {
+        "family": "APTIS",
+        "orders": 401,
+        "rev": 85984.74999999975
+      },
+      {
+        "family": "Cambridge",
+        "orders": 190,
+        "rev": 51128.55000000012
+      },
+      {
+        "family": "Francés",
+        "orders": 94,
+        "rev": 23229.650000000012
+      },
+      {
+        "family": "Otros",
+        "orders": 79,
+        "rev": 18101.399999999994
+      },
+      {
+        "family": "Italiano",
+        "orders": 87,
+        "rev": 17829.299999999996
+      },
+      {
+        "family": "Alemán",
+        "orders": 64,
+        "rev": 13555.049999999994
+      }
+    ],
+    "top_provinces": [
+      {
+        "code": "M",
+        "orders": 287
+      },
+      {
+        "code": "MA",
+        "orders": 164
+      },
+      {
+        "code": "SE",
+        "orders": 53
+      },
+      {
+        "code": "B",
+        "orders": 34
+      },
+      {
+        "code": "V",
+        "orders": 33
+      }
+    ],
+    "geo_primary": "Madrid + Málaga (presencial y online)",
+    "age_primary": [
+      {
+        "band": "25-34",
+        "share_pct": 27.7
+      },
+      {
+        "band": "35-44",
+        "share_pct": 23.9
+      },
+      {
+        "band": "45-54",
+        "share_pct": 21.3
+      }
+    ],
+    "gender_primary": [
+      {
+        "g": "female",
+        "share_pct": 69.8
+      },
+      {
+        "g": "male",
+        "share_pct": 30.2
+      }
+    ],
+    "persona": {
+      "title": "Profesional 25–44 en Madrid o Málaga",
+      "summary": "Busca certificación oficial (APTIS o Cambridge) en modalidad online o intensiva presencial. Decide en 1–4 semanas tras formulario Meta o búsqueda Google. Ticket medio ~235 €.",
+      "motivations": [
+        "Certificación laboral/oposición",
+        "Intensivo antes de convocatoria",
+        "Flexibilidad online"
+      ],
+      "channels": [
+        "Google orgánico + Ads",
+        "Instagram (descubrimiento)",
+        "Formulario Meta Lead Ads"
+      ]
+    },
+    "meta_lead_buyer": {
+      "conv_pct": 2.15,
+      "cac": 290.79,
+      "median_lag_days": 6
+    }
+  },
+  "plan": {
+    "title": "Plan marketing 2026–27 · Simulador",
+    "schoolYear": "2026–27",
+    "defaults": {
+      "monthlyBudget": 3700,
+      "isrPct": 50,
+      "crPct": 3.5,
+      "aov": 235,
+      "mgmtFee": 900
+    },
+    "assumptions": {
+      "isrDoc": "Impression share / alcance: métrica_activa = métrica_100% × (ISR/100). Igual que propuesta Belyre.",
+      "crDoc": "CR efectivo baja levemente al subir ISR (saturación). CR base aplica al ISR recomendado (50%).",
+      "searchDoc": "Volúmenes de búsqueda modelados (demanda addressable) a partir de histórico Google + mix producto BPS. Editables."
+    },
+    "products": [
+      {
+        "id": "aptis",
+        "label": "APTIS",
+        "enabled": true,
+        "budgetShare": 0.38,
+        "monthlySearches": 14800,
+        "ctr": 0.042,
+        "cpc": 1.15,
+        "crLead": 0.035,
+        "crOrder": 0.028,
+        "aov": 210,
+        "seasonality": [
+          1.0,
+          0.9,
+          1.1,
+          1.2,
+          1.0,
+          0.8,
+          0.7,
+          0.75,
+          1.3,
+          1.2,
+          1.0,
+          0.95
+        ]
+      },
+      {
+        "id": "cambridge",
+        "label": "Cambridge (B2/C1)",
+        "enabled": true,
+        "budgetShare": 0.22,
+        "monthlySearches": 9200,
+        "ctr": 0.038,
+        "cpc": 1.35,
+        "crLead": 0.03,
+        "crOrder": 0.025,
+        "aov": 280,
+        "seasonality": [
+          1.0,
+          0.85,
+          1.0,
+          1.15,
+          1.1,
+          0.75,
+          0.65,
+          0.7,
+          1.35,
+          1.25,
+          1.05,
+          0.9
+        ]
+      },
+      {
+        "id": "italiano",
+        "label": "Italiano / otros idiomas",
+        "enabled": true,
+        "budgetShare": 0.08,
+        "monthlySearches": 4100,
+        "ctr": 0.032,
+        "cpc": 0.95,
+        "crLead": 0.028,
+        "crOrder": 0.022,
+        "aov": 195,
+        "seasonality": [
+          0.9,
+          0.9,
+          1.0,
+          1.0,
+          1.0,
+          0.8,
+          0.7,
+          0.8,
+          1.1,
+          1.0,
+          0.95,
+          0.85
+        ]
+      },
+      {
+        "id": "intensivos",
+        "label": "Intensivos verano",
+        "enabled": false,
+        "budgetShare": 0.05,
+        "monthlySearches": 2800,
+        "ctr": 0.045,
+        "cpc": 1.05,
+        "crLead": 0.04,
+        "crOrder": 0.032,
+        "aov": 320,
+        "seasonality": [
+          0.5,
+          0.5,
+          0.6,
+          0.8,
+          1.0,
+          1.4,
+          1.6,
+          1.5,
+          1.2,
+          0.7,
+          0.5,
+          0.4
+        ]
+      },
+      {
+        "id": "particulares",
+        "label": "Clases particulares / 1to1",
+        "enabled": true,
+        "budgetShare": 0.07,
+        "monthlySearches": 3600,
+        "ctr": 0.035,
+        "cpc": 1.25,
+        "crLead": 0.032,
+        "crOrder": 0.02,
+        "aov": 240,
+        "seasonality": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          0.9,
+          0.8,
+          0.85,
+          1.15,
+          1.1,
+          1.0,
+          0.95
+        ]
+      }
+    ],
+    "channels": [
+      {
+        "id": "google_pmax",
+        "label": "Google PMax Certificados",
+        "type": "google",
+        "enabled": true,
+        "budgetShare": 0.28,
+        "minBudget": 400,
+        "isrDefault": 50,
+        "products": [
+          "aptis",
+          "cambridge"
+        ]
+      },
+      {
+        "id": "google_brand",
+        "label": "Google Brand Search",
+        "type": "google",
+        "enabled": true,
+        "budgetShare": 0.08,
+        "minBudget": 150,
+        "isrDefault": 90,
+        "products": [
+          "aptis",
+          "cambridge",
+          "italiano",
+          "particulares"
+        ]
+      },
+      {
+        "id": "meta_cert",
+        "label": "Meta · Certificados (CBO)",
+        "type": "meta",
+        "enabled": true,
+        "budgetShare": 0.35,
+        "minBudget": 600,
+        "isrDefault": 40,
+        "products": [
+          "aptis",
+          "cambridge"
+        ]
+      },
+      {
+        "id": "meta_acad",
+        "label": "Meta · Academias Madrid/Málaga",
+        "type": "meta",
+        "enabled": true,
+        "budgetShare": 0.12,
+        "minBudget": 200,
+        "isrDefault": 35,
+        "products": [
+          "cambridge",
+          "particulares"
+        ]
+      },
+      {
+        "id": "meta_retarget",
+        "label": "Meta · Remarketing leads",
+        "type": "meta",
+        "enabled": true,
+        "budgetShare": 0.1,
+        "minBudget": 150,
+        "isrDefault": 60,
+        "products": [
+          "aptis",
+          "cambridge",
+          "particulares"
+        ]
+      },
+      {
+        "id": "seo",
+        "label": "SEO / contenido orgánico",
+        "type": "organic",
+        "enabled": true,
+        "budgetShare": 0.04,
+        "minBudget": 0,
+        "isrDefault": 100,
+        "products": [
+          "aptis",
+          "cambridge",
+          "italiano"
+        ]
+      },
+      {
+        "id": "referidos",
+        "label": "Programa referidos",
+        "type": "organic",
+        "enabled": true,
+        "budgetShare": 0.03,
+        "minBudget": 0,
+        "isrDefault": 100,
+        "products": [
+          "aptis",
+          "cambridge",
+          "italiano",
+          "particulares"
+        ]
+      }
+    ],
+    "actions": [
+      {
+        "month": "2025-09",
+        "actions": [
+          "UTM en todas las creatividades Meta",
+          "Remarketing formularios sin compra (30d)",
+          "Escalar PMax APTIS +20%"
+        ]
+      },
+      {
+        "month": "2025-10",
+        "actions": [
+          "Campaña Cambridge intensivo Q4",
+          "Test formulario cualificado (curso+modalidad)",
+          "SEO landings APTIS convocatoria"
+        ]
+      },
+      {
+        "month": "2025-11",
+        "actions": [
+          "Pausar audiencias frías ACADEMIAS sin lead→cliente",
+          "Google Brand always-on",
+          "Email nurture leads Meta D+3/D+7/D+14"
+        ]
+      },
+      {
+        "month": "2025-12",
+        "actions": [
+          "Promo matrículas enero",
+          "Meta MOFU certificados",
+          "Review negativos Search"
+        ]
+      },
+      {
+        "month": "2026-01",
+        "actions": [
+          "Pico convocatoria APTIS — subir ISR PMax a 60%",
+          "Landing modalidad online vs presencial",
+          "Referidos alumnos activos"
+        ]
+      },
+      {
+        "month": "2026-02",
+        "actions": [
+          "Cambridge B2 cohorte febrero",
+          "Reducir CPL Meta cualificando campos",
+          "Informe cruce lead→WC mensual"
+        ]
+      },
+      {
+        "month": "2026-03",
+        "actions": [
+          "Intensivos primavera — activar producto verano en simulador",
+          "Meta Advantage+ certificados",
+          "Google PMax italiano/alemán test"
+        ]
+      },
+      {
+        "month": "2026-04",
+        "actions": [
+          "Convocatoria APTIS abril — push orgánico + paid",
+          "WhatsApp SLA <2h post-lead",
+          "Geo Madrid vs Málaga presupuesto split"
+        ]
+      },
+      {
+        "month": "2026-05",
+        "actions": [
+          "Formulario 10-Mayo pattern replicado",
+          "Escalar lo que ROAS>1 en Google",
+          "Pausar campañas Meta CAC>350€"
+        ]
+      },
+      {
+        "month": "2026-06",
+        "actions": [
+          "Intensivos verano — activar canal intensivos",
+          "Remarketing carrito WC",
+          "Contenido social prueba de nivel"
+        ]
+      },
+      {
+        "month": "2026-07",
+        "actions": [
+          "1to1 + plataforma push",
+          "Reducir spend en julio (-20%) manteniendo Brand",
+          "Prep campaña septiembre academias"
+        ]
+      },
+      {
+        "month": "2026-08",
+        "actions": [
+          "Cierre año académico — informe ROI por canal",
+          "Planificación SY 2026–27",
+          "Reset audiencias Meta"
+        ]
+      }
+    ],
+    "historical_ref": {
+      "2025_orders": 1302,
+      "2025_rev": 284291.3,
+      "sy2526_orders": 904,
+      "sy2526_rev": 210288.75
+    }
+  }
+}

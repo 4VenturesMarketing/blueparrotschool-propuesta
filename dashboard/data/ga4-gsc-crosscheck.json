@@ -1,0 +1,252 @@
+{
+  "gsc": {
+    "24-25": {
+      "clicks": 24196,
+      "impressions": 1436219,
+      "by_device": [
+        {
+          "keys": [
+            "MOBILE"
+          ],
+          "clicks": 12690,
+          "impressions": 677903,
+          "ctr": 0.018719492316747383,
+          "position": 15.12790472973272
+        },
+        {
+          "keys": [
+            "DESKTOP"
+          ],
+          "clicks": 11071,
+          "impressions": 744927,
+          "ctr": 0.01486185894725255,
+          "position": 26.98165592064726
+        },
+        {
+          "keys": [
+            "TABLET"
+          ],
+          "clicks": 435,
+          "impressions": 13389,
+          "ctr": 0.03248935693479722,
+          "position": 7.143401299574277
+        }
+      ]
+    },
+    "25-26": {
+      "clicks": 47744,
+      "impressions": 2904709,
+      "by_device": [
+        {
+          "keys": [
+            "DESKTOP"
+          ],
+          "clicks": 24554,
+          "impressions": 1233190,
+          "ctr": 0.019910962625386195,
+          "position": 13.793388691118157
+        },
+        {
+          "keys": [
+            "MOBILE"
+          ],
+          "clicks": 22145,
+          "impressions": 1624552,
+          "ctr": 0.013631450393708543,
+          "position": 8.453722626299434
+        },
+        {
+          "keys": [
+            "TABLET"
+          ],
+          "clicks": 1045,
+          "impressions": 46967,
+          "ctr": 0.022249664658164244,
+          "position": 7.663423254625588
+        }
+      ]
+    },
+    "top_queries_2526": [
+      {
+        "keys": [
+          "blue parrot school"
+        ],
+        "clicks": 2280,
+        "impressions": 5580,
+        "ctr": 0.40860215053763443,
+        "position": 1.6261648745519715
+      },
+      {
+        "keys": [
+          "blue parrot"
+        ],
+        "clicks": 871,
+        "impressions": 5945,
+        "ctr": 0.14650967199327167,
+        "position": 4.4053826745164
+      },
+      {
+        "keys": [
+          "blue parrot school madrid"
+        ],
+        "clicks": 529,
+        "impressions": 1970,
+        "ctr": 0.2685279187817259,
+        "position": 1.9705583756345177
+      },
+      {
+        "keys": [
+          "blueparrot"
+        ],
+        "clicks": 441,
+        "impressions": 1531,
+        "ctr": 0.2880470280862182,
+        "position": 2.78314826910516
+      },
+      {
+        "keys": [
+          "blue parrot malaga"
+        ],
+        "clicks": 219,
+        "impressions": 1036,
+        "ctr": 0.21138996138996138,
+        "position": 1.8542471042471043
+      },
+      {
+        "keys": [
+          "blueparrotschool"
+        ],
+        "clicks": 204,
+        "impressions": 416,
+        "ctr": 0.49038461538461536,
+        "position": 1.4855769230769231
+      },
+      {
+        "keys": [
+          "aptis simulator"
+        ],
+        "clicks": 187,
+        "impressions": 6704,
+        "ctr": 0.02789379474940334,
+        "position": 5.8408412887828165
+      },
+      {
+        "keys": [
+          "listening aptis"
+        ],
+        "clicks": 187,
+        "impressions": 3215,
+        "ctr": 0.05816485225505443,
+        "position": 7.296423017107309
+      },
+      {
+        "keys": [
+          "aptis prueba de nivel"
+        ],
+        "clicks": 158,
+        "impressions": 920,
+        "ctr": 0.17173913043478262,
+        "position": 2.3706521739130437
+      },
+      {
+        "keys": [
+          "blue parrot school malaga"
+        ],
+        "clicks": 147,
+        "impressions": 872,
+        "ctr": 0.16857798165137614,
+        "position": 1.81651376146789
+      },
+      {
+        "keys": [
+          "frutas en frances"
+        ],
+        "clicks": 139,
+        "impressions": 11141,
+        "ctr": 0.012476438380755767,
+        "position": 5.656763306704963
+      },
+      {
+        "keys": [
+          "examenes aptis practicar"
+        ],
+        "clicks": 135,
+        "impressions": 3082,
+        "ctr": 0.04380272550292018,
+        "position": 6.990590525632706
+      },
+      {
+        "keys": [
+          "ejercicios c1 ingles"
+        ],
+        "clicks": 115,
+        "impressions": 1894,
+        "ctr": 0.06071805702217529,
+        "position": 6.8231256599788805
+      },
+      {
+        "keys": [
+          "blue parrot madrid"
+        ],
+        "clicks": 110,
+        "impressions": 382,
+        "ctr": 0.2879581151832461,
+        "position": 1.7486910994764397
+      },
+      {
+        "keys": [
+          "prueba de nivel aptis"
+        ],
+        "clicks": 105,
+        "impressions": 457,
+        "ctr": 0.22975929978118162,
+        "position": 2.24945295404814
+      },
+      {
+        "keys": [
+          "examen aptis online"
+        ],
+        "clicks": 102,
+        "impressions": 2234,
+        "ctr": 0.045658012533572066,
+        "position": 4.5353625783348255
+      },
+      {
+        "keys": [
+          "aptis examen practicar"
+        ],
+        "clicks": 101,
+        "impressions": 2520,
+        "ctr": 0.04007936507936508,
+        "position": 6.305952380952381
+      },
+      {
+        "keys": [
+          "reading aptis"
+        ],
+        "clicks": 94,
+        "impressions": 1288,
+        "ctr": 0.07298136645962733,
+        "position": 6.991459627329193
+      },
+      {
+        "keys": [
+          "frases en italiano"
+        ],
+        "clicks": 92,
+        "impressions": 9270,
+        "ctr": 0.009924487594390506,
+        "position": 7.378532901833872
+      },
+      {
+        "keys": [
+          "gestos italianos"
+        ],
+        "clicks": 92,
+        "impressions": 2307,
+        "ctr": 0.03987863025574339,
+        "position": 4.557867360208062
+      }
+    ]
+  }
+}

@@ -1,0 +1,362 @@
+{
+  "parser": "robust multi-format",
+  "sy-2024-25": {
+    "orders": 1285,
+    "parsed": 1237,
+    "parsed_pct": 96.3,
+    "no_key": 47,
+    "fail": 1,
+    "methods": {
+      "year_only_mid": 1,
+      "ddmmyyyy": 1202,
+      "dd_mm_yyyy": 23,
+      "mmddyyyy": 2,
+      "d_month_yyyy": 4,
+      "strptime_%d/%m/%y": 4,
+      "yyyymmdd": 1
+    },
+    "fails": {
+      "fail:24/0/1993": 1
+    },
+    "via_ok": {
+      "checkout": 1237
+    },
+    "via_miss": {
+      "store-api": 47,
+      "checkout": 1
+    },
+    "age": {
+      "18-24": {
+        "orders": 542,
+        "rev": 120859.8
+      },
+      "25-34": {
+        "orders": 435,
+        "rev": 90871.05
+      },
+      "55-64": {
+        "orders": 12,
+        "rev": 2648.95
+      },
+      "sin fecha": {
+        "orders": 48,
+        "rev": 10662.55
+      },
+      "35-44": {
+        "orders": 157,
+        "rev": 32738.85
+      },
+      "45-54": {
+        "orders": 68,
+        "rev": 13855.75
+      },
+      "<18": {
+        "orders": 22,
+        "rev": 4976.0
+      },
+      "65+": {
+        "orders": 1,
+        "rev": 169.15
+      }
+    },
+    "recovered_examples": [
+      {
+        "raw": "2001",
+        "parsed": "2001-07-01",
+        "how": "year_only_mid",
+        "id": 17846
+      },
+      {
+        "raw": "08/07/2005",
+        "parsed": "2005-07-08",
+        "how": "ddmmyyyy",
+        "id": 17845
+      },
+      {
+        "raw": "17/06/1991",
+        "parsed": "1991-06-17",
+        "how": "ddmmyyyy",
+        "id": 17842
+      },
+      {
+        "raw": "11/08/2001",
+        "parsed": "2001-08-11",
+        "how": "ddmmyyyy",
+        "id": 17841
+      },
+      {
+        "raw": "08/03/1997",
+        "parsed": "1997-03-08",
+        "how": "ddmmyyyy",
+        "id": 17839
+      },
+      {
+        "raw": "22/07/1999",
+        "parsed": "1999-07-22",
+        "how": "ddmmyyyy",
+        "id": 17838
+      },
+      {
+        "raw": "23/06/1969",
+        "parsed": "1969-06-23",
+        "how": "ddmmyyyy",
+        "id": 17837
+      },
+      {
+        "raw": "18/09/2003",
+        "parsed": "2003-09-18",
+        "how": "ddmmyyyy",
+        "id": 17836
+      },
+      {
+        "raw": "22/07/2003",
+        "parsed": "2003-07-22",
+        "how": "ddmmyyyy",
+        "id": 17831
+      },
+      {
+        "raw": "17/05/2003",
+        "parsed": "2003-05-17",
+        "how": "ddmmyyyy",
+        "id": 17830
+      },
+      {
+        "raw": "30/03/1982",
+        "parsed": "1982-03-30",
+        "how": "ddmmyyyy",
+        "id": 17829
+      },
+      {
+        "raw": "01071983",
+        "parsed": "1983-07-01",
+        "how": "ddmmyyyy",
+        "id": 17828
+      },
+      {
+        "raw": "12121972",
+        "parsed": "1972-12-12",
+        "how": "ddmmyyyy",
+        "id": 17827
+      },
+      {
+        "raw": "10/10/2002",
+        "parsed": "2002-10-10",
+        "how": "ddmmyyyy",
+        "id": 17826
+      },
+      {
+        "raw": "24/05/1987",
+        "parsed": "1987-05-24",
+        "how": "ddmmyyyy",
+        "id": 17825
+      },
+      {
+        "raw": "18/05/1971",
+        "parsed": "1971-05-18",
+        "how": "ddmmyyyy",
+        "id": 17818
+      },
+      {
+        "raw": "05/01/1999",
+        "parsed": "1999-01-05",
+        "how": "ddmmyyyy",
+        "id": 17816
+      },
+      {
+        "raw": "22/04/2003",
+        "parsed": "2003-04-22",
+        "how": "ddmmyyyy",
+        "id": 17786
+      },
+      {
+        "raw": "18/12/2000",
+        "parsed": "2000-12-18",
+        "how": "ddmmyyyy",
+        "id": 17785
+      },
+      {
+        "raw": "23/06/2003",
+        "parsed": "2003-06-23",
+        "how": "ddmmyyyy",
+        "id": 17784
+      }
+    ]
+  },
+  "sy-2025-26": {
+    "orders": 904,
+    "parsed": 778,
+    "parsed_pct": 86.1,
+    "no_key": 126,
+    "fail": 0,
+    "methods": {
+      "ddmmyyyy": 755,
+      "d_month_yyyy": 3,
+      "dd_mm_yyyy": 15,
+      "strptime_%d/%m/%y": 4,
+      "strptime_%d/%m/%Y": 1
+    },
+    "fails": {},
+    "via_ok": {
+      "checkout": 778
+    },
+    "via_miss": {
+      "store-api": 126
+    },
+    "age": {
+      "25-34": {
+        "orders": 237,
+        "rev": 56554.4
+      },
+      "45-54": {
+        "orders": 66,
+        "rev": 14934.4
+      },
+      "sin fecha": {
+        "orders": 126,
+        "rev": 29448.25
+      },
+      "18-24": {
+        "orders": 347,
+        "rev": 80702.6
+      },
+      "35-44": {
+        "orders": 97,
+        "rev": 21222.2
+      },
+      "<18": {
+        "orders": 14,
+        "rev": 3178.1
+      },
+      "55-64": {
+        "orders": 15,
+        "rev": 3309.8
+      },
+      "65+": {
+        "orders": 2,
+        "rev": 478.95
+      }
+    },
+    "recovered_examples": [
+      {
+        "raw": "22/07/1995",
+        "parsed": "1995-07-22",
+        "how": "ddmmyyyy",
+        "id": 22484
+      },
+      {
+        "raw": "02/01/1975",
+        "parsed": "1975-01-02",
+        "how": "ddmmyyyy",
+        "id": 22483
+      },
+      {
+        "raw": "07/02/1998",
+        "parsed": "1998-02-07",
+        "how": "ddmmyyyy",
+        "id": 22475
+      },
+      {
+        "raw": "15/09/2005",
+        "parsed": "2005-09-15",
+        "how": "ddmmyyyy",
+        "id": 22473
+      },
+      {
+        "raw": "09 enero 1983",
+        "parsed": "1983-01-09",
+        "how": "d_month_yyyy",
+        "id": 22470
+      },
+      {
+        "raw": "08/12/1994",
+        "parsed": "1994-12-08",
+        "how": "ddmmyyyy",
+        "id": 22464
+      },
+      {
+        "raw": "08/12/1994",
+        "parsed": "1994-12-08",
+        "how": "ddmmyyyy",
+        "id": 22463
+      },
+      {
+        "raw": "23/06/1994",
+        "parsed": "1994-06-23",
+        "how": "ddmmyyyy",
+        "id": 22459
+      },
+      {
+        "raw": "25/08/1990",
+        "parsed": "1990-08-25",
+        "how": "ddmmyyyy",
+        "id": 22447
+      },
+      {
+        "raw": "31/03/1980",
+        "parsed": "1980-03-31",
+        "how": "ddmmyyyy",
+        "id": 22443
+      },
+      {
+        "raw": "06-08-1987",
+        "parsed": "1987-08-06",
+        "how": "ddmmyyyy",
+        "id": 22432
+      },
+      {
+        "raw": "20/11/2006",
+        "parsed": "2006-11-20",
+        "how": "ddmmyyyy",
+        "id": 22409
+      },
+      {
+        "raw": "04/12/2005",
+        "parsed": "2005-12-04",
+        "how": "ddmmyyyy",
+        "id": 22407
+      },
+      {
+        "raw": "20/06/2005",
+        "parsed": "2005-06-20",
+        "how": "ddmmyyyy",
+        "id": 22406
+      },
+      {
+        "raw": "21/07/2026",
+        "parsed": "2026-07-21",
+        "how": "ddmmyyyy",
+        "id": 22405
+      },
+      {
+        "raw": "16/01/2005",
+        "parsed": "2005-01-16",
+        "how": "ddmmyyyy",
+        "id": 22402
+      },
+      {
+        "raw": "12/12/1988",
+        "parsed": "1988-12-12",
+        "how": "ddmmyyyy",
+        "id": 22398
+      },
+      {
+        "raw": "24/01/2003",
+        "parsed": "2003-01-24",
+        "how": "ddmmyyyy",
+        "id": 22389
+      },
+      {
+        "raw": "21/04/2003",
+        "parsed": "2003-04-21",
+        "how": "ddmmyyyy",
+        "id": 22388
+      },
+      {
+        "raw": "30/05/2007",
+        "parsed": "2007-05-30",
+        "how": "ddmmyyyy",
+        "id": 22374
+      }
+    ]
+  }
+}

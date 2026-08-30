@@ -1,0 +1,1433 @@
+{
+  "all": [
+    {
+      "ym": "2026-02",
+      "first": {
+        "year": 2026,
+        "month": 2,
+        "day": 8
+      },
+      "last": {
+        "year": 2026,
+        "month": 3,
+        "day": 7
+      },
+      "largest_contentful_paint": 8772,
+      "lcp_poor_share": 0.8038,
+      "interaction_to_next_paint": 118,
+      "cumulative_layout_shift": 0.13,
+      "experimental_time_to_first_byte": 4065,
+      "first_contentful_paint": 7684
+    },
+    {
+      "ym": "2026-02",
+      "first": {
+        "year": 2026,
+        "month": 2,
+        "day": 15
+      },
+      "last": {
+        "year": 2026,
+        "month": 3,
+        "day": 14
+      },
+      "largest_contentful_paint": 8923,
+      "lcp_poor_share": 0.8031,
+      "interaction_to_next_paint": 119,
+      "cumulative_layout_shift": 0.14,
+      "experimental_time_to_first_byte": 4258,
+      "first_contentful_paint": 7729
+    },
+    {
+      "ym": "2026-02",
+      "first": {
+        "year": 2026,
+        "month": 2,
+        "day": 22
+      },
+      "last": {
+        "year": 2026,
+        "month": 3,
+        "day": 21
+      },
+      "largest_contentful_paint": 8842,
+      "lcp_poor_share": 0.8061,
+      "interaction_to_next_paint": 123,
+      "cumulative_layout_shift": 0.15,
+      "experimental_time_to_first_byte": 4249,
+      "first_contentful_paint": 7640
+    },
+    {
+      "ym": "2026-03",
+      "first": {
+        "year": 2026,
+        "month": 3,
+        "day": 1
+      },
+      "last": {
+        "year": 2026,
+        "month": 3,
+        "day": 28
+      },
+      "largest_contentful_paint": 9129,
+      "lcp_poor_share": 0.8313,
+      "interaction_to_next_paint": 127,
+      "cumulative_layout_shift": 0.16,
+      "experimental_time_to_first_byte": 4420,
+      "first_contentful_paint": 7862
+    },
+    {
+      "ym": "2026-03",
+      "first": {
+        "year": 2026,
+        "month": 3,
+        "day": 8
+      },
+      "last": {
+        "year": 2026,
+        "month": 4,
+        "day": 4
+      },
+      "largest_contentful_paint": 9635,
+      "lcp_poor_share": 0.8554,
+      "interaction_to_next_paint": 125,
+      "cumulative_layout_shift": 0.19,
+      "experimental_time_to_first_byte": 5119,
+      "first_contentful_paint": 8548
+    },
+    {
+      "ym": "2026-03",
+      "first": {
+        "year": 2026,
+        "month": 3,
+        "day": 15
+      },
+      "last": {
+        "year": 2026,
+        "month": 4,
+        "day": 11
+      },
+      "largest_contentful_paint": 9326,
+      "lcp_poor_share": 0.8469,
+      "interaction_to_next_paint": 132,
+      "cumulative_layout_shift": 0.16,
+      "experimental_time_to_first_byte": 4810,
+      "first_contentful_paint": 8263
+    },
+    {
+      "ym": "2026-03",
+      "first": {
+        "year": 2026,
+        "month": 3,
+        "day": 22
+      },
+      "last": {
+        "year": 2026,
+        "month": 4,
+        "day": 18
+      },
+      "largest_contentful_paint": 9585,
+      "lcp_poor_share": 0.8596,
+      "interaction_to_next_paint": 131,
+      "cumulative_layout_shift": 0.15,
+      "experimental_time_to_first_byte": 4983,
+      "first_contentful_paint": 8528
+    },
+    {
+      "ym": "2026-03",
+      "first": {
+        "year": 2026,
+        "month": 3,
+        "day": 29
+      },
+      "last": {
+        "year": 2026,
+        "month": 4,
+        "day": 25
+      },
+      "largest_contentful_paint": 9253,
+      "lcp_poor_share": 0.8311,
+      "interaction_to_next_paint": 126,
+      "cumulative_layout_shift": 0.13,
+      "experimental_time_to_first_byte": 4764,
+      "first_contentful_paint": 8263
+    },
+    {
+      "ym": "2026-04",
+      "first": {
+        "year": 2026,
+        "month": 4,
+        "day": 5
+      },
+      "last": {
+        "year": 2026,
+        "month": 5,
+        "day": 2
+      },
+      "largest_contentful_paint": 8915,
+      "lcp_poor_share": 0.82,
+      "interaction_to_next_paint": 133,
+      "cumulative_layout_shift": 0.09,
+      "experimental_time_to_first_byte": 4540,
+      "first_contentful_paint": 8012
+    },
+    {
+      "ym": "2026-04",
+      "first": {
+        "year": 2026,
+        "month": 4,
+        "day": 12
+      },
+      "last": {
+        "year": 2026,
+        "month": 5,
+        "day": 9
+      },
+      "largest_contentful_paint": 9201,
+      "lcp_poor_share": 0.8314,
+      "interaction_to_next_paint": 132,
+      "cumulative_layout_shift": 0.09,
+      "experimental_time_to_first_byte": 4703,
+      "first_contentful_paint": 8255
+    },
+    {
+      "ym": "2026-04",
+      "first": {
+        "year": 2026,
+        "month": 4,
+        "day": 19
+      },
+      "last": {
+        "year": 2026,
+        "month": 5,
+        "day": 16
+      },
+      "largest_contentful_paint": 9262,
+      "lcp_poor_share": 0.8312,
+      "interaction_to_next_paint": 140,
+      "cumulative_layout_shift": 0.1,
+      "experimental_time_to_first_byte": 4763,
+      "first_contentful_paint": 8360
+    },
+    {
+      "ym": "2026-04",
+      "first": {
+        "year": 2026,
+        "month": 4,
+        "day": 26
+      },
+      "last": {
+        "year": 2026,
+        "month": 5,
+        "day": 23
+      },
+      "largest_contentful_paint": 9474,
+      "lcp_poor_share": 0.8481,
+      "interaction_to_next_paint": 173,
+      "cumulative_layout_shift": 0.09,
+      "experimental_time_to_first_byte": 4898,
+      "first_contentful_paint": 8553
+    },
+    {
+      "ym": "2026-05",
+      "first": {
+        "year": 2026,
+        "month": 5,
+        "day": 3
+      },
+      "last": {
+        "year": 2026,
+        "month": 5,
+        "day": 30
+      },
+      "largest_contentful_paint": 9514,
+      "lcp_poor_share": 0.8535,
+      "interaction_to_next_paint": 190,
+      "cumulative_layout_shift": 0.09,
+      "experimental_time_to_first_byte": 4787,
+      "first_contentful_paint": 8536
+    },
+    {
+      "ym": "2026-05",
+      "first": {
+        "year": 2026,
+        "month": 5,
+        "day": 10
+      },
+      "last": {
+        "year": 2026,
+        "month": 6,
+        "day": 6
+      },
+      "largest_contentful_paint": 9647,
+      "lcp_poor_share": 0.8636,
+      "interaction_to_next_paint": 218,
+      "cumulative_layout_shift": 0.09,
+      "experimental_time_to_first_byte": 4814,
+      "first_contentful_paint": 8609
+    },
+    {
+      "ym": "2026-05",
+      "first": {
+        "year": 2026,
+        "month": 5,
+        "day": 17
+      },
+      "last": {
+        "year": 2026,
+        "month": 6,
+        "day": 13
+      },
+      "largest_contentful_paint": 9776,
+      "lcp_poor_share": 0.8821,
+      "interaction_to_next_paint": 209,
+      "cumulative_layout_shift": 0.09,
+      "experimental_time_to_first_byte": 4767,
+      "first_contentful_paint": 8650
+    },
+    {
+      "ym": "2026-05",
+      "first": {
+        "year": 2026,
+        "month": 5,
+        "day": 24
+      },
+      "last": {
+        "year": 2026,
+        "month": 6,
+        "day": 20
+      },
+      "largest_contentful_paint": 10144,
+      "lcp_poor_share": 0.9034,
+      "interaction_to_next_paint": 191,
+      "cumulative_layout_shift": 0.1,
+      "experimental_time_to_first_byte": 4660,
+      "first_contentful_paint": 8871
+    },
+    {
+      "ym": "2026-05",
+      "first": {
+        "year": 2026,
+        "month": 5,
+        "day": 31
+      },
+      "last": {
+        "year": 2026,
+        "month": 6,
+        "day": 27
+      },
+      "largest_contentful_paint": 10218,
+      "lcp_poor_share": 0.8932,
+      "interaction_to_next_paint": 180,
+      "cumulative_layout_shift": 0.11,
+      "experimental_time_to_first_byte": 4556,
+      "first_contentful_paint": 9082
+    },
+    {
+      "ym": "2026-06",
+      "first": {
+        "year": 2026,
+        "month": 6,
+        "day": 7
+      },
+      "last": {
+        "year": 2026,
+        "month": 7,
+        "day": 4
+      },
+      "largest_contentful_paint": 9556,
+      "lcp_poor_share": 0.8662,
+      "interaction_to_next_paint": 162,
+      "cumulative_layout_shift": 0.11,
+      "experimental_time_to_first_byte": 3536,
+      "first_contentful_paint": 8362
+    },
+    {
+      "ym": "2026-06",
+      "first": {
+        "year": 2026,
+        "month": 6,
+        "day": 14
+      },
+      "last": {
+        "year": 2026,
+        "month": 7,
+        "day": 11
+      },
+      "largest_contentful_paint": 8747,
+      "lcp_poor_share": 0.8076,
+      "interaction_to_next_paint": 154,
+      "cumulative_layout_shift": 0.11,
+      "experimental_time_to_first_byte": 2445,
+      "first_contentful_paint": 7595
+    },
+    {
+      "ym": "2026-06",
+      "first": {
+        "year": 2026,
+        "month": 6,
+        "day": 21
+      },
+      "last": {
+        "year": 2026,
+        "month": 7,
+        "day": 18
+      },
+      "largest_contentful_paint": 8043,
+      "lcp_poor_share": 0.7633,
+      "interaction_to_next_paint": 143,
+      "cumulative_layout_shift": 0.1,
+      "experimental_time_to_first_byte": 1750,
+      "first_contentful_paint": 6952
+    },
+    {
+      "ym": "2026-06",
+      "first": {
+        "year": 2026,
+        "month": 6,
+        "day": 28
+      },
+      "last": {
+        "year": 2026,
+        "month": 7,
+        "day": 25
+      },
+      "largest_contentful_paint": 7492,
+      "lcp_poor_share": 0.7316,
+      "interaction_to_next_paint": 125,
+      "cumulative_layout_shift": 0.11,
+      "experimental_time_to_first_byte": 1408,
+      "first_contentful_paint": 6399
+    },
+    {
+      "ym": "2026-07",
+      "first": {
+        "year": 2026,
+        "month": 7,
+        "day": 5
+      },
+      "last": {
+        "year": 2026,
+        "month": 8,
+        "day": 1
+      },
+      "largest_contentful_paint": 7286,
+      "lcp_poor_share": 0.7156,
+      "interaction_to_next_paint": 129,
+      "cumulative_layout_shift": 0.11,
+      "experimental_time_to_first_byte": 1618,
+      "first_contentful_paint": 6128
+    },
+    {
+      "ym": "2026-07",
+      "first": {
+        "year": 2026,
+        "month": 7,
+        "day": 12
+      },
+      "last": {
+        "year": 2026,
+        "month": 8,
+        "day": 8
+      },
+      "largest_contentful_paint": 7251,
+      "lcp_poor_share": 0.7141,
+      "interaction_to_next_paint": 139,
+      "cumulative_layout_shift": 0.11,
+      "experimental_time_to_first_byte": 1512,
+      "first_contentful_paint": 6152
+    },
+    {
+      "ym": "2026-07",
+      "first": {
+        "year": 2026,
+        "month": 7,
+        "day": 19
+      },
+      "last": {
+        "year": 2026,
+        "month": 8,
+        "day": 15
+      },
+      "largest_contentful_paint": 7337,
+      "lcp_poor_share": 0.7233,
+      "interaction_to_next_paint": 139,
+      "cumulative_layout_shift": 0.11,
+      "experimental_time_to_first_byte": 1462,
+      "first_contentful_paint": 6345
+    },
+    {
+      "ym": "2026-07",
+      "first": {
+        "year": 2026,
+        "month": 7,
+        "day": 26
+      },
+      "last": {
+        "year": 2026,
+        "month": 8,
+        "day": 22
+      },
+      "largest_contentful_paint": 7409,
+      "lcp_poor_share": 0.7292,
+      "interaction_to_next_paint": 139,
+      "cumulative_layout_shift": 0.1,
+      "experimental_time_to_first_byte": 1346,
+      "first_contentful_paint": 6371
+    }
+  ],
+  "phone": [
+    {
+      "ym": "2026-02",
+      "first": {
+        "year": 2026,
+        "month": 2,
+        "day": 8
+      },
+      "last": {
+        "year": 2026,
+        "month": 3,
+        "day": 7
+      },
+      "largest_contentful_paint": 8695,
+      "lcp_poor_share": 0.8265,
+      "interaction_to_next_paint": 166,
+      "cumulative_layout_shift": 0.07,
+      "experimental_time_to_first_byte": 3738,
+      "first_contentful_paint": 7729
+    },
+    {
+      "ym": "2026-02",
+      "first": {
+        "year": 2026,
+        "month": 2,
+        "day": 15
+      },
+      "last": {
+        "year": 2026,
+        "month": 3,
+        "day": 14
+      },
+      "largest_contentful_paint": 8741,
+      "lcp_poor_share": 0.8217,
+      "interaction_to_next_paint": 168,
+      "cumulative_layout_shift": 0.09,
+      "experimental_time_to_first_byte": 3860,
+      "first_contentful_paint": 7685
+    },
+    {
+      "ym": "2026-02",
+      "first": {
+        "year": 2026,
+        "month": 2,
+        "day": 22
+      },
+      "last": {
+        "year": 2026,
+        "month": 3,
+        "day": 21
+      },
+      "largest_contentful_paint": 8614,
+      "lcp_poor_share": 0.8125,
+      "interaction_to_next_paint": 168,
+      "cumulative_layout_shift": 0.08,
+      "experimental_time_to_first_byte": 3900,
+      "first_contentful_paint": 7631
+    },
+    {
+      "ym": "2026-03",
+      "first": {
+        "year": 2026,
+        "month": 3,
+        "day": 1
+      },
+      "last": {
+        "year": 2026,
+        "month": 3,
+        "day": 28
+      },
+      "largest_contentful_paint": 8954,
+      "lcp_poor_share": 0.8276,
+      "interaction_to_next_paint": 171,
+      "cumulative_layout_shift": 0.11,
+      "experimental_time_to_first_byte": 4033,
+      "first_contentful_paint": 7788
+    },
+    {
+      "ym": "2026-03",
+      "first": {
+        "year": 2026,
+        "month": 3,
+        "day": 8
+      },
+      "last": {
+        "year": 2026,
+        "month": 4,
+        "day": 4
+      },
+      "largest_contentful_paint": 8985,
+      "lcp_poor_share": 0.8397,
+      "interaction_to_next_paint": 177,
+      "cumulative_layout_shift": 0.09,
+      "experimental_time_to_first_byte": 4094,
+      "first_contentful_paint": 7829
+    },
+    {
+      "ym": "2026-03",
+      "first": {
+        "year": 2026,
+        "month": 3,
+        "day": 15
+      },
+      "last": {
+        "year": 2026,
+        "month": 4,
+        "day": 11
+      },
+      "largest_contentful_paint": 9071,
+      "lcp_poor_share": 0.8278,
+      "interaction_to_next_paint": 176,
+      "cumulative_layout_shift": 0.08,
+      "experimental_time_to_first_byte": 4200,
+      "first_contentful_paint": 7957
+    },
+    {
+      "ym": "2026-03",
+      "first": {
+        "year": 2026,
+        "month": 3,
+        "day": 22
+      },
+      "last": {
+        "year": 2026,
+        "month": 4,
+        "day": 18
+      },
+      "largest_contentful_paint": 9418,
+      "lcp_poor_share": 0.8427,
+      "interaction_to_next_paint": 183,
+      "cumulative_layout_shift": 0.09,
+      "experimental_time_to_first_byte": 4467,
+      "first_contentful_paint": 8397
+    },
+    {
+      "ym": "2026-03",
+      "first": {
+        "year": 2026,
+        "month": 3,
+        "day": 29
+      },
+      "last": {
+        "year": 2026,
+        "month": 4,
+        "day": 25
+      },
+      "largest_contentful_paint": 9414,
+      "lcp_poor_share": 0.855,
+      "interaction_to_next_paint": 180,
+      "cumulative_layout_shift": 0.05,
+      "experimental_time_to_first_byte": 4437,
+      "first_contentful_paint": 8364
+    },
+    {
+      "ym": "2026-04",
+      "first": {
+        "year": 2026,
+        "month": 4,
+        "day": 5
+      },
+      "last": {
+        "year": 2026,
+        "month": 5,
+        "day": 2
+      },
+      "largest_contentful_paint": 9592,
+      "lcp_poor_share": 0.8507,
+      "interaction_to_next_paint": 175,
+      "cumulative_layout_shift": 0.04,
+      "experimental_time_to_first_byte": 4691,
+      "first_contentful_paint": 8584
+    },
+    {
+      "ym": "2026-04",
+      "first": {
+        "year": 2026,
+        "month": 4,
+        "day": 12
+      },
+      "last": {
+        "year": 2026,
+        "month": 5,
+        "day": 9
+      },
+      "largest_contentful_paint": 9639,
+      "lcp_poor_share": 0.8655,
+      "interaction_to_next_paint": 178,
+      "cumulative_layout_shift": 0.04,
+      "experimental_time_to_first_byte": 4708,
+      "first_contentful_paint": 8833
+    },
+    {
+      "ym": "2026-04",
+      "first": {
+        "year": 2026,
+        "month": 4,
+        "day": 19
+      },
+      "last": {
+        "year": 2026,
+        "month": 5,
+        "day": 16
+      },
+      "largest_contentful_paint": 9682,
+      "lcp_poor_share": 0.8624,
+      "interaction_to_next_paint": 195,
+      "cumulative_layout_shift": 0.04,
+      "experimental_time_to_first_byte": 4763,
+      "first_contentful_paint": 8858
+    },
+    {
+      "ym": "2026-04",
+      "first": {
+        "year": 2026,
+        "month": 4,
+        "day": 26
+      },
+      "last": {
+        "year": 2026,
+        "month": 5,
+        "day": 23
+      },
+      "largest_contentful_paint": 9605,
+      "lcp_poor_share": 0.847,
+      "interaction_to_next_paint": 241,
+      "cumulative_layout_shift": 0.04,
+      "experimental_time_to_first_byte": 4804,
+      "first_contentful_paint": 8705
+    },
+    {
+      "ym": "2026-05",
+      "first": {
+        "year": 2026,
+        "month": 5,
+        "day": 3
+      },
+      "last": {
+        "year": 2026,
+        "month": 5,
+        "day": 30
+      },
+      "largest_contentful_paint": 9536,
+      "lcp_poor_share": 0.8521,
+      "interaction_to_next_paint": 295,
+      "cumulative_layout_shift": 0.04,
+      "experimental_time_to_first_byte": 4594,
+      "first_contentful_paint": 8559
+    },
+    {
+      "ym": "2026-05",
+      "first": {
+        "year": 2026,
+        "month": 5,
+        "day": 10
+      },
+      "last": {
+        "year": 2026,
+        "month": 6,
+        "day": 6
+      },
+      "largest_contentful_paint": 9776,
+      "lcp_poor_share": 0.8663,
+      "interaction_to_next_paint": 340,
+      "cumulative_layout_shift": 0.05,
+      "experimental_time_to_first_byte": 4608,
+      "first_contentful_paint": 8648
+    },
+    {
+      "ym": "2026-05",
+      "first": {
+        "year": 2026,
+        "month": 5,
+        "day": 17
+      },
+      "last": {
+        "year": 2026,
+        "month": 6,
+        "day": 13
+      },
+      "largest_contentful_paint": 9830,
+      "lcp_poor_share": 0.8899,
+      "interaction_to_next_paint": 319,
+      "cumulative_layout_shift": 0.05,
+      "experimental_time_to_first_byte": 4576,
+      "first_contentful_paint": 8650
+    },
+    {
+      "ym": "2026-05",
+      "first": {
+        "year": 2026,
+        "month": 5,
+        "day": 24
+      },
+      "last": {
+        "year": 2026,
+        "month": 6,
+        "day": 20
+      },
+      "largest_contentful_paint": 10218,
+      "lcp_poor_share": 0.9094,
+      "interaction_to_next_paint": 305,
+      "cumulative_layout_shift": 0.05,
+      "experimental_time_to_first_byte": 4393,
+      "first_contentful_paint": 8933
+    },
+    {
+      "ym": "2026-05",
+      "first": {
+        "year": 2026,
+        "month": 5,
+        "day": 31
+      },
+      "last": {
+        "year": 2026,
+        "month": 6,
+        "day": 27
+      },
+      "largest_contentful_paint": 10232,
+      "lcp_poor_share": 0.8966,
+      "interaction_to_next_paint": 271,
+      "cumulative_layout_shift": 0.05,
+      "experimental_time_to_first_byte": 4085,
+      "first_contentful_paint": 9136
+    },
+    {
+      "ym": "2026-06",
+      "first": {
+        "year": 2026,
+        "month": 6,
+        "day": 7
+      },
+      "last": {
+        "year": 2026,
+        "month": 7,
+        "day": 4
+      },
+      "largest_contentful_paint": 9975,
+      "lcp_poor_share": 0.8864,
+      "interaction_to_next_paint": 234,
+      "cumulative_layout_shift": 0.05,
+      "experimental_time_to_first_byte": 2956,
+      "first_contentful_paint": 8715
+    },
+    {
+      "ym": "2026-06",
+      "first": {
+        "year": 2026,
+        "month": 6,
+        "day": 14
+      },
+      "last": {
+        "year": 2026,
+        "month": 7,
+        "day": 11
+      },
+      "largest_contentful_paint": 9327,
+      "lcp_poor_share": 0.8331,
+      "interaction_to_next_paint": 214,
+      "cumulative_layout_shift": 0.06,
+      "experimental_time_to_first_byte": 1445,
+      "first_contentful_paint": 8018
+    },
+    {
+      "ym": "2026-06",
+      "first": {
+        "year": 2026,
+        "month": 6,
+        "day": 21
+      },
+      "last": {
+        "year": 2026,
+        "month": 7,
+        "day": 18
+      },
+      "largest_contentful_paint": 8550,
+      "lcp_poor_share": 0.7812,
+      "interaction_to_next_paint": 180,
+      "cumulative_layout_shift": 0.06,
+      "experimental_time_to_first_byte": 1350,
+      "first_contentful_paint": 7369
+    },
+    {
+      "ym": "2026-06",
+      "first": {
+        "year": 2026,
+        "month": 6,
+        "day": 28
+      },
+      "last": {
+        "year": 2026,
+        "month": 7,
+        "day": 25
+      },
+      "largest_contentful_paint": 8189,
+      "lcp_poor_share": 0.7604,
+      "interaction_to_next_paint": 161,
+      "cumulative_layout_shift": 0.06,
+      "experimental_time_to_first_byte": 1398,
+      "first_contentful_paint": 6983
+    },
+    {
+      "ym": "2026-07",
+      "first": {
+        "year": 2026,
+        "month": 7,
+        "day": 5
+      },
+      "last": {
+        "year": 2026,
+        "month": 8,
+        "day": 1
+      },
+      "largest_contentful_paint": 8192,
+      "lcp_poor_share": 0.7423,
+      "interaction_to_next_paint": 174,
+      "cumulative_layout_shift": 0.06,
+      "experimental_time_to_first_byte": 1633,
+      "first_contentful_paint": 6955
+    },
+    {
+      "ym": "2026-07",
+      "first": {
+        "year": 2026,
+        "month": 7,
+        "day": 12
+      },
+      "last": {
+        "year": 2026,
+        "month": 8,
+        "day": 8
+      },
+      "largest_contentful_paint": 8238,
+      "lcp_poor_share": 0.7551,
+      "interaction_to_next_paint": 192,
+      "cumulative_layout_shift": 0.06,
+      "experimental_time_to_first_byte": 1587,
+      "first_contentful_paint": 7018
+    },
+    {
+      "ym": "2026-07",
+      "first": {
+        "year": 2026,
+        "month": 7,
+        "day": 19
+      },
+      "last": {
+        "year": 2026,
+        "month": 8,
+        "day": 15
+      },
+      "largest_contentful_paint": 8376,
+      "lcp_poor_share": 0.7753,
+      "interaction_to_next_paint": 199,
+      "cumulative_layout_shift": 0.06,
+      "experimental_time_to_first_byte": 1810,
+      "first_contentful_paint": 7203
+    },
+    {
+      "ym": "2026-07",
+      "first": {
+        "year": 2026,
+        "month": 7,
+        "day": 26
+      },
+      "last": {
+        "year": 2026,
+        "month": 8,
+        "day": 22
+      },
+      "largest_contentful_paint": 8430,
+      "lcp_poor_share": 0.7699,
+      "interaction_to_next_paint": 187,
+      "cumulative_layout_shift": 0.06,
+      "experimental_time_to_first_byte": 1706,
+      "first_contentful_paint": 7212
+    }
+  ],
+  "desktop": [
+    {
+      "ym": "2026-02",
+      "first": {
+        "year": 2026,
+        "month": 2,
+        "day": 8
+      },
+      "last": {
+        "year": 2026,
+        "month": 3,
+        "day": 7
+      },
+      "largest_contentful_paint": 8952,
+      "lcp_poor_share": 0.7841,
+      "interaction_to_next_paint": 76,
+      "cumulative_layout_shift": 0.16,
+      "experimental_time_to_first_byte": 4808,
+      "first_contentful_paint": 7581
+    },
+    {
+      "ym": "2026-02",
+      "first": {
+        "year": 2026,
+        "month": 2,
+        "day": 15
+      },
+      "last": {
+        "year": 2026,
+        "month": 3,
+        "day": 14
+      },
+      "largest_contentful_paint": 9256,
+      "lcp_poor_share": 0.7882,
+      "interaction_to_next_paint": 75,
+      "cumulative_layout_shift": 0.19,
+      "experimental_time_to_first_byte": 5133,
+      "first_contentful_paint": 7895
+    },
+    {
+      "ym": "2026-02",
+      "first": {
+        "year": 2026,
+        "month": 2,
+        "day": 22
+      },
+      "last": {
+        "year": 2026,
+        "month": 3,
+        "day": 21
+      },
+      "largest_contentful_paint": 9073,
+      "lcp_poor_share": 0.8008,
+      "interaction_to_next_paint": 77,
+      "cumulative_layout_shift": 0.19,
+      "experimental_time_to_first_byte": 5069,
+      "first_contentful_paint": 7709
+    },
+    {
+      "ym": "2026-03",
+      "first": {
+        "year": 2026,
+        "month": 3,
+        "day": 1
+      },
+      "last": {
+        "year": 2026,
+        "month": 3,
+        "day": 28
+      },
+      "largest_contentful_paint": 9381,
+      "lcp_poor_share": 0.8346,
+      "interaction_to_next_paint": 80,
+      "cumulative_layout_shift": 0.2,
+      "experimental_time_to_first_byte": 5254,
+      "first_contentful_paint": 8082
+    },
+    {
+      "ym": "2026-03",
+      "first": {
+        "year": 2026,
+        "month": 3,
+        "day": 8
+      },
+      "last": {
+        "year": 2026,
+        "month": 4,
+        "day": 4
+      },
+      "largest_contentful_paint": 10303,
+      "lcp_poor_share": 0.8659,
+      "interaction_to_next_paint": 77,
+      "cumulative_layout_shift": 0.22,
+      "experimental_time_to_first_byte": 6154,
+      "first_contentful_paint": 9271
+    },
+    {
+      "ym": "2026-03",
+      "first": {
+        "year": 2026,
+        "month": 3,
+        "day": 15
+      },
+      "last": {
+        "year": 2026,
+        "month": 4,
+        "day": 11
+      },
+      "largest_contentful_paint": 9684,
+      "lcp_poor_share": 0.8613,
+      "interaction_to_next_paint": 85,
+      "cumulative_layout_shift": 0.22,
+      "experimental_time_to_first_byte": 5681,
+      "first_contentful_paint": 8688
+    },
+    {
+      "ym": "2026-03",
+      "first": {
+        "year": 2026,
+        "month": 3,
+        "day": 22
+      },
+      "last": {
+        "year": 2026,
+        "month": 4,
+        "day": 18
+      },
+      "largest_contentful_paint": 9827,
+      "lcp_poor_share": 0.8732,
+      "interaction_to_next_paint": 80,
+      "cumulative_layout_shift": 0.22,
+      "experimental_time_to_first_byte": 5763,
+      "first_contentful_paint": 8792
+    },
+    {
+      "ym": "2026-03",
+      "first": {
+        "year": 2026,
+        "month": 3,
+        "day": 29
+      },
+      "last": {
+        "year": 2026,
+        "month": 4,
+        "day": 25
+      },
+      "largest_contentful_paint": 9054,
+      "lcp_poor_share": 0.8122,
+      "interaction_to_next_paint": 79,
+      "cumulative_layout_shift": 0.2,
+      "experimental_time_to_first_byte": 5351,
+      "first_contentful_paint": 8111
+    },
+    {
+      "ym": "2026-04",
+      "first": {
+        "year": 2026,
+        "month": 4,
+        "day": 5
+      },
+      "last": {
+        "year": 2026,
+        "month": 5,
+        "day": 2
+      },
+      "largest_contentful_paint": 8036,
+      "lcp_poor_share": 0.7903,
+      "interaction_to_next_paint": 79,
+      "cumulative_layout_shift": 0.15,
+      "experimental_time_to_first_byte": 4177,
+      "first_contentful_paint": 7209
+    },
+    {
+      "ym": "2026-04",
+      "first": {
+        "year": 2026,
+        "month": 4,
+        "day": 12
+      },
+      "last": {
+        "year": 2026,
+        "month": 5,
+        "day": 9
+      },
+      "largest_contentful_paint": 8510,
+      "lcp_poor_share": 0.8007,
+      "interaction_to_next_paint": 91,
+      "cumulative_layout_shift": 0.15,
+      "experimental_time_to_first_byte": 4552,
+      "first_contentful_paint": 7508
+    },
+    {
+      "ym": "2026-04",
+      "first": {
+        "year": 2026,
+        "month": 4,
+        "day": 19
+      },
+      "last": {
+        "year": 2026,
+        "month": 5,
+        "day": 16
+      },
+      "largest_contentful_paint": 8626,
+      "lcp_poor_share": 0.8051,
+      "interaction_to_next_paint": 92,
+      "cumulative_layout_shift": 0.15,
+      "experimental_time_to_first_byte": 4619,
+      "first_contentful_paint": 7634
+    },
+    {
+      "ym": "2026-04",
+      "first": {
+        "year": 2026,
+        "month": 4,
+        "day": 26
+      },
+      "last": {
+        "year": 2026,
+        "month": 5,
+        "day": 23
+      },
+      "largest_contentful_paint": 9186,
+      "lcp_poor_share": 0.85,
+      "interaction_to_next_paint": 110,
+      "cumulative_layout_shift": 0.16,
+      "experimental_time_to_first_byte": 5033,
+      "first_contentful_paint": 8236
+    },
+    {
+      "ym": "2026-05",
+      "first": {
+        "year": 2026,
+        "month": 5,
+        "day": 3
+      },
+      "last": {
+        "year": 2026,
+        "month": 5,
+        "day": 30
+      },
+      "largest_contentful_paint": 9417,
+      "lcp_poor_share": 0.8553,
+      "interaction_to_next_paint": 116,
+      "cumulative_layout_shift": 0.16,
+      "experimental_time_to_first_byte": 5189,
+      "first_contentful_paint": 8430
+    },
+    {
+      "ym": "2026-05",
+      "first": {
+        "year": 2026,
+        "month": 5,
+        "day": 10
+      },
+      "last": {
+        "year": 2026,
+        "month": 6,
+        "day": 6
+      },
+      "largest_contentful_paint": 9457,
+      "lcp_poor_share": 0.8605,
+      "interaction_to_next_paint": 123,
+      "cumulative_layout_shift": 0.15,
+      "experimental_time_to_first_byte": 5381,
+      "first_contentful_paint": 8507
+    },
+    {
+      "ym": "2026-05",
+      "first": {
+        "year": 2026,
+        "month": 5,
+        "day": 17
+      },
+      "last": {
+        "year": 2026,
+        "month": 6,
+        "day": 13
+      },
+      "largest_contentful_paint": 9524,
+      "lcp_poor_share": 0.8722,
+      "interaction_to_next_paint": 122,
+      "cumulative_layout_shift": 0.15,
+      "experimental_time_to_first_byte": 5368,
+      "first_contentful_paint": 8657
+    },
+    {
+      "ym": "2026-05",
+      "first": {
+        "year": 2026,
+        "month": 5,
+        "day": 24
+      },
+      "last": {
+        "year": 2026,
+        "month": 6,
+        "day": 20
+      },
+      "largest_contentful_paint": 9771,
+      "lcp_poor_share": 0.896,
+      "interaction_to_next_paint": 117,
+      "cumulative_layout_shift": 0.15,
+      "experimental_time_to_first_byte": 5297,
+      "first_contentful_paint": 8716
+    },
+    {
+      "ym": "2026-05",
+      "first": {
+        "year": 2026,
+        "month": 5,
+        "day": 31
+      },
+      "last": {
+        "year": 2026,
+        "month": 6,
+        "day": 27
+      },
+      "largest_contentful_paint": 10602,
+      "lcp_poor_share": 0.8893,
+      "interaction_to_next_paint": 122,
+      "cumulative_layout_shift": 0.16,
+      "experimental_time_to_first_byte": 5701,
+      "first_contentful_paint": 8939
+    },
+    {
+      "ym": "2026-06",
+      "first": {
+        "year": 2026,
+        "month": 6,
+        "day": 7
+      },
+      "last": {
+        "year": 2026,
+        "month": 7,
+        "day": 4
+      },
+      "largest_contentful_paint": 8794,
+      "lcp_poor_share": 0.8437,
+      "interaction_to_next_paint": 107,
+      "cumulative_layout_shift": 0.16,
+      "experimental_time_to_first_byte": 4195,
+      "first_contentful_paint": 7927
+    },
+    {
+      "ym": "2026-06",
+      "first": {
+        "year": 2026,
+        "month": 6,
+        "day": 14
+      },
+      "last": {
+        "year": 2026,
+        "month": 7,
+        "day": 11
+      },
+      "largest_contentful_paint": 8057,
+      "lcp_poor_share": 0.7802,
+      "interaction_to_next_paint": 104,
+      "cumulative_layout_shift": 0.16,
+      "experimental_time_to_first_byte": 3492,
+      "first_contentful_paint": 6963
+    },
+    {
+      "ym": "2026-06",
+      "first": {
+        "year": 2026,
+        "month": 6,
+        "day": 21
+      },
+      "last": {
+        "year": 2026,
+        "month": 7,
+        "day": 18
+      },
+      "largest_contentful_paint": 7469,
+      "lcp_poor_share": 0.7432,
+      "interaction_to_next_paint": 100,
+      "cumulative_layout_shift": 0.16,
+      "experimental_time_to_first_byte": 2980,
+      "first_contentful_paint": 6149
+    },
+    {
+      "ym": "2026-06",
+      "first": {
+        "year": 2026,
+        "month": 6,
+        "day": 28
+      },
+      "last": {
+        "year": 2026,
+        "month": 7,
+        "day": 25
+      },
+      "largest_contentful_paint": 6400,
+      "lcp_poor_share": 0.6976,
+      "interaction_to_next_paint": 82,
+      "cumulative_layout_shift": 0.16,
+      "experimental_time_to_first_byte": 1529,
+      "first_contentful_paint": 4936
+    },
+    {
+      "ym": "2026-07",
+      "first": {
+        "year": 2026,
+        "month": 7,
+        "day": 5
+      },
+      "last": {
+        "year": 2026,
+        "month": 8,
+        "day": 1
+      },
+      "largest_contentful_paint": 5980,
+      "lcp_poor_share": 0.6817,
+      "interaction_to_next_paint": 76,
+      "cumulative_layout_shift": 0.16,
+      "experimental_time_to_first_byte": 1477,
+      "first_contentful_paint": 4722
+    },
+    {
+      "ym": "2026-07",
+      "first": {
+        "year": 2026,
+        "month": 7,
+        "day": 12
+      },
+      "last": {
+        "year": 2026,
+        "month": 8,
+        "day": 8
+      },
+      "largest_contentful_paint": 5912,
+      "lcp_poor_share": 0.6629,
+      "interaction_to_next_paint": 76,
+      "cumulative_layout_shift": 0.16,
+      "experimental_time_to_first_byte": 1346,
+      "first_contentful_paint": 4574
+    },
+    {
+      "ym": "2026-07",
+      "first": {
+        "year": 2026,
+        "month": 7,
+        "day": 19
+      },
+      "last": {
+        "year": 2026,
+        "month": 8,
+        "day": 15
+      },
+      "largest_contentful_paint": 5833,
+      "lcp_poor_share": 0.6597,
+      "interaction_to_next_paint": 72,
+      "cumulative_layout_shift": 0.16,
+      "experimental_time_to_first_byte": 995,
+      "first_contentful_paint": 4426
+    },
+    {
+      "ym": "2026-07",
+      "first": {
+        "year": 2026,
+        "month": 7,
+        "day": 26
+      },
+      "last": {
+        "year": 2026,
+        "month": 8,
+        "day": 22
+      },
+      "largest_contentful_paint": 5839,
+      "lcp_poor_share": 0.6721,
+      "interaction_to_next_paint": 72,
+      "cumulative_layout_shift": 0.16,
+      "experimental_time_to_first_byte": 754,
+      "first_contentful_paint": 4415
+    }
+  ]
+}

@@ -1,0 +1,544 @@
+{
+  "accountSummaries": [
+    {
+      "name": "accountSummaries/113328118",
+      "account": "accounts/113328118",
+      "displayName": "Noberplast",
+      "propertySummaries": [
+        {
+          "property": "properties/250826249",
+          "displayName": "Noberplast",
+          "propertyType": "PROPERTY_TYPE_ORDINARY",
+          "parent": "accounts/113328118",
+          "canEdit": true
+        },
+        {
+          "property": "properties/379365173",
+          "displayName": "Noberplast A4",
+          "propertyType": "PROPERTY_TYPE_ORDINARY",
+          "parent": "accounts/113328118",
+          "canEdit": true
+        }
+      ]
+    },
+    {
+      "name": "accountSummaries/118881481",
+      "account": "accounts/118881481",
+      "displayName": "Equinsa",
+      "propertySummaries": [
+        {
+          "property": "properties/324819102",
+          "displayName": "Equinsa - GA4",
+          "propertyType": "PROPERTY_TYPE_ORDINARY",
+          "parent": "accounts/118881481",
+          "canEdit": true
+        }
+      ]
+    },
+    {
+      "name": "accountSummaries/180670037",
+      "account": "accounts/180670037",
+      "displayName": "Virginia Molet",
+      "propertySummaries": [
+        {
+          "property": "properties/359173822",
+          "displayName": "virginiamolet.com/ GA4 - ExactMetrics",
+          "propertyType": "PROPERTY_TYPE_ORDINARY",
+          "parent": "accounts/180670037",
+          "canEdit": true
+        }
+      ]
+    },
+    {
+      "name": "accountSummaries/199657652",
+      "account": "accounts/199657652",
+      "displayName": "ECP - escueladecuidadoresprofesionales.com",
+      "propertySummaries": [
+        {
+          "property": "properties/275964444",
+          "displayName": "Web escueladecuidadoresprofesionales.com - GA4",
+          "propertyType": "PROPERTY_TYPE_ORDINARY",
+          "parent": "accounts/199657652",
+          "canEdit": true
+        }
+      ]
+    },
+    {
+      "name": "accountSummaries/222057469",
+      "account": "accounts/222057469",
+      "displayName": "@escueladecuidadoresprofesionales",
+      "propertySummaries": [
+        {
+          "property": "properties/370855324",
+          "displayName": "escueladecuidadoresprofesionales.com - GA4",
+          "propertyType": "PROPERTY_TYPE_ORDINARY",
+          "parent": "accounts/222057469"
+        }
+      ]
+    },
+    {
+      "name": "accountSummaries/226891057",
+      "account": "accounts/226891057",
+      "displayName": "Sumar Inversi\u00f3n ESP",
+      "propertySummaries": [
+        {
+          "property": "properties/312464254",
+          "displayName": "Sumar Inversi\u00f3n ESP - GA4",
+          "propertyType": "PROPERTY_TYPE_ORDINARY",
+          "parent": "accounts/226891057"
+        }
+      ]
+    },
+    {
+      "name": "accountSummaries/231549936",
+      "account": "accounts/231549936",
+      "displayName": "www.instaman.com",
+      "propertySummaries": [
+        {
+          "property": "properties/318862016",
+          "displayName": "INSTAMAN GAS Y CALEFACCION S.L.",
+          "propertyType": "PROPERTY_TYPE_ORDINARY",
+          "parent": "accounts/231549936",
+          "canEdit": true
+        }
+      ]
+    },
+    {
+      "name": "accountSummaries/246687574",
+      "account": "accounts/246687574",
+      "displayName": "opensalud",
+      "propertySummaries": [
+        {
+          "property": "properties/341199843",
+          "displayName": "Quality Control ",
+          "propertyType": "PROPERTY_TYPE_ORDINARY",
+          "parent": "accounts/246687574"
+        },
+        {
+          "property": "properties/373570652",
+          "displayName": "[MX] opensalud.mx",
+          "propertyType": "PROPERTY_TYPE_ORDINARY",
+          "parent": "accounts/246687574"
+        },
+        {
+          "property": "properties/373577374",
+          "displayName": "Quality Assurance",
+          "propertyType": "PROPERTY_TYPE_ORDINARY",
+          "parent": "accounts/246687574"
+        }
+      ]
+    },
+    {
+      "name": "accountSummaries/249199817",
+      "account": "accounts/249199817",
+      "displayName": "Andala",
+      "propertySummaries": [
+        {
+          "property": "properties/341860249",
+          "displayName": "Andala",
+          "propertyType": "PROPERTY_TYPE_ORDINARY",
+          "parent": "accounts/249199817",
+          "canEdit": true
+        }
+      ]
+    },
+    {
+      "name": "accountSummaries/313890586",
+      "account": "accounts/313890586",
+      "displayName": "4ventures.es",
+      "propertySummaries": [
+        {
+          "property": "properties/441087953",
+          "displayName": "4ventures.es",
+          "propertyType": "PROPERTY_TYPE_ORDINARY",
+          "parent": "accounts/313890586",
+          "canEdit": true
+        }
+      ]
+    },
+    {
+      "name": "accountSummaries/316837810",
+      "account": "accounts/316837810",
+      "displayName": "Cl\u00ednica Regenia",
+      "propertySummaries": [
+        {
+          "property": "properties/444557230",
+          "displayName": "Cl\u00ednica Regenia",
+          "propertyType": "PROPERTY_TYPE_ORDINARY",
+          "parent": "accounts/316837810"
+        },
+        {
+          "property": "properties/451163508",
+          "displayName": "Cl\u00ednica Regenia Formulario Inteligente",
+          "propertyType": "PROPERTY_TYPE_ORDINARY",
+          "parent": "accounts/316837810"
+        },
+        {
+          "property": "properties/461282549",
+          "displayName": "BELYRE FORMULARIO INTELIGENTE",
+          "propertyType": "PROPERTY_TYPE_ORDINARY",
+          "parent": "accounts/316837810"
+        }
+      ]
+    },
+    {
+      "name": "accountSummaries/338100306",
+      "account": "accounts/338100306",
+      "displayName": "Blue Parrot School",
+      "propertySummaries": [
+        {
+          "property": "properties/469229613",
+          "displayName": "PIXEL GA WORDPRESS MARCOS",
+          "propertyType": "PROPERTY_TYPE_ORDINARY",
+          "parent": "accounts/338100306",
+          "canEdit": true
+        },
+        {
+          "property": "properties/469240570",
+          "displayName": "blueparrotschool.com",
+          "propertyType": "PROPERTY_TYPE_ORDINARY",
+          "parent": "accounts/338100306",
+          "canEdit": true
+        },
+        {
+          "property": "properties/546948414",
+          "displayName": "B2C BPS",
+          "propertyType": "PROPERTY_TYPE_ORDINARY",
+          "parent": "accounts/338100306",
+          "canEdit": true
+        }
+      ]
+    },
+    {
+      "name": "accountSummaries/354443285",
+      "account": "accounts/354443285",
+      "displayName": "FBM & Asociados",
+      "propertySummaries": [
+        {
+          "property": "properties/488334863",
+          "displayName": "Franco Blanco Menchaca & Asociados",
+          "propertyType": "PROPERTY_TYPE_ORDINARY",
+          "parent": "accounts/354443285",
+          "canEdit": true
+        }
+      ]
+    },
+    {
+      "name": "accountSummaries/355476710",
+      "account": "accounts/355476710",
+      "displayName": "SINACHE",
+      "propertySummaries": [
+        {
+          "property": "properties/489539037",
+          "displayName": "SINACHE",
+          "propertyType": "PROPERTY_TYPE_ORDINARY",
+          "parent": "accounts/355476710",
+          "canEdit": true
+        }
+      ]
+    },
+    {
+      "name": "accountSummaries/365124638",
+      "account": "accounts/365124638",
+      "displayName": "MCD",
+      "propertySummaries": [
+        {
+          "property": "properties/501041072",
+          "displayName": "MCD GA",
+          "propertyType": "PROPERTY_TYPE_ORDINARY",
+          "parent": "accounts/365124638",
+          "canEdit": true
+        }
+      ]
+    },
+    {
+      "name": "accountSummaries/366063506",
+      "account": "accounts/366063506",
+      "displayName": "La Freseria",
+      "propertySummaries": [
+        {
+          "property": "properties/502250108",
+          "displayName": "lafreseria.es",
+          "propertyType": "PROPERTY_TYPE_ORDINARY",
+          "parent": "accounts/366063506",
+          "canEdit": true
+        }
+      ]
+    },
+    {
+      "name": "accountSummaries/370743558",
+      "account": "accounts/370743558",
+      "displayName": "Consigue tus papeles",
+      "propertySummaries": [
+        {
+          "property": "properties/507865606",
+          "displayName": "www.consiguetuspapeles.es",
+          "propertyType": "PROPERTY_TYPE_ORDINARY",
+          "parent": "accounts/370743558",
+          "canEdit": true
+        }
+      ]
+    },
+    {
+      "name": "accountSummaries/371813341",
+      "account": "accounts/371813341",
+      "displayName": "TheChefClub",
+      "propertySummaries": [
+        {
+          "property": "properties/509142958",
+          "displayName": "thechefclub.es",
+          "propertyType": "PROPERTY_TYPE_ORDINARY",
+          "parent": "accounts/371813341",
+          "canEdit": true
+        },
+        {
+          "property": "properties/524789326",
+          "displayName": "Lucina Fertility",
+          "propertyType": "PROPERTY_TYPE_ORDINARY",
+          "parent": "accounts/371813341",
+          "canEdit": true
+        }
+      ]
+    },
+    {
+      "name": "accountSummaries/378615365",
+      "account": "accounts/378615365",
+      "displayName": "MIL",
+      "propertySummaries": [
+        {
+          "property": "properties/517508008",
+          "displayName": "MIL WEB",
+          "propertyType": "PROPERTY_TYPE_ORDINARY",
+          "parent": "accounts/378615365",
+          "canEdit": true
+        }
+      ]
+    },
+    {
+      "name": "accountSummaries/378638315",
+      "account": "accounts/378638315",
+      "displayName": "Xpera",
+      "propertySummaries": [
+        {
+          "property": "properties/517559562",
+          "displayName": "Xpera",
+          "propertyType": "PROPERTY_TYPE_ORDINARY",
+          "parent": "accounts/378638315",
+          "canEdit": true
+        }
+      ]
+    },
+    {
+      "name": "accountSummaries/386339272",
+      "account": "accounts/386339272",
+      "displayName": "Brava",
+      "propertySummaries": [
+        {
+          "property": "properties/526870323",
+          "displayName": "Brava",
+          "propertyType": "PROPERTY_TYPE_ORDINARY",
+          "parent": "accounts/386339272",
+          "canEdit": true
+        }
+      ]
+    },
+    {
+      "name": "accountSummaries/387700457",
+      "account": "accounts/387700457",
+      "displayName": "Menttum",
+      "propertySummaries": [
+        {
+          "property": "properties/528566152",
+          "displayName": "Quality Control",
+          "propertyType": "PROPERTY_TYPE_ORDINARY",
+          "parent": "accounts/387700457"
+        }
+      ]
+    },
+    {
+      "name": "accountSummaries/389989261",
+      "account": "accounts/389989261",
+      "displayName": "LoyBee",
+      "propertySummaries": [
+        {
+          "property": "properties/531381590",
+          "displayName": "LoyBee",
+          "propertyType": "PROPERTY_TYPE_ORDINARY",
+          "parent": "accounts/389989261",
+          "canEdit": true
+        }
+      ]
+    },
+    {
+      "name": "accountSummaries/390335725",
+      "account": "accounts/390335725",
+      "displayName": "Agua Miia",
+      "propertySummaries": [
+        {
+          "property": "properties/531801221",
+          "displayName": "Agua Miia",
+          "propertyType": "PROPERTY_TYPE_ORDINARY",
+          "parent": "accounts/390335725",
+          "canEdit": true
+        }
+      ]
+    },
+    {
+      "name": "accountSummaries/390685814",
+      "account": "accounts/390685814",
+      "displayName": "Respira Nova",
+      "propertySummaries": [
+        {
+          "property": "properties/532188190",
+          "displayName": "Respira Nova",
+          "propertyType": "PROPERTY_TYPE_ORDINARY",
+          "parent": "accounts/390685814",
+          "canEdit": true
+        }
+      ]
+    },
+    {
+      "name": "accountSummaries/397053864",
+      "account": "accounts/397053864",
+      "displayName": "NPS Loop",
+      "propertySummaries": [
+        {
+          "property": "properties/540541522",
+          "displayName": "NPS Loop",
+          "propertyType": "PROPERTY_TYPE_ORDINARY",
+          "parent": "accounts/397053864",
+          "canEdit": true
+        }
+      ]
+    },
+    {
+      "name": "accountSummaries/399529913",
+      "account": "accounts/399529913",
+      "displayName": "talentoscholarprogram",
+      "propertySummaries": [
+        {
+          "property": "properties/543502216",
+          "displayName": "talentoscholarprogram.com",
+          "propertyType": "PROPERTY_TYPE_ORDINARY",
+          "parent": "accounts/399529913",
+          "canEdit": true
+        }
+      ]
+    },
+    {
+      "name": "accountSummaries/402927982",
+      "account": "accounts/402927982",
+      "displayName": "Delgado Abogados S.L",
+      "propertySummaries": [
+        {
+          "property": "properties/547824262",
+          "displayName": "Delgado Abogados S.L",
+          "propertyType": "PROPERTY_TYPE_ORDINARY",
+          "parent": "accounts/402927982",
+          "canEdit": true
+        }
+      ]
+    },
+    {
+      "name": "accountSummaries/405287897",
+      "account": "accounts/405287897",
+      "displayName": "Gravitae",
+      "propertySummaries": [
+        {
+          "property": "properties/550690538",
+          "displayName": "Gravitae",
+          "propertyType": "PROPERTY_TYPE_ORDINARY",
+          "parent": "accounts/405287897",
+          "canEdit": true
+        }
+      ]
+    },
+    {
+      "name": "accountSummaries/406267962",
+      "account": "accounts/406267962",
+      "displayName": "Clinica Belyre",
+      "propertySummaries": [
+        {
+          "property": "properties/551938278",
+          "displayName": "Clinica Belyre",
+          "propertyType": "PROPERTY_TYPE_ORDINARY",
+          "parent": "accounts/406267962",
+          "canEdit": true
+        }
+      ]
+    },
+    {
+      "name": "accountSummaries/57680104",
+      "account": "accounts/57680104",
+      "displayName": "KnoweeAnalytics",
+      "propertySummaries": [
+        {
+          "property": "properties/291313327",
+          "displayName": "Knowee Web - GA4",
+          "propertyType": "PROPERTY_TYPE_ORDINARY",
+          "parent": "accounts/57680104"
+        },
+        {
+          "property": "properties/420539587",
+          "displayName": "web.know.ee",
+          "propertyType": "PROPERTY_TYPE_ORDINARY",
+          "parent": "accounts/57680104"
+        },
+        {
+          "property": "properties/459277555",
+          "displayName": "jpmorgan",
+          "propertyType": "PROPERTY_TYPE_ORDINARY",
+          "parent": "accounts/57680104"
+        },
+        {
+          "property": "properties/461081090",
+          "displayName": "deeplink-knowee",
+          "propertyType": "PROPERTY_TYPE_ORDINARY",
+          "parent": "accounts/57680104"
+        }
+      ]
+    },
+    {
+      "name": "accountSummaries/67302863",
+      "account": "accounts/67302863",
+      "displayName": "Detuatu",
+      "propertySummaries": [
+        {
+          "property": "properties/264813127",
+          "displayName": "Detuatu - GA4",
+          "propertyType": "PROPERTY_TYPE_ORDINARY",
+          "parent": "accounts/67302863",
+          "canEdit": true
+        }
+      ]
+    },
+    {
+      "name": "accountSummaries/82667483",
+      "account": "accounts/82667483",
+      "displayName": "mundoFranquicia",
+      "propertySummaries": [
+        {
+          "property": "properties/358978947",
+          "displayName": "mundoFranquicia - GA4",
+          "propertyType": "PROPERTY_TYPE_ORDINARY",
+          "parent": "accounts/82667483",
+          "canEdit": true
+        }
+      ]
+    },
+    {
+      "name": "accountSummaries/85770692",
+      "account": "accounts/85770692",
+      "displayName": "TalentoYDeporte",
+      "propertySummaries": [
+        {
+          "property": "properties/386465115",
+          "displayName": "Talento y Deporte - GA4",
+          "propertyType": "PROPERTY_TYPE_ORDINARY",
+          "parent": "accounts/85770692",
+          "canEdit": true
+        }
+      ]
+    }
+  ]
+}

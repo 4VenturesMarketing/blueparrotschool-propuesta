@@ -1,0 +1,492 @@
+{
+  "monthly": {
+    "2025-01": {
+      "orders": 99,
+      "revenue": 20137.90000000002,
+      "items": 99
+    },
+    "2025-02": {
+      "orders": 97,
+      "revenue": 18898.849999999977,
+      "items": 97
+    },
+    "2025-03": {
+      "orders": 186,
+      "revenue": 38185.14999999998,
+      "items": 186
+    },
+    "2025-04": {
+      "orders": 76,
+      "revenue": 17832.45,
+      "items": 76
+    },
+    "2025-05": {
+      "orders": 97,
+      "revenue": 22849.400000000005,
+      "items": 99
+    },
+    "2025-06": {
+      "orders": 141,
+      "revenue": 32661.700000000037,
+      "items": 143
+    },
+    "2025-07": {
+      "orders": 178,
+      "revenue": 36464.65000000006,
+      "items": 178
+    },
+    "2025-08": {
+      "orders": 98,
+      "revenue": 22159.249999999993,
+      "items": 101
+    },
+    "2025-09": {
+      "orders": 111,
+      "revenue": 26046.150000000027,
+      "items": 113
+    },
+    "2025-10": {
+      "orders": 97,
+      "revenue": 22415.300000000017,
+      "items": 98
+    },
+    "2025-11": {
+      "orders": 78,
+      "revenue": 17121.24999999998,
+      "items": 80
+    },
+    "2025-12": {
+      "orders": 40,
+      "revenue": 8565.599999999997,
+      "items": 40
+    },
+    "2026-01": {
+      "orders": 104,
+      "revenue": 24831.00000000003,
+      "items": 104
+    },
+    "2026-02": {
+      "orders": 66,
+      "revenue": 15518.399999999994,
+      "items": 66
+    },
+    "2026-03": {
+      "orders": 65,
+      "revenue": 14139.900000000005,
+      "items": 65
+    },
+    "2026-04": {
+      "orders": 44,
+      "revenue": 10969.849999999995,
+      "items": 44
+    },
+    "2026-05": {
+      "orders": 51,
+      "revenue": 12353.549999999996,
+      "items": 52
+    },
+    "2026-06": {
+      "orders": 66,
+      "revenue": 16201.099999999991,
+      "items": 70
+    },
+    "2026-07": {
+      "orders": 116,
+      "revenue": 26675.00000000001,
+      "items": 117
+    },
+    "2026-08": {
+      "orders": 61,
+      "revenue": 14105.699999999992,
+      "items": 65
+    }
+  },
+  "top_products": [
+    {
+      "name": "APTIS ESOL General B1-B2-C1 Online y Presencial 28h",
+      "qty": 346,
+      "revenue": 74389.15
+    },
+    {
+      "name": "Cambridge Advanced C1 Intensivo online o presencial 36h",
+      "qty": 151,
+      "revenue": 41933.65000000005
+    },
+    {
+      "name": "APTIS General B1-B2-C1 Online y Presencial 28h",
+      "qty": 148,
+      "revenue": 32836.85000000008
+    },
+    {
+      "name": "Cambridge First B2 Intensivo online o presencial 36h",
+      "qty": 129,
+      "revenue": 34076.85000000002
+    },
+    {
+      "name": "APTIS ESOL Advanced Intensivo Online o Presencial 28h",
+      "qty": 122,
+      "revenue": 25742.400000000034
+    },
+    {
+      "name": "Italiano A1-A2 Intensivo online o presencial 28h",
+      "qty": 111,
+      "revenue": 21974.650000000005
+    },
+    {
+      "name": "Italiano B1-B2 Intensivo online o presencial 28h",
+      "qty": 107,
+      "revenue": 21931.20000000001
+    },
+    {
+      "name": "Alemán A1-A2 Intensivo online o presencial 28h",
+      "qty": 99,
+      "revenue": 20514.95
+    },
+    {
+      "name": "APTIS A2 Intensivo Online o Presencial 28h PN",
+      "qty": 85,
+      "revenue": 17368.400000000005
+    },
+    {
+      "name": "Francés Delf B2 Intensivo online o presencial 36h",
+      "qty": 61,
+      "revenue": 15513.099999999995
+    },
+    {
+      "name": "Francés Delf B1 Intensivo online o presencial 36h",
+      "qty": 51,
+      "revenue": 13187.749999999998
+    },
+    {
+      "name": "APTIS General",
+      "qty": 50,
+      "revenue": 8935.949999999993
+    },
+    {
+      "name": "Cambridge PET B1 Intensivo online o presencial 36h",
+      "qty": 46,
+      "revenue": 12308.34999999999
+    },
+    {
+      "name": "APTIS Advanced Intensivo Online o Presencial 28h",
+      "qty": 32,
+      "revenue": 6655.899999999996
+    },
+    {
+      "name": "Alemán B1-B2 Intensivo online o presencial 28h",
+      "qty": 29,
+      "revenue": 5755.799999999999
+    },
+    {
+      "name": "APTIS A2 Intensivo Online o Presencial 28h",
+      "qty": 27,
+      "revenue": 5193.900000000001
+    },
+    {
+      "name": "Intensivo IELTS Academic Online 36h",
+      "qty": 26,
+      "revenue": 6809.799999999997
+    },
+    {
+      "name": "Francés Delf A1-A2 Intensivo online 36h",
+      "qty": 26,
+      "revenue": 6210.9
+    },
+    {
+      "name": "Portugués A1-A2 Intensivo online o presencial 28h",
+      "qty": 24,
+      "revenue": 4894.4
+    },
+    {
+      "name": "APTIS ESOL A2 Intensivo Online o Presencial 28h PN",
+      "qty": 19,
+      "revenue": 3946.65
+    },
+    {
+      "name": "Matrícula Málaga 2025-26 - RESERVA PLAZA CURSO REGULAR",
+      "qty": 18,
+      "revenue": 900.0
+    },
+    {
+      "name": "APTIS A2 Intensivo",
+      "qty": 17,
+      "revenue": 3079.9500000000007
+    },
+    {
+      "name": "Intensivo IELTS General Training Online 36h",
+      "qty": 17,
+      "revenue": 4258.250000000001
+    },
+    {
+      "name": "Portugués B1-B2 Intensivo online o presencial 28h",
+      "qty": 16,
+      "revenue": 3261.3000000000006
+    },
+    {
+      "name": "APTIS Intensivo online 28h",
+      "qty": 11,
+      "revenue": 2314.3
+    },
+    {
+      "name": "APTIS B2-C1 Intensivo Online 28h",
+      "qty": 9,
+      "revenue": 1681.5500000000002
+    },
+    {
+      "name": "Plataforma online de inglés - Nivel C1 (135 horas, 3 módulos)",
+      "qty": 8,
+      "revenue": 2066.3500000000004
+    },
+    {
+      "name": "APTIS Advanced Intensivo 28h",
+      "qty": 8,
+      "revenue": 1492.75
+    },
+    {
+      "name": "Plataforma online de inglés - Nivel B2 (135 horas, 3 módulos)",
+      "qty": 7,
+      "revenue": 1705.1000000000001
+    },
+    {
+      "name": "Plataforma online de inglés - Nivel A2 (90 horas, 2 módulos)",
+      "qty": 7,
+      "revenue": 1237.95
+    },
+    {
+      "name": "Matrícula Madrid 2025-26 - RESERVA PLAZA CURSO REGULAR",
+      "qty": 7,
+      "revenue": 350.0
+    },
+    {
+      "name": "APTIS B2-C1 Intensivo 28h",
+      "qty": 6,
+      "revenue": 1057.4
+    },
+    {
+      "name": "Plataforma online de italiano - Nivel 1 (45 horas, 1 módulo)",
+      "qty": 6,
+      "revenue": 514.8000000000001
+    },
+    {
+      "name": "Plataforma online de inglés - Nivel B1 (135 horas, 3 módulos)",
+      "qty": 6,
+      "revenue": 1560.6000000000001
+    },
+    {
+      "name": "APTIS A2-B1 Intensivo Online 28h - 04/02 al 26/02, 19:00 a 21:00, Lunes a Jueves",
+      "qty": 5,
+      "revenue": 875.5999999999999
+    },
+    {
+      "name": "Trinity College London B2 Intensivo online 36h",
+      "qty": 5,
+      "revenue": 1359.6
+    },
+    {
+      "name": "Trinity College London C1 Intensivo online 36h",
+      "qty": 4,
+      "revenue": 1143.3
+    },
+    {
+      "name": "Summer Camp para Niños de 4 a 8 años",
+      "qty": 4,
+      "revenue": 780.0
+    },
+    {
+      "name": "Plataforma online de francés - Nivel A1 (90 horas, 2 módulos)",
+      "qty": 3,
+      "revenue": 548.1
+    },
+    {
+      "name": "Plataforma online de francés - Nivel A2 (90 horas, 2 módulos)",
+      "qty": 3,
+      "revenue": 481.95000000000005
+    }
+  ],
+  "top_cities": [
+    {
+      "city": "Madrid",
+      "orders": 350,
+      "revenue": 79878.14999999994
+    },
+    {
+      "city": "Málaga",
+      "orders": 148,
+      "revenue": 34303.25000000004
+    },
+    {
+      "city": "Malaga",
+      "orders": 62,
+      "revenue": 14329.899999999994
+    },
+    {
+      "city": "Sevilla",
+      "orders": 50,
+      "revenue": 10182.249999999998
+    },
+    {
+      "city": "Valencia",
+      "orders": 29,
+      "revenue": 6951.3
+    },
+    {
+      "city": "Marbella",
+      "orders": 27,
+      "revenue": 5744.749999999999
+    },
+    {
+      "city": "Valladolid",
+      "orders": 25,
+      "revenue": 5331.299999999999
+    },
+    {
+      "city": "Zaragoza",
+      "orders": 21,
+      "revenue": 5224.200000000001
+    },
+    {
+      "city": "Barcelona",
+      "orders": 20,
+      "revenue": 4953.549999999999
+    },
+    {
+      "city": "Granada",
+      "orders": 18,
+      "revenue": 3758.4
+    },
+    {
+      "city": "Torremolinos",
+      "orders": 17,
+      "revenue": 3784.4000000000005
+    },
+    {
+      "city": "Alicante",
+      "orders": 13,
+      "revenue": 2676.0499999999997
+    },
+    {
+      "city": "Vigo",
+      "orders": 12,
+      "revenue": 2563.55
+    },
+    {
+      "city": "Cartagena",
+      "orders": 12,
+      "revenue": 2602.05
+    },
+    {
+      "city": "Antequera",
+      "orders": 10,
+      "revenue": 2144.75
+    },
+    {
+      "city": "Getafe",
+      "orders": 10,
+      "revenue": 2573.3
+    },
+    {
+      "city": "Leganés",
+      "orders": 9,
+      "revenue": 2172.45
+    },
+    {
+      "city": "Alhaurín De La Torre",
+      "orders": 8,
+      "revenue": 1749.3500000000001
+    },
+    {
+      "city": "Melilla",
+      "orders": 8,
+      "revenue": 1624.15
+    },
+    {
+      "city": "Rivas-Vaciamadrid",
+      "orders": 8,
+      "revenue": 1812.2000000000003
+    },
+    {
+      "city": "Badajoz",
+      "orders": 8,
+      "revenue": 1568.7
+    },
+    {
+      "city": "Benalmádena",
+      "orders": 8,
+      "revenue": 1815.0500000000002
+    },
+    {
+      "city": "Pamplona",
+      "orders": 7,
+      "revenue": 1451.3000000000002
+    },
+    {
+      "city": "Fuengirola",
+      "orders": 7,
+      "revenue": 1410.4499999999998
+    },
+    {
+      "city": "Toledo",
+      "orders": 7,
+      "revenue": 1598.9
+    },
+    {
+      "city": "Leganes",
+      "orders": 7,
+      "revenue": 1433.05
+    },
+    {
+      "city": "Murcia",
+      "orders": 7,
+      "revenue": 1446.3999999999999
+    },
+    {
+      "city": "Córdoba",
+      "orders": 7,
+      "revenue": 1603.8000000000002
+    },
+    {
+      "city": "Majadahonda",
+      "orders": 7,
+      "revenue": 1524.2
+    },
+    {
+      "city": "Ronda",
+      "orders": 6,
+      "revenue": 1300.8000000000002
+    }
+  ],
+  "states": {
+    "M": 558,
+    "MA": 378,
+    "SE": 101,
+    "B": 65,
+    "V": 56,
+    "MU": 47,
+    "A": 46,
+    "CA": 45,
+    "GR": 42,
+    "VA": 33,
+    "TO": 32,
+    "Z": 31,
+    "CO": 22,
+    "PO": 22,
+    "BA": 22,
+    "PM": 21,
+    "NA": 21,
+    "J": 20,
+    "CR": 19,
+    "BI": 16,
+    "AL": 16,
+    "GC": 14,
+    "CC": 13,
+    "TF": 13,
+    "BU": 13,
+    "O": 13,
+    "T": 12,
+    "AB": 11,
+    "SS": 11,
+    "GI": 10
+  },
+  "total_orders": 1871,
+  "total_revenue": 418132.1500000045
+}

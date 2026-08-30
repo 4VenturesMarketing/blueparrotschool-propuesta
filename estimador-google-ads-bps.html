@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Estimador Google Ads · Blue Parrot School</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<style>
+:root{
+  --navy:#0B1F3A; --blue:#0080E0; --blue-deep:#005A9E; --sky:#E8F4FC;
+  --gold:#F0C000; --green:#1FA97A; --coral:#E25B4C; --text:#1A2B3C;
+  --muted:#5A6B7D; --line:#D5E4F0; --bg:#fff; --soft:#F3F8FC; --max:1100px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:"Raleway",system-ui,sans-serif;color:var(--text);background:var(--soft);line-height:1.5;font-size:15px}
+h1,h2,h3{font-family:"Poppins",system-ui,sans-serif;color:var(--navy);letter-spacing:-.02em}
+.wrap{width:min(var(--max),calc(100% - 32px));margin-inline:auto}
+.top{background:var(--navy);color:#fff;padding:22px 0 18px}
+.top h1{color:#fff;font-size:clamp(1.35rem,2.5vw,1.85rem);margin-bottom:6px}
+.top p{color:rgba(255,255,255,.82);font-size:.92rem;max-width:52em}
+.top a{color:var(--gold);font-weight:700}
+main{padding:22px 0 48px}
+.layout{display:flex;flex-direction:column;gap:14px}
+.panel{background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px}
+.panel h2{font-size:1rem;margin-bottom:12px}
+.controls-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px 20px}
+@media(max-width:700px){.controls-grid{grid-template-columns:1fr}}
+.label{font-size:11px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:10px 0 6px}
+.row{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:8px}
+input[type=range]{width:100%;accent-color:var(--blue)}
+input[type=number]{width:72px;padding:6px 8px;border:1px solid var(--line);border-radius:8px;font:inherit}
+.intents{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:8px}
+.intents label{display:inline-flex;align-items:center;gap:5px;font-size:.82rem;background:var(--sky);padding:5px 9px;border-radius:999px;cursor:pointer}
+.prod-chips{display:flex;flex-wrap:wrap;gap:8px}
+.prod-chip{appearance:none;border:1px solid var(--line);background:#fff;color:var(--muted);font:inherit;font-family:"Poppins",sans-serif;font-size:.85rem;font-weight:600;padding:8px 14px;border-radius:10px;cursor:pointer;transition:background .15s,color .15s,border-color .15s}
+.prod-chip.on{background:var(--navy);color:#fff;border-color:var(--navy)}
+.prod-chip:hover{border-color:var(--blue)}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:0}
+.stat{background:var(--soft);border-radius:12px;padding:12px 14px}
+.stat strong{display:block;font-family:"Poppins",sans-serif;font-size:1.25rem;font-weight:800;color:var(--navy)}
+.stat span{font-size:.75rem;color:var(--muted)}
+.stat.hi strong{color:var(--blue)}
+.stat.ok strong{color:var(--green)}
+.hint{font-size:.8rem;color:var(--muted);margin-top:8px;line-height:1.4}
+.table-scroll{overflow:auto;border:1px solid var(--line);border-radius:12px}
+table{width:100%;border-collapse:collapse;font-size:.8rem;min-width:860px}
+th,td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:right}
+th:first-child,td:first-child{text-align:left}
+thead th{background:var(--soft);font-family:"Poppins",sans-serif;font-size:.65rem;text-transform:uppercase;color:var(--muted)}
+.note{margin-top:12px;padding:12px 14px;background:var(--sky);border-radius:10px;font-size:.82rem;color:var(--muted)}
+.chart-box{height:260px;margin-top:8px}
+.prod-is{display:flex;align-items:center;gap:6px;justify-content:flex-end}
+td .isval{font-weight:700;color:var(--blue);min-width:36px;display:inline-block}
+.err{padding:20px;background:#FDF1EF;border-left:3px solid var(--coral);margin:20px 0;display:none}
+@media(max-width:900px){
+  .stats{grid-template-columns:1fr 1fr}
+}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <h1>Estimador Google Ads · Impression Share</h1>
+    <p>Keywords por producto + datos reales de <strong>BPS_BRAND_SEARCH</strong>. Objetivo: máximas conversiones. Genéricas APTIS/Cambridge/IELTS + marca.
+      <a href="./propuesta-cliente-bps.html">← Volver a la propuesta</a>
+    </p>
+  </div>
+</header>
+<main>
+<div class="wrap">
+  <div class="err" id="bootError"></div>
+  <div class="layout">
+  <div class="panel" id="controls">
+    <h2>Ajustes</h2>
+    <div class="label">Escenario</div>
+    <div class="intents" id="presetToggles" style="margin-bottom:10px"></div>
+    <div class="controls-grid">
+      <div>
+        <div class="label">Mes del año (estacionalidad)</div>
+        <div class="row"><span id="monthLabel">Media anual</span></div>
+        <input type="range" id="monthSelect" min="0" max="12" step="1" value="0" />
+        <p class="hint">0 = media anual · 1–12 = Ene–Dic</p>
+      </div>
+      <div>
+        <div class="label">Impression Share objetivo (genéricas)</div>
+        <div class="row"><span id="isLabel">50%</span></div>
+        <input type="range" id="isGlobal" min="5" max="90" step="1" value="50" />
+        <p class="hint">La inversión <em>sale</em> del IS%, no al revés: € ≈ búsquedas × IS × CTR × CPC</p>
+      </div>
+      <div>
+        <div class="label">CTR estimado (búsqueda)</div>
+        <div class="row"><span id="ctrLabel">5.0%</span></div>
+        <input type="range" id="ctrGlobal" min="1" max="15" step="0.1" value="5" />
+      </div>
+      <div>
+        <div class="label">Intenciones</div>
+        <div class="intents" id="intentToggles"></div>
+      </div>
+      <div>
+        <div class="label">CVR clic → lead</div>
+        <div class="row"><span id="leadCvrLabel">4.2%</span><input type="number" id="leadCvrNum" min="0.1" max="20" step="0.05" value="4.2" style="width:64px" /></div>
+        <input type="range" id="leadCvrGlobal" min="0.5" max="12" step="0.05" value="4.2" />
+      </div>
+      <div>
+        <div class="label">CVR lead → venta final</div>
+        <div class="row"><span id="leadSaleLabel">16%</span><input type="number" id="leadSaleNum" min="1" max="80" step="0.1" value="16" style="width:64px" /></div>
+        <input type="range" id="leadSaleGlobal" min="1" max="50" step="0.1" value="16" />
+      </div>
+    </div>
+  </div>
+
+  <div class="panel" id="results">
+    <h2>Resultados estimados</h2>
+    <div class="stats" style="margin-bottom:10px">
+      <div class="stat hi"><strong id="outSpend">—</strong><span>Inversión / mes</span></div>
+      <div class="stat"><strong id="outIsEff">—</strong><span>IS medio ponderado</span></div>
+      <div class="stat"><strong id="outClicks">—</strong><span>Clics / mes</span></div>
+      <div class="stat"><strong id="outLeads">—</strong><span>Leads / mes</span></div>
+    </div>
+    <div class="stats" style="margin-bottom:10px">
+      <div class="stat ok"><strong id="outConv">—</strong><span>Pedidos WC / mes</span></div>
+      <div class="stat"><strong id="outRev">—</strong><span>Ingresos / mes</span></div>
+      <div class="stat"><strong id="outRoas">—</strong><span>ROAS est.</span></div>
+      <div class="stat"><strong id="outCac">—</strong><span>CAC pedido</span></div>
+    </div>
+    <div class="stats">
+      <div class="stat"><strong id="outCpl">—</strong><span>CPL lead</span></div>
+      <div class="stat"><strong id="outLeadSale">—</strong><span>Lead → venta</span></div>
+      <div class="stat"><strong id="outCvrOrder">—</strong><span>CVR clic → pedido</span></div>
+      <div class="stat"><strong id="outSearches">—</strong><span>Búsquedas cubiertas</span></div>
+    </div>
+    <p class="hint" id="isSpendHint"></p>
+  </div>
+
+  <div class="panel">
+    <h2>Productos</h2>
+    <p class="hint" style="margin-top:0;margin-bottom:10px">Haz clic en el título para activar o desactivar. Solo los activos entran en la estimación.</p>
+    <div class="prod-chips" id="productToggles"></div>
+  </div>
+
+  <section>
+    <div class="panel" style="margin-bottom:14px">
+      <h2>Demanda por categoría</h2>
+      <p style="font-size:.82rem;color:var(--muted);margin-bottom:8px">Búsquedas/mes del Keyword Planner (o GSC en marca), apiladas por intención. El selector de intenciones filtra qué se muestra.</p>
+      <div class="row" style="justify-content:flex-start;gap:12px;margin-bottom:8px">
+        <label style="font-size:.82rem;display:inline-flex;align-items:center;gap:6px"><input type="checkbox" id="demandAllCats" /> Mostrar todas las categorías (no solo activas)</label>
+      </div>
+      <div class="chart-box" style="height:320px"><canvas id="chartDemand"></canvas></div>
+    </div>
+
+    <div class="panel" style="margin-bottom:14px">
+      <h2>Demanda estacional por categoría</h2>
+      <p style="font-size:.82rem;color:var(--muted);margin-bottom:8px">Búsquedas efectivas = volumen base × índice WC del mes. Compara picos por producto a lo largo del año.</p>
+      <div class="chart-box" style="height:280px"><canvas id="chartDemandSeason"></canvas></div>
+    </div>
+
+    <div class="panel" style="margin-bottom:14px">
+      <h2>Inversión mensual con estacionalidad</h2>
+      <p style="font-size:.82rem;color:var(--muted);margin-bottom:8px">A Impression Share actual: demanda × índice WC por producto (no es lineal a lo largo del año). Barras = inversión; líneas = leads y pedidos.</p>
+      <div class="chart-box" style="height:300px"><canvas id="chartIs"></canvas></div>
+    </div>
+
+    <div class="panel" style="margin-bottom:14px">
+      <h2>Estacionalidad por producto (índice, media=1)</h2>
+      <div class="chart-box" style="height:240px"><canvas id="chartSeason"></canvas></div>
+    </div>
+
+    <div class="panel">
+      <h2>Detalle por producto</h2>
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr>
+              <th>Producto</th>
+              <th>Búsquedas/mes</th>
+              <th>IS%</th>
+              <th>CPC</th>
+              <th>CVR lead%</th>
+              <th>AOV</th>
+              <th>Inversión</th>
+              <th>Leads</th>
+              <th>Pedidos</th>
+              <th>Ingresos</th>
+            </tr>
+          </thead>
+          <tbody id="tbody"></tbody>
+        </table>
+      </div>
+      <p class="note" id="assumptions"></p>
+    </div>
+  </section>
+  </div>
+</div>
+</main>
+<script type="application/json" id="ads-data">{"meta":{"source":"Google Keyword Planner exports","period":"Aug 2024 – Jul 2026","currency":"EUR","notes":["Objetivo por defecto: máximas conversiones. Genéricas comerciales (APTIS/Cambridge/IELTS) a IS 55%+; marca al 90%. Idiomas genéricos caros OFF (pocas conversiones por €).","Marca: ~1478 búsquedas/mes (GSC). APTIS comercial 4.360 · Cambridge 8.810. Las ~8k imps/mes de BPS_BRAND_SEARCH incluyen fuga a genéricos — no son demanda de marca.","CPL marca real ≈ 6 € · CPA compra ≈ 33 € · ROAS plataforma ≈ 6,9×. No uses el blended 3,7% del total de cuenta (incluye Empresas PMax).","Embudo: leads = clics × CVR lead%; pedidos = leads × lead→venta%; ingresos = pedidos × AOV.","IS% marca por defecto 70%; certificados 25%.","Estacionalidad: búsquedas_mes_efectivas = búsquedas × índice del mes (WC por producto; media anual = 1)."],"ads_baseline_2526":{"spend":3777.59,"clicks":7863,"wc_orders":38,"cpc":0.48,"cvr_pct":0.48,"platform_purchases":48,"platform_leads":289,"cvr_order_pct":0.48,"cvr_lead_pct":3.68,"cvr_lead_to_sale_pct":13.15,"brand_campaign":{"campaign":"BPS_BRAND_SEARCH","days":58,"spend":822.11,"clicks":994,"impressions":16718,"leads":135,"purchases":25,"value":5649,"cpc":0.83,"ctr_pct":5.9,"cvr_lead_pct":13.58,"cvr_purchase_pct":2.51,"cvr_lead_to_sale_pct":18.5,"cpl":6.09,"cpa_purchase":33.0,"roas":6.87,"monthly_spend_runrate":425,"monthly_clicks_runrate":514,"monthly_leads_runrate":70,"monthly_purchases_runrate":12.9},"certificados":{"campaign":"BPS_CERTIFICADOS_PMAX","spend":2372.92,"clicks":3463,"leads":147,"purchases":22,"cpc":0.69,"cvr_lead_pct":4.25,"cvr_order_pct":0.64,"cvr_lead_to_sale_pct":15.03,"cpl":16.14,"cpa":107.86}},"defaults":{"impression_share_pct":50,"ctr_pct":5,"cvr_lead_pct":4.2,"cvr_lead_to_sale_pct":16,"preset":"max_conv","objective":"max_conversions"},"presets":{"max_conv":{"label":"Máx. conversiones (genéricas + marca)","products":["bps home","aptis","cambridge","ielts"],"is_pct":50,"ctr_pct":5,"cvr_lead_pct":4.2,"cvr_lead_to_sale_pct":16,"product_is":{"bps home":90,"aptis":50,"cambridge":50,"ielts":35},"note":"Prioriza volumen en genéricas comerciales APTIS/Cambridge/IELTS + marca al 90%. Objetivo: máximos leads y pedidos.","intents":["comercial","informacional","marca"],"product_lead_cvr":{"bps home":13.58,"aptis":4.5,"cambridge":4.2,"ielts":3.8}},"max_conv_agresivo":{"label":"Máx. conversiones agresivo (IS alto)","products":["bps home","aptis","cambridge","ielts"],"is_pct":70,"ctr_pct":5.5,"cvr_lead_pct":3.8,"cvr_lead_to_sale_pct":15,"product_is":{"bps home":95,"aptis":70,"cambridge":70,"ielts":50},"note":"Empuja IS genéricas al 75%. Más conversiones, CAC peor. Útil si el KPI es volumen.","intents":["comercial","informacional","marca"],"product_lead_cvr":{"bps home":13.58,"aptis":4.2,"cambridge":4.0,"ielts":3.5}},"rentable":{"label":"Rentable (marca + APTIS + Cambridge)","products":["bps home","aptis","cambridge"],"is_pct":25,"ctr_pct":5,"cvr_lead_pct":5.5,"cvr_lead_to_sale_pct":18,"product_is":{"bps home":85,"aptis":25,"cambridge":25},"intents":["comercial","marca"]},"solo_marca":{"label":"Solo marca (proteger demanda)","products":["bps home"],"is_pct":85,"ctr_pct":30,"cvr_lead_pct":13.58,"cvr_lead_to_sale_pct":18.5,"product_is":{"bps home":85},"intents":["marca"]}},"seasonality":{"months":["Ene","Feb","Mar","Abr","May","Jun","Jul","Ago","Sep","Oct","Nov","Dic"],"note":"Índice mensual (media=1) desde pedidos WooCommerce por familia. Marca = blend estable. Multiplica búsquedas/mes del producto.","all":[1.103,0.86,1.293,0.692,1.025,1.33,1.976,1.091,0.947,0.589,0.617,0.478]}},"products":{"aptis":{"id":"aptis","label":"APTIS","family":"APTIS","active":true,"brand":false,"wc_orders_2526":399,"aov":215,"ads_orders_2526":19,"default_cvr_pct":0.72,"default_ctr_pct":5.0,"default_intents":["comercial"],"intents":{"informacional":{"n":274,"searches_month":26110,"cpc_mid":0.56,"top_keywords":[{"keyword":"aptis examen","avg_monthly":5400.0,"bid_mid":0.51,"yoy_pct":0.0,"in_account":true,"competition":"Media"},{"keyword":"examen aptis","avg_monthly":2900.0,"bid_mid":0.57,"yoy_pct":-17.0,"in_account":true,"competition":"Media"},{"keyword":"speaking aptis","avg_monthly":880.0,"bid_mid":0.46,"yoy_pct":-28.0,"in_account":false,"competition":"Baja"},{"keyword":"listening aptis","avg_monthly":590.0,"bid_mid":0.58,"yoy_pct":-19.0,"in_account":false,"competition":"Baja"},{"keyword":"aptis examen fechas","avg_monthly":480.0,"bid_mid":0.48,"yoy_pct":-56.0,"in_account":false,"competition":"Baja"},{"keyword":"examen ingles aptis","avg_monthly":480.0,"bid_mid":0.58,"yoy_pct":-19.0,"in_account":false,"competition":"Media"},{"keyword":"examen aptis ejemplo","avg_monthly":480.0,"bid_mid":0.69,"yoy_pct":-46.0,"in_account":false,"competition":"Baja"},{"keyword":"examen aptis ingles","avg_monthly":480.0,"bid_mid":0.58,"yoy_pct":-19.0,"in_account":false,"competition":"Media"},{"keyword":"aptis speaking","avg_monthly":480.0,"bid_mid":0.55,"yoy_pct":-18.0,"in_account":false,"competition":"Baja"},{"keyword":"writing aptis","avg_monthly":480.0,"bid_mid":0.44,"yoy_pct":-46.0,"in_account":false,"competition":"Baja"},{"keyword":"listening aptis general","avg_monthly":480.0,"bid_mid":0.49,"yoy_pct":23.0,"in_account":false,"competition":"Baja"},{"keyword":"examen aptis madrid","avg_monthly":390.0,"bid_mid":0.62,"yoy_pct":-46.0,"in_account":false,"competition":"Media"}]},"comercial":{"n":119,"searches_month":4360,"cpc_mid":1.25,"top_keywords":[{"keyword":"aptis online","avg_monthly":480.0,"bid_mid":1.19,"yoy_pct":-34.0,"in_account":false,"competition":"Media"},{"keyword":"curso aptis online","avg_monthly":260.0,"bid_mid":1.52,"yoy_pct":-47.0,"in_account":false,"competition":"Alta"},{"keyword":"curso aptis","avg_monthly":210.0,"bid_mid":1.51,"yoy_pct":-56.0,"in_account":false,"competition":"Alta"},{"keyword":"examen aptis online","avg_monthly":170.0,"bid_mid":0.56,"yoy_pct":-35.0,"in_account":false,"competition":"Media"},{"keyword":"academia aptis","avg_monthly":140.0,"bid_mid":1.1,"yoy_pct":27.0,"in_account":false,"competition":"Media"},{"keyword":"intensivo aptis","avg_monthly":140.0,"bid_mid":1.85,"yoy_pct":0.0,"in_account":true,"competition":"Media"},{"keyword":"aptis examen online","avg_monthly":110.0,"bid_mid":0.71,"yoy_pct":-36.0,"in_account":false,"competition":"Media"},{"keyword":"aptis tests online","avg_monthly":110.0,"bid_mid":0.73,"yoy_pct":-59.0,"in_account":false,"competition":"Baja"},{"keyword":"preparacion aptis","avg_monthly":90.0,"bid_mid":1.52,"yoy_pct":-18.0,"in_account":false,"competition":"Alta"},{"keyword":"preparacion examen aptis","avg_monthly":90.0,"bid_mid":1.45,"yoy_pct":-22.0,"in_account":false,"competition":"Alta"},{"keyword":"preparacion aptis b2","avg_monthly":70.0,"bid_mid":1.51,"yoy_pct":0.0,"in_account":false,"competition":"Alta"},{"keyword":"aptis academia","avg_monthly":70.0,"bid_mid":0.88,"yoy_pct":1080.0,"in_account":false,"competition":"Media"}]},"otro":{"n":179,"searches_month":21530,"cpc_mid":0.63,"top_keywords":[{"keyword":"aptis web","avg_monthly":2900.0,"bid_mid":0.69,"yoy_pct":-64.0,"in_account":false,"competition":"Baja"},{"keyword":"aptis ingles","avg_monthly":1900.0,"bid_mid":0.55,"yoy_pct":26.0,"in_account":false,"competition":"Media"},{"keyword":"aptis general","avg_monthly":1900.0,"bid_mid":0.55,"yoy_pct":-64.0,"in_account":false,"competition":"Baja"},{"keyword":"aptis inglés","avg_monthly":1900.0,"bid_mid":0.55,"yoy_pct":26.0,"in_account":false,"competition":"Media"},{"keyword":"aptis esol","avg_monthly":1600.0,"bid_mid":0.61,"yoy_pct":46.0,"in_account":false,"competition":"Media"},{"keyword":"aptis advanced","avg_monthly":1000.0,"bid_mid":0.9,"yoy_pct":-23.0,"in_account":false,"competition":"Alta"},{"keyword":"aptis b2","avg_monthly":720.0,"bid_mid":0.74,"yoy_pct":-18.0,"in_account":false,"competition":"Media"},{"keyword":"aptis c1","avg_monthly":590.0,"bid_mid":0.68,"yoy_pct":-33.0,"in_account":false,"competition":"Media"},{"keyword":"aptis esol general","avg_monthly":480.0,"bid_mid":0.63,"yoy_pct":0.0,"in_account":false,"competition":"Media"},{"keyword":"puntuación aptis","avg_monthly":480.0,"bid_mid":0.49,"yoy_pct":-56.0,"in_account":false,"competition":"Baja"},{"keyword":"aptis b1","avg_monthly":390.0,"bid_mid":0.6,"yoy_pct":-33.0,"in_account":false,"competition":"Media"},{"keyword":"aptis academy","avg_monthly":390.0,"bid_mid":1.09,"yoy_pct":0.0,"in_account":false,"competition":"Baja"}]}},"totals":{"keywords":572,"searches_month":52000,"searches_comercial":4360,"searches_informacional":26110,"searches_marca":0},"default_cvr_order_pct":0.72,"default_cvr_lead_pct":4.5,"default_is_pct":55,"seasonality":[1.176,1.075,2.067,0.753,0.781,0.965,1.387,0.855,1.038,0.698,0.671,0.533],"seasonality_meta":{"source":"woocommerce","orders_n":1306.0}},"cambridge":{"id":"cambridge","label":"Cambridge","family":"Cambridge","active":true,"brand":false,"wc_orders_2526":316,"aov":255,"ads_orders_2526":13,"default_cvr_pct":0.67,"default_ctr_pct":5.0,"default_intents":["comercial"],"intents":{"comercial":{"n":196,"searches_month":8810,"cpc_mid":1.23,"top_keywords":[{"keyword":"academia cambridge","avg_monthly":390.0,"bid_mid":1.27,"yoy_pct":-34.0,"in_account":false,"competition":"Baja"},{"keyword":"cambridge academia","avg_monthly":390.0,"bid_mid":1.27,"yoy_pct":-34.0,"in_account":false,"competition":"Baja"},{"keyword":"cambridge academia de ingles","avg_monthly":260.0,"bid_mid":1.4,"yoy_pct":55.0,"in_account":false,"competition":"Media"},{"keyword":"academia de ingles cambridge","avg_monthly":260.0,"bid_mid":1.4,"yoy_pct":55.0,"in_account":false,"competition":"Media"},{"keyword":"academias de ingles cambridge","avg_monthly":260.0,"bid_mid":1.4,"yoy_pct":55.0,"in_account":false,"competition":"Media"},{"keyword":"precio examen cambridge b2","avg_monthly":260.0,"bid_mid":0.56,"yoy_pct":-19.0,"in_account":false,"competition":"Baja"},{"keyword":"examen cambridge precio","avg_monthly":210.0,"bid_mid":0.6,"yoy_pct":-57.0,"in_account":false,"competition":"Baja"},{"keyword":"examen cambridge online","avg_monthly":210.0,"bid_mid":0.84,"yoy_pct":-35.0,"in_account":false,"competition":"Media"},{"keyword":"examenes cambridge precios","avg_monthly":210.0,"bid_mid":0.6,"yoy_pct":-57.0,"in_account":false,"competition":"Baja"},{"keyword":"curso de ingles cambridge","avg_monthly":170.0,"bid_mid":1.51,"yoy_pct":0.0,"in_account":false,"competition":"Alta"},{"keyword":"cambridge curso de ingles","avg_monthly":170.0,"bid_mid":1.51,"yoy_pct":0.0,"in_account":false,"competition":"Alta"},{"keyword":"curso ingles cambridge","avg_monthly":170.0,"bid_mid":1.65,"yoy_pct":0.0,"in_account":false,"competition":"Alta"}]},"informacional":{"n":365,"searches_month":51540,"cpc_mid":0.49,"top_keywords":[{"keyword":"examen cambridge english","avg_monthly":5400.0,"bid_mid":0.45,"yoy_pct":-33.0,"in_account":false,"competition":"Baja"},{"keyword":"test examen cambridge","avg_monthly":5400.0,"bid_mid":0.45,"yoy_pct":-33.0,"in_account":false,"competition":"Baja"},{"keyword":"cambridge english examen","avg_monthly":5400.0,"bid_mid":0.45,"yoy_pct":-33.0,"in_account":false,"competition":"Baja"},{"keyword":"b2 examen cambridge","avg_monthly":2400.0,"bid_mid":0.54,"yoy_pct":0.0,"in_account":false,"competition":"Baja"},{"keyword":"cambridge examenes","avg_monthly":1600.0,"bid_mid":0.46,"yoy_pct":-32.0,"in_account":false,"competition":"Baja"},{"keyword":"examenes b2 cambridge","avg_monthly":1600.0,"bid_mid":0.43,"yoy_pct":0.0,"in_account":false,"competition":"Baja"},{"keyword":"examen cambridge","avg_monthly":1300.0,"bid_mid":0.55,"yoy_pct":-23.0,"in_account":true,"competition":"Baja"},{"keyword":"niveles de ingles cambridge","avg_monthly":1000.0,"bid_mid":0.41,"yoy_pct":-41.0,"in_account":false,"competition":"Baja"},{"keyword":"examen cambridge b2","avg_monthly":1000.0,"bid_mid":0.51,"yoy_pct":0.0,"in_account":false,"competition":"Baja"},{"keyword":"niveles ingles cambridge","avg_monthly":880.0,"bid_mid":0.51,"yoy_pct":-41.0,"in_account":false,"competition":"Baja"},{"keyword":"niveles cambridge","avg_monthly":880.0,"bid_mid":0.68,"yoy_pct":-33.0,"in_account":false,"competition":"Baja"},{"keyword":"cambridge examen b1","avg_monthly":880.0,"bid_mid":0.47,"yoy_pct":-28.0,"in_account":false,"competition":"Baja"}]},"otro":{"n":238,"searches_month":38710,"cpc_mid":0.86,"top_keywords":[{"keyword":"cambridge b2","avg_monthly":3600.0,"bid_mid":0.75,"yoy_pct":-18.0,"in_account":false,"competition":"Baja"},{"keyword":"cambridge c1","avg_monthly":3600.0,"bid_mid":0.97,"yoy_pct":-18.0,"in_account":false,"competition":"Baja"},{"keyword":"b2 en cambridge","avg_monthly":3600.0,"bid_mid":0.75,"yoy_pct":-18.0,"in_account":false,"competition":"Baja"},{"keyword":"cambridge advanced","avg_monthly":2400.0,"bid_mid":1.08,"yoy_pct":-45.0,"in_account":false,"competition":"Baja"},{"keyword":"cambridge b1","avg_monthly":2400.0,"bid_mid":0.69,"yoy_pct":-34.0,"in_account":false,"competition":"Baja"},{"keyword":"b1 en cambridge","avg_monthly":2400.0,"bid_mid":0.69,"yoy_pct":-34.0,"in_account":false,"competition":"Baja"},{"keyword":"exámenes b2 cambridge","avg_monthly":1600.0,"bid_mid":0.43,"yoy_pct":0.0,"in_account":false,"competition":"Baja"},{"keyword":"cambridge first","avg_monthly":1300.0,"bid_mid":0.66,"yoy_pct":-32.0,"in_account":false,"competition":"Baja"},{"keyword":"cambridge c2","avg_monthly":880.0,"bid_mid":1.25,"yoy_pct":-12.0,"in_account":false,"competition":"Baja"},{"keyword":"certificado cambridge","avg_monthly":590.0,"bid_mid":0.82,"yoy_pct":-33.0,"in_account":false,"competition":"Baja"},{"keyword":"pet cambridge","avg_monthly":590.0,"bid_mid":1.28,"yoy_pct":-46.0,"in_account":false,"competition":"Baja"},{"keyword":"certificación cambridge","avg_monthly":590.0,"bid_mid":0.82,"yoy_pct":-33.0,"in_account":false,"competition":"Baja"}]}},"totals":{"keywords":799,"searches_month":99060,"searches_comercial":8810,"searches_informacional":51540,"searches_marca":0},"default_cvr_order_pct":0.67,"default_cvr_lead_pct":4.2,"default_is_pct":55,"seasonality":[1.339,1.071,0.949,0.828,0.682,1.558,1.777,0.949,0.852,0.633,0.828,0.535],"seasonality_meta":{"source":"woocommerce","orders_n":493.0}},"trinity":{"id":"trinity","label":"Trinity","family":"Otros cursos","active":false,"brand":false,"wc_orders_2526":16,"aov":179,"ads_orders_2526":0,"default_cvr_pct":0.47,"default_ctr_pct":5.0,"default_intents":["comercial"],"intents":{"comercial":{"n":35,"searches_month":700,"cpc_mid":1.89,"top_keywords":[{"keyword":"academias trinity","avg_monthly":210.0,"bid_mid":2.17,"yoy_pct":24.0,"in_account":false,"competition":"Baja"},{"keyword":"academia ingles trinity","avg_monthly":40.0,"bid_mid":2.17,"yoy_pct":-25.0,"in_account":false,"competition":"Media"},{"keyword":"trinity academia ingles","avg_monthly":40.0,"bid_mid":2.45,"yoy_pct":-40.0,"in_account":false,"competition":"Media"},{"keyword":"academia trinity online","avg_monthly":30.0,"bid_mid":1.24,"yoy_pct":-67.0,"in_account":false,"competition":"Media"},{"keyword":"preparacion trinity online","avg_monthly":30.0,"bid_mid":1.48,"yoy_pct":0.0,"in_account":false,"competition":"Alta"},{"keyword":"b2 trinity online","avg_monthly":20.0,"bid_mid":1.18,"yoy_pct":0.0,"in_account":false,"competition":"Media"},{"keyword":"curso trinity online","avg_monthly":20.0,"bid_mid":1.67,"yoy_pct":-50.0,"in_account":false,"competition":"Media"},{"keyword":"academia trinity madrid","avg_monthly":20.0,"bid_mid":0.96,"yoy_pct":-50.0,"in_account":false,"competition":"Alta"},{"keyword":"examen trinity online","avg_monthly":20.0,"bid_mid":null,"yoy_pct":-50.0,"in_account":false,"competition":"Baja"},{"keyword":"precio examen trinity","avg_monthly":20.0,"bid_mid":null,"yoy_pct":0.0,"in_account":false,"competition":"Baja"},{"keyword":"c1 trinity online","avg_monthly":10.0,"bid_mid":1.06,"yoy_pct":-50.0,"in_account":false,"competition":"Alta"},{"keyword":"curso trinity","avg_monthly":10.0,"bid_mid":null,"yoy_pct":0.0,"in_account":false,"competition":"Baja"}]},"otro":{"n":60,"searches_month":4600,"cpc_mid":1.33,"top_keywords":[{"keyword":"trinity b2","avg_monthly":720.0,"bid_mid":0.87,"yoy_pct":0.0,"in_account":false,"competition":"Baja"},{"keyword":"trinity ise 2","avg_monthly":720.0,"bid_mid":1.74,"yoy_pct":0.0,"in_account":false,"competition":"Baja"},{"keyword":"trinity b1","avg_monthly":590.0,"bid_mid":0.76,"yoy_pct":-46.0,"in_account":false,"competition":"Baja"},{"keyword":"c1 trinity","avg_monthly":390.0,"bid_mid":1.21,"yoy_pct":-33.0,"in_account":false,"competition":"Baja"},{"keyword":"trinity ise 3","avg_monthly":390.0,"bid_mid":2.78,"yoy_pct":22.0,"in_account":false,"competition":"Baja"},{"keyword":"trinity exam b2","avg_monthly":170.0,"bid_mid":0.89,"yoy_pct":0.0,"in_account":false,"competition":"Baja"},{"keyword":"ise trinity","avg_monthly":170.0,"bid_mid":2.02,"yoy_pct":0.0,"in_account":false,"competition":"Baja"},{"keyword":"trinity exam b1","avg_monthly":170.0,"bid_mid":0.55,"yoy_pct":-21.0,"in_account":false,"competition":"Baja"},{"keyword":"gese trinity","avg_monthly":140.0,"bid_mid":null,"yoy_pct":0.0,"in_account":false,"competition":"Baja"},{"keyword":"trinity ingles","avg_monthly":110.0,"bid_mid":1.05,"yoy_pct":-18.0,"in_account":false,"competition":"Baja"},{"keyword":"certificación trinity","avg_monthly":90.0,"bid_mid":null,"yoy_pct":-64.0,"in_account":false,"competition":"Baja"},{"keyword":"trinity ise 1","avg_monthly":90.0,"bid_mid":null,"yoy_pct":-22.0,"in_account":false,"competition":"Baja"}]},"informacional":{"n":58,"searches_month":4250,"cpc_mid":0.85,"top_keywords":[{"keyword":"examen trinity","avg_monthly":880.0,"bid_mid":0.75,"yoy_pct":-33.0,"in_account":true,"competition":"Baja"},{"keyword":"examen trinity b2","avg_monthly":590.0,"bid_mid":0.86,"yoy_pct":0.0,"in_account":false,"competition":"Baja"},{"keyword":"pruebas trinity","avg_monthly":260.0,"bid_mid":null,"yoy_pct":-58.0,"in_account":false,"competition":"Baja"},{"keyword":"examen trinity b1","avg_monthly":210.0,"bid_mid":0.96,"yoy_pct":-33.0,"in_account":false,"competition":"Baja"},{"keyword":"b2 trinity examen","avg_monthly":170.0,"bid_mid":0.89,"yoy_pct":0.0,"in_account":false,"competition":"Baja"},{"keyword":"examenes trinity c1","avg_monthly":170.0,"bid_mid":1.07,"yoy_pct":-33.0,"in_account":false,"competition":"Baja"},{"keyword":"trinity examen b1","avg_monthly":170.0,"bid_mid":0.55,"yoy_pct":-21.0,"in_account":false,"competition":"Baja"},{"keyword":"trinity b1 examen","avg_monthly":170.0,"bid_mid":0.55,"yoy_pct":-21.0,"in_account":false,"competition":"Baja"},{"keyword":"trinity c1 examen","avg_monthly":140.0,"bid_mid":1.14,"yoy_pct":0.0,"in_account":false,"competition":"Baja"},{"keyword":"trinity examen c1","avg_monthly":140.0,"bid_mid":1.14,"yoy_pct":0.0,"in_account":false,"competition":"Baja"},{"keyword":"trinity examen ingles","avg_monthly":90.0,"bid_mid":1.16,"yoy_pct":-29.0,"in_account":false,"competition":"Baja"},{"keyword":"examenes ingles trinity","avg_monthly":90.0,"bid_mid":1.16,"yoy_pct":-29.0,"in_account":false,"competition":"Baja"}]}},"totals":{"keywords":153,"searches_month":9550,"searches_comercial":700,"searches_informacional":4250,"searches_marca":0},"default_cvr_order_pct":0.47,"default_cvr_lead_pct":3.1,"default_is_pct":10,"seasonality":[1.103,0.86,1.293,0.692,1.025,1.33,1.976,1.091,0.947,0.589,0.617,0.478],"seasonality_meta":{"source":"fallback_all","orders_n":9.0}},"ielts":{"id":"ielts","label":"IELTS","family":"IELTS","active":true,"brand":false,"wc_orders_2526":25,"aov":251,"ads_orders_2526":0,"default_cvr_pct":0.61,"default_ctr_pct":5.0,"default_intents":["comercial"],"intents":{"informacional":{"n":66,"searches_month":5710,"cpc_mid":1.27,"top_keywords":[{"keyword":"examen ielts","avg_monthly":3600.0,"bid_mid":1.22,"yoy_pct":-17.0,"in_account":true,"competition":"Media"},{"keyword":"ejemplo examen ielts","avg_monthly":210.0,"bid_mid":1.35,"yoy_pct":-36.0,"in_account":false,"competition":"Baja"},{"keyword":"examen ingles ielts","avg_monthly":170.0,"bid_mid":0.95,"yoy_pct":21.0,"in_account":false,"competition":"Media"},{"keyword":"ielts examen ingles","avg_monthly":170.0,"bid_mid":0.95,"yoy_pct":21.0,"in_account":false,"competition":"Media"},{"keyword":"ielts nivel","avg_monthly":110.0,"bid_mid":null,"yoy_pct":-29.0,"in_account":false,"competition":"Baja"},{"keyword":"nivel ielts","avg_monthly":110.0,"bid_mid":null,"yoy_pct":-29.0,"in_account":false,"competition":"Baja"},{"keyword":"examen ielts madrid","avg_monthly":90.0,"bid_mid":2.15,"yoy_pct":-43.0,"in_account":false,"competition":"Alta"},{"keyword":"ielts madrid examen","avg_monthly":90.0,"bid_mid":2.15,"yoy_pct":-43.0,"in_account":false,"competition":"Alta"},{"keyword":"ielts examenes madrid","avg_monthly":90.0,"bid_mid":2.15,"yoy_pct":-43.0,"in_account":false,"competition":"Alta"},{"keyword":"fechas examen ielts","avg_monthly":70.0,"bid_mid":1.78,"yoy_pct":-40.0,"in_account":false,"competition":"Media"},{"keyword":"ielts fechas examen","avg_monthly":70.0,"bid_mid":1.78,"yoy_pct":-40.0,"in_account":false,"competition":"Media"},{"keyword":"ielts practica","avg_monthly":70.0,"bid_mid":0.37,"yoy_pct":125.0,"in_account":false,"competition":"Baja"}]},"comercial":{"n":72,"searches_month":2420,"cpc_mid":2.34,"top_keywords":[{"keyword":"examen ielts online","avg_monthly":390.0,"bid_mid":1.05,"yoy_pct":-46.0,"in_account":false,"competition":"Media"},{"keyword":"ielts examen online","avg_monthly":390.0,"bid_mid":1.05,"yoy_pct":-46.0,"in_account":false,"competition":"Media"},{"keyword":"ielts precio","avg_monthly":140.0,"bid_mid":1.12,"yoy_pct":-36.0,"in_account":false,"competition":"Baja"},{"keyword":"preparacion ielts","avg_monthly":90.0,"bid_mid":4.24,"yoy_pct":-22.0,"in_account":false,"competition":"Alta"},{"keyword":"preparación ielts","avg_monthly":90.0,"bid_mid":4.24,"yoy_pct":-22.0,"in_account":false,"competition":"Alta"},{"keyword":"preparacion del ielts","avg_monthly":90.0,"bid_mid":4.24,"yoy_pct":-22.0,"in_account":false,"competition":"Alta"},{"keyword":"curso ielts","avg_monthly":70.0,"bid_mid":3.0,"yoy_pct":-40.0,"in_account":false,"competition":"Media"},{"keyword":"examen ielts precio","avg_monthly":70.0,"bid_mid":1.91,"yoy_pct":-60.0,"in_account":false,"competition":"Media"},{"keyword":"precio examen ielts","avg_monthly":70.0,"bid_mid":1.91,"yoy_pct":-60.0,"in_account":false,"competition":"Media"},{"keyword":"curso preparacion ielts","avg_monthly":50.0,"bid_mid":5.77,"yoy_pct":-50.0,"in_account":false,"competition":"Alta"},{"keyword":"preparar el ielts","avg_monthly":50.0,"bid_mid":2.58,"yoy_pct":-25.0,"in_account":false,"competition":"Alta"},{"keyword":"ielts preparacion","avg_monthly":40.0,"bid_mid":4.81,"yoy_pct":0.0,"in_account":false,"competition":"Alta"}]},"otro":{"n":53,"searches_month":2520,"cpc_mid":1.53,"top_keywords":[{"keyword":"ielts qué es","avg_monthly":720.0,"bid_mid":0.99,"yoy_pct":22.0,"in_account":false,"competition":"Baja"},{"keyword":"ielts madrid","avg_monthly":320.0,"bid_mid":2.57,"yoy_pct":-46.0,"in_account":false,"competition":"Alta"},{"keyword":"ielts exam madrid","avg_monthly":170.0,"bid_mid":2.48,"yoy_pct":89.0,"in_account":false,"competition":"Media"},{"keyword":"ielts c1","avg_monthly":140.0,"bid_mid":1.64,"yoy_pct":0.0,"in_account":false,"competition":"Baja"},{"keyword":"ielts ingles","avg_monthly":140.0,"bid_mid":0.98,"yoy_pct":-71.0,"in_account":false,"competition":"Media"},{"keyword":"inglés ielts","avg_monthly":140.0,"bid_mid":0.98,"yoy_pct":-71.0,"in_account":false,"competition":"Media"},{"keyword":"ielts valencia","avg_monthly":110.0,"bid_mid":2.0,"yoy_pct":-44.0,"in_account":false,"competition":"Alta"},{"keyword":"puntuación ielts","avg_monthly":110.0,"bid_mid":null,"yoy_pct":-44.0,"in_account":false,"competition":"Baja"},{"keyword":"ielts españa","avg_monthly":70.0,"bid_mid":1.47,"yoy_pct":-40.0,"in_account":false,"competition":"Media"},{"keyword":"ielts 7","avg_monthly":70.0,"bid_mid":null,"yoy_pct":-20.0,"in_account":false,"competition":"Baja"},{"keyword":"c1 ielts","avg_monthly":40.0,"bid_mid":1.85,"yoy_pct":-25.0,"in_account":false,"competition":"Media"},{"keyword":"ielts exam que es","avg_monthly":40.0,"bid_mid":0.59,"yoy_pct":0.0,"in_account":false,"competition":"Baja"}]}},"totals":{"keywords":191,"searches_month":10650,"searches_comercial":2420,"searches_informacional":5710,"searches_marca":0},"default_cvr_order_pct":0.61,"default_cvr_lead_pct":3.8,"default_is_pct":40,"seasonality":[2.456,1.228,0.351,1.228,1.053,0.351,1.578,0.877,0.526,0.248,1.053,1.053],"seasonality_meta":{"source":"woocommerce","orders_n":68.0}},"delf":{"id":"delf","label":"DELF / Francés exam","family":"Francés","active":false,"brand":false,"wc_orders_2526":52,"aov":256,"ads_orders_2526":1,"default_cvr_pct":0.48,"default_ctr_pct":5.0,"default_intents":["comercial"],"intents":{"informacional":{"n":17,"searches_month":1520,"cpc_mid":1.32,"top_keywords":[{"keyword":"examen delf","avg_monthly":210.0,"bid_mid":1.28,"yoy_pct":0.0,"in_account":false,"competition":"Baja"},{"keyword":"delf examen","avg_monthly":210.0,"bid_mid":1.28,"yoy_pct":0.0,"in_account":false,"competition":"Baja"},{"keyword":"examen delf b2","avg_monthly":210.0,"bid_mid":1.2,"yoy_pct":50.0,"in_account":false,"competition":"Baja"},{"keyword":"b1 delf examen","avg_monthly":210.0,"bid_mid":1.0,"yoy_pct":0.0,"in_account":false,"competition":"Baja"},{"keyword":"examen b2 delf","avg_monthly":210.0,"bid_mid":1.2,"yoy_pct":50.0,"in_account":false,"competition":"Baja"},{"keyword":"examenes dalf c1","avg_monthly":110.0,"bid_mid":2.69,"yoy_pct":0.0,"in_account":false,"competition":"Baja"},{"keyword":"examen delf b1 frances","avg_monthly":70.0,"bid_mid":0.96,"yoy_pct":0.0,"in_account":false,"competition":"Baja"},{"keyword":"examen delf b2 frances","avg_monthly":70.0,"bid_mid":1.7,"yoy_pct":0.0,"in_account":false,"competition":"Baja"},{"keyword":"examen frances delf","avg_monthly":40.0,"bid_mid":1.36,"yoy_pct":-40.0,"in_account":false,"competition":"Baja"},{"keyword":"examen delf a1","avg_monthly":40.0,"bid_mid":null,"yoy_pct":-67.0,"in_account":false,"competition":"Baja"},{"keyword":"examenes dalf","avg_monthly":40.0,"bid_mid":null,"yoy_pct":-25.0,"in_account":false,"competition":"Baja"},{"keyword":"examen b2 frances delf","avg_monthly":30.0,"bid_mid":0.54,"yoy_pct":200.0,"in_account":false,"competition":"Baja"}]},"otro":{"n":43,"searches_month":3940,"cpc_mid":1.17,"top_keywords":[{"keyword":"delf b1","avg_monthly":1000.0,"bid_mid":0.77,"yoy_pct":-33.0,"in_account":false,"competition":"Baja"},{"keyword":"delf b2","avg_monthly":1000.0,"bid_mid":1.17,"yoy_pct":0.0,"in_account":false,"competition":"Media"},{"keyword":"a2 delf","avg_monthly":390.0,"bid_mid":0.88,"yoy_pct":-35.0,"in_account":false,"competition":"Media"},{"keyword":"delf dalf","avg_monthly":320.0,"bid_mid":1.88,"yoy_pct":-33.0,"in_account":false,"competition":"Baja"},{"keyword":"delf a1","avg_monthly":260.0,"bid_mid":2.21,"yoy_pct":-21.0,"in_account":false,"competition":"Media"},{"keyword":"delf b1 francés","avg_monthly":170.0,"bid_mid":0.79,"yoy_pct":91.0,"in_account":false,"competition":"Media"},{"keyword":"delf resultados","avg_monthly":70.0,"bid_mid":null,"yoy_pct":-34.0,"in_account":false,"competition":"Baja"},{"keyword":"b2 frances delf","avg_monthly":50.0,"bid_mid":1.65,"yoy_pct":75.0,"in_account":false,"competition":"Media"},{"keyword":"delf b1 oral","avg_monthly":50.0,"bid_mid":null,"yoy_pct":0.0,"in_account":false,"competition":"Baja"},{"keyword":"oral delf b1","avg_monthly":50.0,"bid_mid":null,"yoy_pct":0.0,"in_account":false,"competition":"Baja"},{"keyword":"delf francés","avg_monthly":40.0,"bid_mid":1.66,"yoy_pct":-40.0,"in_account":false,"competition":"Baja"},{"keyword":"delf frances b2","avg_monthly":40.0,"bid_mid":2.0,"yoy_pct":67.0,"in_account":false,"competition":"Baja"}]},"comercial":{"n":14,"searches_month":160,"cpc_mid":1.78,"top_keywords":[{"keyword":"preparación delf b2","avg_monthly":30.0,"bid_mid":1.55,"yoy_pct":0.0,"in_account":false,"competition":"Alta"},{"keyword":"curso delf","avg_monthly":10.0,"bid_mid":null,"yoy_pct":0.0,"in_account":false,"competition":"Baja"},{"keyword":"preparacion delf","avg_monthly":10.0,"bid_mid":1.09,"yoy_pct":-25.0,"in_account":false,"competition":"Media"},{"keyword":"delf b2 online","avg_monthly":10.0,"bid_mid":null,"yoy_pct":0.0,"in_account":false,"competition":"Baja"},{"keyword":"curso delf b2","avg_monthly":10.0,"bid_mid":2.92,"yoy_pct":0.0,"in_account":false,"competition":"Alta"},{"keyword":"curso delf b2 online","avg_monthly":10.0,"bid_mid":2.1,"yoy_pct":0.0,"in_account":false,"competition":"Media"},{"keyword":"dalf c1 online","avg_monthly":10.0,"bid_mid":null,"yoy_pct":0.0,"in_account":false,"competition":"Alta"},{"keyword":"dalf online","avg_monthly":10.0,"bid_mid":null,"yoy_pct":0.0,"in_account":false,"competition":"Media"},{"keyword":"delf a1 online","avg_monthly":10.0,"bid_mid":null,"yoy_pct":-100.0,"in_account":false,"competition":"Desconocida"},{"keyword":"delf b1 online","avg_monthly":10.0,"bid_mid":null,"yoy_pct":-100.0,"in_account":false,"competition":"Desconocida"},{"keyword":"inscripcion delf b2","avg_monthly":10.0,"bid_mid":null,"yoy_pct":0.0,"in_account":false,"competition":"Media"},{"keyword":"preparacion dalf c1","avg_monthly":10.0,"bid_mid":2.11,"yoy_pct":100.0,"in_account":false,"competition":"Alta"}]}},"totals":{"keywords":74,"searches_month":5620,"searches_comercial":160,"searches_informacional":1520,"searches_marca":0},"default_cvr_order_pct":0.48,"default_cvr_lead_pct":3.19,"default_is_pct":10,"seasonality":[0.853,0.365,0.67,0.792,0.853,1.34,2.193,1.34,1.401,0.975,0.792,0.426],"seasonality_meta":{"source":"woocommerce","orders_n":197.0}},"empresas":{"id":"empresas","label":"Empresas","family":"Otros cursos","active":false,"brand":false,"wc_orders_2526":16,"aov":179,"ads_orders_2526":0,"default_cvr_pct":0.47,"default_ctr_pct":5.0,"default_intents":["comercial"],"intents":{"comercial":{"n":19,"searches_month":1320,"cpc_mid":1.6,"top_keywords":[{"keyword":"cursos de inglés para empresas","avg_monthly":260.0,"bid_mid":39.98,"yoy_pct":-76.0,"in_account":true,"competition":"Baja"},{"keyword":"cursos para empresas","avg_monthly":210.0,"bid_mid":5.06,"yoy_pct":-57.0,"in_account":false,"competition":"Media"},{"keyword":"clases de idiomas para empresas","avg_monthly":210.0,"bid_mid":null,"yoy_pct":0.0,"in_account":false,"competition":"Baja"},{"keyword":"cursos de idiomas para empresas","avg_monthly":140.0,"bid_mid":166.45,"yoy_pct":-82.0,"in_account":false,"competition":"Media"},{"keyword":"clases de inglés para empresas","avg_monthly":90.0,"bid_mid":140.13,"yoy_pct":-86.0,"in_account":false,"competition":"Baja"},{"keyword":"cursos ingles para empresas","avg_monthly":50.0,"bid_mid":null,"yoy_pct":-80.0,"in_account":true,"competition":"Baja"},{"keyword":"cursos de ingles business","avg_monthly":50.0,"bid_mid":null,"yoy_pct":-67.0,"in_account":false,"competition":"Media"},{"keyword":"cursos ingles empresas","avg_monthly":40.0,"bid_mid":70.65,"yoy_pct":0.0,"in_account":true,"competition":"Baja"},{"keyword":"clases de ingles empresas","avg_monthly":40.0,"bid_mid":null,"yoy_pct":0.0,"in_account":false,"competition":"Media"},{"keyword":"profesores de ingles para empresas","avg_monthly":40.0,"bid_mid":6.0,"yoy_pct":-67.0,"in_account":false,"competition":"Alta"},{"keyword":"clases de ingles a empresas","avg_monthly":40.0,"bid_mid":null,"yoy_pct":0.0,"in_account":false,"competition":"Media"},{"keyword":"clases de ingles en empresas","avg_monthly":30.0,"bid_mid":null,"yoy_pct":0.0,"in_account":false,"competition":"Media"}],"cpc_mid_raw":62.92},"otro":{"n":11,"searches_month":900,"cpc_mid":44.09,"top_keywords":[{"keyword":"inglés para empresas","avg_monthly":390.0,"bid_mid":26.52,"yoy_pct":-35.0,"in_account":true,"competition":"Media"},{"keyword":"ingles empresas","avg_monthly":90.0,"bid_mid":96.97,"yoy_pct":-86.0,"in_account":true,"competition":"Media"},{"keyword":"business en inglés","avg_monthly":90.0,"bid_mid":null,"yoy_pct":-22.0,"in_account":false,"competition":"Baja"},{"keyword":"idiomas para empresas","avg_monthly":70.0,"bid_mid":107.06,"yoy_pct":-80.0,"in_account":false,"competition":"Media"},{"keyword":"inglés business","avg_monthly":70.0,"bid_mid":5.42,"yoy_pct":-40.0,"in_account":false,"competition":"Alta"},{"keyword":"frances para empresas","avg_monthly":50.0,"bid_mid":51.53,"yoy_pct":300.0,"in_account":false,"competition":"Baja"},{"keyword":"ingles en empresas","avg_monthly":40.0,"bid_mid":null,"yoy_pct":-100.0,"in_account":false,"competition":"Desconocida"},{"keyword":"empresas de idiomas","avg_monthly":40.0,"bid_mid":null,"yoy_pct":0.0,"in_account":true,"competition":"Media"},{"keyword":"español para empresas","avg_monthly":20.0,"bid_mid":null,"yoy_pct":100.0,"in_account":false,"competition":"Baja"},{"keyword":"empresas de ingles","avg_monthly":20.0,"bid_mid":null,"yoy_pct":0.0,"in_account":true,"competition":"Alta"},{"keyword":"portugues para empresas","avg_monthly":20.0,"bid_mid":44.99,"yoy_pct":300.0,"in_account":false,"competition":"Media"}]},"informacional":{"n":1,"searches_month":10,"cpc_mid":0.48,"top_keywords":[{"keyword":"test para empresas","avg_monthly":10.0,"bid_mid":null,"yoy_pct":-100.0,"in_account":false,"competition":"Desconocida"}]}},"totals":{"keywords":31,"searches_month":2230,"searches_comercial":1320,"searches_informacional":10,"searches_marca":0},"default_cvr_order_pct":0.47,"default_cvr_lead_pct":3.1,"default_is_pct":10,"seasonality":[1.103,0.86,1.293,0.692,1.025,1.33,1.976,1.091,0.947,0.589,0.617,0.478],"seasonality_meta":{"source":"fallback_all","orders_n":1.0}},"kids":{"id":"kids","label":"Kids","family":"Otros cursos","active":false,"brand":false,"wc_orders_2526":16,"aov":179,"ads_orders_2526":0,"default_cvr_pct":0.47,"default_ctr_pct":5.0,"default_intents":["comercial"],"intents":{"comercial":{"n":4,"searches_month":60,"cpc_mid":1.6,"top_keywords":[{"keyword":"cursos de ingles infantil","avg_monthly":30.0,"bid_mid":null,"yoy_pct":-80.0,"in_account":false,"competition":"Media"},{"keyword":"academia para niñas","avg_monthly":10.0,"bid_mid":null,"yoy_pct":0.0,"in_account":false,"competition":"Media"},{"keyword":"cursos ingles infantil","avg_monthly":10.0,"bid_mid":5.26,"yoy_pct":0.0,"in_account":false,"competition":"Media"},{"keyword":"profesor de ingles colegio","avg_monthly":10.0,"bid_mid":null,"yoy_pct":0.0,"in_account":false,"competition":"Alta"}],"cpc_mid_raw":5.26},"otro":{"n":12,"searches_month":1600,"cpc_mid":2.69,"top_keywords":[{"keyword":"ingles colegio","avg_monthly":880.0,"bid_mid":3.26,"yoy_pct":-46.0,"in_account":false,"competition":"Baja"},{"keyword":"colegio inglés madrid","avg_monthly":390.0,"bid_mid":1.58,"yoy_pct":0.0,"in_account":false,"competition":"Baja"},{"keyword":"colegio de idiomas","avg_monthly":140.0,"bid_mid":2.01,"yoy_pct":-47.0,"in_account":false,"competition":"Baja"},{"keyword":"colegio de ingles cerca de mi","avg_monthly":30.0,"bid_mid":1.41,"yoy_pct":0.0,"in_account":false,"competition":"Alta"},{"keyword":"colegio de ingles","avg_monthly":30.0,"bid_mid":4.83,"yoy_pct":100.0,"in_account":false,"competition":"Baja"},{"keyword":"colegio idiomas","avg_monthly":30.0,"bid_mid":null,"yoy_pct":0.0,"in_account":false,"competition":"Baja"},{"keyword":"material ingles infantil","avg_monthly":30.0,"bid_mid":null,"yoy_pct":-50.0,"in_account":false,"competition":"Alta"},{"keyword":"colegio de idiomas madrid","avg_monthly":20.0,"bid_mid":null,"yoy_pct":0.0,"in_account":false,"competition":"Media"},{"keyword":"juegos infantiles para aprender ingles","avg_monthly":20.0,"bid_mid":null,"yoy_pct":0.0,"in_account":false,"competition":"Alta"},{"keyword":"colegio para aprender ingles","avg_monthly":10.0,"bid_mid":null,"yoy_pct":-100.0,"in_account":false,"competition":"Desconocida"},{"keyword":"colegio para estudiar ingles","avg_monthly":10.0,"bid_mid":null,"yoy_pct":0.0,"in_account":false,"competition":"Desconocida"},{"keyword":"colegio para aprender ingles cerca de mi","avg_monthly":10.0,"bid_mid":null,"yoy_pct":0.0,"in_account":false,"competition":"Desconocida"}]}},"totals":{"keywords":16,"searches_month":1660,"searches_comercial":60,"searches_informacional":0,"searches_marca":0},"default_cvr_order_pct":0.47,"default_cvr_lead_pct":3.1,"default_is_pct":10,"seasonality":[1.103,0.86,1.293,0.692,1.025,1.33,1.976,1.091,0.947,0.589,0.617,0.478],"seasonality_meta":{"source":"fallback_all","orders_n":2.0}},"plataforma":{"id":"plataforma","label":"Plataforma online","family":"Otros cursos","active":false,"brand":false,"wc_orders_2526":16,"aov":179,"ads_orders_2526":0,"default_cvr_pct":0.47,"default_ctr_pct":5.0,"default_intents":["comercial"],"intents":{"comercial":{"n":28,"searches_month":1140,"cpc_mid":1.6,"top_keywords":[{"keyword":"aleman online curso","avg_monthly":590.0,"bid_mid":2.45,"yoy_pct":-34.0,"in_account":false,"competition":"Alta"},{"keyword":"curso online ingles b2","avg_monthly":90.0,"bid_mid":2.67,"yoy_pct":-43.0,"in_account":false,"competition":"Alta"},{"keyword":"curso online cambridge","avg_monthly":90.0,"bid_mid":1.25,"yoy_pct":-44.0,"in_account":false,"competition":"Alta"},{"keyword":"plataforma ingles online","avg_monthly":40.0,"bid_mid":8.07,"yoy_pct":-25.0,"in_account":false,"competition":"Alta"},{"keyword":"curso online aptis","avg_monthly":40.0,"bid_mid":1.44,"yoy_pct":-50.0,"in_account":false,"competition":"Alta"},{"keyword":"aptis curso online","avg_monthly":30.0,"bid_mid":1.65,"yoy_pct":25.0,"in_account":false,"competition":"Alta"},{"keyword":"plataformas online para aprender ingles","avg_monthly":20.0,"bid_mid":6.36,"yoy_pct":-50.0,"in_account":false,"competition":"Alta"},{"keyword":"plataforma online para aprender ingles","avg_monthly":20.0,"bid_mid":6.36,"yoy_pct":-50.0,"in_account":false,"competition":"Alta"},{"keyword":"curso online c1","avg_monthly":20.0,"bid_mid":2.9,"yoy_pct":0.0,"in_account":false,"competition":"Media"},{"keyword":"plataforma para aprender ingles online","avg_monthly":20.0,"bid_mid":6.36,"yoy_pct":-50.0,"in_account":false,"competition":"Alta"},{"keyword":"plataforma online ingles","avg_monthly":10.0,"bid_mid":4.21,"yoy_pct":0.0,"in_account":false,"competition":"Alta"},{"keyword":"plataformas de ingles online","avg_monthly":10.0,"bid_mid":5.33,"yoy_pct":0.0,"in_account":false,"competition":"Media"}],"cpc_mid_raw":2.83},"otro":{"n":30,"searches_month":550,"cpc_mid":3.72,"top_keywords":[{"keyword":"plataforma para aprender ingles","avg_monthly":140.0,"bid_mid":3.19,"yoy_pct":-18.0,"in_account":false,"competition":"Media"},{"keyword":"ingles plataforma","avg_monthly":70.0,"bid_mid":5.62,"yoy_pct":-50.0,"in_account":false,"competition":"Media"},{"keyword":"mejor plataforma para aprender inglés","avg_monthly":40.0,"bid_mid":3.64,"yoy_pct":25.0,"in_account":false,"competition":"Alta"},{"keyword":"plataforma para aprender idiomas","avg_monthly":30.0,"bid_mid":3.17,"yoy_pct":50.0,"in_account":false,"competition":"Media"},{"keyword":"plataforma de inglés","avg_monthly":20.0,"bid_mid":1.71,"yoy_pct":50.0,"in_account":false,"competition":"Alta"},{"keyword":"plataforma para estudiar ingles","avg_monthly":10.0,"bid_mid":2.68,"yoy_pct":0.0,"in_account":false,"competition":"Alta"},{"keyword":"plataforma para hablar ingles","avg_monthly":10.0,"bid_mid":2.97,"yoy_pct":0.0,"in_account":false,"competition":"Alta"},{"keyword":"plataforma para aprender","avg_monthly":10.0,"bid_mid":null,"yoy_pct":0.0,"in_account":false,"competition":"Media"},{"keyword":"mejor plataforma para estudiar ingles","avg_monthly":10.0,"bid_mid":4.73,"yoy_pct":0.0,"in_account":false,"competition":"Alta"},{"keyword":"plataforma de idiomas","avg_monthly":10.0,"bid_mid":4.0,"yoy_pct":0.0,"in_account":false,"competition":"Media"},{"keyword":"mejores plataformas para estudiar ingles","avg_monthly":10.0,"bid_mid":4.73,"yoy_pct":0.0,"in_account":false,"competition":"Alta"},{"keyword":"plataformas para enseñar ingles","avg_monthly":10.0,"bid_mid":null,"yoy_pct":-100.0,"in_account":false,"competition":"Desconocida"}]},"informacional":{"n":1,"searches_month":10,"cpc_mid":2.88,"top_keywords":[{"keyword":"plataforma para practicar ingles","avg_monthly":10.0,"bid_mid":2.88,"yoy_pct":0.0,"in_account":false,"competition":"Alta"}]}},"totals":{"keywords":59,"searches_month":1700,"searches_comercial":1140,"searches_informacional":10,"searches_marca":0},"default_cvr_order_pct":0.47,"default_cvr_lead_pct":3.1,"default_is_pct":10,"seasonality":[1.103,0.86,1.293,0.692,1.025,1.33,1.976,1.091,0.947,0.589,0.617,0.478],"seasonality_meta":{"source":"fallback_all","orders_n":null}},"ingles":{"id":"ingles","label":"Inglés genérico","family":null,"active":false,"brand":false,"wc_orders_2526":0,"aov":220,"ads_orders_2526":0,"default_cvr_pct":0.64,"default_ctr_pct":5.0,"default_intents":["comercial"],"intents":{"comercial":{"n":663,"searches_month":251860,"cpc_mid":1.6,"top_keywords":[{"keyword":"academia de ingles","avg_monthly":14800.0,"bid_mid":3.52,"yoy_pct":-33.0,"in_account":true,"competition":"Baja"},{"keyword":"academia de inglés","avg_monthly":14800.0,"bid_mid":3.52,"yoy_pct":-33.0,"in_account":true,"competition":"Baja"},{"keyword":"clases de ingles","avg_monthly":12100.0,"bid_mid":3.17,"yoy_pct":-18.0,"in_account":true,"competition":"Media"},{"keyword":"cursos de inglés","avg_monthly":12100.0,"bid_mid":3.29,"yoy_pct":-19.0,"in_account":true,"competition":"Alta"},{"keyword":"cursos de ingles","avg_monthly":12100.0,"bid_mid":3.29,"yoy_pct":-19.0,"in_account":true,"competition":"Alta"},{"keyword":"academia ingles","avg_monthly":12100.0,"bid_mid":3.71,"yoy_pct":-19.0,"in_account":false,"competition":"Baja"},{"keyword":"academias ingles","avg_monthly":12100.0,"bid_mid":3.71,"yoy_pct":-19.0,"in_account":false,"competition":"Baja"},{"keyword":"cursos gratuitos de ingles","avg_monthly":9900.0,"bid_mid":0.87,"yoy_pct":-33.0,"in_account":false,"competition":"Alta"},{"keyword":"academia de ingles cerca de mi","avg_monthly":8100.0,"bid_mid":2.12,"yoy_pct":0.0,"in_account":true,"competition":"Media"},{"keyword":"academia ingles cerca de mi","avg_monthly":6600.0,"bid_mid":2.53,"yoy_pct":-19.0,"in_account":false,"competition":"Media"},{"keyword":"ingles cursos","avg_monthly":5400.0,"bid_mid":2.91,"yoy_pct":0.0,"in_account":true,"competition":"Alta"},{"keyword":"cursos inglés","avg_monthly":5400.0,"bid_mid":2.91,"yoy_pct":0.0,"in_account":false,"competition":"Alta"}],"cpc_mid_raw":3.85},"otro":{"n":500,"searches_month":253520,"cpc_mid":1.62,"top_keywords":[{"keyword":"aprender ingles","avg_monthly":40500.0,"bid_mid":1.48,"yoy_pct":-33.0,"in_account":true,"competition":"Media"},{"keyword":"aprende ingles","avg_monthly":40500.0,"bid_mid":1.48,"yoy_pct":-33.0,"in_account":false,"competition":"Media"},{"keyword":"ingles aprender","avg_monthly":40500.0,"bid_mid":1.48,"yoy_pct":-33.0,"in_account":true,"competition":"Media"},{"keyword":"aprendo ingles","avg_monthly":40500.0,"bid_mid":1.48,"yoy_pct":-33.0,"in_account":false,"competition":"Media"},{"keyword":"gracias en ingles","avg_monthly":12100.0,"bid_mid":0.81,"yoy_pct":-18.0,"in_account":false,"competition":"Baja"},{"keyword":"ingles conversación","avg_monthly":8100.0,"bid_mid":1.03,"yoy_pct":0.0,"in_account":false,"competition":"Media"},{"keyword":"b1 ingles","avg_monthly":3600.0,"bid_mid":0.98,"yoy_pct":-33.0,"in_account":false,"competition":"Baja"},{"keyword":"aprendiendo ingles desde cero","avg_monthly":3600.0,"bid_mid":1.25,"yoy_pct":83.0,"in_account":false,"competition":"Alta"},{"keyword":"idiomas en ingles","avg_monthly":2400.0,"bid_mid":1.26,"yoy_pct":-33.0,"in_account":false,"competition":"Baja"},{"keyword":"idioma en ingles","avg_monthly":2400.0,"bid_mid":1.26,"yoy_pct":-33.0,"in_account":false,"competition":"Baja"},{"keyword":"idioma en inglés","avg_monthly":2400.0,"bid_mid":1.26,"yoy_pct":-33.0,"in_account":false,"competition":"Baja"},{"keyword":"estudiar ingles","avg_monthly":1600.0,"bid_mid":2.31,"yoy_pct":-12.0,"in_account":true,"competition":"Alta"}]},"informacional":{"n":154,"searches_month":68220,"cpc_mid":0.83,"top_keywords":[{"keyword":"niveles de ingles","avg_monthly":18100.0,"bid_mid":1.01,"yoy_pct":-18.0,"in_account":false,"competition":"Baja"},{"keyword":"niveles ingles","avg_monthly":4400.0,"bid_mid":0.99,"yoy_pct":-34.0,"in_account":false,"competition":"Baja"},{"keyword":"ingles niveles","avg_monthly":4400.0,"bid_mid":0.99,"yoy_pct":-34.0,"in_account":false,"competition":"Baja"},{"keyword":"ejercicios ingles","avg_monthly":2900.0,"bid_mid":0.51,"yoy_pct":-19.0,"in_account":false,"competition":"Baja"},{"keyword":"examen b1 ingles","avg_monthly":2400.0,"bid_mid":0.62,"yoy_pct":-46.0,"in_account":false,"competition":"Media"},{"keyword":"examen b1 inglés","avg_monthly":2400.0,"bid_mid":0.62,"yoy_pct":-46.0,"in_account":false,"competition":"Media"},{"keyword":"pruebas en ingles","avg_monthly":1900.0,"bid_mid":0.77,"yoy_pct":0.0,"in_account":false,"competition":"Baja"},{"keyword":"ejercicios de ingles","avg_monthly":1600.0,"bid_mid":0.53,"yoy_pct":-28.0,"in_account":false,"competition":"Baja"},{"keyword":"examen ingles","avg_monthly":1600.0,"bid_mid":0.74,"yoy_pct":-45.0,"in_account":false,"competition":"Baja"},{"keyword":"examenes ingles","avg_monthly":1600.0,"bid_mid":0.74,"yoy_pct":-45.0,"in_account":false,"competition":"Baja"},{"keyword":"examen en ingles","avg_monthly":1600.0,"bid_mid":0.74,"yoy_pct":-45.0,"in_account":false,"competition":"Baja"},{"keyword":"ingles examen","avg_monthly":1600.0,"bid_mid":0.74,"yoy_pct":-45.0,"in_account":false,"competition":"Baja"}]}},"totals":{"keywords":1317,"searches_month":573600,"searches_comercial":251860,"searches_informacional":68220,"searches_marca":0},"default_cvr_order_pct":0.64,"default_cvr_lead_pct":4.25,"default_is_pct":10,"seasonality":[1.103,0.86,1.293,0.692,1.025,1.33,1.976,1.091,0.947,0.589,0.617,0.478],"seasonality_meta":{"source":"fallback_all","orders_n":null}},"frances":{"id":"frances","label":"Francés (cursos)","family":"Francés","active":false,"brand":false,"wc_orders_2526":52,"aov":256,"ads_orders_2526":1,"default_cvr_pct":0.48,"default_ctr_pct":5.0,"default_intents":["comercial"],"intents":{"comercial":{"n":178,"searches_month":27750,"cpc_mid":1.6,"top_keywords":[{"keyword":"cursos de frances","avg_monthly":1600.0,"bid_mid":1.69,"yoy_pct":-38.0,"in_account":false,"competition":"Alta"},{"keyword":"cursos de francés","avg_monthly":1600.0,"bid_mid":1.69,"yoy_pct":-38.0,"in_account":false,"competition":"Alta"},{"keyword":"cursos frances","avg_monthly":1300.0,"bid_mid":1.76,"yoy_pct":-12.0,"in_account":false,"competition":"Media"},{"keyword":"clases de frances","avg_monthly":1300.0,"bid_mid":3.36,"yoy_pct":0.0,"in_account":false,"competition":"Media"},{"keyword":"francés curso","avg_monthly":1300.0,"bid_mid":1.76,"yoy_pct":-12.0,"in_account":false,"competition":"Media"},{"keyword":"clases frances","avg_monthly":1000.0,"bid_mid":3.79,"yoy_pct":-33.0,"in_account":false,"competition":"Baja"},{"keyword":"academia frances","avg_monthly":1000.0,"bid_mid":2.56,"yoy_pct":-28.0,"in_account":false,"competition":"Baja"},{"keyword":"curso online frances","avg_monthly":880.0,"bid_mid":2.33,"yoy_pct":0.0,"in_account":false,"competition":"Alta"},{"keyword":"cursos online frances","avg_monthly":880.0,"bid_mid":2.33,"yoy_pct":0.0,"in_account":false,"competition":"Alta"},{"keyword":"cursos frances online","avg_monthly":880.0,"bid_mid":2.33,"yoy_pct":0.0,"in_account":false,"competition":"Alta"},{"keyword":"frances curso online","avg_monthly":880.0,"bid_mid":2.33,"yoy_pct":0.0,"in_account":false,"competition":"Alta"},{"keyword":"frances online curso","avg_monthly":880.0,"bid_mid":2.33,"yoy_pct":0.0,"in_account":false,"competition":"Alta"}],"cpc_mid_raw":2.83},"otro":{"n":105,"searches_month":33800,"cpc_mid":0.88,"top_keywords":[{"keyword":"aprender frances","avg_monthly":5400.0,"bid_mid":0.9,"yoy_pct":-33.0,"in_account":false,"competition":"Media"},{"keyword":"aprende frances","avg_monthly":5400.0,"bid_mid":0.9,"yoy_pct":-33.0,"in_account":false,"competition":"Media"},{"keyword":"aprender el francés","avg_monthly":5400.0,"bid_mid":0.9,"yoy_pct":-33.0,"in_account":false,"competition":"Media"},{"keyword":"vocabulario en frances","avg_monthly":1600.0,"bid_mid":0.39,"yoy_pct":-12.0,"in_account":false,"competition":"Baja"},{"keyword":"vocabulario en francés","avg_monthly":1600.0,"bid_mid":0.39,"yoy_pct":-12.0,"in_account":false,"competition":"Baja"},{"keyword":"idioma frances","avg_monthly":1300.0,"bid_mid":0.98,"yoy_pct":0.0,"in_account":false,"competition":"Baja"},{"keyword":"frances idioma","avg_monthly":1300.0,"bid_mid":0.98,"yoy_pct":0.0,"in_account":false,"competition":"Baja"},{"keyword":"b1 frances","avg_monthly":880.0,"bid_mid":0.66,"yoy_pct":-18.0,"in_account":false,"competition":"Media"},{"keyword":"frances a1","avg_monthly":880.0,"bid_mid":0.57,"yoy_pct":-18.0,"in_account":false,"competition":"Media"},{"keyword":"conversacion frances","avg_monthly":880.0,"bid_mid":0.29,"yoy_pct":22.0,"in_account":false,"competition":"Baja"},{"keyword":"b1 francés","avg_monthly":880.0,"bid_mid":0.66,"yoy_pct":-18.0,"in_account":false,"competition":"Media"},{"keyword":"hablar frances","avg_monthly":480.0,"bid_mid":0.4,"yoy_pct":-19.0,"in_account":false,"competition":"Baja"}]},"informacional":{"n":43,"searches_month":4100,"cpc_mid":0.9,"top_keywords":[{"keyword":"nivel de frances","avg_monthly":480.0,"bid_mid":1.16,"yoy_pct":-18.0,"in_account":false,"competition":"Baja"},{"keyword":"niveles de frances","avg_monthly":480.0,"bid_mid":1.16,"yoy_pct":-18.0,"in_account":false,"competition":"Baja"},{"keyword":"nivel frances","avg_monthly":260.0,"bid_mid":0.71,"yoy_pct":-48.0,"in_account":false,"competition":"Baja"},{"keyword":"prueba de nivel de francés","avg_monthly":210.0,"bid_mid":0.94,"yoy_pct":-18.0,"in_account":false,"competition":"Media"},{"keyword":"examen b2 francés","avg_monthly":210.0,"bid_mid":0.8,"yoy_pct":-48.0,"in_account":false,"competition":"Baja"},{"keyword":"test nivel frances","avg_monthly":170.0,"bid_mid":0.8,"yoy_pct":-18.0,"in_account":false,"competition":"Media"},{"keyword":"listening en frances","avg_monthly":140.0,"bid_mid":0.15,"yoy_pct":-20.0,"in_account":false,"competition":"Baja"},{"keyword":"examenes frances","avg_monthly":140.0,"bid_mid":1.85,"yoy_pct":0.0,"in_account":false,"competition":"Baja"},{"keyword":"listening frances","avg_monthly":140.0,"bid_mid":0.15,"yoy_pct":-20.0,"in_account":false,"competition":"Baja"},{"keyword":"examen de frances","avg_monthly":140.0,"bid_mid":0.86,"yoy_pct":-43.0,"in_account":false,"competition":"Baja"},{"keyword":"examen frances","avg_monthly":140.0,"bid_mid":1.85,"yoy_pct":0.0,"in_account":false,"competition":"Baja"},{"keyword":"examen oficial frances","avg_monthly":140.0,"bid_mid":1.37,"yoy_pct":-18.0,"in_account":false,"competition":"Baja"}]}},"totals":{"keywords":326,"searches_month":65650,"searches_comercial":27750,"searches_informacional":4100,"searches_marca":0},"default_cvr_order_pct":0.48,"default_cvr_lead_pct":3.19,"default_is_pct":10,"seasonality":[0.853,0.365,0.67,0.792,0.853,1.34,2.193,1.34,1.401,0.975,0.792,0.426],"seasonality_meta":{"source":"proxy_delf","orders_n":197.0}},"aleman":{"id":"aleman","label":"Alemán","family":"Alemán","active":false,"brand":false,"wc_orders_2526":50,"aov":213,"ads_orders_2526":0,"default_cvr_pct":0.47,"default_ctr_pct":5.0,"default_intents":["comercial"],"intents":{"comercial":{"n":152,"searches_month":15790,"cpc_mid":2.48,"top_keywords":[{"keyword":"curso aleman","avg_monthly":1000.0,"bid_mid":1.71,"yoy_pct":-33.0,"in_account":false,"competition":"Media"},{"keyword":"clases de aleman","avg_monthly":880.0,"bid_mid":2.54,"yoy_pct":-33.0,"in_account":false,"competition":"Media"},{"keyword":"curso de aleman","avg_monthly":880.0,"bid_mid":1.46,"yoy_pct":-45.0,"in_account":false,"competition":"Media"},{"keyword":"academia aleman","avg_monthly":880.0,"bid_mid":2.15,"yoy_pct":-18.0,"in_account":false,"competition":"Baja"},{"keyword":"academias aleman","avg_monthly":880.0,"bid_mid":2.15,"yoy_pct":-18.0,"in_account":false,"competition":"Baja"},{"keyword":"curso online aleman","avg_monthly":590.0,"bid_mid":2.45,"yoy_pct":-34.0,"in_account":false,"competition":"Alta"},{"keyword":"academia de aleman","avg_monthly":590.0,"bid_mid":1.46,"yoy_pct":-46.0,"in_account":false,"competition":"Media"},{"keyword":"aleman online curso","avg_monthly":590.0,"bid_mid":2.45,"yoy_pct":-34.0,"in_account":false,"competition":"Alta"},{"keyword":"clases aleman","avg_monthly":480.0,"bid_mid":2.46,"yoy_pct":-33.0,"in_account":false,"competition":"Media"},{"keyword":"clases alemán","avg_monthly":480.0,"bid_mid":2.46,"yoy_pct":-33.0,"in_account":false,"competition":"Media"},{"keyword":"curso de aleman online","avg_monthly":390.0,"bid_mid":2.4,"yoy_pct":-33.0,"in_account":false,"competition":"Alta"},{"keyword":"cursos online de alemán","avg_monthly":390.0,"bid_mid":2.4,"yoy_pct":-33.0,"in_account":false,"competition":"Alta"}]},"otro":{"n":82,"searches_month":13800,"cpc_mid":0.87,"top_keywords":[{"keyword":"aprender aleman","avg_monthly":6600.0,"bid_mid":0.91,"yoy_pct":-34.0,"in_account":false,"competition":"Media"},{"keyword":"idioma aleman","avg_monthly":1000.0,"bid_mid":0.61,"yoy_pct":-18.0,"in_account":false,"competition":"Baja"},{"keyword":"aleman a1","avg_monthly":880.0,"bid_mid":0.68,"yoy_pct":-45.0,"in_account":false,"competition":"Media"},{"keyword":"alemán a1","avg_monthly":880.0,"bid_mid":0.68,"yoy_pct":-45.0,"in_account":false,"competition":"Media"},{"keyword":"aleman básico","avg_monthly":480.0,"bid_mid":0.35,"yoy_pct":-33.0,"in_account":false,"competition":"Baja"},{"keyword":"a1 aleman","avg_monthly":260.0,"bid_mid":0.64,"yoy_pct":-35.0,"in_account":false,"competition":"Media"},{"keyword":"aleman sencillo","avg_monthly":260.0,"bid_mid":null,"yoy_pct":-56.0,"in_account":false,"competition":"Baja"},{"keyword":"estudiar aleman","avg_monthly":210.0,"bid_mid":1.39,"yoy_pct":-46.0,"in_account":false,"competition":"Media"},{"keyword":"aleman estudiar","avg_monthly":210.0,"bid_mid":1.39,"yoy_pct":-46.0,"in_account":false,"competition":"Media"},{"keyword":"b1 aleman","avg_monthly":170.0,"bid_mid":0.74,"yoy_pct":-35.0,"in_account":false,"competition":"Baja"},{"keyword":"aprender aleman a1","avg_monthly":170.0,"bid_mid":0.71,"yoy_pct":-48.0,"in_account":false,"competition":"Media"},{"keyword":"escuelas aleman","avg_monthly":170.0,"bid_mid":3.44,"yoy_pct":-18.0,"in_account":false,"competition":"Baja"}]},"informacional":{"n":25,"searches_month":1000,"cpc_mid":0.88,"top_keywords":[{"keyword":"niveles de aleman","avg_monthly":170.0,"bid_mid":0.88,"yoy_pct":-35.0,"in_account":false,"competition":"Baja"},{"keyword":"examenes de aleman","avg_monthly":110.0,"bid_mid":0.49,"yoy_pct":-50.0,"in_account":false,"competition":"Baja"},{"keyword":"nivel aleman","avg_monthly":90.0,"bid_mid":0.93,"yoy_pct":-29.0,"in_account":false,"competition":"Baja"},{"keyword":"examen b1 alemán","avg_monthly":90.0,"bid_mid":1.0,"yoy_pct":-44.0,"in_account":false,"competition":"Baja"},{"keyword":"nivel a1 aleman","avg_monthly":70.0,"bid_mid":0.74,"yoy_pct":-67.0,"in_account":false,"competition":"Baja"},{"keyword":"examenes aleman","avg_monthly":50.0,"bid_mid":1.86,"yoy_pct":-25.0,"in_account":false,"competition":"Baja"},{"keyword":"examenes oficiales aleman","avg_monthly":50.0,"bid_mid":0.86,"yoy_pct":-20.0,"in_account":false,"competition":"Baja"},{"keyword":"test nivel aleman","avg_monthly":50.0,"bid_mid":1.39,"yoy_pct":-20.0,"in_account":false,"competition":"Media"},{"keyword":"test aleman","avg_monthly":40.0,"bid_mid":0.52,"yoy_pct":0.0,"in_account":false,"competition":"Baja"},{"keyword":"test de nivel aleman","avg_monthly":40.0,"bid_mid":0.7,"yoy_pct":-20.0,"in_account":false,"competition":"Media"},{"keyword":"test de alemán","avg_monthly":30.0,"bid_mid":0.38,"yoy_pct":33.0,"in_account":false,"competition":"Media"},{"keyword":"aleman nivel a2","avg_monthly":30.0,"bid_mid":null,"yoy_pct":-50.0,"in_account":false,"competition":"Baja"}]}},"totals":{"keywords":259,"searches_month":30590,"searches_comercial":15790,"searches_informacional":1000,"searches_marca":0},"default_cvr_order_pct":0.47,"default_cvr_lead_pct":3.1,"default_is_pct":10,"seasonality":[1.541,0.44,0.661,0.55,1.431,1.266,2.312,1.706,0.826,0.275,0.55,0.44],"seasonality_meta":{"source":"woocommerce","orders_n":218.0}},"italiano":{"id":"italiano","label":"Italiano","family":"Italiano","active":false,"brand":false,"wc_orders_2526":36,"aov":198,"ads_orders_2526":5,"default_cvr_pct":0.56,"default_ctr_pct":5.0,"default_intents":["comercial"],"intents":{"comercial":{"n":160,"searches_month":15450,"cpc_mid":1.6,"top_keywords":[{"keyword":"clases de italiano","avg_monthly":1300.0,"bid_mid":2.29,"yoy_pct":-23.0,"in_account":false,"competition":"Media"},{"keyword":"cursos de italiano","avg_monthly":1000.0,"bid_mid":1.67,"yoy_pct":-12.0,"in_account":false,"competition":"Alta"},{"keyword":"cursos italiano","avg_monthly":880.0,"bid_mid":1.97,"yoy_pct":0.0,"in_account":false,"competition":"Media"},{"keyword":"curso en italiano","avg_monthly":880.0,"bid_mid":1.97,"yoy_pct":0.0,"in_account":false,"competition":"Media"},{"keyword":"clases italiano","avg_monthly":720.0,"bid_mid":3.24,"yoy_pct":-34.0,"in_account":false,"competition":"Media"},{"keyword":"italiano clases","avg_monthly":720.0,"bid_mid":3.24,"yoy_pct":-34.0,"in_account":false,"competition":"Media"},{"keyword":"cursos italiano online","avg_monthly":480.0,"bid_mid":2.58,"yoy_pct":-19.0,"in_account":false,"competition":"Alta"},{"keyword":"cursos online italiano","avg_monthly":480.0,"bid_mid":2.58,"yoy_pct":-19.0,"in_account":false,"competition":"Alta"},{"keyword":"italiano curso online","avg_monthly":480.0,"bid_mid":2.58,"yoy_pct":-19.0,"in_account":false,"competition":"Alta"},{"keyword":"cursos online italiano gratis","avg_monthly":480.0,"bid_mid":0.88,"yoy_pct":23.0,"in_account":false,"competition":"Media"},{"keyword":"academia italiano","avg_monthly":390.0,"bid_mid":4.25,"yoy_pct":-19.0,"in_account":false,"competition":"Baja"},{"keyword":"italiano academia","avg_monthly":390.0,"bid_mid":4.25,"yoy_pct":-19.0,"in_account":false,"competition":"Baja"}],"cpc_mid_raw":3.06},"otro":{"n":89,"searches_month":13940,"cpc_mid":0.95,"top_keywords":[{"keyword":"aprender italiano","avg_monthly":4400.0,"bid_mid":1.04,"yoy_pct":-18.0,"in_account":false,"competition":"Media"},{"keyword":"clase de italiano","avg_monthly":1300.0,"bid_mid":2.29,"yoy_pct":-23.0,"in_account":false,"competition":"Media"},{"keyword":"idioma italiano","avg_monthly":880.0,"bid_mid":0.57,"yoy_pct":-18.0,"in_account":false,"competition":"Baja"},{"keyword":"italiano idioma","avg_monthly":880.0,"bid_mid":0.57,"yoy_pct":-18.0,"in_account":false,"competition":"Baja"},{"keyword":"italiano basico","avg_monthly":590.0,"bid_mid":0.34,"yoy_pct":-34.0,"in_account":false,"competition":"Baja"},{"keyword":"basico italiano","avg_monthly":590.0,"bid_mid":0.34,"yoy_pct":-34.0,"in_account":false,"competition":"Baja"},{"keyword":"básico italiano","avg_monthly":590.0,"bid_mid":0.34,"yoy_pct":-34.0,"in_account":false,"competition":"Baja"},{"keyword":"conversaciones en italiano","avg_monthly":480.0,"bid_mid":0.22,"yoy_pct":23.0,"in_account":false,"competition":"Baja"},{"keyword":"hablar italiano","avg_monthly":390.0,"bid_mid":0.42,"yoy_pct":-33.0,"in_account":false,"competition":"Baja"},{"keyword":"habla italiano","avg_monthly":390.0,"bid_mid":0.42,"yoy_pct":-33.0,"in_account":false,"competition":"Baja"},{"keyword":"aprender en italiano","avg_monthly":320.0,"bid_mid":1.18,"yoy_pct":-19.0,"in_account":false,"competition":"Baja"},{"keyword":"b1 italiano","avg_monthly":260.0,"bid_mid":1.55,"yoy_pct":-35.0,"in_account":false,"competition":"Baja"}]},"informacional":{"n":26,"searches_month":1550,"cpc_mid":1.05,"top_keywords":[{"keyword":"gramatica de italiano","avg_monthly":480.0,"bid_mid":0.79,"yoy_pct":-33.0,"in_account":false,"competition":"Alta"},{"keyword":"niveles de italiano","avg_monthly":140.0,"bid_mid":1.33,"yoy_pct":-18.0,"in_account":false,"competition":"Baja"},{"keyword":"nivel de italiano","avg_monthly":140.0,"bid_mid":1.33,"yoy_pct":-18.0,"in_account":false,"competition":"Baja"},{"keyword":"italiano test","avg_monthly":110.0,"bid_mid":0.49,"yoy_pct":-50.0,"in_account":false,"competition":"Baja"},{"keyword":"examen oficial italiano","avg_monthly":90.0,"bid_mid":3.13,"yoy_pct":-29.0,"in_account":false,"competition":"Baja"},{"keyword":"examenes italiano","avg_monthly":70.0,"bid_mid":0.71,"yoy_pct":0.0,"in_account":false,"competition":"Baja"},{"keyword":"test nivel italiano","avg_monthly":70.0,"bid_mid":0.75,"yoy_pct":-44.0,"in_account":false,"competition":"Media"},{"keyword":"nivel italiano","avg_monthly":50.0,"bid_mid":1.83,"yoy_pct":-40.0,"in_account":false,"competition":"Baja"},{"keyword":"test de nivel italiano","avg_monthly":40.0,"bid_mid":0.59,"yoy_pct":0.0,"in_account":false,"competition":"Media"},{"keyword":"examenes de italiano","avg_monthly":40.0,"bid_mid":null,"yoy_pct":-50.0,"in_account":false,"competition":"Baja"},{"keyword":"test de italiano","avg_monthly":40.0,"bid_mid":0.38,"yoy_pct":0.0,"in_account":false,"competition":"Media"},{"keyword":"italiano nivel a1","avg_monthly":40.0,"bid_mid":0.92,"yoy_pct":-25.0,"in_account":false,"competition":"Media"}]}},"totals":{"keywords":275,"searches_month":30940,"searches_comercial":15450,"searches_informacional":1550,"searches_marca":0},"default_cvr_order_pct":0.56,"default_cvr_lead_pct":3.72,"default_is_pct":10,"seasonality":[0.38,0.506,0.456,0.43,1.797,2.051,3.316,1.595,0.658,0.304,0.253,0.253],"seasonality_meta":{"source":"woocommerce","orders_n":474.0}},"portugues":{"id":"portugues","label":"Portugués","family":null,"active":false,"brand":false,"wc_orders_2526":0,"aov":220,"ads_orders_2526":0,"default_cvr_pct":0.64,"default_ctr_pct":5.0,"default_intents":["comercial"],"intents":{"comercial":{"n":89,"searches_month":4970,"cpc_mid":1.6,"top_keywords":[{"keyword":"clases de portugues","avg_monthly":390.0,"bid_mid":5.58,"yoy_pct":-33.0,"in_account":false,"competition":"Media"},{"keyword":"cursos de portugues","avg_monthly":390.0,"bid_mid":1.77,"yoy_pct":-33.0,"in_account":false,"competition":"Alta"},{"keyword":"cursos portugues","avg_monthly":320.0,"bid_mid":1.84,"yoy_pct":-19.0,"in_account":false,"competition":"Media"},{"keyword":"cursos en portugues","avg_monthly":320.0,"bid_mid":1.84,"yoy_pct":-19.0,"in_account":false,"competition":"Media"},{"keyword":"clases portugues","avg_monthly":210.0,"bid_mid":3.84,"yoy_pct":-18.0,"in_account":false,"competition":"Media"},{"keyword":"curso portugues online","avg_monthly":210.0,"bid_mid":2.41,"yoy_pct":0.0,"in_account":false,"competition":"Alta"},{"keyword":"curso de portugues online","avg_monthly":210.0,"bid_mid":2.58,"yoy_pct":-35.0,"in_account":false,"competition":"Alta"},{"keyword":"aprender portugues online","avg_monthly":210.0,"bid_mid":2.19,"yoy_pct":-47.0,"in_account":false,"competition":"Media"},{"keyword":"clases en portugués","avg_monthly":210.0,"bid_mid":3.84,"yoy_pct":-18.0,"in_account":false,"competition":"Media"},{"keyword":"cursos online de portugués","avg_monthly":210.0,"bid_mid":2.58,"yoy_pct":-35.0,"in_account":false,"competition":"Alta"},{"keyword":"clases de portugues online","avg_monthly":140.0,"bid_mid":7.28,"yoy_pct":-55.0,"in_account":false,"competition":"Media"},{"keyword":"academia portugues","avg_monthly":140.0,"bid_mid":2.83,"yoy_pct":0.0,"in_account":false,"competition":"Media"}],"cpc_mid_raw":3.16},"otro":{"n":71,"searches_month":6240,"cpc_mid":0.88,"top_keywords":[{"keyword":"aprende portugues","avg_monthly":1600.0,"bid_mid":1.21,"yoy_pct":-32.0,"in_account":false,"competition":"Media"},{"keyword":"palabras portugues","avg_monthly":1000.0,"bid_mid":0.32,"yoy_pct":0.0,"in_account":false,"competition":"Baja"},{"keyword":"idioma portugués","avg_monthly":720.0,"bid_mid":0.67,"yoy_pct":0.0,"in_account":false,"competition":"Baja"},{"keyword":"portugués brasil","avg_monthly":390.0,"bid_mid":0.48,"yoy_pct":0.0,"in_account":false,"competition":"Baja"},{"keyword":"portugués de portugal","avg_monthly":390.0,"bid_mid":0.22,"yoy_pct":-33.0,"in_account":false,"competition":"Baja"},{"keyword":"libro portugues","avg_monthly":320.0,"bid_mid":0.14,"yoy_pct":-35.0,"in_account":false,"competition":"Media"},{"keyword":"idioma de portugués","avg_monthly":210.0,"bid_mid":null,"yoy_pct":-21.0,"in_account":false,"competition":"Baja"},{"keyword":"hablar portugues","avg_monthly":140.0,"bid_mid":0.36,"yoy_pct":-21.0,"in_account":false,"competition":"Baja"},{"keyword":"portugues conversacion","avg_monthly":140.0,"bid_mid":0.32,"yoy_pct":-18.0,"in_account":false,"competition":"Baja"},{"keyword":"b1 portugues","avg_monthly":110.0,"bid_mid":0.72,"yoy_pct":-36.0,"in_account":false,"competition":"Media"},{"keyword":"portugués de brasil","avg_monthly":90.0,"bid_mid":0.89,"yoy_pct":0.0,"in_account":false,"competition":"Baja"},{"keyword":"estudiar portugues","avg_monthly":70.0,"bid_mid":1.91,"yoy_pct":0.0,"in_account":false,"competition":"Media"}]},"informacional":{"n":24,"searches_month":570,"cpc_mid":1.29,"top_keywords":[{"keyword":"niveles de portugues","avg_monthly":70.0,"bid_mid":null,"yoy_pct":25.0,"in_account":false,"competition":"Baja"},{"keyword":"examen b1 portugues","avg_monthly":70.0,"bid_mid":1.5,"yoy_pct":0.0,"in_account":false,"competition":"Baja"},{"keyword":"examen portugues","avg_monthly":50.0,"bid_mid":null,"yoy_pct":-25.0,"in_account":false,"competition":"Baja"},{"keyword":"examen oficial portugues","avg_monthly":50.0,"bid_mid":null,"yoy_pct":-33.0,"in_account":false,"competition":"Baja"},{"keyword":"examen b2 portugues","avg_monthly":40.0,"bid_mid":1.27,"yoy_pct":-20.0,"in_account":false,"competition":"Baja"},{"keyword":"examenes de portugues","avg_monthly":30.0,"bid_mid":null,"yoy_pct":-67.0,"in_account":false,"competition":"Baja"},{"keyword":"test portugues","avg_monthly":30.0,"bid_mid":null,"yoy_pct":0.0,"in_account":false,"competition":"Baja"},{"keyword":"test nivel portugues","avg_monthly":30.0,"bid_mid":null,"yoy_pct":-67.0,"in_account":false,"competition":"Baja"},{"keyword":"examen oficial de portugues","avg_monthly":30.0,"bid_mid":null,"yoy_pct":0.0,"in_account":false,"competition":"Baja"},{"keyword":"niveles portugues","avg_monthly":20.0,"bid_mid":null,"yoy_pct":100.0,"in_account":false,"competition":"Baja"},{"keyword":"test de portugués","avg_monthly":20.0,"bid_mid":0.77,"yoy_pct":50.0,"in_account":false,"competition":"Baja"},{"keyword":"portugues test","avg_monthly":10.0,"bid_mid":null,"yoy_pct":null,"in_account":false,"competition":"Baja"}]}},"totals":{"keywords":184,"searches_month":11780,"searches_comercial":4970,"searches_informacional":570,"searches_marca":0},"default_cvr_order_pct":0.64,"default_cvr_lead_pct":4.25,"default_is_pct":10,"seasonality":[0.811,0.608,0.608,0.405,0.405,2.634,3.647,0.608,0.811,0.811,0.245,0.405],"seasonality_meta":{"source":"woocommerce","orders_n":58.0}},"chino":{"id":"chino","label":"Chino","family":null,"active":false,"brand":false,"wc_orders_2526":0,"aov":220,"ads_orders_2526":0,"default_cvr_pct":0.64,"default_ctr_pct":5.0,"default_intents":["comercial"],"intents":{"comercial":{"n":70,"searches_month":4350,"cpc_mid":1.6,"top_keywords":[{"keyword":"clases de chino","avg_monthly":590.0,"bid_mid":2.04,"yoy_pct":-34.0,"in_account":false,"competition":"Media"},{"keyword":"academia chino","avg_monthly":320.0,"bid_mid":3.06,"yoy_pct":0.0,"in_account":false,"competition":"Baja"},{"keyword":"academia de chino","avg_monthly":260.0,"bid_mid":2.4,"yoy_pct":53.0,"in_account":false,"competition":"Baja"},{"keyword":"clases chino","avg_monthly":210.0,"bid_mid":3.79,"yoy_pct":27.0,"in_account":false,"competition":"Baja"},{"keyword":"chino online","avg_monthly":210.0,"bid_mid":0.62,"yoy_pct":-33.0,"in_account":false,"competition":"Alta"},{"keyword":"curso chino","avg_monthly":170.0,"bid_mid":1.68,"yoy_pct":-48.0,"in_account":false,"competition":"Media"},{"keyword":"clases de chino online","avg_monthly":140.0,"bid_mid":5.5,"yoy_pct":-36.0,"in_account":false,"competition":"Media"},{"keyword":"curso chino online","avg_monthly":140.0,"bid_mid":1.81,"yoy_pct":-36.0,"in_account":false,"competition":"Alta"},{"keyword":"clases de chino madrid","avg_monthly":140.0,"bid_mid":4.38,"yoy_pct":-44.0,"in_account":false,"competition":"Media"},{"keyword":"clase de chino online","avg_monthly":140.0,"bid_mid":5.5,"yoy_pct":-36.0,"in_account":false,"competition":"Media"},{"keyword":"clases de chino en madrid","avg_monthly":140.0,"bid_mid":4.38,"yoy_pct":-44.0,"in_account":false,"competition":"Media"},{"keyword":"aprender chino online","avg_monthly":110.0,"bid_mid":1.9,"yoy_pct":-47.0,"in_account":false,"competition":"Alta"}],"cpc_mid_raw":2.76},"otro":{"n":41,"searches_month":9510,"cpc_mid":0.73,"top_keywords":[{"keyword":"chino mandarín","avg_monthly":4400.0,"bid_mid":0.51,"yoy_pct":-19.0,"in_account":false,"competition":"Baja"},{"keyword":"aprender chino","avg_monthly":1900.0,"bid_mid":0.83,"yoy_pct":-16.0,"in_account":false,"competition":"Media"},{"keyword":"idioma chino","avg_monthly":1000.0,"bid_mid":1.34,"yoy_pct":-33.0,"in_account":false,"competition":"Baja"},{"keyword":"aprende chino desde cero","avg_monthly":390.0,"bid_mid":0.56,"yoy_pct":-33.0,"in_account":false,"competition":"Media"},{"keyword":"estudiar chino","avg_monthly":260.0,"bid_mid":1.49,"yoy_pct":-18.0,"in_account":false,"competition":"Media"},{"keyword":"casas en chino","avg_monthly":260.0,"bid_mid":0.45,"yoy_pct":-19.0,"in_account":false,"competition":"Baja"},{"keyword":"trabajo chino","avg_monthly":260.0,"bid_mid":0.11,"yoy_pct":-71.0,"in_account":false,"competition":"Baja"},{"keyword":"aprender chino mandarín","avg_monthly":140.0,"bid_mid":1.35,"yoy_pct":-36.0,"in_account":false,"competition":"Media"},{"keyword":"conversación en chino","avg_monthly":140.0,"bid_mid":0.22,"yoy_pct":0.0,"in_account":false,"competition":"Baja"},{"keyword":"colegio chino","avg_monthly":110.0,"bid_mid":null,"yoy_pct":0.0,"in_account":false,"competition":"Baja"},{"keyword":"uno en chino","avg_monthly":110.0,"bid_mid":null,"yoy_pct":-18.0,"in_account":false,"competition":"Baja"},{"keyword":"chino mandarin para principiantes","avg_monthly":70.0,"bid_mid":0.19,"yoy_pct":40.0,"in_account":false,"competition":"Desconocida"}]},"informacional":{"n":4,"searches_month":260,"cpc_mid":0.48,"top_keywords":[{"keyword":"examen chino","avg_monthly":140.0,"bid_mid":null,"yoy_pct":420.0,"in_account":false,"competition":"Baja"},{"keyword":"niveles de chino","avg_monthly":90.0,"bid_mid":null,"yoy_pct":-29.0,"in_account":false,"competition":"Baja"},{"keyword":"test chino","avg_monthly":20.0,"bid_mid":null,"yoy_pct":100.0,"in_account":false,"competition":"Baja"},{"keyword":"practicar chino","avg_monthly":10.0,"bid_mid":null,"yoy_pct":-100.0,"in_account":false,"competition":"Desconocida"}]}},"totals":{"keywords":115,"searches_month":14120,"searches_comercial":4350,"searches_informacional":260,"searches_marca":0},"default_cvr_order_pct":0.64,"default_cvr_lead_pct":4.25,"default_is_pct":10,"seasonality":[1.103,0.86,1.293,0.692,1.025,1.33,1.976,1.091,0.947,0.589,0.617,0.478],"seasonality_meta":{"source":"fallback_all","orders_n":null}},"japones":{"id":"japones","label":"Japonés","family":null,"active":false,"brand":false,"wc_orders_2526":0,"aov":220,"ads_orders_2526":0,"default_cvr_pct":0.64,"default_ctr_pct":5.0,"default_intents":["comercial"],"intents":{"comercial":{"n":83,"searches_month":4610,"cpc_mid":1.6,"top_keywords":[{"keyword":"clases japones","avg_monthly":390.0,"bid_mid":3.27,"yoy_pct":-19.0,"in_account":false,"competition":"Baja"},{"keyword":"clases de japones","avg_monthly":390.0,"bid_mid":2.66,"yoy_pct":-33.0,"in_account":false,"competition":"Media"},{"keyword":"cursos japones","avg_monthly":320.0,"bid_mid":1.47,"yoy_pct":-19.0,"in_account":false,"competition":"Alta"},{"keyword":"academia japones","avg_monthly":320.0,"bid_mid":2.1,"yoy_pct":-33.0,"in_account":false,"competition":"Baja"},{"keyword":"cursos en japones","avg_monthly":320.0,"bid_mid":1.47,"yoy_pct":-19.0,"in_account":false,"competition":"Alta"},{"keyword":"cursos japones online","avg_monthly":210.0,"bid_mid":1.71,"yoy_pct":-33.0,"in_account":false,"competition":"Alta"},{"keyword":"aprender japones online","avg_monthly":170.0,"bid_mid":2.19,"yoy_pct":-21.0,"in_account":false,"competition":"Media"},{"keyword":"aprende japonés online","avg_monthly":170.0,"bid_mid":2.19,"yoy_pct":-21.0,"in_account":false,"competition":"Media"},{"keyword":"cursos de japones online","avg_monthly":140.0,"bid_mid":1.77,"yoy_pct":-59.0,"in_account":false,"competition":"Alta"},{"keyword":"clases de japones madrid","avg_monthly":140.0,"bid_mid":2.99,"yoy_pct":-59.0,"in_account":false,"competition":"Media"},{"keyword":"clases japones online","avg_monthly":110.0,"bid_mid":4.02,"yoy_pct":0.0,"in_account":false,"competition":"Alta"},{"keyword":"academia de japones","avg_monthly":110.0,"bid_mid":1.69,"yoy_pct":-18.0,"in_account":false,"competition":"Media"}],"cpc_mid_raw":2.65},"otro":{"n":40,"searches_month":3820,"cpc_mid":0.98,"top_keywords":[{"keyword":"aprender japonés","avg_monthly":2400.0,"bid_mid":1.13,"yoy_pct":-21.0,"in_account":false,"competition":"Alta"},{"keyword":"libros para aprender japones","avg_monthly":210.0,"bid_mid":0.71,"yoy_pct":-35.0,"in_account":false,"competition":"Alta"},{"keyword":"aprender japones gratis","avg_monthly":170.0,"bid_mid":0.43,"yoy_pct":-21.0,"in_account":false,"competition":"Media"},{"keyword":"japones aprender gratis","avg_monthly":170.0,"bid_mid":0.43,"yoy_pct":-21.0,"in_account":false,"competition":"Media"},{"keyword":"estudiar japones","avg_monthly":140.0,"bid_mid":1.27,"yoy_pct":-21.0,"in_account":false,"competition":"Media"},{"keyword":"hablar japones","avg_monthly":140.0,"bid_mid":0.34,"yoy_pct":27.0,"in_account":false,"competition":"Baja"},{"keyword":"conversación en japones","avg_monthly":70.0,"bid_mid":0.34,"yoy_pct":0.0,"in_account":false,"competition":"Baja"},{"keyword":"aprender hablar japones","avg_monthly":50.0,"bid_mid":0.67,"yoy_pct":-29.0,"in_account":false,"competition":"Media"},{"keyword":"estudiar japones madrid","avg_monthly":30.0,"bid_mid":0.82,"yoy_pct":-50.0,"in_account":false,"competition":"Media"},{"keyword":"a1 japones","avg_monthly":30.0,"bid_mid":1.05,"yoy_pct":-25.0,"in_account":false,"competition":"Media"},{"keyword":"aprender japones facil","avg_monthly":30.0,"bid_mid":null,"yoy_pct":300.0,"in_account":false,"competition":"Media"},{"keyword":"japones a1","avg_monthly":30.0,"bid_mid":1.34,"yoy_pct":-60.0,"in_account":false,"competition":"Media"}]},"informacional":{"n":11,"searches_month":2530,"cpc_mid":1.17,"top_keywords":[{"keyword":"examen de japones","avg_monthly":1900.0,"bid_mid":null,"yoy_pct":26900.0,"in_account":false,"competition":"Baja"},{"keyword":"examen japones","avg_monthly":260.0,"bid_mid":null,"yoy_pct":2100.0,"in_account":false,"competition":"Baja"},{"keyword":"nivel de japones","avg_monthly":210.0,"bid_mid":1.12,"yoy_pct":-33.0,"in_account":false,"competition":"Baja"},{"keyword":"niveles japones","avg_monthly":90.0,"bid_mid":1.25,"yoy_pct":-22.0,"in_account":false,"competition":"Baja"},{"keyword":"practicar japonés","avg_monthly":10.0,"bid_mid":0.61,"yoy_pct":0.0,"in_account":false,"competition":"Media"},{"keyword":"test japones","avg_monthly":10.0,"bid_mid":null,"yoy_pct":0.0,"in_account":false,"competition":"Baja"},{"keyword":"ejercicios para aprender japones","avg_monthly":10.0,"bid_mid":null,"yoy_pct":0.0,"in_account":false,"competition":"Media"},{"keyword":"test de japones","avg_monthly":10.0,"bid_mid":null,"yoy_pct":0.0,"in_account":false,"competition":"Baja"},{"keyword":"japones nivel 1","avg_monthly":10.0,"bid_mid":null,"yoy_pct":0.0,"in_account":false,"competition":"Media"},{"keyword":"niveles de idioma japones","avg_monthly":10.0,"bid_mid":null,"yoy_pct":0.0,"in_account":false,"competition":"Baja"},{"keyword":"niveles de japones idioma","avg_monthly":10.0,"bid_mid":2.07,"yoy_pct":50.0,"in_account":false,"competition":"Baja"}]}},"totals":{"keywords":134,"searches_month":10960,"searches_comercial":4610,"searches_informacional":2530,"searches_marca":0},"default_cvr_order_pct":0.64,"default_cvr_lead_pct":4.25,"default_is_pct":10,"seasonality":[1.103,0.86,1.293,0.692,1.025,1.33,1.976,1.091,0.947,0.589,0.617,0.478],"seasonality_meta":{"source":"fallback_all","orders_n":null}},"español":{"id":"español","label":"Español","family":"Español","active":false,"brand":false,"wc_orders_2526":1,"aov":189,"ads_orders_2526":0,"default_cvr_pct":0.47,"default_ctr_pct":5.0,"default_intents":["comercial"],"intents":{"comercial":{"n":221,"searches_month":35740,"cpc_mid":1.99,"top_keywords":[{"keyword":"academia español","avg_monthly":18100.0,"bid_mid":2.11,"yoy_pct":-18.0,"in_account":false,"competition":"Baja"},{"keyword":"clases de español","avg_monthly":1000.0,"bid_mid":3.25,"yoy_pct":-33.0,"in_account":false,"competition":"Baja"},{"keyword":"cursos de español","avg_monthly":1000.0,"bid_mid":1.74,"yoy_pct":-19.0,"in_account":false,"competition":"Media"},{"keyword":"aprender español online","avg_monthly":880.0,"bid_mid":1.15,"yoy_pct":-65.0,"in_account":false,"competition":"Media"},{"keyword":"clases de español para extranjeros","avg_monthly":720.0,"bid_mid":1.59,"yoy_pct":-19.0,"in_account":false,"competition":"Media"},{"keyword":"curso español","avg_monthly":720.0,"bid_mid":1.08,"yoy_pct":0.0,"in_account":false,"competition":"Baja"},{"keyword":"cursos español","avg_monthly":720.0,"bid_mid":1.08,"yoy_pct":0.0,"in_account":false,"competition":"Baja"},{"keyword":"curso de español para extranjeros","avg_monthly":590.0,"bid_mid":1.18,"yoy_pct":-33.0,"in_account":false,"competition":"Alta"},{"keyword":"clases español online","avg_monthly":590.0,"bid_mid":1.12,"yoy_pct":-40.0,"in_account":false,"competition":"Baja"},{"keyword":"clases español","avg_monthly":480.0,"bid_mid":3.52,"yoy_pct":-46.0,"in_account":false,"competition":"Baja"},{"keyword":"curso español online","avg_monthly":480.0,"bid_mid":1.75,"yoy_pct":-64.0,"in_account":false,"competition":"Alta"},{"keyword":"curso de español para extranjeros gratis","avg_monthly":480.0,"bid_mid":0.56,"yoy_pct":-33.0,"in_account":false,"competition":"Media"}]},"otro":{"n":137,"searches_month":49210,"cpc_mid":1.01,"top_keywords":[{"keyword":"aprender español","avg_monthly":14800.0,"bid_mid":0.93,"yoy_pct":-18.0,"in_account":false,"competition":"Baja"},{"keyword":"español aprender","avg_monthly":14800.0,"bid_mid":0.93,"yoy_pct":-18.0,"in_account":false,"competition":"Baja"},{"keyword":"español madrid","avg_monthly":5400.0,"bid_mid":null,"yoy_pct":86.0,"in_account":false,"competition":"Baja"},{"keyword":"español para extranjeros","avg_monthly":1600.0,"bid_mid":1.24,"yoy_pct":-33.0,"in_account":false,"competition":"Media"},{"keyword":"hablar español","avg_monthly":1600.0,"bid_mid":0.45,"yoy_pct":-19.0,"in_account":false,"competition":"Baja"},{"keyword":"hablar espanol","avg_monthly":1600.0,"bid_mid":0.45,"yoy_pct":-19.0,"in_account":false,"competition":"Baja"},{"keyword":"aprender español para extranjeros","avg_monthly":880.0,"bid_mid":0.71,"yoy_pct":-33.0,"in_account":false,"competition":"Alta"},{"keyword":"enseñanza de español para extranjeros","avg_monthly":720.0,"bid_mid":2.94,"yoy_pct":-67.0,"in_account":false,"competition":"Media"},{"keyword":"vamos español","avg_monthly":590.0,"bid_mid":0.41,"yoy_pct":125.0,"in_account":false,"competition":"Baja"},{"keyword":"quiero aprender español","avg_monthly":480.0,"bid_mid":0.69,"yoy_pct":0.0,"in_account":false,"competition":"Media"},{"keyword":"estudiar español","avg_monthly":390.0,"bid_mid":0.89,"yoy_pct":0.0,"in_account":false,"competition":"Media"},{"keyword":"espanol estudiar","avg_monthly":390.0,"bid_mid":0.89,"yoy_pct":0.0,"in_account":false,"competition":"Media"}]},"informacional":{"n":38,"searches_month":3100,"cpc_mid":0.69,"top_keywords":[{"keyword":"ejercicios de español","avg_monthly":390.0,"bid_mid":1.0,"yoy_pct":-34.0,"in_account":false,"competition":"Baja"},{"keyword":"nivel de espanol","avg_monthly":320.0,"bid_mid":0.64,"yoy_pct":-19.0,"in_account":false,"competition":"Baja"},{"keyword":"test espanol","avg_monthly":320.0,"bid_mid":0.4,"yoy_pct":23.0,"in_account":false,"competition":"Baja"},{"keyword":"ejercicios para aprender español","avg_monthly":210.0,"bid_mid":0.48,"yoy_pct":-36.0,"in_account":false,"competition":"Baja"},{"keyword":"test de nivel de español","avg_monthly":210.0,"bid_mid":0.9,"yoy_pct":0.0,"in_account":false,"competition":"Baja"},{"keyword":"test de nivel español","avg_monthly":210.0,"bid_mid":0.9,"yoy_pct":0.0,"in_account":false,"competition":"Baja"},{"keyword":"test nivel de español","avg_monthly":210.0,"bid_mid":0.9,"yoy_pct":0.0,"in_account":false,"competition":"Baja"},{"keyword":"examen español","avg_monthly":140.0,"bid_mid":0.28,"yoy_pct":-71.0,"in_account":false,"competition":"Baja"},{"keyword":"espanol test nivel","avg_monthly":110.0,"bid_mid":0.85,"yoy_pct":0.0,"in_account":false,"competition":"Baja"},{"keyword":"examen de español","avg_monthly":110.0,"bid_mid":null,"yoy_pct":-56.0,"in_account":false,"competition":"Baja"},{"keyword":"test nivel espanol","avg_monthly":110.0,"bid_mid":0.85,"yoy_pct":0.0,"in_account":false,"competition":"Baja"},{"keyword":"ejercicios de español para extranjeros pdf","avg_monthly":90.0,"bid_mid":null,"yoy_pct":-60.0,"in_account":false,"competition":"Baja"}]}},"totals":{"keywords":396,"searches_month":88050,"searches_comercial":35740,"searches_informacional":3100,"searches_marca":0},"default_cvr_order_pct":0.47,"default_cvr_lead_pct":3.1,"default_is_pct":10,"seasonality":[1.103,0.86,1.293,0.692,1.025,1.33,1.976,1.091,0.947,0.589,0.617,0.478],"seasonality_meta":{"source":"fallback_all","orders_n":2.0}},"bps home":{"id":"bps home","label":"Marca (BPS_BRAND_SEARCH)","family":null,"active":true,"brand":true,"wc_orders_2526":38,"aov":227,"ads_orders_2526":25,"default_cvr_pct":2.51,"default_ctr_pct":30.0,"default_intents":["marca"],"intents":{"marca":{"n":8,"searches_month":1478,"cpc_mid":0.59,"top_keywords":[{"keyword":"blue parrot school","avg_monthly":465.0,"bid_mid":0.55,"yoy_pct":null,"in_account":true,"competition":"Baja","source":"gsc"},{"keyword":"blue parrot","avg_monthly":495.0,"bid_mid":0.65,"yoy_pct":null,"in_account":true,"competition":"Baja","source":"gsc"},{"keyword":"blue parrot school madrid","avg_monthly":164.0,"bid_mid":0.8,"yoy_pct":null,"in_account":true,"competition":"Baja","source":"gsc"},{"keyword":"blueparrot","avg_monthly":128.0,"bid_mid":0.35,"yoy_pct":null,"in_account":true,"competition":"Baja","source":"gsc"},{"keyword":"blue parrot malaga","avg_monthly":86.0,"bid_mid":0.5,"yoy_pct":null,"in_account":true,"competition":"Baja","source":"gsc"},{"keyword":"blue parrot school malaga","avg_monthly":73.0,"bid_mid":0.55,"yoy_pct":null,"in_account":true,"competition":"Baja","source":"gsc"},{"keyword":"blueparrotschool","avg_monthly":35.0,"bid_mid":0.25,"yoy_pct":null,"in_account":true,"competition":"Baja","source":"gsc"},{"keyword":"blue parrot madrid","avg_monthly":32.0,"bid_mid":0.7,"yoy_pct":null,"in_account":true,"competition":"Baja","source":"gsc"}],"note":"Volumen = impresiones GSC mensuales de queries de marca (≈ demanda de marca). No usar impresiones totales de la campaña Ads (incluye fuga a genéricos).","ads_pure_brand_month":{"days":58,"impressions":1208,"clicks":425,"spend":241.75,"conversions":125.4,"ctr_pct":35.2,"cpc":0.57,"imps_month":625,"clicks_month":220,"spend_month":125.0}}},"totals":{"keywords":8,"searches_month":1478,"searches_comercial":0,"searches_informacional":0,"searches_marca":1478},"default_cvr_order_pct":2.51,"default_cvr_lead_pct":13.58,"default_is_pct":90,"source":"GSC brand queries (volume) + Ads pure-brand search terms (CTR/CPC/CVR)","ads_baseline":{"campaign":"BPS_BRAND_SEARCH","days":58,"spend":822.11,"clicks":994,"impressions":16718,"leads":135,"purchases":25,"value":5649,"cpc":0.57,"ctr_pct":35.2,"cvr_lead_pct":13.58,"cvr_purchase_pct":2.51,"cvr_lead_to_sale_pct":18.5,"cpl":6.09,"cpa_purchase":33.0,"roas":6.87,"monthly_spend_runrate":425,"monthly_clicks_runrate":514,"monthly_leads_runrate":70,"monthly_purchases_runrate":12.9,"pure_brand":{"days":58,"impressions":1208,"clicks":425,"spend":241.75,"conversions":125.4,"ctr_pct":35.2,"cpc":0.57,"imps_month":625,"clicks_month":220,"spend_month":125.0},"campaign_leakage":{"impressions":11714,"clicks":328,"spend":331.17,"note":"La campaña captura ~6k imps/mes de queries genéricas (no son búsquedas de marca)."},"volume_note":"Demanda marca ≈ 1478/mes (GSC). Campaña Ads total ~8k imps/mes incluye fuga no-marca."},"seasonality":[1.041,0.944,1.117,0.877,1.01,1.132,1.39,1.036,0.979,0.836,0.847,0.791],"seasonality_meta":{"source":"blend_brand_overall","orders_n":null}}}}</script>
+<script>
+(function () {
+  function showError(msg) {
+    var el = document.getElementById("bootError");
+    el.style.display = "block";
+    el.textContent = msg;
+    console.error(msg);
+  }
+
+  var DATA;
+  try {
+    DATA = JSON.parse(document.getElementById("ads-data").textContent);
+  } catch (e) {
+    showError("No se pudieron cargar los datos del estimador: " + e.message);
+    return;
+  }
+
+  const intentLabels = {
+    comercial: "Comercial",
+    informacional: "Informacional",
+    marca: "Marca",
+    otro: "Otro",
+  };
+
+  const baseline = DATA.meta.ads_baseline_2526 || {};
+  const defaults = DATA.meta.defaults || {};
+
+  const state = {
+    isGlobal: defaults.impression_share_pct || 25,
+    ctrGlobal: defaults.ctr_pct || 5,
+    cvrLead: defaults.cvr_lead_pct || 5.5,
+    leadToSale: defaults.cvr_lead_to_sale_pct || 18,
+    intents: new Set(["comercial", "informacional", "marca"]),
+    products: {},
+    productIs: {},
+    productLeadCvr: {},
+    productCtr: {},
+    syncProductLeadFromGlobal: false,
+    activePreset: defaults.preset || "rentable",
+    month: 0, // 0 = annual average, 1-12 = Jan-Dec
+  };
+
+  function initProductsFromData() {
+    Object.values(DATA.products).forEach((p) => {
+      state.products[p.id] = !!p.active;
+      state.productIs[p.id] = p.default_is_pct != null ? p.default_is_pct : null;
+      state.productLeadCvr[p.id] = p.default_cvr_lead_pct != null
+        ? p.default_cvr_lead_pct
+        : +(p.default_cvr_pct / (state.leadToSale / 100)).toFixed(2);
+      state.productCtr[p.id] = p.default_ctr_pct != null ? p.default_ctr_pct : null;
+    });
+  }
+  initProductsFromData();
+
+  function applyPreset(key) {
+    const presets = (DATA.meta && DATA.meta.presets) || {};
+    const pr = presets[key];
+    if (!pr) return;
+    state.activePreset = key;
+    state.isGlobal = pr.is_pct;
+    state.ctrGlobal = pr.ctr_pct;
+    state.cvrLead = pr.cvr_lead_pct;
+    state.leadToSale = pr.cvr_lead_to_sale_pct;
+    state.syncProductLeadFromGlobal = false;
+    if (pr.intents && pr.intents.length) {
+      state.intents = new Set(pr.intents);
+    }
+    const on = new Set(pr.products || []);
+    Object.values(DATA.products).forEach((p) => {
+      state.products[p.id] = on.has(p.id);
+      if (pr.product_is && pr.product_is[p.id] != null) state.productIs[p.id] = pr.product_is[p.id];
+      else if (p.default_is_pct != null && on.has(p.id)) state.productIs[p.id] = p.default_is_pct;
+      else state.productIs[p.id] = on.has(p.id) ? state.isGlobal : null;
+      if (pr.product_lead_cvr && pr.product_lead_cvr[p.id] != null) {
+        state.productLeadCvr[p.id] = pr.product_lead_cvr[p.id];
+      } else {
+        state.productLeadCvr[p.id] = p.default_cvr_lead_pct != null
+          ? p.default_cvr_lead_pct
+          : state.cvrLead;
+      }
+      state.productCtr[p.id] = p.default_ctr_pct != null ? p.default_ctr_pct : null;
+    });
+    // refresh intent checkboxes if present
+    document.querySelectorAll("[data-intent]").forEach((el) => {
+      el.checked = state.intents.has(el.dataset.intent);
+    });
+    var isEl = document.getElementById("isGlobal");
+    var ctrEl = document.getElementById("ctrGlobal");
+    if (isEl) isEl.value = state.isGlobal;
+    if (ctrEl) ctrEl.value = state.ctrGlobal;
+    buildProductToggles();
+    renderPresets();
+    render();
+  }
+
+  function eur(n) {
+    return new Intl.NumberFormat("es-ES", { style: "currency", currency: "EUR", maximumFractionDigits: 0 }).format(n || 0);
+  }
+  function num(n, d = 0) {
+    return new Intl.NumberFormat("es-ES", { maximumFractionDigits: d }).format(n || 0);
+  }
+  function pct(n, d = 2) {
+    return (n || 0).toFixed(d).replace(".", ",") + "%";
+  }
+
+  const MONTHS = (DATA.meta.seasonality && DATA.meta.seasonality.months) ||
+    ["Ene","Feb","Mar","Abr","May","Jun","Jul","Ago","Sep","Oct","Nov","Dic"];
+  const SEASON_COLORS = ["#0080E0","#1FA97A","#F0C000","#E25B4C","#7B61FF","#0B1F3A","#5A6B7D","#00A3A1"];
+
+  function seasonFactor(p, monthIdx) {
+    const arr = p.seasonality;
+    if (!arr || !arr.length) return 1;
+    return arr[monthIdx] || 1;
+  }
+
+  function productUniverse(p, monthOverride) {
+    let searches = 0;
+    let bidW = 0;
+    let bidN = 0;
+    Object.entries(p.intents || {}).forEach(([intent, block]) => {
+      if (!state.intents.has(intent)) return;
+      searches += block.searches_month || 0;
+      if (block.cpc_mid && block.searches_month) {
+        bidW += block.cpc_mid * block.searches_month;
+        bidN += block.searches_month;
+      }
+    });
+    const month = monthOverride != null ? monthOverride : state.month;
+    const factor = month > 0 ? seasonFactor(p, month - 1) : 1;
+    const searchesBase = searches;
+    searches = searches * factor;
+    const cpc = bidN ? bidW / bidN : (baseline.cpc || 0.48);
+    return { searches, cpc, season: factor, searchesBase };
+  }
+
+  function estimateProduct(p, monthOverride) {
+    const u = productUniverse(p, monthOverride);
+    const leadCvr = state.productLeadCvr[p.id];
+    const empty = {
+      searches: u.searches, searchesBase: u.searchesBase, season: u.season,
+      is: 0, impressions: 0, clicks: 0, spend: 0,
+      leads: 0, conv: 0, rev: 0, cpc: u.cpc, leadCvr, orderCvr: 0, ctr: state.ctrGlobal,
+    };
+    if (!state.products[p.id] || u.searches <= 0) return empty;
+    const is = state.productIs[p.id] != null ? state.productIs[p.id] : (p.default_is_pct != null ? p.default_is_pct : state.isGlobal);
+    const ctr = state.productCtr[p.id] != null ? state.productCtr[p.id] : (p.default_ctr_pct != null ? p.default_ctr_pct : state.ctrGlobal);
+    const impressions = u.searches * (is / 100);
+    const clicks = impressions * (ctr / 100);
+    const spend = clicks * u.cpc;
+    const leads = clicks * (leadCvr / 100);
+    const conv = leads * (state.leadToSale / 100);
+    const orderCvr = leadCvr * (state.leadToSale / 100);
+    const rev = conv * p.aov;
+    return { searches: u.searches, searchesBase: u.searchesBase, season: u.season, is, impressions, clicks, spend, leads, conv, rev, cpc: u.cpc, leadCvr, orderCvr, ctr };
+  }
+
+  function computeAll(monthOverride) {
+    const rows = [];
+    let spend = 0, clicks = 0, leads = 0, conv = 0, rev = 0, impr = 0, searches = 0;
+    Object.values(DATA.products).forEach((p) => {
+      const e = estimateProduct(p, monthOverride);
+      if (!state.products[p.id]) return;
+      rows.push({ p, e });
+      spend += e.spend; clicks += e.clicks; leads += e.leads; conv += e.conv;
+      rev += e.rev; impr += e.impressions; searches += e.searches;
+    });
+    return { rows, spend, clicks, leads, conv, rev, impr, searches };
+  }
+
+  let chart;
+  let chartSeason;
+  let chartDemand;
+  let chartDemandSeason;
+
+  function yearCurve() {
+    return MONTHS.map((label, i) => {
+      const t = computeAll(i + 1);
+      const byProduct = {};
+      t.rows.forEach(({ p, e }) => { byProduct[p.id] = e.spend; });
+      return { label, month: i + 1, spend: t.spend, leads: t.leads, conv: t.conv, rev: t.rev, byProduct };
+    });
+  }
+
+  function render() {
+    document.getElementById("isLabel").textContent = state.isGlobal + "%";
+    document.getElementById("ctrLabel").textContent = state.ctrGlobal.toFixed(1) + "%";
+    document.getElementById("leadCvrLabel").textContent = pct(state.cvrLead, 2);
+    document.getElementById("leadSaleLabel").textContent = pct(state.leadToSale, 2);
+    const monthEl = document.getElementById("monthSelect");
+    const monthLab = document.getElementById("monthLabel");
+    if (monthEl) monthEl.value = state.month;
+    if (monthLab) {
+      monthLab.textContent = state.month === 0
+        ? "Media anual"
+        : (MONTHS[state.month - 1] + " · índice por producto");
+    }
+    const leadCvrEl = document.getElementById("leadCvrGlobal");
+    const leadSaleEl = document.getElementById("leadSaleGlobal");
+    const leadCvrNum = document.getElementById("leadCvrNum");
+    const leadSaleNum = document.getElementById("leadSaleNum");
+    if (leadCvrEl && Math.abs(Number(leadCvrEl.value) - state.cvrLead) > 0.001) leadCvrEl.value = state.cvrLead;
+    if (leadSaleEl && Math.abs(Number(leadSaleEl.value) - state.leadToSale) > 0.001) leadSaleEl.value = state.leadToSale;
+    if (leadCvrNum && Math.abs(Number(leadCvrNum.value) - state.cvrLead) > 0.001) leadCvrNum.value = state.cvrLead;
+    if (leadSaleNum && Math.abs(Number(leadSaleNum.value) - state.leadToSale) > 0.001) leadSaleNum.value = state.leadToSale;
+
+    const t = computeAll();
+    const orderCvrBlended = t.clicks ? (t.conv / t.clicks) * 100 : state.cvrLead * state.leadToSale / 100;
+    document.getElementById("outSpend").textContent = eur(t.spend);
+    document.getElementById("outClicks").textContent = num(t.clicks);
+    document.getElementById("outLeads").textContent = num(t.leads, 1);
+    document.getElementById("outConv").textContent = num(t.conv, 1);
+    document.getElementById("outRev").textContent = eur(t.rev);
+    document.getElementById("outLeadSale").textContent = pct(state.leadToSale, 2);
+    document.getElementById("outCvrOrder").textContent = pct(orderCvrBlended, 2);
+    document.getElementById("outRoas").textContent = t.spend ? (t.rev / t.spend).toFixed(2) + "×" : "—";
+    document.getElementById("outCac").textContent = t.conv ? eur(t.spend / t.conv) : "—";
+    document.getElementById("outCpl").textContent = t.leads ? eur(t.spend / t.leads) : "—";
+    document.getElementById("outSearches").textContent = num(t.searches);
+
+    // Weighted IS by searches among active products
+    let isW = 0, isN = 0;
+    t.rows.forEach(({ e }) => {
+      isW += (e.is || 0) * (e.searches || 0);
+      isN += e.searches || 0;
+    });
+    const isEff = isN ? isW / isN : state.isGlobal;
+    const outIs = document.getElementById("outIsEff");
+    if (outIs) outIs.textContent = pct(isEff, 0);
+    const hint = document.getElementById("isSpendHint");
+    if (hint) {
+      hint.textContent =
+        "IS " + pct(isEff, 0) + " sobre " + num(t.searches) + " búsquedas → " +
+        eur(t.spend) + "/mes. Baja el IS% para gastar menos; súbelo para más conversiones. Marca mantiene IS propio (~90%).";
+    }
+
+    const tb = document.getElementById("tbody");
+    tb.innerHTML = "";
+    t.rows
+      .sort((a, b) => b.e.spend - a.e.spend)
+      .forEach(({ p, e }) => {
+        const tr = document.createElement("tr");
+        const isVal = state.productIs[p.id] != null ? state.productIs[p.id] : (p.default_is_pct != null ? p.default_is_pct : state.isGlobal);
+        const seasonTxt = state.month > 0 ? " · estac. ×" + (e.season || 1).toFixed(2) : "";
+        tr.innerHTML =
+          "<td><strong>" + p.label + "</strong><div style=\"color:var(--muted);font-size:.72rem\">" +
+          (p.active ? "Activo WC" : "Sin ventas / soporte") + " · CVR pedido " + pct(e.orderCvr, 2) + seasonTxt + "</div></td>" +
+          "<td>" + num(e.searches) + "</td>" +
+          "<td><div class=\"prod-is\"><input type=\"range\" min=\"0\" max=\"90\" step=\"1\" value=\"" + isVal + "\" data-pis=\"" + p.id + "\" /><span class=\"isval\">" + isVal + "%</span></div></td>" +
+          "<td>" + e.cpc.toFixed(2) + " €</td>" +
+          "<td><input type=\"number\" min=\"0.1\" max=\"20\" step=\"0.05\" value=\"" + e.leadCvr + "\" data-leadcvr=\"" + p.id + "\" /></td>" +
+          "<td>" + eur(p.aov) + "</td>" +
+          "<td><strong>" + eur(e.spend) + "</strong></td>" +
+          "<td>" + num(e.leads, 1) + "</td>" +
+          "<td>" + num(e.conv, 1) + "</td>" +
+          "<td>" + eur(e.rev) + "</td>";
+        tb.appendChild(tr);
+      });
+
+    tb.querySelectorAll("[data-pis]").forEach((el) => {
+      el.addEventListener("input", () => {
+        state.productIs[el.dataset.pis] = Number(el.value);
+        render();
+      });
+    });
+    tb.querySelectorAll("[data-leadcvr]").forEach((el) => {
+      el.addEventListener("change", () => {
+        state.syncProductLeadFromGlobal = false;
+        state.productLeadCvr[el.dataset.leadcvr] = Number(el.value);
+        render();
+      });
+    });
+
+    const year = yearCurve();
+    const activeProducts = t.rows.map(({ p }) => p);
+    const ctx = document.getElementById("chartIs");
+    if (chart) chart.destroy();
+    if (window.Chart && ctx) {
+      const datasets = activeProducts.map((p, i) => ({
+        type: "bar",
+        label: p.label,
+        data: year.map((y) => Math.round(y.byProduct[p.id] || 0)),
+        backgroundColor: SEASON_COLORS[i % SEASON_COLORS.length],
+        stack: "spend",
+        yAxisID: "y",
+        order: 2,
+      }));
+      datasets.push({
+        type: "line",
+        label: "Leads",
+        data: year.map((y) => +y.leads.toFixed(1)),
+        borderColor: "#F0C000",
+        backgroundColor: "transparent",
+        tension: 0.3,
+        yAxisID: "y1",
+        order: 1,
+      });
+      datasets.push({
+        type: "line",
+        label: "Pedidos",
+        data: year.map((y) => +y.conv.toFixed(1)),
+        borderColor: "#1FA97A",
+        backgroundColor: "transparent",
+        tension: 0.3,
+        yAxisID: "y1",
+        order: 0,
+      });
+      chart = new Chart(ctx, {
+        data: { labels: year.map((y) => y.label), datasets },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: { legend: { position: "bottom" } },
+          scales: {
+            x: { stacked: true, grid: { display: false } },
+            y: { stacked: true, position: "left", title: { display: true, text: "Inversión €" }, grid: { color: "#E8F0F6" } },
+            y1: { position: "right", title: { display: true, text: "Leads / pedidos" }, grid: { drawOnChartArea: false } },
+          },
+        },
+      });
+    }
+
+    const ctxS = document.getElementById("chartSeason");
+    if (chartSeason) chartSeason.destroy();
+    if (window.Chart && ctxS) {
+      const seasonDatasets = activeProducts.map((p, i) => ({
+        label: p.label,
+        data: (p.seasonality || Array(12).fill(1)).map((x) => +Number(x).toFixed(2)),
+        borderColor: SEASON_COLORS[i % SEASON_COLORS.length],
+        backgroundColor: "transparent",
+        tension: 0.35,
+        pointRadius: 3,
+      }));
+      chartSeason = new Chart(ctxS, {
+        type: "line",
+        data: { labels: MONTHS, datasets: seasonDatasets },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: { position: "bottom" },
+            tooltip: { callbacks: { label: (c) => c.dataset.label + ": ×" + c.parsed.y } },
+          },
+          scales: {
+            y: { title: { display: true, text: "Índice (media=1)" }, grid: { color: "#E8F0F6" }, suggestedMin: 0 },
+            x: { grid: { display: false } },
+          },
+        },
+      });
+    }
+
+    // --- Demanda por categoría ---
+    const showAllDemand = document.getElementById("demandAllCats") && document.getElementById("demandAllCats").checked;
+    const demandProducts = Object.values(DATA.products)
+      .filter((p) => showAllDemand || state.products[p.id])
+      .filter((p) => {
+        // hide mega "ingles" unless explicitly active, to keep scale readable
+        if (p.id === "ingles" && !state.products[p.id] && showAllDemand) return false;
+        return true;
+      })
+      .map((p) => {
+        const byIntent = { comercial: 0, informacional: 0, marca: 0, otro: 0 };
+        Object.entries(p.intents || {}).forEach(([intent, block]) => {
+          if (!state.intents.has(intent)) return;
+          byIntent[intent] = (byIntent[intent] || 0) + (block.searches_month || 0);
+        });
+        const total = Object.values(byIntent).reduce((a, b) => a + b, 0);
+        return { p, byIntent, total };
+      })
+      .filter((x) => x.total > 0)
+      .sort((a, b) => b.total - a.total);
+
+    const intentColors = {
+      comercial: "#0080E0",
+      informacional: "#F0C000",
+      marca: "#1FA97A",
+      otro: "#5A6B7D",
+    };
+    const ctxD = document.getElementById("chartDemand");
+    if (chartDemand) chartDemand.destroy();
+    if (window.Chart && ctxD) {
+      chartDemand = new Chart(ctxD, {
+        type: "bar",
+        data: {
+          labels: demandProducts.map((x) => x.p.label),
+          datasets: ["comercial", "informacional", "marca", "otro"]
+            .filter((intent) => state.intents.has(intent))
+            .map((intent) => ({
+              label: intentLabels[intent] || intent,
+              data: demandProducts.map((x) => Math.round(x.byIntent[intent] || 0)),
+              backgroundColor: intentColors[intent],
+              stack: "demand",
+            })),
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: { position: "bottom" },
+            tooltip: {
+              callbacks: {
+                footer: (items) => {
+                  const i = items[0] && items[0].dataIndex;
+                  if (i == null) return "";
+                  return "Total: " + num(demandProducts[i].total) + " busc./mes";
+                },
+              },
+            },
+          },
+          scales: {
+            x: { stacked: true, ticks: { maxRotation: 45, minRotation: 0, font: { size: 10 } }, grid: { display: false } },
+            y: { stacked: true, title: { display: true, text: "Búsquedas / mes" }, grid: { color: "#E8F0F6" } },
+          },
+        },
+      });
+    }
+
+    const ctxDS = document.getElementById("chartDemandSeason");
+    if (chartDemandSeason) chartDemandSeason.destroy();
+    if (window.Chart && ctxDS) {
+      // seasonal demand lines for top categories (by base demand)
+      const topForSeason = demandProducts.slice(0, 8);
+      chartDemandSeason = new Chart(ctxDS, {
+        type: "line",
+        data: {
+          labels: MONTHS,
+          datasets: topForSeason.map((x, i) => {
+            const season = x.p.seasonality || Array(12).fill(1);
+            return {
+              label: x.p.label,
+              data: season.map((f) => Math.round(x.total * f)),
+              borderColor: SEASON_COLORS[i % SEASON_COLORS.length],
+              backgroundColor: "transparent",
+              tension: 0.35,
+              pointRadius: 2,
+            };
+          }),
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: { legend: { position: "bottom" } },
+          scales: {
+            y: { title: { display: true, text: "Búsquedas efectivas / mes" }, grid: { color: "#E8F0F6" } },
+            x: { grid: { display: false } },
+          },
+        },
+      });
+    }
+
+    const b = baseline;
+    const brand = (b.brand_campaign) || {};
+    const cert = (b.certificados) || {};
+    document.getElementById("assumptions").textContent =
+      "Estacionalidad WC por producto (media anual=1). Mes seleccionado multiplica búsquedas. " +
+      "Marca BPS_BRAND_SEARCH: CPL " + eur(brand.cpl || 6.09) + " · CPA " + eur(brand.cpa_purchase || 33) +
+      " · ROAS " + (brand.roas || 6.87) + "×. Certificados: CPL " + eur(cert.cpl || 16) +
+      ". Fórmula: demanda_mes = búsquedas × índice_mes; leads = clics × CVR lead%; pedidos = leads × lead→venta%.";
+  }
+
+  function renderPresets() {
+    const box = document.getElementById("presetToggles");
+    if (!box) return;
+    const presets = (DATA.meta && DATA.meta.presets) || {};
+    box.innerHTML = "";
+    Object.keys(presets).forEach((key) => {
+      const pr = presets[key];
+      const lab = document.createElement("label");
+      lab.style.cursor = "pointer";
+      if (state.activePreset === key) {
+        lab.style.background = "var(--navy)";
+        lab.style.color = "#fff";
+      }
+      lab.innerHTML = "<input type=\"radio\" name=\"preset\" data-preset=\"" + key + "\" " +
+        (state.activePreset === key ? "checked" : "") + " style=\"display:none\"/> " + pr.label;
+      box.appendChild(lab);
+    });
+    box.querySelectorAll("label").forEach((lab) => {
+      lab.addEventListener("click", () => {
+        const inp = lab.querySelector("[data-preset]");
+        if (inp) applyPreset(inp.dataset.preset);
+      });
+    });
+  }
+
+  function buildProductToggles() {
+    const pb = document.getElementById("productToggles");
+    pb.innerHTML = "";
+    Object.values(DATA.products)
+      .sort((a, b) => Number(state.products[b.id]) - Number(state.products[a.id]) ||
+        ((b.totals.searches_marca || b.totals.searches_comercial || 0) - (a.totals.searches_marca || a.totals.searches_comercial || 0)))
+      .forEach((p) => {
+        const btn = document.createElement("button");
+        btn.type = "button";
+        btn.className = "prod-chip" + (state.products[p.id] ? " on" : "");
+        btn.textContent = p.label;
+        btn.dataset.prod = p.id;
+        btn.addEventListener("click", () => {
+          state.products[p.id] = !state.products[p.id];
+          state.activePreset = "custom";
+          renderPresets();
+          buildProductToggles();
+          render();
+        });
+        pb.appendChild(btn);
+      });
+  }
+
+  function buildControls() {
+    const intents = ["comercial", "informacional", "marca", "otro"];
+    const box = document.getElementById("intentToggles");
+    box.innerHTML = "";
+    intents.forEach((i) => {
+      const lab = document.createElement("label");
+      lab.innerHTML = "<input type=\"checkbox\" data-intent=\"" + i + "\" " + (state.intents.has(i) ? "checked" : "") + "/> " + intentLabels[i];
+      box.appendChild(lab);
+    });
+    box.querySelectorAll("[data-intent]").forEach((el) => {
+      el.addEventListener("change", () => {
+        if (el.checked) state.intents.add(el.dataset.intent);
+        else state.intents.delete(el.dataset.intent);
+        render();
+      });
+    });
+
+    renderPresets();
+    buildProductToggles();
+
+    document.getElementById("isGlobal").value = state.isGlobal;
+    var monthSel = document.getElementById("monthSelect");
+    if (monthSel) {
+      monthSel.value = state.month;
+      monthSel.addEventListener("input", (e) => {
+        state.month = Number(e.target.value);
+        render();
+      });
+    }
+    document.getElementById("ctrGlobal").value = state.ctrGlobal;
+    document.getElementById("leadCvrGlobal").value = state.cvrLead;
+    document.getElementById("leadSaleGlobal").value = state.leadToSale;
+    document.getElementById("leadCvrNum").value = state.cvrLead;
+    document.getElementById("leadSaleNum").value = state.leadToSale;
+
+    document.getElementById("isGlobal").addEventListener("input", (e) => {
+      state.isGlobal = Number(e.target.value);
+      // Sync generic products to global IS so the slider actually drives spend
+      Object.values(DATA.products).forEach((p) => {
+        if (p.brand) return;
+        if (state.products[p.id]) state.productIs[p.id] = state.isGlobal;
+      });
+      render();
+    });
+    document.getElementById("ctrGlobal").addEventListener("input", (e) => {
+      state.ctrGlobal = Number(e.target.value);
+      render();
+    });
+
+    var demandAll = document.getElementById("demandAllCats");
+    if (demandAll) {
+      demandAll.addEventListener("change", () => render());
+    }
+
+    function onLeadCvr(v) {
+      state.cvrLead = v;
+      Object.values(DATA.products).forEach((p) => {
+        if (p.brand) return;
+        if (p.default_cvr_lead_pct != null) {
+          const base = p.default_cvr_lead_pct;
+          const ref = defaults.cvr_lead_pct || 5.5;
+          state.productLeadCvr[p.id] = +(base * (v / ref)).toFixed(2);
+        } else {
+          state.productLeadCvr[p.id] = v;
+        }
+      });
+      render();
+    }
+    function onLeadSale(v) {
+      state.leadToSale = v;
+      render();
+    }
+    document.getElementById("leadCvrGlobal").addEventListener("input", (e) => onLeadCvr(Number(e.target.value)));
+    document.getElementById("leadSaleGlobal").addEventListener("input", (e) => onLeadSale(Number(e.target.value)));
+    document.getElementById("leadCvrNum").addEventListener("change", (e) => onLeadCvr(Number(e.target.value)));
+    document.getElementById("leadSaleNum").addEventListener("change", (e) => onLeadSale(Number(e.target.value)));
+  }
+
+  try {
+    buildControls();
+    if (DATA.meta.presets && DATA.meta.presets[state.activePreset]) {
+      applyPreset(state.activePreset);
+    } else {
+      render();
+    }
+  } catch (e) {
+    showError("Error al iniciar el estimador: " + e.message);
+  }
+})();
+</script>
+</body>
+</html>

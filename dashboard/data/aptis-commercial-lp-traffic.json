@@ -1,0 +1,328 @@
+{
+  "ga4": [
+    {
+      "page": "/clases-online-presencial/clases-ingles/intensivo/aptis",
+      "sess_all_a": 2385.0,
+      "sess_all_b": 1891.0,
+      "purch_all_a": 15.0,
+      "purch_all_b": 7.0,
+      "bounce_a": 0.4008385744234801,
+      "bounce_b": 0.4378635642517187,
+      "sess_org_a": 921.0,
+      "sess_org_b": 448.0,
+      "purch_org_a": 9.0,
+      "purch_org_b": 4.0,
+      "bounce_org_a": 0.1986970684039088,
+      "bounce_org_b": 0.17857142857142858,
+      "channels_a": {
+        "Organic Search": 921.0,
+        "Paid Social": 658.0,
+        "Organic Social": 424.0,
+        "Referral": 188.0,
+        "Direct": 166.0,
+        "Unassigned": 28.0
+      },
+      "channels_b": {
+        "Organic Social": 1046.0,
+        "Organic Search": 448.0,
+        "Direct": 206.0,
+        "Referral": 58.0,
+        "Cross-network": 53.0,
+        "Unassigned": 40.0,
+        "Paid Search": 27.0,
+        "Paid Social": 13.0,
+        "AI Assistant": 1.0
+      }
+    },
+    {
+      "page": "/product/aptis-general-b1-b2-c1-28h",
+      "sess_all_a": 2076.0,
+      "sess_all_b": 2344.0,
+      "purch_all_a": 110.0,
+      "purch_all_b": 121.0,
+      "bounce_a": 0.3530828516377649,
+      "bounce_b": 0.3681740614334471,
+      "sess_org_a": 1184.0,
+      "sess_org_b": 1132.0,
+      "purch_org_a": 37.0,
+      "purch_org_b": 33.0,
+      "bounce_org_a": 0.32010135135135137,
+      "bounce_org_b": 0.33127208480565373,
+      "channels_a": {
+        "Organic Search": 1184.0,
+        "Direct": 797.0,
+        "Unassigned": 39.0,
+        "Referral": 36.0,
+        "Organic Social": 13.0,
+        "Paid Social": 6.0
+      },
+      "channels_b": {
+        "Organic Search": 1132.0,
+        "Direct": 1078.0,
+        "Organic Social": 37.0,
+        "Referral": 32.0,
+        "Unassigned": 20.0,
+        "Cross-network": 15.0,
+        "Paid Social": 12.0,
+        "Paid Search": 6.0,
+        "Email": 5.0,
+        "AI Assistant": 3.0
+      }
+    },
+    {
+      "page": "/product/aptis-a2-intensivo-28h",
+      "sess_all_a": 978.0,
+      "sess_all_b": 289.0,
+      "purch_all_a": 63.0,
+      "purch_all_b": 10.0,
+      "bounce_a": 0.38548057259713703,
+      "bounce_b": 0.5674740484429066,
+      "sess_org_a": 315.0,
+      "sess_org_b": 128.0,
+      "purch_org_a": 12.0,
+      "purch_org_b": 4.0,
+      "bounce_org_a": 0.3492063492063492,
+      "bounce_org_b": 0.4609375,
+      "channels_a": {
+        "Direct": 603.0,
+        "Organic Search": 315.0,
+        "Organic Social": 26.0,
+        "Referral": 17.0,
+        "Unassigned": 15.0,
+        "Paid Social": 2.0
+      },
+      "channels_b": {
+        "Direct": 154.0,
+        "Organic Search": 128.0,
+        "Referral": 4.0,
+        "Cross-network": 1.0,
+        "Email": 1.0,
+        "Organic Social": 1.0
+      }
+    },
+    {
+      "page": "/product/aptis-advanced-intensivo-28h",
+      "sess_all_a": 625.0,
+      "sess_all_b": 1106.0,
+      "purch_all_a": 30.0,
+      "purch_all_b": 34.0,
+      "bounce_a": 0.3696,
+      "bounce_b": 0.3562386980108499,
+      "sess_org_a": 370.0,
+      "sess_org_b": 702.0,
+      "purch_org_a": 9.0,
+      "purch_org_b": 13.0,
+      "bounce_org_a": 0.3081081081081081,
+      "bounce_org_b": 0.32051282051282054,
+      "channels_a": {
+        "Organic Search": 370.0,
+        "Direct": 207.0,
+        "Organic Social": 21.0,
+        "Referral": 20.0,
+        "Unassigned": 9.0,
+        "Paid Social": 3.0
+      },
+      "channels_b": {
+        "Organic Search": 702.0,
+        "Direct": 304.0,
+        "Referral": 36.0,
+        "Unassigned": 29.0,
+        "Organic Social": 14.0,
+        "Cross-network": 11.0,
+        "AI Assistant": 7.0,
+        "Paid Search": 1.0
+      }
+    },
+    {
+      "page": "/product/aptis-intensivo-online-28h",
+      "sess_all_a": 360.0,
+      "sess_all_b": 3.0,
+      "purch_all_a": 11.0,
+      "purch_all_b": 0.0,
+      "bounce_a": 0.39166666666666666,
+      "bounce_b": 1.0,
+      "sess_org_a": 183.0,
+      "sess_org_b": 0,
+      "purch_org_a": 4.0,
+      "purch_org_b": 0,
+      "bounce_org_a": 0.3005464480874317,
+      "bounce_org_b": null,
+      "channels_a": {
+        "Organic Search": 183.0,
+        "Direct": 133.0,
+        "Organic Social": 25.0,
+        "Paid Social": 17.0,
+        "Referral": 1.0,
+        "Unassigned": 1.0
+      },
+      "channels_b": {
+        "Direct": 3.0
+      }
+    },
+    {
+      "page": "/product/aptis-advanced-intensivo-online-28h",
+      "sess_all_a": 193.0,
+      "sess_all_b": 1.0,
+      "purch_all_a": 5.0,
+      "purch_all_b": 0.0,
+      "bounce_a": 0.49222797927461137,
+      "bounce_b": 1.0,
+      "sess_org_a": 112.0,
+      "sess_org_b": 0,
+      "purch_org_a": 3.0,
+      "purch_org_b": 0,
+      "bounce_org_a": 0.4107142857142857,
+      "bounce_org_b": null,
+      "channels_a": {
+        "Organic Search": 112.0,
+        "Direct": 56.0,
+        "Organic Social": 13.0,
+        "Paid Social": 10.0,
+        "Referral": 2.0
+      },
+      "channels_b": {
+        "Direct": 1.0
+      }
+    },
+    {
+      "page": "/cursos-intensivos-idiomas",
+      "sess_all_a": 808.0,
+      "sess_all_b": 785.0,
+      "purch_all_a": 25.0,
+      "purch_all_b": 21.0,
+      "bounce_a": 0.24133663366336633,
+      "bounce_b": 0.33375796178343947,
+      "sess_org_a": 679.0,
+      "sess_org_b": 455.0,
+      "purch_org_a": 21.0,
+      "purch_org_b": 14.0,
+      "bounce_org_a": 0.21502209131075112,
+      "bounce_org_b": 0.2945054945054945,
+      "channels_a": {
+        "Organic Search": 679.0,
+        "Direct": 97.0,
+        "Unassigned": 15.0,
+        "Organic Social": 9.0,
+        "Referral": 8.0
+      },
+      "channels_b": {
+        "Organic Search": 455.0,
+        "Direct": 211.0,
+        "Cross-network": 71.0,
+        "Paid Search": 29.0,
+        "Referral": 9.0,
+        "Organic Social": 7.0,
+        "Unassigned": 3.0,
+        "Paid Social": 1.0
+      }
+    }
+  ],
+  "gsc": {
+    "24-25": {
+      "https://blueparrotschool.com/clases-online-presencial/clases-ingles/intensivo/aptis/": {
+        "keys": [
+          "https://blueparrotschool.com/clases-online-presencial/clases-ingles/intensivo/aptis/"
+        ],
+        "clicks": 536,
+        "impressions": 35141,
+        "ctr": 0.015252838564639595,
+        "position": 11.481033550553484
+      },
+      "https://blueparrotschool.com/product/aptis-general-b1-b2-c1-28h/": {
+        "keys": [
+          "https://blueparrotschool.com/product/aptis-general-b1-b2-c1-28h/"
+        ],
+        "clicks": 524,
+        "impressions": 28996,
+        "ctr": 0.01807145813215616,
+        "position": 12.283176989929645
+      },
+      "https://blueparrotschool.com/product/aptis-a2-intensivo-28h/": {
+        "keys": [
+          "https://blueparrotschool.com/product/aptis-a2-intensivo-28h/"
+        ],
+        "clicks": 85,
+        "impressions": 5033,
+        "ctr": 0.01688853566461355,
+        "position": 11.134313530697398
+      },
+      "https://blueparrotschool.com/product/aptis-advanced-intensivo-28h/": {
+        "keys": [
+          "https://blueparrotschool.com/product/aptis-advanced-intensivo-28h/"
+        ],
+        "clicks": 162,
+        "impressions": 6575,
+        "ctr": 0.024638783269961977,
+        "position": 13.772927756653992
+      },
+      "https://blueparrotschool.com/product/aptis-intensivo-online-28h/": {
+        "clicks": 0,
+        "impressions": 0,
+        "ctr": 0,
+        "position": null
+      },
+      "https://blueparrotschool.com/cursos-intensivos-idiomas/": {
+        "keys": [
+          "https://blueparrotschool.com/cursos-intensivos-idiomas/"
+        ],
+        "clicks": 304,
+        "impressions": 21038,
+        "ctr": 0.014450042779731914,
+        "position": 11.646021484932028
+      }
+    },
+    "25-26": {
+      "https://blueparrotschool.com/clases-online-presencial/clases-ingles/intensivo/aptis/": {
+        "keys": [
+          "https://blueparrotschool.com/clases-online-presencial/clases-ingles/intensivo/aptis/"
+        ],
+        "clicks": 480,
+        "impressions": 42300,
+        "ctr": 0.011347517730496455,
+        "position": 14.368108747044918
+      },
+      "https://blueparrotschool.com/product/aptis-general-b1-b2-c1-28h/": {
+        "keys": [
+          "https://blueparrotschool.com/product/aptis-general-b1-b2-c1-28h/"
+        ],
+        "clicks": 925,
+        "impressions": 75548,
+        "ctr": 0.012243871445968127,
+        "position": 10.70788108222587
+      },
+      "https://blueparrotschool.com/product/aptis-a2-intensivo-28h/": {
+        "keys": [
+          "https://blueparrotschool.com/product/aptis-a2-intensivo-28h/"
+        ],
+        "clicks": 95,
+        "impressions": 6039,
+        "ctr": 0.015731081304851798,
+        "position": 17.7645305514158
+      },
+      "https://blueparrotschool.com/product/aptis-advanced-intensivo-28h/": {
+        "keys": [
+          "https://blueparrotschool.com/product/aptis-advanced-intensivo-28h/"
+        ],
+        "clicks": 629,
+        "impressions": 24991,
+        "ctr": 0.025169060861910286,
+        "position": 12.537153375215077
+      },
+      "https://blueparrotschool.com/product/aptis-intensivo-online-28h/": {
+        "clicks": 0,
+        "impressions": 0,
+        "ctr": 0,
+        "position": null
+      },
+      "https://blueparrotschool.com/cursos-intensivos-idiomas/": {
+        "keys": [
+          "https://blueparrotschool.com/cursos-intensivos-idiomas/"
+        ],
+        "clicks": 418,
+        "impressions": 31952,
+        "ctr": 0.013082123184777165,
+        "position": 6.965197796695042
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+# secrets / local env
+.env
+.env.*
+*.pem
+*.key
+google-ads.yaml
+
+# SQLite WAL/SHM
+dashboard/db/*.db-wal
+dashboard/db/*.db-shm
+dashboard/db/*.db-*
+
+# PII / raw CRM (equipo: pedir acceso aparte si hace falta)
+dashboard/data/orders-with-pii.json
+dashboard/data/orders-full.json
+dashboard/data/meta-leads-clientify.json
+dashboard/data/meta-leads-csv.json
+dashboard/data/meta-leads-full.json
+dashboard/data/clientify_slim.csv
+dashboard/data/clientify_slim.parquet
+dashboard/data/_meta_all_ads.json
+dashboard/data/meta-wc-matches.json
+dashboard/data/proposal-bundle-full.json
+dashboard/data/meta-campaign-form-wc-analysis.json
+dashboard/data/wc-orders-sin-fecha-nacimiento.csv
+dashboard/data/wc-orders-sin-fecha-nacimiento-revision.csv
+
+# caches / backups
+dashboard/data/*.bak
+dashboard/data/keyword-stats/
+__pycache__/
+*.pyc
+.DS_Store
+
+# duplicate cache-bust copy (canónica = propuesta-marketing-bps.html)
+propuesta-marketing-bps-v2.html

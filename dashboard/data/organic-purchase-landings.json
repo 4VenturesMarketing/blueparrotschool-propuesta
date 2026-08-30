@@ -1,0 +1,2406 @@
+{
+  "24-25": [
+    {
+      "landingPage": "/",
+      "sessions": 8598.0,
+      "purchases": 157.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/product/aptis-general-b1-b2-c1-28h",
+      "sessions": 1184.0,
+      "purchases": 37.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/carrito",
+      "sessions": 206.0,
+      "purchases": 36.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/cursos-intensivos-idiomas",
+      "sessions": 679.0,
+      "purchases": 21.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/centro-malaga-teatinos-escuela-blue-parrot-school",
+      "sessions": 1155.0,
+      "purchases": 18.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/pago",
+      "sessions": 35.0,
+      "purchases": 17.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/clases-online-presencial",
+      "sessions": 473.0,
+      "purchases": 13.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/product/cambridge-advanced-c1-intensivo-online-o-presencial-36h",
+      "sessions": 837.0,
+      "purchases": 12.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/product/aptis-a2-intensivo-28h",
+      "sessions": 315.0,
+      "purchases": 12.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/product/aleman-a1-a2-intensivo-28h",
+      "sessions": 449.0,
+      "purchases": 11.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/tienda-online",
+      "sessions": 402.0,
+      "purchases": 11.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/clases-online-presencial/clases-ingles/intensivo/aptis",
+      "sessions": 921.0,
+      "purchases": 9.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/product/cambridge-first-b2-intensivo-online-o-presencial-36h",
+      "sessions": 630.0,
+      "purchases": 9.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/product/aptis-advanced-intensivo-28h",
+      "sessions": 370.0,
+      "purchases": 9.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/product/frances-delf-b2-intensivo",
+      "sessions": 1144.0,
+      "purchases": 8.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/pago/pedido-recibido/15399",
+      "sessions": 7.0,
+      "purchases": 8.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/product/italiano-b1-b2-intensivo-28h",
+      "sessions": 534.0,
+      "purchases": 7.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/product/reserva-plaza-malaga",
+      "sessions": 81.0,
+      "purchases": 7.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/product/intensivo-ielts-academic",
+      "sessions": 194.0,
+      "purchases": 5.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/product/intensivo-ielts-general-training",
+      "sessions": 66.0,
+      "purchases": 5.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/pago/pedido-recibido/16630",
+      "sessions": 5.0,
+      "purchases": 5.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/product/italiano-a1-a2-intensivo-28h",
+      "sessions": 288.0,
+      "purchases": 4.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/clases-online-presencial/clases-ingles",
+      "sessions": 218.0,
+      "purchases": 4.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/product/aptis-intensivo-online-28h",
+      "sessions": 183.0,
+      "purchases": 4.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/contacto",
+      "sessions": 318.0,
+      "purchases": 3.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/clases-online-presencial/clases-italiano",
+      "sessions": 182.0,
+      "purchases": 3.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/product/aptis-advanced-intensivo-online-28h",
+      "sessions": 112.0,
+      "purchases": 3.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/pago/pedido-recibido/16151",
+      "sessions": 3.0,
+      "purchases": 3.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/pago/pedido-recibido/16629",
+      "sessions": 3.0,
+      "purchases": 3.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/pago/pedido-recibido/17263",
+      "sessions": 3.0,
+      "purchases": 3.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/pago/pedido-recibido/17386",
+      "sessions": 3.0,
+      "purchases": 3.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/pago/pedido-recibido/16021",
+      "sessions": 2.0,
+      "purchases": 3.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/product/portugues-b1-b2-intensivo-28h",
+      "sessions": 214.0,
+      "purchases": 2.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/product/plataforma-online-de-italiano",
+      "sessions": 90.0,
+      "purchases": 2.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/product/portugues-a1-a2-intensivo-28h",
+      "sessions": 70.0,
+      "purchases": 2.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/blog",
+      "sessions": 11.0,
+      "purchases": 2.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/pago/pedido-recibido/16402",
+      "sessions": 2.0,
+      "purchases": 2.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/pago/pedido-recibido/16977",
+      "sessions": 2.0,
+      "purchases": 2.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/pago/pedido-recibido/17448",
+      "sessions": 2.0,
+      "purchases": 2.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/pago/pedido-recibido/17625",
+      "sessions": 1.0,
+      "purchases": 2.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/product/frances-delf-b1-intensivo-online-o-presencial-36h-copia",
+      "sessions": 372.0,
+      "purchases": 1.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/product/aleman-b1-b2-intensivo-28h",
+      "sessions": 303.0,
+      "purchases": 1.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/clases-online-presencial/clases-aleman",
+      "sessions": 282.0,
+      "purchases": 1.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/prueba-nivel-ingles",
+      "sessions": 256.0,
+      "purchases": 1.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/product/cambridge-pet-b1-intensivo-online-o-presencial-36h",
+      "sessions": 165.0,
+      "purchases": 1.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/clases-online-presencial/clases-frances",
+      "sessions": 103.0,
+      "purchases": 1.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/clases-online-presencial/clases-ingles/intensivo/linguaskill",
+      "sessions": 100.0,
+      "purchases": 1.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/intensivos-verano",
+      "sessions": 28.0,
+      "purchases": 1.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/prueba-nivel-italiano",
+      "sessions": 26.0,
+      "purchases": 1.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/clases-online-presencial/clases-ingles/c1",
+      "sessions": 25.0,
+      "purchases": 1.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/product/aptis-intensivo-28h",
+      "sessions": 20.0,
+      "purchases": 1.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/terminos-y-condiciones",
+      "sessions": 14.0,
+      "purchases": 1.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/nuestra-nueva-plataforma",
+      "sessions": 6.0,
+      "purchases": 1.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/courses/personalizado",
+      "sessions": 3.0,
+      "purchases": 1.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/pago/pedido-recibido/16138",
+      "sessions": 2.0,
+      "purchases": 1.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/inauguracion-tienda-online-bps",
+      "sessions": 1.0,
+      "purchases": 1.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/pago/pedido-recibido/15429",
+      "sessions": 1.0,
+      "purchases": 1.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/pago/pedido-recibido/15498",
+      "sessions": 1.0,
+      "purchases": 1.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/pago/pedido-recibido/15670",
+      "sessions": 1.0,
+      "purchases": 1.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/pago/pedido-recibido/15736",
+      "sessions": 1.0,
+      "purchases": 1.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/pago/pedido-recibido/15981",
+      "sessions": 1.0,
+      "purchases": 1.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/pago/pedido-recibido/16336",
+      "sessions": 1.0,
+      "purchases": 1.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/pago/pedido-recibido/16422",
+      "sessions": 1.0,
+      "purchases": 1.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/pago/pedido-recibido/16574",
+      "sessions": 1.0,
+      "purchases": 1.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/pago/pedido-recibido/16728",
+      "sessions": 1.0,
+      "purchases": 1.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/pago/pedido-recibido/16854",
+      "sessions": 1.0,
+      "purchases": 1.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/pago/pedido-recibido/16887",
+      "sessions": 1.0,
+      "purchases": 1.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/pago/pedido-recibido/17125",
+      "sessions": 1.0,
+      "purchases": 1.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/pago/pedido-recibido/17312",
+      "sessions": 1.0,
+      "purchases": 1.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/pago/pedido-recibido/17365",
+      "sessions": 1.0,
+      "purchases": 1.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/pago/pedido-recibido/17376",
+      "sessions": 1.0,
+      "purchases": 1.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/pago/pedido-recibido/17490",
+      "sessions": 1.0,
+      "purchases": 1.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/pago/pedido-recibido/17538",
+      "sessions": 1.0,
+      "purchases": 1.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/pago/pedido-recibido/17574",
+      "sessions": 1.0,
+      "purchases": 1.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/pago/pedido-recibido/17782",
+      "sessions": 1.0,
+      "purchases": 1.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "(not set)",
+      "sessions": 4132.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/ejemplos-email-informal-b2",
+      "sessions": 3646.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/practicar-gramatica-aptis-online",
+      "sessions": 2451.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/frases-estado-whatsapp-ingles",
+      "sessions": 2206.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/test-aptis-online-conoce-tu-nivel",
+      "sessions": 2073.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/frases-cotidianas-italiano",
+      "sessions": 1765.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/frutas-frances-ninos",
+      "sessions": 1525.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/escribir-correo-frances",
+      "sessions": 1514.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/guia-basica-de-gestos-italianos",
+      "sessions": 1502.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/frases-basicas-aleman",
+      "sessions": 1025.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/despedida-mail-ingles",
+      "sessions": 925.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/frases-aleman-recepcion-hotel",
+      "sessions": 870.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/certificar-nivel-ingles",
+      "sessions": 852.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/frases-material-ingles-b2",
+      "sessions": 843.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/certificados-ingles-oposiciones",
+      "sessions": 840.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/frases-traducir-ingles-b2",
+      "sessions": 821.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/frases-hechas-ingles-c1",
+      "sessions": 793.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/vocabulario-ingles-c1",
+      "sessions": 774.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/leyenda-ano-nuevo-chino",
+      "sessions": 773.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/frases-frances-b2",
+      "sessions": 770.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/sacar-c-aptis-general",
+      "sessions": 769.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/preguntas-frecuentes-delf",
+      "sessions": 621.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/es-dificil-b2-ingles",
+      "sessions": 585.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/aptis-profesor-consejos-experiencias",
+      "sessions": 546.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/diferencias-languagecert-y-cambridge",
+      "sessions": 498.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/practicar-reading-aptis",
+      "sessions": 464.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/libros-recomendados-practicar-ingles-segun-nivel",
+      "sessions": 441.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/ejercicio-listening-aptis",
+      "sessions": 429.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/preguntas-respuestas-entrevista-trabajo-ingles",
+      "sessions": 409.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/preparar-aptis-advanced",
+      "sessions": 361.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/dia-mujer-frances-ingles",
+      "sessions": 325.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/primavera-ingles",
+      "sessions": 322.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/a-que-equivale-el-b2-de-ingles",
+      "sessions": 290.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/vocabulario-chino-alimentos",
+      "sessions": 283.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/trabaja-con-nosotros",
+      "sessions": 271.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/sacarse-aptis-casa",
+      "sessions": 270.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/dificil-b2-frances",
+      "sessions": 265.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/aptis-ahora-es-aptis-esol",
+      "sessions": 259.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/frases-canciones-ingles",
+      "sessions": 226.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/ser-profesor-ingles-empresa",
+      "sessions": 193.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/centro-madrid-retiro-escuela-blue-parrot-school",
+      "sessions": 190.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/que-es-delf-b1-frances",
+      "sessions": 183.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/clases-online-presencial/clases-portugues",
+      "sessions": 158.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/clases-online-presencial/clases-japones",
+      "sessions": 141.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/intensivos-para-erasmus",
+      "sessions": 137.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/idiomas-mas-salida-laboral-curriculum",
+      "sessions": 134.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/participa-y-gana-un-viaje-por-europa",
+      "sessions": 128.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/diferencias-aptis-general-teachers",
+      "sessions": 126.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/preguntas-frecuentes-aptis-esol-general",
+      "sessions": 124.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/preparar-listening-aptis",
+      "sessions": 124.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/clases-online-presencial/clases-ingles/intensivo/trinity",
+      "sessions": 121.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/clases-online-presencial/clases-ingles/intensivo/ielts",
+      "sessions": 112.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/clases-online-presencial/clases-ingles/intensivo/languagecert",
+      "sessions": 105.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/curiosidades-st-patricks-day",
+      "sessions": 100.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/product/plataforma-online-ingles",
+      "sessions": 99.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/origen-san-valentin",
+      "sessions": 98.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/prueba-nivel-chino",
+      "sessions": 96.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/la-casa-de-papel-idiomas-madrid",
+      "sessions": 82.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/clases-online-presencial/clases-ingles/intensivo/cambridge",
+      "sessions": 81.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/cuanto-se-tarda-en-sacar-el-b1-de-ingles",
+      "sessions": 77.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/ejercicios-ingles-semana-santa",
+      "sessions": 77.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/empleo-profesores",
+      "sessions": 76.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/clases-online-presencial/clases-ingles/c2",
+      "sessions": 74.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/examen-goethe-institut",
+      "sessions": 71.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/prueba-nivel-frances",
+      "sessions": 71.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/tests-idiomas",
+      "sessions": 70.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/clases-online-presencial/clases-ele-espanol-para-extranjeros",
+      "sessions": 69.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/libros-ingles-mejorar-nivel",
+      "sessions": 67.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/evaluacion-alumnos",
+      "sessions": 62.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/5-cursos-para-empleados-que-mejoraran-la-eficacia-de-tu-empresa",
+      "sessions": 61.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/bonificar-cursos-idiomas-fundae",
+      "sessions": 58.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/ingles-profesional-por-que-es-importante",
+      "sessions": 55.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/landing/matriculas",
+      "sessions": 51.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/ejercicio-reading-ingles-b2-c1-halloween",
+      "sessions": 50.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/mail-formal-ingles",
+      "sessions": 50.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/aptis-advanced-malaga",
+      "sessions": 47.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/faux-amis-frances",
+      "sessions": 47.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/robotica-y-programacion",
+      "sessions": 47.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/prueba-tu-nivel-italiano",
+      "sessions": 46.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/clases-online-presencial/clases-chino",
+      "sessions": 42.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/product/espanol-a1-a2-intensivo-28h",
+      "sessions": 39.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/viajar-sabiendo-idiomas",
+      "sessions": 39.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/test-ingles-empresas",
+      "sessions": 38.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/libros-mejorar-frances",
+      "sessions": 36.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/series-de-television-para-mejorar-tu-listening-en-ingles",
+      "sessions": 36.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/aprender-falar-portugues",
+      "sessions": 34.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/puntuacion-ielts",
+      "sessions": 33.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/product/reserva-plaza-madrid",
+      "sessions": 32.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/clases-online-presencial/clases-ingles/b2",
+      "sessions": 30.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/product/espanol-b1-b2-intensivo-28h",
+      "sessions": 29.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/summercamp",
+      "sessions": 29.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/clases-online-presencial/clases-ingles/a2",
+      "sessions": 28.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/kids-and-teens",
+      "sessions": 28.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/preparar-c2-ingles",
+      "sessions": 28.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/10-consejos-para-preparar-el-examen-de-cambridge",
+      "sessions": 27.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/delf",
+      "sessions": 27.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/language-cert-examen-ingles",
+      "sessions": 27.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/clases-online-presencial/clases-ingles/intensivo",
+      "sessions": 26.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/mejores-series-acento-ingles-frances",
+      "sessions": 26.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/aptis-general-vs-advanced",
+      "sessions": 25.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/peliculas-para-mejorar-practicar-tu-pronunciacion-francesa",
+      "sessions": 25.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/product/plataforma-online-frances",
+      "sessions": 25.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/product/summercamp-3a5",
+      "sessions": 25.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/profesores-ele-madrid",
+      "sessions": 25.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/que-es-el-ielts-y-para-que-sirve",
+      "sessions": 24.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/prueba-clase-gratis",
+      "sessions": 23.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/prueba-nivel-aleman",
+      "sessions": 23.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/product/plataforma-online-de-aleman",
+      "sessions": 22.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/aptis-o-cambridge",
+      "sessions": 21.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/frases-motivadoras-ingles",
+      "sessions": 20.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/product/aptis-general-fin-de-semana",
+      "sessions": 20.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/aviso-legal",
+      "sessions": 17.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/dia-croqueta-historia",
+      "sessions": 17.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/language-nanny",
+      "sessions": 16.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/cursos-empresas",
+      "sessions": 15.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/product/summercamp-9a12",
+      "sessions": 15.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/clases-online-presencial/clases-ingles/a1",
+      "sessions": 14.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/examenes-oficiales-frances",
+      "sessions": 14.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/product/frances-delf-a1-a2-intensivo-online-36h",
+      "sessions": 14.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/tag/escenaseningles",
+      "sessions": 14.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/clases-online-presencial/clases-ingles/b1",
+      "sessions": 13.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/razones-estudiar-aleman",
+      "sessions": 12.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/razones-estudiar-italiano",
+      "sessions": 12.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/series-aprender-ingles",
+      "sessions": 12.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/escuela-blue-parrot-school-centros",
+      "sessions": 11.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    }
+  ],
+  "25-26": [
+    {
+      "landingPage": "/",
+      "sessions": 8580.0,
+      "purchases": 146.0,
+      "revenue": 26281.849999000013
+    },
+    {
+      "landingPage": "/product/aptis-general-b1-b2-c1-28h",
+      "sessions": 1132.0,
+      "purchases": 33.0,
+      "revenue": 4865.8
+    },
+    {
+      "landingPage": "/carrito",
+      "sessions": 233.0,
+      "purchases": 29.0,
+      "revenue": 5082.25
+    },
+    {
+      "landingPage": "/centro-malaga-teatinos-escuela-blue-parrot-school",
+      "sessions": 1128.0,
+      "purchases": 17.0,
+      "revenue": 3497.200001
+    },
+    {
+      "landingPage": "/product/cambridge-advanced-c1-intensivo-online-o-presencial-36h",
+      "sessions": 1113.0,
+      "purchases": 17.0,
+      "revenue": 3992.7500000000005
+    },
+    {
+      "landingPage": "/cursos-intensivos-idiomas",
+      "sessions": 455.0,
+      "purchases": 14.0,
+      "revenue": 2491.3999999999996
+    },
+    {
+      "landingPage": "/pago",
+      "sessions": 43.0,
+      "purchases": 14.0,
+      "revenue": 2278.0
+    },
+    {
+      "landingPage": "/product/frances-delf-b2-intensivo",
+      "sessions": 812.0,
+      "purchases": 13.0,
+      "revenue": 2088.75
+    },
+    {
+      "landingPage": "/product/aptis-advanced-intensivo-28h",
+      "sessions": 702.0,
+      "purchases": 13.0,
+      "revenue": 2106.05
+    },
+    {
+      "landingPage": "/pago/pedido-recibido/17898",
+      "sessions": 10.0,
+      "purchases": 11.0,
+      "revenue": 9.0
+    },
+    {
+      "landingPage": "/product/aleman-a1-a2-intensivo-28h",
+      "sessions": 527.0,
+      "purchases": 10.0,
+      "revenue": 1670.3000000000002
+    },
+    {
+      "landingPage": "/product/cambridge-first-b2-intensivo-online-o-presencial-36h",
+      "sessions": 676.0,
+      "purchases": 9.0,
+      "revenue": 2085.75
+    },
+    {
+      "landingPage": "/product/frances-delf-b1-intensivo-online-o-presencial-36h-copia",
+      "sessions": 632.0,
+      "purchases": 9.0,
+      "revenue": 1145.3
+    },
+    {
+      "landingPage": "/product/italiano-b1-b2-intensivo-28h",
+      "sessions": 534.0,
+      "purchases": 9.0,
+      "revenue": 1110.05
+    },
+    {
+      "landingPage": "/clases-online-presencial/clases-ingles/intensivo/aptis",
+      "sessions": 448.0,
+      "purchases": 4.0,
+      "revenue": 425.3
+    },
+    {
+      "landingPage": "/tienda-online",
+      "sessions": 323.0,
+      "purchases": 4.0,
+      "revenue": 757.3
+    },
+    {
+      "landingPage": "/product/italiano-a1-a2-intensivo-28h",
+      "sessions": 174.0,
+      "purchases": 4.0,
+      "revenue": 338.15
+    },
+    {
+      "landingPage": "/product/aptis-a2-intensivo-28h",
+      "sessions": 128.0,
+      "purchases": 4.0,
+      "revenue": 784.3499999999999
+    },
+    {
+      "landingPage": "/centro-madrid-retiro-escuela-blue-parrot-school",
+      "sessions": 283.0,
+      "purchases": 3.0,
+      "revenue": 458.3
+    },
+    {
+      "landingPage": "/contacto",
+      "sessions": 501.0,
+      "purchases": 2.0,
+      "revenue": 554.65
+    },
+    {
+      "landingPage": "/clases-online-presencial",
+      "sessions": 376.0,
+      "purchases": 2.0,
+      "revenue": 239.2
+    },
+    {
+      "landingPage": "/clases-online-presencial/clases-aleman",
+      "sessions": 263.0,
+      "purchases": 2.0,
+      "revenue": 2.0
+    },
+    {
+      "landingPage": "/clases-online-presencial/clases-ingles",
+      "sessions": 215.0,
+      "purchases": 2.0,
+      "revenue": 423.3
+    },
+    {
+      "landingPage": "/product/plataforma-online-frances",
+      "sessions": 36.0,
+      "purchases": 2.0,
+      "revenue": 392.4
+    },
+    {
+      "landingPage": "/product/frances-delf-a1-a2-intensivo-online-36h",
+      "sessions": 22.0,
+      "purchases": 2.0,
+      "revenue": 263.65
+    },
+    {
+      "landingPage": "/product/portugues-b1-b2-intensivo-28h",
+      "sessions": 185.0,
+      "purchases": 1.0,
+      "revenue": 211.65
+    },
+    {
+      "landingPage": "/product/intensivo-ielts-academic",
+      "sessions": 155.0,
+      "purchases": 1.0,
+      "revenue": 262.65
+    },
+    {
+      "landingPage": "/product/trinity-college-london-c1-intensivo-online-36h",
+      "sessions": 146.0,
+      "purchases": 1.0,
+      "revenue": 262.65
+    },
+    {
+      "landingPage": "/product/portugues-a1-a2-intensivo-28h",
+      "sessions": 127.0,
+      "purchases": 1.0,
+      "revenue": 211.65
+    },
+    {
+      "landingPage": "/product/cambridge-pet-b1-intensivo-online-o-presencial-36h",
+      "sessions": 120.0,
+      "purchases": 1.0,
+      "revenue": 309.0
+    },
+    {
+      "landingPage": "/product/plataforma-online-de-italiano",
+      "sessions": 80.0,
+      "purchases": 1.0,
+      "revenue": 211.65
+    },
+    {
+      "landingPage": "/product/plataforma-online-ingles",
+      "sessions": 53.0,
+      "purchases": 1.0,
+      "revenue": 245.65
+    },
+    {
+      "landingPage": "/clases-online-presencial/clases-ingles/c1",
+      "sessions": 44.0,
+      "purchases": 1.0,
+      "revenue": 1.0
+    },
+    {
+      "landingPage": "/delf",
+      "sessions": 42.0,
+      "purchases": 1.0,
+      "revenue": 174.3
+    },
+    {
+      "landingPage": "/product/intensivo-ielts-general-training",
+      "sessions": 26.0,
+      "purchases": 1.0,
+      "revenue": 262.65
+    },
+    {
+      "landingPage": "/summercamp",
+      "sessions": 25.0,
+      "purchases": 1.0,
+      "revenue": 195.0
+    },
+    {
+      "landingPage": "/clases-online-presencial/clases-ingles/b1",
+      "sessions": 10.0,
+      "purchases": 1.0,
+      "revenue": 234.0
+    },
+    {
+      "landingPage": "/pago/pedido-recibido/22151",
+      "sessions": 3.0,
+      "purchases": 1.0,
+      "revenue": 174.3
+    },
+    {
+      "landingPage": "/pago/pedido-recibido/19564",
+      "sessions": 2.0,
+      "purchases": 1.0,
+      "revenue": 309.0
+    },
+    {
+      "landingPage": "/pago/pedido-recibido/17861",
+      "sessions": 1.0,
+      "purchases": 1.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/pago/pedido-recibido/17873",
+      "sessions": 1.0,
+      "purchases": 1.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/pago/pedido-recibido/18030",
+      "sessions": 1.0,
+      "purchases": 1.0,
+      "revenue": 1.0
+    },
+    {
+      "landingPage": "/pago/pedido-recibido/18200",
+      "sessions": 1.0,
+      "purchases": 1.0,
+      "revenue": 1.0
+    },
+    {
+      "landingPage": "/pago/pedido-recibido/18336",
+      "sessions": 1.0,
+      "purchases": 1.0,
+      "revenue": 1.0
+    },
+    {
+      "landingPage": "/pago/pedido-recibido/19092",
+      "sessions": 1.0,
+      "purchases": 1.0,
+      "revenue": 199.2
+    },
+    {
+      "landingPage": "/pago/pedido-recibido/19591",
+      "sessions": 1.0,
+      "purchases": 1.0,
+      "revenue": 211.65
+    },
+    {
+      "landingPage": "/pago/pedido-recibido/19639",
+      "sessions": 1.0,
+      "purchases": 1.0,
+      "revenue": 262.65
+    },
+    {
+      "landingPage": "/pago/pedido-recibido/19924",
+      "sessions": 1.0,
+      "purchases": 1.0,
+      "revenue": 199.2
+    },
+    {
+      "landingPage": "/pago/pedido-recibido/21841",
+      "sessions": 1.0,
+      "purchases": 1.0,
+      "revenue": 211.65
+    },
+    {
+      "landingPage": "(not set)",
+      "sessions": 3470.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/test-aptis-online-conoce-tu-nivel",
+      "sessions": 3443.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/practicar-gramatica-aptis-online",
+      "sessions": 2508.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/ejemplos-email-informal-b2",
+      "sessions": 2350.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/frases-cotidianas-italiano",
+      "sessions": 1547.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/ejercicio-listening-aptis",
+      "sessions": 1477.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/vocabulario-ingles-c1",
+      "sessions": 1420.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/guia-basica-de-gestos-italianos",
+      "sessions": 831.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/practicar-reading-aptis",
+      "sessions": 779.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/leyenda-ano-nuevo-chino",
+      "sessions": 746.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/escribir-correo-frances",
+      "sessions": 578.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/frases-traducir-ingles-b2",
+      "sessions": 572.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/frases-aleman-recepcion-hotel",
+      "sessions": 538.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/frases-basicas-aleman",
+      "sessions": 538.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/preparar-aptis-advanced",
+      "sessions": 524.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/frases-hechas-ingles-c1",
+      "sessions": 500.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/frutas-frances-ninos",
+      "sessions": 483.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/preguntas-frecuentes-delf",
+      "sessions": 447.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/frases-frances-b2",
+      "sessions": 441.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/frases-material-ingles-b2",
+      "sessions": 378.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/despedida-mail-ingles",
+      "sessions": 368.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/product/aleman-b1-b2-intensivo-28h",
+      "sessions": 365.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/aptis-profesor-consejos-experiencias",
+      "sessions": 360.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/certificados-ingles-oposiciones",
+      "sessions": 335.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/frases-estado-whatsapp-ingles",
+      "sessions": 325.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/libros-recomendados-practicar-ingles-segun-nivel",
+      "sessions": 319.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/ejercicio-reading-ingles-b2-c1-halloween",
+      "sessions": 316.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/trabaja-con-nosotros",
+      "sessions": 311.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/es-dificil-b2-ingles",
+      "sessions": 304.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/clases-online-presencial/clases-italiano",
+      "sessions": 293.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/diferencias-languagecert-y-cambridge",
+      "sessions": 279.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/prueba-nivel-ingles",
+      "sessions": 257.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/certificar-nivel-ingles",
+      "sessions": 253.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/clases-online-presencial/clases-frances",
+      "sessions": 242.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/sacar-c-aptis-general",
+      "sessions": 237.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/clases-online-presencial/clases-ingles/intensivo/trinity",
+      "sessions": 221.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/clases-online-presencial/clases-ingles/intensivo/ielts",
+      "sessions": 186.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/clases-online-presencial/clases-japones",
+      "sessions": 178.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/clases-online-presencial/clases-ingles/intensivo/languagecert",
+      "sessions": 177.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/dificil-b2-frances",
+      "sessions": 177.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/origen-san-valentin",
+      "sessions": 175.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/clases-online-presencial/clases-portugues",
+      "sessions": 164.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/preguntas-respuestas-entrevista-trabajo-ingles",
+      "sessions": 160.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/product/trinity-college-london-b2-intensivo-online-o-36h",
+      "sessions": 157.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/a-que-equivale-el-b2-de-ingles",
+      "sessions": 148.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/intensivos-para-erasmus",
+      "sessions": 144.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/diferencias-aptis-general-teachers",
+      "sessions": 134.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/clases-online-presencial/clases-ingles/intensivo/linguaskill",
+      "sessions": 128.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/empleo-profesores",
+      "sessions": 124.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/ser-profesor-ingles-empresa",
+      "sessions": 118.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/primavera-ingles",
+      "sessions": 117.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/preparar-c2-ingles",
+      "sessions": 116.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/que-es-delf-b1-frances",
+      "sessions": 108.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/sacarse-aptis-casa",
+      "sessions": 108.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/dia-mujer-frances-ingles",
+      "sessions": 107.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/frases-canciones-ingles",
+      "sessions": 100.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/clases-online-presencial/clases-ele-espanol-para-extranjeros",
+      "sessions": 91.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/preparar-listening-aptis",
+      "sessions": 91.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/faux-amis-frances",
+      "sessions": 84.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/prueba-nivel-chino",
+      "sessions": 79.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/product/reserva-plaza-malaga",
+      "sessions": 77.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/prueba-tu-nivel-italiano",
+      "sessions": 77.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/vocabulario-chino-alimentos",
+      "sessions": 75.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/libros-ingles-mejorar-nivel",
+      "sessions": 72.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/preguntas-frecuentes-aptis-esol-general",
+      "sessions": 71.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/clases-online-presencial/clases-ingles/c2",
+      "sessions": 68.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/evaluacion-alumnos",
+      "sessions": 65.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/participa-y-gana-un-viaje-por-europa",
+      "sessions": 64.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/clases-online-presencial/clases-chino",
+      "sessions": 61.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/landing/matriculas",
+      "sessions": 61.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/clases-online-presencial/clases-ingles/intensivo/cambridge",
+      "sessions": 58.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/product/catalan-c1-intensivo-online-36h",
+      "sessions": 55.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/idiomas-mas-salida-laboral-curriculum",
+      "sessions": 54.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/prueba-nivel-frances",
+      "sessions": 53.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/intensivos-verano",
+      "sessions": 47.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/libros-mejorar-frances",
+      "sessions": 42.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/la-casa-de-papel-idiomas-madrid",
+      "sessions": 41.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/ejercicios-ingles-semana-santa",
+      "sessions": 40.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/como-se-celebra-halloween-en-italia",
+      "sessions": 36.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/hablar-idiomas-con-fluidez-truco",
+      "sessions": 35.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/cuanto-se-tarda-en-sacar-el-b1-de-ingles",
+      "sessions": 33.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/ingles-profesional-por-que-es-importante",
+      "sessions": 33.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/robotica-y-programacion",
+      "sessions": 33.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/series-de-television-para-mejorar-tu-listening-en-ingles",
+      "sessions": 33.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/test-ingles-empresas",
+      "sessions": 31.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/aptis-advanced-malaga",
+      "sessions": 30.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/product/reserva-plaza-madrid",
+      "sessions": 30.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/5-cursos-para-empleados-que-mejoraran-la-eficacia-de-tu-empresa",
+      "sessions": 29.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/frases-motivadoras-ingles",
+      "sessions": 29.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/idioms-en-ingles-que-todos-deben-saber-este-halloween",
+      "sessions": 28.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/aptis-ahora-es-aptis-esol",
+      "sessions": 27.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/escuela-blue-parrot-school-centros",
+      "sessions": 27.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/product/espanol-b1-b2-intensivo-28h",
+      "sessions": 26.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/aptis-o-cambridge",
+      "sessions": 25.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/mejores-refranes-ingles",
+      "sessions": 25.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/profesores-ele-madrid",
+      "sessions": 25.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/tests-idiomas",
+      "sessions": 25.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/aprender-falar-portugues",
+      "sessions": 24.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/cursos-empresas",
+      "sessions": 24.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/kids-and-teens",
+      "sessions": 24.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/examen-goethe-institut",
+      "sessions": 23.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/clases-online-presencial/clases-ingles/b2",
+      "sessions": 22.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/prueba-nivel-aleman",
+      "sessions": 22.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/curiosidades-st-patricks-day",
+      "sessions": 21.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/bonificar-cursos-idiomas-fundae",
+      "sessions": 20.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/partes-del-examen-de-aptis",
+      "sessions": 20.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/aptis-general-vs-advanced",
+      "sessions": 19.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/practicar-speaking-aptis",
+      "sessions": 19.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/clases-online-presencial/clases-ingles/intensivo",
+      "sessions": 17.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/prueba-nivel-italiano",
+      "sessions": 17.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/que-es-el-ielts-y-para-que-sirve",
+      "sessions": 17.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/viajar-sabiendo-idiomas",
+      "sessions": 17.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/language-nanny",
+      "sessions": 16.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/preparar-examen-cambridge-online",
+      "sessions": 16.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/product/espanol-a1-a2-intensivo-28h",
+      "sessions": 16.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/ventajas-robotica-programacion",
+      "sessions": 16.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/mail-formal-ingles",
+      "sessions": 14.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/product/plataforma-professional-english-para-turismo",
+      "sessions": 14.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/series-aprender-ingles",
+      "sessions": 14.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/blog",
+      "sessions": 13.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/product/plataforma-online-de-aleman",
+      "sessions": 13.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/razones-estudiar-italiano",
+      "sessions": 13.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/diferencias-ingles-britanico-y-americano",
+      "sessions": 12.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/intensivos-pet-first-advanced-for-school-express",
+      "sessions": 12.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/objetivo-intensivos-verano-2022",
+      "sessions": 12.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/puntuacion-ielts",
+      "sessions": 12.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/terminos-y-condiciones",
+      "sessions": 12.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/mornings-at-blue-parrot",
+      "sessions": 11.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/razones-estudiar-aleman",
+      "sessions": 11.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/aviso-legal",
+      "sessions": 10.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/christmas-camp-madrid-ingles",
+      "sessions": 10.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/landing/guia-aptis-para-oposiciones",
+      "sessions": 9.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/politica-privacidad",
+      "sessions": 9.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/product/clases-particulares-frances-online",
+      "sessions": 9.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/consejos-estudiar-intensivo",
+      "sessions": 8.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/expresiones-navidenas-en-distintos-idiomas",
+      "sessions": 8.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/landing/listening-aptis-ebook",
+      "sessions": 8.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/language-cert-examen-ingles",
+      "sessions": 8.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/prueba-clase-gratis",
+      "sessions": 8.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/clases-online-presencial/clases-ingles/a1",
+      "sessions": 7.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/clases-online-presencial/clases-ingles/a2",
+      "sessions": 7.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/mejores-series-acento-ingles-frances",
+      "sessions": 7.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/tag/aptis-test",
+      "sessions": 7.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/borrador-cursos",
+      "sessions": 6.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/category/cursos-de-ingles",
+      "sessions": 6.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/landing/speaking-aptis-ebook",
+      "sessions": 6.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/listening-b2-cambridge-star-wars-day",
+      "sessions": 6.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/mi-cuenta/ver-pedido/18122",
+      "sessions": 6.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/nuestra-nueva-plataforma",
+      "sessions": 6.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/peliculas-para-mejorar-practicar-tu-pronunciacion-francesa",
+      "sessions": 6.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "landingPage": "/tips-poco-convencionales-para-practicar-un-idioma",
+      "sessions": 6.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    }
+  ]
+}

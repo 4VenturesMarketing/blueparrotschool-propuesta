@@ -1,0 +1,5009 @@
+{
+  "fetchedAt": "2026-08-29T19:16:42",
+  "landings_all_sy-2024-25": [
+    {
+      "landingPage": "/practicar-gramatica-aptis-online",
+      "sessions": "2596",
+      "totalUsers": "2278",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.20184899845916796",
+      "averageSessionDuration": "227.72630660208011",
+      "engagementRate": "0.79815100154083207"
+    },
+    {
+      "landingPage": "/clases-online-presencial/clases-ingles/intensivo/aptis",
+      "sessions": "2385",
+      "totalUsers": "2116",
+      "ecommercePurchases": "15",
+      "bounceRate": "0.40083857442348009",
+      "averageSessionDuration": "175.11225139496855",
+      "engagementRate": "0.59916142557652"
+    },
+    {
+      "landingPage": "/test-aptis-online-conoce-tu-nivel",
+      "sessions": "2219",
+      "totalUsers": "2084",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.138801261829653",
+      "averageSessionDuration": "413.07381032086528",
+      "engagementRate": "0.861198738170347"
+    },
+    {
+      "landingPage": "/product/aptis-general-b1-b2-c1-28h",
+      "sessions": "2076",
+      "totalUsers": "1380",
+      "ecommercePurchases": "110",
+      "bounceRate": "0.35308285163776493",
+      "averageSessionDuration": "267.83440290558769",
+      "engagementRate": "0.646917148362235"
+    },
+    {
+      "landingPage": "/product/aptis-a2-intensivo-28h",
+      "sessions": "978",
+      "totalUsers": "596",
+      "ecommercePurchases": "63",
+      "bounceRate": "0.38548057259713703",
+      "averageSessionDuration": "274.57004937627812",
+      "engagementRate": "0.614519427402863"
+    },
+    {
+      "landingPage": "/sacar-c-aptis-general",
+      "sessions": "892",
+      "totalUsers": "688",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.34417040358744394",
+      "averageSessionDuration": "156.72780851569507",
+      "engagementRate": "0.655829596412556"
+    },
+    {
+      "landingPage": "/product/aptis-advanced-intensivo-28h",
+      "sessions": "625",
+      "totalUsers": "408",
+      "ecommercePurchases": "30",
+      "bounceRate": "0.3696",
+      "averageSessionDuration": "265.970812288",
+      "engagementRate": "0.6304"
+    },
+    {
+      "landingPage": "/aptis-profesor-consejos-experiencias",
+      "sessions": "561",
+      "totalUsers": "541",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.23351158645276293",
+      "averageSessionDuration": "159.22612112477717",
+      "engagementRate": "0.76648841354723707"
+    },
+    {
+      "landingPage": "/practicar-reading-aptis",
+      "sessions": "510",
+      "totalUsers": "462",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.20784313725490197",
+      "averageSessionDuration": "169.562774972549",
+      "engagementRate": "0.792156862745098"
+    },
+    {
+      "landingPage": "/ejercicio-listening-aptis",
+      "sessions": "489",
+      "totalUsers": "409",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.2556237218813906",
+      "averageSessionDuration": "111.88908889775051",
+      "engagementRate": "0.7443762781186094"
+    },
+    {
+      "landingPage": "/preparar-aptis-advanced",
+      "sessions": "383",
+      "totalUsers": "355",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.14882506527415143",
+      "averageSessionDuration": "189.65013528459528",
+      "engagementRate": "0.8511749347258486"
+    },
+    {
+      "landingPage": "/product/aptis-intensivo-online-28h",
+      "sessions": "360",
+      "totalUsers": "232",
+      "ecommercePurchases": "11",
+      "bounceRate": "0.39166666666666666",
+      "averageSessionDuration": "289.81842307222223",
+      "engagementRate": "0.60833333333333328"
+    },
+    {
+      "landingPage": "/sacarse-aptis-casa",
+      "sessions": "282",
+      "totalUsers": "276",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.20212765957446807",
+      "averageSessionDuration": "116.06412670921985",
+      "engagementRate": "0.7978723404255319"
+    },
+    {
+      "landingPage": "/aptis-ahora-es-aptis-esol",
+      "sessions": "268",
+      "totalUsers": "242",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.27985074626865669",
+      "averageSessionDuration": "131.76221633582088",
+      "engagementRate": "0.72014925373134331"
+    },
+    {
+      "landingPage": "/product/aptis-advanced-intensivo-online-28h",
+      "sessions": "193",
+      "totalUsers": "124",
+      "ecommercePurchases": "5",
+      "bounceRate": "0.49222797927461137",
+      "averageSessionDuration": "164.05806372020726",
+      "engagementRate": "0.50777202072538863"
+    },
+    {
+      "landingPage": "/product/aptis-5-premium",
+      "sessions": "192",
+      "totalUsers": "191",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.3125",
+      "averageSessionDuration": "109.87264444791667",
+      "engagementRate": "0.6875"
+    },
+    {
+      "landingPage": "/diferencias-aptis-general-teachers",
+      "sessions": "132",
+      "totalUsers": "129",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.18939393939393939",
+      "averageSessionDuration": "142.87553624242423",
+      "engagementRate": "0.81060606060606055"
+    },
+    {
+      "landingPage": "/preparar-listening-aptis",
+      "sessions": "132",
+      "totalUsers": "131",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.19696969696969696",
+      "averageSessionDuration": "157.05441513636364",
+      "engagementRate": "0.803030303030303"
+    },
+    {
+      "landingPage": "/preguntas-frecuentes-aptis-esol-general",
+      "sessions": "129",
+      "totalUsers": "126",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.26356589147286824",
+      "averageSessionDuration": "98.629682542635649",
+      "engagementRate": "0.73643410852713176"
+    },
+    {
+      "landingPage": "/aptis-advanced-malaga",
+      "sessions": "51",
+      "totalUsers": "51",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.17647058823529413",
+      "averageSessionDuration": "111.8984579607843",
+      "engagementRate": "0.82352941176470584"
+    },
+    {
+      "landingPage": "/product/aptis-a2-b1-intensivo-online-28h",
+      "sessions": "36",
+      "totalUsers": "28",
+      "ecommercePurchases": "2",
+      "bounceRate": "0.44444444444444442",
+      "averageSessionDuration": "452.78546733333332",
+      "engagementRate": "0.55555555555555558"
+    },
+    {
+      "landingPage": "/product/aptis-general-fin-de-semana",
+      "sessions": "34",
+      "totalUsers": "24",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.41176470588235292",
+      "averageSessionDuration": "401.15039988235293",
+      "engagementRate": "0.58823529411764708"
+    },
+    {
+      "landingPage": "/product/aptis-intensivo-28h",
+      "sessions": "33",
+      "totalUsers": "29",
+      "ecommercePurchases": "2",
+      "bounceRate": "0.36363636363636365",
+      "averageSessionDuration": "329.15385003030303",
+      "engagementRate": "0.63636363636363635"
+    },
+    {
+      "landingPage": "/aptis-general-vs-advanced",
+      "sessions": "29",
+      "totalUsers": "28",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.13793103448275862",
+      "averageSessionDuration": "192.31559665517241",
+      "engagementRate": "0.86206896551724133"
+    },
+    {
+      "landingPage": "/aptis-o-cambridge",
+      "sessions": "24",
+      "totalUsers": "24",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.20833333333333334",
+      "averageSessionDuration": "106.38304137499999",
+      "engagementRate": "0.79166666666666663"
+    },
+    {
+      "landingPage": "/intensivos-aptis-gral-y-advanced-express",
+      "sessions": "17",
+      "totalUsers": "17",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.17647058823529413",
+      "averageSessionDuration": "135.1471182352941",
+      "engagementRate": "0.82352941176470584"
+    },
+    {
+      "landingPage": "/practicar-speaking-aptis",
+      "sessions": "17",
+      "totalUsers": "14",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.35294117647058826",
+      "averageSessionDuration": "197.69269370588236",
+      "engagementRate": "0.6470588235294118"
+    },
+    {
+      "landingPage": "/landing/guia-aptis-para-oposiciones",
+      "sessions": "9",
+      "totalUsers": "9",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.55555555555555558",
+      "averageSessionDuration": "33.888395111111116",
+      "engagementRate": "0.44444444444444442"
+    },
+    {
+      "landingPage": "/partes-del-examen-de-aptis",
+      "sessions": "6",
+      "totalUsers": "6",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.33333333333333331",
+      "averageSessionDuration": "107.86103516666667",
+      "engagementRate": "0.66666666666666663"
+    },
+    {
+      "landingPage": "/tag/ejercicios-aptis-online",
+      "sessions": "6",
+      "totalUsers": "6",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.5",
+      "averageSessionDuration": "24.012682833333333",
+      "engagementRate": "0.5"
+    },
+    {
+      "landingPage": "/aptis5premium",
+      "sessions": "5",
+      "totalUsers": "5",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.6",
+      "averageSessionDuration": "410.95112200000005",
+      "engagementRate": "0.4"
+    },
+    {
+      "landingPage": "/que-es-aptis",
+      "sessions": "5",
+      "totalUsers": "5",
+      "ecommercePurchases": "0",
+      "bounceRate": "0",
+      "averageSessionDuration": "338.74253239999996",
+      "engagementRate": "1"
+    },
+    {
+      "landingPage": "/landing/speaking-aptis-ebook",
+      "sessions": "4",
+      "totalUsers": "4",
+      "ecommercePurchases": "0",
+      "bounceRate": "0",
+      "averageSessionDuration": "474.90679875",
+      "engagementRate": "1"
+    },
+    {
+      "landingPage": "/product/aptis-general-28h",
+      "sessions": "4",
+      "totalUsers": "3",
+      "ecommercePurchases": "0",
+      "bounceRate": "0",
+      "averageSessionDuration": "1978.65156175",
+      "engagementRate": "1"
+    },
+    {
+      "landingPage": "/tag/trucos-aptis",
+      "sessions": "4",
+      "totalUsers": "2",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.5",
+      "averageSessionDuration": "12.4580845",
+      "engagementRate": "0.5"
+    },
+    {
+      "landingPage": "/aptis-oposiciones",
+      "sessions": "3",
+      "totalUsers": "3",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.33333333333333331",
+      "averageSessionDuration": "13.798165666666668",
+      "engagementRate": "0.66666666666666663"
+    },
+    {
+      "landingPage": "/landing/ebook-como-preparar-aptis-advanced",
+      "sessions": "3",
+      "totalUsers": "3",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.66666666666666663",
+      "averageSessionDuration": "7.0799946666666669",
+      "engagementRate": "0.33333333333333331"
+    },
+    {
+      "landingPage": "/landing/listening-aptis-ebook",
+      "sessions": "3",
+      "totalUsers": "3",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.33333333333333331",
+      "averageSessionDuration": "35.674515",
+      "engagementRate": "0.66666666666666663"
+    },
+    {
+      "landingPage": "/preguntas-clave-aptis-y-cambridge",
+      "sessions": "3",
+      "totalUsers": "3",
+      "ecommercePurchases": "0",
+      "bounceRate": "0",
+      "averageSessionDuration": "114.12201466666666",
+      "engagementRate": "1"
+    },
+    {
+      "landingPage": "/tag/aptis-test",
+      "sessions": "3",
+      "totalUsers": "3",
+      "ecommercePurchases": "0",
+      "bounceRate": "0",
+      "averageSessionDuration": "385.232911",
+      "engagementRate": "1"
+    },
+    {
+      "landingPage": "/entrevista-a-un-alumno-de-aptis",
+      "sessions": "2",
+      "totalUsers": "2",
+      "ecommercePurchases": "0",
+      "bounceRate": "0",
+      "averageSessionDuration": "17.270555",
+      "engagementRate": "1"
+    },
+    {
+      "landingPage": "/landing/descubre-los-cambios-en-el-examen-de-aptis-en-2021",
+      "sessions": "2",
+      "totalUsers": "2",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.5",
+      "averageSessionDuration": "9.4018665",
+      "engagementRate": "0.5"
+    },
+    {
+      "landingPage": "/tag/ejercicios-online-aptis",
+      "sessions": "2",
+      "totalUsers": "2",
+      "ecommercePurchases": "0",
+      "bounceRate": "0",
+      "averageSessionDuration": "32.1193",
+      "engagementRate": "1"
+    },
+    {
+      "landingPage": "/tag/ejercicios-reading-aptis",
+      "sessions": "2",
+      "totalUsers": "2",
+      "ecommercePurchases": "0",
+      "bounceRate": "0",
+      "averageSessionDuration": "26.2401935",
+      "engagementRate": "1"
+    },
+    {
+      "landingPage": "/tag/practicar-gramatica-aptis",
+      "sessions": "2",
+      "totalUsers": "2",
+      "ecommercePurchases": "0",
+      "bounceRate": "0",
+      "averageSessionDuration": "42.233282",
+      "engagementRate": "1"
+    },
+    {
+      "landingPage": "/tag/test-de-aptis",
+      "sessions": "2",
+      "totalUsers": "2",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.5",
+      "averageSessionDuration": "10.570565",
+      "engagementRate": "0.5"
+    },
+    {
+      "landingPage": "/clases-online/clases-ingles/intensivo/aptis",
+      "sessions": "1",
+      "totalUsers": "1",
+      "ecommercePurchases": "0",
+      "bounceRate": "0",
+      "averageSessionDuration": "21.38433",
+      "engagementRate": "1"
+    },
+    {
+      "landingPage": "/ejercicio-de-listening-para-aptis",
+      "sessions": "1",
+      "totalUsers": "1",
+      "ecommercePurchases": "0",
+      "bounceRate": "0",
+      "averageSessionDuration": "2500.204484",
+      "engagementRate": "1"
+    },
+    {
+      "landingPage": "/partes-aptis",
+      "sessions": "1",
+      "totalUsers": "1",
+      "ecommercePurchases": "0",
+      "bounceRate": "1",
+      "averageSessionDuration": "7.146306",
+      "engagementRate": "0"
+    },
+    {
+      "landingPage": "/practicar-gramatica-aptis- online",
+      "sessions": "1",
+      "totalUsers": "1",
+      "ecommercePurchases": "0",
+      "bounceRate": "0",
+      "averageSessionDuration": "114.437145",
+      "engagementRate": "1"
+    },
+    {
+      "landingPage": "/product-category/intensivos/aptis",
+      "sessions": "1",
+      "totalUsers": "1",
+      "ecommercePurchases": "0",
+      "bounceRate": "0",
+      "averageSessionDuration": "21.063517",
+      "engagementRate": "1"
+    },
+    {
+      "landingPage": "/product/aptis-general-b1-b2-28h",
+      "sessions": "1",
+      "totalUsers": "1",
+      "ecommercePurchases": "0",
+      "bounceRate": "0",
+      "averageSessionDuration": "187.008473",
+      "engagementRate": "1"
+    },
+    {
+      "landingPage": "/prueba-nivel-aptis",
+      "sessions": "1",
+      "totalUsers": "1",
+      "ecommercePurchases": "0",
+      "bounceRate": "0",
+      "averageSessionDuration": "16.986798",
+      "engagementRate": "1"
+    },
+    {
+      "landingPage": "/prueba-nivel-aptis/",
+      "sessions": "1",
+      "totalUsers": "1",
+      "ecommercePurchases": "0",
+      "bounceRate": "0",
+      "averageSessionDuration": "24.58887",
+      "engagementRate": "1"
+    },
+    {
+      "landingPage": "/tag/alumno-aptis",
+      "sessions": "1",
+      "totalUsers": "1",
+      "ecommercePurchases": "0",
+      "bounceRate": "0",
+      "averageSessionDuration": "22.511178",
+      "engagementRate": "1"
+    },
+    {
+      "landingPage": "/tag/apartados-aptis",
+      "sessions": "1",
+      "totalUsers": "1",
+      "ecommercePurchases": "0",
+      "bounceRate": "0",
+      "averageSessionDuration": "21.724909",
+      "engagementRate": "1"
+    },
+    {
+      "landingPage": "/tag/aptis",
+      "sessions": "1",
+      "totalUsers": "1",
+      "ecommercePurchases": "0",
+      "bounceRate": "0",
+      "averageSessionDuration": "22.251036",
+      "engagementRate": "1"
+    },
+    {
+      "landingPage": "/tag/aptis-advanced",
+      "sessions": "1",
+      "totalUsers": "1",
+      "ecommercePurchases": "0",
+      "bounceRate": "0",
+      "averageSessionDuration": "21.552752",
+      "engagementRate": "1"
+    },
+    {
+      "landingPage": "/tag/aptis-advanced-andalucia",
+      "sessions": "1",
+      "totalUsers": "1",
+      "ecommercePurchases": "0",
+      "bounceRate": "0",
+      "averageSessionDuration": "23.000081",
+      "engagementRate": "1"
+    },
+    {
+      "landingPage": "/tag/aptis-advanced-malaga",
+      "sessions": "1",
+      "totalUsers": "1",
+      "ecommercePurchases": "0",
+      "bounceRate": "0",
+      "averageSessionDuration": "21.389921",
+      "engagementRate": "1"
+    },
+    {
+      "landingPage": "/tag/aptis-b1",
+      "sessions": "1",
+      "totalUsers": "1",
+      "ecommercePurchases": "0",
+      "bounceRate": "0",
+      "averageSessionDuration": "20.16648",
+      "engagementRate": "1"
+    },
+    {
+      "landingPage": "/tag/aptis-bolsa",
+      "sessions": "1",
+      "totalUsers": "1",
+      "ecommercePurchases": "0",
+      "bounceRate": "0",
+      "averageSessionDuration": "21.674909",
+      "engagementRate": "1"
+    },
+    {
+      "landingPage": "/tag/aptis-esol",
+      "sessions": "1",
+      "totalUsers": "1",
+      "ecommercePurchases": "0",
+      "bounceRate": "0",
+      "averageSessionDuration": "21.29913",
+      "engagementRate": "1"
+    },
+    {
+      "landingPage": "/tag/aptis-esol-general",
+      "sessions": "1",
+      "totalUsers": "1",
+      "ecommercePurchases": "0",
+      "bounceRate": "0",
+      "averageSessionDuration": "21.647266",
+      "engagementRate": "1"
+    },
+    {
+      "landingPage": "/tag/aptis-examen-ingles",
+      "sessions": "1",
+      "totalUsers": "1",
+      "ecommercePurchases": "0",
+      "bounceRate": "0",
+      "averageSessionDuration": "21.16139",
+      "engagementRate": "1"
+    },
+    {
+      "landingPage": "/tag/aptis-general",
+      "sessions": "1",
+      "totalUsers": "1",
+      "ecommercePurchases": "0",
+      "bounceRate": "0",
+      "averageSessionDuration": "23.328776",
+      "engagementRate": "1"
+    },
+    {
+      "landingPage": "/tag/aptis-general-o-advanced",
+      "sessions": "1",
+      "totalUsers": "1",
+      "ecommercePurchases": "0",
+      "bounceRate": "0",
+      "averageSessionDuration": "22.38707",
+      "engagementRate": "1"
+    },
+    {
+      "landingPage": "/tag/aptis-general-o-for-teachers",
+      "sessions": "1",
+      "totalUsers": "1",
+      "ecommercePurchases": "0",
+      "bounceRate": "0",
+      "averageSessionDuration": "20.764181",
+      "engagementRate": "1"
+    },
+    {
+      "landingPage": "/tag/aptis-malaga",
+      "sessions": "1",
+      "totalUsers": "1",
+      "ecommercePurchases": "0",
+      "bounceRate": "0",
+      "averageSessionDuration": "22.526825",
+      "engagementRate": "1"
+    },
+    {
+      "landingPage": "/tag/aptis-online",
+      "sessions": "1",
+      "totalUsers": "1",
+      "ecommercePurchases": "0",
+      "bounceRate": "0",
+      "averageSessionDuration": "13.167827",
+      "engagementRate": "1"
+    },
+    {
+      "landingPage": "/tag/aptis-oposiciones",
+      "sessions": "1",
+      "totalUsers": "1",
+      "ecommercePurchases": "0",
+      "bounceRate": "0",
+      "averageSessionDuration": "22.848428",
+      "engagementRate": "1"
+    },
+    {
+      "landingPage": "/tag/aptis-tips",
+      "sessions": "1",
+      "totalUsers": "1",
+      "ecommercePurchases": "0",
+      "bounceRate": "0",
+      "averageSessionDuration": "15.277147",
+      "engagementRate": "1"
+    },
+    {
+      "landingPage": "/tag/cambio-nombre-aptis",
+      "sessions": "1",
+      "totalUsers": "1",
+      "ecommercePurchases": "0",
+      "bounceRate": "0",
+      "averageSessionDuration": "22.648244",
+      "engagementRate": "1"
+    },
+    {
+      "landingPage": "/tag/certificado-aptis",
+      "sessions": "1",
+      "totalUsers": "1",
+      "ecommercePurchases": "0",
+      "bounceRate": "0",
+      "averageSessionDuration": "19.38574",
+      "engagementRate": "1"
+    },
+    {
+      "landingPage": "/tag/certiificado-aptis",
+      "sessions": "1",
+      "totalUsers": "1",
+      "ecommercePurchases": "0",
+      "bounceRate": "0",
+      "averageSessionDuration": "22.806918",
+      "engagementRate": "1"
+    },
+    {
+      "landingPage": "/tag/como-es-el-aptis",
+      "sessions": "1",
+      "totalUsers": "1",
+      "ecommercePurchases": "0",
+      "bounceRate": "0",
+      "averageSessionDuration": "23.08929",
+      "engagementRate": "1"
+    },
+    {
+      "landingPage": "/tag/conseguir-c-en-aptis-genera",
+      "sessions": "1",
+      "totalUsers": "1",
+      "ecommercePurchases": "0",
+      "bounceRate": "0",
+      "averageSessionDuration": "20.265937",
+      "engagementRate": "1"
+    },
+    {
+      "landingPage": "/tag/consejos-aptis",
+      "sessions": "1",
+      "totalUsers": "1",
+      "ecommercePurchases": "0",
+      "bounceRate": "0",
+      "averageSessionDuration": "22.120299",
+      "engagementRate": "1"
+    },
+    {
+      "landingPage": "/tag/consejos-para-el-aptis",
+      "sessions": "1",
+      "totalUsers": "1",
+      "ecommercePurchases": "0",
+      "bounceRate": "0",
+      "averageSessionDuration": "19.334653",
+      "engagementRate": "1"
+    },
+    {
+      "landingPage": "/tag/cursos-aptis",
+      "sessions": "1",
+      "totalUsers": "1",
+      "ecommercePurchases": "0",
+      "bounceRate": "0",
+      "averageSessionDuration": "13.46212",
+      "engagementRate": "1"
+    },
+    {
+      "landingPage": "/tag/dudas-aptis-esol-general",
+      "sessions": "1",
+      "totalUsers": "1",
+      "ecommercePurchases": "0",
+      "bounceRate": "0",
+      "averageSessionDuration": "22.97326",
+      "engagementRate": "1"
+    },
+    {
+      "landingPage": "/tag/ejercicios-aptis",
+      "sessions": "1",
+      "totalUsers": "1",
+      "ecommercePurchases": "0",
+      "bounceRate": "0",
+      "averageSessionDuration": "21.947223",
+      "engagementRate": "1"
+    },
+    {
+      "landingPage": "/tag/ejercicios-listening-aptis",
+      "sessions": "1",
+      "totalUsers": "1",
+      "ecommercePurchases": "0",
+      "bounceRate": "0",
+      "averageSessionDuration": "19.869639",
+      "engagementRate": "1"
+    },
+    {
+      "landingPage": "/tag/entrevista-aptis",
+      "sessions": "1",
+      "totalUsers": "1",
+      "ecommercePurchases": "0",
+      "bounceRate": "0",
+      "averageSessionDuration": "15.223423",
+      "engagementRate": "1"
+    },
+    {
+      "landingPage": "/tag/examen-aptis-ingles-malaga",
+      "sessions": "1",
+      "totalUsers": "1",
+      "ecommercePurchases": "0",
+      "bounceRate": "0",
+      "averageSessionDuration": "20.687271",
+      "engagementRate": "1"
+    },
+    {
+      "landingPage": "/tag/gramatica-aptis",
+      "sessions": "1",
+      "totalUsers": "1",
+      "ecommercePurchases": "0",
+      "bounceRate": "0",
+      "averageSessionDuration": "23.128623",
+      "engagementRate": "1"
+    },
+    {
+      "landingPage": "/tag/ingles-aptis",
+      "sessions": "1",
+      "totalUsers": "1",
+      "ecommercePurchases": "0",
+      "bounceRate": "1",
+      "averageSessionDuration": "5.354727",
+      "engagementRate": "0"
+    },
+    {
+      "landingPage": "/tag/intensivo-aptis",
+      "sessions": "1",
+      "totalUsers": "1",
+      "ecommercePurchases": "0",
+      "bounceRate": "0",
+      "averageSessionDuration": "18.106232",
+      "engagementRate": "1"
+    },
+    {
+      "landingPage": "/tag/maxima-nota-aptis",
+      "sessions": "1",
+      "totalUsers": "1",
+      "ecommercePurchases": "0",
+      "bounceRate": "0",
+      "averageSessionDuration": "20.681942",
+      "engagementRate": "1"
+    },
+    {
+      "landingPage": "/tag/nivel-de-ingles-aptis",
+      "sessions": "1",
+      "totalUsers": "1",
+      "ecommercePurchases": "0",
+      "bounceRate": "0",
+      "averageSessionDuration": "17.337491",
+      "engagementRate": "1"
+    },
+    {
+      "landingPage": "/tag/partes-aptis",
+      "sessions": "1",
+      "totalUsers": "1",
+      "ecommercePurchases": "0",
+      "bounceRate": "0",
+      "averageSessionDuration": "21.171779",
+      "engagementRate": "1"
+    },
+    {
+      "landingPage": "/tag/por-que-aptis-esol",
+      "sessions": "1",
+      "totalUsers": "1",
+      "ecommercePurchases": "0",
+      "bounceRate": "0",
+      "averageSessionDuration": "22.427251",
+      "engagementRate": "1"
+    },
+    {
+      "landingPage": "/tag/practicar-advanced-aptis",
+      "sessions": "1",
+      "totalUsers": "1",
+      "ecommercePurchases": "0",
+      "bounceRate": "0",
+      "averageSessionDuration": "20.251647",
+      "engagementRate": "1"
+    },
+    {
+      "landingPage": "/tag/practicar-listening-aptis",
+      "sessions": "1",
+      "totalUsers": "1",
+      "ecommercePurchases": "0",
+      "bounceRate": "0",
+      "averageSessionDuration": "21.813276",
+      "engagementRate": "1"
+    },
+    {
+      "landingPage": "/tag/practicar-speaking-aptis",
+      "sessions": "1",
+      "totalUsers": "1",
+      "ecommercePurchases": "0",
+      "bounceRate": "0",
+      "averageSessionDuration": "20.0772",
+      "engagementRate": "1"
+    },
+    {
+      "landingPage": "/tag/preparar-aptis",
+      "sessions": "1",
+      "totalUsers": "1",
+      "ecommercePurchases": "0",
+      "bounceRate": "0",
+      "averageSessionDuration": "23.719076",
+      "engagementRate": "1"
+    },
+    {
+      "landingPage": "/tag/preparar-aptis-advanced",
+      "sessions": "1",
+      "totalUsers": "1",
+      "ecommercePurchases": "0",
+      "bounceRate": "0",
+      "averageSessionDuration": "21.855933",
+      "engagementRate": "1"
+    },
+    {
+      "landingPage": "/tag/preparar-aptis-esol",
+      "sessions": "1",
+      "totalUsers": "1",
+      "ecommercePurchases": "0",
+      "bounceRate": "0",
+      "averageSessionDuration": "21.986156",
+      "engagementRate": "1"
+    },
+    {
+      "landingPage": "/tag/preparar-aptis-madrid",
+      "sessions": "1",
+      "totalUsers": "1",
+      "ecommercePurchases": "0",
+      "bounceRate": "0",
+      "averageSessionDuration": "21.055014",
+      "engagementRate": "1"
+    },
+    {
+      "landingPage": "/tag/preparar-aptis-malaga",
+      "sessions": "1",
+      "totalUsers": "1",
+      "ecommercePurchases": "0",
+      "bounceRate": "0",
+      "averageSessionDuration": "22.633945",
+      "engagementRate": "1"
+    }
+  ],
+  "landings_all_sy-2025-26": [
+    {
+      "landingPage": "/test-aptis-online-conoce-tu-nivel",
+      "sessions": "3572",
+      "totalUsers": "3274",
+      "ecommercePurchases": "1",
+      "bounceRate": "0.17861142217245241",
+      "averageSessionDuration": "358.81377452911534",
+      "engagementRate": "0.82138857782754759"
+    },
+    {
+      "landingPage": "/practicar-gramatica-aptis-online",
+      "sessions": "2654",
+      "totalUsers": "2392",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.21213262999246421",
+      "averageSessionDuration": "208.28539833383573",
+      "engagementRate": "0.78786737000753582"
+    },
+    {
+      "landingPage": "/product/aptis-general-b1-b2-c1-28h",
+      "sessions": "2344",
+      "totalUsers": "1654",
+      "ecommercePurchases": "121",
+      "bounceRate": "0.36817406143344711",
+      "averageSessionDuration": "261.7463261651024",
+      "engagementRate": "0.63182593856655289"
+    },
+    {
+      "landingPage": "/clases-online-presencial/clases-ingles/intensivo/aptis",
+      "sessions": "1891",
+      "totalUsers": "1663",
+      "ecommercePurchases": "7",
+      "bounceRate": "0.43786356425171868",
+      "averageSessionDuration": "180.46845941988366",
+      "engagementRate": "0.56213643574828132"
+    },
+    {
+      "landingPage": "/ejercicio-listening-aptis",
+      "sessions": "1636",
+      "totalUsers": "1452",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.25366748166259168",
+      "averageSessionDuration": "107.43835644743277",
+      "engagementRate": "0.74633251833740832"
+    },
+    {
+      "landingPage": "/product/aptis-advanced-intensivo-28h",
+      "sessions": "1106",
+      "totalUsers": "799",
+      "ecommercePurchases": "34",
+      "bounceRate": "0.3562386980108499",
+      "averageSessionDuration": "261.05640784810129",
+      "engagementRate": "0.64376130198915"
+    },
+    {
+      "landingPage": "/practicar-reading-aptis",
+      "sessions": "872",
+      "totalUsers": "768",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.28440366972477066",
+      "averageSessionDuration": "138.98128475802753",
+      "engagementRate": "0.7155963302752294"
+    },
+    {
+      "landingPage": "/preparar-aptis-advanced",
+      "sessions": "541",
+      "totalUsers": "514",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.20887245841035121",
+      "averageSessionDuration": "206.41777602402956",
+      "engagementRate": "0.79112754158964882"
+    },
+    {
+      "landingPage": "/aptis-profesor-consejos-experiencias",
+      "sessions": "386",
+      "totalUsers": "370",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.34974093264248707",
+      "averageSessionDuration": "151.00734554404144",
+      "engagementRate": "0.65025906735751293"
+    },
+    {
+      "landingPage": "/product/aptis-a2-intensivo-28h",
+      "sessions": "289",
+      "totalUsers": "171",
+      "ecommercePurchases": "10",
+      "bounceRate": "0.56747404844290661",
+      "averageSessionDuration": "172.24747767128025",
+      "engagementRate": "0.43252595155709345"
+    },
+    {
+      "landingPage": "/sacar-c-aptis-general",
+      "sessions": "248",
+      "totalUsers": "224",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.34677419354838712",
+      "averageSessionDuration": "170.36888788709678",
+      "engagementRate": "0.65322580645161288"
+    },
+    {
+      "landingPage": "/diferencias-aptis-general-teachers",
+      "sessions": "145",
+      "totalUsers": "138",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.28965517241379313",
+      "averageSessionDuration": "209.44209028965517",
+      "engagementRate": "0.71034482758620687"
+    },
+    {
+      "landingPage": "/product/aptis-5-premium",
+      "sessions": "142",
+      "totalUsers": "138",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.21126760563380281",
+      "averageSessionDuration": "131.31428880985916",
+      "engagementRate": "0.78873239436619713"
+    },
+    {
+      "landingPage": "/sacarse-aptis-casa",
+      "sessions": "120",
+      "totalUsers": "119",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.30833333333333335",
+      "averageSessionDuration": "88.472167800000008",
+      "engagementRate": "0.69166666666666665"
+    },
+    {
+      "landingPage": "/preparar-listening-aptis",
+      "sessions": "107",
+      "totalUsers": "103",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.23364485981308411",
+      "averageSessionDuration": "144.6470673364486",
+      "engagementRate": "0.76635514018691586"
+    },
+    {
+      "landingPage": "/preguntas-frecuentes-aptis-esol-general",
+      "sessions": "84",
+      "totalUsers": "80",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.39285714285714285",
+      "averageSessionDuration": "84.298078321428576",
+      "engagementRate": "0.6071428571428571"
+    },
+    {
+      "landingPage": "/aptis-advanced-malaga",
+      "sessions": "37",
+      "totalUsers": "36",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.45945945945945948",
+      "averageSessionDuration": "96.562575243243231",
+      "engagementRate": "0.54054054054054057"
+    },
+    {
+      "landingPage": "/aptis-ahora-es-aptis-esol",
+      "sessions": "37",
+      "totalUsers": "36",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.48648648648648651",
+      "averageSessionDuration": "136.03414162162161",
+      "engagementRate": "0.51351351351351349"
+    },
+    {
+      "landingPage": "/aptis-general-vs-advanced",
+      "sessions": "37",
+      "totalUsers": "37",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.59459459459459463",
+      "averageSessionDuration": "49.086390162162161",
+      "engagementRate": "0.40540540540540543"
+    },
+    {
+      "landingPage": "/aptis-o-cambridge",
+      "sessions": "36",
+      "totalUsers": "33",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.5",
+      "averageSessionDuration": "83.006579944444454",
+      "engagementRate": "0.5"
+    },
+    {
+      "landingPage": "/practicar-speaking-aptis",
+      "sessions": "34",
+      "totalUsers": "33",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.70588235294117652",
+      "averageSessionDuration": "48.647828911764712",
+      "engagementRate": "0.29411764705882354"
+    },
+    {
+      "landingPage": "/partes-del-examen-de-aptis",
+      "sessions": "30",
+      "totalUsers": "30",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.53333333333333333",
+      "averageSessionDuration": "241.06276483333332",
+      "engagementRate": "0.46666666666666667"
+    },
+    {
+      "landingPage": "/landing/listening-aptis-ebook",
+      "sessions": "18",
+      "totalUsers": "18",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.66666666666666663",
+      "averageSessionDuration": "45.414295388888888",
+      "engagementRate": "0.33333333333333331"
+    },
+    {
+      "landingPage": "/tag/aptis-test",
+      "sessions": "16",
+      "totalUsers": "11",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.8125",
+      "averageSessionDuration": "116.0813400625",
+      "engagementRate": "0.1875"
+    },
+    {
+      "landingPage": "/preguntas-clave-aptis-y-cambridge",
+      "sessions": "14",
+      "totalUsers": "14",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.6428571428571429",
+      "averageSessionDuration": "110.73475692857143",
+      "engagementRate": "0.35714285714285715"
+    },
+    {
+      "landingPage": "/landing/guia-aptis-para-oposiciones",
+      "sessions": "13",
+      "totalUsers": "13",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.53846153846153844",
+      "averageSessionDuration": "31.682154923076919",
+      "engagementRate": "0.46153846153846156"
+    },
+    {
+      "landingPage": "/que-es-aptis",
+      "sessions": "13",
+      "totalUsers": "13",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.76923076923076927",
+      "averageSessionDuration": "18.650088307692307",
+      "engagementRate": "0.23076923076923078"
+    },
+    {
+      "landingPage": "/aptis-oposiciones",
+      "sessions": "12",
+      "totalUsers": "12",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.83333333333333337",
+      "averageSessionDuration": "12.497786583333331",
+      "engagementRate": "0.16666666666666666"
+    },
+    {
+      "landingPage": "/landing/speaking-aptis-ebook",
+      "sessions": "12",
+      "totalUsers": "12",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.58333333333333337",
+      "averageSessionDuration": "38.802611333333338",
+      "engagementRate": "0.41666666666666669"
+    },
+    {
+      "landingPage": "/intensivos-aptis-gral-y-advanced-express",
+      "sessions": "11",
+      "totalUsers": "11",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.72727272727272729",
+      "averageSessionDuration": "27.998255818181818",
+      "engagementRate": "0.27272727272727271"
+    },
+    {
+      "landingPage": "/landing/descubre-los-cambios-en-el-examen-de-aptis-en-2021",
+      "sessions": "10",
+      "totalUsers": "10",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.8",
+      "averageSessionDuration": "3.3360193000000002",
+      "engagementRate": "0.2"
+    },
+    {
+      "landingPage": "/prueba-nivel-aptis",
+      "sessions": "10",
+      "totalUsers": "10",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.9",
+      "averageSessionDuration": "83.7107558",
+      "engagementRate": "0.1"
+    },
+    {
+      "landingPage": "/tag/ejercicios-aptis-online",
+      "sessions": "10",
+      "totalUsers": "10",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.6",
+      "averageSessionDuration": "71.6083284",
+      "engagementRate": "0.4"
+    },
+    {
+      "landingPage": "/tag/ejercicios-listening-aptis",
+      "sessions": "10",
+      "totalUsers": "10",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.7",
+      "averageSessionDuration": "46.344664900000005",
+      "engagementRate": "0.3"
+    },
+    {
+      "landingPage": "/tag/practicar-advanced-aptis",
+      "sessions": "10",
+      "totalUsers": "10",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.9",
+      "averageSessionDuration": "2.5415951999999997",
+      "engagementRate": "0.1"
+    },
+    {
+      "landingPage": "/entrevista-a-un-alumno-de-aptis",
+      "sessions": "8",
+      "totalUsers": "8",
+      "ecommercePurchases": "0",
+      "bounceRate": "1",
+      "averageSessionDuration": "0",
+      "engagementRate": "0"
+    },
+    {
+      "landingPage": "/tag/ejercicios-online-aptis",
+      "sessions": "8",
+      "totalUsers": "8",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.875",
+      "averageSessionDuration": "68.770539875",
+      "engagementRate": "0.125"
+    },
+    {
+      "landingPage": "/tag/aptis-malaga",
+      "sessions": "7",
+      "totalUsers": "7",
+      "ecommercePurchases": "0",
+      "bounceRate": "1",
+      "averageSessionDuration": "0",
+      "engagementRate": "0"
+    },
+    {
+      "landingPage": "/tag/gramatica-aptis",
+      "sessions": "7",
+      "totalUsers": "7",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.8571428571428571",
+      "averageSessionDuration": "11.111022142857141",
+      "engagementRate": "0.14285714285714285"
+    },
+    {
+      "landingPage": "/tag/por-que-aptis-esol",
+      "sessions": "7",
+      "totalUsers": "7",
+      "ecommercePurchases": "0",
+      "bounceRate": "1",
+      "averageSessionDuration": "0",
+      "engagementRate": "0"
+    },
+    {
+      "landingPage": "/tag/preparar-aptis-advanced",
+      "sessions": "7",
+      "totalUsers": "7",
+      "ecommercePurchases": "0",
+      "bounceRate": "1",
+      "averageSessionDuration": "1.2653991428571429",
+      "engagementRate": "0"
+    },
+    {
+      "landingPage": "/tag/aptis",
+      "sessions": "6",
+      "totalUsers": "6",
+      "ecommercePurchases": "0",
+      "bounceRate": "1",
+      "averageSessionDuration": "0",
+      "engagementRate": "0"
+    },
+    {
+      "landingPage": "/tag/aptis-advanced-andalucia",
+      "sessions": "6",
+      "totalUsers": "6",
+      "ecommercePurchases": "0",
+      "bounceRate": "1",
+      "averageSessionDuration": "1.4736364999999998",
+      "engagementRate": "0"
+    },
+    {
+      "landingPage": "/tag/aptis-advanced-malaga",
+      "sessions": "6",
+      "totalUsers": "6",
+      "ecommercePurchases": "0",
+      "bounceRate": "1",
+      "averageSessionDuration": "0",
+      "engagementRate": "0"
+    },
+    {
+      "landingPage": "/tag/aptis-general-o-advanced",
+      "sessions": "6",
+      "totalUsers": "6",
+      "ecommercePurchases": "0",
+      "bounceRate": "1",
+      "averageSessionDuration": "0",
+      "engagementRate": "0"
+    },
+    {
+      "landingPage": "/tag/certificado-aptis",
+      "sessions": "6",
+      "totalUsers": "6",
+      "ecommercePurchases": "0",
+      "bounceRate": "1",
+      "averageSessionDuration": "0",
+      "engagementRate": "0"
+    },
+    {
+      "landingPage": "/tag/cursos-aptis",
+      "sessions": "6",
+      "totalUsers": "6",
+      "ecommercePurchases": "0",
+      "bounceRate": "1",
+      "averageSessionDuration": "0",
+      "engagementRate": "0"
+    },
+    {
+      "landingPage": "/tag/ejercicios-aptis",
+      "sessions": "6",
+      "totalUsers": "6",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.83333333333333337",
+      "averageSessionDuration": "5.7781461666666667",
+      "engagementRate": "0.16666666666666666"
+    },
+    {
+      "landingPage": "/tag/ejercicios-reading-aptis",
+      "sessions": "6",
+      "totalUsers": "6",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.5",
+      "averageSessionDuration": "100.23954400000001",
+      "engagementRate": "0.5"
+    },
+    {
+      "landingPage": "/tag/examen-aptis-ingles-malaga",
+      "sessions": "6",
+      "totalUsers": "6",
+      "ecommercePurchases": "0",
+      "bounceRate": "1",
+      "averageSessionDuration": "0",
+      "engagementRate": "0"
+    },
+    {
+      "landingPage": "/tag/intensivo-aptis",
+      "sessions": "6",
+      "totalUsers": "6",
+      "ecommercePurchases": "0",
+      "bounceRate": "1",
+      "averageSessionDuration": "1.3795878333333331",
+      "engagementRate": "0"
+    },
+    {
+      "landingPage": "/tag/nivel-de-ingles-aptis",
+      "sessions": "6",
+      "totalUsers": "6",
+      "ecommercePurchases": "0",
+      "bounceRate": "1",
+      "averageSessionDuration": "0",
+      "engagementRate": "0"
+    },
+    {
+      "landingPage": "/tag/practicar-gramatica-aptis",
+      "sessions": "6",
+      "totalUsers": "6",
+      "ecommercePurchases": "0",
+      "bounceRate": "1",
+      "averageSessionDuration": "0",
+      "engagementRate": "0"
+    },
+    {
+      "landingPage": "/tag/preparar-aptis-malaga",
+      "sessions": "6",
+      "totalUsers": "6",
+      "ecommercePurchases": "0",
+      "bounceRate": "1",
+      "averageSessionDuration": "0",
+      "engagementRate": "0"
+    },
+    {
+      "landingPage": "/tag/trucos-aptis-advanced",
+      "sessions": "6",
+      "totalUsers": "6",
+      "ecommercePurchases": "0",
+      "bounceRate": "1",
+      "averageSessionDuration": "0",
+      "engagementRate": "0"
+    },
+    {
+      "landingPage": "/landing/ebook-como-preparar-aptis-advanced",
+      "sessions": "5",
+      "totalUsers": "5",
+      "ecommercePurchases": "0",
+      "bounceRate": "1",
+      "averageSessionDuration": "0",
+      "engagementRate": "0"
+    },
+    {
+      "landingPage": "/landing/reading-writing-aptis-ebook",
+      "sessions": "5",
+      "totalUsers": "5",
+      "ecommercePurchases": "0",
+      "bounceRate": "1",
+      "averageSessionDuration": "0",
+      "engagementRate": "0"
+    },
+    {
+      "landingPage": "/quiz/aptis-grammar",
+      "sessions": "5",
+      "totalUsers": "5",
+      "ecommercePurchases": "0",
+      "bounceRate": "1",
+      "averageSessionDuration": "0",
+      "engagementRate": "0"
+    },
+    {
+      "landingPage": "/tag/apartados-aptis",
+      "sessions": "5",
+      "totalUsers": "5",
+      "ecommercePurchases": "0",
+      "bounceRate": "1",
+      "averageSessionDuration": "0",
+      "engagementRate": "0"
+    },
+    {
+      "landingPage": "/tag/aptis-b1",
+      "sessions": "5",
+      "totalUsers": "5",
+      "ecommercePurchases": "0",
+      "bounceRate": "1",
+      "averageSessionDuration": "0",
+      "engagementRate": "0"
+    },
+    {
+      "landingPage": "/tag/aptis-esol",
+      "sessions": "5",
+      "totalUsers": "5",
+      "ecommercePurchases": "0",
+      "bounceRate": "1",
+      "averageSessionDuration": "0",
+      "engagementRate": "0"
+    },
+    {
+      "landingPage": "/tag/aptis-general",
+      "sessions": "5",
+      "totalUsers": "5",
+      "ecommercePurchases": "0",
+      "bounceRate": "1",
+      "averageSessionDuration": "0",
+      "engagementRate": "0"
+    },
+    {
+      "landingPage": "/tag/aptis-general-o-for-teachers",
+      "sessions": "5",
+      "totalUsers": "5",
+      "ecommercePurchases": "0",
+      "bounceRate": "1",
+      "averageSessionDuration": "0",
+      "engagementRate": "0"
+    },
+    {
+      "landingPage": "/tag/como-es-el-aptis",
+      "sessions": "5",
+      "totalUsers": "5",
+      "ecommercePurchases": "0",
+      "bounceRate": "1",
+      "averageSessionDuration": "0",
+      "engagementRate": "0"
+    },
+    {
+      "landingPage": "/tag/consejos-para-el-aptis",
+      "sessions": "5",
+      "totalUsers": "5",
+      "ecommercePurchases": "0",
+      "bounceRate": "1",
+      "averageSessionDuration": "0",
+      "engagementRate": "0"
+    },
+    {
+      "landingPage": "/tag/dudas-aptis-esol-general",
+      "sessions": "5",
+      "totalUsers": "5",
+      "ecommercePurchases": "0",
+      "bounceRate": "1",
+      "averageSessionDuration": "0",
+      "engagementRate": "0"
+    },
+    {
+      "landingPage": "/tag/preparar-aptis-online",
+      "sessions": "5",
+      "totalUsers": "5",
+      "ecommercePurchases": "0",
+      "bounceRate": "1",
+      "averageSessionDuration": "0",
+      "engagementRate": "0"
+    },
+    {
+      "landingPage": "/guias/guia-rapida-aprobar-aptis-cambridge",
+      "sessions": "4",
+      "totalUsers": "3",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.5",
+      "averageSessionDuration": "472.50579825",
+      "engagementRate": "0.5"
+    },
+    {
+      "landingPage": "/tag/alumno-aptis",
+      "sessions": "4",
+      "totalUsers": "4",
+      "ecommercePurchases": "0",
+      "bounceRate": "1",
+      "averageSessionDuration": "0",
+      "engagementRate": "0"
+    },
+    {
+      "landingPage": "/tag/aptis-bolsa",
+      "sessions": "4",
+      "totalUsers": "4",
+      "ecommercePurchases": "0",
+      "bounceRate": "1",
+      "averageSessionDuration": "0",
+      "engagementRate": "0"
+    },
+    {
+      "landingPage": "/tag/aptis-examen-ingles",
+      "sessions": "4",
+      "totalUsers": "4",
+      "ecommercePurchases": "0",
+      "bounceRate": "1",
+      "averageSessionDuration": "0",
+      "engagementRate": "0"
+    },
+    {
+      "landingPage": "/tag/aptis-tips",
+      "sessions": "4",
+      "totalUsers": "4",
+      "ecommercePurchases": "0",
+      "bounceRate": "1",
+      "averageSessionDuration": "0",
+      "engagementRate": "0"
+    },
+    {
+      "landingPage": "/tag/certiificado-aptis",
+      "sessions": "4",
+      "totalUsers": "4",
+      "ecommercePurchases": "0",
+      "bounceRate": "1",
+      "averageSessionDuration": "0",
+      "engagementRate": "0"
+    },
+    {
+      "landingPage": "/tag/conseguir-c-en-aptis-genera",
+      "sessions": "4",
+      "totalUsers": "4",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.75",
+      "averageSessionDuration": "2.72706475",
+      "engagementRate": "0.25"
+    },
+    {
+      "landingPage": "/tag/ingles-aptis",
+      "sessions": "4",
+      "totalUsers": "4",
+      "ecommercePurchases": "0",
+      "bounceRate": "1",
+      "averageSessionDuration": "0",
+      "engagementRate": "0"
+    },
+    {
+      "landingPage": "/tag/maxima-nota-aptis",
+      "sessions": "4",
+      "totalUsers": "4",
+      "ecommercePurchases": "0",
+      "bounceRate": "1",
+      "averageSessionDuration": "0",
+      "engagementRate": "0"
+    },
+    {
+      "landingPage": "/tag/partes-aptis",
+      "sessions": "4",
+      "totalUsers": "4",
+      "ecommercePurchases": "0",
+      "bounceRate": "1",
+      "averageSessionDuration": "1.6020185",
+      "engagementRate": "0"
+    },
+    {
+      "landingPage": "/tag/practicar-listening-aptis",
+      "sessions": "4",
+      "totalUsers": "4",
+      "ecommercePurchases": "0",
+      "bounceRate": "1",
+      "averageSessionDuration": "0",
+      "engagementRate": "0"
+    },
+    {
+      "landingPage": "/tag/practicar-speaking-aptis",
+      "sessions": "4",
+      "totalUsers": "4",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.75",
+      "averageSessionDuration": "3.39665475",
+      "engagementRate": "0.25"
+    },
+    {
+      "landingPage": "/tag/preparar-listening-aptis",
+      "sessions": "4",
+      "totalUsers": "4",
+      "ecommercePurchases": "0",
+      "bounceRate": "1",
+      "averageSessionDuration": "0",
+      "engagementRate": "0"
+    },
+    {
+      "landingPage": "/tag/profesor-aptis",
+      "sessions": "4",
+      "totalUsers": "4",
+      "ecommercePurchases": "0",
+      "bounceRate": "1",
+      "averageSessionDuration": "0",
+      "engagementRate": "0"
+    },
+    {
+      "landingPage": "/tag/que-es-aptis-for-teachers",
+      "sessions": "4",
+      "totalUsers": "4",
+      "ecommercePurchases": "0",
+      "bounceRate": "1",
+      "averageSessionDuration": "0",
+      "engagementRate": "0"
+    },
+    {
+      "landingPage": "/tag/sacar-c-aptis",
+      "sessions": "4",
+      "totalUsers": "4",
+      "ecommercePurchases": "0",
+      "bounceRate": "1",
+      "averageSessionDuration": "0",
+      "engagementRate": "0"
+    },
+    {
+      "landingPage": "/tag/ventajas-aptis",
+      "sessions": "4",
+      "totalUsers": "4",
+      "ecommercePurchases": "0",
+      "bounceRate": "1",
+      "averageSessionDuration": "0",
+      "engagementRate": "0"
+    },
+    {
+      "landingPage": "/aptis5premium",
+      "sessions": "3",
+      "totalUsers": "3",
+      "ecommercePurchases": "0",
+      "bounceRate": "1",
+      "averageSessionDuration": "0.75461233333333333",
+      "engagementRate": "0"
+    },
+    {
+      "landingPage": "/product-category/intensivos/aptis",
+      "sessions": "3",
+      "totalUsers": "3",
+      "ecommercePurchases": "0",
+      "bounceRate": "1",
+      "averageSessionDuration": "3.3455986666666671",
+      "engagementRate": "0"
+    },
+    {
+      "landingPage": "/product/aptis-intensivo-online-28h",
+      "sessions": "3",
+      "totalUsers": "3",
+      "ecommercePurchases": "0",
+      "bounceRate": "1",
+      "averageSessionDuration": "0",
+      "engagementRate": "0"
+    },
+    {
+      "landingPage": "/tag/aptis-advanced",
+      "sessions": "3",
+      "totalUsers": "3",
+      "ecommercePurchases": "0",
+      "bounceRate": "1",
+      "averageSessionDuration": "0",
+      "engagementRate": "0"
+    },
+    {
+      "landingPage": "/tag/aptis-esol-general",
+      "sessions": "3",
+      "totalUsers": "3",
+      "ecommercePurchases": "0",
+      "bounceRate": "1",
+      "averageSessionDuration": "0",
+      "engagementRate": "0"
+    },
+    {
+      "landingPage": "/tag/entrevista-aptis",
+      "sessions": "3",
+      "totalUsers": "3",
+      "ecommercePurchases": "0",
+      "bounceRate": "1",
+      "averageSessionDuration": "0",
+      "engagementRate": "0"
+    },
+    {
+      "landingPage": "/tag/preparar-aptis-esol",
+      "sessions": "3",
+      "totalUsers": "3",
+      "ecommercePurchases": "0",
+      "bounceRate": "1",
+      "averageSessionDuration": "0",
+      "engagementRate": "0"
+    },
+    {
+      "landingPage": "/tag/preparar-aptis-madrid",
+      "sessions": "3",
+      "totalUsers": "3",
+      "ecommercePurchases": "0",
+      "bounceRate": "1",
+      "averageSessionDuration": "0",
+      "engagementRate": "0"
+    },
+    {
+      "landingPage": "/tag/prueba-de-nivel-para-aptis",
+      "sessions": "3",
+      "totalUsers": "3",
+      "ecommercePurchases": "0",
+      "bounceRate": "1",
+      "averageSessionDuration": "0",
+      "engagementRate": "0"
+    },
+    {
+      "landingPage": "/tag/que-es-el-aptis",
+      "sessions": "3",
+      "totalUsers": "3",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.66666666666666663",
+      "averageSessionDuration": "3.453894333333333",
+      "engagementRate": "0.33333333333333331"
+    },
+    {
+      "landingPage": "/tag/sacarse-el-aptis-desde-casa",
+      "sessions": "3",
+      "totalUsers": "3",
+      "ecommercePurchases": "0",
+      "bounceRate": "1",
+      "averageSessionDuration": "0",
+      "engagementRate": "0"
+    },
+    {
+      "landingPage": "/tag/secciones-aptis",
+      "sessions": "3",
+      "totalUsers": "3",
+      "ecommercePurchases": "0",
+      "bounceRate": "1",
+      "averageSessionDuration": "0",
+      "engagementRate": "0"
+    },
+    {
+      "landingPage": "/tag/test-de-aptis",
+      "sessions": "3",
+      "totalUsers": "3",
+      "ecommercePurchases": "0",
+      "bounceRate": "1",
+      "averageSessionDuration": "0",
+      "engagementRate": "0"
+    },
+    {
+      "landingPage": "/tag/trucos-aptis",
+      "sessions": "3",
+      "totalUsers": "3",
+      "ecommercePurchases": "0",
+      "bounceRate": "1",
+      "averageSessionDuration": "0",
+      "engagementRate": "0"
+    },
+    {
+      "landingPage": "/que-es-aptis/",
+      "sessions": "2",
+      "totalUsers": "2",
+      "ecommercePurchases": "0",
+      "bounceRate": "1",
+      "averageSessionDuration": "0",
+      "engagementRate": "0"
+    },
+    {
+      "landingPage": "/tag/aptis-malaga/tel:34627298654",
+      "sessions": "2",
+      "totalUsers": "2",
+      "ecommercePurchases": "0",
+      "bounceRate": "1",
+      "averageSessionDuration": "0",
+      "engagementRate": "0"
+    }
+  ],
+  "landings_organic_sy-2024-25": [
+    {
+      "landingPage": "/practicar-gramatica-aptis-online",
+      "sessions": "2451",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.193390452876377",
+      "engagementRate": "0.806609547123623",
+      "averageSessionDuration": "228.68401467482661"
+    },
+    {
+      "landingPage": "/test-aptis-online-conoce-tu-nivel",
+      "sessions": "2073",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.11577424023154848",
+      "engagementRate": "0.88422575976845152",
+      "averageSessionDuration": "424.33948271152917"
+    },
+    {
+      "landingPage": "/product/aptis-general-b1-b2-c1-28h",
+      "sessions": "1184",
+      "ecommercePurchases": "37",
+      "bounceRate": "0.32010135135135137",
+      "engagementRate": "0.67989864864864868",
+      "averageSessionDuration": "234.86469833361485"
+    },
+    {
+      "landingPage": "/clases-online-presencial/clases-ingles/intensivo/aptis",
+      "sessions": "921",
+      "ecommercePurchases": "9",
+      "bounceRate": "0.1986970684039088",
+      "engagementRate": "0.80130293159609123",
+      "averageSessionDuration": "249.30896379587406"
+    },
+    {
+      "landingPage": "/sacar-c-aptis-general",
+      "sessions": "769",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.2574772431729519",
+      "engagementRate": "0.74252275682704816",
+      "averageSessionDuration": "175.7362464473342"
+    },
+    {
+      "landingPage": "/aptis-profesor-consejos-experiencias",
+      "sessions": "546",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.23626373626373626",
+      "engagementRate": "0.76373626373626369",
+      "averageSessionDuration": "160.63753628937729"
+    },
+    {
+      "landingPage": "/practicar-reading-aptis",
+      "sessions": "464",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.20474137931034483",
+      "engagementRate": "0.79525862068965514",
+      "averageSessionDuration": "161.5141047413793"
+    },
+    {
+      "landingPage": "/ejercicio-listening-aptis",
+      "sessions": "429",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.25641025641025639",
+      "engagementRate": "0.74358974358974361",
+      "averageSessionDuration": "98.742347086247079"
+    },
+    {
+      "landingPage": "/product/aptis-advanced-intensivo-28h",
+      "sessions": "370",
+      "ecommercePurchases": "9",
+      "bounceRate": "0.30810810810810813",
+      "engagementRate": "0.69189189189189193",
+      "averageSessionDuration": "315.90671821081082"
+    },
+    {
+      "landingPage": "/preparar-aptis-advanced",
+      "sessions": "361",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.13850415512465375",
+      "engagementRate": "0.86149584487534625",
+      "averageSessionDuration": "191.16661970083103"
+    },
+    {
+      "landingPage": "/product/aptis-a2-intensivo-28h",
+      "sessions": "315",
+      "ecommercePurchases": "12",
+      "bounceRate": "0.34920634920634919",
+      "engagementRate": "0.65079365079365081",
+      "averageSessionDuration": "283.41579500000006"
+    },
+    {
+      "landingPage": "/sacarse-aptis-casa",
+      "sessions": "270",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.2",
+      "engagementRate": "0.8",
+      "averageSessionDuration": "116.8962145888889"
+    },
+    {
+      "landingPage": "/aptis-ahora-es-aptis-esol",
+      "sessions": "259",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.277992277992278",
+      "engagementRate": "0.722007722007722",
+      "averageSessionDuration": "135.2045604015444"
+    },
+    {
+      "landingPage": "/product/aptis-intensivo-online-28h",
+      "sessions": "183",
+      "ecommercePurchases": "4",
+      "bounceRate": "0.30054644808743169",
+      "engagementRate": "0.69945355191256831",
+      "averageSessionDuration": "349.3149871748634"
+    },
+    {
+      "landingPage": "/diferencias-aptis-general-teachers",
+      "sessions": "126",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.1984126984126984",
+      "engagementRate": "0.80158730158730163",
+      "averageSessionDuration": "141.17182316666666"
+    },
+    {
+      "landingPage": "/preguntas-frecuentes-aptis-esol-general",
+      "sessions": "124",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.2661290322580645",
+      "engagementRate": "0.7338709677419355",
+      "averageSessionDuration": "100.86029907258064"
+    },
+    {
+      "landingPage": "/preparar-listening-aptis",
+      "sessions": "124",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.20967741935483872",
+      "engagementRate": "0.79032258064516125",
+      "averageSessionDuration": "151.77124367741936"
+    },
+    {
+      "landingPage": "/product/aptis-advanced-intensivo-online-28h",
+      "sessions": "112",
+      "ecommercePurchases": "3",
+      "bounceRate": "0.4107142857142857",
+      "engagementRate": "0.5892857142857143",
+      "averageSessionDuration": "175.64268051785714"
+    },
+    {
+      "landingPage": "/aptis-advanced-malaga",
+      "sessions": "47",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.1276595744680851",
+      "engagementRate": "0.87234042553191493",
+      "averageSessionDuration": "119.27954676595745"
+    },
+    {
+      "landingPage": "/aptis-general-vs-advanced",
+      "sessions": "25",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.16",
+      "engagementRate": "0.84",
+      "averageSessionDuration": "170.79096335999998"
+    },
+    {
+      "landingPage": "/aptis-o-cambridge",
+      "sessions": "21",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.23809523809523808",
+      "engagementRate": "0.76190476190476186",
+      "averageSessionDuration": "118.29418490476189"
+    },
+    {
+      "landingPage": "/product/aptis-general-fin-de-semana",
+      "sessions": "20",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.3",
+      "engagementRate": "0.7",
+      "averageSessionDuration": "623.700559"
+    },
+    {
+      "landingPage": "/product/aptis-intensivo-28h",
+      "sessions": "20",
+      "ecommercePurchases": "1",
+      "bounceRate": "0.35",
+      "engagementRate": "0.65",
+      "averageSessionDuration": "368.0042724"
+    },
+    {
+      "landingPage": "/intensivos-aptis-gral-y-advanced-express",
+      "sessions": "11",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.18181818181818182",
+      "engagementRate": "0.81818181818181823",
+      "averageSessionDuration": "145.88224736363634"
+    },
+    {
+      "landingPage": "/product/aptis-a2-b1-intensivo-online-28h",
+      "sessions": "10",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.5",
+      "engagementRate": "0.5",
+      "averageSessionDuration": "1085.9632122"
+    },
+    {
+      "landingPage": "/landing/guia-aptis-para-oposiciones",
+      "sessions": "9",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.55555555555555558",
+      "engagementRate": "0.44444444444444442",
+      "averageSessionDuration": "33.888395111111116"
+    },
+    {
+      "landingPage": "/practicar-speaking-aptis",
+      "sessions": "9",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.44444444444444442",
+      "engagementRate": "0.55555555555555558",
+      "averageSessionDuration": "212.96416955555554"
+    },
+    {
+      "landingPage": "/landing/speaking-aptis-ebook",
+      "sessions": "4",
+      "ecommercePurchases": "0",
+      "bounceRate": "0",
+      "engagementRate": "1",
+      "averageSessionDuration": "474.90679875"
+    },
+    {
+      "landingPage": "/partes-del-examen-de-aptis",
+      "sessions": "4",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.5",
+      "engagementRate": "0.5",
+      "averageSessionDuration": "151.8303115"
+    },
+    {
+      "landingPage": "/landing/listening-aptis-ebook",
+      "sessions": "3",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.33333333333333331",
+      "engagementRate": "0.66666666666666663",
+      "averageSessionDuration": "35.674515"
+    },
+    {
+      "landingPage": "/que-es-aptis",
+      "sessions": "3",
+      "ecommercePurchases": "0",
+      "bounceRate": "0",
+      "engagementRate": "1",
+      "averageSessionDuration": "550.94347766666669"
+    },
+    {
+      "landingPage": "/tag/ejercicios-aptis-online",
+      "sessions": "3",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.66666666666666663",
+      "engagementRate": "0.33333333333333331",
+      "averageSessionDuration": "16.21961"
+    },
+    {
+      "landingPage": "/tag/trucos-aptis",
+      "sessions": "3",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.66666666666666663",
+      "engagementRate": "0.33333333333333331",
+      "averageSessionDuration": "9.5811070000000012"
+    },
+    {
+      "landingPage": "/landing/descubre-los-cambios-en-el-examen-de-aptis-en-2021",
+      "sessions": "2",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.5",
+      "engagementRate": "0.5",
+      "averageSessionDuration": "9.4018665"
+    },
+    {
+      "landingPage": "/product/aptis-general-28h",
+      "sessions": "2",
+      "ecommercePurchases": "0",
+      "bounceRate": "0",
+      "engagementRate": "1",
+      "averageSessionDuration": "3641.8001425"
+    },
+    {
+      "landingPage": "/aptis-oposiciones",
+      "sessions": "1",
+      "ecommercePurchases": "0",
+      "bounceRate": "1",
+      "engagementRate": "0",
+      "averageSessionDuration": "0"
+    },
+    {
+      "landingPage": "/aptis5premium",
+      "sessions": "1",
+      "ecommercePurchases": "0",
+      "bounceRate": "0",
+      "engagementRate": "1",
+      "averageSessionDuration": "1802.67411"
+    },
+    {
+      "landingPage": "/landing/ebook-como-preparar-aptis-advanced",
+      "sessions": "1",
+      "ecommercePurchases": "0",
+      "bounceRate": "1",
+      "engagementRate": "0",
+      "averageSessionDuration": "0"
+    },
+    {
+      "landingPage": "/preguntas-clave-aptis-y-cambridge",
+      "sessions": "1",
+      "ecommercePurchases": "0",
+      "bounceRate": "0",
+      "engagementRate": "1",
+      "averageSessionDuration": "308.16117"
+    },
+    {
+      "landingPage": "/tag/aptis-test",
+      "sessions": "1",
+      "ecommercePurchases": "0",
+      "bounceRate": "0",
+      "engagementRate": "1",
+      "averageSessionDuration": "97.209185"
+    },
+    {
+      "landingPage": "/tag/ejercicios-online-aptis",
+      "sessions": "1",
+      "ecommercePurchases": "0",
+      "bounceRate": "0",
+      "engagementRate": "1",
+      "averageSessionDuration": "46.499466"
+    },
+    {
+      "landingPage": "/tag/ejercicios-reading-aptis",
+      "sessions": "1",
+      "ecommercePurchases": "0",
+      "bounceRate": "0",
+      "engagementRate": "1",
+      "averageSessionDuration": "32.581707"
+    },
+    {
+      "landingPage": "/tag/practicar-gramatica-aptis",
+      "sessions": "1",
+      "ecommercePurchases": "0",
+      "bounceRate": "0",
+      "engagementRate": "1",
+      "averageSessionDuration": "63.574246"
+    },
+    {
+      "landingPage": "/tag/test-de-aptis",
+      "sessions": "1",
+      "ecommercePurchases": "0",
+      "bounceRate": "1",
+      "engagementRate": "0",
+      "averageSessionDuration": "0"
+    }
+  ],
+  "landings_organic_sy-2025-26": [
+    {
+      "landingPage": "/test-aptis-online-conoce-tu-nivel",
+      "sessions": "3443",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.18181818181818182",
+      "engagementRate": "0.81818181818181823",
+      "averageSessionDuration": "358.76177711966312"
+    },
+    {
+      "landingPage": "/practicar-gramatica-aptis-online",
+      "sessions": "2508",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.19936204146730463",
+      "engagementRate": "0.80063795853269537",
+      "averageSessionDuration": "210.67554117304624"
+    },
+    {
+      "landingPage": "/ejercicio-listening-aptis",
+      "sessions": "1477",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.22004062288422477",
+      "engagementRate": "0.77995937711577523",
+      "averageSessionDuration": "104.70274540148952"
+    },
+    {
+      "landingPage": "/product/aptis-general-b1-b2-c1-28h",
+      "sessions": "1132",
+      "ecommercePurchases": "33",
+      "bounceRate": "0.33127208480565373",
+      "engagementRate": "0.66872791519434627",
+      "averageSessionDuration": "232.78486888339225"
+    },
+    {
+      "landingPage": "/practicar-reading-aptis",
+      "sessions": "779",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.2644415917843389",
+      "engagementRate": "0.7355584082156611",
+      "averageSessionDuration": "131.78988898331193"
+    },
+    {
+      "landingPage": "/product/aptis-advanced-intensivo-28h",
+      "sessions": "702",
+      "ecommercePurchases": "13",
+      "bounceRate": "0.32051282051282054",
+      "engagementRate": "0.67948717948717952",
+      "averageSessionDuration": "247.94848066239319"
+    },
+    {
+      "landingPage": "/preparar-aptis-advanced",
+      "sessions": "524",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.20419847328244276",
+      "engagementRate": "0.79580152671755722",
+      "averageSessionDuration": "201.34768064503817"
+    },
+    {
+      "landingPage": "/clases-online-presencial/clases-ingles/intensivo/aptis",
+      "sessions": "448",
+      "ecommercePurchases": "4",
+      "bounceRate": "0.17857142857142858",
+      "engagementRate": "0.8214285714285714",
+      "averageSessionDuration": "342.27410620535721"
+    },
+    {
+      "landingPage": "/aptis-profesor-consejos-experiencias",
+      "sessions": "360",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.32222222222222224",
+      "engagementRate": "0.67777777777777781",
+      "averageSessionDuration": "157.4852866722222"
+    },
+    {
+      "landingPage": "/sacar-c-aptis-general",
+      "sessions": "237",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.32489451476793246",
+      "engagementRate": "0.67510548523206748",
+      "averageSessionDuration": "177.08247899156117"
+    },
+    {
+      "landingPage": "/diferencias-aptis-general-teachers",
+      "sessions": "134",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.26865671641791045",
+      "engagementRate": "0.73134328358208955",
+      "averageSessionDuration": "202.67547470149256"
+    },
+    {
+      "landingPage": "/product/aptis-a2-intensivo-28h",
+      "sessions": "128",
+      "ecommercePurchases": "4",
+      "bounceRate": "0.4609375",
+      "engagementRate": "0.5390625",
+      "averageSessionDuration": "191.057857390625"
+    },
+    {
+      "landingPage": "/sacarse-aptis-casa",
+      "sessions": "108",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.25",
+      "engagementRate": "0.75",
+      "averageSessionDuration": "97.742608666666655"
+    },
+    {
+      "landingPage": "/preparar-listening-aptis",
+      "sessions": "91",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.16483516483516483",
+      "engagementRate": "0.8351648351648352",
+      "averageSessionDuration": "161.79764182417583"
+    },
+    {
+      "landingPage": "/preguntas-frecuentes-aptis-esol-general",
+      "sessions": "71",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.323943661971831",
+      "engagementRate": "0.676056338028169",
+      "averageSessionDuration": "95.482042197183091"
+    },
+    {
+      "landingPage": "/aptis-advanced-malaga",
+      "sessions": "30",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.33333333333333331",
+      "engagementRate": "0.66666666666666663",
+      "averageSessionDuration": "119.09384279999999"
+    },
+    {
+      "landingPage": "/aptis-ahora-es-aptis-esol",
+      "sessions": "27",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.33333333333333331",
+      "engagementRate": "0.66666666666666663",
+      "averageSessionDuration": "183.62722837037037"
+    },
+    {
+      "landingPage": "/aptis-o-cambridge",
+      "sessions": "25",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.32",
+      "engagementRate": "0.68",
+      "averageSessionDuration": "115.099552"
+    },
+    {
+      "landingPage": "/partes-del-examen-de-aptis",
+      "sessions": "20",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.3",
+      "engagementRate": "0.7",
+      "averageSessionDuration": "361.20224709999997"
+    },
+    {
+      "landingPage": "/aptis-general-vs-advanced",
+      "sessions": "19",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.31578947368421051",
+      "engagementRate": "0.68421052631578949",
+      "averageSessionDuration": "79.516890526315791"
+    },
+    {
+      "landingPage": "/practicar-speaking-aptis",
+      "sessions": "19",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.631578947368421",
+      "engagementRate": "0.36842105263157893",
+      "averageSessionDuration": "83.589636789473673"
+    },
+    {
+      "landingPage": "/landing/guia-aptis-para-oposiciones",
+      "sessions": "9",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.33333333333333331",
+      "engagementRate": "0.66666666666666663",
+      "averageSessionDuration": "45.763112666666665"
+    },
+    {
+      "landingPage": "/landing/listening-aptis-ebook",
+      "sessions": "8",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.375",
+      "engagementRate": "0.625",
+      "averageSessionDuration": "99.857071"
+    },
+    {
+      "landingPage": "/tag/aptis-test",
+      "sessions": "7",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.7142857142857143",
+      "engagementRate": "0.2857142857142857",
+      "averageSessionDuration": "155.24757385714287"
+    },
+    {
+      "landingPage": "/landing/speaking-aptis-ebook",
+      "sessions": "6",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.16666666666666666",
+      "engagementRate": "0.83333333333333337",
+      "averageSessionDuration": "77.605222666666677"
+    },
+    {
+      "landingPage": "/que-es-aptis",
+      "sessions": "5",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.4",
+      "engagementRate": "0.6",
+      "averageSessionDuration": "48.4902296"
+    },
+    {
+      "landingPage": "/aptis-oposiciones",
+      "sessions": "3",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.33333333333333331",
+      "engagementRate": "0.66666666666666663",
+      "averageSessionDuration": "47.502468666666665"
+    },
+    {
+      "landingPage": "/intensivos-aptis-gral-y-advanced-express",
+      "sessions": "3",
+      "ecommercePurchases": "0",
+      "bounceRate": "0",
+      "engagementRate": "1",
+      "averageSessionDuration": "102.66027133333334"
+    },
+    {
+      "landingPage": "/product/aptis-5-premium",
+      "sessions": "3",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.33333333333333331",
+      "engagementRate": "0.66666666666666663",
+      "averageSessionDuration": "217.47998666666669"
+    },
+    {
+      "landingPage": "/landing/descubre-los-cambios-en-el-examen-de-aptis-en-2021",
+      "sessions": "2",
+      "ecommercePurchases": "0",
+      "bounceRate": "0.5",
+      "engagementRate": "0.5",
+      "averageSessionDuration": "7.4932905"
+    },
+    {
+      "landingPage": "/preguntas-clave-aptis-y-cambridge",
+      "sessions": "2",
+      "ecommercePurchases": "0",
+      "bounceRate": "0",
+      "engagementRate": "1",
+      "averageSessionDuration": "81.0798085"
+    },
+    {
+      "landingPage": "/tag/ejercicios-online-aptis",
+      "sessions": "2",
+      "ecommercePurchases": "0",
+      "bounceRate": "1",
+      "engagementRate": "0",
+      "averageSessionDuration": "0"
+    },
+    {
+      "landingPage": "/guias/guia-rapida-aprobar-aptis-cambridge",
+      "sessions": "1",
+      "ecommercePurchases": "0",
+      "bounceRate": "0",
+      "engagementRate": "1",
+      "averageSessionDuration": "1869.157767"
+    },
+    {
+      "landingPage": "/tag/ejercicios-listening-aptis",
+      "sessions": "1",
+      "ecommercePurchases": "0",
+      "bounceRate": "0",
+      "engagementRate": "1",
+      "averageSessionDuration": "334.417687"
+    },
+    {
+      "landingPage": "/tag/ejercicios-reading-aptis",
+      "sessions": "1",
+      "ecommercePurchases": "0",
+      "bounceRate": "0",
+      "engagementRate": "1",
+      "averageSessionDuration": "99.342527"
+    },
+    {
+      "landingPage": "/tag/gramatica-aptis",
+      "sessions": "1",
+      "ecommercePurchases": "0",
+      "bounceRate": "1",
+      "engagementRate": "0",
+      "averageSessionDuration": "0"
+    },
+    {
+      "landingPage": "/tag/practicar-gramatica-aptis",
+      "sessions": "1",
+      "ecommercePurchases": "0",
+      "bounceRate": "1",
+      "engagementRate": "0",
+      "averageSessionDuration": "0"
+    }
+  ],
+  "monthly_organic_aptis": [
+    {
+      "yearMonth": "202503",
+      "sessions": "1961",
+      "ecommercePurchases": "13",
+      "bounceRate": "0.24222335543090259",
+      "engagementRate": "0.75777664456909744",
+      "averageSessionDuration": "233.4151104411014"
+    },
+    {
+      "yearMonth": "202509",
+      "sessions": "1560",
+      "ecommercePurchases": "8",
+      "bounceRate": "0.20256410256410257",
+      "engagementRate": "0.79743589743589749",
+      "averageSessionDuration": "295.69404428846155"
+    },
+    {
+      "yearMonth": "202510",
+      "sessions": "1378",
+      "ecommercePurchases": "7",
+      "bounceRate": "0.24020319303338172",
+      "engagementRate": "0.75979680696661833",
+      "averageSessionDuration": "240.36143458055147"
+    },
+    {
+      "yearMonth": "202507",
+      "sessions": "1366",
+      "ecommercePurchases": "6",
+      "bounceRate": "0.21449487554904831",
+      "engagementRate": "0.78550512445095166",
+      "averageSessionDuration": "237.79904710102488"
+    },
+    {
+      "yearMonth": "202501",
+      "sessions": "1329",
+      "ecommercePurchases": "4",
+      "bounceRate": "0.22046651617757712",
+      "engagementRate": "0.77953348382242282",
+      "averageSessionDuration": "244.19035232881868"
+    },
+    {
+      "yearMonth": "202502",
+      "sessions": "1327",
+      "ecommercePurchases": "7",
+      "bounceRate": "0.1944235116804823",
+      "engagementRate": "0.80557648831951767",
+      "averageSessionDuration": "258.95960251544841"
+    },
+    {
+      "yearMonth": "202602",
+      "sessions": "1259",
+      "ecommercePurchases": "6",
+      "bounceRate": "0.22795869737887212",
+      "engagementRate": "0.77204130262112791",
+      "averageSessionDuration": "236.4532307871327"
+    },
+    {
+      "yearMonth": "202601",
+      "sessions": "1175",
+      "ecommercePurchases": "7",
+      "bounceRate": "0.20765957446808511",
+      "engagementRate": "0.79234042553191486",
+      "averageSessionDuration": "225.3592906706383"
+    },
+    {
+      "yearMonth": "202508",
+      "sessions": "1173",
+      "ecommercePurchases": "10",
+      "bounceRate": "0.216538789428815",
+      "engagementRate": "0.783461210571185",
+      "averageSessionDuration": "233.87464671270251"
+    },
+    {
+      "yearMonth": "202506",
+      "sessions": "1169",
+      "ecommercePurchases": "9",
+      "bounceRate": "0.22155688622754491",
+      "engagementRate": "0.77844311377245512",
+      "averageSessionDuration": "264.331978390077"
+    },
+    {
+      "yearMonth": "202511",
+      "sessions": "1114",
+      "ecommercePurchases": "5",
+      "bounceRate": "0.21364452423698385",
+      "engagementRate": "0.78635547576301612",
+      "averageSessionDuration": "256.60549143536804"
+    },
+    {
+      "yearMonth": "202504",
+      "sessions": "1104",
+      "ecommercePurchases": "6",
+      "bounceRate": "0.2056159420289855",
+      "engagementRate": "0.79438405797101452",
+      "averageSessionDuration": "268.52352930615945"
+    },
+    {
+      "yearMonth": "202505",
+      "sessions": "1093",
+      "ecommercePurchases": "13",
+      "bounceRate": "0.21683440073193047",
+      "engagementRate": "0.7831655992680695",
+      "averageSessionDuration": "278.29837854528824"
+    },
+    {
+      "yearMonth": "202603",
+      "sessions": "1059",
+      "ecommercePurchases": "4",
+      "bounceRate": "0.26251180358829085",
+      "engagementRate": "0.73748819641170915",
+      "averageSessionDuration": "227.38797805382447"
+    },
+    {
+      "yearMonth": "202512",
+      "sessions": "925",
+      "ecommercePurchases": "4",
+      "bounceRate": "0.21189189189189189",
+      "engagementRate": "0.78810810810810816",
+      "averageSessionDuration": "219.96752226162167"
+    },
+    {
+      "yearMonth": "202607",
+      "sessions": "892",
+      "ecommercePurchases": "2",
+      "bounceRate": "0.2556053811659193",
+      "engagementRate": "0.74439461883408076",
+      "averageSessionDuration": "232.12769327242151"
+    },
+    {
+      "yearMonth": "202606",
+      "sessions": "872",
+      "ecommercePurchases": "1",
+      "bounceRate": "0.25229357798165136",
+      "engagementRate": "0.74770642201834858",
+      "averageSessionDuration": "214.72259334747702"
+    },
+    {
+      "yearMonth": "202412",
+      "sessions": "767",
+      "ecommercePurchases": "7",
+      "bounceRate": "0.2151238591916558",
+      "engagementRate": "0.78487614080834422",
+      "averageSessionDuration": "245.95634595697518"
+    },
+    {
+      "yearMonth": "202604",
+      "sessions": "763",
+      "ecommercePurchases": "4",
+      "bounceRate": "0.20707732634338138",
+      "engagementRate": "0.79292267365661862",
+      "averageSessionDuration": "238.90887224377474"
+    },
+    {
+      "yearMonth": "202605",
+      "sessions": "704",
+      "ecommercePurchases": "1",
+      "bounceRate": "0.25142045454545453",
+      "engagementRate": "0.74857954545454541",
+      "averageSessionDuration": "208.5811916022727"
+    },
+    {
+      "yearMonth": "202608",
+      "sessions": "587",
+      "ecommercePurchases": "5",
+      "bounceRate": "0.24361158432708688",
+      "engagementRate": "0.75638841567291315",
+      "averageSessionDuration": "203.44994874105612"
+    }
+  ],
+  "page_monthly_organic": {
+    "/practicar-gramatica-aptis-online": [
+      {
+        "yearMonth": "202503",
+        "sessions": "405",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.23950617283950618",
+        "engagementRate": "0.76049382716049385"
+      },
+      {
+        "yearMonth": "202602",
+        "sessions": "286",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.22027972027972029",
+        "engagementRate": "0.77972027972027969"
+      },
+      {
+        "yearMonth": "202501",
+        "sessions": "281",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.1494661921708185",
+        "engagementRate": "0.85053380782918153"
+      },
+      {
+        "yearMonth": "202508",
+        "sessions": "280",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.23214285714285715",
+        "engagementRate": "0.7678571428571429"
+      },
+      {
+        "yearMonth": "202504",
+        "sessions": "278",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.16546762589928057",
+        "engagementRate": "0.83453237410071945"
+      },
+      {
+        "yearMonth": "202507",
+        "sessions": "277",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.23104693140794225",
+        "engagementRate": "0.76895306859205781"
+      },
+      {
+        "yearMonth": "202509",
+        "sessions": "277",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.18772563176895307",
+        "engagementRate": "0.81227436823104693"
+      },
+      {
+        "yearMonth": "202510",
+        "sessions": "271",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.18819188191881919",
+        "engagementRate": "0.81180811808118081"
+      },
+      {
+        "yearMonth": "202511",
+        "sessions": "259",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.16602316602316602",
+        "engagementRate": "0.833976833976834"
+      },
+      {
+        "yearMonth": "202505",
+        "sessions": "255",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.17254901960784313",
+        "engagementRate": "0.82745098039215681"
+      },
+      {
+        "yearMonth": "202502",
+        "sessions": "253",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.17391304347826086",
+        "engagementRate": "0.82608695652173914"
+      },
+      {
+        "yearMonth": "202506",
+        "sessions": "253",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.19762845849802371",
+        "engagementRate": "0.80237154150197632"
+      },
+      {
+        "yearMonth": "202601",
+        "sessions": "232",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.17672413793103448",
+        "engagementRate": "0.82327586206896552"
+      },
+      {
+        "yearMonth": "202512",
+        "sessions": "218",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.15596330275229359",
+        "engagementRate": "0.84403669724770647"
+      },
+      {
+        "yearMonth": "202603",
+        "sessions": "193",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.18134715025906736",
+        "engagementRate": "0.81865284974093266"
+      },
+      {
+        "yearMonth": "202604",
+        "sessions": "183",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.20765027322404372",
+        "engagementRate": "0.79234972677595628"
+      },
+      {
+        "yearMonth": "202412",
+        "sessions": "170",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.14117647058823529",
+        "engagementRate": "0.85882352941176465"
+      },
+      {
+        "yearMonth": "202605",
+        "sessions": "163",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.22085889570552147",
+        "engagementRate": "0.77914110429447858"
+      },
+      {
+        "yearMonth": "202606",
+        "sessions": "155",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.2129032258064516",
+        "engagementRate": "0.7870967741935484"
+      },
+      {
+        "yearMonth": "202607",
+        "sessions": "155",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.26451612903225807",
+        "engagementRate": "0.73548387096774193"
+      },
+      {
+        "yearMonth": "202608",
+        "sessions": "119",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.25210084033613445",
+        "engagementRate": "0.74789915966386555"
+      }
+    ],
+    "/test-aptis-online-conoce-tu-nivel": [
+      {
+        "yearMonth": "202509",
+        "sessions": "442",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.13800904977375567",
+        "engagementRate": "0.86199095022624439"
+      },
+      {
+        "yearMonth": "202602",
+        "sessions": "416",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.18269230769230768",
+        "engagementRate": "0.81730769230769229"
+      },
+      {
+        "yearMonth": "202603",
+        "sessions": "369",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.21138211382113822",
+        "engagementRate": "0.78861788617886175"
+      },
+      {
+        "yearMonth": "202601",
+        "sessions": "355",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.14929577464788732",
+        "engagementRate": "0.85070422535211265"
+      },
+      {
+        "yearMonth": "202510",
+        "sessions": "345",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.1681159420289855",
+        "engagementRate": "0.8318840579710145"
+      },
+      {
+        "yearMonth": "202503",
+        "sessions": "332",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.13253012048192772",
+        "engagementRate": "0.86746987951807231"
+      },
+      {
+        "yearMonth": "202511",
+        "sessions": "314",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.16560509554140126",
+        "engagementRate": "0.83439490445859876"
+      },
+      {
+        "yearMonth": "202507",
+        "sessions": "293",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.10580204778156997",
+        "engagementRate": "0.89419795221843"
+      },
+      {
+        "yearMonth": "202512",
+        "sessions": "258",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.13565891472868216",
+        "engagementRate": "0.86434108527131781"
+      },
+      {
+        "yearMonth": "202502",
+        "sessions": "256",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.09765625",
+        "engagementRate": "0.90234375"
+      },
+      {
+        "yearMonth": "202508",
+        "sessions": "253",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.12648221343873517",
+        "engagementRate": "0.87351778656126478"
+      },
+      {
+        "yearMonth": "202506",
+        "sessions": "228",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.10526315789473684",
+        "engagementRate": "0.89473684210526316"
+      },
+      {
+        "yearMonth": "202505",
+        "sessions": "210",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.11904761904761904",
+        "engagementRate": "0.88095238095238093"
+      },
+      {
+        "yearMonth": "202604",
+        "sessions": "209",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.1674641148325359",
+        "engagementRate": "0.83253588516746413"
+      },
+      {
+        "yearMonth": "202501",
+        "sessions": "196",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.1326530612244898",
+        "engagementRate": "0.86734693877551017"
+      },
+      {
+        "yearMonth": "202606",
+        "sessions": "195",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.1641025641025641",
+        "engagementRate": "0.83589743589743593"
+      },
+      {
+        "yearMonth": "202504",
+        "sessions": "193",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.10880829015544041",
+        "engagementRate": "0.89119170984455953"
+      },
+      {
+        "yearMonth": "202607",
+        "sessions": "192",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.203125",
+        "engagementRate": "0.796875"
+      },
+      {
+        "yearMonth": "202605",
+        "sessions": "175",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.18857142857142858",
+        "engagementRate": "0.81142857142857139"
+      },
+      {
+        "yearMonth": "202608",
+        "sessions": "119",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.18487394957983194",
+        "engagementRate": "0.81512605042016806"
+      },
+      {
+        "yearMonth": "202412",
+        "sessions": "113",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.1415929203539823",
+        "engagementRate": "0.8584070796460177"
+      }
+    ],
+    "/product/aptis-general-b1-b2-c1-28h": [
+      {
+        "yearMonth": "202503",
+        "sessions": "234",
+        "ecommercePurchases": "6",
+        "bounceRate": "0.3504273504273504",
+        "engagementRate": "0.6495726495726496"
+      },
+      {
+        "yearMonth": "202509",
+        "sessions": "198",
+        "ecommercePurchases": "6",
+        "bounceRate": "0.27777777777777779",
+        "engagementRate": "0.72222222222222221"
+      },
+      {
+        "yearMonth": "202506",
+        "sessions": "188",
+        "ecommercePurchases": "7",
+        "bounceRate": "0.2978723404255319",
+        "engagementRate": "0.7021276595744681"
+      },
+      {
+        "yearMonth": "202505",
+        "sessions": "177",
+        "ecommercePurchases": "5",
+        "bounceRate": "0.327683615819209",
+        "engagementRate": "0.672316384180791"
+      },
+      {
+        "yearMonth": "202502",
+        "sessions": "153",
+        "ecommercePurchases": "6",
+        "bounceRate": "0.33333333333333331",
+        "engagementRate": "0.66666666666666663"
+      },
+      {
+        "yearMonth": "202507",
+        "sessions": "147",
+        "ecommercePurchases": "2",
+        "bounceRate": "0.32653061224489793",
+        "engagementRate": "0.673469387755102"
+      },
+      {
+        "yearMonth": "202510",
+        "sessions": "136",
+        "ecommercePurchases": "4",
+        "bounceRate": "0.44117647058823528",
+        "engagementRate": "0.55882352941176472"
+      },
+      {
+        "yearMonth": "202508",
+        "sessions": "133",
+        "ecommercePurchases": "6",
+        "bounceRate": "0.2932330827067669",
+        "engagementRate": "0.706766917293233"
+      },
+      {
+        "yearMonth": "202601",
+        "sessions": "131",
+        "ecommercePurchases": "3",
+        "bounceRate": "0.37404580152671757",
+        "engagementRate": "0.62595419847328249"
+      },
+      {
+        "yearMonth": "202504",
+        "sessions": "127",
+        "ecommercePurchases": "3",
+        "bounceRate": "0.33070866141732286",
+        "engagementRate": "0.6692913385826772"
+      },
+      {
+        "yearMonth": "202602",
+        "sessions": "106",
+        "ecommercePurchases": "5",
+        "bounceRate": "0.27358490566037735",
+        "engagementRate": "0.72641509433962259"
+      },
+      {
+        "yearMonth": "202607",
+        "sessions": "99",
+        "ecommercePurchases": "1",
+        "bounceRate": "0.35353535353535354",
+        "engagementRate": "0.64646464646464652"
+      },
+      {
+        "yearMonth": "202603",
+        "sessions": "85",
+        "ecommercePurchases": "3",
+        "bounceRate": "0.30588235294117649",
+        "engagementRate": "0.69411764705882351"
+      },
+      {
+        "yearMonth": "202606",
+        "sessions": "77",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.31168831168831168",
+        "engagementRate": "0.68831168831168832"
+      },
+      {
+        "yearMonth": "202511",
+        "sessions": "73",
+        "ecommercePurchases": "3",
+        "bounceRate": "0.34246575342465752",
+        "engagementRate": "0.65753424657534243"
+      },
+      {
+        "yearMonth": "202512",
+        "sessions": "72",
+        "ecommercePurchases": "3",
+        "bounceRate": "0.30555555555555558",
+        "engagementRate": "0.69444444444444442"
+      },
+      {
+        "yearMonth": "202604",
+        "sessions": "59",
+        "ecommercePurchases": "3",
+        "bounceRate": "0.33898305084745761",
+        "engagementRate": "0.66101694915254239"
+      },
+      {
+        "yearMonth": "202605",
+        "sessions": "53",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.32075471698113206",
+        "engagementRate": "0.67924528301886788"
+      },
+      {
+        "yearMonth": "202608",
+        "sessions": "45",
+        "ecommercePurchases": "2",
+        "bounceRate": "0.33333333333333331",
+        "engagementRate": "0.66666666666666663"
+      },
+      {
+        "yearMonth": "202501",
+        "sessions": "28",
+        "ecommercePurchases": "2",
+        "bounceRate": "0.17857142857142858",
+        "engagementRate": "0.8214285714285714"
+      }
+    ],
+    "/clases-online-presencial/clases-ingles/intensivo/aptis": [
+      {
+        "yearMonth": "202503",
+        "sessions": "208",
+        "ecommercePurchases": "1",
+        "bounceRate": "0.18269230769230768",
+        "engagementRate": "0.81730769230769229"
+      },
+      {
+        "yearMonth": "202507",
+        "sessions": "150",
+        "ecommercePurchases": "2",
+        "bounceRate": "0.16",
+        "engagementRate": "0.84"
+      },
+      {
+        "yearMonth": "202506",
+        "sessions": "140",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.20714285714285716",
+        "engagementRate": "0.79285714285714282"
+      },
+      {
+        "yearMonth": "202509",
+        "sessions": "120",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.13333333333333333",
+        "engagementRate": "0.8666666666666667"
+      },
+      {
+        "yearMonth": "202504",
+        "sessions": "98",
+        "ecommercePurchases": "2",
+        "bounceRate": "0.22448979591836735",
+        "engagementRate": "0.77551020408163263"
+      },
+      {
+        "yearMonth": "202505",
+        "sessions": "97",
+        "ecommercePurchases": "2",
+        "bounceRate": "0.20618556701030927",
+        "engagementRate": "0.79381443298969068"
+      },
+      {
+        "yearMonth": "202508",
+        "sessions": "80",
+        "ecommercePurchases": "1",
+        "bounceRate": "0.25",
+        "engagementRate": "0.75"
+      },
+      {
+        "yearMonth": "202502",
+        "sessions": "79",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.21518987341772153",
+        "engagementRate": "0.78481012658227844"
+      },
+      {
+        "yearMonth": "202510",
+        "sessions": "63",
+        "ecommercePurchases": "2",
+        "bounceRate": "0.25396825396825395",
+        "engagementRate": "0.746031746031746"
+      },
+      {
+        "yearMonth": "202501",
+        "sessions": "50",
+        "ecommercePurchases": "1",
+        "bounceRate": "0.14",
+        "engagementRate": "0.86"
+      },
+      {
+        "yearMonth": "202601",
+        "sessions": "33",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.090909090909090912",
+        "engagementRate": "0.90909090909090906"
+      },
+      {
+        "yearMonth": "202603",
+        "sessions": "33",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.21212121212121213",
+        "engagementRate": "0.78787878787878785"
+      },
+      {
+        "yearMonth": "202512",
+        "sessions": "31",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.29032258064516131",
+        "engagementRate": "0.70967741935483875"
+      },
+      {
+        "yearMonth": "202606",
+        "sessions": "31",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.064516129032258063",
+        "engagementRate": "0.93548387096774188"
+      },
+      {
+        "yearMonth": "202602",
+        "sessions": "29",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.27586206896551724",
+        "engagementRate": "0.72413793103448276"
+      },
+      {
+        "yearMonth": "202604",
+        "sessions": "27",
+        "ecommercePurchases": "1",
+        "bounceRate": "0.1111111111111111",
+        "engagementRate": "0.88888888888888884"
+      },
+      {
+        "yearMonth": "202605",
+        "sessions": "24",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.33333333333333331",
+        "engagementRate": "0.66666666666666663"
+      },
+      {
+        "yearMonth": "202511",
+        "sessions": "21",
+        "ecommercePurchases": "1",
+        "bounceRate": "0.047619047619047616",
+        "engagementRate": "0.95238095238095233"
+      },
+      {
+        "yearMonth": "202607",
+        "sessions": "20",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.25",
+        "engagementRate": "0.75"
+      },
+      {
+        "yearMonth": "202412",
+        "sessions": "17",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.29411764705882354",
+        "engagementRate": "0.70588235294117652"
+      },
+      {
+        "yearMonth": "202608",
+        "sessions": "15",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.13333333333333333",
+        "engagementRate": "0.8666666666666667"
+      }
+    ],
+    "/sacar-c-aptis-general": [
+      {
+        "yearMonth": "202501",
+        "sessions": "151",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.29139072847682118",
+        "engagementRate": "0.70860927152317876"
+      },
+      {
+        "yearMonth": "202412",
+        "sessions": "134",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.2462686567164179",
+        "engagementRate": "0.753731343283582"
+      },
+      {
+        "yearMonth": "202502",
+        "sessions": "121",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.23140495867768596",
+        "engagementRate": "0.768595041322314"
+      },
+      {
+        "yearMonth": "202503",
+        "sessions": "97",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.28865979381443296",
+        "engagementRate": "0.711340206185567"
+      },
+      {
+        "yearMonth": "202507",
+        "sessions": "67",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.2537313432835821",
+        "engagementRate": "0.746268656716418"
+      },
+      {
+        "yearMonth": "202505",
+        "sessions": "54",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.24074074074074073",
+        "engagementRate": "0.7592592592592593"
+      },
+      {
+        "yearMonth": "202504",
+        "sessions": "53",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.24528301886792453",
+        "engagementRate": "0.75471698113207553"
+      },
+      {
+        "yearMonth": "202506",
+        "sessions": "48",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.25",
+        "engagementRate": "0.75"
+      },
+      {
+        "yearMonth": "202508",
+        "sessions": "44",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.22727272727272727",
+        "engagementRate": "0.77272727272727271"
+      },
+      {
+        "yearMonth": "202510",
+        "sessions": "43",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.39534883720930231",
+        "engagementRate": "0.60465116279069764"
+      },
+      {
+        "yearMonth": "202509",
+        "sessions": "36",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.22222222222222221",
+        "engagementRate": "0.77777777777777779"
+      },
+      {
+        "yearMonth": "202511",
+        "sessions": "35",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.2857142857142857",
+        "engagementRate": "0.7142857142857143"
+      },
+      {
+        "yearMonth": "202602",
+        "sessions": "25",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.28",
+        "engagementRate": "0.72"
+      },
+      {
+        "yearMonth": "202512",
+        "sessions": "23",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.47826086956521741",
+        "engagementRate": "0.52173913043478259"
+      },
+      {
+        "yearMonth": "202604",
+        "sessions": "19",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.26315789473684209",
+        "engagementRate": "0.73684210526315785"
+      },
+      {
+        "yearMonth": "202601",
+        "sessions": "17",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.29411764705882354",
+        "engagementRate": "0.70588235294117652"
+      },
+      {
+        "yearMonth": "202606",
+        "sessions": "10",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.2",
+        "engagementRate": "0.8"
+      },
+      {
+        "yearMonth": "202608",
+        "sessions": "10",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.3",
+        "engagementRate": "0.7"
+      },
+      {
+        "yearMonth": "202605",
+        "sessions": "7",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.42857142857142855",
+        "engagementRate": "0.5714285714285714"
+      },
+      {
+        "yearMonth": "202607",
+        "sessions": "7",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.5714285714285714",
+        "engagementRate": "0.42857142857142855"
+      },
+      {
+        "yearMonth": "202603",
+        "sessions": "5",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.4",
+        "engagementRate": "0.6"
+      }
+    ],
+    "/aptis-profesor-consejos-experiencias": [
+      {
+        "yearMonth": "202503",
+        "sessions": "92",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.25",
+        "engagementRate": "0.75"
+      },
+      {
+        "yearMonth": "202502",
+        "sessions": "83",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.14457831325301204",
+        "engagementRate": "0.85542168674698793"
+      },
+      {
+        "yearMonth": "202501",
+        "sessions": "68",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.29411764705882354",
+        "engagementRate": "0.70588235294117652"
+      },
+      {
+        "yearMonth": "202602",
+        "sessions": "66",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.53030303030303028",
+        "engagementRate": "0.46969696969696972"
+      },
+      {
+        "yearMonth": "202506",
+        "sessions": "65",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.23076923076923078",
+        "engagementRate": "0.76923076923076927"
+      },
+      {
+        "yearMonth": "202504",
+        "sessions": "62",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.16129032258064516",
+        "engagementRate": "0.83870967741935487"
+      },
+      {
+        "yearMonth": "202507",
+        "sessions": "51",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.25490196078431371",
+        "engagementRate": "0.74509803921568629"
+      },
+      {
+        "yearMonth": "202505",
+        "sessions": "48",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.33333333333333331",
+        "engagementRate": "0.66666666666666663"
+      },
+      {
+        "yearMonth": "202412",
+        "sessions": "44",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.29545454545454547",
+        "engagementRate": "0.70454545454545459"
+      },
+      {
+        "yearMonth": "202510",
+        "sessions": "38",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.10526315789473684",
+        "engagementRate": "0.89473684210526316"
+      },
+      {
+        "yearMonth": "202601",
+        "sessions": "38",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.18421052631578946",
+        "engagementRate": "0.81578947368421051"
+      },
+      {
+        "yearMonth": "202509",
+        "sessions": "37",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.27027027027027029",
+        "engagementRate": "0.72972972972972971"
+      },
+      {
+        "yearMonth": "202508",
+        "sessions": "35",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.22857142857142856",
+        "engagementRate": "0.77142857142857146"
+      },
+      {
+        "yearMonth": "202603",
+        "sessions": "34",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.41176470588235292",
+        "engagementRate": "0.58823529411764708"
+      },
+      {
+        "yearMonth": "202607",
+        "sessions": "32",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.40625",
+        "engagementRate": "0.59375"
+      },
+      {
+        "yearMonth": "202511",
+        "sessions": "28",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.14285714285714285",
+        "engagementRate": "0.8571428571428571"
+      },
+      {
+        "yearMonth": "202606",
+        "sessions": "24",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.5",
+        "engagementRate": "0.5"
+      },
+      {
+        "yearMonth": "202604",
+        "sessions": "22",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.27272727272727271",
+        "engagementRate": "0.72727272727272729"
+      },
+      {
+        "yearMonth": "202512",
+        "sessions": "16",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.3125",
+        "engagementRate": "0.6875"
+      },
+      {
+        "yearMonth": "202605",
+        "sessions": "14",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.21428571428571427",
+        "engagementRate": "0.7857142857142857"
+      },
+      {
+        "yearMonth": "202608",
+        "sessions": "11",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.27272727272727271",
+        "engagementRate": "0.72727272727272729"
+      }
+    ],
+    "/practicar-reading-aptis": [
+      {
+        "yearMonth": "202510",
+        "sessions": "121",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.31404958677685951",
+        "engagementRate": "0.68595041322314054"
+      },
+      {
+        "yearMonth": "202508",
+        "sessions": "117",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.23931623931623933",
+        "engagementRate": "0.76068376068376065"
+      },
+      {
+        "yearMonth": "202509",
+        "sessions": "109",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.27522935779816515",
+        "engagementRate": "0.72477064220183485"
+      },
+      {
+        "yearMonth": "202507",
+        "sessions": "88",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.25",
+        "engagementRate": "0.75"
+      },
+      {
+        "yearMonth": "202511",
+        "sessions": "84",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.32142857142857145",
+        "engagementRate": "0.6785714285714286"
+      },
+      {
+        "yearMonth": "202601",
+        "sessions": "79",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.20253164556962025",
+        "engagementRate": "0.79746835443037978"
+      },
+      {
+        "yearMonth": "202602",
+        "sessions": "79",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.22784810126582278",
+        "engagementRate": "0.77215189873417722"
+      },
+      {
+        "yearMonth": "202512",
+        "sessions": "66",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.27272727272727271",
+        "engagementRate": "0.72727272727272729"
+      },
+      {
+        "yearMonth": "202604",
+        "sessions": "54",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.29629629629629628",
+        "engagementRate": "0.70370370370370372"
+      },
+      {
+        "yearMonth": "202606",
+        "sessions": "53",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.33962264150943394",
+        "engagementRate": "0.660377358490566"
+      },
+      {
+        "yearMonth": "202504",
+        "sessions": "46",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.15217391304347827",
+        "engagementRate": "0.84782608695652173"
+      },
+      {
+        "yearMonth": "202605",
+        "sessions": "44",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.18181818181818182",
+        "engagementRate": "0.81818181818181823"
+      },
+      {
+        "yearMonth": "202502",
+        "sessions": "41",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.17073170731707318",
+        "engagementRate": "0.82926829268292679"
+      },
+      {
+        "yearMonth": "202506",
+        "sessions": "41",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.24390243902439024",
+        "engagementRate": "0.75609756097560976"
+      },
+      {
+        "yearMonth": "202607",
+        "sessions": "40",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.1",
+        "engagementRate": "0.9"
+      },
+      {
+        "yearMonth": "202505",
+        "sessions": "39",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.17948717948717949",
+        "engagementRate": "0.82051282051282048"
+      },
+      {
+        "yearMonth": "202503",
+        "sessions": "36",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.19444444444444445",
+        "engagementRate": "0.80555555555555558"
+      },
+      {
+        "yearMonth": "202603",
+        "sessions": "29",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.27586206896551724",
+        "engagementRate": "0.72413793103448276"
+      },
+      {
+        "yearMonth": "202412",
+        "sessions": "28",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.14285714285714285",
+        "engagementRate": "0.8571428571428571"
+      },
+      {
+        "yearMonth": "202501",
+        "sessions": "27",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.1111111111111111",
+        "engagementRate": "0.88888888888888884"
+      },
+      {
+        "yearMonth": "202608",
+        "sessions": "20",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.2",
+        "engagementRate": "0.8"
+      }
+    ],
+    "/ejercicio-listening-aptis": [
+      {
+        "yearMonth": "202606",
+        "sessions": "159",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.25157232704402516",
+        "engagementRate": "0.74842767295597479"
+      },
+      {
+        "yearMonth": "202510",
+        "sessions": "158",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.22784810126582278",
+        "engagementRate": "0.77215189873417722"
+      },
+      {
+        "yearMonth": "202511",
+        "sessions": "156",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.24358974358974358",
+        "engagementRate": "0.75641025641025639"
+      },
+      {
+        "yearMonth": "202607",
+        "sessions": "150",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.18",
+        "engagementRate": "0.82"
+      },
+      {
+        "yearMonth": "202603",
+        "sessions": "130",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.2076923076923077",
+        "engagementRate": "0.79230769230769227"
+      },
+      {
+        "yearMonth": "202601",
+        "sessions": "121",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.23140495867768596",
+        "engagementRate": "0.768595041322314"
+      },
+      {
+        "yearMonth": "202512",
+        "sessions": "115",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.21739130434782608",
+        "engagementRate": "0.782608695652174"
+      },
+      {
+        "yearMonth": "202605",
+        "sessions": "109",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.22018348623853212",
+        "engagementRate": "0.77981651376146788"
+      },
+      {
+        "yearMonth": "202604",
+        "sessions": "105",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.20952380952380953",
+        "engagementRate": "0.79047619047619044"
+      },
+      {
+        "yearMonth": "202608",
+        "sessions": "96",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.23958333333333334",
+        "engagementRate": "0.76041666666666663"
+      },
+      {
+        "yearMonth": "202509",
+        "sessions": "90",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.25555555555555554",
+        "engagementRate": "0.74444444444444446"
+      },
+      {
+        "yearMonth": "202602",
+        "sessions": "86",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.15116279069767441",
+        "engagementRate": "0.84883720930232553"
+      },
+      {
+        "yearMonth": "202508",
+        "sessions": "77",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.27272727272727271",
+        "engagementRate": "0.72727272727272729"
+      },
+      {
+        "yearMonth": "202507",
+        "sessions": "67",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.34328358208955223",
+        "engagementRate": "0.65671641791044777"
+      },
+      {
+        "yearMonth": "202501",
+        "sessions": "58",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.20689655172413793",
+        "engagementRate": "0.7931034482758621"
+      },
+      {
+        "yearMonth": "202503",
+        "sessions": "48",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.27083333333333331",
+        "engagementRate": "0.72916666666666663"
+      },
+      {
+        "yearMonth": "202504",
+        "sessions": "44",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.20454545454545456",
+        "engagementRate": "0.79545454545454541"
+      },
+      {
+        "yearMonth": "202502",
+        "sessions": "35",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.14285714285714285",
+        "engagementRate": "0.8571428571428571"
+      },
+      {
+        "yearMonth": "202505",
+        "sessions": "34",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.23529411764705882",
+        "engagementRate": "0.76470588235294112"
+      },
+      {
+        "yearMonth": "202506",
+        "sessions": "34",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.3235294117647059",
+        "engagementRate": "0.67647058823529416"
+      },
+      {
+        "yearMonth": "202412",
+        "sessions": "31",
+        "ecommercePurchases": "0",
+        "bounceRate": "0.22580645161290322",
+        "engagementRate": "0.77419354838709675"
+      }
+    ]
+  },
+  "gsc_aptis_pages": {
+    "24-25": [
+      {
+        "keys": [
+          "https://blueparrotschool.com/practicar-gramatica-aptis-online/"
+        ],
+        "clicks": 1195,
+        "impressions": 15558,
+        "ctr": 0.07680935852937396,
+        "position": 14.195140763594292
+      },
+      {
+        "keys": [
+          "https://blueparrotschool.com/test-aptis-online-conoce-tu-nivel/"
+        ],
+        "clicks": 1138,
+        "impressions": 33943,
+        "ctr": 0.033526794920896795,
+        "position": 22.176855316265502
+      },
+      {
+        "keys": [
+          "https://blueparrotschool.com/clases-online-presencial/clases-ingles/intensivo/aptis/"
+        ],
+        "clicks": 536,
+        "impressions": 35141,
+        "ctr": 0.015252838564639595,
+        "position": 11.481033550553484
+      },
+      {
+        "keys": [
+          "https://blueparrotschool.com/product/aptis-general-b1-b2-c1-28h/"
+        ],
+        "clicks": 524,
+        "impressions": 28996,
+        "ctr": 0.01807145813215616,
+        "position": 12.283176989929645
+      },
+      {
+        "keys": [
+          "https://blueparrotschool.com/practicar-reading-aptis/"
+        ],
+        "clicks": 315,
+        "impressions": 3182,
+        "ctr": 0.09899434318038969,
+        "position": 14.034569453174104
+      },
+      {
+        "keys": [
+          "https://blueparrotschool.com/sacar-c-aptis-general/"
+        ],
+        "clicks": 243,
+        "impressions": 10541,
+        "ctr": 0.023052841286405463,
+        "position": 12.243904752869748
+      },
+      {
+        "keys": [
+          "https://blueparrotschool.com/aptis-profesor-consejos-experiencias/"
+        ],
+        "clicks": 229,
+        "impressions": 5286,
+        "ctr": 0.04332198259553538,
+        "position": 12.245365115399167
+      },
+      {
+        "keys": [
+          "https://blueparrotschool.com/ejercicio-listening-aptis/"
+        ],
+        "clicks": 200,
+        "impressions": 2685,
+        "ctr": 0.074487895716946,
+        "position": 15.860335195530727
+      },
+      {
+        "keys": [
+          "https://blueparrotschool.com/product/aptis-advanced-intensivo-28h/"
+        ],
+        "clicks": 162,
+        "impressions": 6575,
+        "ctr": 0.024638783269961977,
+        "position": 13.772927756653992
+      },
+      {
+        "keys": [
+          "https://blueparrotschool.com/preparar-aptis-advanced/"
+        ],
+        "clicks": 153,
+        "impressions": 6907,
+        "ctr": 0.022151440567540176,
+        "position": 15.29998552193427
+      },
+      {
+        "keys": [
+          "https://blueparrotschool.com/product/aptis-a2-intensivo-28h/"
+        ],
+        "clicks": 85,
+        "impressions": 5033,
+        "ctr": 0.01688853566461355,
+        "position": 11.134313530697398
+      },
+      {
+        "keys": [
+          "https://blueparrotschool.com/wp-content/uploads/2021/07/ebook_reading_writing_Aptis_BlueParrotSchool_2021.pdf"
+        ],
+        "clicks": 81,
+        "impressions": 1851,
+        "ctr": 0.04376012965964344,
+        "position": 16.778498109130197
+      },
+      {
+        "keys": [
+          "https://blueparrotschool.com/sacarse-aptis-casa/"
+        ],
+        "clicks": 72,
+        "impressions": 2587,
+        "ctr": 0.027831465017394665,
+        "position": 18.957093158098182
+      },
+      {
+        "keys": [
+          "https://blueparrotschool.com/preparar-listening-aptis/"
+        ],
+        "clicks": 65,
+        "impressions": 2725,
+        "ctr": 0.023853211009174313,
+        "position": 22.088073394495414
+      },
+      {
+        "keys": [
+          "https://blueparrotschool.com/aptis-ahora-es-aptis-esol/"
+        ],
+        "clicks": 56,
+        "impressions": 7215,
+        "ctr": 0.0077616077616077615,
+        "position": 15.927650727650727
+      },
+      {
+        "keys": [
+          "https://blueparrotschool.com/diferencias-aptis-general-teachers/"
+        ],
+        "clicks": 56,
+        "impressions": 2984,
+        "ctr": 0.01876675603217158,
+        "position": 8.723860589812332
+      },
+      {
+        "keys": [
+          "https://blueparrotschool.com/preguntas-frecuentes-aptis-esol-general/"
+        ],
+        "clicks": 55,
+        "impressions": 3895,
+        "ctr": 0.014120667522464698,
+        "position": 16.934274711168165
+      },
+      {
+        "keys": [
+          "https://blueparrotschool.com/aptis-advanced-malaga/"
+        ],
+        "clicks": 23,
+        "impressions": 2228,
+        "ctr": 0.010323159784560144,
+        "position": 15.709605026929982
+      },
+      {
+        "keys": [
+          "https://blueparrotschool.com/aptis-general-vs-advanced/"
+        ],
+        "clicks": 16,
+        "impressions": 2287,
+        "ctr": 0.006996064713598601,
+        "position": 12.526891123742894
+      },
+      {
+        "keys": [
+          "https://blueparrotschool.com/aptis-o-cambridge/"
+        ],
+        "clicks": 11,
+        "impressions": 1458,
+        "ctr": 0.0075445816186556925,
+        "position": 18.637860082304528
+      },
+      {
+        "keys": [
+          "https://blueparrotschool.com/landing/listening-aptis-ebook/"
+        ],
+        "clicks": 3,
+        "impressions": 269,
+        "ctr": 0.011152416356877323,
+        "position": 18.513011152416357
+      },
+      {
+        "keys": [
+          "https://blueparrotschool.com/landing/guia-aptis-para-oposiciones/"
+        ],
+        "clicks": 2,
+        "impressions": 328,
+        "ctr": 0.006097560975609756,
+        "position": 21.74390243902439
+      },
+      {
+        "keys": [
+          "https://blueparrotschool.com/landing/speaking-aptis-ebook/"
+        ],
+        "clicks": 2,
+        "impressions": 119,
+        "ctr": 0.01680672268907563,
+        "position": 22.747899159663866
+      },
+      {
+        "keys": [
+          "https://blueparrotschool.com/partes-del-examen-de-aptis/"
+        ],
+        "clicks": 2,
+        "impressions": 453,
+        "ctr": 0.004415011037527594,
+        "position": 28.805739514348787
+      },
+      {
+        "keys": [
+          "https://blueparrotschool.com/practicar-speaking-aptis/"
+        ],
+        "clicks": 2,
+        "impressions": 159,
+        "ctr": 0.012578616352201259,
+        "position": 24.50943396226415
+      },
+      {
+        "keys": [
+          "https://blueparrotschool.com/landing/descubre-los-cambios-en-el-examen-de-aptis-en-2021/"
+        ],
+        "clicks": 1,
+        "impressions": 72,
+        "ctr": 0.013888888888888888,
+        "position": 13.36111111111111
+      },
+      {
+        "keys": [
+          "https://blueparrotschool.com/que-es-aptis/"
+        ],
+        "clicks": 1,
+        "impressions": 4606,
+        "ctr": 0.00021710811984368216,
+        "position": 49.51411202778984
+      },
+      {
+        "keys": [
+          "https://blueparrotschool.com/aptis-oposiciones/"
+        ],
+        "clicks": 0,
+        "impressions": 226,
+        "ctr": 0,
+        "position": 20.305309734513273
+      },
+      {
+        "keys": [
+          "https://blueparrotschool.com/aptis5premium/"
+        ],
+        "clicks": 0,
+        "impressions": 8,
+        "ctr": 0,
+        "position": 4
+      },
+      {
+        "keys": [
+          "https://blueparrotschool.com/clases-online-presencial/clases-ingles/intensivo/aptis"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 1
+      },
+      {
+        "keys": [
+          "https://blueparrotschool.com/clases-online-presencial/clases-ingles/intensivos/aptis/"
+        ],
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 1
+      },
+      {
+        "keys": [
+          "https://blueparrotschool.com/entrevista-a-un-alumno-de-aptis/"
+        ],
+        "clicks": 0,
+        "impressions": 6,
+        "ctr": 0,
+        "position": 7.5
+      },
+      {
+        "keys": [
+          "https://blueparrotschool.com/preguntas-clave-aptis-y-cambridge/"
+        ],
+        "clicks": 0,
+        "impressions": 240,
+        "ctr": 0,
+        "position": 53.50416666666667
+      },
+      {
+        "keys": [
+          "https://blueparrotschool.com/product/aptis-advanced-intensivo-28h/)"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 1
+      },
+      {
+        "keys": [
+          "https://blueparrotschool.com/product/aptis-general-b1-b2-b1-28h/"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 1
+      },
+      {
+        "keys": [
+          "https://blueparrotschool.com/product/aptis-general-b1-b2-c1/"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 1
+      },
+      {
+        "keys": [
+          "https://blueparrotschool.com/prueba-nivel-aptis/"
+        ],
+        "clicks": 0,
+        "impressions": 5,
+        "ctr": 0,
+        "position": 48.2
+      },
+      {
+        "keys": [
+          "https://blueparrotschool.com/quiz/aptis-grammar/"
+        ],
+        "clicks": 0,
+        "impressions": 9,
+        "ctr": 0,
+        "position": 68.44444444444444
+      },
+      {
+        "keys": [
+          "https://blueparrotschool.com/tag/practicar-listening-aptis/feed/"
+        ],
+        "clicks": 0,
+        "impressions": 4,
+        "ctr": 0,
+        "position": 55.5
+      }
+    ],
+    "25-26": [
+      {
+        "keys": [
+          "https://blueparrotschool.com/test-aptis-online-conoce-tu-nivel/"
+        ],
+        "clicks": 3833,
+        "impressions": 113701,
+        "ctr": 0.03371122505518861,
+        "position": 17.568077677417087
+      },
+      {
+        "keys": [
+          "https://blueparrotschool.com/practicar-gramatica-aptis-online/"
+        ],
+        "clicks": 2830,
+        "impressions": 46009,
+        "ctr": 0.06150970462300854,
+        "position": 10.285400682475167
+      },
+      {
+        "keys": [
+          "https://blueparrotschool.com/ejercicio-listening-aptis/"
+        ],
+        "clicks": 1653,
+        "impressions": 17866,
+        "ctr": 0.09252210903391918,
+        "position": 7.627001007500279
+      },
+      {
+        "keys": [
+          "https://blueparrotschool.com/product/aptis-general-b1-b2-c1-28h/"
+        ],
+        "clicks": 925,
+        "impressions": 75548,
+        "ctr": 0.012243871445968127,
+        "position": 10.70788108222587
+      },
+      {
+        "keys": [
+          "https://blueparrotschool.com/practicar-reading-aptis/"
+        ],
+        "clicks": 872,
+        "impressions": 9242,
+        "ctr": 0.09435187188920147,
+        "position": 8.291062540575634
+      },
+      {
+        "keys": [
+          "https://blueparrotschool.com/product/aptis-advanced-intensivo-28h/"
+        ],
+        "clicks": 629,
+        "impressions": 24991,
+        "ctr": 0.025169060861910286,
+        "position": 12.537153375215077
+      },
+      {
+        "keys": [
+          "https://blueparrotschool.com/preparar-aptis-advanced/"
+        ],
+        "clicks": 622,
+        "impressions": 25073,
+        "ctr": 0.024807561919195947,
+        "position": 7.334263949268137
+      },
+      {
+        "keys": [
+          "https://blueparrotschool.com/clases-online-presencial/clases-ingles/intensivo/aptis/"
+        ],
+        "clicks": 480,
+        "impressions": 42300,
+        "ctr": 0.011347517730496455,
+        "position": 14.368108747044918
+      },
+      {
+        "keys": [
+          "https://blueparrotschool.com/aptis-profesor-consejos-experiencias/"
+        ],
+        "clicks": 380,
+        "impressions": 14143,
+        "ctr": 0.026868415470550803,
+        "position": 10.354663084211271
+      },
+      {
+        "keys": [
+          "https://blueparrotschool.com/sacar-c-aptis-general/"
+        ],
+        "clicks": 225,
+        "impressions": 13115,
+        "ctr": 0.01715592832634388,
+        "position": 9.215554708349218
+      },
+      {
+        "keys": [
+          "https://blueparrotschool.com/diferencias-aptis-general-teachers/"
+        ],
+        "clicks": 146,
+        "impressions": 9149,
+        "ctr": 0.015958028199803256,
+        "position": 8.201661383757788
+      },
+      {
+        "keys": [
+          "https://blueparrotschool.com/wp-content/uploads/2021/07/ebook_reading_writing_Aptis_BlueParrotSchool_2021.pdf"
+        ],
+        "clicks": 146,
+        "impressions": 2540,
+        "ctr": 0.05748031496062992,
+        "position": 15.82992125984252
+      },
+      {
+        "keys": [
+          "https://blueparrotschool.com/preparar-listening-aptis/"
+        ],
+        "clicks": 112,
+        "impressions": 5713,
+        "ctr": 0.019604410992473308,
+        "position": 10.544547523192719
+      },
+      {
+        "keys": [
+          "https://blueparrotschool.com/sacarse-aptis-casa/"
+        ],
+        "clicks": 109,
+        "impressions": 3473,
+        "ctr": 0.03138496976677224,
+        "position": 10.705729916498704
+      },
+      {
+        "keys": [
+          "https://blueparrotschool.com/product/aptis-a2-intensivo-28h/"
+        ],
+        "clicks": 95,
+        "impressions": 6039,
+        "ctr": 0.015731081304851798,
+        "position": 17.7645305514158
+      },
+      {
+        "keys": [
+          "https://blueparrotschool.com/preguntas-frecuentes-aptis-esol-general/"
+        ],
+        "clicks": 80,
+        "impressions": 11317,
+        "ctr": 0.007069011222055315,
+        "position": 12.862684457011575
+      },
+      {
+        "keys": [
+          "https://blueparrotschool.com/practicar-speaking-aptis/"
+        ],
+        "clicks": 31,
+        "impressions": 4541,
+        "ctr": 0.006826690156353226,
+        "position": 2.970931512882625
+      },
+      {
+        "keys": [
+          "https://blueparrotschool.com/aptis-ahora-es-aptis-esol/"
+        ],
+        "clicks": 30,
+        "impressions": 10943,
+        "ctr": 0.0027414785707758384,
+        "position": 13.714337932925158
+      },
+      {
+        "keys": [
+          "https://blueparrotschool.com/aptis-advanced-malaga/"
+        ],
+        "clicks": 29,
+        "impressions": 5321,
+        "ctr": 0.0054501033640293175,
+        "position": 19.987408381883103
+      },
+      {
+        "keys": [
+          "https://blueparrotschool.com/aptis-general-vs-advanced/"
+        ],
+        "clicks": 28,
+        "impressions": 5976,
+        "ctr": 0.004685408299866131,
+        "position": 9.01338688085676
+      },
+      {
+        "keys": [
+          "https://blueparrotschool.com/aptis-o-cambridge/"
+        ],
+        "clicks": 22,
+        "impressions": 4991,
+        "ctr": 0.004407934281707073,
+        "position": 17.105189340813464
+      },
+      {
+        "keys": [
+          "https://blueparrotschool.com/landing/guia-aptis-para-oposiciones/"
+        ],
+        "clicks": 17,
+        "impressions": 1757,
+        "ctr": 0.009675583380762664,
+        "position": 13.639726807057484
+      },
+      {
+        "keys": [
+          "https://blueparrotschool.com/partes-del-examen-de-aptis/"
+        ],
+        "clicks": 17,
+        "impressions": 2358,
+        "ctr": 0.00720949957591179,
+        "position": 10.638676844783715
+      },
+      {
+        "keys": [
+          "https://blueparrotschool.com/que-es-aptis/"
+        ],
+        "clicks": 10,
+        "impressions": 10040,
+        "ctr": 0.00099601593625498,
+        "position": 46.85378486055777
+      },
+      {
+        "keys": [
+          "https://blueparrotschool.com/landing/listening-aptis-ebook/"
+        ],
+        "clicks": 9,
+        "impressions": 624,
+        "ctr": 0.014423076923076924,
+        "position": 12.383012820512821
+      },
+      {
+        "keys": [
+          "https://blueparrotschool.com/landing/speaking-aptis-ebook/"
+        ],
+        "clicks": 6,
+        "impressions": 564,
+        "ctr": 0.010638297872340425,
+        "position": 12.01063829787234
+      },
+      {
+        "keys": [
+          "https://blueparrotschool.com/aptis-oposiciones/"
+        ],
+        "clicks": 2,
+        "impressions": 1119,
+        "ctr": 0.0017873100983020554,
+        "position": 15.240393208221626
+      },
+      {
+        "keys": [
+          "https://blueparrotschool.com/preguntas-clave-aptis-y-cambridge/"
+        ],
+        "clicks": 2,
+        "impressions": 614,
+        "ctr": 0.003257328990228013,
+        "position": 22.596091205211728
+      },
+      {
+        "keys": [
+          "https://blueparrotschool.com/entrevista-a-un-alumno-de-aptis/"
+        ],
+        "clicks": 1,
+        "impressions": 59,
+        "ctr": 0.01694915254237288,
+        "position": 6.88135593220339
+      },
+      {
+        "keys": [
+          "https://blueparrotschool.com/landing/descubre-los-cambios-en-el-examen-de-aptis-en-2021/"
+        ],
+        "clicks": 1,
+        "impressions": 260,
+        "ctr": 0.0038461538461538464,
+        "position": 15.692307692307692
+      },
+      {
+        "keys": [
+          "https://blueparrotschool.com/product/aptis-general-b1-b2-c1-online-y-presencial-28h/"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 1
+      },
+      {
+        "keys": [
+          "https://blueparrotschool.com/prueba-nivel-aptis/"
+        ],
+        "clicks": 0,
+        "impressions": 46,
+        "ctr": 0,
+        "position": 38.02173913043478
+      },
+      {
+        "keys": [
+          "https://blueparrotschool.com/quiz/aptis-grammar/"
+        ],
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 60
+      },
+      {
+        "keys": [
+          "https://blueparrotschool.com/tag/practicar-listening-aptis/feed/"
+        ],
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0,
+        "position": 28
+      },
+      {
+        "keys": [
+          "https://blueparrotschool.com/wp-content/uploads/2021/06/guia_aptis_oposiciones_BlueParrotSchool_2021.pdf?utm_source=e-book&utm_medium=ig+live+writing+reading+aptis&utm_campaign=guia+oposiciones+aptis"
+        ],
+        "clicks": 0,
+        "impressions": 229,
+        "ctr": 0,
+        "position": 9.74235807860262
+      },
+      {
+        "keys": [
+          "https://blueparrotschool.com/wp-content/uploads/2022/04/aptis-esol.jpg"
+        ],
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0,
+        "position": 33.666666666666664
+      }
+    ]
+  },
+  "gsc_monthly_top": {
+    "https://blueparrotschool.com/practicar-gramatica-aptis-online/": [
+      {
+        "ym": "2024-09",
+        "clicks": 0,
+        "impressions": 0,
+        "ctr": 0,
+        "position": null
+      },
+      {
+        "ym": "2024-10",
+        "clicks": 0,
+        "impressions": 0,
+        "ctr": 0,
+        "position": null
+      },
+      {
+        "ym": "2024-11",
+        "clicks": 0,
+        "impressions": 0,
+        "ctr": 0,
+        "position": null
+      },
+      {
+        "ym": "2024-12",
+        "clicks": 0,
+        "impressions": 0,
+        "ctr": 0,
+        "position": null
+      },
+      {
+        "ym": "2025-01",
+        "clicks": 0,
+        "impressions": 0,
+        "ctr": 0,
+        "position": null
+      },
+      {
+        "ym": "2025-02",
+        "clicks": 0,
+        "impressions": 0,
+        "ctr": 0,
+        "position": null
+      },
+      {
+        "ym": "2025-03",
+        "clicks": 0,
+        "impressions": 0,
+        "ctr": 0,
+        "position": null
+      },
+      {
+        "ym": "2025-04",
+        "clicks": 112,
+        "impressions": 1100,
+        "ctr": 0.10181818181818182,
+        "position": 11.870909090909091
+      },
+      {
+        "ym": "2025-05",
+        "clicks": 267,
+        "impressions": 3005,
+        "ctr": 0.08885191347753743,
+        "position": 16.494176372712147
+      },
+      {
+        "ym": "2025-06",
+        "clicks": 260,
+        "impressions": 3552,
+        "ctr": 0.0731981981981982,
+        "position": 13.830236486486486
+      },
+      {
+        "ym": "2025-07",
+        "clicks": 280,
+        "impressions": 4014,
+        "ctr": 0.06975585450921774,
+        "position": 14.14050822122571
+      },
+      {
+        "ym": "2025-08",
+        "clicks": 276,
+        "impressions": 3887,
+        "ctr": 0.07100591715976332,
+        "position": 13.465397478775404
+      },
+      {
+        "ym": "2025-09",
+        "clicks": 290,
+        "impressions": 4369,
+        "ctr": 0.06637674525062943,
+        "position": 10.212176699473563
+      },
+      {
+        "ym": "2025-10",
+        "clicks": 273,
+        "impressions": 3826,
+        "ctr": 0.07135389440669106,
+        "position": 8.012807109252483
+      },
+      {
+        "ym": "2025-11",
+        "clicks": 268,
+        "impressions": 4029,
+        "ctr": 0.06651774633904195,
+        "position": 8.923306031273269
+      },
+      {
+        "ym": "2025-12",
+        "clicks": 221,
+        "impressions": 3244,
+        "ctr": 0.06812577065351418,
+        "position": 13.3942663378545
+      },
+      {
+        "ym": "2026-01",
+        "clicks": 256,
+        "impressions": 3532,
+        "ctr": 0.072480181200453,
+        "position": 9.69026047565119
+      },
+      {
+        "ym": "2026-02",
+        "clicks": 295,
+        "impressions": 3858,
+        "ctr": 0.07646448937273198,
+        "position": 8.988076723691032
+      },
+      {
+        "ym": "2026-03",
+        "clicks": 244,
+        "impressions": 3217,
+        "ctr": 0.07584706248057196,
+        "position": 9.967982592477464
+      },
+      {
+        "ym": "2026-04",
+        "clicks": 246,
+        "impressions": 4082,
+        "ctr": 0.060264576188143064,
+        "position": 11.58672219500245
+      },
+      {
+        "ym": "2026-05",
+        "clicks": 226,
+        "impressions": 4423,
+        "ctr": 0.05109654080940538,
+        "position": 12.54759213203708
+      },
+      {
+        "ym": "2026-06",
+        "clicks": 206,
+        "impressions": 4650,
+        "ctr": 0.04430107526881721,
+        "position": 9.684301075268817
+      },
+      {
+        "ym": "2026-07",
+        "clicks": 179,
+        "impressions": 4277,
+        "ctr": 0.04185176525602057,
+        "position": 11.045592705167174
+      },
+      {
+        "ym": "2026-08",
+        "clicks": 126,
+        "impressions": 2502,
+        "ctr": 0.050359712230215826,
+        "position": 8.995203836930456
+      }
+    ],
+    "https://blueparrotschool.com/test-aptis-online-conoce-tu-nivel/": [
+      {
+        "ym": "2024-09",
+        "clicks": 0,
+        "impressions": 0,
+        "ctr": 0,
+        "position": null
+      },
+      {
+        "ym": "2024-10",
+        "clicks": 0,
+        "impressions": 0,
+        "ctr": 0,
+        "position": null
+      },
+      {
+        "ym": "2024-11",
+        "clicks": 0,
+        "impressions": 0,
+        "ctr": 0,
+        "position": null
+      },
+      {
+        "ym": "2024-12",
+        "clicks": 0,
+        "impressions": 0,
+        "ctr": 0,
+        "position": null
+      },
+      {
+        "ym": "2025-01",
+        "clicks": 0,
+        "impressions": 0,
+        "ctr": 0,
+        "position": null
+      },
+      {
+        "ym": "2025-02",
+        "clicks": 0,
+        "impressions": 0,
+        "ctr": 0,
+        "position": null
+      },
+      {
+        "ym": "2025-03",
+        "clicks": 0,
+        "impressions": 0,
+        "ctr": 0,
+        "position": null
+      },
+      {
+        "ym": "2025-04",
+        "clicks": 75,
+        "impressions": 2715,
+        "ctr": 0.027624309392265192,
+        "position": 22.28950276243094
+      },
+      {
+        "ym": "2025-05",
+        "clicks": 236,
+        "impressions": 7188,
+        "ctr": 0.032832498608792435,
+        "position": 23.061769616026712
+      },
+      {
+        "ym": "2025-06",
+        "clicks": 235,
+        "impressions": 7836,
+        "ctr": 0.029989790709545685,
+        "position": 22.46784073506891
+      },
+      {
+        "ym": "2025-07",
+        "clicks": 314,
+        "impressions": 7637,
+        "ctr": 0.04111562131727118,
+        "position": 21.576797171664268
+      },
+      {
+        "ym": "2025-08",
+        "clicks": 278,
+        "impressions": 8567,
+        "ctr": 0.03245009921792926,
+        "position": 21.667444846504026
+      },
+      {
+        "ym": "2025-09",
+        "clicks": 478,
+        "impressions": 8870,
+        "ctr": 0.053889515219842164,
+        "position": 14.902254791431792
+      },
+      {
+        "ym": "2025-10",
+        "clicks": 348,
+        "impressions": 7632,
+        "ctr": 0.04559748427672956,
+        "position": 14.951912997903564
+      },
+      {
+        "ym": "2025-11",
+        "clicks": 347,
+        "impressions": 9118,
+        "ctr": 0.0380565913577539,
+        "position": 16.494955033998686
+      },
+      {
+        "ym": "2025-12",
+        "clicks": 265,
+        "impressions": 9820,
+        "ctr": 0.0269857433808554,
+        "position": 19.1071283095723
+      },
+      {
+        "ym": "2026-01",
+        "clicks": 375,
+        "impressions": 10930,
+        "ctr": 0.0343092406221409,
+        "position": 16.730558096980786
+      },
+      {
+        "ym": "2026-02",
+        "clicks": 436,
+        "impressions": 10834,
+        "ctr": 0.0402436773121654,
+        "position": 15.488000738416098
+      },
+      {
+        "ym": "2026-03",
+        "clicks": 407,
+        "impressions": 9879,
+        "ctr": 0.04119850187265917,
+        "position": 13.97530114384047
+      },
+      {
+        "ym": "2026-04",
+        "clicks": 287,
+        "impressions": 9142,
+        "ctr": 0.03139356814701378,
+        "position": 21.506781885801793
+      },
+      {
+        "ym": "2026-05",
+        "clicks": 251,
+        "impressions": 9902,
+        "ctr": 0.025348414461724905,
+        "position": 21.67360129266815
+      },
+      {
+        "ym": "2026-06",
+        "clicks": 267,
+        "impressions": 10513,
+        "ctr": 0.025397127366118138,
+        "position": 18.286978027204412
+      },
+      {
+        "ym": "2026-07",
+        "clicks": 231,
+        "impressions": 9982,
+        "ctr": 0.02314165497896213,
+        "position": 18.943097575636145
+      },
+      {
+        "ym": "2026-08",
+        "clicks": 141,
+        "impressions": 7079,
+        "ctr": 0.019918067523661535,
+        "position": 18.63073880491595
+      }
+    ],
+    "https://blueparrotschool.com/clases-online-presencial/clases-ingles/intensivo/aptis/": [
+      {
+        "ym": "2024-09",
+        "clicks": 0,
+        "impressions": 0,
+        "ctr": 0,
+        "position": null
+      },
+      {
+        "ym": "2024-10",
+        "clicks": 0,
+        "impressions": 0,
+        "ctr": 0,
+        "position": null
+      },
+      {
+        "ym": "2024-11",
+        "clicks": 0,
+        "impressions": 0,
+        "ctr": 0,
+        "position": null
+      },
+      {
+        "ym": "2024-12",
+        "clicks": 0,
+        "impressions": 0,
+        "ctr": 0,
+        "position": null
+      },
+      {
+        "ym": "2025-01",
+        "clicks": 0,
+        "impressions": 0,
+        "ctr": 0,
+        "position": null
+      },
+      {
+        "ym": "2025-02",
+        "clicks": 0,
+        "impressions": 0,
+        "ctr": 0,
+        "position": null
+      },
+      {
+        "ym": "2025-03",
+        "clicks": 0,
+        "impressions": 0,
+        "ctr": 0,
+        "position": null
+      },
+      {
+        "ym": "2025-04",
+        "clicks": 42,
+        "impressions": 2936,
+        "ctr": 0.01430517711171662,
+        "position": 12.771117166212534
+      },
+      {
+        "ym": "2025-05",
+        "clicks": 104,
+        "impressions": 7519,
+        "ctr": 0.013831626546083256,
+        "position": 12.618034313073547
+      },
+      {
+        "ym": "2025-06",
+        "clicks": 145,
+        "impressions": 9351,
+        "ctr": 0.0155063629558336,
+        "position": 11.117206715859266
+      },
+      {
+        "ym": "2025-07",
+        "clicks": 158,
+        "impressions": 9544,
+        "ctr": 0.01655490360435876,
+        "position": 10.5697820620285
+      },
+      {
+        "ym": "2025-08",
+        "clicks": 87,
+        "impressions": 5791,
+        "ctr": 0.015023312035917804,
+        "position": 11.439993092730099
+      },
+      {
+        "ym": "2025-09",
+        "clicks": 148,
+        "impressions": 9699,
+        "ctr": 0.015259305082998248,
+        "position": 10.087431693989071
+      },
+      {
+        "ym": "2025-10",
+        "clicks": 63,
+        "impressions": 4641,
+        "ctr": 0.013574660633484163,
+        "position": 14.198448610213315
+      },
+      {
+        "ym": "2025-11",
+        "clicks": 23,
+        "impressions": 2641,
+        "ctr": 0.00870882241575161,
+        "position": 17.166603559257858
+      },
+      {
+        "ym": "2025-12",
+        "clicks": 29,
+        "impressions": 3156,
+        "ctr": 0.009188846641318124,
+        "position": 16.641318124207856
+      },
+      {
+        "ym": "2026-01",
+        "clicks": 34,
+        "impressions": 3674,
+        "ctr": 0.009254218835057159,
+        "position": 14.937397931409908
+      },
+      {
+        "ym": "2026-02",
+        "clicks": 30,
+        "impressions": 3461,
+        "ctr": 0.008668015024559377,
+        "position": 13.299046518347298
+      },
+      {
+        "ym": "2026-03",
+        "clicks": 32,
+        "impressions": 3271,
+        "ctr": 0.009782940996637114,
+        "position": 12.230510547233262
+      },
+      {
+        "ym": "2026-04",
+        "clicks": 31,
+        "impressions": 2494,
+        "ctr": 0.012429831595829992,
+        "position": 14.766238973536488
+      },
+      {
+        "ym": "2026-05",
+        "clicks": 26,
+        "impressions": 2175,
+        "ctr": 0.011954022988505748,
+        "position": 18.96505747126437
+      },
+      {
+        "ym": "2026-06",
+        "clicks": 26,
+        "impressions": 2820,
+        "ctr": 0.009219858156028368,
+        "position": 17.10177304964539
+      },
+      {
+        "ym": "2026-07",
+        "clicks": 25,
+        "impressions": 2530,
+        "ctr": 0.009881422924901186,
+        "position": 15.99090909090909
+      },
+      {
+        "ym": "2026-08",
+        "clicks": 13,
+        "impressions": 1738,
+        "ctr": 0.007479861910241657,
+        "position": 22.155926352128883
+      }
+    ]
+  }
+}

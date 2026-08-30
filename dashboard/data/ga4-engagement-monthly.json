@@ -1,0 +1,191 @@
+[
+  {
+    "yearMonth": "202412",
+    "sessions": "7980",
+    "engagementRate": "0.59060150375939846",
+    "bounceRate": "0.40939849624060148",
+    "averageSessionDuration": "180.51276398057647",
+    "screenPageViewsPerSession": "1.638095238095238",
+    "ecommercePurchases": "54"
+  },
+  {
+    "yearMonth": "202501",
+    "sessions": "12616",
+    "engagementRate": "0.61968928344958785",
+    "bounceRate": "0.38031071655041215",
+    "averageSessionDuration": "188.23767010724475",
+    "screenPageViewsPerSession": "1.7520608750792643",
+    "ecommercePurchases": "96"
+  },
+  {
+    "yearMonth": "202502",
+    "sessions": "10627",
+    "engagementRate": "0.65625294062294159",
+    "bounceRate": "0.34374705937705846",
+    "averageSessionDuration": "203.32825691427493",
+    "screenPageViewsPerSession": "1.8006963395125624",
+    "ecommercePurchases": "83"
+  },
+  {
+    "yearMonth": "202503",
+    "sessions": "13712",
+    "engagementRate": "0.63623103850641771",
+    "bounceRate": "0.36376896149358229",
+    "averageSessionDuration": "213.98182328566219",
+    "screenPageViewsPerSession": "1.8161464410735122",
+    "ecommercePurchases": "188"
+  },
+  {
+    "yearMonth": "202504",
+    "sessions": "9020",
+    "engagementRate": "0.64445676274944563",
+    "bounceRate": "0.35554323725055431",
+    "averageSessionDuration": "198.38203039611977",
+    "screenPageViewsPerSession": "1.6797117516629712",
+    "ecommercePurchases": "75"
+  },
+  {
+    "yearMonth": "202505",
+    "sessions": "10067",
+    "engagementRate": "0.6476606734876329",
+    "bounceRate": "0.35233932651236716",
+    "averageSessionDuration": "211.17484800894005",
+    "screenPageViewsPerSession": "1.7366643488626203",
+    "ecommercePurchases": "106"
+  },
+  {
+    "yearMonth": "202506",
+    "sessions": "10922",
+    "engagementRate": "0.68403222852957335",
+    "bounceRate": "0.31596777147042665",
+    "averageSessionDuration": "224.6376064805896",
+    "screenPageViewsPerSession": "1.8466398095586889",
+    "ecommercePurchases": "144"
+  },
+  {
+    "yearMonth": "202507",
+    "sessions": "9645",
+    "engagementRate": "0.65806117159149824",
+    "bounceRate": "0.34193882840850182",
+    "averageSessionDuration": "210.60587735303267",
+    "screenPageViewsPerSession": "1.8945567651632971",
+    "ecommercePurchases": "210"
+  },
+  {
+    "yearMonth": "202508",
+    "sessions": "7383",
+    "engagementRate": "0.66287417039143981",
+    "bounceRate": "0.33712582960856019",
+    "averageSessionDuration": "210.24586768590004",
+    "screenPageViewsPerSession": "1.9585534335635921",
+    "ecommercePurchases": "107"
+  },
+  {
+    "yearMonth": "202509",
+    "sessions": "10412",
+    "engagementRate": "0.67979254706108339",
+    "bounceRate": "0.32020745293891661",
+    "averageSessionDuration": "234.71481491893971",
+    "screenPageViewsPerSession": "2.0767383787936997",
+    "ecommercePurchases": "131"
+  },
+  {
+    "yearMonth": "202510",
+    "sessions": "9850",
+    "engagementRate": "0.61563451776649747",
+    "bounceRate": "0.38436548223350253",
+    "averageSessionDuration": "210.25310592487313",
+    "screenPageViewsPerSession": "1.7960406091370558",
+    "ecommercePurchases": "97"
+  },
+  {
+    "yearMonth": "202511",
+    "sessions": "8228",
+    "engagementRate": "0.5752309188138065",
+    "bounceRate": "0.4247690811861935",
+    "averageSessionDuration": "184.69332462165778",
+    "screenPageViewsPerSession": "1.7060038891589693",
+    "ecommercePurchases": "69"
+  },
+  {
+    "yearMonth": "202512",
+    "sessions": "6054",
+    "engagementRate": "0.57895606210769734",
+    "bounceRate": "0.4210439378923026",
+    "averageSessionDuration": "187.15552169772056",
+    "screenPageViewsPerSession": "1.6643541460191609",
+    "ecommercePurchases": "35"
+  },
+  {
+    "yearMonth": "202601",
+    "sessions": "9841",
+    "engagementRate": "0.58327405751448025",
+    "bounceRate": "0.41672594248551975",
+    "averageSessionDuration": "200.60558879239912",
+    "screenPageViewsPerSession": "1.8404633675439488",
+    "ecommercePurchases": "90"
+  },
+  {
+    "yearMonth": "202602",
+    "sessions": "8980",
+    "engagementRate": "0.55734966592427615",
+    "bounceRate": "0.44265033407572385",
+    "averageSessionDuration": "177.07984787750556",
+    "screenPageViewsPerSession": "1.6625835189309577",
+    "ecommercePurchases": "51"
+  },
+  {
+    "yearMonth": "202603",
+    "sessions": "6372",
+    "engagementRate": "0.58804143126177022",
+    "bounceRate": "0.41195856873822978",
+    "averageSessionDuration": "218.18552961079726",
+    "screenPageViewsPerSession": "1.8731952291274325",
+    "ecommercePurchases": "58"
+  },
+  {
+    "yearMonth": "202604",
+    "sessions": "4915",
+    "engagementRate": "0.55401831129196333",
+    "bounceRate": "0.44598168870803662",
+    "averageSessionDuration": "167.47482934282806",
+    "screenPageViewsPerSession": "1.7574771108850458",
+    "ecommercePurchases": "31"
+  },
+  {
+    "yearMonth": "202605",
+    "sessions": "5666",
+    "engagementRate": "0.58489234027532655",
+    "bounceRate": "0.41510765972467351",
+    "averageSessionDuration": "201.16504686586651",
+    "screenPageViewsPerSession": "1.8427462054359336",
+    "ecommercePurchases": "38"
+  },
+  {
+    "yearMonth": "202606",
+    "sessions": "6772",
+    "engagementRate": "0.57604843473124634",
+    "bounceRate": "0.42395156526875372",
+    "averageSessionDuration": "209.26547235617244",
+    "screenPageViewsPerSession": "1.9354695806261075",
+    "ecommercePurchases": "51"
+  },
+  {
+    "yearMonth": "202607",
+    "sessions": "7267",
+    "engagementRate": "0.55373606715288293",
+    "bounceRate": "0.44626393284711713",
+    "averageSessionDuration": "200.49334886858406",
+    "screenPageViewsPerSession": "2.0181643043897068",
+    "ecommercePurchases": "90"
+  },
+  {
+    "yearMonth": "202608",
+    "sessions": "5637",
+    "engagementRate": "0.510732659215895",
+    "bounceRate": "0.489267340784105",
+    "averageSessionDuration": "173.46905521341139",
+    "screenPageViewsPerSession": "1.895156998403406",
+    "ecommercePurchases": "52"
+  }
+]

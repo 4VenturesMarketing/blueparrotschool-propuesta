@@ -1,0 +1,4863 @@
+{
+  "built_at": "2026-08-30T00:22:10",
+  "account": "act_414283212550847",
+  "periods": {
+    "sy-2024-25": [
+      "2024-09-01",
+      "2025-08-31"
+    ],
+    "sy-2025-26": [
+      "2025-09-01",
+      "2026-08-27"
+    ]
+  },
+  "insights": {
+    "sy-2024-25": [
+      {
+        "campaign_id": "120216104603100233",
+        "campaign_name": "CBO | CP 2026 | CERTIFICADOS",
+        "spend": 12640.19,
+        "impressions": 3267914.0,
+        "reach": 553296.0,
+        "clicks": 22062.0,
+        "cpc": 0.572939,
+        "ctr": 0.67511,
+        "leads_platform": 2277.0,
+        "purchases_platform": 217.0,
+        "cpl": 5.551247255160299
+      },
+      {
+        "campaign_id": "120228262529280233",
+        "campaign_name": "CBO | CP | 2026",
+        "spend": 3017.51,
+        "impressions": 568246.0,
+        "reach": 193028.0,
+        "clicks": 6091.0,
+        "cpc": 0.495405,
+        "ctr": 1.071895,
+        "leads_platform": 665.0,
+        "purchases_platform": 39.0,
+        "cpl": 4.537609022556391
+      },
+      {
+        "campaign_id": "120228310509640233",
+        "campaign_name": "CBO | CP | CAMBRIDGE | Junio 2025",
+        "spend": 2831.81,
+        "impressions": 529945.0,
+        "reach": 199097.0,
+        "clicks": 5219.0,
+        "cpc": 0.542596,
+        "ctr": 0.984819,
+        "leads_platform": 603.0,
+        "purchases_platform": 14.0,
+        "cpl": 4.6962023217247095
+      },
+      {
+        "campaign_id": "120211728398350233",
+        "campaign_name": "Erasmus MOFU | Conversión",
+        "spend": 2785.84,
+        "impressions": 788224.0,
+        "reach": 103975.0,
+        "clicks": 3711.0,
+        "cpc": 0.750698,
+        "ctr": 0.470805,
+        "leads_platform": 45.0,
+        "purchases_platform": 84.0,
+        "cpl": 61.90755555555556
+      },
+      {
+        "campaign_id": "120214037731010233",
+        "campaign_name": "Black Friday",
+        "spend": 1983.72,
+        "impressions": 266789.0,
+        "reach": 63929.0,
+        "clicks": 1358.0,
+        "cpc": 1.460766,
+        "ctr": 0.509016,
+        "leads_platform": 13.0,
+        "purchases_platform": 24.0,
+        "cpl": 152.59384615384616
+      },
+      {
+        "campaign_id": "120211728294960233",
+        "campaign_name": "TOFU | Conversión Aptis",
+        "spend": 1883.58,
+        "impressions": 442703.0,
+        "reach": 164977.0,
+        "clicks": 3122.0,
+        "cpc": 0.603325,
+        "ctr": 0.705213,
+        "leads_platform": 43.0,
+        "purchases_platform": 30.0,
+        "cpl": 43.804186046511624
+      },
+      {
+        "campaign_id": "120214769012380233",
+        "campaign_name": "Matrículas 2025",
+        "spend": 1425.91,
+        "impressions": 444503.0,
+        "reach": 141198.0,
+        "clicks": 2355.0,
+        "cpc": 0.605482,
+        "ctr": 0.529805,
+        "leads_platform": 10.0,
+        "purchases_platform": 12.0,
+        "cpl": 142.591
+      },
+      {
+        "campaign_id": "120228310818010233",
+        "campaign_name": "CBO | CP | OPOSICIONES | Junio 2025",
+        "spend": 1377.89,
+        "impressions": 142755.0,
+        "reach": 67845.0,
+        "clicks": 1953.0,
+        "cpc": 0.705525,
+        "ctr": 1.368078,
+        "leads_platform": 216.0,
+        "purchases_platform": 13.0,
+        "cpl": 6.379120370370371
+      },
+      {
+        "campaign_id": "120211024043320233",
+        "campaign_name": "Tráfico Frío - Cambridge",
+        "spend": 1373.0,
+        "impressions": 273766.0,
+        "reach": 101757.0,
+        "clicks": 2349.0,
+        "cpc": 0.584504,
+        "ctr": 0.858032,
+        "leads_platform": 30.0,
+        "purchases_platform": 40.0,
+        "cpl": 45.766666666666666
+      },
+      {
+        "campaign_id": "120214615173830233",
+        "campaign_name": "Descuento Enero 2025",
+        "spend": 1009.56,
+        "impressions": 160691.0,
+        "reach": 28976.0,
+        "clicks": 1009.0,
+        "cpc": 1.000555,
+        "ctr": 0.627913,
+        "leads_platform": 40.0,
+        "purchases_platform": 19.0,
+        "cpl": 25.238999999999997
+      },
+      {
+        "campaign_id": "120218372687950233",
+        "campaign_name": "Reel Instagram",
+        "spend": 977.48,
+        "impressions": 379598.0,
+        "reach": 179213.0,
+        "clicks": 8213.0,
+        "cpc": 0.119016,
+        "ctr": 2.163605,
+        "leads_platform": 2.0,
+        "purchases_platform": 1.0,
+        "cpl": 488.74
+      },
+      {
+        "campaign_id": "120228228755530233",
+        "campaign_name": "Clientes potenciales Academias Junio 2025",
+        "spend": 975.15,
+        "impressions": 55134.0,
+        "reach": 24645.0,
+        "clicks": 936.0,
+        "cpc": 1.041827,
+        "ctr": 1.697682,
+        "leads_platform": 128.0,
+        "purchases_platform": 1.0,
+        "cpl": 7.618359375
+      },
+      {
+        "campaign_id": "120215668269060233",
+        "campaign_name": "Clientes potenciales Enero 2025",
+        "spend": 819.76,
+        "impressions": 227385.0,
+        "reach": 94782.0,
+        "clicks": 1775.0,
+        "cpc": 0.461837,
+        "ctr": 0.780614,
+        "leads_platform": 156.0,
+        "purchases_platform": 19.0,
+        "cpl": 5.254871794871795
+      },
+      {
+        "campaign_id": "120217071915250233",
+        "campaign_name": "Campaña Reconocimiento Academias",
+        "spend": 818.11,
+        "impressions": 2253281.0,
+        "reach": 1123193.0,
+        "clicks": 2455.0,
+        "cpc": 0.333242,
+        "ctr": 0.108952,
+        "leads_platform": 0.0,
+        "purchases_platform": 1.0,
+        "cpl": null
+      },
+      {
+        "campaign_id": "120228311798450233",
+        "campaign_name": "CBO | CP | PLATAFORMA | Junio 2025",
+        "spend": 803.42,
+        "impressions": 55180.0,
+        "reach": 27493.0,
+        "clicks": 1017.0,
+        "cpc": 0.78999,
+        "ctr": 1.843059,
+        "leads_platform": 153.0,
+        "purchases_platform": 6.0,
+        "cpl": 5.251111111111111
+      },
+      {
+        "campaign_id": "120211658774600233",
+        "campaign_name": "TOFU | Tráfico a IG",
+        "spend": 650.18,
+        "impressions": 454324.0,
+        "reach": 263743.0,
+        "clicks": 9771.0,
+        "cpc": 0.066542,
+        "ctr": 2.150668,
+        "leads_platform": 0.0,
+        "purchases_platform": 1.0,
+        "cpl": null
+      },
+      {
+        "campaign_id": "120212152301550233",
+        "campaign_name": "BOFU | Conversión",
+        "spend": 631.62,
+        "impressions": 85594.0,
+        "reach": 1839.0,
+        "clicks": 465.0,
+        "cpc": 1.358323,
+        "ctr": 0.543262,
+        "leads_platform": 17.0,
+        "purchases_platform": 20.0,
+        "cpl": 37.154117647058825
+      },
+      {
+        "campaign_id": "120213951404760233",
+        "campaign_name": "TOFU y MOFU | Whatsapp",
+        "spend": 612.09,
+        "impressions": 236368.0,
+        "reach": 98795.0,
+        "clicks": 4499.0,
+        "cpc": 0.13605,
+        "ctr": 1.903388,
+        "leads_platform": 1.0,
+        "purchases_platform": 0.0,
+        "cpl": 612.09
+      },
+      {
+        "campaign_id": "120209131615220233",
+        "campaign_name": "Tráfico Frío - Aptis doble",
+        "spend": 597.71,
+        "impressions": 88391.0,
+        "reach": 30805.0,
+        "clicks": 1204.0,
+        "cpc": 0.496437,
+        "ctr": 1.36213,
+        "leads_platform": 9.0,
+        "purchases_platform": 10.0,
+        "cpl": 66.41222222222223
+      },
+      {
+        "campaign_id": "120219420672260233",
+        "campaign_name": "Tráfico Captación Profesores - CP",
+        "spend": 532.36,
+        "impressions": 103339.0,
+        "reach": 27463.0,
+        "clicks": 4042.0,
+        "cpc": 0.131707,
+        "ctr": 3.911398,
+        "leads_platform": 682.0,
+        "purchases_platform": 0.0,
+        "cpl": 0.7805865102639297
+      },
+      {
+        "campaign_id": "120211981898700233",
+        "campaign_name": "TOFU | Whatsapp",
+        "spend": 397.8,
+        "impressions": 716204.0,
+        "reach": 127283.0,
+        "clicks": 3772.0,
+        "cpc": 0.105461,
+        "ctr": 0.526666,
+        "leads_platform": 1.0,
+        "purchases_platform": 0.0,
+        "cpl": 397.8
+      },
+      {
+        "campaign_id": "120228311332400233",
+        "campaign_name": "CBO | CP | ERASMUS | Junio 2025",
+        "spend": 366.8,
+        "impressions": 28503.0,
+        "reach": 16480.0,
+        "clicks": 248.0,
+        "cpc": 1.479032,
+        "ctr": 0.870084,
+        "leads_platform": 19.0,
+        "purchases_platform": 11.0,
+        "cpl": 19.30526315789474
+      },
+      {
+        "campaign_id": "120212000323890233",
+        "campaign_name": "MOFU | Whatsapp",
+        "spend": 253.24,
+        "impressions": 78927.0,
+        "reach": 7900.0,
+        "clicks": 875.0,
+        "cpc": 0.289417,
+        "ctr": 1.108619,
+        "leads_platform": 0.0,
+        "purchases_platform": 0.0,
+        "cpl": null
+      },
+      {
+        "campaign_id": "120232711496720233",
+        "campaign_name": "CBO | CP 2026 | ACADEMIAS",
+        "spend": 205.99,
+        "impressions": 24295.0,
+        "reach": 13710.0,
+        "clicks": 290.0,
+        "cpc": 0.71031,
+        "ctr": 1.193661,
+        "leads_platform": 25.0,
+        "purchases_platform": 0.0,
+        "cpl": 8.239600000000001
+      },
+      {
+        "campaign_id": "120217082824760233",
+        "campaign_name": "Tráfico Captación Profesores",
+        "spend": 158.91,
+        "impressions": 83097.0,
+        "reach": 64866.0,
+        "clicks": 1978.0,
+        "cpc": 0.080339,
+        "ctr": 2.380351,
+        "leads_platform": 54.0,
+        "purchases_platform": 0.0,
+        "cpl": 2.9427777777777777
+      },
+      {
+        "campaign_id": "120232395282540233",
+        "campaign_name": "CBO | CP | GENERAL | 21 Agosto 2025",
+        "spend": 156.6,
+        "impressions": 20088.0,
+        "reach": 13659.0,
+        "clicks": 292.0,
+        "cpc": 0.536301,
+        "ctr": 1.453604,
+        "leads_platform": 32.0,
+        "purchases_platform": 0.0,
+        "cpl": 4.89375
+      },
+      {
+        "campaign_id": "120211049598600233",
+        "campaign_name": "Tráfico Frío - Cursos ONLINE - carrusel",
+        "spend": 146.72,
+        "impressions": 46893.0,
+        "reach": 17326.0,
+        "clicks": 381.0,
+        "cpc": 0.385092,
+        "ctr": 0.812488,
+        "leads_platform": 0.0,
+        "purchases_platform": 0.0,
+        "cpl": null
+      },
+      {
+        "campaign_id": "120211900639570233",
+        "campaign_name": "Tráfico Frío - MATRICULAS NUEVA",
+        "spend": 106.16,
+        "impressions": 18960.0,
+        "reach": 10321.0,
+        "clicks": 280.0,
+        "cpc": 0.379143,
+        "ctr": 1.476793,
+        "leads_platform": 2.0,
+        "purchases_platform": 0.0,
+        "cpl": 53.08
+      },
+      {
+        "campaign_id": "120212096245950233",
+        "campaign_name": "TOFU | Clientes potenciales",
+        "spend": 61.91,
+        "impressions": 4800.0,
+        "reach": 2920.0,
+        "clicks": 116.0,
+        "cpc": 0.533707,
+        "ctr": 2.416667,
+        "leads_platform": 3.0,
+        "purchases_platform": 0.0,
+        "cpl": 20.636666666666667
+      },
+      {
+        "campaign_id": "120212095501770233",
+        "campaign_name": "TOFU | Tráfico a Whatsapp",
+        "spend": 41.04,
+        "impressions": 13622.0,
+        "reach": 5298.0,
+        "clicks": 209.0,
+        "cpc": 0.196364,
+        "ctr": 1.534283,
+        "leads_platform": 0.0,
+        "purchases_platform": 0.0,
+        "cpl": null
+      },
+      {
+        "campaign_id": "120212095968980233",
+        "campaign_name": "MOFU | Tráfico a Whatsapp",
+        "spend": 40.07,
+        "impressions": 4457.0,
+        "reach": 1434.0,
+        "clicks": 40.0,
+        "cpc": 1.00175,
+        "ctr": 0.897465,
+        "leads_platform": 1.0,
+        "purchases_platform": 0.0,
+        "cpl": 40.07
+      },
+      {
+        "campaign_id": "120217071697870233",
+        "campaign_name": "Instagram Post Alemán 19/2/25",
+        "spend": 23.92,
+        "impressions": 16847.0,
+        "reach": 13607.0,
+        "clicks": 139.0,
+        "cpc": 0.172086,
+        "ctr": 0.825073,
+        "leads_platform": 0.0,
+        "purchases_platform": 0.0,
+        "cpl": null
+      },
+      {
+        "campaign_id": "120212272690600233",
+        "campaign_name": "Publicación de Instagram: ¿Has puesto un nivel de...",
+        "spend": 21.0,
+        "impressions": 5193.0,
+        "reach": 4709.0,
+        "clicks": 132.0,
+        "cpc": 0.159091,
+        "ctr": 2.541883,
+        "leads_platform": 0.0,
+        "purchases_platform": 0.0,
+        "cpl": null
+      },
+      {
+        "campaign_id": "120212288407780233",
+        "campaign_name": "Publicación de Instagram: ¿Quieres sonar como un...",
+        "spend": 21.0,
+        "impressions": 7184.0,
+        "reach": 6259.0,
+        "clicks": 299.0,
+        "cpc": 0.070234,
+        "ctr": 4.162027,
+        "leads_platform": 0.0,
+        "purchases_platform": 0.0,
+        "cpl": null
+      },
+      {
+        "campaign_id": "120213635055320233",
+        "campaign_name": "Publicación de Instagram: ¿Problemas con vuestras...",
+        "spend": 18.0,
+        "impressions": 4884.0,
+        "reach": 4597.0,
+        "clicks": 228.0,
+        "cpc": 0.078947,
+        "ctr": 4.668305,
+        "leads_platform": 0.0,
+        "purchases_platform": 0.0,
+        "cpl": null
+      },
+      {
+        "campaign_id": "120212627670730233",
+        "campaign_name": "Publicación de Instagram: ¿Quieres sonar más...",
+        "spend": 16.0,
+        "impressions": 2693.0,
+        "reach": 2199.0,
+        "clicks": 90.0,
+        "cpc": 0.177778,
+        "ctr": 3.341998,
+        "leads_platform": 0.0,
+        "purchases_platform": 0.0,
+        "cpl": null
+      },
+      {
+        "campaign_id": "120213634174620233",
+        "campaign_name": "Publicación de Instagram: ¡Mejora tu inglés con...",
+        "spend": 16.0,
+        "impressions": 5314.0,
+        "reach": 4504.0,
+        "clicks": 208.0,
+        "cpc": 0.076923,
+        "ctr": 3.914189,
+        "leads_platform": 0.0,
+        "purchases_platform": 0.0,
+        "cpl": null
+      },
+      {
+        "campaign_id": "120212529117070233",
+        "campaign_name": "Publicación de Instagram: ¿Cuántas veces has...",
+        "spend": 15.99,
+        "impressions": 4741.0,
+        "reach": 4340.0,
+        "clicks": 33.0,
+        "cpc": 0.484545,
+        "ctr": 0.696056,
+        "leads_platform": 0.0,
+        "purchases_platform": 0.0,
+        "cpl": null
+      },
+      {
+        "campaign_id": "120213323938300233",
+        "campaign_name": "Publicación de Instagram: ¿Intentando aprender...",
+        "spend": 14.95,
+        "impressions": 4321.0,
+        "reach": 4105.0,
+        "clicks": 184.0,
+        "cpc": 0.08125,
+        "ctr": 4.258274,
+        "leads_platform": 0.0,
+        "purchases_platform": 0.0,
+        "cpl": null
+      },
+      {
+        "campaign_id": "120213274098040233",
+        "campaign_name": "Publicación de Instagram: 💬 4 preguntas en inglés...",
+        "spend": 14.84,
+        "impressions": 3805.0,
+        "reach": 3333.0,
+        "clicks": 172.0,
+        "cpc": 0.086279,
+        "ctr": 4.520368,
+        "leads_platform": 0.0,
+        "purchases_platform": 0.0,
+        "cpl": null
+      },
+      {
+        "campaign_id": "120212313069920233",
+        "campaign_name": "Publicación de Instagram: 🍍¿Intentarías ligar en...",
+        "spend": 14.0,
+        "impressions": 4244.0,
+        "reach": 4111.0,
+        "clicks": 69.0,
+        "cpc": 0.202899,
+        "ctr": 1.625825,
+        "leads_platform": 0.0,
+        "purchases_platform": 0.0,
+        "cpl": null
+      },
+      {
+        "campaign_id": "120213431850460233",
+        "campaign_name": "Publicación de Instagram: ¿Quieres sonar más...",
+        "spend": 12.0,
+        "impressions": 2290.0,
+        "reach": 2078.0,
+        "clicks": 86.0,
+        "cpc": 0.139535,
+        "ctr": 3.755459,
+        "leads_platform": 0.0,
+        "purchases_platform": 0.0,
+        "cpl": null
+      },
+      {
+        "campaign_id": "120212801403410233",
+        "campaign_name": "Publicación de Instagram: ¿Problemas con vuestras...",
+        "spend": 11.99,
+        "impressions": 2198.0,
+        "reach": 2107.0,
+        "clicks": 74.0,
+        "cpc": 0.162027,
+        "ctr": 3.366697,
+        "leads_platform": 0.0,
+        "purchases_platform": 0.0,
+        "cpl": null
+      },
+      {
+        "campaign_id": "120212935193340233",
+        "campaign_name": "Publicación de Instagram: 💼 ¿Conoces estas...",
+        "spend": 11.99,
+        "impressions": 2528.0,
+        "reach": 2210.0,
+        "clicks": 82.0,
+        "cpc": 0.14622,
+        "ctr": 3.243671,
+        "leads_platform": 0.0,
+        "purchases_platform": 0.0,
+        "cpl": null
+      }
+    ],
+    "sy-2025-26": [
+      {
+        "campaign_id": "120216104603100233",
+        "campaign_name": "CBO | CP 2026 | CERTIFICADOS",
+        "spend": 15517.86,
+        "impressions": 2702687.0,
+        "reach": 537963.0,
+        "clicks": 24359.0,
+        "cpc": 0.637048,
+        "ctr": 0.901288,
+        "leads_platform": 2634.0,
+        "purchases_platform": 95.0,
+        "cpl": 5.891366742596811
+      },
+      {
+        "campaign_id": "120232711496720233",
+        "campaign_name": "CBO | CP 2026 | ACADEMIAS",
+        "spend": 6804.37,
+        "impressions": 1155902.0,
+        "reach": 275663.0,
+        "clicks": 9824.0,
+        "cpc": 0.692627,
+        "ctr": 0.849899,
+        "leads_platform": 1116.0,
+        "purchases_platform": 1.0,
+        "cpl": 6.097105734767025
+      },
+      {
+        "campaign_id": "120228262529280233",
+        "campaign_name": "CBO | CP | 2026",
+        "spend": 5835.86,
+        "impressions": 1104097.0,
+        "reach": 313122.0,
+        "clicks": 10970.0,
+        "cpc": 0.531984,
+        "ctr": 0.993572,
+        "leads_platform": 1162.0,
+        "purchases_platform": 85.0,
+        "cpl": 5.022254733218588
+      },
+      {
+        "campaign_id": "120228310509640233",
+        "campaign_name": "CBO | CP | CAMBRIDGE | Junio 2025",
+        "spend": 4454.8,
+        "impressions": 694609.0,
+        "reach": 232989.0,
+        "clicks": 7301.0,
+        "cpc": 0.610163,
+        "ctr": 1.051095,
+        "leads_platform": 930.0,
+        "purchases_platform": 55.0,
+        "cpl": 4.79010752688172
+      },
+      {
+        "campaign_id": "120228311798450233",
+        "campaign_name": "CBO | CP | PLATAFORMA | Junio 2025",
+        "spend": 2776.02,
+        "impressions": 338572.0,
+        "reach": 132782.0,
+        "clicks": 4741.0,
+        "cpc": 0.585535,
+        "ctr": 1.400293,
+        "leads_platform": 718.0,
+        "purchases_platform": 4.0,
+        "cpl": 3.866323119777159
+      },
+      {
+        "campaign_id": "120245520420570233",
+        "campaign_name": "A+ | CP 2026 | CERTIFICADOS-NICHOS",
+        "spend": 2374.53,
+        "impressions": 456370.0,
+        "reach": 139653.0,
+        "clicks": 3388.0,
+        "cpc": 0.700865,
+        "ctr": 0.74238,
+        "leads_platform": 285.0,
+        "purchases_platform": 5.0,
+        "cpl": 8.331684210526317
+      },
+      {
+        "campaign_id": "120240225427760233",
+        "campaign_name": "A+ | COMPRA 2026 | PLATAFORMA",
+        "spend": 2311.72,
+        "impressions": 541159.0,
+        "reach": 110394.0,
+        "clicks": 5425.0,
+        "cpc": 0.426124,
+        "ctr": 1.002478,
+        "leads_platform": 125.0,
+        "purchases_platform": 106.0,
+        "cpl": 18.493759999999998
+      },
+      {
+        "campaign_id": "120218372687950233",
+        "campaign_name": "Reel Instagram",
+        "spend": 1106.69,
+        "impressions": 462947.0,
+        "reach": 247570.0,
+        "clicks": 20086.0,
+        "cpc": 0.055098,
+        "ctr": 4.338726,
+        "leads_platform": 3.0,
+        "purchases_platform": 0.0,
+        "cpl": 368.8966666666667
+      },
+      {
+        "campaign_id": "120248429012190233",
+        "campaign_name": "A+ | CP 2026 | 1to1 + PLATAFORMA",
+        "spend": 751.13,
+        "impressions": 57663.0,
+        "reach": 21488.0,
+        "clicks": 727.0,
+        "cpc": 1.033191,
+        "ctr": 1.260774,
+        "leads_platform": 59.0,
+        "purchases_platform": 11.0,
+        "cpl": 12.731016949152542
+      },
+      {
+        "campaign_id": "120232395282540233",
+        "campaign_name": "CBO | CP | GENERAL | 21 Agosto 2025",
+        "spend": 734.33,
+        "impressions": 90075.0,
+        "reach": 55639.0,
+        "clicks": 855.0,
+        "cpc": 0.858866,
+        "ctr": 0.949209,
+        "leads_platform": 97.0,
+        "purchases_platform": 3.0,
+        "cpl": 7.570412371134021
+      },
+      {
+        "campaign_id": "120233467467780233",
+        "campaign_name": "CBO | CP | DELF | 11/9/25",
+        "spend": 530.31,
+        "impressions": 93363.0,
+        "reach": 43364.0,
+        "clicks": 1025.0,
+        "cpc": 0.517376,
+        "ctr": 1.097865,
+        "leads_platform": 110.0,
+        "purchases_platform": 7.0,
+        "cpl": 4.821
+      },
+      {
+        "campaign_id": "120228310818010233",
+        "campaign_name": "CBO | CP | OPOSICIONES | Junio 2025",
+        "spend": 458.43,
+        "impressions": 36383.0,
+        "reach": 20187.0,
+        "clicks": 683.0,
+        "cpc": 0.671201,
+        "ctr": 1.87725,
+        "leads_platform": 81.0,
+        "purchases_platform": 3.0,
+        "cpl": 5.65962962962963
+      },
+      {
+        "campaign_id": "120251020941950233",
+        "campaign_name": "CBO | CP 2026 | OTROS-IDIOMAS",
+        "spend": 331.22,
+        "impressions": 99174.0,
+        "reach": 38043.0,
+        "clicks": 1024.0,
+        "cpc": 0.323457,
+        "ctr": 1.032529,
+        "leads_platform": 135.0,
+        "purchases_platform": 1.0,
+        "cpl": 2.453481481481482
+      },
+      {
+        "campaign_id": "120219420672260233",
+        "campaign_name": "Tráfico Captación Profesores - CP",
+        "spend": 209.87,
+        "impressions": 50571.0,
+        "reach": 18019.0,
+        "clicks": 2117.0,
+        "cpc": 0.099136,
+        "ctr": 4.186194,
+        "leads_platform": 332.0,
+        "purchases_platform": 0.0,
+        "cpl": 0.6321385542168675
+      },
+      {
+        "campaign_id": "120233313497380233",
+        "campaign_name": "CBO | CP | GENERAL-VUELTA AL COLE | 7 Sept 2025",
+        "spend": 60.86,
+        "impressions": 4189.0,
+        "reach": 2911.0,
+        "clicks": 39.0,
+        "cpc": 1.560513,
+        "ctr": 0.93101,
+        "leads_platform": 4.0,
+        "purchases_platform": 0.0,
+        "cpl": 15.215
+      }
+    ]
+  },
+  "wc_by_campaign": {
+    "sy-2024-25||(sin campaña / Clientify)": {
+      "orders": 154,
+      "rev": 31529.8,
+      "forms": {
+        "Clientify · facebook-leads": 154
+      },
+      "lag_avg": 22.1,
+      "lag_med": 5
+    },
+    "sy-2025-26||(sin campaña / Clientify)": {
+      "orders": 131,
+      "rev": 29524.65,
+      "forms": {
+        "Clientify · facebook-leads": 131
+      },
+      "lag_avg": 61.1,
+      "lag_med": 7
+    },
+    "sy-2025-26||CBO | CP 2026 | CERTIFICADOS": {
+      "orders": 14,
+      "rev": 2794.65,
+      "forms": {
+        "10-Mayo-2026-OK": 14
+      },
+      "lag_avg": 5.9,
+      "lag_med": 4
+    },
+    "sy-2025-26||A+ | CP 2026 | CERTIFICADOS-NICHOS": {
+      "orders": 3,
+      "rev": 766.05,
+      "forms": {
+        "10-Mayo-2026-OK": 3
+      },
+      "lag_avg": 4.7,
+      "lag_med": 5
+    },
+    "sy-2025-26||A+ | CP 2026 | 1to1 + PLATAFORMA": {
+      "orders": 3,
+      "rev": 611.25,
+      "forms": {
+        "1to1+Plataforma-julio 2026": 2,
+        "1to1+Plataforma": 1
+      },
+      "lag_avg": 15.3,
+      "lag_med": 5
+    },
+    "sy-2025-26||CBO | CP 2026 | OTROS-IDIOMAS": {
+      "orders": 1,
+      "rev": 174.3,
+      "forms": {
+        "10-Mayo-2026-OK": 1
+      },
+      "lag_avg": 1.0,
+      "lag_med": 1
+    }
+  },
+  "wc_by_form": {
+    "sy-2024-25||Clientify · facebook-leads": {
+      "orders": 154,
+      "rev": 31529.8
+    },
+    "sy-2025-26||Clientify · facebook-leads": {
+      "orders": 131,
+      "rev": 29524.65
+    },
+    "sy-2025-26||10-Mayo-2026-OK": {
+      "orders": 18,
+      "rev": 3735.0
+    },
+    "sy-2025-26||1to1+Plataforma-julio 2026": {
+      "orders": 2,
+      "rev": 436.95
+    },
+    "sy-2025-26||1to1+Plataforma": {
+      "orders": 1,
+      "rev": 174.3
+    }
+  },
+  "campaigns": {
+    "120251020941950233": {
+      "name": "CBO | CP 2026 | OTROS-IDIOMAS",
+      "effective_status": "ACTIVE",
+      "objective": "OUTCOME_LEADS"
+    },
+    "120248429012190233": {
+      "name": "A+ | CP 2026 | 1to1 + PLATAFORMA",
+      "effective_status": "ACTIVE",
+      "objective": "OUTCOME_LEADS"
+    },
+    "120245520420570233": {
+      "name": "A+ | CP 2026 | CERTIFICADOS-NICHOS",
+      "effective_status": "ACTIVE",
+      "objective": "OUTCOME_LEADS"
+    },
+    "120240225427760233": {
+      "name": "A+ | COMPRA 2026 | PLATAFORMA",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_SALES"
+    },
+    "120233467467780233": {
+      "name": "CBO | CP | DELF | 11/9/25",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_LEADS"
+    },
+    "120233313497380233": {
+      "name": "CBO | CP | GENERAL-VUELTA AL COLE | 7 Sept 2025",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_LEADS"
+    },
+    "120232711496720233": {
+      "name": "CBO | CP 2026 | ACADEMIAS",
+      "effective_status": "ACTIVE",
+      "objective": "OUTCOME_LEADS"
+    },
+    "120232395282540233": {
+      "name": "CBO | CP | GENERAL | 21 Agosto 2025",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_LEADS"
+    },
+    "120228311798450233": {
+      "name": "CBO | CP | PLATAFORMA | Junio 2025",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_LEADS"
+    },
+    "120228311332400233": {
+      "name": "CBO | CP | ERASMUS | Junio 2025",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_LEADS"
+    },
+    "120228310818010233": {
+      "name": "CBO | CP | OPOSICIONES | Junio 2025",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_LEADS"
+    },
+    "120228310509640233": {
+      "name": "CBO | CP | CAMBRIDGE | Junio 2025",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_LEADS"
+    },
+    "120228262529280233": {
+      "name": "CBO | CP | 2026",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_LEADS"
+    },
+    "120228262021920233": {
+      "name": "Clientes potenciales Junio 2025",
+      "effective_status": "ARCHIVED",
+      "objective": "OUTCOME_LEADS"
+    },
+    "120228228755530233": {
+      "name": "Clientes potenciales Academias Junio 2025",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_LEADS"
+    },
+    "120219420672260233": {
+      "name": "Tráfico Captación Profesores - CP",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_LEADS"
+    },
+    "120218372687950233": {
+      "name": "Reel Instagram",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_TRAFFIC"
+    },
+    "120217082824760233": {
+      "name": "Tráfico Captación Profesores",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_TRAFFIC"
+    },
+    "120217071915250233": {
+      "name": "Campaña Reconocimiento Academias",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_AWARENESS"
+    },
+    "120217071697870233": {
+      "name": "Instagram Post Alemán 19/2/25",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_TRAFFIC"
+    },
+    "120216104603100233": {
+      "name": "CBO | CP 2026 | CERTIFICADOS",
+      "effective_status": "ACTIVE",
+      "objective": "OUTCOME_LEADS"
+    },
+    "120215668269060233": {
+      "name": "Clientes potenciales Enero 2025",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_LEADS"
+    },
+    "120214769012380233": {
+      "name": "Matrículas 2025",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_SALES"
+    },
+    "120214615173830233": {
+      "name": "Descuento Enero 2025",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_SALES"
+    },
+    "120214037731010233": {
+      "name": "Black Friday",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_SALES"
+    },
+    "120213951404760233": {
+      "name": "TOFU y MOFU | Whatsapp",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_ENGAGEMENT"
+    },
+    "120213635055320233": {
+      "name": "Publicación de Instagram: ¿Problemas con vuestras...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "120213634174620233": {
+      "name": "Publicación de Instagram: ¡Mejora tu inglés con...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "120213431850460233": {
+      "name": "Publicación de Instagram: ¿Quieres sonar más...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "120213323938300233": {
+      "name": "Publicación de Instagram: ¿Intentando aprender...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "120213274098040233": {
+      "name": "Publicación de Instagram: 💬 4 preguntas en inglés...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "120212935193340233": {
+      "name": "Publicación de Instagram: 💼 ¿Conoces estas...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "120212801403410233": {
+      "name": "Publicación de Instagram: ¿Problemas con vuestras...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "120212627670730233": {
+      "name": "Publicación de Instagram: ¿Quieres sonar más...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "120212529117070233": {
+      "name": "Publicación de Instagram: ¿Cuántas veces has...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "120212313069920233": {
+      "name": "Publicación de Instagram: 🍍¿Intentarías ligar en...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "120212288407780233": {
+      "name": "Publicación de Instagram: ¿Quieres sonar como un...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "120212272690600233": {
+      "name": "Publicación de Instagram: ¿Has puesto un nivel de...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "120212152301550233": {
+      "name": "BOFU | Conversión",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_SALES"
+    },
+    "120212096245950233": {
+      "name": "TOFU | Clientes potenciales",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_LEADS"
+    },
+    "120212095968980233": {
+      "name": "MOFU | Tráfico a Whatsapp",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_TRAFFIC"
+    },
+    "120212095501770233": {
+      "name": "TOFU | Tráfico a Whatsapp",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_TRAFFIC"
+    },
+    "120212000323890233": {
+      "name": "MOFU | Whatsapp",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_ENGAGEMENT"
+    },
+    "120211981898700233": {
+      "name": "TOFU | Whatsapp",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_ENGAGEMENT"
+    },
+    "120211903935560233": {
+      "name": "Publicación de Instagram: ¿Conoces la tendencia...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "120211900639570233": {
+      "name": "Tráfico Frío - MATRICULAS NUEVA",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_SALES"
+    },
+    "120211728398350233": {
+      "name": "Erasmus MOFU | Conversión",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_SALES"
+    },
+    "120211728294960233": {
+      "name": "TOFU | Conversión Aptis",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_SALES"
+    },
+    "120211723930740233": {
+      "name": "Publicación de Instagram: ¿Listo para hablar...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "120211658774600233": {
+      "name": "TOFU | Tráfico a IG",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_TRAFFIC"
+    },
+    "120211656000220233": {
+      "name": "Publicación de Instagram: ¿Cómo se dice 'porque...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "120211633439610233": {
+      "name": "Publicación de Instagram: 🎉Hoy te traemos 3...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "120211614766320233": {
+      "name": "Publicación de Instagram: ¡PREPÁRATE PARA EL...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "120211611767070233": {
+      "name": "Publicación de Instagram: ¿Quieres dominar el...",
+      "effective_status": "ARCHIVED",
+      "objective": "LINK_CLICKS"
+    },
+    "120211610304430233": {
+      "name": "Publicación de Instagram: ¿Quieres dominar el...",
+      "effective_status": "ARCHIVED",
+      "objective": "MESSAGES"
+    },
+    "120211589333200233": {
+      "name": "Publicación de Instagram: 📺 Mejora tu listening...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "120211556593660233": {
+      "name": "Publicación de Instagram: 🌟 Aprende Francés con...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "120211527495260233": {
+      "name": "Publicación de Instagram: ¿Quieres mejorar tus...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "120211527184910233": {
+      "name": "Publicación de Instagram: ¡Espera! 🎉 Este verano,...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "120211452738640233": {
+      "name": "Publicación de Instagram: ¿Quieres sonar como un...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "120211395989780233": {
+      "name": "Publicación de Instagram: 🎉Hoy te traemos 3...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "120211379353270233": {
+      "name": "Publicación de Instagram: ¿Listo para dominar un...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "120211371873330233": {
+      "name": "Publicación de Instagram: ¡Abiertas las...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "120211371787430233": {
+      "name": "Publicación de Instagram: ¿Quieres dominar el...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "120211092642200233": {
+      "name": "Remarketing - APTIS - compra",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_SALES"
+    },
+    "120211049598600233": {
+      "name": "Tráfico Frío - Cursos ONLINE - carrusel",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_SALES"
+    },
+    "120211048673820233": {
+      "name": "Tráfico frio - Matrículas Venta 2024",
+      "effective_status": "ARCHIVED",
+      "objective": "OUTCOME_SALES"
+    },
+    "120211027058920233": {
+      "name": "SUMMER CAMP - Venta",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_SALES"
+    },
+    "120211024043320233": {
+      "name": "Tráfico Frío - Cambridge",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_SALES"
+    },
+    "120211007984560233": {
+      "name": "Palencia - BPS Online - carrusel",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_SALES"
+    },
+    "120211007820160233": {
+      "name": "Asturias - BPS Online - carrusel",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_SALES"
+    },
+    "120211007730550233": {
+      "name": "Burgos - BPS Online - carrusel",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_SALES"
+    },
+    "120211007541000233": {
+      "name": "Ciudad Real - BPS Online - carrusel",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_SALES"
+    },
+    "120210985366970233": {
+      "name": "Albacete - BPS Online - carrusel",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_SALES"
+    },
+    "120210387374410233": {
+      "name": "Ciudad Real - Tráfico Frío - idiomas",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_SALES"
+    },
+    "120210387241330233": {
+      "name": "Palencia - Tráfico Frío - Aptis doble - Copia",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_SALES"
+    },
+    "120210382290890233": {
+      "name": "Burgos - Tráfico Frío - Aptis doble",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_SALES"
+    },
+    "120210382250440233": {
+      "name": "Asturias - Tráfico Frío - Aptis doble - Copia",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_SALES"
+    },
+    "120210381994400233": {
+      "name": "Comunidades- Tráfico Frío - Aptis doble",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_SALES"
+    },
+    "120210379919910233": {
+      "name": "2024 SUMMER CAMP - RMKT",
+      "effective_status": "ARCHIVED",
+      "objective": "LINK_CLICKS"
+    },
+    "120210379184790233": {
+      "name": "2024 SUMMER CAMP - TRAFICO",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "120210279667560233": {
+      "name": "Instagram Post",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "120210235241200233": {
+      "name": "Instagram Post",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "120210235239980233": {
+      "name": "Instagram Post",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "120210235238570233": {
+      "name": "Instagram Post",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "120210235235130233": {
+      "name": "Instagram Post",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "120210131861650233": {
+      "name": "Instagram Post",
+      "effective_status": "ARCHIVED",
+      "objective": "LINK_CLICKS"
+    },
+    "120209986551520233": {
+      "name": "Cmp 5 PREMIUM",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "120209891666860233": {
+      "name": "Instagram Post Cambridge",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "120209891638240233": {
+      "name": "Instagram Post",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "120209891029420233": {
+      "name": "Instagram Post",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "120209884656890233": {
+      "name": "Instagram Post",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "120209800571960233": {
+      "name": "Cmp  ITALIANO - Tráfico",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_TRAFFIC"
+    },
+    "120209798333110233": {
+      "name": "Cmp  ITALIANO - Remarketing",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_SALES"
+    },
+    "120209797303350233": {
+      "name": "Cmp PORTUGUÉS - Tráfico",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_TRAFFIC"
+    },
+    "120209797280080233": {
+      "name": "Cmp IELTS - Remarketing",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_SALES"
+    },
+    "120209797275200233": {
+      "name": "Cmp MATRICULAS 24 - 25 - Tráfico",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "120209797231450233": {
+      "name": "Cmp - ITALIANO - Remarketing",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_SALES"
+    },
+    "120209797187660233": {
+      "name": "Cmp CAMBRIDGE - Tráfico",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "120209679767120233": {
+      "name": "Publicación de Instagram: aptis 5 premium",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "120209635017880233": {
+      "name": "Publicación de Instagram: link en la bio",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "120209586386740233": {
+      "name": "5 PREMIUM - Tráfico - interacciones",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_TRAFFIC"
+    },
+    "120209585722730233": {
+      "name": "Publicación: \"5 Competencias en 5 Masterclasses con las...\"",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "120209563433940233": {
+      "name": "Remarketing - DELF / DALF",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_SALES"
+    },
+    "120209562507960233": {
+      "name": "Tráfico Frío - DELF / DALF",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_SALES"
+    },
+    "120209561963110233": {
+      "name": "Remarketing - IELTS",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_SALES"
+    },
+    "120209560883140233": {
+      "name": "Tráfico Frío - IELTS",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_SALES"
+    },
+    "120209560685040233": {
+      "name": "Cmp CAMBRIDGE - Remarketing",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_SALES"
+    },
+    "120209559787390233": {
+      "name": "Tráfico Frío - CAMBRIDGE",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_SALES"
+    },
+    "120209419997920233": {
+      "name": "Aptis 5 Premium - PULL Conversión",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_SALES"
+    },
+    "120209401645420233": {
+      "name": "Publicación: \"5 Competencias en 5 Masterclasses con las...\"",
+      "effective_status": "PAUSED",
+      "objective": "CONVERSIONS"
+    },
+    "120209371714050233": {
+      "name": "Aptis 5 Premium - Tráfico frío",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_SALES"
+    },
+    "120209257915140233": {
+      "name": "Aptis G - MAYO 24 - PULL Conversión  - remarketing",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_SALES"
+    },
+    "120209190201410233": {
+      "name": "Remarketing - ALEMAN",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_SALES"
+    },
+    "120209189912850233": {
+      "name": "Remarketing - ITALIANO",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_SALES"
+    },
+    "120209188337580233": {
+      "name": "Tráfico Frío - ALEMAN",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_SALES"
+    },
+    "120209188337570233": {
+      "name": "Tráfico Frío - ITALIANO",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_SALES"
+    },
+    "120209188337560233": {
+      "name": "Tráfico Frío - PORTUGUES",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_SALES"
+    },
+    "120209144679180233": {
+      "name": "Remarketing - Aptis doble",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_SALES"
+    },
+    "120209131615220233": {
+      "name": "Tráfico Frío - Aptis doble",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_SALES"
+    },
+    "120208823380450233": {
+      "name": "Campañas ITALIANO - MAYO 2024 - RMKT - CONV",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_SALES"
+    },
+    "120208823337290233": {
+      "name": "Campaña ITALIANO MAYO 24 - TRAFICO",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_TRAFFIC"
+    },
+    "120208823288600233": {
+      "name": "Campaña PORTUGUÉS MAYO 24 - TRAFICO",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_TRAFFIC"
+    },
+    "120208823166780233": {
+      "name": "Campaña ALEMÁN - MAYO 2024 - RMKT - CONV",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_SALES"
+    },
+    "120208823014550233": {
+      "name": "Campaña ALEMAN- MAYO 2024 -TRAFICO",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "120208822816290233": {
+      "name": "Campaña Aptis - MAYO  2024 - RMKT - CONV",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_SALES"
+    },
+    "120208822752320233": {
+      "name": "Campaña Aptis - MAYO 2024 -TRAFICO",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "120208822646800233": {
+      "name": "Aptis G - MAYO 24 - PUSH Conversión  - Intereses",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_SALES"
+    },
+    "120208822527960233": {
+      "name": "Aptis G - MAYO 24 - PULL Conversión  - remarketing",
+      "effective_status": "ARCHIVED",
+      "objective": "OUTCOME_SALES"
+    },
+    "120208822306890233": {
+      "name": "Aptis G - MAY 24 - PULL Conversión  - remarketing",
+      "effective_status": "ARCHIVED",
+      "objective": "OUTCOME_SALES"
+    },
+    "120207831958600233": {
+      "name": "Campaña PORTUGUÉS ABR 24 - TRAFICO",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_TRAFFIC"
+    },
+    "120207808304300233": {
+      "name": "Campaña CAMBRIDGE - ABR 24- RMKT - CONV",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_SALES"
+    },
+    "120207808300890233": {
+      "name": "Campaña CAMBRIDGE - ABR 2024 - TRAFICO",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "120207808266510233": {
+      "name": "Campaña IELTS - ABR 24 - RMK - CONV",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_SALES"
+    },
+    "120207808257360233": {
+      "name": "Campaña DELF/DALF - ABR 24 - TRAFICO - INTERESES",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "120207808254460233": {
+      "name": "Campaña DELF ABR 24 - RMKT - CONV",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_SALES"
+    },
+    "120207808251820233": {
+      "name": "Campaña IELTS - ABR 24 - TRAFICO",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "120207808248080233": {
+      "name": "Campaña ALEMÁN - ABR 2024 - RMKT - CONV",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_SALES"
+    },
+    "120207808247060233": {
+      "name": "Campaña ALEMAN- ABR 2024 -TRAFICO",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "120207785145520233": {
+      "name": "Campaña Aptis - ABR  2024 - RMKT - CONV",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_SALES"
+    },
+    "120207769232420233": {
+      "name": "Campaña Aptis - ABR 2024 -TRAFICO",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "120207768813120233": {
+      "name": "Campañas ITALIANO - ABR 2024 - RMKT - CONV",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_SALES"
+    },
+    "120207768369640233": {
+      "name": "Campaña ITALIANO ABRIL 24 - TRAFICO",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_TRAFFIC"
+    },
+    "120207676278270233": {
+      "name": "Aptis G - ABR 24 - PULL Conversión  - remarketing",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_SALES"
+    },
+    "120207638935670233": {
+      "name": "Aptis G - ABR 24 - PUSH Conversión  - Intereses",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_SALES"
+    },
+    "120207208631020233": {
+      "name": "Campaña IELTS - MAR 2024 - web - Trafico",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "120207207972660233": {
+      "name": "Campaña IELTS - MAR 24 - conversión - RMKT",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_SALES"
+    },
+    "120207205474740233": {
+      "name": "Campaña DELF DALF - MAR 2024 - web - RMKT - VENTAS",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_SALES"
+    },
+    "120207204732880233": {
+      "name": "Campaña DELF DALF - MAR 2024 - web - Trafico",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "120206547585460233": {
+      "name": "Campaña ITALIANO - MA 2024 - web - RMKT - VENTAS",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_SALES"
+    },
+    "120206545224940233": {
+      "name": "CAMPAÑA ITALIANO MAR 24 - Trafico web",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_TRAFFIC"
+    },
+    "120206544401000233": {
+      "name": "Campaña Aptis - MAR  2024 - RMKT - conversión - Copia",
+      "effective_status": "ARCHIVED",
+      "objective": "OUTCOME_SALES"
+    },
+    "120206495596330233": {
+      "name": "Campaña Aptis - MAR 2024 - web - Trafico",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "120206495264960233": {
+      "name": "Campaña CAMBRIDGE - MAR 2023 2024- web - RMKT - Conversion - Copia",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_SALES"
+    },
+    "120206493095320233": {
+      "name": "Campaña CAMBRIDGE - MARZO 2024 - web - Trafico",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "120206444102780233": {
+      "name": "Publicación de Instagram: Contáctanos al DM para...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "120206444100570233": {
+      "name": "Publicación de Instagram: Contáctanos al DM para...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "120206117036710233": {
+      "name": "Publicación de Instagram: 🔗 LINK EN LA BIO 🔗",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "120206117010640233": {
+      "name": "Publicación de Instagram: 🔗 LINK EN LA BIO 🔗...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "120205477278630233": {
+      "name": "Publicación de Instagram: Contáctanos al DM o...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "120205334117720233": {
+      "name": "Campaña CAMBRIDGE - FEB 2023 2024- web - RMKT - Conversion",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_SALES"
+    },
+    "120205328819290233": {
+      "name": "Campaña CAMBRIDGE - FEB 2024 - web - Trafico",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "120205327956600233": {
+      "name": "Campaña Aptis - FEB  2024 - RMKT - conversion",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_SALES"
+    },
+    "120205326889380233": {
+      "name": "Campaña Aptis - FEB 2024 - web - Trafico",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "120205119436630233": {
+      "name": "Publicación de Instagram: 🔗 LINK EN LA BIO 🔗...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "120204763724870233": {
+      "name": "Instagram Post",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "120204694729370233": {
+      "name": "Publicación de Instagram: Y como sabemos que ayer...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "120204663724240233": {
+      "name": "Publicación de Instagram: BLUEWEEK15 Hasta el 22/01",
+      "effective_status": "ARCHIVED",
+      "objective": "LINK_CLICKS"
+    },
+    "120204563582430233": {
+      "name": "Publicación de Instagram: ¡NUEVOS cursos de...",
+      "effective_status": "ARCHIVED",
+      "objective": "LINK_CLICKS"
+    },
+    "120204554509700233": {
+      "name": "Publicación de Instagram: TODA LA INFO EN NUESTRA BIO",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "120204506092580233": {
+      "name": "Publicación de Instagram: Hoy te traemos algunos...",
+      "effective_status": "ARCHIVED",
+      "objective": "LINK_CLICKS"
+    },
+    "120204506082440233": {
+      "name": "Publicación de Instagram: No te pierdas nuestros...",
+      "effective_status": "ARCHIVED",
+      "objective": "LINK_CLICKS"
+    },
+    "120204478548640233": {
+      "name": "Publicación de Instagram: TODA LA INFO EN EL LINK...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "120204436508720233": {
+      "name": "Publicación de Instagram: Hoy te traemos algunos...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "120204317987490233": {
+      "name": "Publicación de Instagram: 🎄 El mejor regalo de...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "120204252785170233": {
+      "name": "Publicación de Instagram: 🔗 LINK EN LA BIO 🔗",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "120204099361110233": {
+      "name": "Instagram Post",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "120204001787770233": {
+      "name": "Publicación de Instagram: 🎄 LINK EN LA BIO 🎄",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "120203986961510233": {
+      "name": "Publicación de Instagram: Hoy te traemos nuevo...",
+      "effective_status": "ARCHIVED",
+      "objective": "LINK_CLICKS"
+    },
+    "120203766318070233": {
+      "name": "Publicación de Instagram: Algunas adivinanzas...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "120203611784460233": {
+      "name": "Publicación de Instagram: 🔗 LINK EN LA BIO 🔗 19/12",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "120203611705600233": {
+      "name": "Publicación de Instagram: 🔗 LINK EN LA BIO 🔗...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "120203611578480233": {
+      "name": "Publicación de Instagram: 🔗 LINK EN LA BIO 🔗...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "120203609554420233": {
+      "name": "Publicación de Instagram: Para más información...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "120203128436050233": {
+      "name": "Publicación de Instagram: No te pierdas nuestros...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "120202992635420233": {
+      "name": "Publicación de Instagram: 🔗 LINK EN LA BIO 🔗 ¡El...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "120202992630100233": {
+      "name": "Publicación de Instagram: 🔗 LINK EN LA BIO 🔗...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "120202992623000233": {
+      "name": "Publicación de Instagram: 🔗 LINK EN LA BIO 🔗 ¡No...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "120202806951760233": {
+      "name": "Campaña PLATAFORMA - DIC 2023 FEB 2024 - RMKT",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_SALES"
+    },
+    "120202806140400233": {
+      "name": "Campaña IELTS - DIC ENE 23 14 - conversion - RMKT",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_SALES"
+    },
+    "120202805580300233": {
+      "name": "Campaña PLATAFORMA - DIC 23 FEB 24 - web - Trafico",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "120202803736520233": {
+      "name": "Campaña ALEMAN- ENE 2024 - web - Trafico",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "120202803736510233": {
+      "name": "Campaña ALEMÁN - ENE 2024 - web - RMKT - VENTAS",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_SALES"
+    },
+    "120202803304430233": {
+      "name": "Campaña ITALIANO - ENE 2024 - web - RMKT - VENTAS",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_SALES"
+    },
+    "120202803086920233": {
+      "name": "CAMPAÑA ITALIANO ENE 24 - Trafico web",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_TRAFFIC"
+    },
+    "120202802106440233": {
+      "name": "Campaña IELTS - DIC 2023 ENE 2024 - web - Trafico",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "120202801788740233": {
+      "name": "Campaña DELF - DIC ENE 2023 2024 - web - RMKT - VENTAS",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_SALES"
+    },
+    "120202801560240233": {
+      "name": "Campaña DELF  - DIC ENE 2023 2024 - web - Trafico",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "120202799792030233": {
+      "name": "Campaña CAMBRIDGE - DIC ENE 2023 2024- web - RMKT - VENTAS",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_SALES"
+    },
+    "120202798658190233": {
+      "name": "Campaña CAMBRIDGE - DIC Y ENE 2023 2024 - web - Trafico",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "120202797870040233": {
+      "name": "Campaña Aptis - DIC Y ENE 2023  2024 - RMKT - conversion",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_SALES"
+    },
+    "120202797070260233": {
+      "name": "Campaña Aptis - DIC Y ENE-2023 2024 - web - Trafico",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "120202002071780233": {
+      "name": "Publicación de Instagram: No te pierdas un...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "120202002063620233": {
+      "name": "Publicación de Instagram: Debido a su alta...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "120201467389740233": {
+      "name": "Publicación de Instagram: ¡Plazas LIMITADAS!  No...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "120201360895390233": {
+      "name": "Publicación de Instagram: No olvides usar...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "120201145723920233": {
+      "name": "Publicación de Instagram: 💙🦜 BLACK FRIDAY HA...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "120201094866860233": {
+      "name": "Campaña CENTROS 50% BLACK FRIDAY 2023-  trafico web",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "120201094788610233": {
+      "name": "Campaña IELTS - NOV Y BLACKFRIDAY 2022 - conversion - RMKT",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_SALES"
+    },
+    "120201070031380233": {
+      "name": "Campaña GRAL BLACK FRIDAY - 2023 - RMKT - conversion",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_SALES"
+    },
+    "120201069779170233": {
+      "name": "Campaña GRAL BLACKFRIDAY - 2023 - web - Trafico",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "120201033744370233": {
+      "name": "Publicación de Instagram: 💙🦜 BLACK FRIDAY HA...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "120200833556150233": {
+      "name": "Publicación de Instagram: 💙¡BLACK FRIDAY HA...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "120200823966280233": {
+      "name": "Publicación de Instagram: Link en la bio 🔗",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "120200736151530233": {
+      "name": "Publicación de Instagram: Llámanos o escríbenos a...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "120200736119460233": {
+      "name": "Publicación de Instagram: Llámanos o escríbenos a...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "120200736071800233": {
+      "name": "Publicación de Instagram: Llámanos o escríbenos a...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "120200736000100233": {
+      "name": "Publicación de Instagram: Llámanos o escríbenos a...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "120200735967220233": {
+      "name": "Publicación de Instagram: Llámanos o escríbenos a...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "120200735954870233": {
+      "name": "Publicación de Instagram: Llámanos o escríbenos...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "120200627574830233": {
+      "name": "Publicación de Instagram: Un poco más de...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "120200615687170233": {
+      "name": "Campaña IELTS - NOV Y BLACK FRIDAY 2023 - web - Trafico",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "120200615587710233": {
+      "name": "Campaña ALEMAN- NOV 2023 - web - Trafico",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "120200606435210233": {
+      "name": "Campaña DELF - NOV Y BLACK FRIDAY 2023 - web - RMKT - VENTAS",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_SALES"
+    },
+    "120200606099720233": {
+      "name": "Campaña DELF  - NOV Y BLACK FRIDAY 2023 - web - Trafico",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "120200605426230233": {
+      "name": "Campaña CAMBRIDGE - NOV DIC Y BLACK FRIDAY 2023 - web - Trafico",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "120200605261480233": {
+      "name": "Campaña CAMBRIDGE - NOV  Y BLACK FRIDAY 2023 - web - RMKT - VENTAS",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_SALES"
+    },
+    "120200604873570233": {
+      "name": "Campaña Aptis - NOV Y BLACK FRIDAY - 2023 - RMKT - conversion -",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_SALES"
+    },
+    "120200604457070233": {
+      "name": "Campaña Aptis - NOV Y BLACK FRIDAY - 2023 - web - Trafico",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "120200534417810233": {
+      "name": "Publicación de Instagram: ¡Escríbenos al DM!",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "120200534412240233": {
+      "name": "Publicación de Instagram: ¡Escríbenos al DM!",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "120200534363110233": {
+      "name": "Publicación de Instagram: ¡Escríbenos al DM!",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "120200534333960233": {
+      "name": "Publicación de Instagram: ¡Escríbenos al DM!",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "120200534326650233": {
+      "name": "Publicación de Instagram: ¡Escríbenos al DM!",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "120200534234070233": {
+      "name": "Publicación de Instagram: ¡Escríbenos al DM!",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "120200120483100233": {
+      "name": "Publicación de Instagram: ¡Pocas plazas...",
+      "effective_status": "ARCHIVED",
+      "objective": "LINK_CLICKS"
+    },
+    "23862461927090232": {
+      "name": "Publicación de Instagram: Quedan pocas \nplazas...",
+      "effective_status": "ARCHIVED",
+      "objective": "LINK_CLICKS"
+    },
+    "23861896750050232": {
+      "name": "Publicación de Instagram: Link en la bio!",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23861775497920232": {
+      "name": "Publicación de Instagram: En horario \n19:00-21:00...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23861775337270232": {
+      "name": "Publicación de Instagram: Horario 9:30-11:30 \n3...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23861703078400232": {
+      "name": "Campaña CAMBRIDGE - OCT  2023 - web - RMKT - VENTAS",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_SALES"
+    },
+    "23861702953080232": {
+      "name": "Campaña CAMBRIDGE - OCT 2023 - web - Trafico",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23861659374420232": {
+      "name": "Publicación de Instagram: ¡NUEVOS CURSOS...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23861507380250232": {
+      "name": "CAMPAÑA ITALIANO oct 23 - Trafico web",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_TRAFFIC"
+    },
+    "23861507341120232": {
+      "name": "Campaña ITALIANO - OCT2023 - web - RMKT - VENTAS",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_SALES"
+    },
+    "23861506654110232": {
+      "name": "Campaña Aptis -OCT 2023 - RMKT - conversion",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_SALES"
+    },
+    "23861506009430232": {
+      "name": "Campaña Aptis - OCT 2023 - web - Trafico",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23861226858290232": {
+      "name": "Publicación de Instagram: ¿Ya conocías las...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23858875133410232": {
+      "name": "Publicación de Instagram: Vocabulario flash...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23858329435590232": {
+      "name": "Campaña PLATAFORMA - SEP NOV 2023 - RMKT",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_SALES"
+    },
+    "23858328750800232": {
+      "name": "Campaña PLATAFORMA - SEP 2023 - web - Trafico",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23858200847600232": {
+      "name": "Campaña MATRICULAS 2023-2024 SEPTIEMBRE-  trafico web",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23857833401220232": {
+      "name": "Campaña ITALIANO - SEP 2023 - web - RMKT - VENTAS",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_SALES"
+    },
+    "23857833227870232": {
+      "name": "Campaña DELF DALF - SEP 2023 - web - RMKT - VENTAS",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_SALES"
+    },
+    "23857788627810232": {
+      "name": "Campaña DELF DALF - SEP 2023 - web - Trafico",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23857788221920232": {
+      "name": "Campaña ITALIANO - SEP 2023 - web - RMKT - VENTAS - Advantage+  Campaña",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_SALES"
+    },
+    "23857787734870232": {
+      "name": "CAMPAÑA ITALIANO SEP 23 - Trafico web",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_TRAFFIC"
+    },
+    "23857787351130232": {
+      "name": "Campaña CAMBRIDGE - SEP 2023 - web - RMKT - VENTAS",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_SALES"
+    },
+    "23857787025440232": {
+      "name": "Campaña CAMBRIDGE - SEP 2023 - web - Trafico",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23857786450260232": {
+      "name": "Campaña Aptis - SEP 2023 - RMKT - conversion",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_SALES"
+    },
+    "23857785645980232": {
+      "name": "Campaña Aptis - SEP 2023 - web - Trafico",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23855398841010232": {
+      "name": "Publicación de Instagram: ¿Cómo participar?\n \n1️⃣...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23855395145850232": {
+      "name": "Publicación de Instagram: ¿Cómo participar?\n \n1️⃣...",
+      "effective_status": "ARCHIVED",
+      "objective": "LINK_CLICKS"
+    },
+    "23855318466800232": {
+      "name": "Publicación de Instagram: ¿Cómo participar?\n \n1️⃣...",
+      "effective_status": "ARCHIVED",
+      "objective": "LINK_CLICKS"
+    },
+    "23855278678680232": {
+      "name": "Instagram Post",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23855259787670232": {
+      "name": "Publicación de Instagram: ¿Cómo participar?\n \n1️⃣...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23854786962050232": {
+      "name": "Instagram Post",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23854734124840232": {
+      "name": "Campaña PLATAFORMA - JUN 2023 - RMKT",
+      "effective_status": "PAUSED",
+      "objective": "CONVERSIONS"
+    },
+    "23854734033630232": {
+      "name": "Campaña MATRICULAS 2023-2024 SEP -  RMKT - trafico web",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23854733066730232": {
+      "name": "Campaña MATRICULAS 2023-2024 -  trafico web",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23854732926530232": {
+      "name": "Camapaña INTENSIVOS VERANO -  2023-  RMKT",
+      "effective_status": "PAUSED",
+      "objective": "CONVERSIONS"
+    },
+    "23854732134630232": {
+      "name": "Camapaña INTENSIVOS VERANO -  2023-  web",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23854509475600232": {
+      "name": "Publicación de Instagram: Prueba la demo en el...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23854458594090232": {
+      "name": "Campaña PLATAFORMA - MAY JUN 2023 - web - Trafico",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23854457961940232": {
+      "name": "SUMMER CAMP 2023 - TRAFICO",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23853979557360232": {
+      "name": "Campaña VERANO15 2023 - RMKT - compra",
+      "effective_status": "PAUSED",
+      "objective": "CONVERSIONS"
+    },
+    "23853977076900232": {
+      "name": "Publicación de Instagram: Solo hasta el 7!:de...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23853895030620232": {
+      "name": "Post Engagement - libros dia internacional del libro - Abril 2023",
+      "effective_status": "PAUSED",
+      "objective": "POST_ENGAGEMENT"
+    },
+    "23853868457790232": {
+      "name": "Campaña CAMBRIDGE - MAY 2023 - web - Trafico",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23853868425870232": {
+      "name": "Campaña CAMBRIDGE - MAY 2023 - web - RMKT - VENTAS",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_SALES"
+    },
+    "23853868257770232": {
+      "name": "Campaña Aptis - MAY 2023 - RMKT -",
+      "effective_status": "PAUSED",
+      "objective": "CONVERSIONS"
+    },
+    "23853868175570232": {
+      "name": "Campaña Aptis - MAY 2023 - web - Trafico",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23853860760900232": {
+      "name": "Publicación de Instagram: Nuevas fechas para...",
+      "effective_status": "PAUSED",
+      "objective": "MESSAGES"
+    },
+    "23853529211420232": {
+      "name": "Publicación de Instagram: Nuevas fechas para...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23853513775760232": {
+      "name": "Publicación de Instagram: Nuevos cursos de abril....",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23853440748870232": {
+      "name": "Campaña CAMBRIDGE - ABR 2023 - web - RMKT - VENTAS",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_SALES"
+    },
+    "23853440623500232": {
+      "name": "Campaña CAMBRIDGE - ABR 2023 - web - Trafico",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23853439918650232": {
+      "name": "Campaña Aptis - ABR 2023 - web - Trafico",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23853109163250232": {
+      "name": "Publicación de Instagram: Nuevos cursos de...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23853080327380232": {
+      "name": "Publicación de Instagram: ¿Quieres aprender...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23853078166940232": {
+      "name": "Campaña Aptis - MAR 2023 - web - Trafico",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23853077920640232": {
+      "name": "Campaña Aptis - MAR Y ABR 2023 - RMKT",
+      "effective_status": "PAUSED",
+      "objective": "CONVERSIONS"
+    },
+    "23853039285660232": {
+      "name": "Campaña IELTS - FEB  2022 - conversion - RMKT",
+      "effective_status": "PAUSED",
+      "objective": "CONVERSIONS"
+    },
+    "23852998008050232": {
+      "name": "Campaña IELTS - FEB  2022 - web - Trafico",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23852997885210232": {
+      "name": "Campaña LANGUAGECERT - MAR  2023 - web - Trafico",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23852997727090232": {
+      "name": "Campaña CAMBRIDGE - FEB 2023 - web - RMKT",
+      "effective_status": "PAUSED",
+      "objective": "CONVERSIONS"
+    },
+    "23852997476900232": {
+      "name": "Campaña CAMBRIDGE - FEB 2023 - web - Trafico",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23852936224540232": {
+      "name": "Publicación de Instagram: Te presentamos el nuevo...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23852660511650232": {
+      "name": "Campaña Aptis - FEB 2023 - RMKT",
+      "effective_status": "PAUSED",
+      "objective": "CONVERSIONS"
+    },
+    "23852660478180232": {
+      "name": "Campaña Aptis - FEB 2023 - web - Trafico",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23852609483170232": {
+      "name": "Publicación de Instagram: Próximo martes...",
+      "effective_status": "PAUSED",
+      "objective": "MESSAGES"
+    },
+    "23852501772480232": {
+      "name": "Campaña Delf - ENE 2023 - web - Trafico",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23852501735360232": {
+      "name": "Campaña CAMBRIDGE - ENE 2023 - web - Trafico",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23852501702230232": {
+      "name": "Campaña CAMBRIDGE - ENE 2023 - web - RMKT",
+      "effective_status": "PAUSED",
+      "objective": "CONVERSIONS"
+    },
+    "23852427998680232": {
+      "name": "CAMPAÑA ESPAÑOL ENE 23 - Trafico web",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_TRAFFIC"
+    },
+    "23852427908480232": {
+      "name": "Post Engagement - erasmus - ene 2023",
+      "effective_status": "PAUSED",
+      "objective": "POST_ENGAGEMENT"
+    },
+    "23852427390600232": {
+      "name": "CAMPAÑA ERASMUS ENE 23 - Trafico web",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_TRAFFIC"
+    },
+    "23852416658620232": {
+      "name": "Instagram post: En enero 2023 vuelven los cursos...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23852374756830232": {
+      "name": "CAMPAÑA INTENSIVOS ENE 23 - Trafico web",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_TRAFFIC"
+    },
+    "23852374693720232": {
+      "name": "CAMPAÑA INTENSIVOS ENE 23 - RMKT - conversion",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_SALES"
+    },
+    "23852374569510232": {
+      "name": "Campaña Aptis - ENE 2023 - RMKT",
+      "effective_status": "PAUSED",
+      "objective": "CONVERSIONS"
+    },
+    "23852374483800232": {
+      "name": "Campaña Aptis - ENE 2023 - web - Trafico",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23852118676300232": {
+      "name": "Publicación de Instagram: Christmas Camp for kids...",
+      "effective_status": "PAUSED",
+      "objective": "MESSAGES"
+    },
+    "23852110719990232": {
+      "name": "CAMPAÑA INTENSIVOS DIC - RMKT - conversion",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_SALES"
+    },
+    "23852110550750232": {
+      "name": "Campaña IELTS - DIC  2022 - web - Trafico",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23852100996610232": {
+      "name": "Campaña CAMBRIDGE - DIC  2022 - web - Trafico",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23852100950020232": {
+      "name": "Campaña Delf - DIC 2022 - web - Trafico",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23852100933040232": {
+      "name": "CAMPAÑA INTENSIVOS DIC - Trafico web",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_TRAFFIC"
+    },
+    "23852100924170232": {
+      "name": "Campaña DIC - OCTUBRE NOVIEMBRE 2022 - web - Trafico",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23852100852480232": {
+      "name": "Campaña Aptis - DIC 2022 - RMKT",
+      "effective_status": "PAUSED",
+      "objective": "CONVERSIONS"
+    },
+    "23852099624890232": {
+      "name": "Campaña CAMBRIDGE - DIC 2022 - web - RMKT",
+      "effective_status": "PAUSED",
+      "objective": "CONVERSIONS"
+    },
+    "23852088379980232": {
+      "name": "Campaña Aptis - DIC 2022 - web - Trafico",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23851984440320232": {
+      "name": "Post Engagement - qué es IELTS - nov 2022",
+      "effective_status": "PAUSED",
+      "objective": "POST_ENGAGEMENT"
+    },
+    "23851979998570232": {
+      "name": "Publicación de Instagram: ⚡Aprovecha un ¡¡15% DE...",
+      "effective_status": "PAUSED",
+      "objective": "MESSAGES"
+    },
+    "23851960125110232": {
+      "name": "Campaña Promo BFRIDAY 2022 - RMKT",
+      "effective_status": "PAUSED",
+      "objective": "CONVERSIONS"
+    },
+    "23851960075410232": {
+      "name": "Campaña Promo BFRIDAY 2022 - GRAL",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23851775788740232": {
+      "name": "Publicación de Instagram: 10%Off en los cursos...",
+      "effective_status": "PAUSED",
+      "objective": "MESSAGES"
+    },
+    "23851731773370232": {
+      "name": "Post Engagement - frases ingles - oct 2022",
+      "effective_status": "PAUSED",
+      "objective": "POST_ENGAGEMENT"
+    },
+    "23851731502340232": {
+      "name": "CAMPAÑA INTENSIVOS NOV - RMKT - conversion",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_SALES"
+    },
+    "23851677797320232": {
+      "name": "Publicación de Instagram: ¡Noviembre a tope!...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23851656681180232": {
+      "name": "Campaña FRANCÉS A1- NOV 2022 - web - Trafico",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23851656010400232": {
+      "name": "Campaña CAMBRIDGE - NOV 2022 - web - RMKT",
+      "effective_status": "PAUSED",
+      "objective": "CONVERSIONS"
+    },
+    "23851655993000232": {
+      "name": "Campaña ALEMAN- NOV 2022 - web - Trafico",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23851655930850232": {
+      "name": "Campaña CAMBRIDGE - NOV  2022 - web - Trafico",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23851542356850232": {
+      "name": "Publicación de Instagram: Prueba una clase gratis...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23851528425600232": {
+      "name": "Campaña Aptis - OCT NOV 2022 - web - Trafico",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23851516681060232": {
+      "name": "Publicación de Instagram: Octubre es tu...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23851501434390232": {
+      "name": "Campaña ALEMAN B1 REGULAR 2022 - web - RMKT",
+      "effective_status": "PAUSED",
+      "objective": "CONVERSIONS"
+    },
+    "23851501361140232": {
+      "name": "Campaña ALEMAN B1 REGULAR - OCT 2022 - web - Trafico",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23851447660620232": {
+      "name": "Campaña CAMBRIDGE - OCT 2022 - web - Trafico -",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23851447623110232": {
+      "name": "Campaña CAMBRIDGE - OCT 2022 - web - RMKT -",
+      "effective_status": "PAUSED",
+      "objective": "CONVERSIONS"
+    },
+    "23851447569980232": {
+      "name": "Campaña Delf - OCTUBRE NOVIEMBRE 2022 - web - Trafico",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23851447419440232": {
+      "name": "Campaña Aptis - OCTUBRE NOV 2022 - RMKT",
+      "effective_status": "PAUSED",
+      "objective": "CONVERSIONS"
+    },
+    "23851447329470232": {
+      "name": "CAMPAÑA INTENSIVOS OCTUBRE - RMKTG - Trafico web",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_TRAFFIC"
+    },
+    "23851447287210232": {
+      "name": "CAMPAÑA INTENSIVOS NOV - Trafico web",
+      "effective_status": "PAUSED",
+      "objective": "OUTCOME_TRAFFIC"
+    },
+    "23851447228370232": {
+      "name": "Publicación de Instagram: Octubre es tu...",
+      "effective_status": "ARCHIVED",
+      "objective": "LINK_CLICKS"
+    },
+    "23851117338430232": {
+      "name": "Campaña Aptis - SEP 2022 - web - Trafico",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23851117276330232": {
+      "name": "Campaña CAMBRIDGE - SEP 2022 - web - RMKT -",
+      "effective_status": "PAUSED",
+      "objective": "CONVERSIONS"
+    },
+    "23851117235260232": {
+      "name": "Campaña CAMBRIDGE - SEP 2022 - web - Trafico",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23851106699900232": {
+      "name": "Campaña ALEMAN A1-A2 - SEP 2022 - web - RMKT",
+      "effective_status": "PAUSED",
+      "objective": "CONVERSIONS"
+    },
+    "23851106642180232": {
+      "name": "Campaña ALEMAN A1-A2 - SEP 2022 - web - Trafico",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23851105672110232": {
+      "name": "Campaña Aleman A1- SEPTIEMBRE 2022 - web - Trafico",
+      "effective_status": "ARCHIVED",
+      "objective": "LINK_CLICKS"
+    },
+    "23851104952460232": {
+      "name": "Campaña Aptis - SEPTIEMBRE 2022 - RMKT",
+      "effective_status": "PAUSED",
+      "objective": "CONVERSIONS"
+    },
+    "23850976691250232": {
+      "name": "Instagram post: 🌸CURSOS INTENSIVOS APTIS AGOSTO Y...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23850863707350232": {
+      "name": "Campaña ALEMAN A1-A2 - AGOSTO 2022 - web - RMKT",
+      "effective_status": "PAUSED",
+      "objective": "CONVERSIONS"
+    },
+    "23850863391900232": {
+      "name": "Campaña ALEMAN A1-A2 - AGOSTO 2022 - web - Trafico",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23850863351690232": {
+      "name": "Post Engagement - 6 series ingles - Agosto 2022",
+      "effective_status": "PAUSED",
+      "objective": "POST_ENGAGEMENT"
+    },
+    "23850856982610232": {
+      "name": "Campaña FRANCÉS A1- SEPTIEMBRE 2022 - web - Trafico",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23850634215820232": {
+      "name": "Post Engagement - Aleman - Julio 2022",
+      "effective_status": "PAUSED",
+      "objective": "POST_ENGAGEMENT"
+    },
+    "23850634134090232": {
+      "name": "Campaña CAMBRIDGE - JULIO 2022 - web - RMKT",
+      "effective_status": "PAUSED",
+      "objective": "CONVERSIONS"
+    },
+    "23850633752040232": {
+      "name": "Campaña CAMBRIDGE - JULIO 2022 - web - Trafico",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23850633381610232": {
+      "name": "Campaña Aptis - JULIO AGOSTO  2022 - web - Trafico",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23850633381540232": {
+      "name": "Campaña Aptis - JULIO-AGOSTO 2022 - RMKT",
+      "effective_status": "PAUSED",
+      "objective": "CONVERSIONS"
+    },
+    "23850633320420232": {
+      "name": "Camapaña INTENSIVOS VERANO - julio 2022 -  RMKTG - conversion",
+      "effective_status": "PAUSED",
+      "objective": "CONVERSIONS"
+    },
+    "23850633284140232": {
+      "name": "Post Engagement - Refranes Españoles - Julio 2022",
+      "effective_status": "PAUSED",
+      "objective": "POST_ENGAGEMENT"
+    },
+    "23850633265010232": {
+      "name": "Post Engagement - FAQ DELF - Julio 2022",
+      "effective_status": "PAUSED",
+      "objective": "POST_ENGAGEMENT"
+    },
+    "23850633241180232": {
+      "name": "Post Engagement - FAQ APTIS - Julio 2022",
+      "effective_status": "PAUSED",
+      "objective": "POST_ENGAGEMENT"
+    },
+    "23850633104410232": {
+      "name": "Camapaña INTENSIVOS VERANO - julio 2022 -  web",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23850569752540232": {
+      "name": "Instagram post: Para celebrar el comienzo del...",
+      "effective_status": "ARCHIVED",
+      "objective": "LINK_CLICKS"
+    },
+    "23850544641650232": {
+      "name": "Instagram post: SOLO HASTA LUNES 20/6/22",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23850530964170232": {
+      "name": "Instagram Post",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23850510781390232": {
+      "name": "Instagram Post",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23850496090740232": {
+      "name": "Camapaña Promo SUMMER15 - junio 2022",
+      "effective_status": "PAUSED",
+      "objective": "CONVERSIONS"
+    },
+    "23850468469340232": {
+      "name": "Instagram post: ✨INTENSIVOS INGLÉS CAMBRIDGE✨...",
+      "effective_status": "PAUSED",
+      "objective": "MESSAGES"
+    },
+    "23850439750500232": {
+      "name": "Instagram post: ¿Con ganas de verano y aprender...",
+      "effective_status": "PAUSED",
+      "objective": "MESSAGES"
+    },
+    "23850384416890232": {
+      "name": "Instagram post: ¿Estudiando para presentarte al...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23850346968810232": {
+      "name": "Post Engagement - Post Matriculas- Junio 2022",
+      "effective_status": "PAUSED",
+      "objective": "POST_ENGAGEMENT"
+    },
+    "23850346968790232": {
+      "name": "Post Engagement - frases whatsapp - Junio 2022",
+      "effective_status": "PAUSED",
+      "objective": "POST_ENGAGEMENT"
+    },
+    "23850346953700232": {
+      "name": "Post Engagement - 5 libros de francés - Junio 2022",
+      "effective_status": "PAUSED",
+      "objective": "POST_ENGAGEMENT"
+    },
+    "23850346926780232": {
+      "name": "Post Engagement - Intensicos verano - Junio 2022",
+      "effective_status": "PAUSED",
+      "objective": "POST_ENGAGEMENT"
+    },
+    "23850346754540232": {
+      "name": "Campaña Aptis - JUNIO  2022 - RMKT",
+      "effective_status": "PAUSED",
+      "objective": "CONVERSIONS"
+    },
+    "23850346573200232": {
+      "name": "Campaña ALEMAN A1- JUNIO 2022 - web - Trafico",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23850346367100232": {
+      "name": "Campaña FRANCÉS A1- JUNIO 2022 - web - Trafico",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23850346276710232": {
+      "name": "Campaña Delf - JUNIO 2022 - web - Trafico",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23850313150010232": {
+      "name": "SUMMER CAMP 2022 - RMKTG - Trafico",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23850312547010232": {
+      "name": "Campaña MATRICULAS 2022-2023 -  RMKT - trafico web",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23850311789480232": {
+      "name": "Campaña MATRICULAS 2022-2023 -  trafico web",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23850311688580232": {
+      "name": "Campaña Aptis - JUNIO 2022 - web - Trafico",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23850311688540232": {
+      "name": "Campaña Aptis - JUNIO 2022 - RMKT",
+      "effective_status": "PAUSED",
+      "objective": "CONVERSIONS"
+    },
+    "23850302807410232": {
+      "name": "Publicación de Instagram: ¿Planes para el sábado...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23850261003100232": {
+      "name": "Publicación de Instagram: ¿Planes para el sábado...",
+      "effective_status": "ARCHIVED",
+      "objective": "LINK_CLICKS"
+    },
+    "23850186205920232": {
+      "name": "SUMMER CAMP 2022 - TRAFICO",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23850186026960232": {
+      "name": "Camapaña Promo SUMMER22",
+      "effective_status": "PAUSED",
+      "objective": "CONVERSIONS"
+    },
+    "23850173261640232": {
+      "name": "Publicación de Instagram: NEW SUMMER CAMP...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23850149761870232": {
+      "name": "Campaña Aptis - MAYO 2022 - RMKT",
+      "effective_status": "PAUSED",
+      "objective": "CONVERSIONS"
+    },
+    "23850116313740232": {
+      "name": "Publicación de Instagram: ⭐️MAYO⭐️ tenemos muchas...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23850108280570232": {
+      "name": "Publicación de Instagram: ⭐️NEW⭐️ inauguramos...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23850105852870232": {
+      "name": "EXPRESS FOR SCHOOL - MADRID - Copia",
+      "effective_status": "ARCHIVED",
+      "objective": "LINK_CLICKS"
+    },
+    "23850105852840232": {
+      "name": "Campaña Aptis - MAYO 2022 - web - Trafico",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23850105628740232": {
+      "name": "EXPRESS FOR SCHOOL - MADRID",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23849972989810232": {
+      "name": "Post Engagement - Easter Camp 2022 - Madrid",
+      "effective_status": "PAUSED",
+      "objective": "POST_ENGAGEMENT"
+    },
+    "23849971645910232": {
+      "name": "Publicación de Instagram: Si necesitas certificar...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23849967720470232": {
+      "name": "Publicación de Instagram: 🗓11, 12 Y 13 DE ABRIL...",
+      "effective_status": "PAUSED",
+      "objective": "MESSAGES"
+    },
+    "23849967717200232": {
+      "name": "Publicación de Instagram: ¡Easter Camp en Madrid!...",
+      "effective_status": "PAUSED",
+      "objective": "MESSAGES"
+    },
+    "23849908626190232": {
+      "name": "Publicación de Instagram: 🌸NUEVOS INTENSIVOS...",
+      "effective_status": "ARCHIVED",
+      "objective": "MESSAGES"
+    },
+    "23849848355660232": {
+      "name": "Publicación de Instagram: ¡ATENCIÓN! ¡ATENCIÓN!...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23849774441510232": {
+      "name": "Campaña INTENSIVOS 2022",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23849729590030232": {
+      "name": "Campaña Delf - ABR 2022 - web - Trafico",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23849670299860232": {
+      "name": "Post Engagement - Inglés C2 - Facebook - Marzo 2022 -",
+      "effective_status": "PAUSED",
+      "objective": "POST_ENGAGEMENT"
+    },
+    "23849670264010232": {
+      "name": "Post Engagement - Erasmus - Facebook - Marzo 2022 - Copia",
+      "effective_status": "PAUSED",
+      "objective": "POST_ENGAGEMENT"
+    },
+    "23849670231630232": {
+      "name": "Post Engagement - Certifiacion Frances - Facebook - Marzo 2022",
+      "effective_status": "PAUSED",
+      "objective": "POST_ENGAGEMENT"
+    },
+    "23849670184980232": {
+      "name": "Post Engagement - evento Madrid Spring - Facebook - Marzo 2022",
+      "effective_status": "PAUSED",
+      "objective": "POST_ENGAGEMENT"
+    },
+    "23849670125500232": {
+      "name": "Post Engagement - Frases Motivadoras Inglés - Facebook - Marzo 2022",
+      "effective_status": "PAUSED",
+      "objective": "POST_ENGAGEMENT"
+    },
+    "23849670078400232": {
+      "name": "Post Engagement - Inglés Profesional - Facebook - Marzo 2022",
+      "effective_status": "PAUSED",
+      "objective": "POST_ENGAGEMENT"
+    },
+    "23849669735780232": {
+      "name": "Campaña Ingles Profesional - MAR 2022 - web - Trafico",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23849668947410232": {
+      "name": "Campaña Aptis - MAR 2022 - RMKT",
+      "effective_status": "PAUSED",
+      "objective": "CONVERSIONS"
+    },
+    "23849668850910232": {
+      "name": "Campaña Aptis - MAR ABR 2022 - web - Trafico",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23849668709730232": {
+      "name": "Campaña Cambridge - MAR 2022 - RMKT - conversion -",
+      "effective_status": "PAUSED",
+      "objective": "CONVERSIONS"
+    },
+    "23849668599340232": {
+      "name": "Campaña Cambridge - MAR 2022 - web - Trafico",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23849643957880232": {
+      "name": "Publicación de Instagram: 🆕INTENSIVO DE INGLÉS...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23849589538160232": {
+      "name": "Publicación de Instagram: 🚨 ¡ATENCIÓN! ¡ATENCIÓN!...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23849472608510232": {
+      "name": "Campaña Delf - FEB 2022 - web - Trafico - Copia",
+      "effective_status": "ARCHIVED",
+      "objective": "LINK_CLICKS"
+    },
+    "23849472608450232": {
+      "name": "Campaña Cambridge - FEB 2022 - RMKT - conversion",
+      "effective_status": "PAUSED",
+      "objective": "CONVERSIONS"
+    },
+    "23849472608440232": {
+      "name": "Campaña Cambridge - FEB 2022 - web - Trafico",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23849472527650232": {
+      "name": "Campaña Delf - FEB 2022 - web - Trafico",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23849472476220232": {
+      "name": "Campaña Aptis - FEB 2022 - RMKT",
+      "effective_status": "PAUSED",
+      "objective": "CONVERSIONS"
+    },
+    "23849472476180232": {
+      "name": "Campaña Aptis - FEB 2022 - web - Trafico",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23849472469270232": {
+      "name": "Campaña Aptis - DIC 2021 - RMKT - Copia",
+      "effective_status": "PAUSED",
+      "objective": "CONVERSIONS"
+    },
+    "23849472469230232": {
+      "name": "Publicación de Instagram: ¿Te has propuesto... - Copia",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23849472469220232": {
+      "name": "Campaña Aptis - DIC 2021 - web - Trafico - Copia",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23849469586510232": {
+      "name": "Publicación de Instagram: ✨ NEW: INTENSIVOS...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23849459609260232": {
+      "name": "Publicación de Instagram: ✨INTENSIVOS APTIS✨...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23849425046660232": {
+      "name": "Publicación de Instagram: ¿Te has propuesto...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23849332066230232": {
+      "name": "Publicación de Instagram: ¿Te has propuesto...",
+      "effective_status": "ARCHIVED",
+      "objective": "LINK_CLICKS"
+    },
+    "23849294011620232": {
+      "name": "Campaña Cambridge - ENE 2022 - RMKT - conversion",
+      "effective_status": "PAUSED",
+      "objective": "CONVERSIONS"
+    },
+    "23849293993970232": {
+      "name": "Campaña Cambridge - ENE 2022 - web - Trafico",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23849291810480232": {
+      "name": "Campaña Aptis - ENE 2022 - web - Trafico",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23849291742790232": {
+      "name": "Campaña Aptis - ENE 2022 - RMKT",
+      "effective_status": "PAUSED",
+      "objective": "CONVERSIONS"
+    },
+    "23849232858950232": {
+      "name": "Campaña PROMO ENE 2022 -  CONVERSION",
+      "effective_status": "PAUSED",
+      "objective": "CONVERSIONS"
+    },
+    "23849175918300232": {
+      "name": "Publicación de Instagram: CLASES DE CONVERSACIÓN...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23849158677330232": {
+      "name": "Campaña Cambridge - ENE 2022 - web - Trafico",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23849096553300232": {
+      "name": "Campaña Cambridge - DIC 2021 - RMKT - conversion",
+      "effective_status": "PAUSED",
+      "objective": "CONVERSIONS"
+    },
+    "23849096453380232": {
+      "name": "Campaña Cambridge -DIC 2021 - web - Trafico",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23849053602780232": {
+      "name": "Campaña Aptis - DIC 2021 - RMKT",
+      "effective_status": "PAUSED",
+      "objective": "CONVERSIONS"
+    },
+    "23849053328810232": {
+      "name": "Campaña Aptis - DIC 2021 - web - Trafico",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23848978548510232": {
+      "name": "Publicación de Instagram: ¿Aún quieres sacarte el...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23848856932300232": {
+      "name": "Prueba Clase Gratis",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23848848893300232": {
+      "name": "Campaña Aptis - NOV 2021 - RMKT - web - compra",
+      "effective_status": "PAUSED",
+      "objective": "CONVERSIONS"
+    },
+    "23848837768680232": {
+      "name": "Instagram Post",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23848825800040232": {
+      "name": "Publicación de Instagram: 😱 Aún estás a tiempo de...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23848825764770232": {
+      "name": "Camapaña Promo BFRIDAY 2021",
+      "effective_status": "PAUSED",
+      "objective": "CONVERSIONS"
+    },
+    "23848697453050232": {
+      "name": "Publicación de Instagram: 🤟Prueba una clase...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23848667210070232": {
+      "name": "Publicación de Instagram: 😁 ¡CURSOS INTENSIVOS DE...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23848648690140232": {
+      "name": "Campaña halloween 2021 trafico web",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23848648049670232": {
+      "name": "Campaña Cambridge - NOV DIC 2021 - web - Trafico",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23848648007930232": {
+      "name": "Campaña Cambridge - NOV DIC 2021 - RMKT - conversion",
+      "effective_status": "PAUSED",
+      "objective": "CONVERSIONS"
+    },
+    "23848639631070232": {
+      "name": "Instagram Post",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23848639525410232": {
+      "name": "Campaña Mornings Madrid - BPS",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23848639176160232": {
+      "name": "Campaña Aptis ADVANCED - NOV 2021 - RMKT - web - compra",
+      "effective_status": "PAUSED",
+      "objective": "CONVERSIONS"
+    },
+    "23848638897460232": {
+      "name": "Campaña Aptis - OCT NOV 2021 - web - Trafico",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23848594337670232": {
+      "name": "Publicación de Instagram: ☕️ Mornings at Blue...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23848555827860232": {
+      "name": "Publicación de Instagram: 🇬🇧¡CONSEJOS PARA...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23848496294300232": {
+      "name": "Publicación de Instagram: 🤔 ¿SABES QUÉ NIVEL...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23848479841220232": {
+      "name": "Publicación de Instagram: Ya disponibles las...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23848282128890232": {
+      "name": "Publicación de Instagram: ¿Ya conoces nuestros...",
+      "effective_status": "ARCHIVED",
+      "objective": "LINK_CLICKS"
+    },
+    "23848282109860232": {
+      "name": "Publicación de Instagram: 🇬🇧¿QUIERES LLEVAR TU...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23848282105250232": {
+      "name": "Publicación de Instagram: 🤔¿APTIS GENERAL O APTIS...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23848276216280232": {
+      "name": "Publicación de Instagram: Tener una Language...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23848270402570232": {
+      "name": "Cursis intensivos Septiembre 2021 - STORIES VIDEOS",
+      "effective_status": "PAUSED",
+      "objective": "VIDEO_VIEWS"
+    },
+    "23848193752760232": {
+      "name": "Campaña Cambridge - SEPT 2021 - RMKT - conversion",
+      "effective_status": "PAUSED",
+      "objective": "CONVERSIONS"
+    },
+    "23848193651230232": {
+      "name": "Campaña Aptis - SEPT - OCT - NOV 2021 - RMKT - web - compra",
+      "effective_status": "PAUSED",
+      "objective": "CONVERSIONS"
+    },
+    "23848020669660232": {
+      "name": "Publicación de Instagram: 🇬🇧¡INTENSIVO DE APTIS...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23848014711250232": {
+      "name": "Publicación de Instagram: 🇩🇪¡INTENSIVOS DE...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23847938673410232": {
+      "name": "Publicación de Instagram: 🇩🇪¡INTENSIVOS DE...",
+      "effective_status": "ARCHIVED",
+      "objective": "LINK_CLICKS"
+    },
+    "23847868820320232": {
+      "name": "Publicación de Instagram: 🌱¡GARDEN PARTY!🌱\n\n🔝El...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23847858039920232": {
+      "name": "Instagram Post",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23847856568130232": {
+      "name": "Campaña Intensivos Verano - RMKTG",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23847856312790232": {
+      "name": "Campaña - Trafico Ebook Cambridge - junio 2021  reading y writing",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23847843998380232": {
+      "name": "Publicación de Instagram: 🇬🇧¿Te estás preparando...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23847830904790232": {
+      "name": "Publicación de Instagram: 🇬🇧¡INTENSIVOS PARA...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23847810054050232": {
+      "name": "Publicación de Instagram: 😱 Corre y aprovéchate...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23847796792520232": {
+      "name": "Campaña Aptis - AGOSTO 2021 - RMKT - web - compra",
+      "effective_status": "PAUSED",
+      "objective": "CONVERSIONS"
+    },
+    "23847796697270232": {
+      "name": "Campaña Intensivos Verano - Web - Traffic",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23847792061320232": {
+      "name": "Publicación de Instagram: 🇫🇷¡INTENSIVO DE...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23847774223110232": {
+      "name": "Publicación de Instagram: 🇬🇧¡INTENSIVO DE APTIS...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23847773684350232": {
+      "name": "Summer Camp - WEB Carrousel - Madrid",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23847762505190232": {
+      "name": "Publicación de Instagram: Story... Summer Camp",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23847762501760232": {
+      "name": "Publicación de Instagram: 🇮🇹¡INTENSIVO DE Italiano",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23847757834990232": {
+      "name": "Publicación de Instagram: 🇫🇷¡INTENSIVO DE...",
+      "effective_status": "ARCHIVED",
+      "objective": "LINK_CLICKS"
+    },
+    "23847718543230232": {
+      "name": "Publicación de Instagram: ⚡⚡ SORTEO ⚡⚡ Gana una...",
+      "effective_status": "ARCHIVED",
+      "objective": "LINK_CLICKS"
+    },
+    "23847718491810232": {
+      "name": "Publicación de Instagram: ⚡⚡ SORTEO ⚡⚡ Gana una...",
+      "effective_status": "ARCHIVED",
+      "objective": "LINK_CLICKS"
+    },
+    "23847715352420232": {
+      "name": "Campaña Aptis - JUNIO JULIO 2021 - web - Trafico",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23847660462380232": {
+      "name": "Publicación de Instagram: YA DISPONIBLE:\nLINK EN...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23847653609750232": {
+      "name": "Publicación de Instagram: ‪¿Te estás preparando...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23847652545310232": {
+      "name": "Publicación de Instagram: Story...",
+      "effective_status": "ARCHIVED",
+      "objective": "LINK_CLICKS"
+    },
+    "23847640934590232": {
+      "name": "Instagram Post",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23847613705200232": {
+      "name": "Campaña Aptis - JUNIO 2021 - RMKT - web - compra",
+      "effective_status": "PAUSED",
+      "objective": "CONVERSIONS"
+    },
+    "23847588793010232": {
+      "name": "Publicación de Instagram: ¡EEEYYY! Todos atentos...",
+      "effective_status": "ARCHIVED",
+      "objective": "LINK_CLICKS"
+    },
+    "23847577084540232": {
+      "name": "Instagram Post",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23847576481360232": {
+      "name": "Publicación de Instagram: ¡EEEYYY! Todos atentos...",
+      "effective_status": "ARCHIVED",
+      "objective": "LINK_CLICKS"
+    },
+    "23847576354940232": {
+      "name": "Post - Sorteo IG - Papelería - Copia",
+      "effective_status": "PAUSED",
+      "objective": "POST_ENGAGEMENT"
+    },
+    "23847575300620232": {
+      "name": "Instagram Post",
+      "effective_status": "ARCHIVED",
+      "objective": "LINK_CLICKS"
+    },
+    "23847575147730232": {
+      "name": "Publicación de Instagram: ¡EEEYYY! Todos atentos...",
+      "effective_status": "ARCHIVED",
+      "objective": "LINK_CLICKS"
+    },
+    "23847574899900232": {
+      "name": "Post - Sorteo IG - Papelería",
+      "effective_status": "PAUSED",
+      "objective": "POST_ENGAGEMENT"
+    },
+    "23847569926410232": {
+      "name": "Publicación de Instagram: ¡EEEYYY! Todos atentos...",
+      "effective_status": "ARCHIVED",
+      "objective": "LINK_CLICKS"
+    },
+    "23847562097540232": {
+      "name": "Campaña Cambridge - MAYO 2021 - GENERICA - MESSENGER L a V - Click - Copia",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23847561424420232": {
+      "name": "Publicación de Instagram: hoy - 19:30 ¡Te esperamos!",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23847560521250232": {
+      "name": "Publicación de Instagram: Reserva tu Matrícula...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23847560356050232": {
+      "name": "Publicación de Instagram: Comenzamos 25 de mayo...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23847556642660232": {
+      "name": "Publicación de Instagram: Ya puedes reservar tu...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23847538561360232": {
+      "name": "Publicación de Instagram: ¿Te quieres preparar...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23847537936440232": {
+      "name": "Publicación de Instagram: ¡Desde ya! iniciamos...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23847537345500232": {
+      "name": "Publicación de Instagram: ¡Desde ya! iniciamos...",
+      "effective_status": "ARCHIVED",
+      "objective": "MESSAGES"
+    },
+    "23847500675420232": {
+      "name": "Campaña Cambridge - MAYO-JULIO-AGO 2021 - RMKT - conversion",
+      "effective_status": "PAUSED",
+      "objective": "CONVERSIONS"
+    },
+    "23847476562440232": {
+      "name": "Publicación de Instagram: Comenzamos el 18 de...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23847475729360232": {
+      "name": "Publicación de Instagram: #CAMBRIDGEEXAMS...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23847475725520232": {
+      "name": "Publicación de Instagram: NUEVOS CURSOS \n18 DE MAYO",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23847465817550232": {
+      "name": "Publicación de Instagram: ¡Let's Talk!! El mejor...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23847450045640232": {
+      "name": "Publicación de Instagram: Este lunes 3/5 a las...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23847430527120232": {
+      "name": "Publicación de Instagram: Este lunes 3/5 a las...",
+      "effective_status": "ARCHIVED",
+      "objective": "LINK_CLICKS"
+    },
+    "23847427667260232": {
+      "name": "Campaña MATRICULAS 2021-2022 trafico web",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23847427420180232": {
+      "name": "Campaña - Trafico Ebook APTIS - Mayo 2021  speaking",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23847425251020232": {
+      "name": "Campaña Aptis - MAYO2021 - GENERICA - MESSENGER L a V - Click",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23847420473620232": {
+      "name": "Post Engagement - Instagram - APTIS - MAYO 2021",
+      "effective_status": "PAUSED",
+      "objective": "POST_ENGAGEMENT"
+    },
+    "23847389258800232": {
+      "name": "Publicación de Instagram: Ya disponibles las...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23847387410710232": {
+      "name": "Publicación de Instagram: Ya disponibles las...",
+      "effective_status": "ARCHIVED",
+      "objective": "LINK_CLICKS"
+    },
+    "23847384596660232": {
+      "name": "Post Engagement - Facebook - Abril 2021 - Oposiciones",
+      "effective_status": "PAUSED",
+      "objective": "POST_ENGAGEMENT"
+    },
+    "23847377466610232": {
+      "name": "Post Engagement - Facebook - Abril 2021 - Cambridge",
+      "effective_status": "PAUSED",
+      "objective": "POST_ENGAGEMENT"
+    },
+    "23847367479080232": {
+      "name": "Post Engagement - Facebook - Abril 2021 - Summer Camps",
+      "effective_status": "PAUSED",
+      "objective": "POST_ENGAGEMENT"
+    },
+    "23847364020780232": {
+      "name": "Campaña Cambridge - ABRIL 2021 - RMKT - conversion",
+      "effective_status": "PAUSED",
+      "objective": "CONVERSIONS"
+    },
+    "23847361696700232": {
+      "name": "Matriculas 2021 - stories a landing - Madrid y Malaga",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23847352238610232": {
+      "name": "Instagram Post - Matriculas video",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23847321117760232": {
+      "name": "Summer Camp - WEB - Malaga y Madrid",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23847313571140232": {
+      "name": "Campaña Aptis - MAYO 2021 - GENERICA - WEB LA",
+      "effective_status": "PAUSED",
+      "objective": "CONVERSIONS"
+    },
+    "23847312185040232": {
+      "name": "Post Engagement - fb y ig - Matriculas 2021 - Madrid y Malaga - messenger",
+      "effective_status": "PAUSED",
+      "objective": "POST_ENGAGEMENT"
+    },
+    "23847311739770232": {
+      "name": "Publicación de Instagram: MATRICULAS Ya puedes reservar tu...",
+      "effective_status": "ARCHIVED",
+      "objective": "LINK_CLICKS"
+    },
+    "23847307305780232": {
+      "name": "Publicación de Instagram: CAMBRIDGE STORIES",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23847307203400232": {
+      "name": "Summer Camp - Meesenger",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23847299642610232": {
+      "name": "Publicación de Instagram: CAMBRIDGE POST",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23847286109890232": {
+      "name": "Publicación de Instagram: [LINK IN BIO]",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23847277654280232": {
+      "name": "Publicación de Instagram: Comenzamos el 26 de...",
+      "effective_status": "ARCHIVED",
+      "objective": "MESSAGES"
+    },
+    "23847262820930232": {
+      "name": "Campaña Cambridge - ABRIL 2021 - GENERICA - MESSENGER L a V - Click",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23847242640100232": {
+      "name": "Post Engagement - IG - Ebook Cambridge",
+      "effective_status": "PAUSED",
+      "objective": "POST_ENGAGEMENT"
+    },
+    "23847242613930232": {
+      "name": "IG Stories - Aptis - fin de semana",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23847240811440232": {
+      "name": "Publicación de Instagram: Este jueves 8/4 a las...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23847233285010232": {
+      "name": "Instagram Post",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23847222377240232": {
+      "name": "ebook - cambridge - facebook",
+      "effective_status": "PAUSED",
+      "objective": "POST_ENGAGEMENT"
+    },
+    "23847214798630232": {
+      "name": "Publicación de Instagram: Este jueves 8/4 a las...",
+      "effective_status": "ARCHIVED",
+      "objective": "LINK_CLICKS"
+    },
+    "23847214489970232": {
+      "name": "Publicación de Instagram: Este jueves 8/4 a las...",
+      "effective_status": "ARCHIVED",
+      "objective": "LINK_CLICKS"
+    },
+    "23847204210370232": {
+      "name": "Publicación de Instagram: COMENZAMOS el 6 DE...",
+      "effective_status": "PAUSED",
+      "objective": "MESSAGES"
+    },
+    "23847150173070232": {
+      "name": "Post Engagement - Instagram - Marzo 2021 - Aptis ABRIL",
+      "effective_status": "PAUSED",
+      "objective": "POST_ENGAGEMENT"
+    },
+    "23847150112820232": {
+      "name": "Campaña Aptis - ABRIL 2021 - GENERICA - MESSENGER L a V - Click",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23847140224190232": {
+      "name": "Publicación de Instagram: COMENZAMOS el 6 DE...",
+      "effective_status": "ARCHIVED",
+      "objective": "MESSAGES"
+    },
+    "23847138823080232": {
+      "name": "Campaña Aptis - MAYO 2021 - RMKT - web - compra",
+      "effective_status": "PAUSED",
+      "objective": "CONVERSIONS"
+    },
+    "23847085713350232": {
+      "name": "Post Engagement - Facebook - Marzo 2021 - Oposiciones",
+      "effective_status": "PAUSED",
+      "objective": "POST_ENGAGEMENT"
+    },
+    "23847076604460232": {
+      "name": "Publicación de Instagram: RESERVA EN LA WEB O...",
+      "effective_status": "PAUSED",
+      "objective": "MESSAGES"
+    },
+    "23847063084180232": {
+      "name": "Campaña Aptis - 16 MARZO 2021 - RMKT - web - compra - Copy",
+      "effective_status": "PAUSED",
+      "objective": "CONVERSIONS"
+    },
+    "23847054497240232": {
+      "name": "Publicación de Instagram: JUEVES 11/3 \nLANZAMOS...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23847038350190232": {
+      "name": "Pots Engagement - Instagram - Marzo 2021 - Dia de la mujer",
+      "effective_status": "PAUSED",
+      "objective": "POST_ENGAGEMENT"
+    },
+    "23847037655990232": {
+      "name": "Campaña Aptis - 16 MARZO 2021 - RMKT - web - compra",
+      "effective_status": "PAUSED",
+      "objective": "CONVERSIONS"
+    },
+    "23847033205380232": {
+      "name": "Publicación de Instagram: En el Día...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23847033102140232": {
+      "name": "Campaña - Trafico Ebook - Marzo 2021",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23847025870180232": {
+      "name": "Post Engagement - Instagram - Marzo 2021 - Cambridge",
+      "effective_status": "PAUSED",
+      "objective": "POST_ENGAGEMENT"
+    },
+    "23847025857080232": {
+      "name": "Post Engagement - Instagram - Marzo 2021 - Aptis LIVE",
+      "effective_status": "PAUSED",
+      "objective": "POST_ENGAGEMENT"
+    },
+    "23847021861010232": {
+      "name": "Publicación de Instagram: Este jueves 11/3 a las...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23847021525200232": {
+      "name": "Publicación de Instagram: Este jueves 11/3 a las...",
+      "effective_status": "ARCHIVED",
+      "objective": "LINK_CLICKS"
+    },
+    "23847015702440232": {
+      "name": "Publicación de Instagram: COMENZAMOS MAÑANA FIN...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23847015397780232": {
+      "name": "Publicación de Instagram: Cambridge Reserva tu plaza en los...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23847012537710232": {
+      "name": "Campaña Cambridge - Marzo 2021 - Malaga - MESSENGER L a V - Click - Copy",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23847005149920232": {
+      "name": "Campaña Cambridge Test- Marzo 2021 - Malaga -  Post engagement",
+      "effective_status": "PAUSED",
+      "objective": "POST_ENGAGEMENT"
+    },
+    "23847004957020232": {
+      "name": "Campaña Cambridge - Marzo 2021 - Malaga - MESSENGER L a V - Click",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23847004952610232": {
+      "name": "New Campaign",
+      "effective_status": "ARCHIVED",
+      "objective": "CONVERSIONS"
+    },
+    "23847002014490232": {
+      "name": "Campaña Aptis - Marzo 2021 - RMKT - conversion web Fines de semana 6/3",
+      "effective_status": "PAUSED",
+      "objective": "CONVERSIONS"
+    },
+    "23846945333420232": {
+      "name": "Campaña Aptis - Marzo 2021 - RMKT - conversion web 23/2",
+      "effective_status": "PAUSED",
+      "objective": "CONVERSIONS"
+    },
+    "23846927210170232": {
+      "name": "Campaña Aptis - Marzo 2021 - RMKT - web - compra - NEW",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23846918887050232": {
+      "name": "Campaña Aptis - Marzo 2021 - GENERICA - MESSENGER L a V - Click - Copy",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23846915554840232": {
+      "name": "Publicación de Instagram: ¿Estás pensando...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23846915549370232": {
+      "name": "Publicación de Instagram: Ya puedes reservar tu...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23846911044070232": {
+      "name": "Campaña Aptis - Febrero 2021 - GENERICA - Web - 36-45 - TRAFICO",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23846907885110232": {
+      "name": "Post Engagement - Instagram - Febrero 2021 - Aptis",
+      "effective_status": "PAUSED",
+      "objective": "POST_ENGAGEMENT"
+    },
+    "23846891794480232": {
+      "name": "Campaña Aptis - Febrero 2021 - RMKT - web - compra - NEW",
+      "effective_status": "PAUSED",
+      "objective": "CONVERSIONS"
+    },
+    "23846883000460232": {
+      "name": "Campaña Aptis - Febrero 16 - Cupon 20OFF web",
+      "effective_status": "PAUSED",
+      "objective": "CONVERSIONS"
+    },
+    "23846871007180232": {
+      "name": "Post Engagement - Facebook - JUNIO 2022 Febrero 2021 - C1 y B2",
+      "effective_status": "PAUSED",
+      "objective": "POST_ENGAGEMENT"
+    },
+    "23846866337800232": {
+      "name": "BP Madrid - Francés - Post IG - Febrero 2021",
+      "effective_status": "PAUSED",
+      "objective": "POST_ENGAGEMENT"
+    },
+    "23846860320470232": {
+      "name": "Campaña Aptis - Marzo Febrero 2021 - GENERICA - MESSENGER L a V - Click",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23846853718510232": {
+      "name": "Campaña Aptis - Febrero 2021 - GENERICA - MESSENGER Conversion L a V NO",
+      "effective_status": "PAUSED",
+      "objective": "CONVERSIONS"
+    },
+    "23846853697940232": {
+      "name": "BP Madrid - Genérica - messenger - L a V",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23846853652200232": {
+      "name": "BP Malaga - Genérica - messenger L a V",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23846853555780232": {
+      "name": "Campaña Aptis - Febrero 2021 - GENERICA - Web - 36-45",
+      "effective_status": "PAUSED",
+      "objective": "CONVERSIONS"
+    },
+    "23846853498600232": {
+      "name": "BP Madrid - Francés - Febrero 2021",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23846853404200232": {
+      "name": "Campaña Aptis - 16 Febrero 2021 - RMKT - web - compra",
+      "effective_status": "PAUSED",
+      "objective": "CONVERSIONS"
+    },
+    "23846853120580232": {
+      "name": "Campaña Aptis - Febrero 2021 - GENERICA - Web - 20-35",
+      "effective_status": "PAUSED",
+      "objective": "CONVERSIONS"
+    },
+    "23846764188460232": {
+      "name": "Campaña Aptis - Enero 2021 - RMKT - Goal conversion / website aptis",
+      "effective_status": "PAUSED",
+      "objective": "CONVERSIONS"
+    },
+    "23846764149280232": {
+      "name": "Campaña Aptis - Enero 2021 - RMKT - Goal traffic / messages",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23846759068230232": {
+      "name": "Campaña Aptis - Enero 2021 - RMKT - Goal conversion / message - L a V",
+      "effective_status": "PAUSED",
+      "objective": "CONVERSIONS"
+    },
+    "23846758870840232": {
+      "name": "Campaña Aptis - Enero 2021 - GENERICA",
+      "effective_status": "PAUSED",
+      "objective": "CONVERSIONS"
+    },
+    "23846677962170232": {
+      "name": "Publicación de Instagram: Empieza el año...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23846608279390232": {
+      "name": "Publicación: \"Volvimos con las clases de SPEAKING!!! OMG!!! 🤩\"",
+      "effective_status": "PAUSED",
+      "objective": "MESSAGES"
+    },
+    "23846572841410232": {
+      "name": "Publicación: \"¡Te toca y lo sabes!\"",
+      "effective_status": "PAUSED",
+      "objective": "MESSAGES"
+    },
+    "23846543466280232": {
+      "name": "Publicación: \"¡Regálate el APROBADO APTIS!🤩\"",
+      "effective_status": "PAUSED",
+      "objective": "MESSAGES"
+    },
+    "23846543456050232": {
+      "name": "Publicación: \"⭐️¡Venimos a cumplir tu propósito del 2021!⭐️\"",
+      "effective_status": "PAUSED",
+      "objective": "MESSAGES"
+    },
+    "23846382070380232": {
+      "name": "Publicación: \"¿Qué mejor regalo de navidad para el futuro de tu...\"",
+      "effective_status": "PAUSED",
+      "objective": "MESSAGES"
+    },
+    "23846381626570232": {
+      "name": "Publicación: \"¿Qué mejor regalo de navidad para el futuro de tu...\"",
+      "effective_status": "ARCHIVED",
+      "objective": "LINK_CLICKS"
+    },
+    "23846294647130232": {
+      "name": "Publicación de Instagram: www.blueparrotschool.com",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23846284587220232": {
+      "name": "Publicación: \"100% de los alumnos preparados por nosotros han...\"",
+      "effective_status": "PAUSED",
+      "objective": "MESSAGES"
+    },
+    "23846266762090232": {
+      "name": "Publicación: \"100% de los alumnos preparados por nosotros han...\"",
+      "effective_status": "PAUSED",
+      "objective": "MESSAGES"
+    },
+    "23846253945500232": {
+      "name": "Publicación de Instagram: De los creadores de...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23846247772850232": {
+      "name": "Publicación: \"¡¡¡ÚLTIMAS PLAZAS!!!\"",
+      "effective_status": "PAUSED",
+      "objective": "MESSAGES"
+    },
+    "23846247500760232": {
+      "name": "Publicación: \"100% de los alumnos preparados por nosotros han...\"",
+      "effective_status": "PAUSED",
+      "objective": "MESSAGES"
+    },
+    "23846246176910232": {
+      "name": "Publicación: \"¡¡¡ÚLTIMAS PLAZAS!!!\"",
+      "effective_status": "ARCHIVED",
+      "objective": "POST_ENGAGEMENT"
+    },
+    "23846223575080232": {
+      "name": "Publicación: \"De los creadores del KIDS CLUB:\"",
+      "effective_status": "PAUSED",
+      "objective": "MESSAGES"
+    },
+    "23846160506170232": {
+      "name": "Publicación: \"BLACK FRIDAY!!!!!! 😲\"",
+      "effective_status": "PAUSED",
+      "objective": "MESSAGES"
+    },
+    "23846160012780232": {
+      "name": "Publicación de Instagram: ✨✨✨✨✨✨✨✨\n\nᗷᒪᗩᑕK ᖴᖇIᗪᗩY...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23846160010230232": {
+      "name": "Publicación de Instagram: 2x1",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23846159845730232": {
+      "name": "Publicación: \"¡NUEVOS INTENSIVOS NOVIEMBRE - DICIEMBRE!\"",
+      "effective_status": "PAUSED",
+      "objective": "MESSAGES"
+    },
+    "23846159780080232": {
+      "name": "Publicación: \"¡NUEVOS INTENSIVOS NOVIEMBRE - DICIEMBRE!\"",
+      "effective_status": "PAUSED",
+      "objective": "LEAD_GENERATION"
+    },
+    "23846119833080232": {
+      "name": "Publicación: \"¡TE TOCA Y LO SABES!\"",
+      "effective_status": "PAUSED",
+      "objective": "LEAD_GENERATION"
+    },
+    "23846119823820232": {
+      "name": "Publicación: \"¡TE TOCA Y LO SABES!\"",
+      "effective_status": "PAUSED",
+      "objective": "MESSAGES"
+    },
+    "23846097370080232": {
+      "name": "Publicación: \"¡TE TOCA A TI Y LO SABES!\"",
+      "effective_status": "PAUSED",
+      "objective": "MESSAGES"
+    },
+    "23845995051010232": {
+      "name": "Publicación: \"¡No lo dejes para mas tarde!\"",
+      "effective_status": "PAUSED",
+      "objective": "MESSAGES"
+    },
+    "23845965671160232": {
+      "name": "Publicación: \"¡TE TOCA A TI Y LO SABES!\"",
+      "effective_status": "PAUSED",
+      "objective": "MESSAGES"
+    },
+    "23845965634610232": {
+      "name": "Publicación: \"¡TE TOCA A TI Y LO SABES!\"",
+      "effective_status": "ARCHIVED",
+      "objective": "MESSAGES"
+    },
+    "23845847297980232": {
+      "name": "Publicación: \"¡Clases de conversación Online!\"",
+      "effective_status": "PAUSED",
+      "objective": "MESSAGES"
+    },
+    "23845847257310232": {
+      "name": "Publicación: \"¡Clases de conversación Online!\"",
+      "effective_status": "PAUSED",
+      "objective": "MESSAGES"
+    },
+    "23845833206090232": {
+      "name": "Publicación: \"Intensivos APTIS B1 - B2 OCTUBRE 2020. \"",
+      "effective_status": "PAUSED",
+      "objective": "MESSAGES"
+    },
+    "23845703737590232": {
+      "name": "Publicación: \"Clases grupales \"",
+      "effective_status": "PAUSED",
+      "objective": "MESSAGES"
+    },
+    "23845703089870232": {
+      "name": "Publicación: \"¿Buscas una certificación CAMBRIDGE? 🎖\"",
+      "effective_status": "PAUSED",
+      "objective": "MESSAGES"
+    },
+    "23845636066510232": {
+      "name": "Publicación: \"Intensivos APTIS B1 - B2 OCTUBRE 2020. \"",
+      "effective_status": "PAUSED",
+      "objective": "MESSAGES"
+    },
+    "23845552440000232": {
+      "name": "Instagram Post",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23845551711590232": {
+      "name": "Instagram Post",
+      "effective_status": "ARCHIVED",
+      "objective": "LINK_CLICKS"
+    },
+    "23845551691650232": {
+      "name": "Instagram Post",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23845537823460232": {
+      "name": "Publicación: \"¡No esperes más!\"",
+      "effective_status": "PAUSED",
+      "objective": "MESSAGES"
+    },
+    "23845537754510232": {
+      "name": "Publicación: \"¡No esperes más!\"",
+      "effective_status": "PAUSED",
+      "objective": "MESSAGES"
+    },
+    "23845537712040232": {
+      "name": "Publicación: \"KIDS CLUB!!!🤩🤓😜💻👾🤡🌈🎧\"",
+      "effective_status": "PAUSED",
+      "objective": "MESSAGES"
+    },
+    "23845537606710232": {
+      "name": "Instagram Post",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23845537594030232": {
+      "name": "Instagram Post",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23845441083660232": {
+      "name": "Publicación: \"Intensivos B1 (PET), B2 (FIRST) Y C1 (ADVANCED)...\"",
+      "effective_status": "PAUSED",
+      "objective": "MESSAGES"
+    },
+    "23845441078920232": {
+      "name": "Publicación: \"Intensivos APTIS B1 - B2 durante Septiembre 2020....\"",
+      "effective_status": "PAUSED",
+      "objective": "MESSAGES"
+    },
+    "23845383617010232": {
+      "name": "Publicación: \"KIDS CLUB!!!🤩🤓😜💻👾🤡🌈🎧\"",
+      "effective_status": "PAUSED",
+      "objective": "MESSAGES"
+    },
+    "23845375008450232": {
+      "name": "Promoción continua de envío de mensajes para Blue Parrot School",
+      "effective_status": "PAUSED",
+      "objective": "MESSAGES"
+    },
+    "23845374985820232": {
+      "name": "Promoción continua de envío de mensajes para Blue Parrot School",
+      "effective_status": "PAUSED",
+      "objective": "MESSAGES"
+    },
+    "23845203546020232": {
+      "name": "Promoción continua de envío de mensajes para Blue Parrot School",
+      "effective_status": "PAUSED",
+      "objective": "MESSAGES"
+    },
+    "23845179516440232": {
+      "name": "Promoción continua de envío de mensajes para Blue Parrot School",
+      "effective_status": "PAUSED",
+      "objective": "MESSAGES"
+    },
+    "23845165159090232": {
+      "name": "Publicación de Instagram: Hoy ¡SORTEAMOS! 🎁 un...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23845148758280232": {
+      "name": "Promoción continua de envío de mensajes para Blue Parrot School",
+      "effective_status": "PAUSED",
+      "objective": "MESSAGES"
+    },
+    "23845142711080232": {
+      "name": "Publicación: \"Intensivo APTIS B1-B2\"",
+      "effective_status": "PAUSED",
+      "objective": "MESSAGES"
+    },
+    "23845058333740232": {
+      "name": "Publicación: \"En VERANO seguimos con nuestro SUMMER CAMP!\"",
+      "effective_status": "PAUSED",
+      "objective": "MESSAGES"
+    },
+    "23845036320310232": {
+      "name": "Publicación de Instagram: Hoy ¡𝐒𝐎𝐑𝐓𝐄𝐀𝐌𝐎𝐒! un iPad...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23845031120490232": {
+      "name": "Publicación de Instagram: Hoy ¡𝐒𝐎𝐑𝐓𝐄𝐀𝐌𝐎𝐒! un iPad...",
+      "effective_status": "ARCHIVED",
+      "objective": "LINK_CLICKS"
+    },
+    "23845006236330232": {
+      "name": "Publicación: \"INTENSIVO B2 - First\"",
+      "effective_status": "PAUSED",
+      "objective": "MESSAGES"
+    },
+    "23845006179650232": {
+      "name": "Publicación: \"TEENS CLUB\"",
+      "effective_status": "PAUSED",
+      "objective": "MESSAGES"
+    },
+    "23844987510380232": {
+      "name": "Publicación: \"INTENSIVO APTIS Advanced\"",
+      "effective_status": "PAUSED",
+      "objective": "MESSAGES"
+    },
+    "23844987463010232": {
+      "name": "Publicación: \"AÑO ESCOLAR 2020/2021\"",
+      "effective_status": "PAUSED",
+      "objective": "POST_ENGAGEMENT"
+    },
+    "23844987405800232": {
+      "name": "Publicación: \"AÑO ESCOLAR 2020/2021\"",
+      "effective_status": "PAUSED",
+      "objective": "MESSAGES"
+    },
+    "23844964277720232": {
+      "name": "Publicación: \"¡CAMPAMENTO DE VERANO!\"",
+      "effective_status": "PAUSED",
+      "objective": "MESSAGES"
+    },
+    "23844948205360232": {
+      "name": "Publicación: \"¡RESERVA TU PLAZA!\"",
+      "effective_status": "PAUSED",
+      "objective": "MESSAGES"
+    },
+    "23844940253950232": {
+      "name": "[10/06/2020] Promoción de Blue Parrot School",
+      "effective_status": "PAUSED",
+      "objective": "LEAD_GENERATION"
+    },
+    "23844940182540232": {
+      "name": "[10/06/2020] Promoción de Blue Parrot School",
+      "effective_status": "PAUSED",
+      "objective": "LEAD_GENERATION"
+    },
+    "23844924812580232": {
+      "name": "Publicación: \"SUMMER CAMP - ¡PRESENCIAL!\"",
+      "effective_status": "PAUSED",
+      "objective": "MESSAGES"
+    },
+    "23844884198140232": {
+      "name": "Publicación: \"¡ÚLTIMAS PLAZAS!\"",
+      "effective_status": "PAUSED",
+      "objective": "MESSAGES"
+    },
+    "23844875454640232": {
+      "name": "Publicación: \"SUMMER CAMP - ¡PRESENCIAL!\"",
+      "effective_status": "PAUSED",
+      "objective": "MESSAGES"
+    },
+    "23844836029280232": {
+      "name": "Publicación de Instagram: Matrícula + Mes...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23844836016500232": {
+      "name": "Publicación de Instagram: Mes+Matrícula ¡GRATIS!...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23844834802320232": {
+      "name": "Publicación: \"¡INSCRIPCIONES ABIERTAS 2020-2021!\"",
+      "effective_status": "PAUSED",
+      "objective": "MESSAGES"
+    },
+    "23844834791680232": {
+      "name": "Publicación: \"¡INSCRIPCIONES ABIERTAS 2020-2021!\"",
+      "effective_status": "PAUSED",
+      "objective": "MESSAGES"
+    },
+    "23844829760770232": {
+      "name": "Publicación: \"¡INSCRIPCIONES ABIERTAS 2020-2021!\"",
+      "effective_status": "PAUSED",
+      "objective": "MESSAGES"
+    },
+    "23844828912350232": {
+      "name": "Instagram Post",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23844823230760232": {
+      "name": "[24/05/2020] Promoción de Enviar mensaje",
+      "effective_status": "PAUSED",
+      "objective": "MESSAGES"
+    },
+    "23844823164950232": {
+      "name": "Instagram Post",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23844818737880232": {
+      "name": "Instagram Post",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23844815138590232": {
+      "name": "Publicación de Instagram: ¿Quieres conseguir...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23844812344600232": {
+      "name": "Instagram Post",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23844807647570232": {
+      "name": "Publicación de Instagram: ¿Pensando en que se...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23844807610340232": {
+      "name": "Publicación de Instagram: ¿Pensando en que se...",
+      "effective_status": "PAUSED",
+      "objective": "POST_ENGAGEMENT"
+    },
+    "23844807562710232": {
+      "name": "Instagram Post",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23844807561400232": {
+      "name": "Instagram Post",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23844800317140232": {
+      "name": "Instagram Post",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23844800314300232": {
+      "name": "Instagram Post",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23844791436830232": {
+      "name": "Instagram Post",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23844790700880232": {
+      "name": "Publicación: \"💥¡Traemos algo insuperable!💥\"",
+      "effective_status": "PAUSED",
+      "objective": "POST_ENGAGEMENT"
+    },
+    "23844790670950232": {
+      "name": "Publicación de Instagram: 💥¡Traemos algo...",
+      "effective_status": "PAUSED",
+      "objective": "POST_ENGAGEMENT"
+    },
+    "23844790656240232": {
+      "name": "Instagram Post",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23844789805470232": {
+      "name": "Instagram Post",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23844789803520232": {
+      "name": "Instagram Post",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23844787581590232": {
+      "name": "Instagram Post",
+      "effective_status": "ARCHIVED",
+      "objective": "LINK_CLICKS"
+    },
+    "23844787571000232": {
+      "name": "Instagram Post",
+      "effective_status": "ARCHIVED",
+      "objective": "LINK_CLICKS"
+    },
+    "23844770789330232": {
+      "name": "Publicación de Instagram: ¿Quieres conseguir...",
+      "effective_status": "ARCHIVED",
+      "objective": "LINK_CLICKS"
+    },
+    "23844748974480232": {
+      "name": "[12/05/2020] Promoción de Enviar mensaje",
+      "effective_status": "PAUSED",
+      "objective": "MESSAGES"
+    },
+    "23844748807060232": {
+      "name": "[12/05/2020] Promoción de Enviar mensaje",
+      "effective_status": "PAUSED",
+      "objective": "MESSAGES"
+    },
+    "23844730427050232": {
+      "name": "[10/05/2020] Promoción de Enviar mensaje",
+      "effective_status": "PAUSED",
+      "objective": "MESSAGES"
+    },
+    "23844723268210232": {
+      "name": "[09/05/2020] Promoción de Enviar mensaje",
+      "effective_status": "PAUSED",
+      "objective": "MESSAGES"
+    },
+    "23844723237990232": {
+      "name": "Publicación de Instagram: ¿Quieres conseguir...",
+      "effective_status": "PAUSED",
+      "objective": "POST_ENGAGEMENT"
+    },
+    "23844719561280232": {
+      "name": "Publicación de Instagram: ¿Quieres conseguir...",
+      "effective_status": "ARCHIVED",
+      "objective": "LINK_CLICKS"
+    },
+    "23844686703250232": {
+      "name": "[02/05/2020] Promoción de Enviar mensaje",
+      "effective_status": "PAUSED",
+      "objective": "MESSAGES"
+    },
+    "23844686698620232": {
+      "name": "[02/05/2020] Promoción de Enviar mensaje",
+      "effective_status": "PAUSED",
+      "objective": "MESSAGES"
+    },
+    "23844686689660232": {
+      "name": "[02/05/2020] Promoción de Enviar mensaje",
+      "effective_status": "PAUSED",
+      "objective": "MESSAGES"
+    },
+    "23844686676030232": {
+      "name": "[02/05/2020] Promoción de Enviar mensaje",
+      "effective_status": "PAUSED",
+      "objective": "MESSAGES"
+    },
+    "23844686605730232": {
+      "name": "[02/05/2020] Promoción de Enviar mensaje",
+      "effective_status": "PAUSED",
+      "objective": "MESSAGES"
+    },
+    "23844658634180232": {
+      "name": "Promoción continua de envío de mensajes para thegreenmonkeyretiro",
+      "effective_status": "PAUSED",
+      "objective": "MESSAGES"
+    },
+    "23844653952680232": {
+      "name": "Promoción continua de envío de mensajes para thegreenmonkeyretiro",
+      "effective_status": "PAUSED",
+      "objective": "MESSAGES"
+    },
+    "23844650978490232": {
+      "name": "Promoción continua de envío de mensajes para thegreenmonkeyretiro",
+      "effective_status": "PAUSED",
+      "objective": "MESSAGES"
+    },
+    "23844637889200232": {
+      "name": "[22/04/2020] Promoción de Enviar mensaje",
+      "effective_status": "PAUSED",
+      "objective": "MESSAGES"
+    },
+    "23844622016740232": {
+      "name": "Promoción continua de envío de mensajes para thegreenmonkeyretiro",
+      "effective_status": "PAUSED",
+      "objective": "MESSAGES"
+    },
+    "23844616419220232": {
+      "name": "[18/04/2020] Promoción de The Green Monkey",
+      "effective_status": "PAUSED",
+      "objective": "LEAD_GENERATION"
+    },
+    "23844612126940232": {
+      "name": "[17/04/2020] Promoción de The Green Monkey",
+      "effective_status": "PAUSED",
+      "objective": "LEAD_GENERATION"
+    },
+    "23844612056070232": {
+      "name": "[17/04/2020] Promoción de Enviar mensaje",
+      "effective_status": "PAUSED",
+      "objective": "MESSAGES"
+    },
+    "23844611961280232": {
+      "name": "Publicación de Instagram: ¡Aprovecha estos días y...",
+      "effective_status": "PAUSED",
+      "objective": "POST_ENGAGEMENT"
+    },
+    "23844596468430232": {
+      "name": "Promoción continua de envío de mensajes para thegreenmonkeyretiro",
+      "effective_status": "PAUSED",
+      "objective": "MESSAGES"
+    },
+    "23844596399540232": {
+      "name": "Promoción de negocio local continua: thegreenmonkeyretiro",
+      "effective_status": "PAUSED",
+      "objective": "REACH"
+    },
+    "23844596386820232": {
+      "name": "Promoción continua de envío de mensajes para thegreenmonkeyretiro",
+      "effective_status": "PAUSED",
+      "objective": "MESSAGES"
+    },
+    "23844596365260232": {
+      "name": "Publicación de Instagram: ¡Aprovecha estos días y...",
+      "effective_status": "ARCHIVED",
+      "objective": "LINK_CLICKS"
+    },
+    "23844584942020232": {
+      "name": "Promoción continua de envío de mensajes para thegreenmonkeyretiro",
+      "effective_status": "PAUSED",
+      "objective": "MESSAGES"
+    },
+    "23844578625880232": {
+      "name": "[12/04/2020] Promoción de Formulario de thegreenmonkeyretiro, creado el sábado, 4 de abril de 2020 18:18",
+      "effective_status": "PAUSED",
+      "objective": "LEAD_GENERATION"
+    },
+    "23844567025630232": {
+      "name": "Promoción continua de envío de mensajes para thegreenmonkeyretiro",
+      "effective_status": "PAUSED",
+      "objective": "MESSAGES"
+    },
+    "23844533562940232": {
+      "name": "Promoción continua de envío de mensajes para thegreenmonkeyretiro",
+      "effective_status": "PAUSED",
+      "objective": "MESSAGES"
+    },
+    "23844533551630232": {
+      "name": "Promoción continua de envío de mensajes para thegreenmonkeyretiro",
+      "effective_status": "PAUSED",
+      "objective": "MESSAGES"
+    },
+    "23844533455830232": {
+      "name": "Promoción continua de envío de mensajes para thegreenmonkeyretiro",
+      "effective_status": "ARCHIVED",
+      "objective": "MESSAGES"
+    },
+    "23844533425180232": {
+      "name": "[04/04/2020] Promoción de Formulario de thegreenmonkeyretiro, creado el sábado, 4 de abril de 2020 18:18",
+      "effective_status": "PAUSED",
+      "objective": "LEAD_GENERATION"
+    },
+    "23844533392280232": {
+      "name": "Promoción continua de envío de mensajes para thegreenmonkeyretiro",
+      "effective_status": "ARCHIVED",
+      "objective": "MESSAGES"
+    },
+    "23844533386190232": {
+      "name": "Promoción continua de envío de mensajes para thegreenmonkeyretiro",
+      "effective_status": "PAUSED",
+      "objective": "MESSAGES"
+    },
+    "23844533371830232": {
+      "name": "Promoción continua de envío de mensajes para thegreenmonkeyretiro",
+      "effective_status": "PAUSED",
+      "objective": "MESSAGES"
+    },
+    "23844529799490232": {
+      "name": "Promoción continua de envío de mensajes para thegreenmonkeyretiro",
+      "effective_status": "PAUSED",
+      "objective": "MESSAGES"
+    },
+    "23844529647650232": {
+      "name": "Promoción continua de envío de mensajes para thegreenmonkeyretiro",
+      "effective_status": "PAUSED",
+      "objective": "MESSAGES"
+    },
+    "23844527605650232": {
+      "name": "Publicación de Instagram: Porque nos importa...",
+      "effective_status": "ARCHIVED",
+      "objective": "LINK_CLICKS"
+    },
+    "23844527599860232": {
+      "name": "Publicación de Instagram: 👇🏻\nPara #ayudarte sigue...",
+      "effective_status": "ARCHIVED",
+      "objective": "LINK_CLICKS"
+    },
+    "23844523834450232": {
+      "name": "Publicación de Instagram: ¡Nuevos intensivos de...",
+      "effective_status": "ARCHIVED",
+      "objective": "LINK_CLICKS"
+    },
+    "23844522596400232": {
+      "name": "Publicación de Instagram: PARTICIPA x 1 semana de...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23844522589680232": {
+      "name": "Instagram Post",
+      "effective_status": "ARCHIVED",
+      "objective": "LINK_CLICKS"
+    },
+    "23844519216000232": {
+      "name": "Publicación de Instagram: PARTICIPA x 1 semana de...",
+      "effective_status": "ARCHIVED",
+      "objective": "LINK_CLICKS"
+    },
+    "23844492717280232": {
+      "name": "Publicación de Instagram: ¡Aprovecha para unirte...",
+      "effective_status": "ARCHIVED",
+      "objective": "LINK_CLICKS"
+    },
+    "23844492713680232": {
+      "name": "Publicación de Instagram: #QuédateEnCasa y sigue...",
+      "effective_status": "ARCHIVED",
+      "objective": "LINK_CLICKS"
+    },
+    "23844478906380232": {
+      "name": "Publicación de Instagram: 👇🏻\nPara #ayudarte sigue...",
+      "effective_status": "ARCHIVED",
+      "objective": "LINK_CLICKS"
+    },
+    "23844478902750232": {
+      "name": "Publicación de Instagram: Porque nos importa...",
+      "effective_status": "ARCHIVED",
+      "objective": "LINK_CLICKS"
+    },
+    "23844460087180232": {
+      "name": "Publicación de Instagram: #Clases on-line 💻\nGrupo...",
+      "effective_status": "ARCHIVED",
+      "objective": "LINK_CLICKS"
+    },
+    "23844458350020232": {
+      "name": "Publicación de Instagram: Es el momento perfecto...",
+      "effective_status": "ARCHIVED",
+      "objective": "LINK_CLICKS"
+    },
+    "23844458345890232": {
+      "name": "Publicación de Instagram: ¡Ya no tienes excusas...",
+      "effective_status": "ARCHIVED",
+      "objective": "LINK_CLICKS"
+    },
+    "23844455675350232": {
+      "name": "Publicación de Instagram: Es el momento perfecto...",
+      "effective_status": "ARCHIVED",
+      "objective": "LINK_CLICKS"
+    },
+    "23844455581820232": {
+      "name": "Publicación de Instagram: ¡Ya no tienes excusas...",
+      "effective_status": "ARCHIVED",
+      "objective": "LINK_CLICKS"
+    },
+    "23844454935100232": {
+      "name": "Publicación de Instagram: ¡Ya no tienes excusas...",
+      "effective_status": "ARCHIVED",
+      "objective": "LINK_CLICKS"
+    },
+    "23844453144260232": {
+      "name": "Publicación de Instagram: ¡Ya no tienes excusas...",
+      "effective_status": "ARCHIVED",
+      "objective": "LINK_CLICKS"
+    },
+    "23844446956810232": {
+      "name": "Publicación de Instagram: Porque nos importa...",
+      "effective_status": "ARCHIVED",
+      "objective": "LINK_CLICKS"
+    },
+    "23844446952670232": {
+      "name": "Publicación de Instagram: 👇🏻\nPara #ayudarte sigue...",
+      "effective_status": "ARCHIVED",
+      "objective": "LINK_CLICKS"
+    },
+    "23844443656070232": {
+      "name": "Publicación de Instagram: 👇🏻\nPara #ayudarte sigue...",
+      "effective_status": "ARCHIVED",
+      "objective": "LINK_CLICKS"
+    },
+    "23844440652740232": {
+      "name": "Publicación de Instagram: Porque nos importa...",
+      "effective_status": "ARCHIVED",
+      "objective": "LINK_CLICKS"
+    },
+    "23844440648180232": {
+      "name": "Publicación de Instagram: 👇🏻\nPara #ayudarte sigue...",
+      "effective_status": "ARCHIVED",
+      "objective": "LINK_CLICKS"
+    },
+    "23844425318490232": {
+      "name": "Publicación de Instagram: ¡Nuevos intensivos de...",
+      "effective_status": "ARCHIVED",
+      "objective": "LINK_CLICKS"
+    },
+    "23844380736130232": {
+      "name": "Publicación de Instagram: En The Green Monkey...",
+      "effective_status": "ARCHIVED",
+      "objective": "LINK_CLICKS"
+    },
+    "23844380725740232": {
+      "name": "Instagram Post",
+      "effective_status": "ARCHIVED",
+      "objective": "LINK_CLICKS"
+    },
+    "23844210578900232": {
+      "name": "Instagram Post",
+      "effective_status": "ARCHIVED",
+      "objective": "LINK_CLICKS"
+    },
+    "23844173914230232": {
+      "name": "Publicación de Instagram: Participa ahora!!!...",
+      "effective_status": "ARCHIVED",
+      "objective": "LINK_CLICKS"
+    },
+    "23844171401190232": {
+      "name": "Publicación de Instagram: Participa ahora!!...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23844167579600232": {
+      "name": "Instagram Post",
+      "effective_status": "ARCHIVED",
+      "objective": "LINK_CLICKS"
+    },
+    "23844165662630232": {
+      "name": "Publicación de Instagram: 30% de descuento",
+      "effective_status": "ARCHIVED",
+      "objective": "LINK_CLICKS"
+    },
+    "23844161378290232": {
+      "name": "Publicación de Instagram: ✨Enero ✨ mes de nuevos...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23844158761480232": {
+      "name": "Publicación de Instagram: Ven con un amigo y os...",
+      "effective_status": "ARCHIVED",
+      "objective": "LINK_CLICKS"
+    },
+    "23844158757620232": {
+      "name": "Instagram Post",
+      "effective_status": "ARCHIVED",
+      "objective": "LINK_CLICKS"
+    },
+    "23844092302260232": {
+      "name": "Publicación de Instagram: Durante el mes de...",
+      "effective_status": "ARCHIVED",
+      "objective": "LINK_CLICKS"
+    },
+    "23844072242880232": {
+      "name": "Instagram Post",
+      "effective_status": "ARCHIVED",
+      "objective": "LINK_CLICKS"
+    },
+    "23844069572250232": {
+      "name": "Publicación de Instagram: Ven con un amigo y os...",
+      "effective_status": "ARCHIVED",
+      "objective": "LINK_CLICKS"
+    },
+    "23844033868520232": {
+      "name": "Instagram Post",
+      "effective_status": "ARCHIVED",
+      "objective": "LINK_CLICKS"
+    },
+    "23844033865350232": {
+      "name": "Publicación de Instagram: ᴇɴ ɴᴀᴠɪᴅᴀᴅ ʀᴇɢᴀʟᴀ...",
+      "effective_status": "ARCHIVED",
+      "objective": "LINK_CLICKS"
+    },
+    "23844012799920232": {
+      "name": "Publicación de Instagram: 🖤BLACK FRIDAY🖤 Ven con...",
+      "effective_status": "ARCHIVED",
+      "objective": "LINK_CLICKS"
+    },
+    "23844008507780232": {
+      "name": "Instagram Post",
+      "effective_status": "ARCHIVED",
+      "objective": "LINK_CLICKS"
+    },
+    "23844003734220232": {
+      "name": "Publicación de Instagram: ÚLTIMA SEMANA PARA...",
+      "effective_status": "ARCHIVED",
+      "objective": "LINK_CLICKS"
+    },
+    "23843978237800232": {
+      "name": "Publicación de Instagram: Se estima que existen...",
+      "effective_status": "ARCHIVED",
+      "objective": "LINK_CLICKS"
+    },
+    "23843978232700232": {
+      "name": "Publicación de Instagram: ▪️BLACK FRIDAY▪️...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23843978211670232": {
+      "name": "Publicación de Instagram: ▪️BLACK FRIDAY▪️...",
+      "effective_status": "ARCHIVED",
+      "objective": "LINK_CLICKS"
+    },
+    "23843973080900232": {
+      "name": "Publicación de Instagram: No existen idiomas más...",
+      "effective_status": "ARCHIVED",
+      "objective": "LINK_CLICKS"
+    },
+    "23843956362260232": {
+      "name": "Publicación de Instagram: ▪️BLACK...",
+      "effective_status": "ARCHIVED",
+      "objective": "LINK_CLICKS"
+    },
+    "23843944616890232": {
+      "name": "Instagram Post",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23843944612040232": {
+      "name": "Instagram Post",
+      "effective_status": "ARCHIVED",
+      "objective": "LINK_CLICKS"
+    },
+    "23843944608950232": {
+      "name": "Instagram Post",
+      "effective_status": "ARCHIVED",
+      "objective": "LINK_CLICKS"
+    },
+    "23843919995020232": {
+      "name": "Publicación de Instagram: ¿TE UNES A APRENDER...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23843919993870232": {
+      "name": "Publicación de Instagram: ¿TE UNES A APRENDER...",
+      "effective_status": "ARCHIVED",
+      "objective": "LINK_CLICKS"
+    },
+    "23843919289140232": {
+      "name": "Instagram Post",
+      "effective_status": "ARCHIVED",
+      "objective": "LINK_CLICKS"
+    },
+    "23843919287180232": {
+      "name": "Instagram Post",
+      "effective_status": "ARCHIVED",
+      "objective": "LINK_CLICKS"
+    },
+    "23843891653950232": {
+      "name": "Publicación de Instagram: SORTEO🔊🔊🔊 ¿Te gustaría...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23843891653160232": {
+      "name": "Publicación de Instagram: SORTEO🔊🔊🔊 ¿Te gustaría...",
+      "effective_status": "ARCHIVED",
+      "objective": "LINK_CLICKS"
+    },
+    "23843891652240232": {
+      "name": "Publicación de Instagram: SORTEO🔊🔊🔊 ¿Te gustaría...",
+      "effective_status": "ARCHIVED",
+      "objective": "LINK_CLICKS"
+    },
+    "23843803281710232": {
+      "name": "Publicación de Instagram: Nosotros estamos ya...",
+      "effective_status": "ARCHIVED",
+      "objective": "LINK_CLICKS"
+    },
+    "23843803276920232": {
+      "name": "Publicación de Instagram: Nosotros estamos ya...",
+      "effective_status": "ARCHIVED",
+      "objective": "LINK_CLICKS"
+    },
+    "23843802688690232": {
+      "name": "Publicación de Instagram: CUENTACUENTOS EN INGLÉS...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23843796387660232": {
+      "name": "Publicación de Instagram: Ya lo tenemos todo...",
+      "effective_status": "ARCHIVED",
+      "objective": "LINK_CLICKS"
+    },
+    "23843787724270232": {
+      "name": "Publicación de Instagram: Are you READY?...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23843787721750232": {
+      "name": "Publicación de Instagram: Are you READY?...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23843768667040232": {
+      "name": "Publicación de Instagram: ¿Te apuntas a pasar una...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23843764423340232": {
+      "name": "Instagram Post",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23843760874840232": {
+      "name": "Publicación de Instagram: WELCOME AUTUMN! 🍁 Ven a...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23843746370250232": {
+      "name": "Publicación de Instagram: The Green Monkey...",
+      "effective_status": "ARCHIVED",
+      "objective": "LINK_CLICKS"
+    },
+    "23843746369180232": {
+      "name": "Publicación de Instagram: The green monkey Torre...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23843746367890232": {
+      "name": "Publicación de Instagram: 💥PROMOCIÓN APERTURA💥....",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23843742389730232": {
+      "name": "Publicación de Instagram: Are you READY?...",
+      "effective_status": "ARCHIVED",
+      "objective": "LINK_CLICKS"
+    },
+    "23843723519760232": {
+      "name": "Publicación de Instagram: Septiembre es un buen...",
+      "effective_status": "ARCHIVED",
+      "objective": "LINK_CLICKS"
+    },
+    "23843723516250232": {
+      "name": "Publicación de Instagram: Septiembre es un buen...",
+      "effective_status": "ARCHIVED",
+      "objective": "LINK_CLICKS"
+    },
+    "23843718157860232": {
+      "name": "Publicación de Instagram:...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23843717727420232": {
+      "name": "Publicación de Instagram: ¡¡¡YA ESTAMOS ABIERTOS...",
+      "effective_status": "ARCHIVED",
+      "objective": "LINK_CLICKS"
+    },
+    "23843717699100232": {
+      "name": "Publicación de Instagram: ¡¡¡YA ESTAMOS ABIERTOS...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23843716879370232": {
+      "name": "Publicación de Instagram: ¡¡¡YA ESTAMOS ABIERTOS...",
+      "effective_status": "PAUSED",
+      "objective": "LINK_CLICKS"
+    },
+    "23843715919170232": {
+      "name": "Publicación de Instagram: 💥PROMOCIÓN APERTURA💥....",
+      "effective_status": "ARCHIVED",
+      "objective": "LINK_CLICKS"
+    }
+  }
+}

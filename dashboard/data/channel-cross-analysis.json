@@ -1,0 +1,1415 @@
+{
+  "generatedAt": "2026-08-27T17:05:31",
+  "sources": {
+    "clientify": "clientify_contactos_27_08_2026 · 38.908 contactos",
+    "woocommerce": "2934 pedidos (2024-01 → 2026-08)",
+    "meta": "act_414283212550847 BPS",
+    "google": "CID 1064441284 BPS (MCC 4Ventures)"
+  },
+  "universe": {
+    "contactos": 38908,
+    "clientes_estado": 4307,
+    "emails_cf": 36563,
+    "emails_wc": 2836,
+    "overlap_email": 2654,
+    "overlap_pct_clientes": 58.88,
+    "ingresos_oportunidad_clientes": 935992.97,
+    "ingresos_wc_total": 641268.95
+  },
+  "period_2026": {
+    "wc_orders": 578,
+    "wc_revenue": 136140.45,
+    "meta_spend": 25402.88,
+    "google_spend": 3755.93,
+    "paid_total": 29158.81,
+    "cac_blended_wc": 50.45,
+    "roas_blended_wc": 4.67
+  },
+  "period_2025": {
+    "wc_orders": 1302,
+    "wc_revenue": 284291.3,
+    "meta_spend": 48639.45,
+    "google_spend": 0,
+    "paid_total": 48639.45,
+    "cac_blended_wc": 37.36,
+    "roas_blended_wc": 5.84
+  },
+  "paid_econ_2026": {
+    "meta": {
+      "spend": 25402.88,
+      "leads_platform": 3912,
+      "purchases_pixel": 234,
+      "cpl": 6.49,
+      "cpa_pixel": 108.56,
+      "contactos_cf": 3341,
+      "clientes_cf": 89,
+      "compradores_cf": 92,
+      "conv_contacto_cliente_pct": 2.66,
+      "ingresos_cf": 20520.13,
+      "ingresos_wc_match": 14437.45,
+      "pedidos_wc_match": 64,
+      "cac_cliente_cf": 285.43,
+      "cac_pedido_wc": 396.92,
+      "roas_wc": 0.57,
+      "roas_cf": 0.81,
+      "wc_orders_referral_fb_ig": 114,
+      "wc_rev_referral_fb_ig": 25726.75,
+      "cac_referral_fb_ig": 222.83
+    },
+    "google": {
+      "spend": 3755.93,
+      "conversions_platform": 326.0,
+      "clicks": 7853,
+      "impressions": 222645,
+      "cpa_platform": 11.52,
+      "contactos_declarados": 350,
+      "clientes_declarados": 29,
+      "ingresos_declarados": 4161.95,
+      "wc_orders_referral": 199,
+      "wc_rev_referral": 47702.35,
+      "cac_referral": 18.87,
+      "roas_referral": 12.7,
+      "campaigns": [
+        {
+          "name": "BPS_CERTIFICADOS_PMAX",
+          "spend": 2309.28,
+          "conversions": 167.11,
+          "clicks": 3436
+        },
+        {
+          "name": "BPS_BRAND_SEARCH",
+          "spend": 801.45,
+          "conversions": 148.89,
+          "clicks": 972
+        },
+        {
+          "name": "BPS_EMPRESAS_PMAX",
+          "spend": 645.2,
+          "conversions": 10.0,
+          "clicks": 3445
+        }
+      ]
+    }
+  },
+  "snapshot_by_canal": [
+    {
+      "canal": "Ecommerce (WC)",
+      "contactos": 4143,
+      "clientes": 3431,
+      "conv_cliente_pct": 82.81,
+      "con_pedido_wc": 2615,
+      "pedidos_wc": 2692,
+      "ingresos_wc": 583230.8,
+      "ingresos_oportunidad": 298308.26,
+      "ingresos_total": 881539.06
+    },
+    {
+      "canal": "Meta Ads",
+      "contactos": 11405,
+      "clientes": 341,
+      "conv_cliente_pct": 2.99,
+      "con_pedido_wc": 260,
+      "pedidos_wc": 269,
+      "ingresos_wc": 57740.4,
+      "ingresos_oportunidad": 19291.99,
+      "ingresos_total": 77032.39
+    },
+    {
+      "canal": "Base BPS / import",
+      "contactos": 221,
+      "clientes": 218,
+      "conv_cliente_pct": 98.64,
+      "con_pedido_wc": 208,
+      "pedidos_wc": 223,
+      "ingresos_wc": 50067.95,
+      "ingresos_oportunidad": 2460.8,
+      "ingresos_total": 52528.75
+    },
+    {
+      "canal": "Integraciones API",
+      "contactos": 3251,
+      "clientes": 20,
+      "conv_cliente_pct": 0.62,
+      "con_pedido_wc": 65,
+      "pedidos_wc": 70,
+      "ingresos_wc": 15766.9,
+      "ingresos_oportunidad": 1783.45,
+      "ingresos_total": 17550.35
+    },
+    {
+      "canal": "Importación",
+      "contactos": 12623,
+      "clientes": 31,
+      "conv_cliente_pct": 0.25,
+      "con_pedido_wc": 48,
+      "pedidos_wc": 49,
+      "ingresos_wc": 10852.65,
+      "ingresos_oportunidad": 2690.4,
+      "ingresos_total": 13543.05
+    },
+    {
+      "canal": "Google (declarado)",
+      "contactos": 950,
+      "clientes": 58,
+      "conv_cliente_pct": 6.11,
+      "con_pedido_wc": 27,
+      "pedidos_wc": 33,
+      "ingresos_wc": 6557.45,
+      "ingresos_oportunidad": 4780.1,
+      "ingresos_total": 11337.55
+    },
+    {
+      "canal": "Test de nivel / web",
+      "contactos": 2651,
+      "clientes": 41,
+      "conv_cliente_pct": 1.55,
+      "con_pedido_wc": 16,
+      "pedidos_wc": 18,
+      "ingresos_wc": 3894.9,
+      "ingresos_oportunidad": 6929.6,
+      "ingresos_total": 10824.5
+    },
+    {
+      "canal": "Referidos",
+      "contactos": 406,
+      "clientes": 32,
+      "conv_cliente_pct": 7.88,
+      "con_pedido_wc": 21,
+      "pedidos_wc": 22,
+      "ingresos_wc": 4688.6,
+      "ingresos_oportunidad": 3741.45,
+      "ingresos_total": 8430.05
+    },
+    {
+      "canal": "Manual",
+      "contactos": 430,
+      "clientes": 48,
+      "conv_cliente_pct": 11.16,
+      "con_pedido_wc": 1,
+      "pedidos_wc": 1,
+      "ingresos_wc": 159.2,
+      "ingresos_oportunidad": 6749.13,
+      "ingresos_total": 6908.33
+    },
+    {
+      "canal": "Email / CRM",
+      "contactos": 341,
+      "clientes": 28,
+      "conv_cliente_pct": 8.21,
+      "con_pedido_wc": 22,
+      "pedidos_wc": 27,
+      "ingresos_wc": 5355.15,
+      "ingresos_oportunidad": 1230.95,
+      "ingresos_total": 6586.1
+    },
+    {
+      "canal": "WhatsApp Inbox",
+      "contactos": 300,
+      "clientes": 27,
+      "conv_cliente_pct": 9.0,
+      "con_pedido_wc": 16,
+      "pedidos_wc": 16,
+      "ingresos_wc": 3241.25,
+      "ingresos_oportunidad": 2281.35,
+      "ingresos_total": 5522.6
+    },
+    {
+      "canal": "Otros",
+      "contactos": 727,
+      "clientes": 20,
+      "conv_cliente_pct": 2.75,
+      "con_pedido_wc": 0,
+      "pedidos_wc": 0,
+      "ingresos_wc": 0.0,
+      "ingresos_oportunidad": 2499.35,
+      "ingresos_total": 2499.35
+    },
+    {
+      "canal": "Instagram (declarado)",
+      "contactos": 330,
+      "clientes": 9,
+      "conv_cliente_pct": 2.73,
+      "con_pedido_wc": 4,
+      "pedidos_wc": 4,
+      "ingresos_wc": 888.25,
+      "ingresos_oportunidad": 842.45,
+      "ingresos_total": 1730.7
+    },
+    {
+      "canal": "Facebook (declarado)",
+      "contactos": 29,
+      "clientes": 1,
+      "conv_cliente_pct": 3.45,
+      "con_pedido_wc": 0,
+      "pedidos_wc": 0,
+      "ingresos_wc": 0.0,
+      "ingresos_oportunidad": 313.65,
+      "ingresos_total": 313.65
+    },
+    {
+      "canal": "Sin atribución",
+      "contactos": 90,
+      "clientes": 2,
+      "conv_cliente_pct": 2.22,
+      "con_pedido_wc": 0,
+      "pedidos_wc": 0,
+      "ingresos_wc": 0.0,
+      "ingresos_oportunidad": 199.0,
+      "ingresos_total": 199.0
+    },
+    {
+      "canal": "Instagram Inbox",
+      "contactos": 633,
+      "clientes": 0,
+      "conv_cliente_pct": 0.0,
+      "con_pedido_wc": 0,
+      "pedidos_wc": 0,
+      "ingresos_wc": 0.0,
+      "ingresos_oportunidad": 0.0,
+      "ingresos_total": 0.0
+    },
+    {
+      "canal": "Internet / Web (decl.)",
+      "contactos": 87,
+      "clientes": 0,
+      "conv_cliente_pct": 0.0,
+      "con_pedido_wc": 0,
+      "pedidos_wc": 0,
+      "ingresos_wc": 0.0,
+      "ingresos_oportunidad": 0.0,
+      "ingresos_total": 0.0
+    },
+    {
+      "canal": "LinkedIn",
+      "contactos": 116,
+      "clientes": 0,
+      "conv_cliente_pct": 0.0,
+      "con_pedido_wc": 0,
+      "pedidos_wc": 0,
+      "ingresos_wc": 0.0,
+      "ingresos_oportunidad": 0.0,
+      "ingresos_total": 0.0
+    },
+    {
+      "canal": "Messenger Inbox",
+      "contactos": 153,
+      "clientes": 0,
+      "conv_cliente_pct": 0.0,
+      "con_pedido_wc": 0,
+      "pedidos_wc": 0,
+      "ingresos_wc": 0.0,
+      "ingresos_oportunidad": 0.0,
+      "ingresos_total": 0.0
+    },
+    {
+      "canal": "TikTok",
+      "contactos": 22,
+      "clientes": 0,
+      "conv_cliente_pct": 0.0,
+      "con_pedido_wc": 0,
+      "pedidos_wc": 0,
+      "ingresos_wc": 0.0,
+      "ingresos_oportunidad": 0.0,
+      "ingresos_total": 0.0
+    }
+  ],
+  "funnel_2026_by_canal": [
+    {
+      "canal": "Ecommerce (WC)",
+      "contactos": 613,
+      "clientes_estado": 581,
+      "compradores": 602,
+      "conv_pct": 98.21,
+      "conv_cliente_pct": 94.78,
+      "wc_match": 529,
+      "pedidos_wc": 547,
+      "ingresos_wc": 131482.3,
+      "ingresos_oportunidad": 16440.11,
+      "ingresos_total": 147922.41,
+      "aov_wc": 240.37,
+      "rev_por_contacto": 241.31
+    },
+    {
+      "canal": "Meta Ads",
+      "contactos": 3341,
+      "clientes_estado": 89,
+      "compradores": 92,
+      "conv_pct": 2.75,
+      "conv_cliente_pct": 2.66,
+      "wc_match": 64,
+      "pedidos_wc": 64,
+      "ingresos_wc": 14437.45,
+      "ingresos_oportunidad": 6082.68,
+      "ingresos_total": 20520.13,
+      "aov_wc": 225.59,
+      "rev_por_contacto": 6.14
+    },
+    {
+      "canal": "Integraciones API",
+      "contactos": 148,
+      "clientes_estado": 12,
+      "compradores": 67,
+      "conv_pct": 45.27,
+      "conv_cliente_pct": 8.11,
+      "wc_match": 57,
+      "pedidos_wc": 62,
+      "ingresos_wc": 13847.2,
+      "ingresos_oportunidad": 1010.45,
+      "ingresos_total": 14857.65,
+      "aov_wc": 223.34,
+      "rev_por_contacto": 100.39
+    },
+    {
+      "canal": "Test de nivel / web",
+      "contactos": 975,
+      "clientes_estado": 23,
+      "compradores": 25,
+      "conv_pct": 2.56,
+      "conv_cliente_pct": 2.36,
+      "wc_match": 3,
+      "pedidos_wc": 3,
+      "ingresos_wc": 618.0,
+      "ingresos_oportunidad": 4326.1,
+      "ingresos_total": 4944.1,
+      "aov_wc": 206.0,
+      "rev_por_contacto": 5.07
+    },
+    {
+      "canal": "Base BPS / import",
+      "contactos": 20,
+      "clientes_estado": 19,
+      "compradores": 20,
+      "conv_pct": 100.0,
+      "conv_cliente_pct": 95.0,
+      "wc_match": 17,
+      "pedidos_wc": 19,
+      "ingresos_wc": 4060.45,
+      "ingresos_oportunidad": 422.4,
+      "ingresos_total": 4482.85,
+      "aov_wc": 213.71,
+      "rev_por_contacto": 224.14
+    },
+    {
+      "canal": "Google (declarado)",
+      "contactos": 350,
+      "clientes_estado": 29,
+      "compradores": 34,
+      "conv_pct": 9.71,
+      "conv_cliente_pct": 8.29,
+      "wc_match": 7,
+      "pedidos_wc": 7,
+      "ingresos_wc": 1142.5,
+      "ingresos_oportunidad": 3019.45,
+      "ingresos_total": 4161.95,
+      "aov_wc": 163.21,
+      "rev_por_contacto": 11.89
+    },
+    {
+      "canal": "Referidos",
+      "contactos": 154,
+      "clientes_estado": 10,
+      "compradores": 12,
+      "conv_pct": 7.79,
+      "conv_cliente_pct": 6.49,
+      "wc_match": 4,
+      "pedidos_wc": 4,
+      "ingresos_wc": 485.95,
+      "ingresos_oportunidad": 1661.15,
+      "ingresos_total": 2147.1,
+      "aov_wc": 121.49,
+      "rev_por_contacto": 13.94
+    },
+    {
+      "canal": "Importación",
+      "contactos": 8700,
+      "clientes_estado": 17,
+      "compradores": 18,
+      "conv_pct": 0.21,
+      "conv_cliente_pct": 0.2,
+      "wc_match": 1,
+      "pedidos_wc": 1,
+      "ingresos_wc": 249.0,
+      "ingresos_oportunidad": 1821.15,
+      "ingresos_total": 2070.15,
+      "aov_wc": 249.0,
+      "rev_por_contacto": 0.24
+    },
+    {
+      "canal": "Manual",
+      "contactos": 70,
+      "clientes_estado": 9,
+      "compradores": 9,
+      "conv_pct": 12.86,
+      "conv_cliente_pct": 12.86,
+      "wc_match": 0,
+      "pedidos_wc": 0,
+      "ingresos_wc": 0.0,
+      "ingresos_oportunidad": 1412.15,
+      "ingresos_total": 1412.15,
+      "aov_wc": null,
+      "rev_por_contacto": 20.17
+    },
+    {
+      "canal": "Email / CRM",
+      "contactos": 56,
+      "clientes_estado": 8,
+      "compradores": 8,
+      "conv_pct": 14.29,
+      "conv_cliente_pct": 14.29,
+      "wc_match": 4,
+      "pedidos_wc": 4,
+      "ingresos_wc": 630.65,
+      "ingresos_oportunidad": 596.0,
+      "ingresos_total": 1226.65,
+      "aov_wc": 157.66,
+      "rev_por_contacto": 21.9
+    },
+    {
+      "canal": "Instagram (declarado)",
+      "contactos": 89,
+      "clientes_estado": 2,
+      "compradores": 3,
+      "conv_pct": 3.37,
+      "conv_cliente_pct": 2.25,
+      "wc_match": 1,
+      "pedidos_wc": 1,
+      "ingresos_wc": 186.75,
+      "ingresos_oportunidad": 211.65,
+      "ingresos_total": 398.4,
+      "aov_wc": 186.75,
+      "rev_por_contacto": 4.48
+    },
+    {
+      "canal": "Facebook (declarado)",
+      "contactos": 11,
+      "clientes_estado": 1,
+      "compradores": 1,
+      "conv_pct": 9.09,
+      "conv_cliente_pct": 9.09,
+      "wc_match": 0,
+      "pedidos_wc": 0,
+      "ingresos_wc": 0.0,
+      "ingresos_oportunidad": 313.65,
+      "ingresos_total": 313.65,
+      "aov_wc": null,
+      "rev_por_contacto": 28.51
+    },
+    {
+      "canal": "WhatsApp Inbox",
+      "contactos": 1,
+      "clientes_estado": 1,
+      "compradores": 1,
+      "conv_pct": 100.0,
+      "conv_cliente_pct": 100.0,
+      "wc_match": 1,
+      "pedidos_wc": 1,
+      "ingresos_wc": 299.0,
+      "ingresos_oportunidad": 0.0,
+      "ingresos_total": 299.0,
+      "aov_wc": 299.0,
+      "rev_por_contacto": 299.0
+    },
+    {
+      "canal": "Instagram Inbox",
+      "contactos": 352,
+      "clientes_estado": 0,
+      "compradores": 0,
+      "conv_pct": 0.0,
+      "conv_cliente_pct": 0.0,
+      "wc_match": 0,
+      "pedidos_wc": 0,
+      "ingresos_wc": 0.0,
+      "ingresos_oportunidad": 0.0,
+      "ingresos_total": 0.0,
+      "aov_wc": null,
+      "rev_por_contacto": 0.0
+    },
+    {
+      "canal": "Internet / Web (decl.)",
+      "contactos": 13,
+      "clientes_estado": 0,
+      "compradores": 0,
+      "conv_pct": 0.0,
+      "conv_cliente_pct": 0.0,
+      "wc_match": 0,
+      "pedidos_wc": 0,
+      "ingresos_wc": 0.0,
+      "ingresos_oportunidad": 0.0,
+      "ingresos_total": 0.0,
+      "aov_wc": null,
+      "rev_por_contacto": 0.0
+    },
+    {
+      "canal": "LinkedIn",
+      "contactos": 3,
+      "clientes_estado": 0,
+      "compradores": 0,
+      "conv_pct": 0.0,
+      "conv_cliente_pct": 0.0,
+      "wc_match": 0,
+      "pedidos_wc": 0,
+      "ingresos_wc": 0.0,
+      "ingresos_oportunidad": 0.0,
+      "ingresos_total": 0.0,
+      "aov_wc": null,
+      "rev_por_contacto": 0.0
+    },
+    {
+      "canal": "Messenger Inbox",
+      "contactos": 49,
+      "clientes_estado": 0,
+      "compradores": 0,
+      "conv_pct": 0.0,
+      "conv_cliente_pct": 0.0,
+      "wc_match": 0,
+      "pedidos_wc": 0,
+      "ingresos_wc": 0.0,
+      "ingresos_oportunidad": 0.0,
+      "ingresos_total": 0.0,
+      "aov_wc": null,
+      "rev_por_contacto": 0.0
+    },
+    {
+      "canal": "Sin atribución",
+      "contactos": 22,
+      "clientes_estado": 1,
+      "compradores": 1,
+      "conv_pct": 4.55,
+      "conv_cliente_pct": 4.55,
+      "wc_match": 0,
+      "pedidos_wc": 0,
+      "ingresos_wc": 0.0,
+      "ingresos_oportunidad": 0.0,
+      "ingresos_total": 0.0,
+      "aov_wc": null,
+      "rev_por_contacto": 0.0
+    },
+    {
+      "canal": "TikTok",
+      "contactos": 9,
+      "clientes_estado": 0,
+      "compradores": 0,
+      "conv_pct": 0.0,
+      "conv_cliente_pct": 0.0,
+      "wc_match": 0,
+      "pedidos_wc": 0,
+      "ingresos_wc": 0.0,
+      "ingresos_oportunidad": 0.0,
+      "ingresos_total": 0.0,
+      "aov_wc": null,
+      "rev_por_contacto": 0.0
+    }
+  ],
+  "funnel_2025_by_canal": [
+    {
+      "canal": "Ecommerce (WC)",
+      "contactos": 674,
+      "clientes_estado": 633,
+      "compradores": 652,
+      "conv_pct": 96.74,
+      "conv_cliente_pct": 93.92,
+      "wc_match": 612,
+      "pedidos_wc": 622,
+      "ingresos_wc": 133869.45,
+      "ingresos_oportunidad": 8790.74,
+      "ingresos_total": 142660.19,
+      "aov_wc": 215.22,
+      "rev_por_contacto": 211.66
+    },
+    {
+      "canal": "Meta Ads",
+      "contactos": 8025,
+      "clientes_estado": 244,
+      "compradores": 253,
+      "conv_pct": 3.15,
+      "conv_cliente_pct": 3.04,
+      "wc_match": 190,
+      "pedidos_wc": 199,
+      "ingresos_wc": 42019.75,
+      "ingresos_oportunidad": 12074.51,
+      "ingresos_total": 54094.26,
+      "aov_wc": 211.15,
+      "rev_por_contacto": 6.74
+    },
+    {
+      "canal": "Base BPS / import",
+      "contactos": 187,
+      "clientes_estado": 186,
+      "compradores": 186,
+      "conv_pct": 99.47,
+      "conv_cliente_pct": 99.47,
+      "wc_match": 179,
+      "pedidos_wc": 188,
+      "ingresos_wc": 42620.55,
+      "ingresos_oportunidad": 1615.3,
+      "ingresos_total": 44235.85,
+      "aov_wc": 226.71,
+      "rev_por_contacto": 236.56
+    },
+    {
+      "canal": "Google (declarado)",
+      "contactos": 520,
+      "clientes_estado": 26,
+      "compradores": 29,
+      "conv_pct": 5.58,
+      "conv_cliente_pct": 5.0,
+      "wc_match": 19,
+      "pedidos_wc": 25,
+      "ingresos_wc": 5203.3,
+      "ingresos_oportunidad": 1561.65,
+      "ingresos_total": 6764.95,
+      "aov_wc": 208.13,
+      "rev_por_contacto": 13.01
+    },
+    {
+      "canal": "Referidos",
+      "contactos": 212,
+      "clientes_estado": 20,
+      "compradores": 20,
+      "conv_pct": 9.43,
+      "conv_cliente_pct": 9.43,
+      "wc_match": 14,
+      "pedidos_wc": 15,
+      "ingresos_wc": 3529.35,
+      "ingresos_oportunidad": 2080.3,
+      "ingresos_total": 5609.65,
+      "aov_wc": 235.29,
+      "rev_por_contacto": 26.46
+    },
+    {
+      "canal": "Manual",
+      "contactos": 327,
+      "clientes_estado": 38,
+      "compradores": 39,
+      "conv_pct": 11.93,
+      "conv_cliente_pct": 11.62,
+      "wc_match": 1,
+      "pedidos_wc": 1,
+      "ingresos_wc": 159.2,
+      "ingresos_oportunidad": 5261.98,
+      "ingresos_total": 5421.18,
+      "aov_wc": 159.2,
+      "rev_por_contacto": 16.58
+    },
+    {
+      "canal": "WhatsApp Inbox",
+      "contactos": 299,
+      "clientes_estado": 26,
+      "compradores": 26,
+      "conv_pct": 8.7,
+      "conv_cliente_pct": 8.7,
+      "wc_match": 15,
+      "pedidos_wc": 15,
+      "ingresos_wc": 2942.25,
+      "ingresos_oportunidad": 2281.35,
+      "ingresos_total": 5223.6,
+      "aov_wc": 196.15,
+      "rev_por_contacto": 17.47
+    },
+    {
+      "canal": "Test de nivel / web",
+      "contactos": 1533,
+      "clientes_estado": 14,
+      "compradores": 21,
+      "conv_pct": 1.37,
+      "conv_cliente_pct": 0.91,
+      "wc_match": 11,
+      "pedidos_wc": 13,
+      "ingresos_wc": 2765.25,
+      "ingresos_oportunidad": 1887.5,
+      "ingresos_total": 4652.75,
+      "aov_wc": 212.71,
+      "rev_por_contacto": 3.04
+    },
+    {
+      "canal": "Email / CRM",
+      "contactos": 196,
+      "clientes_estado": 17,
+      "compradores": 18,
+      "conv_pct": 9.18,
+      "conv_cliente_pct": 8.67,
+      "wc_match": 15,
+      "pedidos_wc": 19,
+      "ingresos_wc": 3825.75,
+      "ingresos_oportunidad": 465.8,
+      "ingresos_total": 4291.55,
+      "aov_wc": 201.36,
+      "rev_por_contacto": 21.9
+    },
+    {
+      "canal": "Otros",
+      "contactos": 494,
+      "clientes_estado": 15,
+      "compradores": 15,
+      "conv_pct": 3.04,
+      "conv_cliente_pct": 3.04,
+      "wc_match": 0,
+      "pedidos_wc": 0,
+      "ingresos_wc": 0.0,
+      "ingresos_oportunidad": 2073.25,
+      "ingresos_total": 2073.25,
+      "aov_wc": null,
+      "rev_por_contacto": 4.2
+    },
+    {
+      "canal": "Integraciones API",
+      "contactos": 2109,
+      "clientes_estado": 5,
+      "compradores": 8,
+      "conv_pct": 0.38,
+      "conv_cliente_pct": 0.24,
+      "wc_match": 6,
+      "pedidos_wc": 6,
+      "ingresos_wc": 1483.95,
+      "ingresos_oportunidad": 379.0,
+      "ingresos_total": 1862.95,
+      "aov_wc": 247.33,
+      "rev_por_contacto": 0.88
+    },
+    {
+      "canal": "Importación",
+      "contactos": 1753,
+      "clientes_estado": 12,
+      "compradores": 12,
+      "conv_pct": 0.68,
+      "conv_cliente_pct": 0.68,
+      "wc_match": 4,
+      "pedidos_wc": 4,
+      "ingresos_wc": 923.7,
+      "ingresos_oportunidad": 620.25,
+      "ingresos_total": 1543.95,
+      "aov_wc": 230.92,
+      "rev_por_contacto": 0.88
+    },
+    {
+      "canal": "Instagram (declarado)",
+      "contactos": 195,
+      "clientes_estado": 7,
+      "compradores": 9,
+      "conv_pct": 4.62,
+      "conv_cliente_pct": 3.59,
+      "wc_match": 3,
+      "pedidos_wc": 3,
+      "ingresos_wc": 701.5,
+      "ingresos_oportunidad": 630.8,
+      "ingresos_total": 1332.3,
+      "aov_wc": 233.83,
+      "rev_por_contacto": 6.83
+    },
+    {
+      "canal": "Facebook (declarado)",
+      "contactos": 13,
+      "clientes_estado": 0,
+      "compradores": 0,
+      "conv_pct": 0.0,
+      "conv_cliente_pct": 0.0,
+      "wc_match": 0,
+      "pedidos_wc": 0,
+      "ingresos_wc": 0.0,
+      "ingresos_oportunidad": 0.0,
+      "ingresos_total": 0.0,
+      "aov_wc": null,
+      "rev_por_contacto": 0.0
+    },
+    {
+      "canal": "Instagram Inbox",
+      "contactos": 281,
+      "clientes_estado": 0,
+      "compradores": 0,
+      "conv_pct": 0.0,
+      "conv_cliente_pct": 0.0,
+      "wc_match": 0,
+      "pedidos_wc": 0,
+      "ingresos_wc": 0.0,
+      "ingresos_oportunidad": 0.0,
+      "ingresos_total": 0.0,
+      "aov_wc": null,
+      "rev_por_contacto": 0.0
+    },
+    {
+      "canal": "Internet / Web (decl.)",
+      "contactos": 61,
+      "clientes_estado": 0,
+      "compradores": 0,
+      "conv_pct": 0.0,
+      "conv_cliente_pct": 0.0,
+      "wc_match": 0,
+      "pedidos_wc": 0,
+      "ingresos_wc": 0.0,
+      "ingresos_oportunidad": 0.0,
+      "ingresos_total": 0.0,
+      "aov_wc": null,
+      "rev_por_contacto": 0.0
+    },
+    {
+      "canal": "LinkedIn",
+      "contactos": 12,
+      "clientes_estado": 0,
+      "compradores": 0,
+      "conv_pct": 0.0,
+      "conv_cliente_pct": 0.0,
+      "wc_match": 0,
+      "pedidos_wc": 0,
+      "ingresos_wc": 0.0,
+      "ingresos_oportunidad": 0.0,
+      "ingresos_total": 0.0,
+      "aov_wc": null,
+      "rev_por_contacto": 0.0
+    },
+    {
+      "canal": "Messenger Inbox",
+      "contactos": 104,
+      "clientes_estado": 0,
+      "compradores": 0,
+      "conv_pct": 0.0,
+      "conv_cliente_pct": 0.0,
+      "wc_match": 0,
+      "pedidos_wc": 0,
+      "ingresos_wc": 0.0,
+      "ingresos_oportunidad": 0.0,
+      "ingresos_total": 0.0,
+      "aov_wc": null,
+      "rev_por_contacto": 0.0
+    },
+    {
+      "canal": "Sin atribución",
+      "contactos": 53,
+      "clientes_estado": 0,
+      "compradores": 0,
+      "conv_pct": 0.0,
+      "conv_cliente_pct": 0.0,
+      "wc_match": 0,
+      "pedidos_wc": 0,
+      "ingresos_wc": 0.0,
+      "ingresos_oportunidad": 0.0,
+      "ingresos_total": 0.0,
+      "aov_wc": null,
+      "rev_por_contacto": 0.0
+    },
+    {
+      "canal": "TikTok",
+      "contactos": 10,
+      "clientes_estado": 0,
+      "compradores": 0,
+      "conv_pct": 0.0,
+      "conv_cliente_pct": 0.0,
+      "wc_match": 0,
+      "pedidos_wc": 0,
+      "ingresos_wc": 0.0,
+      "ingresos_oportunidad": 0.0,
+      "ingresos_total": 0.0,
+      "aov_wc": null,
+      "rev_por_contacto": 0.0
+    }
+  ],
+  "wc_referral_2026": [
+    {
+      "canal": "Google",
+      "orders": 199,
+      "rev": 47702.35000000011
+    },
+    {
+      "canal": "Instagram",
+      "orders": 92,
+      "rev": 21093.800000000003
+    },
+    {
+      "canal": "Sin referral WC",
+      "orders": 52,
+      "rev": 12193.799999999992
+    },
+    {
+      "canal": "Boca A Boca",
+      "orders": 36,
+      "rev": 8529.649999999998
+    },
+    {
+      "canal": "Web",
+      "orders": 33,
+      "rev": 8049.749999999996
+    },
+    {
+      "canal": "Internet",
+      "orders": 33,
+      "rev": 7681.649999999998
+    },
+    {
+      "canal": "Referidos",
+      "orders": 31,
+      "rev": 6891.499999999998
+    },
+    {
+      "canal": "Facebook",
+      "orders": 22,
+      "rev": 4632.949999999999
+    },
+    {
+      "canal": "Amiga",
+      "orders": 11,
+      "rev": 2415.5000000000005
+    },
+    {
+      "canal": "Chatgpt",
+      "orders": 5,
+      "rev": 1410.3
+    },
+    {
+      "canal": "Online",
+      "orders": 4,
+      "rev": 961.3
+    },
+    {
+      "canal": "Whatsapp",
+      "orders": 4,
+      "rev": 809.25
+    },
+    {
+      "canal": "Pareja",
+      "orders": 1,
+      "rev": 793.5
+    },
+    {
+      "canal": "Redes Sociales",
+      "orders": 2,
+      "rev": 576.3
+    },
+    {
+      "canal": "Por Una Amiga",
+      "orders": 2,
+      "rev": 525.3
+    },
+    {
+      "canal": "Por Mi Hermana",
+      "orders": 2,
+      "rev": 508.29999999999995
+    },
+    {
+      "canal": "Grupo Erasmus",
+      "orders": 2,
+      "rev": 465.3
+    },
+    {
+      "canal": "Una Amiga",
+      "orders": 2,
+      "rev": 458.85
+    },
+    {
+      "canal": "Ya He Estudiado En Blueparrot",
+      "orders": 1,
+      "rev": 369.0
+    },
+    {
+      "canal": "Vecindario",
+      "orders": 1,
+      "rev": 369.0
+    },
+    {
+      "canal": "Búsqueda En Internet",
+      "orders": 1,
+      "rev": 299.0
+    },
+    {
+      "canal": "Fui Al Centro De Málaga",
+      "orders": 1,
+      "rev": 262.65
+    },
+    {
+      "canal": "Redes",
+      "orders": 1,
+      "rev": 262.65
+    },
+    {
+      "canal": "Boca O Boca",
+      "orders": 1,
+      "rev": 262.65
+    },
+    {
+      "canal": "He Realizado Otro Curso Con Vosotros",
+      "orders": 1,
+      "rev": 262.65
+    },
+    {
+      "canal": "Mi Pareja Andrea Martinez-Abarca",
+      "orders": 1,
+      "rev": 262.65
+    },
+    {
+      "canal": "Internet.",
+      "orders": 1,
+      "rev": 262.65
+    },
+    {
+      "canal": "En Internet",
+      "orders": 1,
+      "rev": 262.65
+    },
+    {
+      "canal": "Por Mi Amiga",
+      "orders": 1,
+      "rev": 258.3
+    },
+    {
+      "canal": "Boca",
+      "orders": 1,
+      "rev": 254.15
+    },
+    {
+      "canal": "Mi Hermana",
+      "orders": 1,
+      "rev": 254.15
+    },
+    {
+      "canal": "Gente",
+      "orders": 1,
+      "rev": 249.0
+    },
+    {
+      "canal": "Ya Hice Un Curso",
+      "orders": 1,
+      "rev": 249.0
+    },
+    {
+      "canal": "Ya Realicé Un Curso Con Vosotros.",
+      "orders": 1,
+      "rev": 249.0
+    },
+    {
+      "canal": "Búsqueda Internet",
+      "orders": 1,
+      "rev": 249.0
+    },
+    {
+      "canal": "Un Familiar",
+      "orders": 1,
+      "rev": 247.2
+    },
+    {
+      "canal": "Cursos Anteriores",
+      "orders": 1,
+      "rev": 247.2
+    },
+    {
+      "canal": "Búsqueda De Internet",
+      "orders": 1,
+      "rev": 245.65
+    },
+    {
+      "canal": "Academia Física",
+      "orders": 1,
+      "rev": 245.65
+    },
+    {
+      "canal": "Por Mi Cuñado",
+      "orders": 1,
+      "rev": 239.2
+    },
+    {
+      "canal": "Ia",
+      "orders": 1,
+      "rev": 231.75
+    },
+    {
+      "canal": "Familiar",
+      "orders": 1,
+      "rev": 224.1
+    },
+    {
+      "canal": "Por La Academia Opositando Pn",
+      "orders": 1,
+      "rev": 224.1
+    },
+    {
+      "canal": "Tiktok",
+      "orders": 1,
+      "rev": 211.65
+    },
+    {
+      "canal": "Navegando",
+      "orders": 1,
+      "rev": 211.65
+    },
+    {
+      "canal": "Trabajé En Esta Academia",
+      "orders": 1,
+      "rev": 211.65
+    },
+    {
+      "canal": "Mi Hermana Cursó El B2 Aquí",
+      "orders": 1,
+      "rev": 211.65
+    },
+    {
+      "canal": "Página Web",
+      "orders": 1,
+      "rev": 211.65
+    },
+    {
+      "canal": "Amistades",
+      "orders": 1,
+      "rev": 211.65
+    },
+    {
+      "canal": "Familia",
+      "orders": 1,
+      "rev": 211.65
+    },
+    {
+      "canal": "A Través De Una Amiga Que Ha Conseguido La Titulación Con Ustedes.",
+      "orders": 1,
+      "rev": 211.65
+    },
+    {
+      "canal": "Por Un Grupo De Whatsapp",
+      "orders": 1,
+      "rev": 211.65
+    },
+    {
+      "canal": "Mensaje De Whatsapp",
+      "orders": 1,
+      "rev": 211.65
+    },
+    {
+      "canal": "Por Internet",
+      "orders": 1,
+      "rev": 211.65
+    },
+    {
+      "canal": "Ya He Realizado Con Vosotros El Curso Intensivo De Aptis General En El Año 2026.",
+      "orders": 1,
+      "rev": 211.65
+    },
+    {
+      "canal": "Charry",
+      "orders": 1,
+      "rev": 199.2
+    },
+    {
+      "canal": "Instagrram",
+      "orders": 1,
+      "rev": 199.2
+    },
+    {
+      "canal": "Boca Boca",
+      "orders": 1,
+      "rev": 199.2
+    },
+    {
+      "canal": "Milenastojkovic1",
+      "orders": 1,
+      "rev": 189.0
+    },
+    {
+      "canal": "Por Una Amiga Que Ha Hecho El Curso",
+      "orders": 1,
+      "rev": 186.75
+    },
+    {
+      "canal": "Chat Gpt",
+      "orders": 1,
+      "rev": 174.3
+    },
+    {
+      "canal": "Cercanía",
+      "orders": 1,
+      "rev": 160.65
+    },
+    {
+      "canal": "Escuela Del Barrio",
+      "orders": 1,
+      "rev": 50.0
+    }
+  ],
+  "top_courses_meta": [
+    [
+      "APTIS ESOL General B1-B2-C1 Online y Presencial 28h",
+      88
+    ],
+    [
+      "APTIS General B1-B2-C1 Online y Presencial 28h",
+      30
+    ],
+    [
+      "APTIS A2 Intensivo Online o Presencial 28h PN",
+      23
+    ],
+    [
+      "Cambridge Advanced C1 Intensivo online o presencial 36h",
+      18
+    ],
+    [
+      "APTIS ESOL Advanced Intensivo Online o Presencial 28h",
+      18
+    ],
+    [
+      "Cambridge First B2 Intensivo online o presencial 36h",
+      17
+    ],
+    [
+      "Cambridge PET B1 Intensivo online o presencial 36h",
+      10
+    ],
+    [
+      "APTIS General",
+      10
+    ],
+    [
+      "APTIS A2 Intensivo",
+      9
+    ],
+    [
+      "APTIS Advanced Intensivo Online o Presencial 28h",
+      7
+    ],
+    [
+      "APTIS ESOL A2 Intensivo Online o Presencial 28h PN",
+      6
+    ],
+    [
+      "APTIS A2 Intensivo Online o Presencial 28h",
+      6
+    ]
+  ],
+  "top_courses_ecom": [
+    [
+      "APTIS Intensivo online 28h",
+      464
+    ],
+    [
+      "Italiano A1-A2 Intensivo online o presencial 28h",
+      331
+    ],
+    [
+      "Cambridge Advanced C1 Intensivo online o presencial 36h",
+      213
+    ],
+    [
+      "Italiano B1-B2 Intensivo online o presencial 28h",
+      193
+    ],
+    [
+      "Cambridge First B2 Intensivo online o presencial 36h",
+      184
+    ],
+    [
+      "APTIS ESOL General B1-B2-C1 Online y Presencial 28h",
+      170
+    ],
+    [
+      "Alemán A1-A2 Intensivo online o presencial 28h",
+      170
+    ],
+    [
+      "APTIS Advanced Intensivo online 28h",
+      153
+    ],
+    [
+      "APTIS General B1-B2-C1 Online y Presencial 28h",
+      109
+    ],
+    [
+      "Francés Delf B2 Intensivo online o presencial 36h",
+      95
+    ],
+    [
+      "Francés Delf B1 Intensivo online o presencial 36h",
+      66
+    ],
+    [
+      "APTIS ESOL Advanced Intensivo Online o Presencial 28h",
+      66
+    ]
+  ],
+  "top_cities_clientes": [
+    [
+      "Madrid",
+      677
+    ],
+    [
+      "Málaga",
+      440
+    ],
+    [
+      "Malaga",
+      121
+    ],
+    [
+      "Sevilla",
+      112
+    ],
+    [
+      "Barcelona",
+      51
+    ],
+    [
+      "Valencia",
+      47
+    ],
+    [
+      "Zaragoza",
+      46
+    ],
+    [
+      "Granada",
+      42
+    ],
+    [
+      "Marbella",
+      38
+    ],
+    [
+      "Valladolid",
+      33
+    ],
+    [
+      "Getafe",
+      29
+    ],
+    [
+      "Torremolinos",
+      26
+    ]
+  ],
+  "top_cities_meta_clientes": [
+    [
+      "Madrid",
+      50
+    ],
+    [
+      "Málaga",
+      15
+    ],
+    [
+      "Sevilla",
+      6
+    ],
+    [
+      "Zaragoza",
+      5
+    ],
+    [
+      "Cartagena",
+      5
+    ],
+    [
+      "Vigo",
+      4
+    ],
+    [
+      "Malaga",
+      4
+    ],
+    [
+      "Barcelona",
+      3
+    ],
+    [
+      "Valladolid",
+      3
+    ],
+    [
+      "Palencia",
+      3
+    ]
+  ],
+  "clientes_con_tag_meta": 341
+}

@@ -1,0 +1,281 @@
+{
+  "sy-2024-25": {
+    "n": 1294,
+    "ok": 1197,
+    "ok_pct": 92.5,
+    "no_key": 47,
+    "key_empty": 0,
+    "unparseable": {
+      "unparseable:2001": 1,
+      "unparseable:01071983": 1,
+      "unparseable:12121972": 1,
+      "unparseable:29 03 2008": 1,
+      "unparseable:10/17/2003": 1,
+      "unparseable:05081998": 1,
+      "unparseable:30012004": 1,
+      "unparseable:25072002": 1,
+      "unparseable:17 marzo 1987": 1,
+      "unparseable:25 de agosto 1994": 1,
+      "unparseable:05012003": 1,
+      "unparseable:19 agosto 2008": 1,
+      "unparseable:012/01/2004": 1,
+      "unparseable:11/09:1980": 1,
+      "unparseable:22092004": 1,
+      "unparseable:12091977": 1,
+      "unparseable:28091998": 1,
+      "unparseable:03042008": 1,
+      "unparseable:25081976": 1,
+      "unparseable:22061999": 1,
+      "unparseable:17111982": 1,
+      "unparseable:26121974": 1,
+      "unparseable:01092000": 1,
+      "unparseable:20102005": 1,
+      "unparseable:03062002": 1,
+      "unparseable:19101989": 1,
+      "unparseable:150/06/1982": 1,
+      "unparseable:27121992": 1,
+      "unparseable:02/16/2003": 1,
+      "unparseable:24/0/1993": 1,
+      "unparseable:06 08 1994": 1,
+      "unparseable:05102002": 1,
+      "unparseable:09111980": 1,
+      "unparseable:13112000": 1,
+      "unparseable:30111976": 1,
+      "unparseable:03 08 1980": 1,
+      "unparseable:20062000": 1,
+      "unparseable:21021990": 1,
+      "unparseable:16121998": 1,
+      "unparseable:2006/06/06": 1,
+      "unparseable:10 - 03-2003": 1,
+      "unparseable:23021996": 1,
+      "unparseable:04101977": 1,
+      "unparseable:03/ 10/1999": 1,
+      "unparseable:25072000": 1,
+      "unparseable:28101976": 1,
+      "unparseable:21 Junio 2005": 1,
+      "unparseable:14/10/ 2002": 1,
+      "unparseable:08011972": 2
+    },
+    "miss_status": {
+      "processing": 96,
+      "refunded": 1
+    },
+    "miss_via": {
+      "checkout": 50,
+      "store-api": 47
+    },
+    "status": {
+      "processing": 1285,
+      "refunded": 9
+    },
+    "examples": [
+      {
+        "id": 17846,
+        "status": "processing",
+        "raw": "2001",
+        "err": "unparseable:2001",
+        "created_via": "checkout"
+      },
+      {
+        "id": 17835,
+        "status": "processing",
+        "date": "2025-08-30T13:26:30",
+        "total": "309.00",
+        "created_via": "store-api",
+        "parent": 0,
+        "billing_keys": []
+      },
+      {
+        "id": 17834,
+        "status": "processing",
+        "date": "2025-08-30T13:17:35",
+        "total": "276.75",
+        "created_via": "store-api",
+        "parent": 0,
+        "billing_keys": []
+      },
+      {
+        "id": 17828,
+        "status": "processing",
+        "raw": "01071983",
+        "err": "unparseable:01071983",
+        "created_via": "checkout"
+      },
+      {
+        "id": 17827,
+        "status": "processing",
+        "raw": "12121972",
+        "err": "unparseable:12121972",
+        "created_via": "checkout"
+      },
+      {
+        "id": 17814,
+        "status": "processing",
+        "date": "2025-08-28T18:47:37",
+        "total": "186.75",
+        "created_via": "store-api",
+        "parent": 0,
+        "billing_keys": []
+      },
+      {
+        "id": 17755,
+        "status": "processing",
+        "date": "2025-08-26T23:04:17",
+        "total": "186.75",
+        "created_via": "store-api",
+        "parent": 0,
+        "billing_keys": []
+      },
+      {
+        "id": 17752,
+        "status": "processing",
+        "date": "2025-08-26T16:48:52",
+        "total": "50.00",
+        "created_via": "store-api",
+        "parent": 0,
+        "billing_keys": []
+      },
+      {
+        "id": 17635,
+        "status": "processing",
+        "raw": "29 03 2008",
+        "err": "unparseable:29 03 2008",
+        "created_via": "checkout"
+      },
+      {
+        "id": 17560,
+        "status": "processing",
+        "raw": "10/17/2003",
+        "err": "unparseable:10/17/2003",
+        "created_via": "checkout"
+      }
+    ]
+  },
+  "sy-2025-26": {
+    "n": 916,
+    "ok": 773,
+    "ok_pct": 84.4,
+    "no_key": 126,
+    "key_empty": 0,
+    "unparseable": {
+      "unparseable:09 enero 1983": 1,
+      "unparseable:03011977": 1,
+      "unparseable:05021983": 1,
+      "unparseable:03011979": 1,
+      "unparseable:21081973": 1,
+      "unparseable:27051975": 1,
+      "unparseable:291/12/2008": 1,
+      "unparseable:04122002": 1,
+      "unparseable:20 julio 2002": 1,
+      "unparseable:09011974": 1,
+      "unparseable:26031994": 1,
+      "unparseable:12 05 89": 1,
+      "unparseable:24 marzo 2004": 1,
+      "unparseable:16112001": 1,
+      "unparseable:28/01:2006": 1,
+      "unparseable:10091996": 1,
+      "unparseable:22101985": 1
+    },
+    "miss_status": {
+      "processing": 142,
+      "refunded": 1
+    },
+    "miss_via": {
+      "store-api": 126,
+      "checkout": 17
+    },
+    "status": {
+      "processing": 904,
+      "cancelled": 5,
+      "refunded": 5,
+      "failed": 2
+    },
+    "examples": [
+      {
+        "id": 22480,
+        "status": "processing",
+        "date": "2026-08-27T20:00:45",
+        "total": "149.40",
+        "created_via": "store-api",
+        "parent": 0,
+        "billing_keys": []
+      },
+      {
+        "id": 22470,
+        "status": "processing",
+        "raw": "09 enero 1983",
+        "err": "unparseable:09 enero 1983",
+        "created_via": "checkout"
+      },
+      {
+        "id": 22467,
+        "status": "processing",
+        "date": "2026-08-27T13:51:16",
+        "total": "174.30",
+        "created_via": "store-api",
+        "parent": 0,
+        "billing_keys": []
+      },
+      {
+        "id": 22425,
+        "status": "processing",
+        "date": "2026-08-25T12:59:31",
+        "total": "309.00",
+        "created_via": "store-api",
+        "parent": 0,
+        "billing_keys": []
+      },
+      {
+        "id": 22420,
+        "status": "processing",
+        "date": "2026-08-25T11:56:02",
+        "total": "209.30",
+        "created_via": "store-api",
+        "parent": 0,
+        "billing_keys": []
+      },
+      {
+        "id": 22318,
+        "status": "processing",
+        "date": "2026-08-16T10:35:49",
+        "total": "231.75",
+        "created_via": "store-api",
+        "parent": 0,
+        "billing_keys": []
+      },
+      {
+        "id": 22316,
+        "status": "processing",
+        "date": "2026-08-15T18:37:32",
+        "total": "186.75",
+        "created_via": "store-api",
+        "parent": 0,
+        "billing_keys": []
+      },
+      {
+        "id": 22295,
+        "status": "processing",
+        "date": "2026-08-12T22:42:12",
+        "total": "186.75",
+        "created_via": "store-api",
+        "parent": 0,
+        "billing_keys": []
+      },
+      {
+        "id": 22054,
+        "status": "processing",
+        "raw": "03011977",
+        "err": "unparseable:03011977",
+        "created_via": "checkout"
+      },
+      {
+        "id": 21674,
+        "status": "refunded",
+        "raw": "05021983",
+        "err": "unparseable:05021983",
+        "created_via": "checkout"
+      }
+    ]
+  },
+  "conclusion_hint": "Check no_key vs key_empty vs unparseable vs cancelled statuses"
+}

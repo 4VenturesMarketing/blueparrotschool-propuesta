@@ -1,0 +1,6301 @@
+{
+  "wc_2024_25": {
+    "orders": 1285,
+    "rev": 276782.1,
+    "country": [
+      [
+        "ES",
+        1263,
+        271926.9
+      ],
+      [
+        "DE",
+        7,
+        1438.45
+      ],
+      [
+        "FR",
+        4,
+        1089.65
+      ],
+      [
+        "CH",
+        3,
+        587.35
+      ],
+      [
+        "SE",
+        2,
+        498.0
+      ],
+      [
+        "GB",
+        1,
+        259.0
+      ],
+      [
+        "LU",
+        1,
+        189.0
+      ],
+      [
+        "US",
+        1,
+        199.0
+      ],
+      [
+        "AD",
+        1,
+        186.75
+      ],
+      [
+        "IT",
+        1,
+        99.0
+      ],
+      [
+        "IS",
+        1,
+        309.0
+      ]
+    ],
+    "province": [
+      [
+        "Madrid",
+        370,
+        82108.15
+      ],
+      [
+        "Málaga",
+        291,
+        64672.85
+      ],
+      [
+        "Sevilla",
+        65,
+        13049.45
+      ],
+      [
+        "Barcelona",
+        44,
+        9932.3
+      ],
+      [
+        "Cádiz",
+        34,
+        7091.95
+      ],
+      [
+        "Alicante",
+        34,
+        6504.7
+      ],
+      [
+        "Valencia",
+        32,
+        7421.55
+      ],
+      [
+        "Murcia",
+        28,
+        5855.1
+      ],
+      [
+        "Valladolid",
+        22,
+        4416.3
+      ],
+      [
+        "Granada",
+        22,
+        4529.0
+      ],
+      [
+        "Zaragoza",
+        20,
+        4087.15
+      ],
+      [
+        "Toledo",
+        19,
+        3956.4
+      ],
+      [
+        "Navarra",
+        17,
+        3344.7
+      ],
+      [
+        "Córdoba",
+        17,
+        3390.15
+      ],
+      [
+        "Asturias",
+        15,
+        3147.15
+      ],
+      [
+        "Jaén",
+        15,
+        3095.6
+      ],
+      [
+        "Bizkaia",
+        14,
+        2878.45
+      ],
+      [
+        "(sin provincia)",
+        13,
+        3006.45
+      ],
+      [
+        "Ciudad Real",
+        13,
+        2640.6
+      ],
+      [
+        "Badajoz",
+        13,
+        2457.05
+      ],
+      [
+        "Albacete",
+        11,
+        2148.05
+      ],
+      [
+        "Baleares",
+        11,
+        2251.35
+      ],
+      [
+        "Las Palmas",
+        11,
+        2395.5
+      ],
+      [
+        "Guadalajara",
+        10,
+        2125.5
+      ],
+      [
+        "Pontevedra",
+        10,
+        2104.15
+      ],
+      [
+        "Girona",
+        9,
+        1891.3
+      ],
+      [
+        "S.C. Tenerife",
+        9,
+        1866.8
+      ],
+      [
+        "Burgos",
+        7,
+        1533.35
+      ],
+      [
+        "Cáceres",
+        7,
+        1561.45
+      ],
+      [
+        "Almería",
+        7,
+        1503.5
+      ],
+      [
+        "Huelva",
+        6,
+        1144.4
+      ],
+      [
+        "Huesca",
+        6,
+        1167.65
+      ],
+      [
+        "Cantabria",
+        6,
+        1231.75
+      ],
+      [
+        "Tarragona",
+        6,
+        1251.65
+      ],
+      [
+        "Melilla",
+        6,
+        1061.0
+      ],
+      [
+        "Gipuzkoa",
+        6,
+        1495.65
+      ],
+      [
+        "Castellón",
+        6,
+        1410.85
+      ],
+      [
+        "Teruel",
+        5,
+        1186.4
+      ],
+      [
+        "Lleida",
+        5,
+        1076.55
+      ],
+      [
+        "León",
+        5,
+        1092.85
+      ],
+      [
+        "La Rioja",
+        5,
+        915.95
+      ],
+      [
+        "De-By",
+        4,
+        846.0
+      ],
+      [
+        "Segovia",
+        4,
+        936.1
+      ],
+      [
+        "Ourense",
+        3,
+        547.4
+      ],
+      [
+        "Zamora",
+        3,
+        728.85
+      ],
+      [
+        "Ávila",
+        3,
+        600.95
+      ],
+      [
+        "Cuenca",
+        2,
+        419.15
+      ],
+      [
+        "Lugo",
+        2,
+        410.65
+      ],
+      [
+        "Soria",
+        2,
+        219.15
+      ],
+      [
+        "Salamanca",
+        2,
+        353.4
+      ],
+      [
+        "Ceuta",
+        1,
+        199.0
+      ],
+      [
+        "A Coruña",
+        1,
+        319.0
+      ],
+      [
+        "Kent",
+        1,
+        259.0
+      ],
+      [
+        "BS",
+        1,
+        259.0
+      ],
+      [
+        "Palencia",
+        1,
+        199.0
+      ],
+      [
+        "FL",
+        1,
+        199.0
+      ],
+      [
+        "La Massana",
+        1,
+        186.75
+      ],
+      [
+        "FC",
+        1,
+        99.0
+      ]
+    ],
+    "city": [
+      [
+        "Madrid",
+        241,
+        54062.75
+      ],
+      [
+        "Málaga",
+        175,
+        39273.65
+      ],
+      [
+        "Sevilla",
+        36,
+        7075.55
+      ],
+      [
+        "Marbella",
+        20,
+        4258.35
+      ],
+      [
+        "Valencia",
+        17,
+        3997.9
+      ],
+      [
+        "Valladolid",
+        17,
+        3293.4
+      ],
+      [
+        "Barcelona",
+        15,
+        3738.35
+      ],
+      [
+        "Zaragoza",
+        13,
+        2709.55
+      ],
+      [
+        "Torremolinos",
+        12,
+        2573.35
+      ],
+      [
+        "Granada",
+        12,
+        2445.45
+      ],
+      [
+        "Leganés",
+        9,
+        1716.75
+      ],
+      [
+        "Fuengirola",
+        9,
+        1706.55
+      ],
+      [
+        "Alicante",
+        7,
+        1358.6
+      ],
+      [
+        "Ronda",
+        6,
+        1275.5
+      ],
+      [
+        "Fuenlabrada",
+        6,
+        1574.2
+      ],
+      [
+        "Córdoba",
+        6,
+        1294.2
+      ],
+      [
+        "Melilla",
+        6,
+        1061.0
+      ],
+      [
+        "Cartagena",
+        6,
+        1257.05
+      ],
+      [
+        "Antequera",
+        5,
+        985.3
+      ],
+      [
+        "Arroyo De La Miel",
+        5,
+        1078.15
+      ],
+      [
+        "Alcorcón",
+        5,
+        1156.3
+      ],
+      [
+        "Las Palmas",
+        5,
+        1022.45
+      ],
+      [
+        "Torrejón De Ardoz",
+        5,
+        1056.5
+      ],
+      [
+        "Alcalá de Henares",
+        5,
+        1033.15
+      ],
+      [
+        "Pamplona",
+        5,
+        1028.0
+      ],
+      [
+        "Vigo",
+        5,
+        1025.15
+      ],
+      [
+        "Toledo",
+        5,
+        1163.15
+      ],
+      [
+        "Elche",
+        5,
+        955.2
+      ],
+      [
+        "Benalmádena",
+        5,
+        1197.6
+      ],
+      [
+        "Boadilla Del Monte",
+        4,
+        856.4
+      ],
+      [
+        "Getafe",
+        4,
+        966.15
+      ],
+      [
+        "Lleida",
+        4,
+        856.4
+      ],
+      [
+        "Majadahonda",
+        4,
+        918.65
+      ],
+      [
+        "Murcia",
+        4,
+        706.6
+      ],
+      [
+        "Jaén",
+        4,
+        799.95
+      ],
+      [
+        "Cádiz",
+        4,
+        771.35
+      ],
+      [
+        "Chiclana De La Frontera",
+        4,
+        716.95
+      ],
+      [
+        "Badajoz",
+        4,
+        702.0
+      ],
+      [
+        "San Sebastián De Los Reyes",
+        4,
+        826.1
+      ],
+      [
+        "Algeciras",
+        4,
+        983.7
+      ],
+      [
+        "Torrox",
+        3,
+        545.65
+      ],
+      [
+        "San Roque",
+        3,
+        607.2
+      ],
+      [
+        "Alcalá De Guadaira",
+        3,
+        627.1
+      ],
+      [
+        "Pinto",
+        3,
+        567.15
+      ],
+      [
+        "Valdemoro",
+        3,
+        682.1
+      ],
+      [
+        "Hellin",
+        3,
+        577.1
+      ],
+      [
+        "Albacete",
+        3,
+        503.3
+      ],
+      [
+        "Alcobendas",
+        3,
+        567.55
+      ],
+      [
+        "Oviedo",
+        3,
+        704.75
+      ],
+      [
+        "Donostia",
+        3,
+        828.15
+      ],
+      [
+        "Rivas-Vaciamadrid",
+        3,
+        588.3
+      ],
+      [
+        "Alhaurín De La Torre",
+        3,
+        677.45
+      ],
+      [
+        "Albolote",
+        3,
+        659.65
+      ],
+      [
+        "Collado Villalba",
+        3,
+        560.05
+      ],
+      [
+        "Parla",
+        3,
+        660.65
+      ],
+      [
+        "Alcoy",
+        3,
+        669.65
+      ],
+      [
+        "Tudela",
+        3,
+        622.1
+      ],
+      [
+        "Los Barrios",
+        3,
+        609.65
+      ],
+      [
+        "Herencia",
+        3,
+        609.65
+      ],
+      [
+        "San Vicente Del Raspeig",
+        3,
+        557.2
+      ],
+      [
+        "Guadalajara",
+        3,
+        647.0
+      ],
+      [
+        "Móstoles",
+        3,
+        674.7
+      ],
+      [
+        "Santurtzi",
+        2,
+        368.15
+      ],
+      [
+        "Zizur Mayor",
+        2,
+        358.2
+      ],
+      [
+        "La Carolina",
+        2,
+        508.0
+      ],
+      [
+        "Alcañiz",
+        2,
+        488.0
+      ],
+      [
+        "Huesca",
+        2,
+        445.75
+      ],
+      [
+        "L'Hospitalet",
+        2,
+        458.0
+      ],
+      [
+        "Barañain",
+        2,
+        368.15
+      ],
+      [
+        "Cantalejo",
+        2,
+        508.0
+      ],
+      [
+        "Elda",
+        2,
+        368.15
+      ],
+      [
+        "Santiago De La Ribera",
+        2,
+        448.0
+      ],
+      [
+        "Punta Umbria",
+        2,
+        398.0
+      ],
+      [
+        "Mollina",
+        2,
+        448.0
+      ],
+      [
+        "Arroyomolinos",
+        2,
+        461.65
+      ],
+      [
+        "Gijón",
+        2,
+        461.65
+      ],
+      [
+        "Dos Hermanas",
+        2,
+        495.65
+      ],
+      [
+        "Munera",
+        2,
+        398.0
+      ],
+      [
+        "Linares",
+        2,
+        398.0
+      ],
+      [
+        "Palma",
+        2,
+        521.65
+      ],
+      [
+        "Ripoll",
+        2,
+        458.0
+      ],
+      [
+        "Añover De Tajo",
+        2,
+        398.0
+      ],
+      [
+        "Arganda Del Rey",
+        2,
+        508.0
+      ],
+      [
+        "Bormujos",
+        2,
+        470.65
+      ],
+      [
+        "Getxo",
+        2,
+        483.1
+      ],
+      [
+        "Aranda De Duero",
+        2,
+        466.2
+      ],
+      [
+        "Aljaraque",
+        2,
+        348.4
+      ],
+      [
+        "La Línea De La Concepción",
+        2,
+        345.95
+      ],
+      [
+        "Luzern",
+        2,
+        328.35
+      ],
+      [
+        "Cáceres",
+        2,
+        503.85
+      ],
+      [
+        "Caceres",
+        2,
+        358.2
+      ],
+      [
+        "Bilbao",
+        2,
+        398.0
+      ],
+      [
+        "Cornellà De Llobregat",
+        2,
+        414.8
+      ],
+      [
+        "León",
+        2,
+        380.8
+      ],
+      [
+        "Cuevas Bajas",
+        2,
+        448.0
+      ],
+      [
+        "Miguelturra",
+        2,
+        406.9
+      ],
+      [
+        "Ardales",
+        2,
+        520.65
+      ],
+      [
+        "Germering",
+        2,
+        398.0
+      ],
+      [
+        "Villalbilla",
+        2,
+        431.8
+      ],
+      [
+        "Campillos",
+        2,
+        419.15
+      ],
+      [
+        "S.C. Tenerife",
+        2,
+        418.15
+      ],
+      [
+        "Reus",
+        2,
+        368.15
+      ],
+      [
+        "Seseña",
+        2,
+        419.15
+      ],
+      [
+        "Burgos",
+        2,
+        444.65
+      ],
+      [
+        "Villamediana De Iregua",
+        2,
+        343.45
+      ],
+      [
+        "Maspalomas",
+        2,
+        509.15
+      ],
+      [
+        "Sabadell",
+        2,
+        478.15
+      ],
+      [
+        "Espartinas",
+        2,
+        358.15
+      ],
+      [
+        "Yecla",
+        2,
+        348.25
+      ],
+      [
+        "Coslada",
+        2,
+        410.65
+      ],
+      [
+        "Santander",
+        2,
+        385.75
+      ],
+      [
+        "Planoles",
+        2,
+        490.75
+      ],
+      [
+        "Estepona",
+        2,
+        385.75
+      ],
+      [
+        "Ourense",
+        2,
+        348.4
+      ],
+      [
+        "Vélez Málaga",
+        2,
+        398.0
+      ],
+      [
+        "Sant Vicent Del Raspeig",
+        2,
+        428.1
+      ],
+      [
+        "Torrejon De Ardoz",
+        2,
+        423.3
+      ],
+      [
+        "Badalona",
+        2,
+        423.3
+      ],
+      [
+        "San Sebastian De Los Reyes",
+        2,
+        463.5
+      ],
+      [
+        "San Fernando",
+        2,
+        483.3
+      ],
+      [
+        "Torre De Benagalbon",
+        2,
+        465.8
+      ],
+      [
+        "Guadarrama",
+        2,
+        474.3
+      ],
+      [
+        "Alhama De Murcia",
+        2,
+        508.3
+      ],
+      [
+        "Jerez De La Frontera",
+        2,
+        449.4
+      ],
+      [
+        "Teruel",
+        2,
+        449.4
+      ],
+      [
+        "Coín",
+        2,
+        373.5
+      ],
+      [
+        "Cártama/Málaga",
+        2,
+        627.3
+      ],
+      [
+        "Almería",
+        2,
+        474.3
+      ],
+      [
+        "Ceuta",
+        1,
+        199.0
+      ],
+      [
+        "Cangas De Onis",
+        1,
+        199.0
+      ],
+      [
+        "Alella",
+        1,
+        179.1
+      ],
+      [
+        "Xàtiva",
+        1,
+        199.0
+      ],
+      [
+        "Campanillas",
+        1,
+        199.0
+      ],
+      [
+        "Culleredo",
+        1,
+        319.0
+      ],
+      [
+        "Munich",
+        1,
+        199.0
+      ],
+      [
+        "Mezquitilla",
+        1,
+        498.0
+      ],
+      [
+        "Jabugo",
+        1,
+        199.0
+      ],
+      [
+        "Torre Del Mar",
+        1,
+        259.0
+      ],
+      [
+        "Puigcerdà",
+        1,
+        259.0
+      ],
+      [
+        "28944",
+        1,
+        199.0
+      ],
+      [
+        "Moguer",
+        1,
+        199.0
+      ],
+      [
+        "Saint-Julien-En-Genevois",
+        1,
+        259.0
+      ],
+      [
+        "Rincón De La Victoria",
+        1,
+        199.0
+      ],
+      [
+        "Cortes De La Frontera",
+        1,
+        259.0
+      ],
+      [
+        "Alcalá La Real",
+        1,
+        199.0
+      ],
+      [
+        "Yeste",
+        1,
+        259.0
+      ],
+      [
+        "Torredonjimeno",
+        1,
+        259.0
+      ],
+      [
+        "Zagra/Granada",
+        1,
+        179.1
+      ],
+      [
+        "San Pedro De Alcántara",
+        1,
+        199.0
+      ],
+      [
+        "Mataró",
+        1,
+        259.0
+      ],
+      [
+        "Tarancón",
+        1,
+        199.0
+      ],
+      [
+        "Barbate",
+        1,
+        199.0
+      ],
+      [
+        "Rafelbunyol",
+        1,
+        259.0
+      ],
+      [
+        "Bétera, Valencia",
+        1,
+        259.0
+      ],
+      [
+        "Blimea",
+        1,
+        199.0
+      ],
+      [
+        "Posadas",
+        1,
+        99.0
+      ],
+      [
+        "Alhaurin De La Torre",
+        1,
+        199.0
+      ],
+      [
+        "Baza",
+        1,
+        199.0
+      ],
+      [
+        "Lugo",
+        1,
+        199.0
+      ],
+      [
+        "Beriain",
+        1,
+        199.0
+      ],
+      [
+        "La Algaba",
+        1,
+        199.0
+      ],
+      [
+        "Cercedilla",
+        1,
+        259.0
+      ],
+      [
+        "Ashford",
+        1,
+        259.0
+      ],
+      [
+        "Castilleja De La Cuesta",
+        1,
+        199.0
+      ],
+      [
+        "Los Llanos De Aridane",
+        1,
+        259.0
+      ],
+      [
+        "Tanarrio",
+        1,
+        199.0
+      ],
+      [
+        "Las Cabezas De San Juan",
+        1,
+        199.0
+      ],
+      [
+        "El Bosque",
+        1,
+        199.0
+      ],
+      [
+        "Montmeló",
+        1,
+        189.0
+      ],
+      [
+        "O Carballiño",
+        1,
+        199.0
+      ],
+      [
+        "Medina Sidonia",
+        1,
+        199.0
+      ],
+      [
+        "Guadiaro",
+        1,
+        259.0
+      ],
+      [
+        "Binissalem",
+        1,
+        199.0
+      ],
+      [
+        "Camargo",
+        1,
+        199.0
+      ],
+      [
+        "Buesa",
+        1,
+        199.0
+      ],
+      [
+        "Valdepeñas",
+        1,
+        249.0
+      ],
+      [
+        "Fuente El Fresno",
+        1,
+        259.0
+      ],
+      [
+        "Casabermeja",
+        1,
+        259.0
+      ],
+      [
+        "Hellín, Albacete",
+        1,
+        199.0
+      ],
+      [
+        "El Colmenar - Cortes De La Frontera",
+        1,
+        259.0
+      ],
+      [
+        "Cornella De Llobregat",
+        1,
+        159.2
+      ],
+      [
+        "Alpedrete",
+        1,
+        199.0
+      ],
+      [
+        "La Guardia De Jaén",
+        1,
+        207.2
+      ],
+      [
+        "Azuqueca De Henares",
+        1,
+        199.0
+      ],
+      [
+        "Utrera",
+        1,
+        159.2
+      ],
+      [
+        "Benamocarra/Málaga",
+        1,
+        159.2
+      ],
+      [
+        "Biar",
+        1,
+        207.2
+      ],
+      [
+        "Salou",
+        1,
+        159.2
+      ],
+      [
+        "Estacion De Salinas (Archidona)",
+        1,
+        207.2
+      ],
+      [
+        "Ejea De Los Caballeros",
+        1,
+        159.2
+      ],
+      [
+        "Gallarta (Abanto-Zierbena)",
+        1,
+        159.2
+      ],
+      [
+        "Torrejón Del Rey",
+        1,
+        159.2
+      ],
+      [
+        "Viana",
+        1,
+        159.2
+      ],
+      [
+        "Sagunto",
+        1,
+        207.2
+      ],
+      [
+        "Dosbarrios",
+        1,
+        159.2
+      ],
+      [
+        "Sitges",
+        1,
+        159.2
+      ],
+      [
+        "Algarrobo- Costa",
+        1,
+        159.2
+      ],
+      [
+        "Montilla",
+        1,
+        159.2
+      ],
+      [
+        "Rute",
+        1,
+        259.0
+      ],
+      [
+        "Vilagarcía De Arousa",
+        1,
+        199.0
+      ],
+      [
+        "Alcázar De San Juan",
+        1,
+        220.15
+      ],
+      [
+        "Bossost",
+        1,
+        220.15
+      ],
+      [
+        "El Boalo",
+        1,
+        169.15
+      ],
+      [
+        "Serranillos Del Valle",
+        1,
+        169.15
+      ],
+      [
+        "Mutxamel",
+        1,
+        84.15
+      ],
+      [
+        "Coria Del Río",
+        1,
+        169.15
+      ],
+      [
+        "Cuarte De Huerva",
+        1,
+        169.15
+      ],
+      [
+        "La Bisbal D'Empordà",
+        1,
+        160.65
+      ],
+      [
+        "Pozuelo De Alarcon",
+        1,
+        169.15
+      ],
+      [
+        "Tiscamanita",
+        1,
+        169.15
+      ],
+      [
+        "Iznájar",
+        1,
+        199.0
+      ],
+      [
+        "Torrelodones (Madrid)",
+        1,
+        319.0
+      ],
+      [
+        "Benigánim",
+        1,
+        169.15
+      ],
+      [
+        "Valencina De La Concepción",
+        1,
+        199.0
+      ],
+      [
+        "Fuensalida",
+        1,
+        199.0
+      ],
+      [
+        "Porto Cristo",
+        1,
+        169.15
+      ],
+      [
+        "Busturia",
+        1,
+        199.0
+      ],
+      [
+        "Villamayor De Campos",
+        1,
+        233.1
+      ],
+      [
+        "Amposta",
+        1,
+        199.0
+      ],
+      [
+        "Luxemburgo",
+        1,
+        189.0
+      ],
+      [
+        "Basel",
+        1,
+        259.0
+      ],
+      [
+        "Cuenca",
+        1,
+        220.15
+      ],
+      [
+        "Villaluenga De La Sagra",
+        1,
+        220.15
+      ],
+      [
+        "Villanueva De San Mancio",
+        1,
+        169.15
+      ],
+      [
+        "San Isidro",
+        1,
+        169.15
+      ],
+      [
+        "Berlin",
+        1,
+        169.15
+      ],
+      [
+        "Daganzo De Arriba",
+        1,
+        169.15
+      ],
+      [
+        "Olias Del Rey",
+        1,
+        169.15
+      ],
+      [
+        "Arenas De San Pedro",
+        1,
+        169.15
+      ],
+      [
+        "Nerja",
+        1,
+        220.15
+      ],
+      [
+        "Cerdanyola Del Vallés",
+        1,
+        169.15
+      ],
+      [
+        "San Juan De Aznalfarache",
+        1,
+        220.15
+      ],
+      [
+        "45005",
+        1,
+        220.15
+      ],
+      [
+        "Eivissa",
+        1,
+        169.15
+      ],
+      [
+        "Palencia",
+        1,
+        199.0
+      ],
+      [
+        "Bélmez De La Moraleda",
+        1,
+        259.0
+      ],
+      [
+        "Caldes De Montbui",
+        1,
+        169.15
+      ],
+      [
+        "Onil",
+        1,
+        169.15
+      ],
+      [
+        "Abanto-Zierbena",
+        1,
+        220.15
+      ],
+      [
+        "Bermeo",
+        1,
+        220.15
+      ],
+      [
+        "Sanxenxo",
+        1,
+        220.15
+      ],
+      [
+        "Soria",
+        1,
+        169.15
+      ],
+      [
+        "Casares",
+        1,
+        169.15
+      ],
+      [
+        "El Fresno",
+        1,
+        220.15
+      ],
+      [
+        "Orihuela",
+        1,
+        169.15
+      ],
+      [
+        "Borriol",
+        1,
+        169.15
+      ],
+      [
+        "Chilluévar",
+        1,
+        169.15
+      ],
+      [
+        "Monte Lope Alvarez",
+        1,
+        169.15
+      ],
+      [
+        "Huétor Tájar",
+        1,
+        169.15
+      ],
+      [
+        "Castellon",
+        1,
+        169.15
+      ],
+      [
+        "Cabanes",
+        1,
+        169.15
+      ],
+      [
+        "Telde",
+        1,
+        259.0
+      ],
+      [
+        "Aguilar De La Frontera, Cordoba",
+        1,
+        169.15
+      ],
+      [
+        "Retamar",
+        1,
+        160.65
+      ],
+      [
+        "Inca",
+        1,
+        169.15
+      ],
+      [
+        "Arcos De La Frontera",
+        1,
+        199.0
+      ],
+      [
+        "Vélez-Málaga",
+        1,
+        179.1
+      ],
+      [
+        "Moralzarzal",
+        1,
+        249.0
+      ],
+      [
+        "Llano Del Espinar",
+        1,
+        199.0
+      ],
+      [
+        "Alfaro",
+        1,
+        199.0
+      ],
+      [
+        "Olivenza",
+        1,
+        199.0
+      ],
+      [
+        "Valdemorillo",
+        1,
+        199.0
+      ],
+      [
+        "Las Rozas",
+        1,
+        259.0
+      ],
+      [
+        "Valdetorres De Jarama",
+        1,
+        199.0
+      ],
+      [
+        "Alameda",
+        1,
+        260.1
+      ],
+      [
+        "Huevar Del Aljarafe",
+        1,
+        199.0
+      ],
+      [
+        "Orihuela-Molíns",
+        1,
+        179.1
+      ],
+      [
+        "Viana De Cega",
+        1,
+        259.0
+      ],
+      [
+        "Zuera",
+        1,
+        189.0
+      ],
+      [
+        "Málaga, Málaga (29006)",
+        1,
+        199.0
+      ],
+      [
+        "Paiporta",
+        1,
+        199.0
+      ],
+      [
+        "Salteras",
+        1,
+        199.0
+      ],
+      [
+        "Los Desamparados Orihuela",
+        1,
+        179.1
+      ],
+      [
+        "Nava De La Asunción",
+        1,
+        179.1
+      ],
+      [
+        "Ajofrin",
+        1,
+        199.0
+      ],
+      [
+        "Torrox-Malaga",
+        1,
+        199.0
+      ],
+      [
+        "Oropesa Del Mar",
+        1,
+        199.0
+      ],
+      [
+        "Tomares",
+        1,
+        199.0
+      ],
+      [
+        "Aranjuez",
+        1,
+        199.0
+      ],
+      [
+        "La Mojonera",
+        1,
+        199.0
+      ],
+      [
+        "Fort Myers",
+        1,
+        199.0
+      ],
+      [
+        "Constantina",
+        1,
+        179.1
+      ],
+      [
+        "Pozoblanco",
+        1,
+        179.1
+      ],
+      [
+        "Caravaca De La Cruz (Murcia)",
+        1,
+        199.0
+      ],
+      [
+        "Puertollano",
+        1,
+        199.0
+      ],
+      [
+        "Algete",
+        1,
+        199.0
+      ],
+      [
+        "La Roda",
+        1,
+        199.0
+      ],
+      [
+        "Alcolea De Calatrava",
+        1,
+        199.0
+      ],
+      [
+        "Los Alcazares",
+        1,
+        199.0
+      ],
+      [
+        "Torreperogil",
+        1,
+        179.1
+      ],
+      [
+        "Madrid , Vallecas",
+        1,
+        199.0
+      ],
+      [
+        "San Cristóbal De La Laguna",
+        1,
+        199.0
+      ],
+      [
+        "San Fernando De Henares",
+        1,
+        199.0
+      ],
+      [
+        "Chiclana De La Fra.",
+        1,
+        259.0
+      ],
+      [
+        "Olmeda De Las Fuentes",
+        1,
+        199.0
+      ],
+      [
+        "El Rosario - Tenerife",
+        1,
+        199.0
+      ],
+      [
+        "Puente Genil",
+        1,
+        179.1
+      ],
+      [
+        "Puente Genil / Córdoba",
+        1,
+        179.1
+      ],
+      [
+        "Rivas Vaciamadrid",
+        1,
+        199.0
+      ],
+      [
+        "Ciudad Real",
+        1,
+        99.5
+      ],
+      [
+        "Vilareal",
+        1,
+        179.1
+      ],
+      [
+        "Santa Marta De Tormes",
+        1,
+        179.1
+      ],
+      [
+        "Campos",
+        1,
+        199.0
+      ],
+      [
+        "Navaconcejo",
+        1,
+        199.0
+      ],
+      [
+        "Solana De Los Barros",
+        1,
+        199.0
+      ],
+      [
+        "El Casar",
+        1,
+        199.0
+      ],
+      [
+        "La Herradura",
+        1,
+        199.0
+      ],
+      [
+        "Alaquàs",
+        1,
+        199.0
+      ],
+      [
+        "Hermandad De Campoo De Suso",
+        1,
+        199.0
+      ],
+      [
+        "Ribera De Arriba",
+        1,
+        179.1
+      ],
+      [
+        "Medina Del Campo",
+        1,
+        199.0
+      ],
+      [
+        "Amorebieta-Etxano",
+        1,
+        179.1
+      ],
+      [
+        "Villajoyosa",
+        1,
+        199.0
+      ],
+      [
+        "La Puebla De Cazalla",
+        1,
+        259.0
+      ],
+      [
+        "Soller",
+        1,
+        179.1
+      ],
+      [
+        "El Escorial",
+        1,
+        299.0
+      ],
+      [
+        "Marratxi",
+        1,
+        259.0
+      ],
+      [
+        "Salinas",
+        1,
+        249.0
+      ],
+      [
+        "La Puebla De Almoradiel",
+        1,
+        249.0
+      ],
+      [
+        "Oñati",
+        1,
+        224.1
+      ],
+      [
+        "Sant Cugat Del Vallès",
+        1,
+        309.0
+      ],
+      [
+        "Asturias/Gijon",
+        1,
+        199.0
+      ],
+      [
+        "Estación De Cártama",
+        1,
+        262.65
+      ],
+      [
+        "Parets Del Vallès",
+        1,
+        211.65
+      ],
+      [
+        "Castelldefels",
+        1,
+        262.65
+      ],
+      [
+        "Maspalomas, San Fernando",
+        1,
+        224.1
+      ],
+      [
+        "Denia",
+        1,
+        296.65
+      ],
+      [
+        "Molina De Segura",
+        1,
+        296.65
+      ],
+      [
+        "Puerto Serrano",
+        1,
+        211.65
+      ],
+      [
+        "Tejina, San Cristóbal De La Laguna",
+        1,
+        249.0
+      ],
+      [
+        "Guadix",
+        1,
+        249.0
+      ],
+      [
+        "Paiporta/Valencia",
+        1,
+        309.0
+      ],
+      [
+        "Alozaina",
+        1,
+        296.65
+      ],
+      [
+        "Stockholm",
+        1,
+        249.0
+      ],
+      [
+        "Estocolmo",
+        1,
+        249.0
+      ],
+      [
+        "El Algar",
+        1,
+        296.65
+      ],
+      [
+        "Librilla",
+        1,
+        211.65
+      ],
+      [
+        "Ribadeo",
+        1,
+        211.65
+      ],
+      [
+        "San Javier",
+        1,
+        211.65
+      ],
+      [
+        "Pantoja",
+        1,
+        211.65
+      ],
+      [
+        "Vilafranca Del Penedès",
+        1,
+        211.65
+      ],
+      [
+        "La Cala Del Moral",
+        1,
+        296.65
+      ],
+      [
+        "Paris",
+        1,
+        262.65
+      ],
+      [
+        "Palau-Solita",
+        1,
+        211.65
+      ],
+      [
+        "Navalvillar De Pela",
+        1,
+        211.65
+      ],
+      [
+        "Obanos",
+        1,
+        211.65
+      ],
+      [
+        "Mahón",
+        1,
+        211.65
+      ],
+      [
+        "Ojen",
+        1,
+        262.65
+      ],
+      [
+        "Cabanillas Del Campo",
+        1,
+        211.65
+      ],
+      [
+        "Maálaga",
+        1,
+        50.0
+      ],
+      [
+        "Perales De Tajuña",
+        1,
+        262.65
+      ],
+      [
+        "Castilleja De Guzmán,Sevilla",
+        1,
+        211.65
+      ],
+      [
+        "Utebo",
+        1,
+        224.1
+      ],
+      [
+        "Bujalance",
+        1,
+        249.0
+      ],
+      [
+        "29003 Malaga",
+        1,
+        189.0
+      ],
+      [
+        "Ondara",
+        1,
+        211.65
+      ],
+      [
+        "La Cala De Mijas",
+        1,
+        211.65
+      ],
+      [
+        "Mohernando",
+        1,
+        211.65
+      ],
+      [
+        "Mos",
+        1,
+        249.0
+      ],
+      [
+        "Sierra De Yeguas",
+        1,
+        211.65
+      ],
+      [
+        "Colmenar",
+        1,
+        309.0
+      ],
+      [
+        "Ojen/Malaga",
+        1,
+        211.65
+      ],
+      [
+        "Onda",
+        1,
+        525.3
+      ],
+      [
+        "La Curva (Adra)",
+        1,
+        262.65
+      ],
+      [
+        "Álora",
+        1,
+        262.65
+      ],
+      [
+        "Arroyo Dela Miel",
+        1,
+        211.65
+      ],
+      [
+        "Ugena",
+        1,
+        211.65
+      ],
+      [
+        "La Laguna",
+        1,
+        186.75
+      ],
+      [
+        "Benalmádena Costa",
+        1,
+        211.65
+      ],
+      [
+        "Doña Mencía",
+        1,
+        211.65
+      ],
+      [
+        "Ciempozuelos",
+        1,
+        211.65
+      ],
+      [
+        "Larraul",
+        1,
+        211.65
+      ],
+      [
+        "Parets Del Valles",
+        1,
+        262.65
+      ],
+      [
+        "L'Escala",
+        1,
+        186.75
+      ],
+      [
+        "Alhaurín El Grande",
+        1,
+        262.65
+      ],
+      [
+        "Membrilla",
+        1,
+        211.65
+      ],
+      [
+        "Lalín",
+        1,
+        186.75
+      ],
+      [
+        "Santa Margarida De Montbui",
+        1,
+        211.65
+      ],
+      [
+        "Alburquerque",
+        1,
+        186.75
+      ],
+      [
+        "Asturias",
+        1,
+        84.15
+      ],
+      [
+        "La Massana",
+        1,
+        186.75
+      ],
+      [
+        "Segovia",
+        1,
+        186.75
+      ],
+      [
+        "Almendralejo",
+        1,
+        186.75
+      ],
+      [
+        "Jumilla",
+        1,
+        186.75
+      ],
+      [
+        "Estepa",
+        1,
+        262.65
+      ],
+      [
+        "Serradilla",
+        1,
+        186.75
+      ],
+      [
+        "Mijas",
+        1,
+        211.65
+      ],
+      [
+        "Gava",
+        1,
+        262.65
+      ],
+      [
+        "Mora D'Ebre",
+        1,
+        262.65
+      ],
+      [
+        "San Fery",
+        1,
+        186.75
+      ],
+      [
+        "Paterna",
+        1,
+        262.65
+      ],
+      [
+        "Alhama De Aragon",
+        1,
+        186.75
+      ],
+      [
+        "Peñarroya Pueblonuevo",
+        1,
+        262.65
+      ],
+      [
+        "Callosa De Segura",
+        1,
+        211.65
+      ],
+      [
+        "Mijas Costa",
+        1,
+        211.65
+      ],
+      [
+        "Puebla De Don Fadrique",
+        1,
+        186.75
+      ],
+      [
+        "Lugones, Siero",
+        1,
+        249.0
+      ],
+      [
+        "San Antoni Abad",
+        1,
+        186.75
+      ],
+      [
+        "Premia De Mar",
+        1,
+        186.75
+      ],
+      [
+        "Tolox",
+        1,
+        309.0
+      ],
+      [
+        "Javalí Nuevo",
+        1,
+        211.65
+      ],
+      [
+        "Pardilla",
+        1,
+        186.75
+      ],
+      [
+        "Starnberg",
+        1,
+        249.0
+      ],
+      [
+        "Villanueva Del Arzobispo",
+        1,
+        186.75
+      ],
+      [
+        "Toulouse",
+        1,
+        309.0
+      ],
+      [
+        "Olot",
+        1,
+        186.75
+      ],
+      [
+        "Villablino",
+        1,
+        262.65
+      ],
+      [
+        "Abarán",
+        1,
+        262.65
+      ],
+      [
+        "Arévalo",
+        1,
+        211.65
+      ],
+      [
+        "Mérida",
+        1,
+        186.75
+      ],
+      [
+        "Rivas",
+        1,
+        186.75
+      ],
+      [
+        "Pola De Lena",
+        1,
+        186.75
+      ],
+      [
+        "Soto De Llanera",
+        1,
+        249.0
+      ],
+      [
+        "Cartama",
+        1,
+        309.0
+      ],
+      [
+        "Miranda De Ebro",
+        1,
+        186.75
+      ],
+      [
+        "Sanet Y Negrals",
+        1,
+        74.25
+      ],
+      [
+        "Lobón",
+        1,
+        186.75
+      ],
+      [
+        "Meldola",
+        1,
+        99.0
+      ],
+      [
+        "Gardarbær",
+        1,
+        309.0
+      ],
+      [
+        "Prado Del Rey",
+        1,
+        211.65
+      ],
+      [
+        "Sotogrande",
+        1,
+        262.65
+      ],
+      [
+        "Sóller",
+        1,
+        186.75
+      ],
+      [
+        "Palafrugell",
+        1,
+        149.4
+      ],
+      [
+        "Picassent",
+        1,
+        149.4
+      ],
+      [
+        "Écija",
+        1,
+        149.4
+      ],
+      [
+        "Mancha Real",
+        1,
+        149.4
+      ],
+      [
+        "Redován",
+        1,
+        149.4
+      ],
+      [
+        "Cardona",
+        1,
+        185.4
+      ],
+      [
+        "La Muela",
+        1,
+        262.65
+      ],
+      [
+        "Almazán",
+        1,
+        50.0
+      ],
+      [
+        "Miguel Esteban",
+        1,
+        149.4
+      ],
+      [
+        "Villalube",
+        1,
+        309.0
+      ],
+      [
+        "Madrid, Spain",
+        1,
+        262.65
+      ],
+      [
+        "Murcia/ Murcia",
+        1,
+        185.4
+      ],
+      [
+        "Barbastro",
+        1,
+        149.4
+      ],
+      [
+        "Cañamero",
+        1,
+        313.65
+      ],
+      [
+        "Torrox-Costa",
+        1,
+        211.65
+      ],
+      [
+        "Villamalea",
+        1,
+        211.65
+      ],
+      [
+        "Alberca (La)",
+        1,
+        186.75
+      ],
+      [
+        "Loja",
+        1,
+        211.65
+      ],
+      [
+        "Ogíjares",
+        1,
+        186.75
+      ],
+      [
+        "Martos",
+        1,
+        249.0
+      ],
+      [
+        "Puerto Del Rosario",
+        1,
+        211.65
+      ],
+      [
+        "Tocina",
+        1,
+        211.65
+      ],
+      [
+        "Benejúzar",
+        1,
+        249.0
+      ],
+      [
+        "Alonsotegi",
+        1,
+        186.75
+      ],
+      [
+        "Santa Fe",
+        1,
+        262.65
+      ],
+      [
+        "Carrizo De La Ribera",
+        1,
+        262.65
+      ],
+      [
+        "Zamora",
+        1,
+        186.75
+      ],
+      [
+        "Villanueva De Los Infantes",
+        1,
+        186.75
+      ],
+      [
+        "Tierz",
+        1,
+        186.75
+      ],
+      [
+        "Benajarafe (Málaga)",
+        1,
+        262.65
+      ],
+      [
+        "Navarrete",
+        1,
+        186.75
+      ],
+      [
+        "Conil De La Frontera",
+        1,
+        186.75
+      ],
+      [
+        "Calamocha",
+        1,
+        249.0
+      ],
+      [
+        "Santoña",
+        1,
+        249.0
+      ],
+      [
+        "Castilleja De Guzmán",
+        1,
+        211.65
+      ],
+      [
+        "Chiva",
+        1,
+        262.65
+      ],
+      [
+        "Bollullos De La Mitación",
+        1,
+        186.75
+      ],
+      [
+        "Consuegra",
+        1,
+        186.75
+      ],
+      [
+        "Grado",
+        1,
+        186.75
+      ],
+      [
+        "Sabiñánigo",
+        1,
+        186.75
+      ],
+      [
+        "Santibáñez De La Isla",
+        1,
+        186.75
+      ],
+      [
+        "La Puebla De Alfindén",
+        1,
+        186.75
+      ],
+      [
+        "La Solana",
+        1,
+        186.75
+      ],
+      [
+        "Sinovas",
+        1,
+        249.0
+      ],
+      [
+        "Marin",
+        1,
+        224.1
+      ],
+      [
+        "Chañe",
+        1,
+        249.0
+      ],
+      [
+        "El Ejido",
+        1,
+        309.0
+      ],
+      [
+        "Cullera",
+        1,
+        249.0
+      ],
+      [
+        "Urduliz",
+        1,
+        278.1
+      ],
+      [
+        "Pioz",
+        1,
+        249.0
+      ],
+      [
+        "Argamasilla De Calatrava",
+        1,
+        224.1
+      ],
+      [
+        "Las Rozas De Madrid",
+        1,
+        149.4
+      ],
+      [
+        "Sant Adria De Besos",
+        1,
+        185.4
+      ],
+      [
+        "Trillo",
+        1,
+        249.0
+      ],
+      [
+        "Manises",
+        1,
+        216.3
+      ],
+      [
+        "Les Franqueses Del Valles",
+        1,
+        216.3
+      ],
+      [
+        "El Viso Del Alcor",
+        1,
+        249.0
+      ],
+      [
+        "Bétera",
+        1,
+        174.3
+      ],
+      [
+        "Ingolstadt",
+        1,
+        174.3
+      ],
+      [
+        "Galapagar",
+        1,
+        224.1
+      ],
+      [
+        "Lorca",
+        1,
+        249.0
+      ],
+      [
+        "Huarte",
+        1,
+        211.65
+      ],
+      [
+        "Cambrils",
+        1,
+        262.65
+      ],
+      [
+        "Salamanca",
+        1,
+        174.3
+      ],
+      [
+        "Palomares Del Rio, Sevilla.",
+        1,
+        309.0
+      ],
+      [
+        "Siruela",
+        1,
+        211.65
+      ],
+      [
+        "Portillo",
+        1,
+        309.0
+      ],
+      [
+        "Osterode Am Harz",
+        1,
+        249.0
+      ],
+      [
+        "Pruna",
+        1,
+        50.0
+      ],
+      [
+        "Irun",
+        1,
+        231.75
+      ],
+      [
+        "Mollet Del Valles",
+        1,
+        231.75
+      ],
+      [
+        "Puerto De La Cruz",
+        1,
+        186.75
+      ],
+      [
+        "Igualada",
+        1,
+        186.75
+      ],
+      [
+        "Cascante",
+        1,
+        186.75
+      ],
+      [
+        "Palomares Del Río",
+        1,
+        186.75
+      ],
+      [
+        "Lardero",
+        1,
+        186.75
+      ],
+      [
+        "El Palmar",
+        1,
+        186.75
+      ],
+      [
+        "Aguadulce",
+        1,
+        186.75
+      ],
+      [
+        "Ontinyent",
+        1,
+        309.0
+      ],
+      [
+        "Portugalete",
+        1,
+        186.75
+      ],
+      [
+        "Monesterio",
+        1,
+        186.75
+      ]
+    ],
+    "gender": {
+      "mujer": {
+        "orders": 613,
+        "rev": 132235.85
+      },
+      "desconocido": {
+        "orders": 305,
+        "rev": 65912.3
+      },
+      "hombre": {
+        "orders": 367,
+        "rev": 78633.95
+      }
+    }
+  },
+  "wc_2025_26": {
+    "orders": 899,
+    "rev": 208942.8,
+    "country": [
+      [
+        "ES",
+        883,
+        205302.05
+      ],
+      [
+        "DE",
+        3,
+        754.65
+      ],
+      [
+        "CH",
+        2,
+        419.95
+      ],
+      [
+        "NL",
+        2,
+        474.3
+      ],
+      [
+        "AU",
+        1,
+        170.1
+      ],
+      [
+        "GB",
+        1,
+        174.3
+      ],
+      [
+        "IE",
+        1,
+        309.0
+      ],
+      [
+        "CY",
+        1,
+        262.65
+      ],
+      [
+        "AR",
+        1,
+        211.65
+      ],
+      [
+        "TN",
+        1,
+        200.85
+      ],
+      [
+        "PT",
+        1,
+        211.65
+      ],
+      [
+        "RS",
+        1,
+        189.0
+      ],
+      [
+        "UY",
+        1,
+        262.65
+      ]
+    ],
+    "province": [
+      [
+        "Madrid",
+        287,
+        66897.15
+      ],
+      [
+        "Málaga",
+        163,
+        38535.3
+      ],
+      [
+        "Sevilla",
+        53,
+        11119.05
+      ],
+      [
+        "Barcelona",
+        34,
+        7708.05
+      ],
+      [
+        "Valencia",
+        32,
+        7833.7
+      ],
+      [
+        "Granada",
+        25,
+        5691.45
+      ],
+      [
+        "Murcia",
+        22,
+        5047.45
+      ],
+      [
+        "Cádiz",
+        18,
+        3973.7
+      ],
+      [
+        "Toledo",
+        16,
+        3966.9
+      ],
+      [
+        "Zaragoza",
+        16,
+        4174.5
+      ],
+      [
+        "Alicante",
+        15,
+        3473.55
+      ],
+      [
+        "Valladolid",
+        14,
+        3258.15
+      ],
+      [
+        "Pontevedra",
+        13,
+        2874.6
+      ],
+      [
+        "Baleares",
+        11,
+        2465.55
+      ],
+      [
+        "Córdoba",
+        10,
+        2147.75
+      ],
+      [
+        "Almería",
+        9,
+        2076.15
+      ],
+      [
+        "Ciudad Real",
+        9,
+        2134.4
+      ],
+      [
+        "Badajoz",
+        9,
+        1862.7
+      ],
+      [
+        "Jaén",
+        9,
+        2177.1
+      ],
+      [
+        "Navarra",
+        9,
+        2599.95
+      ],
+      [
+        "Cáceres",
+        8,
+        2027.1
+      ],
+      [
+        "Huelva",
+        7,
+        1504.2
+      ],
+      [
+        "Tarragona",
+        7,
+        1622.1
+      ],
+      [
+        "Burgos",
+        7,
+        1967.95
+      ],
+      [
+        "Las Palmas",
+        6,
+        1451.25
+      ],
+      [
+        "Albacete",
+        6,
+        1359.45
+      ],
+      [
+        "Gipuzkoa",
+        6,
+        1382.8
+      ],
+      [
+        "Bizkaia",
+        6,
+        1504.8
+      ],
+      [
+        "(sin provincia)",
+        6,
+        1454.25
+      ],
+      [
+        "S.C. Tenerife",
+        5,
+        1135.35
+      ],
+      [
+        "A Coruña",
+        5,
+        1035.0
+      ],
+      [
+        "Soria",
+        4,
+        821.7
+      ],
+      [
+        "Girona",
+        4,
+        1030.5
+      ],
+      [
+        "Salamanca",
+        4,
+        883.95
+      ],
+      [
+        "Palencia",
+        3,
+        572.7
+      ],
+      [
+        "Ávila",
+        3,
+        658.05
+      ],
+      [
+        "León",
+        3,
+        597.6
+      ],
+      [
+        "Melilla",
+        3,
+        732.3
+      ],
+      [
+        "Segovia",
+        3,
+        572.7
+      ],
+      [
+        "Huesca",
+        3,
+        698.4
+      ],
+      [
+        "Teruel",
+        2,
+        463.3
+      ],
+      [
+        "Álava",
+        2,
+        398.4
+      ],
+      [
+        "Guadalajara",
+        2,
+        498.0
+      ],
+      [
+        "Cantabria",
+        2,
+        412.5
+      ],
+      [
+        "Castellón",
+        2,
+        474.3
+      ],
+      [
+        "Ourense",
+        2,
+        410.85
+      ],
+      [
+        "Asturias",
+        2,
+        558.0
+      ],
+      [
+        "WA",
+        1,
+        170.1
+      ],
+      [
+        "Ceuta",
+        1,
+        211.65
+      ],
+      [
+        "England",
+        1,
+        174.3
+      ],
+      [
+        "De-Be",
+        1,
+        249.0
+      ],
+      [
+        "LK",
+        1,
+        309.0
+      ],
+      [
+        "Lugo",
+        1,
+        174.3
+      ],
+      [
+        "Sfax",
+        1,
+        200.85
+      ],
+      [
+        "VD",
+        1,
+        245.65
+      ],
+      [
+        "Cuenca",
+        1,
+        262.65
+      ],
+      [
+        "Rs00",
+        1,
+        189.0
+      ],
+      [
+        "Uy-Mo",
+        1,
+        262.65
+      ],
+      [
+        "Lleida",
+        1,
+        249.0
+      ]
+    ],
+    "city": [
+      [
+        "Madrid",
+        170,
+        40010.0
+      ],
+      [
+        "Málaga",
+        86,
+        20721.0
+      ],
+      [
+        "Sevilla",
+        24,
+        5042.45
+      ],
+      [
+        "Valencia",
+        17,
+        4161.15
+      ],
+      [
+        "Valladolid",
+        11,
+        2495.1
+      ],
+      [
+        "Zaragoza",
+        11,
+        3119.85
+      ],
+      [
+        "Leganés",
+        10,
+        2465.85
+      ],
+      [
+        "Barcelona",
+        10,
+        2484.3
+      ],
+      [
+        "Granada",
+        9,
+        1969.95
+      ],
+      [
+        "Marbella",
+        9,
+        1994.4
+      ],
+      [
+        "Torremolinos",
+        8,
+        1890.4
+      ],
+      [
+        "Antequera",
+        7,
+        1557.45
+      ],
+      [
+        "Getafe",
+        7,
+        1806.15
+      ],
+      [
+        "Vigo",
+        7,
+        1538.4
+      ],
+      [
+        "Rivas-Vaciamadrid",
+        6,
+        1444.05
+      ],
+      [
+        "Alcorcón",
+        6,
+        1227.75
+      ],
+      [
+        "Cartagena",
+        6,
+        1345.0
+      ],
+      [
+        "Alicante",
+        6,
+        1317.45
+      ],
+      [
+        "Murcia",
+        5,
+        1098.0
+      ],
+      [
+        "Benalmádena",
+        5,
+        1078.1
+      ],
+      [
+        "Alhaurín De La Torre",
+        5,
+        1071.9
+      ],
+      [
+        "Los Palacios Y Villafranca (Sevilla)",
+        4,
+        701.85
+      ],
+      [
+        "Estepona",
+        4,
+        1211.25
+      ],
+      [
+        "Pozuelo De Alarcón",
+        4,
+        886.8
+      ],
+      [
+        "Badajoz",
+        4,
+        866.7
+      ],
+      [
+        "Majadahonda",
+        4,
+        804.55
+      ],
+      [
+        "Córdoba",
+        4,
+        897.6
+      ],
+      [
+        "Mijas",
+        4,
+        948.6
+      ],
+      [
+        "Vélez-Málaga",
+        4,
+        954.05
+      ],
+      [
+        "Las Palmas",
+        3,
+        676.95
+      ],
+      [
+        "S.C. Tenerife",
+        3,
+        712.05
+      ],
+      [
+        "Valdepeñas",
+        3,
+        690.6
+      ],
+      [
+        "Palencia",
+        3,
+        572.7
+      ],
+      [
+        "Humanes De Madrid",
+        3,
+        551.55
+      ],
+      [
+        "Fuengirola",
+        3,
+        647.4
+      ],
+      [
+        "Sanxenxo",
+        3,
+        675.15
+      ],
+      [
+        "Alcalá de Henares",
+        3,
+        647.4
+      ],
+      [
+        "Las Rozas De Madrid",
+        3,
+        653.25
+      ],
+      [
+        "Melilla",
+        3,
+        732.3
+      ],
+      [
+        "Igualada",
+        3,
+        485.55
+      ],
+      [
+        "Fuenlabrada",
+        3,
+        817.3
+      ],
+      [
+        "Lorca",
+        3,
+        585.15
+      ],
+      [
+        "Almería",
+        3,
+        597.6
+      ],
+      [
+        "Huelva",
+        3,
+        707.4
+      ],
+      [
+        "Palma",
+        3,
+        645.6
+      ],
+      [
+        "San Sebastian De Los Reyes",
+        3,
+        659.85
+      ],
+      [
+        "Colmenar Viejo",
+        3,
+        508.65
+      ],
+      [
+        "Casariche",
+        3,
+        610.05
+      ],
+      [
+        "Talavera De La Reina",
+        2,
+        556.2
+      ],
+      [
+        "Huéscar",
+        2,
+        540.75
+      ],
+      [
+        "Toledo",
+        2,
+        435.75
+      ],
+      [
+        "Albacete",
+        2,
+        361.05
+      ],
+      [
+        "Coslada",
+        2,
+        419.95
+      ],
+      [
+        "Motril",
+        2,
+        449.4
+      ],
+      [
+        "San Roque",
+        2,
+        518.85
+      ],
+      [
+        "Mejorada Del Campo",
+        2,
+        533.1
+      ],
+      [
+        "Rincón De La Victoria",
+        2,
+        580.65
+      ],
+      [
+        "Los Palacios Y Villafranca",
+        2,
+        432.6
+      ],
+      [
+        "Dos Hermanas",
+        2,
+        348.6
+      ],
+      [
+        "Soria",
+        2,
+        385.95
+      ],
+      [
+        "Andújar",
+        2,
+        474.3
+      ],
+      [
+        "Caceres",
+        2,
+        520.65
+      ],
+      [
+        "Badalona",
+        2,
+        460.65
+      ],
+      [
+        "Picassent",
+        2,
+        554.65
+      ],
+      [
+        "Burgos",
+        2,
+        595.8
+      ],
+      [
+        "Cantalejo",
+        2,
+        361.05
+      ],
+      [
+        "Aranjuez",
+        2,
+        496.2
+      ],
+      [
+        "Santoña",
+        2,
+        412.5
+      ],
+      [
+        "Ronda",
+        2,
+        423.3
+      ],
+      [
+        "Aldeamayor De San Martín",
+        2,
+        525.3
+      ],
+      [
+        "Cádiz",
+        2,
+        312.65
+      ],
+      [
+        "Pamplona",
+        2,
+        423.3
+      ],
+      [
+        "Carmona",
+        2,
+        410.85
+      ],
+      [
+        "Sanlúcar De Barrameda",
+        2,
+        474.3
+      ],
+      [
+        "Rota",
+        2,
+        423.3
+      ],
+      [
+        "Elgoibar",
+        2,
+        406.3
+      ],
+      [
+        "Corral De Almaguer",
+        2,
+        520.65
+      ],
+      [
+        "Villarrobledo",
+        2,
+        511.65
+      ],
+      [
+        "L’Hospitalet De Llobregat",
+        2,
+        410.85
+      ],
+      [
+        "Collado Villalba",
+        2,
+        461.85
+      ],
+      [
+        "Parla",
+        2,
+        508.2
+      ],
+      [
+        "Ourense",
+        2,
+        410.85
+      ],
+      [
+        "Las Ventas De Retamosa",
+        2,
+        741.6
+      ],
+      [
+        "Alhaurín El Grande",
+        2,
+        460.65
+      ],
+      [
+        "Amorebieta",
+        2,
+        525.3
+      ],
+      [
+        "Fuentespina",
+        2,
+        460.65
+      ],
+      [
+        "Cártama",
+        2,
+        508.3
+      ],
+      [
+        "Jaraíz De La Vera",
+        2,
+        502.2
+      ],
+      [
+        "Monda",
+        2,
+        443.4
+      ],
+      [
+        "Viladecans",
+        2,
+        373.5
+      ],
+      [
+        "Yunquera",
+        2,
+        397.05
+      ],
+      [
+        "Segur De Calafell",
+        2,
+        373.5
+      ],
+      [
+        "Alameda",
+        2,
+        448.5
+      ],
+      [
+        "Tres Cantos [28760]",
+        1,
+        249.0
+      ],
+      [
+        "Sant Cugat Del Vallès",
+        1,
+        309.0
+      ],
+      [
+        "San Esteban De Gormaz",
+        1,
+        224.1
+      ],
+      [
+        "Firgas",
+        1,
+        249.0
+      ],
+      [
+        "Villanueva Del Rosario",
+        1,
+        249.0
+      ],
+      [
+        "Vera",
+        1,
+        309.0
+      ],
+      [
+        "Amposta",
+        1,
+        309.0
+      ],
+      [
+        "Alcaniz",
+        1,
+        289.0
+      ],
+      [
+        "Morata De Tajuña",
+        1,
+        309.0
+      ],
+      [
+        "Mazaleón",
+        1,
+        174.3
+      ],
+      [
+        "Almonacid De Toleo",
+        1,
+        211.65
+      ],
+      [
+        "Dunsboruogh",
+        1,
+        170.1
+      ],
+      [
+        "Albalat Dels Sorells",
+        1,
+        211.65
+      ],
+      [
+        "Carcaixent",
+        1,
+        211.65
+      ],
+      [
+        "Coín",
+        1,
+        216.3
+      ],
+      [
+        "Tomares",
+        1,
+        211.65
+      ],
+      [
+        "Villalba Del Alcor",
+        1,
+        211.65
+      ],
+      [
+        "Aguadulce",
+        1,
+        262.65
+      ],
+      [
+        "Zafra",
+        1,
+        211.65
+      ],
+      [
+        "Cazorla",
+        1,
+        211.65
+      ],
+      [
+        "Ceuta",
+        1,
+        211.65
+      ],
+      [
+        "Añover De Tajo",
+        1,
+        249.0
+      ],
+      [
+        "Bunyola",
+        1,
+        211.65
+      ],
+      [
+        "Gandia",
+        1,
+        211.65
+      ],
+      [
+        "Salou",
+        1,
+        211.65
+      ],
+      [
+        "La Adrada",
+        1,
+        211.65
+      ],
+      [
+        "Ubeda",
+        1,
+        211.65
+      ],
+      [
+        "Benetússer",
+        1,
+        262.65
+      ],
+      [
+        "Pilas De Algaida",
+        1,
+        211.65
+      ],
+      [
+        "Illescas",
+        1,
+        211.65
+      ],
+      [
+        "Villarrubia De Los Ojos",
+        1,
+        211.65
+      ],
+      [
+        "Eastbourne",
+        1,
+        174.3
+      ],
+      [
+        "Aceuchal",
+        1,
+        211.65
+      ],
+      [
+        "Santa Fe",
+        1,
+        211.65
+      ],
+      [
+        "Mostoles/Madrid",
+        1,
+        262.65
+      ],
+      [
+        "Caspe",
+        1,
+        262.65
+      ],
+      [
+        "El Álamo",
+        1,
+        211.65
+      ],
+      [
+        "Merisa",
+        1,
+        186.75
+      ],
+      [
+        "Aranda De Duero",
+        1,
+        373.5
+      ],
+      [
+        "Galapagar",
+        1,
+        249.0
+      ],
+      [
+        "Medina Sidonia",
+        1,
+        186.75
+      ],
+      [
+        "Hellín",
+        1,
+        186.75
+      ],
+      [
+        "Tavernes Blanques",
+        1,
+        262.65
+      ],
+      [
+        "Vitoria",
+        1,
+        186.75
+      ],
+      [
+        "Atarfe",
+        1,
+        186.75
+      ],
+      [
+        "Canena",
+        1,
+        309.0
+      ],
+      [
+        "Rivas - Vaciamadrid",
+        1,
+        299.0
+      ],
+      [
+        "Bienvenida",
+        1,
+        174.3
+      ],
+      [
+        "Villaquilambre",
+        1,
+        174.3
+      ],
+      [
+        "Osuna",
+        1,
+        174.3
+      ],
+      [
+        "Tibi",
+        1,
+        309.0
+      ],
+      [
+        "Balerma",
+        1,
+        216.3
+      ],
+      [
+        "Valdilecha",
+        1,
+        174.3
+      ],
+      [
+        "Arrasate",
+        1,
+        278.1
+      ],
+      [
+        "Portugalete, Bilbao",
+        1,
+        249.0
+      ],
+      [
+        "Valencina De La Concepcion",
+        1,
+        249.0
+      ],
+      [
+        "Calatayud",
+        1,
+        174.3
+      ],
+      [
+        "Ferrol",
+        1,
+        174.3
+      ],
+      [
+        "Berlin",
+        1,
+        249.0
+      ],
+      [
+        "Mazarrón",
+        1,
+        249.0
+      ],
+      [
+        "Corella",
+        1,
+        249.0
+      ],
+      [
+        "Villa Del Prado",
+        1,
+        211.65
+      ],
+      [
+        "Sant Miquel De Balenyà",
+        1,
+        216.3
+      ],
+      [
+        "Huarte",
+        1,
+        249.0
+      ],
+      [
+        "Girona",
+        1,
+        211.65
+      ],
+      [
+        "Martos",
+        1,
+        211.65
+      ],
+      [
+        "Arroyomolinos",
+        1,
+        211.65
+      ],
+      [
+        "Colmenar De Oreja",
+        1,
+        262.65
+      ],
+      [
+        "Villademor De La Vega",
+        1,
+        211.65
+      ],
+      [
+        "El Casar",
+        1,
+        249.0
+      ],
+      [
+        "Lebrija",
+        1,
+        249.0
+      ],
+      [
+        "La Cala De Mijas",
+        1,
+        186.75
+      ],
+      [
+        "Reus",
+        1,
+        249.0
+      ],
+      [
+        "Alpedrete",
+        1,
+        174.3
+      ],
+      [
+        "Puerto De Mazarrón/ Murcia",
+        1,
+        186.75
+      ],
+      [
+        "Arteixo",
+        1,
+        249.0
+      ],
+      [
+        "Limerick",
+        1,
+        309.0
+      ],
+      [
+        "Petrer (Alicante)",
+        1,
+        234.0
+      ],
+      [
+        "Koblenz",
+        1,
+        294.0
+      ],
+      [
+        "Las Cabezaas De San Juan",
+        1,
+        211.65
+      ],
+      [
+        "Mingogil - Hellin",
+        1,
+        211.65
+      ],
+      [
+        "Valdemoro",
+        1,
+        211.65
+      ],
+      [
+        "Olvera",
+        1,
+        262.65
+      ],
+      [
+        "Algemesí/ Valencia",
+        1,
+        309.0
+      ],
+      [
+        "Torre De Benagalbon",
+        1,
+        211.65
+      ],
+      [
+        "Larnaca",
+        1,
+        262.65
+      ],
+      [
+        "Düsseldorf",
+        1,
+        211.65
+      ],
+      [
+        "Avellaneda",
+        1,
+        211.65
+      ],
+      [
+        "Villargordo",
+        1,
+        262.65
+      ],
+      [
+        "Sant Vicenç Dels Horts",
+        1,
+        348.6
+      ],
+      [
+        "Torrijos",
+        1,
+        174.3
+      ],
+      [
+        "Luzern",
+        1,
+        174.3
+      ],
+      [
+        "El Prat De Llobregat",
+        1,
+        174.3
+      ],
+      [
+        "San Pedro Alcántara",
+        1,
+        216.3
+      ],
+      [
+        "Laguna De Duero",
+        1,
+        174.3
+      ],
+      [
+        "Culleredo",
+        1,
+        200.85
+      ],
+      [
+        "L´Alcudia De Crespins",
+        1,
+        200.85
+      ],
+      [
+        "La Puebla De Montalbán",
+        1,
+        161.85
+      ],
+      [
+        "Churriana De La Vega",
+        1,
+        161.85
+      ],
+      [
+        "Sfax",
+        1,
+        200.85
+      ],
+      [
+        "Villafranca De Los Caballeros",
+        1,
+        262.65
+      ],
+      [
+        "Madrid/Madrid",
+        1,
+        211.65
+      ],
+      [
+        "San Fernando",
+        1,
+        211.65
+      ],
+      [
+        "Monzón",
+        1,
+        211.65
+      ],
+      [
+        "Vilareal",
+        1,
+        211.65
+      ],
+      [
+        "Mollet Del Valles",
+        1,
+        211.65
+      ],
+      [
+        "Guime",
+        1,
+        262.65
+      ],
+      [
+        "L’Ampolla",
+        1,
+        262.65
+      ],
+      [
+        "Camas (Coca De La Piñera)",
+        1,
+        211.65
+      ],
+      [
+        "Puertollano",
+        1,
+        211.65
+      ],
+      [
+        "Puerto De Santa María (El)",
+        1,
+        211.65
+      ],
+      [
+        "Trescasas",
+        1,
+        211.65
+      ],
+      [
+        "Eivissa",
+        1,
+        160.65
+      ],
+      [
+        "Campillos",
+        1,
+        211.65
+      ],
+      [
+        "Paiporta",
+        1,
+        262.65
+      ],
+      [
+        "Osma",
+        1,
+        211.65
+      ],
+      [
+        "Durango",
+        1,
+        309.0
+      ],
+      [
+        "Morges",
+        1,
+        245.65
+      ],
+      [
+        "La Carlota",
+        1,
+        211.65
+      ],
+      [
+        "San Lorenzo De El Escorial",
+        1,
+        199.2
+      ],
+      [
+        "Salteras",
+        1,
+        211.65
+      ],
+      [
+        "La Nucía",
+        1,
+        211.65
+      ],
+      [
+        "Umbrete",
+        1,
+        245.65
+      ],
+      [
+        "Algeciras",
+        1,
+        309.0
+      ],
+      [
+        "Santa Perpètua De Mogoda",
+        1,
+        262.65
+      ],
+      [
+        "Vallfogona De Ripollès",
+        1,
+        309.0
+      ],
+      [
+        "Santovenia De Pisuerga",
+        1,
+        262.65
+      ],
+      [
+        "Ejea De Los Caballeros",
+        1,
+        211.65
+      ],
+      [
+        "Plasencia",
+        1,
+        262.65
+      ],
+      [
+        "Montequinto",
+        1,
+        211.65
+      ],
+      [
+        "Alkmaar",
+        1,
+        262.65
+      ],
+      [
+        "Albaladejo",
+        1,
+        299.0
+      ],
+      [
+        "Casar De Caceres",
+        1,
+        262.65
+      ],
+      [
+        "Chapela-Redondela",
+        1,
+        211.65
+      ],
+      [
+        "Almansa",
+        1,
+        262.65
+      ],
+      [
+        "Olesa De Montserrat",
+        1,
+        262.65
+      ],
+      [
+        "Jerez De La Frontera",
+        1,
+        224.1
+      ],
+      [
+        "Sanlúcar La Mayor",
+        1,
+        211.65
+      ],
+      [
+        "Xàtiva",
+        1,
+        262.65
+      ],
+      [
+        "Barañain",
+        1,
+        211.65
+      ],
+      [
+        "Alhendín",
+        1,
+        262.65
+      ],
+      [
+        "Aspe",
+        1,
+        249.0
+      ],
+      [
+        "Banyoles",
+        1,
+        262.65
+      ],
+      [
+        "Tarragona",
+        1,
+        262.65
+      ],
+      [
+        "Gibraleon",
+        1,
+        186.75
+      ],
+      [
+        "Playas De Muro, Mallorca",
+        1,
+        231.75
+      ],
+      [
+        "Castellón De La Plana",
+        1,
+        262.65
+      ],
+      [
+        "El Algar, Cartagena",
+        1,
+        211.65
+      ],
+      [
+        "Alcala De Guadaira",
+        1,
+        249.0
+      ],
+      [
+        "Vélez Málaga",
+        1,
+        224.1
+      ],
+      [
+        "Cartaya",
+        1,
+        211.65
+      ],
+      [
+        "San José De La Vega",
+        1,
+        211.65
+      ],
+      [
+        "Humilladero",
+        1,
+        254.15
+      ],
+      [
+        "Leiden",
+        1,
+        211.65
+      ],
+      [
+        "Alcacer",
+        1,
+        199.2
+      ],
+      [
+        "Faro",
+        1,
+        211.65
+      ],
+      [
+        "28840",
+        1,
+        262.65
+      ],
+      [
+        "Caleta De Velez",
+        1,
+        224.1
+      ],
+      [
+        "Alcobendas",
+        1,
+        211.65
+      ],
+      [
+        "Nueva Carteya",
+        1,
+        254.15
+      ],
+      [
+        "Funes",
+        1,
+        262.65
+      ],
+      [
+        "Torrox Costa",
+        1,
+        254.15
+      ],
+      [
+        "Villamayor De Santiago",
+        1,
+        262.65
+      ],
+      [
+        "Bujalance",
+        1,
+        211.65
+      ],
+      [
+        "Santisteban Del Puerto",
+        1,
+        211.65
+      ],
+      [
+        "Bogajo",
+        1,
+        211.65
+      ],
+      [
+        "Carabaña",
+        1,
+        262.65
+      ],
+      [
+        "Almáchar",
+        1,
+        245.65
+      ],
+      [
+        "Tielmes",
+        1,
+        262.65
+      ],
+      [
+        "Irun",
+        1,
+        262.65
+      ],
+      [
+        "Marratxí",
+        1,
+        247.2
+      ],
+      [
+        "Malagón",
+        1,
+        247.2
+      ],
+      [
+        "Salvaterra De Miño",
+        1,
+        199.2
+      ],
+      [
+        "Cangas Do Morrazo",
+        1,
+        199.2
+      ],
+      [
+        "Peralta",
+        1,
+        199.2
+      ],
+      [
+        "Rianxo",
+        1,
+        199.2
+      ],
+      [
+        "Muro De Alcoy",
+        1,
+        247.2
+      ],
+      [
+        "Getxo",
+        1,
+        247.2
+      ],
+      [
+        "Portugalete",
+        1,
+        199.2
+      ],
+      [
+        "Terrassa",
+        1,
+        247.2
+      ],
+      [
+        "Alcoy",
+        1,
+        199.2
+      ],
+      [
+        "Belorado",
+        1,
+        289.0
+      ],
+      [
+        "Cuevas De San Marcos",
+        1,
+        199.2
+      ],
+      [
+        "Pioz",
+        1,
+        249.0
+      ],
+      [
+        "Cheste",
+        1,
+        262.65
+      ],
+      [
+        "Torrelaguna",
+        1,
+        247.2
+      ],
+      [
+        "Albal",
+        1,
+        249.0
+      ],
+      [
+        "Montefrio",
+        1,
+        199.2
+      ],
+      [
+        "Torre De Juan Abad",
+        1,
+        211.65
+      ],
+      [
+        "Barrantes",
+        1,
+        262.65
+      ],
+      [
+        "Capmany",
+        1,
+        247.2
+      ],
+      [
+        "Pozuelo De Alarcon",
+        1,
+        199.2
+      ],
+      [
+        "Berja",
+        1,
+        247.2
+      ],
+      [
+        "Jaca",
+        1,
+        262.65
+      ],
+      [
+        "Zújar",
+        1,
+        249.0
+      ],
+      [
+        "Vélez De Benaudalla",
+        1,
+        262.65
+      ],
+      [
+        "Ávila",
+        1,
+        247.2
+      ],
+      [
+        "Avila",
+        1,
+        199.2
+      ],
+      [
+        "As Pontes De García Rodríguez",
+        1,
+        211.65
+      ],
+      [
+        "Armilla",
+        1,
+        313.65
+      ],
+      [
+        "Chiclana De La Frontera",
+        1,
+        211.65
+      ],
+      [
+        "Manacor",
+        1,
+        262.65
+      ],
+      [
+        "Calp",
+        1,
+        211.65
+      ],
+      [
+        "Pelayos De La Presa",
+        1,
+        211.65
+      ],
+      [
+        "A. De La Torre",
+        1,
+        313.65
+      ],
+      [
+        "Briviesca / Burgos",
+        1,
+        249.0
+      ],
+      [
+        "Azuqueca De Henares",
+        1,
+        224.1
+      ],
+      [
+        "Cantoria",
+        1,
+        211.65
+      ],
+      [
+        "Vitoria-Gasteiz",
+        1,
+        211.65
+      ],
+      [
+        "Mahon",
+        1,
+        262.65
+      ],
+      [
+        "Rafelguaraf",
+        1,
+        211.65
+      ],
+      [
+        "Belgrade",
+        1,
+        189.0
+      ],
+      [
+        "Artajona",
+        1,
+        211.65
+      ],
+      [
+        "El Puerto De Santa María, Cádiz",
+        1,
+        211.65
+      ],
+      [
+        "Molvizar",
+        1,
+        211.65
+      ],
+      [
+        "Colmenar",
+        1,
+        309.0
+      ],
+      [
+        "Larraul",
+        1,
+        224.1
+      ],
+      [
+        "Lumbrales",
+        1,
+        249.0
+      ],
+      [
+        "Olula Del Río",
+        1,
+        231.75
+      ],
+      [
+        "Archidona",
+        1,
+        262.65
+      ],
+      [
+        "Algete",
+        1,
+        249.0
+      ],
+      [
+        "Sant Esteve Sesrovires",
+        1,
+        278.1
+      ],
+      [
+        "Ricon De La Victoria",
+        1,
+        249.0
+      ],
+      [
+        "Calaf",
+        1,
+        211.65
+      ],
+      [
+        "Caleta De Vélez",
+        1,
+        249.0
+      ],
+      [
+        "Graus",
+        1,
+        224.1
+      ],
+      [
+        "Vilanova I La Geltrú",
+        1,
+        262.65
+      ],
+      [
+        "Ponferrada",
+        1,
+        211.65
+      ],
+      [
+        "Cártama Pueblo",
+        1,
+        309.0
+      ],
+      [
+        "Monterrubio De Armuña",
+        1,
+        211.65
+      ],
+      [
+        "Águilas",
+        1,
+        211.65
+      ],
+      [
+        "Morro Jable",
+        1,
+        262.65
+      ],
+      [
+        "La Garriga",
+        1,
+        199.2
+      ],
+      [
+        "Roquetas De Mar",
+        1,
+        211.65
+      ],
+      [
+        "El Esparragal",
+        1,
+        525.3
+      ],
+      [
+        "Montornés Del Vallés",
+        1,
+        199.2
+      ],
+      [
+        "Puertito De Güimar",
+        1,
+        211.65
+      ],
+      [
+        "Valdetorres De Jarama",
+        1,
+        369.0
+      ],
+      [
+        "Tres Cantos",
+        1,
+        211.65
+      ],
+      [
+        "Huétor Vega",
+        1,
+        211.65
+      ],
+      [
+        "Aledo",
+        1,
+        211.65
+      ],
+      [
+        "Salamanca",
+        1,
+        211.65
+      ],
+      [
+        "Gijón",
+        1,
+        309.0
+      ],
+      [
+        "Bajamar",
+        1,
+        211.65
+      ],
+      [
+        "Cambrils",
+        1,
+        262.65
+      ],
+      [
+        "Agost",
+        1,
+        262.65
+      ],
+      [
+        "Muro",
+        1,
+        211.65
+      ],
+      [
+        "Totana",
+        1,
+        211.65
+      ],
+      [
+        "Puzol",
+        1,
+        211.65
+      ],
+      [
+        "Mazarambroz",
+        1,
+        262.65
+      ],
+      [
+        "Malpartida De Caceres",
+        1,
+        262.65
+      ],
+      [
+        "Montevideo",
+        1,
+        262.65
+      ],
+      [
+        "Mairena Del Alcor",
+        1,
+        211.65
+      ],
+      [
+        "Mollina",
+        1,
+        211.65
+      ],
+      [
+        "Cubas De La Sagra",
+        1,
+        211.65
+      ],
+      [
+        "Mula",
+        1,
+        211.65
+      ],
+      [
+        "Villafranca De Los Barros",
+        1,
+        211.65
+      ],
+      [
+        "Villanueva De San Juan",
+        1,
+        249.0
+      ],
+      [
+        "Lucena",
+        1,
+        211.65
+      ],
+      [
+        "Ubrique",
+        1,
+        199.2
+      ],
+      [
+        "Mataró",
+        1,
+        262.65
+      ],
+      [
+        "Gilena",
+        1,
+        211.65
+      ],
+      [
+        "Nerja",
+        1,
+        50.0
+      ],
+      [
+        "San Martín De La Vega",
+        1,
+        262.65
+      ],
+      [
+        "Rentería",
+        1,
+        211.65
+      ],
+      [
+        "Alcázar De San Juan",
+        1,
+        262.65
+      ],
+      [
+        "Gaucín",
+        1,
+        245.65
+      ],
+      [
+        "Tavernes De La Valldigna",
+        1,
+        262.65
+      ],
+      [
+        "Loeches",
+        1,
+        216.3
+      ],
+      [
+        "Villasbuenas De Gata",
+        1,
+        216.3
+      ],
+      [
+        "Villanueva Del Arzobispo",
+        1,
+        247.2
+      ],
+      [
+        "Lleida",
+        1,
+        249.0
+      ],
+      [
+        "Bornos",
+        1,
+        216.3
+      ],
+      [
+        "L'Hospitalet",
+        1,
+        174.3
+      ],
+      [
+        "Moncloa",
+        1,
+        174.3
+      ],
+      [
+        "Novés",
+        1,
+        174.3
+      ],
+      [
+        "Zargoza",
+        1,
+        174.3
+      ],
+      [
+        "Nava",
+        1,
+        249.0
+      ],
+      [
+        "Alhama De Granada",
+        1,
+        249.0
+      ],
+      [
+        "Jaén",
+        1,
+        249.0
+      ],
+      [
+        "Rivas Vaciamadrid",
+        1,
+        174.3
+      ],
+      [
+        "Tudela",
+        1,
+        793.5
+      ],
+      [
+        "Puente Del Arzobispo",
+        1,
+        216.3
+      ],
+      [
+        "Palma Del Río",
+        1,
+        186.75
+      ],
+      [
+        "Archez",
+        1,
+        186.75
+      ],
+      [
+        "Mollet Del Vallès",
+        1,
+        186.75
+      ],
+      [
+        "Seseña",
+        1,
+        186.75
+      ],
+      [
+        "Ciutadella De Menorca",
+        1,
+        231.75
+      ],
+      [
+        "Niebla",
+        1,
+        186.75
+      ],
+      [
+        "Utebo",
+        1,
+        231.75
+      ],
+      [
+        "Elda",
+        1,
+        231.75
+      ],
+      [
+        "Lebbrija",
+        1,
+        231.75
+      ],
+      [
+        "Mairena Del Aljarafe",
+        1,
+        231.75
+      ],
+      [
+        "Aguilar De La Frontera",
+        1,
+        174.3
+      ],
+      [
+        "Bilbao",
+        1,
+        174.3
+      ]
+    ],
+    "gender": {
+      "mujer": {
+        "orders": 434,
+        "rev": 99777.5
+      },
+      "hombre": {
+        "orders": 227,
+        "rev": 53910.45
+      },
+      "desconocido": {
+        "orders": 238,
+        "rev": 55254.85
+      }
+    }
+  },
+  "meta_demo_2024_25": [
+    {
+      "age": "18-24",
+      "gender": "female",
+      "country": null,
+      "region": null,
+      "spend": 4559.06,
+      "leads": 532.0,
+      "purchases": 74.0,
+      "impressions": 1770838.0,
+      "reach": 0.0
+    },
+    {
+      "age": "18-24",
+      "gender": "male",
+      "country": null,
+      "region": null,
+      "spend": 1905.22,
+      "leads": 191.0,
+      "purchases": 31.0,
+      "impressions": 1039839.0,
+      "reach": 0.0
+    },
+    {
+      "age": "18-24",
+      "gender": "unknown",
+      "country": null,
+      "region": null,
+      "spend": 175.73,
+      "leads": 14.0,
+      "purchases": 4.0,
+      "impressions": 63919.0,
+      "reach": 0.0
+    },
+    {
+      "age": "25-34",
+      "gender": "female",
+      "country": null,
+      "region": null,
+      "spend": 8331.64,
+      "leads": 1162.0,
+      "purchases": 195.0,
+      "impressions": 2195900.0,
+      "reach": 0.0
+    },
+    {
+      "age": "25-34",
+      "gender": "male",
+      "country": null,
+      "region": null,
+      "spend": 4310.84,
+      "leads": 535.0,
+      "purchases": 95.0,
+      "impressions": 1685737.0,
+      "reach": 0.0
+    },
+    {
+      "age": "25-34",
+      "gender": "unknown",
+      "country": null,
+      "region": null,
+      "spend": 151.19,
+      "leads": 10.0,
+      "purchases": 0,
+      "impressions": 41358.0,
+      "reach": 0.0
+    },
+    {
+      "age": "35-44",
+      "gender": "female",
+      "country": null,
+      "region": null,
+      "spend": 6103.93,
+      "leads": 862.0,
+      "purchases": 58.0,
+      "impressions": 1062613.0,
+      "reach": 0.0
+    },
+    {
+      "age": "35-44",
+      "gender": "male",
+      "country": null,
+      "region": null,
+      "spend": 3365.05,
+      "leads": 441.0,
+      "purchases": 38.0,
+      "impressions": 1006276.0,
+      "reach": 0.0
+    },
+    {
+      "age": "35-44",
+      "gender": "unknown",
+      "country": null,
+      "region": null,
+      "spend": 146.45,
+      "leads": 17.0,
+      "purchases": 0,
+      "impressions": 28171.0,
+      "reach": 0.0
+    },
+    {
+      "age": "45-54",
+      "gender": "female",
+      "country": null,
+      "region": null,
+      "spend": 4811.36,
+      "leads": 778.0,
+      "purchases": 47.0,
+      "impressions": 805294.0,
+      "reach": 0.0
+    },
+    {
+      "age": "45-54",
+      "gender": "male",
+      "country": null,
+      "region": null,
+      "spend": 2052.88,
+      "leads": 252.0,
+      "purchases": 12.0,
+      "impressions": 678077.0,
+      "reach": 0.0
+    },
+    {
+      "age": "45-54",
+      "gender": "unknown",
+      "country": null,
+      "region": null,
+      "spend": 121.75,
+      "leads": 16.0,
+      "purchases": 0,
+      "impressions": 21636.0,
+      "reach": 0.0
+    },
+    {
+      "age": "55-64",
+      "gender": "female",
+      "country": null,
+      "region": null,
+      "spend": 1562.27,
+      "leads": 235.0,
+      "purchases": 6.0,
+      "impressions": 466925.0,
+      "reach": 0.0
+    },
+    {
+      "age": "55-64",
+      "gender": "male",
+      "country": null,
+      "region": null,
+      "spend": 835.87,
+      "leads": 84.0,
+      "purchases": 1.0,
+      "impressions": 416967.0,
+      "reach": 0.0
+    },
+    {
+      "age": "55-64",
+      "gender": "unknown",
+      "country": null,
+      "region": null,
+      "spend": 24.72,
+      "leads": 3.0,
+      "purchases": 0,
+      "impressions": 5858.0,
+      "reach": 0.0
+    },
+    {
+      "age": "65+",
+      "gender": "female",
+      "country": null,
+      "region": null,
+      "spend": 872.38,
+      "leads": 68.0,
+      "purchases": 1.0,
+      "impressions": 361326.0,
+      "reach": 0.0
+    },
+    {
+      "age": "65+",
+      "gender": "male",
+      "country": null,
+      "region": null,
+      "spend": 550.97,
+      "leads": 26.0,
+      "purchases": 0,
+      "impressions": 275377.0,
+      "reach": 0.0
+    },
+    {
+      "age": "65+",
+      "gender": "unknown",
+      "country": null,
+      "region": null,
+      "spend": 12.5,
+      "leads": 1.0,
+      "purchases": 0,
+      "impressions": 4107.0,
+      "reach": 0.0
+    },
+    {
+      "age": "Unknown",
+      "gender": "unknown",
+      "country": null,
+      "region": null,
+      "spend": 0.0,
+      "leads": 0,
+      "purchases": 0,
+      "impressions": 0.0,
+      "reach": 0.0
+    }
+  ],
+  "meta_demo_2025_26": [
+    {
+      "age": "18-24",
+      "gender": "female",
+      "country": null,
+      "region": null,
+      "spend": 5658.81,
+      "leads": 1011.0,
+      "purchases": 52.0,
+      "impressions": 1560331.0,
+      "reach": 263825.0
+    },
+    {
+      "age": "18-24",
+      "gender": "male",
+      "country": null,
+      "region": null,
+      "spend": 1816.42,
+      "leads": 298.0,
+      "purchases": 27.0,
+      "impressions": 530038.0,
+      "reach": 118644.0
+    },
+    {
+      "age": "18-24",
+      "gender": "unknown",
+      "country": null,
+      "region": null,
+      "spend": 100.0,
+      "leads": 18.0,
+      "purchases": 0,
+      "impressions": 25997.0,
+      "reach": 8439.0
+    },
+    {
+      "age": "25-34",
+      "gender": "female",
+      "country": null,
+      "region": null,
+      "spend": 8424.76,
+      "leads": 1583.0,
+      "purchases": 104.0,
+      "impressions": 1730230.0,
+      "reach": 307890.0
+    },
+    {
+      "age": "25-34",
+      "gender": "male",
+      "country": null,
+      "region": null,
+      "spend": 3732.59,
+      "leads": 567.0,
+      "purchases": 28.0,
+      "impressions": 874549.0,
+      "reach": 167196.0
+    },
+    {
+      "age": "25-34",
+      "gender": "unknown",
+      "country": null,
+      "region": null,
+      "spend": 90.52,
+      "leads": 17.0,
+      "purchases": 0,
+      "impressions": 19793.0,
+      "reach": 6183.0
+    },
+    {
+      "age": "35-44",
+      "gender": "female",
+      "country": null,
+      "region": null,
+      "spend": 7024.0,
+      "leads": 1265.0,
+      "purchases": 54.0,
+      "impressions": 940495.0,
+      "reach": 175807.0
+    },
+    {
+      "age": "35-44",
+      "gender": "male",
+      "country": null,
+      "region": null,
+      "spend": 3420.13,
+      "leads": 609.0,
+      "purchases": 35.0,
+      "impressions": 569024.0,
+      "reach": 99222.0
+    },
+    {
+      "age": "35-44",
+      "gender": "unknown",
+      "country": null,
+      "region": null,
+      "spend": 113.99,
+      "leads": 17.0,
+      "purchases": 0,
+      "impressions": 15800.0,
+      "reach": 3867.0
+    },
+    {
+      "age": "45-54",
+      "gender": "female",
+      "country": null,
+      "region": null,
+      "spend": 6619.91,
+      "leads": 1210.0,
+      "purchases": 43.0,
+      "impressions": 725260.0,
+      "reach": 160374.0
+    },
+    {
+      "age": "45-54",
+      "gender": "male",
+      "country": null,
+      "region": null,
+      "spend": 2705.3,
+      "leads": 455.0,
+      "purchases": 14.0,
+      "impressions": 356528.0,
+      "reach": 76209.0
+    },
+    {
+      "age": "45-54",
+      "gender": "unknown",
+      "country": null,
+      "region": null,
+      "spend": 109.65,
+      "leads": 11.0,
+      "purchases": 0,
+      "impressions": 13779.0,
+      "reach": 3763.0
+    },
+    {
+      "age": "55-64",
+      "gender": "female",
+      "country": null,
+      "region": null,
+      "spend": 2068.94,
+      "leads": 364.0,
+      "purchases": 8.0,
+      "impressions": 230634.0,
+      "reach": 59352.0
+    },
+    {
+      "age": "55-64",
+      "gender": "male",
+      "country": null,
+      "region": null,
+      "spend": 1086.33,
+      "leads": 174.0,
+      "purchases": 5.0,
+      "impressions": 137462.0,
+      "reach": 36857.0
+    },
+    {
+      "age": "55-64",
+      "gender": "unknown",
+      "country": null,
+      "region": null,
+      "spend": 23.63,
+      "leads": 3.0,
+      "purchases": 0,
+      "impressions": 3335.0,
+      "reach": 1180.0
+    },
+    {
+      "age": "65+",
+      "gender": "female",
+      "country": null,
+      "region": null,
+      "spend": 780.21,
+      "leads": 126.0,
+      "purchases": 3.0,
+      "impressions": 91146.0,
+      "reach": 29356.0
+    },
+    {
+      "age": "65+",
+      "gender": "male",
+      "country": null,
+      "region": null,
+      "spend": 468.13,
+      "leads": 61.0,
+      "purchases": 2.0,
+      "impressions": 61021.0,
+      "reach": 19196.0
+    },
+    {
+      "age": "65+",
+      "gender": "unknown",
+      "country": null,
+      "region": null,
+      "spend": 13.28,
+      "leads": 1.0,
+      "purchases": 0,
+      "impressions": 2038.0,
+      "reach": 686.0
+    },
+    {
+      "age": "Unknown",
+      "gender": "female",
+      "country": null,
+      "region": null,
+      "spend": 0.77,
+      "leads": 1.0,
+      "purchases": 0,
+      "impressions": 162.0,
+      "reach": 158.0
+    },
+    {
+      "age": "Unknown",
+      "gender": "male",
+      "country": null,
+      "region": null,
+      "spend": 0.19,
+      "leads": 0,
+      "purchases": 0,
+      "impressions": 83.0,
+      "reach": 82.0
+    },
+    {
+      "age": "Unknown",
+      "gender": "unknown",
+      "country": null,
+      "region": null,
+      "spend": 0.44,
+      "leads": 0,
+      "purchases": 1.0,
+      "impressions": 56.0,
+      "reach": 33.0
+    }
+  ],
+  "meta_region_2024_25": [
+    {
+      "age": null,
+      "gender": null,
+      "country": null,
+      "region": "Comunidad de Madrid",
+      "spend": 12701.230747,
+      "leads": 1254.0,
+      "purchases": 0,
+      "impressions": 4697357.0,
+      "reach": 0.0
+    },
+    {
+      "age": null,
+      "gender": null,
+      "country": null,
+      "region": "Andalusia",
+      "spend": 9514.086224,
+      "leads": 1158.0,
+      "purchases": 0,
+      "impressions": 3071730.0,
+      "reach": 0.0
+    },
+    {
+      "age": null,
+      "gender": null,
+      "country": null,
+      "region": "Cataluña",
+      "spend": 3596.097977,
+      "leads": 422.0,
+      "purchases": 0,
+      "impressions": 682951.0,
+      "reach": 0.0
+    },
+    {
+      "age": null,
+      "gender": null,
+      "country": null,
+      "region": "Comunidad Valenciana",
+      "spend": 3528.417476,
+      "leads": 499.0,
+      "purchases": 0,
+      "impressions": 839247.0,
+      "reach": 0.0
+    },
+    {
+      "age": null,
+      "gender": null,
+      "country": null,
+      "region": "Islas Canarias",
+      "spend": 1473.578643,
+      "leads": 232.0,
+      "purchases": 0,
+      "impressions": 352364.0,
+      "reach": 0.0
+    },
+    {
+      "age": null,
+      "gender": null,
+      "country": null,
+      "region": "Castilla y Leon",
+      "spend": 1432.752309,
+      "leads": 211.0,
+      "purchases": 0,
+      "impressions": 377559.0,
+      "reach": 0.0
+    },
+    {
+      "age": null,
+      "gender": null,
+      "country": null,
+      "region": "Castilla-La Mancha",
+      "spend": 1379.584059,
+      "leads": 184.0,
+      "purchases": 0,
+      "impressions": 362836.0,
+      "reach": 0.0
+    },
+    {
+      "age": null,
+      "gender": null,
+      "country": null,
+      "region": "Region of Murcia",
+      "spend": 1076.897093,
+      "leads": 179.0,
+      "purchases": 0,
+      "impressions": 292649.0,
+      "reach": 0.0
+    },
+    {
+      "age": null,
+      "gender": null,
+      "country": null,
+      "region": "Galicia",
+      "spend": 1045.442213,
+      "leads": 156.0,
+      "purchases": 0,
+      "impressions": 264763.0,
+      "reach": 0.0
+    },
+    {
+      "age": null,
+      "gender": null,
+      "country": null,
+      "region": "Aragón",
+      "spend": 814.546387,
+      "leads": 107.0,
+      "purchases": 0,
+      "impressions": 189334.0,
+      "reach": 0.0
+    },
+    {
+      "age": null,
+      "gender": null,
+      "country": null,
+      "region": "País Vasco",
+      "spend": 763.368446,
+      "leads": 72.0,
+      "purchases": 0,
+      "impressions": 162093.0,
+      "reach": 0.0
+    },
+    {
+      "age": null,
+      "gender": null,
+      "country": null,
+      "region": "Balearic Islands",
+      "spend": 732.513658,
+      "leads": 111.0,
+      "purchases": 0,
+      "impressions": 160826.0,
+      "reach": 0.0
+    },
+    {
+      "age": null,
+      "gender": null,
+      "country": null,
+      "region": "Extremadura",
+      "spend": 580.430061,
+      "leads": 84.0,
+      "purchases": 0,
+      "impressions": 167333.0,
+      "reach": 0.0
+    },
+    {
+      "age": null,
+      "gender": null,
+      "country": null,
+      "region": "Principality of Asturias",
+      "spend": 526.501693,
+      "leads": 72.0,
+      "purchases": 0,
+      "impressions": 134380.0,
+      "reach": 0.0
+    },
+    {
+      "age": null,
+      "gender": null,
+      "country": null,
+      "region": "Navarra",
+      "spend": 299.566481,
+      "leads": 30.0,
+      "purchases": 0,
+      "impressions": 69106.0,
+      "reach": 0.0
+    },
+    {
+      "age": null,
+      "gender": null,
+      "country": null,
+      "region": "Cantabria",
+      "spend": 275.212703,
+      "leads": 43.0,
+      "purchases": 0,
+      "impressions": 68441.0,
+      "reach": 0.0
+    },
+    {
+      "age": null,
+      "gender": null,
+      "country": null,
+      "region": "La Rioja",
+      "spend": 147.502887,
+      "leads": 20.0,
+      "purchases": 0,
+      "impressions": 36123.0,
+      "reach": 0.0
+    },
+    {
+      "age": null,
+      "gender": null,
+      "country": null,
+      "region": "Unknown",
+      "spend": 6.080944,
+      "leads": 0,
+      "purchases": 0,
+      "impressions": 1126.0,
+      "reach": 0.0
+    }
+  ],
+  "meta_region_2025_26": [
+    {
+      "age": null,
+      "gender": null,
+      "country": null,
+      "region": "Comunidad de Madrid",
+      "spend": 11955.991514,
+      "leads": 2069.0,
+      "purchases": 0,
+      "impressions": 1909816.0,
+      "reach": 406876.0
+    },
+    {
+      "age": null,
+      "gender": null,
+      "country": null,
+      "region": "Andalusia",
+      "spend": 10926.370611,
+      "leads": 1711.0,
+      "purchases": 0,
+      "impressions": 2190121.0,
+      "reach": 380029.0
+    },
+    {
+      "age": null,
+      "gender": null,
+      "country": null,
+      "region": "Cataluña",
+      "spend": 4739.605893,
+      "leads": 796.0,
+      "purchases": 0,
+      "impressions": 718647.0,
+      "reach": 176975.0
+    },
+    {
+      "age": null,
+      "gender": null,
+      "country": null,
+      "region": "Comunidad Valenciana",
+      "spend": 3984.893871,
+      "leads": 646.0,
+      "purchases": 0,
+      "impressions": 699195.0,
+      "reach": 146453.0
+    },
+    {
+      "age": null,
+      "gender": null,
+      "country": null,
+      "region": "Islas Canarias",
+      "spend": 2150.594786,
+      "leads": 420.0,
+      "purchases": 0,
+      "impressions": 379624.0,
+      "reach": 70514.0
+    },
+    {
+      "age": null,
+      "gender": null,
+      "country": null,
+      "region": "Castilla y Leon",
+      "spend": 1706.92887,
+      "leads": 283.0,
+      "purchases": 0,
+      "impressions": 326457.0,
+      "reach": 63677.0
+    },
+    {
+      "age": null,
+      "gender": null,
+      "country": null,
+      "region": "Castilla-La Mancha",
+      "spend": 1620.75549,
+      "leads": 290.0,
+      "purchases": 0,
+      "impressions": 324311.0,
+      "reach": 66793.0
+    },
+    {
+      "age": null,
+      "gender": null,
+      "country": null,
+      "region": "Galicia",
+      "spend": 1278.911751,
+      "leads": 226.0,
+      "purchases": 0,
+      "impressions": 229043.0,
+      "reach": 53554.0
+    },
+    {
+      "age": null,
+      "gender": null,
+      "country": null,
+      "region": "Region of Murcia",
+      "spend": 1179.47939,
+      "leads": 201.0,
+      "purchases": 0,
+      "impressions": 234427.0,
+      "reach": 47337.0
+    },
+    {
+      "age": null,
+      "gender": null,
+      "country": null,
+      "region": "Balearic Islands",
+      "spend": 934.178234,
+      "leads": 175.0,
+      "purchases": 0,
+      "impressions": 158807.0,
+      "reach": 34366.0
+    },
+    {
+      "age": null,
+      "gender": null,
+      "country": null,
+      "region": "Aragón",
+      "spend": 899.180923,
+      "leads": 147.0,
+      "purchases": 0,
+      "impressions": 162361.0,
+      "reach": 33430.0
+    },
+    {
+      "age": null,
+      "gender": null,
+      "country": null,
+      "region": "País Vasco",
+      "spend": 849.464742,
+      "leads": 151.0,
+      "purchases": 0,
+      "impressions": 149808.0,
+      "reach": 39369.0
+    },
+    {
+      "age": null,
+      "gender": null,
+      "country": null,
+      "region": "Extremadura",
+      "spend": 603.673624,
+      "leads": 100.0,
+      "purchases": 0,
+      "impressions": 143061.0,
+      "reach": 29079.0
+    },
+    {
+      "age": null,
+      "gender": null,
+      "country": null,
+      "region": "Principality of Asturias",
+      "spend": 557.897141,
+      "leads": 113.0,
+      "purchases": 0,
+      "impressions": 98005.0,
+      "reach": 22764.0
+    },
+    {
+      "age": null,
+      "gender": null,
+      "country": null,
+      "region": "Navarra",
+      "spend": 367.851741,
+      "leads": 56.0,
+      "purchases": 0,
+      "impressions": 70320.0,
+      "reach": 14129.0
+    },
+    {
+      "age": null,
+      "gender": null,
+      "country": null,
+      "region": "Cantabria",
+      "spend": 321.595294,
+      "leads": 57.0,
+      "purchases": 0,
+      "impressions": 60724.0,
+      "reach": 13627.0
+    },
+    {
+      "age": null,
+      "gender": null,
+      "country": null,
+      "region": "La Rioja",
+      "spend": 172.806725,
+      "leads": 20.0,
+      "purchases": 0,
+      "impressions": 31830.0,
+      "reach": 7402.0
+    },
+    {
+      "age": null,
+      "gender": null,
+      "country": null,
+      "region": "Unknown",
+      "spend": 5.719561,
+      "leads": 3.0,
+      "purchases": 0,
+      "impressions": 807.0,
+      "reach": 581.0
+    },
+    {
+      "age": null,
+      "gender": null,
+      "country": null,
+      "region": "Southern Region",
+      "spend": 0.51996,
+      "leads": 1.0,
+      "purchases": 0,
+      "impressions": 13.0,
+      "reach": 1.0
+    },
+    {
+      "age": null,
+      "gender": null,
+      "country": null,
+      "region": "Noord-Holland",
+      "spend": 0.329975,
+      "leads": 0,
+      "purchases": 0,
+      "impressions": 34.0,
+      "reach": 3.0
+    },
+    {
+      "age": null,
+      "gender": null,
+      "country": null,
+      "region": "England",
+      "spend": 0.149988,
+      "leads": 0,
+      "purchases": 0,
+      "impressions": 19.0,
+      "reach": 10.0
+    },
+    {
+      "age": null,
+      "gender": null,
+      "country": null,
+      "region": "Vaud",
+      "spend": 0.079994,
+      "leads": 0,
+      "purchases": 0,
+      "impressions": 3.0,
+      "reach": 2.0
+    },
+    {
+      "age": null,
+      "gender": null,
+      "country": null,
+      "region": "Hessen",
+      "spend": 0.059995,
+      "leads": 0,
+      "purchases": 0,
+      "impressions": 19.0,
+      "reach": 3.0
+    },
+    {
+      "age": null,
+      "gender": null,
+      "country": null,
+      "region": "Central Region",
+      "spend": 0.049996,
+      "leads": 0,
+      "purchases": 0,
+      "impressions": 10.0,
+      "reach": 3.0
+    },
+    {
+      "age": null,
+      "gender": null,
+      "country": null,
+      "region": "New York",
+      "spend": 0.049996,
+      "leads": 0,
+      "purchases": 0,
+      "impressions": 21.0,
+      "reach": 5.0
+    },
+    {
+      "age": null,
+      "gender": null,
+      "country": null,
+      "region": "Damascus Governorate",
+      "spend": 0.039997,
+      "leads": 0,
+      "purchases": 0,
+      "impressions": 3.0,
+      "reach": 3.0
+    },
+    {
+      "age": null,
+      "gender": null,
+      "country": null,
+      "region": "Dubai",
+      "spend": 0.039997,
+      "leads": 0,
+      "purchases": 0,
+      "impressions": 4.0,
+      "reach": 4.0
+    },
+    {
+      "age": null,
+      "gender": null,
+      "country": null,
+      "region": "Dublin",
+      "spend": 0.039997,
+      "leads": 0,
+      "purchases": 0,
+      "impressions": 12.0,
+      "reach": 10.0
+    },
+    {
+      "age": null,
+      "gender": null,
+      "country": null,
+      "region": "Tangier-Tetouan",
+      "spend": 0.039997,
+      "leads": 0,
+      "purchases": 0,
+      "impressions": 6.0,
+      "reach": 6.0
+    },
+    {
+      "age": null,
+      "gender": null,
+      "country": null,
+      "region": "Île-de-France",
+      "spend": 0.039997,
+      "leads": 0,
+      "purchases": 0,
+      "impressions": 4.0,
+      "reach": 4.0
+    },
+    {
+      "age": null,
+      "gender": null,
+      "country": null,
+      "region": "Dakar Region",
+      "spend": 0.029998,
+      "leads": 0,
+      "purchases": 0,
+      "impressions": 7.0,
+      "reach": 5.0
+    },
+    {
+      "age": null,
+      "gender": null,
+      "country": null,
+      "region": "Federation of Bosnia and Herzegovina",
+      "spend": 0.029998,
+      "leads": 0,
+      "purchases": 0,
+      "impressions": 1.0,
+      "reach": 1.0
+    },
+    {
+      "age": null,
+      "gender": null,
+      "country": null,
+      "region": "Masovian Voivodeship",
+      "spend": 0.029998,
+      "leads": 0,
+      "purchases": 0,
+      "impressions": 3.0,
+      "reach": 1.0
+    },
+    {
+      "age": null,
+      "gender": null,
+      "country": null,
+      "region": "Oslo",
+      "spend": 0.029998,
+      "leads": 0,
+      "purchases": 0,
+      "impressions": 3.0,
+      "reach": 1.0
+    },
+    {
+      "age": null,
+      "gender": null,
+      "country": null,
+      "region": "Panamá Province",
+      "spend": 0.029998,
+      "leads": 0,
+      "purchases": 0,
+      "impressions": 1.0,
+      "reach": 1.0
+    },
+    {
+      "age": null,
+      "gender": null,
+      "country": null,
+      "region": "Santa Catarina",
+      "spend": 0.029998,
+      "leads": 0,
+      "purchases": 0,
+      "impressions": 5.0,
+      "reach": 1.0
+    },
+    {
+      "age": null,
+      "gender": null,
+      "country": null,
+      "region": "Zuid-Holland",
+      "spend": 0.029998,
+      "leads": 0,
+      "purchases": 0,
+      "impressions": 10.0,
+      "reach": 2.0
+    },
+    {
+      "age": null,
+      "gender": null,
+      "country": null,
+      "region": "Akershus",
+      "spend": 0.019998,
+      "leads": 0,
+      "purchases": 0,
+      "impressions": 2.0,
+      "reach": 1.0
+    },
+    {
+      "age": null,
+      "gender": null,
+      "country": null,
+      "region": "Buenos Aires",
+      "spend": 0.019998,
+      "leads": 0,
+      "purchases": 0,
+      "impressions": 9.0,
+      "reach": 2.0
+    },
+    {
+      "age": null,
+      "gender": null,
+      "country": null,
+      "region": "Canton of Geneva",
+      "spend": 0.019998,
+      "leads": 0,
+      "purchases": 0,
+      "impressions": 1.0,
+      "reach": 1.0
+    }
+  ],
+  "notes": [
+    "Geografía WC = billing city/state/country del pedido.",
+    "Género WC = inferido por nombre de pila (aproximado). WooCommerce no guarda edad ni género.",
+    "Meta age/gender/region = audiencia y conversiones reportadas por Ads (purchase/lead pixel), no billing WC."
+  ]
+}

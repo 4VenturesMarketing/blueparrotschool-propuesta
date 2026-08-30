@@ -1,0 +1,1571 @@
+{
+  "sy-2024-25": {
+    "totals": {
+      "sessions": "91754",
+      "totalUsers": "68560",
+      "ecommercePurchases": "1063",
+      "purchaseRevenue": "0",
+      "conversions": "4783",
+      "engagedSessions": "59480"
+    },
+    "channels": [
+      {
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": "65383",
+        "totalUsers": "48122",
+        "ecommercePurchases": "504",
+        "purchaseRevenue": "0",
+        "conversions": "2382"
+      },
+      {
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": "15594",
+        "totalUsers": "10245",
+        "ecommercePurchases": "470",
+        "purchaseRevenue": "0",
+        "conversions": "2009"
+      },
+      {
+        "sessionDefaultChannelGroup": "Paid Social",
+        "sessions": "4916",
+        "totalUsers": "4631",
+        "ecommercePurchases": "2",
+        "purchaseRevenue": "0",
+        "conversions": "62"
+      },
+      {
+        "sessionDefaultChannelGroup": "Organic Social",
+        "sessions": "3214",
+        "totalUsers": "3042",
+        "ecommercePurchases": "3",
+        "purchaseRevenue": "0",
+        "conversions": "47"
+      },
+      {
+        "sessionDefaultChannelGroup": "Referral",
+        "sessions": "2566",
+        "totalUsers": "1906",
+        "ecommercePurchases": "61",
+        "purchaseRevenue": "0",
+        "conversions": "157"
+      },
+      {
+        "sessionDefaultChannelGroup": "Unassigned",
+        "sessions": "1160",
+        "totalUsers": "983",
+        "ecommercePurchases": "20",
+        "purchaseRevenue": "0",
+        "conversions": "109"
+      },
+      {
+        "sessionDefaultChannelGroup": "Email",
+        "sessions": "111",
+        "totalUsers": "80",
+        "ecommercePurchases": "3",
+        "purchaseRevenue": "0",
+        "conversions": "17"
+      },
+      {
+        "sessionDefaultChannelGroup": "Paid Other",
+        "sessions": "20",
+        "totalUsers": "11",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "0"
+      },
+      {
+        "sessionDefaultChannelGroup": "Display",
+        "sessions": "1",
+        "totalUsers": "1",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "0"
+      },
+      {
+        "sessionDefaultChannelGroup": "Paid Search",
+        "sessions": "1",
+        "totalUsers": "1",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "0"
+      }
+    ],
+    "source_medium": [
+      {
+        "sessionSource": "google",
+        "sessionMedium": "organic",
+        "sessions": "62408",
+        "ecommercePurchases": "476",
+        "purchaseRevenue": "0",
+        "conversions": "2220"
+      },
+      {
+        "sessionSource": "(direct)",
+        "sessionMedium": "(none)",
+        "sessions": "15594",
+        "ecommercePurchases": "470",
+        "purchaseRevenue": "0",
+        "conversions": "2009"
+      },
+      {
+        "sessionSource": "ig",
+        "sessionMedium": "paid",
+        "sessions": "3586",
+        "ecommercePurchases": "2",
+        "purchaseRevenue": "0",
+        "conversions": "59"
+      },
+      {
+        "sessionSource": "bing",
+        "sessionMedium": "organic",
+        "sessions": "1738",
+        "ecommercePurchases": "20",
+        "purchaseRevenue": "0",
+        "conversions": "107"
+      },
+      {
+        "sessionSource": "linktr.ee",
+        "sessionMedium": "referral",
+        "sessions": "1457",
+        "ecommercePurchases": "3",
+        "purchaseRevenue": "0",
+        "conversions": "28"
+      },
+      {
+        "sessionSource": "facebook.com",
+        "sessionMedium": "referral",
+        "sessions": "1423",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "0"
+      },
+      {
+        "sessionSource": "fb",
+        "sessionMedium": "paid",
+        "sessions": "1382",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "3"
+      },
+      {
+        "sessionSource": "(not set)",
+        "sessionMedium": "(not set)",
+        "sessions": "763",
+        "ecommercePurchases": "9",
+        "purchaseRevenue": "0",
+        "conversions": "54"
+      },
+      {
+        "sessionSource": "fb",
+        "sessionMedium": "info",
+        "sessions": "547",
+        "ecommercePurchases": "1",
+        "purchaseRevenue": "0",
+        "conversions": "14"
+      },
+      {
+        "sessionSource": "l.instagram.com",
+        "sessionMedium": "referral",
+        "sessions": "519",
+        "ecommercePurchases": "1",
+        "purchaseRevenue": "0",
+        "conversions": "20"
+      },
+      {
+        "sessionSource": "chatgpt.com",
+        "sessionMedium": "referral",
+        "sessions": "294",
+        "ecommercePurchases": "2",
+        "purchaseRevenue": "0",
+        "conversions": "14"
+      },
+      {
+        "sessionSource": "es.search.yahoo.com",
+        "sessionMedium": "referral",
+        "sessions": "293",
+        "ecommercePurchases": "5",
+        "purchaseRevenue": "0",
+        "conversions": "29"
+      },
+      {
+        "sessionSource": "m.facebook.com",
+        "sessionMedium": "referral",
+        "sessions": "258",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "0"
+      },
+      {
+        "sessionSource": "l.wl.co",
+        "sessionMedium": "referral",
+        "sessions": "247",
+        "ecommercePurchases": "9",
+        "purchaseRevenue": "0",
+        "conversions": "44"
+      },
+      {
+        "sessionSource": "chatgpt.com",
+        "sessionMedium": "(not set)",
+        "sessions": "196",
+        "ecommercePurchases": "5",
+        "purchaseRevenue": "0",
+        "conversions": "9"
+      },
+      {
+        "sessionSource": "ecosia.org",
+        "sessionMedium": "organic",
+        "sessions": "193",
+        "ecommercePurchases": "3",
+        "purchaseRevenue": "0",
+        "conversions": "8"
+      },
+      {
+        "sessionSource": "sis.redsys.es",
+        "sessionMedium": "referral",
+        "sessions": "148",
+        "ecommercePurchases": "41",
+        "purchaseRevenue": "0",
+        "conversions": "51"
+      },
+      {
+        "sessionSource": "clientify",
+        "sessionMedium": "email-marketing",
+        "sessions": "143",
+        "ecommercePurchases": "6",
+        "purchaseRevenue": "0",
+        "conversions": "45"
+      },
+      {
+        "sessionSource": "clientify",
+        "sessionMedium": "email",
+        "sessions": "111",
+        "ecommercePurchases": "3",
+        "purchaseRevenue": "0",
+        "conversions": "17"
+      },
+      {
+        "sessionSource": "ntp.msn.com",
+        "sessionMedium": "referral",
+        "sessions": "111",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "16"
+      },
+      {
+        "sessionSource": "fb",
+        "sessionMedium": "ad",
+        "sessions": "106",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "2"
+      },
+      {
+        "sessionSource": "duckduckgo",
+        "sessionMedium": "organic",
+        "sessions": "103",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "1"
+      },
+      {
+        "sessionSource": "instagram",
+        "sessionMedium": "linktree",
+        "sessions": "101",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "0"
+      },
+      {
+        "sessionSource": "l.facebook.com",
+        "sessionMedium": "referral",
+        "sessions": "93",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "2"
+      },
+      {
+        "sessionSource": "linkedin.com",
+        "sessionMedium": "referral",
+        "sessions": "81",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "0"
+      },
+      {
+        "sessionSource": "mail.google.com",
+        "sessionMedium": "referral",
+        "sessions": "71",
+        "ecommercePurchases": "1",
+        "purchaseRevenue": "0",
+        "conversions": "4"
+      },
+      {
+        "sessionSource": "yahoo",
+        "sessionMedium": "organic",
+        "sessions": "60",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "0"
+      },
+      {
+        "sessionSource": "teams.microsoft.com",
+        "sessionMedium": "referral",
+        "sessions": "55",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "0"
+      },
+      {
+        "sessionSource": "search.brave.com",
+        "sessionMedium": "referral",
+        "sessions": "46",
+        "ecommercePurchases": "1",
+        "purchaseRevenue": "0",
+        "conversions": "2"
+      },
+      {
+        "sessionSource": "perplexity.ai",
+        "sessionMedium": "referral",
+        "sessions": "25",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "0"
+      },
+      {
+        "sessionSource": "app.clientify.com",
+        "sessionMedium": "referral",
+        "sessions": "24",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "1"
+      },
+      {
+        "sessionSource": "gemini.google.com",
+        "sessionMedium": "referral",
+        "sessions": "23",
+        "ecommercePurchases": "2",
+        "purchaseRevenue": "0",
+        "conversions": "3"
+      },
+      {
+        "sessionSource": "instagram.com",
+        "sessionMedium": "referral",
+        "sessions": "22",
+        "ecommercePurchases": "1",
+        "purchaseRevenue": "0",
+        "conversions": "8"
+      },
+      {
+        "sessionSource": "Instagram",
+        "sessionMedium": "linktree",
+        "sessions": "21",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "0"
+      },
+      {
+        "sessionSource": "e-book",
+        "sessionMedium": "instagram live",
+        "sessions": "19",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "0"
+      },
+      {
+        "sessionSource": "co.search.yahoo.com",
+        "sessionMedium": "referral",
+        "sessions": "17",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "0"
+      },
+      {
+        "sessionSource": "linkedin",
+        "sessionMedium": "home",
+        "sessions": "16",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "0"
+      },
+      {
+        "sessionSource": "an",
+        "sessionMedium": "paid",
+        "sessions": "15",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "0"
+      },
+      {
+        "sessionSource": "ar.search.yahoo.com",
+        "sessionMedium": "referral",
+        "sessions": "13",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "0"
+      },
+      {
+        "sessionSource": "blog",
+        "sessionMedium": "ebook",
+        "sessions": "13",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "0"
+      },
+      {
+        "sessionSource": "lm.facebook.com",
+        "sessionMedium": "referral",
+        "sessions": "12",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "0"
+      },
+      {
+        "sessionSource": "qwant.com",
+        "sessionMedium": "organic",
+        "sessions": "12",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "1"
+      },
+      {
+        "sessionSource": "uk.search.yahoo.com",
+        "sessionMedium": "referral",
+        "sessions": "12",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "0"
+      },
+      {
+        "sessionSource": "copilot.microsoft.com",
+        "sessionMedium": "referral",
+        "sessions": "11",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "0"
+      },
+      {
+        "sessionSource": "perplexity",
+        "sessionMedium": "(not set)",
+        "sessions": "11",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "0"
+      },
+      {
+        "sessionSource": "classroom.google.com",
+        "sessionMedium": "referral",
+        "sessions": "10",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "0"
+      },
+      {
+        "sessionSource": "deref-gmx.net",
+        "sessionMedium": "referral",
+        "sessions": "10",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "0"
+      },
+      {
+        "sessionSource": "ecidiomas.seadea.edu.ar",
+        "sessionMedium": "referral",
+        "sessions": "10",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "0"
+      },
+      {
+        "sessionSource": "yandex.ru",
+        "sessionMedium": "referral",
+        "sessions": "10",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "0"
+      },
+      {
+        "sessionSource": "search.media-joy.co",
+        "sessionMedium": "referral",
+        "sessions": "8",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "0"
+      },
+      {
+        "sessionSource": "www3.gobiernodecanarias.org",
+        "sessionMedium": "referral",
+        "sessions": "8",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "0"
+      },
+      {
+        "sessionSource": "googlemybusiness",
+        "sessionMedium": "producto",
+        "sessions": "7",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "1"
+      },
+      {
+        "sessionSource": "it.search.yahoo.com",
+        "sessionMedium": "referral",
+        "sessions": "6",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "0"
+      },
+      {
+        "sessionSource": "lnkd.in",
+        "sessionMedium": "referral",
+        "sessions": "6",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "0"
+      },
+      {
+        "sessionSource": "mx.search.yahoo.com",
+        "sessionMedium": "referral",
+        "sessions": "6",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "0"
+      },
+      {
+        "sessionSource": "search.voicecommandsearcher.com",
+        "sessionMedium": "referral",
+        "sessions": "6",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "0"
+      },
+      {
+        "sessionSource": "statics.teams.cdn.office.net",
+        "sessionMedium": "referral",
+        "sessions": "6",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "3"
+      },
+      {
+        "sessionSource": "adsmanager.facebook.com",
+        "sessionMedium": "referral",
+        "sessions": "5",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "1"
+      },
+      {
+        "sessionSource": "cadence.ringover.com",
+        "sessionMedium": "referral",
+        "sessions": "5",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "0"
+      },
+      {
+        "sessionSource": "facebook",
+        "sessionMedium": "post",
+        "sessions": "5",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "0"
+      },
+      {
+        "sessionSource": "fr.search.yahoo.com",
+        "sessionMedium": "referral",
+        "sessions": "5",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "0"
+      },
+      {
+        "sessionSource": "keep.google.com",
+        "sessionMedium": "referral",
+        "sessions": "4",
+        "ecommercePurchases": "1",
+        "purchaseRevenue": "0",
+        "conversions": "2"
+      },
+      {
+        "sessionSource": "kudago.bitrix24.ru",
+        "sessionMedium": "referral",
+        "sessions": "4",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "0"
+      },
+      {
+        "sessionSource": "symbaloo.com",
+        "sessionMedium": "referral",
+        "sessions": "4",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "0"
+      },
+      {
+        "sessionSource": "ya.ru",
+        "sessionMedium": "referral",
+        "sessions": "4",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "0"
+      },
+      {
+        "sessionSource": "adwords",
+        "sessionMedium": "ppc",
+        "sessions": "3",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "0"
+      },
+      {
+        "sessionSource": "chatgpt.com",
+        "sessionMedium": "organic",
+        "sessions": "3",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "0"
+      },
+      {
+        "sessionSource": "e-book",
+        "sessionMedium": "ig live writing reading aptis",
+        "sessions": "3",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "0"
+      },
+      {
+        "sessionSource": "ebook",
+        "sessionMedium": "link",
+        "sessions": "3",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "0"
+      },
+      {
+        "sessionSource": "maps.apple.com",
+        "sessionMedium": "referral",
+        "sessions": "3",
+        "ecommercePurchases": "1",
+        "purchaseRevenue": "0",
+        "conversions": "2"
+      },
+      {
+        "sessionSource": "outlook.live.com",
+        "sessionMedium": "referral",
+        "sessions": "3",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "0"
+      },
+      {
+        "sessionSource": "privacywall.org",
+        "sessionMedium": "referral",
+        "sessions": "3",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "0"
+      },
+      {
+        "sessionSource": "aprender-frances.laclassefrancaise.es",
+        "sessionMedium": "referral",
+        "sessions": "2",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "0"
+      },
+      {
+        "sessionSource": "coupert.com",
+        "sessionMedium": "referral",
+        "sessions": "2",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "0"
+      },
+      {
+        "sessionSource": "epuwe.com",
+        "sessionMedium": "referral",
+        "sessions": "2",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "0"
+      },
+      {
+        "sessionSource": "m365.cloud.microsoft",
+        "sessionMedium": "referral",
+        "sessions": "2",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "0"
+      },
+      {
+        "sessionSource": "pxy.ms",
+        "sessionMedium": "referral",
+        "sessions": "2",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "0"
+      },
+      {
+        "sessionSource": "r.hotdeals.com",
+        "sessionMedium": "referral",
+        "sessions": "2",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "1"
+      },
+      {
+        "sessionSource": "raikovstudio.ru",
+        "sessionMedium": "referral",
+        "sessions": "2",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "0"
+      },
+      {
+        "sessionSource": "search.app",
+        "sessionMedium": "referral",
+        "sessions": "2",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "0"
+      }
+    ]
+  },
+  "sy-2025-26": {
+    "totals": {
+      "sessions": "89680",
+      "totalUsers": "66078",
+      "ecommercePurchases": "793",
+      "purchaseRevenue": "136179.74999999994",
+      "conversions": "3373",
+      "engagedSessions": "52758"
+    },
+    "channels": [
+      {
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": "54008",
+        "totalUsers": "39797",
+        "ecommercePurchases": "399",
+        "purchaseRevenue": "67495.550000000017",
+        "conversions": "1390"
+      },
+      {
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": "24505",
+        "totalUsers": "18539",
+        "ecommercePurchases": "317",
+        "purchaseRevenue": "54739.350000000028",
+        "conversions": "1604"
+      },
+      {
+        "sessionDefaultChannelGroup": "Organic Social",
+        "sessions": "3401",
+        "totalUsers": "2952",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "6"
+      },
+      {
+        "sessionDefaultChannelGroup": "Paid Social",
+        "sessions": "2161",
+        "totalUsers": "2037",
+        "ecommercePurchases": "1",
+        "purchaseRevenue": "262.65",
+        "conversions": "23"
+      },
+      {
+        "sessionDefaultChannelGroup": "Referral",
+        "sessions": "1614",
+        "totalUsers": "1113",
+        "ecommercePurchases": "21",
+        "purchaseRevenue": "2258.8500000000004",
+        "conversions": "59"
+      },
+      {
+        "sessionDefaultChannelGroup": "Cross-network",
+        "sessions": "1303",
+        "totalUsers": "1051",
+        "ecommercePurchases": "18",
+        "purchaseRevenue": "3988.1000000000004",
+        "conversions": "102"
+      },
+      {
+        "sessionDefaultChannelGroup": "Unassigned",
+        "sessions": "1178",
+        "totalUsers": "1007",
+        "ecommercePurchases": "14",
+        "purchaseRevenue": "2560.25",
+        "conversions": "61"
+      },
+      {
+        "sessionDefaultChannelGroup": "Paid Search",
+        "sessions": "798",
+        "totalUsers": "639",
+        "ecommercePurchases": "20",
+        "purchaseRevenue": "4498.8499999999995",
+        "conversions": "107"
+      },
+      {
+        "sessionDefaultChannelGroup": "Email",
+        "sessions": "700",
+        "totalUsers": "564",
+        "ecommercePurchases": "3",
+        "purchaseRevenue": "376.15",
+        "conversions": "4"
+      },
+      {
+        "sessionDefaultChannelGroup": "AI Assistant",
+        "sessions": "184",
+        "totalUsers": "127",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "17"
+      },
+      {
+        "sessionDefaultChannelGroup": "Paid Other",
+        "sessions": "2",
+        "totalUsers": "2",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "0"
+      }
+    ],
+    "source_medium": [
+      {
+        "sessionSource": "google",
+        "sessionMedium": "organic",
+        "sessions": "52229",
+        "ecommercePurchases": "378",
+        "purchaseRevenue": "63199.700000000048",
+        "conversions": "1275"
+      },
+      {
+        "sessionSource": "(direct)",
+        "sessionMedium": "(none)",
+        "sessions": "24505",
+        "ecommercePurchases": "317",
+        "purchaseRevenue": "54739.350000000042",
+        "conversions": "1604"
+      },
+      {
+        "sessionSource": "google",
+        "sessionMedium": "cpc",
+        "sessions": "2087",
+        "ecommercePurchases": "38",
+        "purchaseRevenue": "8486.9499999999989",
+        "conversions": "207"
+      },
+      {
+        "sessionSource": "fb",
+        "sessionMedium": "info",
+        "sessions": "2076",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "3"
+      },
+      {
+        "sessionSource": "ig",
+        "sessionMedium": "paid",
+        "sessions": "1565",
+        "ecommercePurchases": "1",
+        "purchaseRevenue": "262.65",
+        "conversions": "4"
+      },
+      {
+        "sessionSource": "bing",
+        "sessionMedium": "organic",
+        "sessions": "958",
+        "ecommercePurchases": "16",
+        "purchaseRevenue": "3137.9",
+        "conversions": "67"
+      },
+      {
+        "sessionSource": "clientify",
+        "sessionMedium": "email",
+        "sessions": "700",
+        "ecommercePurchases": "3",
+        "purchaseRevenue": "376.15",
+        "conversions": "4"
+      },
+      {
+        "sessionSource": "facebook.com",
+        "sessionMedium": "referral",
+        "sessions": "537",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "0"
+      },
+      {
+        "sessionSource": "(not set)",
+        "sessionMedium": "(not set)",
+        "sessions": "508",
+        "ecommercePurchases": "8",
+        "purchaseRevenue": "1329.6999999999998",
+        "conversions": "13"
+      },
+      {
+        "sessionSource": "linktr.ee",
+        "sessionMedium": "referral",
+        "sessions": "464",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "9"
+      },
+      {
+        "sessionSource": "fb",
+        "sessionMedium": "paid",
+        "sessions": "446",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "8"
+      },
+      {
+        "sessionSource": "m.facebook.com",
+        "sessionMedium": "referral",
+        "sessions": "381",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "1"
+      },
+      {
+        "sessionSource": "chatgpt.com",
+        "sessionMedium": "referral",
+        "sessions": "347",
+        "ecommercePurchases": "4",
+        "purchaseRevenue": "3",
+        "conversions": "10"
+      },
+      {
+        "sessionSource": "chatgpt.com",
+        "sessionMedium": "(not set)",
+        "sessions": "277",
+        "ecommercePurchases": "1",
+        "purchaseRevenue": "211.65",
+        "conversions": "10"
+      },
+      {
+        "sessionSource": "l.wl.co",
+        "sessionMedium": "referral",
+        "sessions": "225",
+        "ecommercePurchases": "8",
+        "purchaseRevenue": "1084.3500000000001",
+        "conversions": "18"
+      },
+      {
+        "sessionSource": "es.search.yahoo.com",
+        "sessionMedium": "referral",
+        "sessions": "189",
+        "ecommercePurchases": "3",
+        "purchaseRevenue": "526.3",
+        "conversions": "14"
+      },
+      {
+        "sessionSource": "ecosia.org",
+        "sessionMedium": "organic",
+        "sessions": "184",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "29"
+      },
+      {
+        "sessionSource": "chatgpt.com",
+        "sessionMedium": "ai-assistant",
+        "sessions": "164",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "15"
+      },
+      {
+        "sessionSource": "meta",
+        "sessionMedium": "paid_social",
+        "sessions": "149",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "11"
+      },
+      {
+        "sessionSource": "clientify",
+        "sessionMedium": "(not set)",
+        "sessions": "114",
+        "ecommercePurchases": "5",
+        "purchaseRevenue": "1018.9",
+        "conversions": "31"
+      },
+      {
+        "sessionSource": "l.instagram.com",
+        "sessionMedium": "referral",
+        "sessions": "105",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "1"
+      },
+      {
+        "sessionSource": "topmadrid.com.es",
+        "sessionMedium": "referral",
+        "sessions": "101",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "0"
+      },
+      {
+        "sessionSource": "ig",
+        "sessionMedium": "social",
+        "sessions": "89",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "0"
+      },
+      {
+        "sessionSource": "l.facebook.com",
+        "sessionMedium": "referral",
+        "sessions": "82",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "0"
+      },
+      {
+        "sessionSource": "instagram",
+        "sessionMedium": "linktree",
+        "sessions": "72",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "0"
+      },
+      {
+        "sessionSource": "sis.redsys.es",
+        "sessionMedium": "referral",
+        "sessions": "71",
+        "ecommercePurchases": "4",
+        "purchaseRevenue": "213.65",
+        "conversions": "4"
+      },
+      {
+        "sessionSource": "duckduckgo",
+        "sessionMedium": "organic",
+        "sessions": "66",
+        "ecommercePurchases": "2",
+        "purchaseRevenue": "631.65",
+        "conversions": "5"
+      },
+      {
+        "sessionSource": "search.brave.com",
+        "sessionMedium": "referral",
+        "sessions": "66",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "0"
+      },
+      {
+        "sessionSource": "tagassistant.google.com",
+        "sessionMedium": "referral",
+        "sessions": "57",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "5"
+      },
+      {
+        "sessionSource": "clientify",
+        "sessionMedium": "email-marketing",
+        "sessions": "49",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "7"
+      },
+      {
+        "sessionSource": "clientify",
+        "sessionMedium": "newsletter-abil-blog-post-2026",
+        "sessions": "42",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "0"
+      },
+      {
+        "sessionSource": "Instagram",
+        "sessionMedium": "linktree",
+        "sessions": "37",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "1"
+      },
+      {
+        "sessionSource": "linkedin.com",
+        "sessionMedium": "referral",
+        "sessions": "34",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "0"
+      },
+      {
+        "sessionSource": "clientify",
+        "sessionMedium": "02-email-nuevo-curso-madrid-2026",
+        "sessions": "33",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "0"
+      },
+      {
+        "sessionSource": "perplexity.ai",
+        "sessionMedium": "referral",
+        "sessions": "33",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "0"
+      },
+      {
+        "sessionSource": "clientify",
+        "sessionMedium": "newsletter-blog-post-marzo-2026",
+        "sessions": "32",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "0"
+      },
+      {
+        "sessionSource": "yahoo",
+        "sessionMedium": "organic",
+        "sessions": "28",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "0"
+      },
+      {
+        "sessionSource": "mail.google.com",
+        "sessionMedium": "referral",
+        "sessions": "27",
+        "ecommercePurchases": "1",
+        "purchaseRevenue": "249",
+        "conversions": "7"
+      },
+      {
+        "sessionSource": "perplexity",
+        "sessionMedium": "(not set)",
+        "sessions": "25",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "0"
+      },
+      {
+        "sessionSource": "topmadrid.net",
+        "sessionMedium": "referral",
+        "sessions": "23",
+        "ecommercePurchases": "1",
+        "purchaseRevenue": "249",
+        "conversions": "1"
+      },
+      {
+        "sessionSource": "classroom.google.com",
+        "sessionMedium": "referral",
+        "sessions": "20",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "0"
+      },
+      {
+        "sessionSource": "clientify",
+        "sessionMedium": "01-email-nuevo-curso-madrid-2026",
+        "sessions": "18",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "0"
+      },
+      {
+        "sessionSource": "googlemybusiness",
+        "sessionMedium": "producto",
+        "sessions": "18",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "0"
+      },
+      {
+        "sessionSource": "(data not available)",
+        "sessionMedium": "(data not available)",
+        "sessions": "17",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "2"
+      },
+      {
+        "sessionSource": "gemini.google.com",
+        "sessionMedium": "referral",
+        "sessions": "17",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "0"
+      },
+      {
+        "sessionSource": "blog",
+        "sessionMedium": "web",
+        "sessions": "13",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "0"
+      },
+      {
+        "sessionSource": "gemini.google.com",
+        "sessionMedium": "ai-assistant",
+        "sessions": "12",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "2"
+      },
+      {
+        "sessionSource": "lm.facebook.com",
+        "sessionMedium": "referral",
+        "sessions": "12",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "0"
+      },
+      {
+        "sessionSource": "e-book",
+        "sessionMedium": "instagram live",
+        "sessions": "11",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "0"
+      },
+      {
+        "sessionSource": "es.hotdeals.com",
+        "sessionMedium": "referral",
+        "sessions": "10",
+        "ecommercePurchases": "1",
+        "purchaseRevenue": "247.2",
+        "conversions": "2"
+      },
+      {
+        "sessionSource": "linkedin",
+        "sessionMedium": "home",
+        "sessions": "10",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "0"
+      },
+      {
+        "sessionSource": "statics.teams.cdn.office.net",
+        "sessionMedium": "referral",
+        "sessions": "10",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "0"
+      },
+      {
+        "sessionSource": "centros.edu.xunta.gal",
+        "sessionMedium": "referral",
+        "sessions": "9",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "0"
+      },
+      {
+        "sessionSource": "aulavirtual33.educa.madrid.org",
+        "sessionMedium": "referral",
+        "sessions": "8",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "0"
+      },
+      {
+        "sessionSource": "ebook",
+        "sessionMedium": "link",
+        "sessions": "7",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "0"
+      },
+      {
+        "sessionSource": "keep.google.com",
+        "sessionMedium": "referral",
+        "sessions": "7",
+        "ecommercePurchases": "1",
+        "purchaseRevenue": "1",
+        "conversions": "1"
+      },
+      {
+        "sessionSource": "claude.ai",
+        "sessionMedium": "ai-assistant",
+        "sessions": "6",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "0"
+      },
+      {
+        "sessionSource": "mejorvalorados.madrid",
+        "sessionMedium": "referral",
+        "sessions": "6",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "0"
+      },
+      {
+        "sessionSource": "qwant.com",
+        "sessionMedium": "organic",
+        "sessions": "6",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "0"
+      },
+      {
+        "sessionSource": "clientify",
+        "sessionMedium": "newsletter-mayo-2026-post-en-blog",
+        "sessions": "5",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "0"
+      },
+      {
+        "sessionSource": "clientify",
+        "sessionMedium": "pronto-pago-madrid",
+        "sessions": "5",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "0"
+      },
+      {
+        "sessionSource": "gamma.app",
+        "sessionMedium": "referral",
+        "sessions": "5",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "0"
+      },
+      {
+        "sessionSource": "mx.search.yahoo.com",
+        "sessionMedium": "referral",
+        "sessions": "5",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "0"
+      },
+      {
+        "sessionSource": "outlook.live.com",
+        "sessionMedium": "referral",
+        "sessions": "5",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "0"
+      },
+      {
+        "sessionSource": "payments.klarna.com",
+        "sessionMedium": "referral",
+        "sessions": "5",
+        "ecommercePurchases": "1",
+        "purchaseRevenue": "211.65",
+        "conversions": "1"
+      },
+      {
+        "sessionSource": "4ventures.es",
+        "sessionMedium": "referral",
+        "sessions": "4",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "1"
+      },
+      {
+        "sessionSource": "Opiniones sobre tu empresa",
+        "sessionMedium": "queopinan.net",
+        "sessions": "4",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "0"
+      },
+      {
+        "sessionSource": "blog",
+        "sessionMedium": "ebook",
+        "sessions": "4",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "0"
+      },
+      {
+        "sessionSource": "clientify",
+        "sessionMedium": "05-email-nuevo-curso-malaga-2026",
+        "sessions": "4",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "0"
+      },
+      {
+        "sessionSource": "co.search.yahoo.com",
+        "sessionMedium": "referral",
+        "sessions": "4",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "0"
+      },
+      {
+        "sessionSource": "ecidiomas.seadea.edu.ar",
+        "sessionMedium": "referral",
+        "sessions": "4",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "0"
+      },
+      {
+        "sessionSource": "instagram",
+        "sessionMedium": "post",
+        "sessions": "4",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "0"
+      },
+      {
+        "sessionSource": "tapnav.com",
+        "sessionMedium": "referral",
+        "sessions": "4",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "0"
+      },
+      {
+        "sessionSource": "teams.public.onecdn.static.microsoft",
+        "sessionMedium": "referral",
+        "sessions": "4",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "0"
+      },
+      {
+        "sessionSource": "bestseminartopics.com",
+        "sessionMedium": "referral",
+        "sessions": "3",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "0"
+      },
+      {
+        "sessionSource": "cartel",
+        "sessionMedium": "(not set)",
+        "sessions": "3",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "0"
+      },
+      {
+        "sessionSource": "chatgpt.com",
+        "sessionMedium": "(none)",
+        "sessions": "3",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "0"
+      },
+      {
+        "sessionSource": "claude.ai",
+        "sessionMedium": "referral",
+        "sessions": "3",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "0"
+      },
+      {
+        "sessionSource": "copilot.microsoft.com",
+        "sessionMedium": "referral",
+        "sessions": "3",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "0"
+      },
+      {
+        "sessionSource": "facebook",
+        "sessionMedium": "post",
+        "sessions": "3",
+        "ecommercePurchases": "0",
+        "purchaseRevenue": "0",
+        "conversions": "0"
+      }
+    ]
+  },
+  "monthly_2526": [
+    {
+      "yearMonth": "202509",
+      "sessions": "10412",
+      "ecommercePurchases": "131",
+      "purchaseRevenue": "68.999999",
+      "conversions": "317"
+    },
+    {
+      "yearMonth": "202510",
+      "sessions": "9850",
+      "ecommercePurchases": "97",
+      "purchaseRevenue": "6584.0500010000014",
+      "conversions": "97"
+    },
+    {
+      "yearMonth": "202601",
+      "sessions": "9841",
+      "ecommercePurchases": "90",
+      "purchaseRevenue": "21382.899999999998",
+      "conversions": "90"
+    },
+    {
+      "yearMonth": "202602",
+      "sessions": "8980",
+      "ecommercePurchases": "51",
+      "purchaseRevenue": "12029.749999999998",
+      "conversions": "51"
+    },
+    {
+      "yearMonth": "202511",
+      "sessions": "8228",
+      "ecommercePurchases": "69",
+      "purchaseRevenue": "14768.9",
+      "conversions": "69"
+    },
+    {
+      "yearMonth": "202607",
+      "sessions": "7267",
+      "ecommercePurchases": "90",
+      "purchaseRevenue": "20344.15",
+      "conversions": "750"
+    },
+    {
+      "yearMonth": "202606",
+      "sessions": "6772",
+      "ecommercePurchases": "51",
+      "purchaseRevenue": "12520.55",
+      "conversions": "760"
+    },
+    {
+      "yearMonth": "202603",
+      "sessions": "6372",
+      "ecommercePurchases": "58",
+      "purchaseRevenue": "12695.7",
+      "conversions": "57"
+    },
+    {
+      "yearMonth": "202512",
+      "sessions": "6054",
+      "ecommercePurchases": "35",
+      "purchaseRevenue": "7505.9499999999989",
+      "conversions": "35"
+    },
+    {
+      "yearMonth": "202605",
+      "sessions": "5666",
+      "ecommercePurchases": "38",
+      "purchaseRevenue": "9120.6999999999989",
+      "conversions": "336"
+    },
+    {
+      "yearMonth": "202608",
+      "sessions": "5637",
+      "ecommercePurchases": "52",
+      "purchaseRevenue": "11499.65",
+      "conversions": "564"
+    },
+    {
+      "yearMonth": "202604",
+      "sessions": "4915",
+      "ecommercePurchases": "31",
+      "purchaseRevenue": "7658.449999999998",
+      "conversions": "247"
+    }
+  ],
+  "b2c_bps_2526": [
+    {
+      "sessions": "351",
+      "ecommercePurchases": "0",
+      "purchaseRevenue": "0"
+    }
+  ]
+}
