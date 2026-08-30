@@ -777,7 +777,11 @@ function deltaHtml(cur, prev) {
 }
 function tableHtml(cols, rows) {
   if (!rows.length) return '<p style="color:var(--muted)">Sin datos.</p>';
-  return `<div class="table-scroll"><table class="data"><thead><tr>${cols.map(c=>`<th>${c}</th>`).join('')}</tr></thead><tbody>${rows.map(r=>`<tr>${r.map(c=>`<td>${c}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`;
+  return `<div class="table-scroll"><table class="data"><thead><tr>${cols.map(c=>`<th>${c}</th>`).join('')}</tr></thead><tbody>${rows.map(r=>{
+    const cells = Array.isArray(r) ? r : (r.cells || []);
+    const cls = (!Array.isArray(r) && r.className) ? ` class="${r.className}"` : '';
+    return `<tr${cls}>${cells.map(c=>`<td>${c}</td>`).join('')}</tr>`;
+  }).join('')}</tbody></table></div>`;
 }
 function P(id) { return PAYLOAD.periods[id] || {}; }
 function inSyMonth(m, syId) {
@@ -1815,6 +1819,46 @@ function renderPlanResults() {
       EUR(mRow.rev,0)
     ]);
   }
+  if (chCompare.length) {
+    chCompare.push({
+      className: 'row-total',
+      cells: [
+        'Total',
+        EUR(r.totCost,0),
+        NUM(r.totImp),
+        NUM(r.totClk),
+        r.totClk ? EUR(r.totCost/r.totClk,2) : '—',
+        r.totImp ? ((r.totClk/r.totImp)*100).toFixed(2)+'%' : '—',
+        NUM(r.totLeads),
+        NUM(r.totOrders),
+        r.totOrders ? EUR(r.totCost/r.totOrders,0) : '—',
+        r.totCost ? (r.totRev/r.totCost).toFixed(2)+'×' : '—',
+        EUR(r.totRev,0)
+      ]
+    });
+  }
+  const campRows = (r.campaignRows||[]).map(x=>[
+    x.label,
+    EUR(x.googleSpend,0),
+    EUR(x.metaSpend,0),
+    EUR(x.spend,0),
+    NUM(x.leads),
+    NUM(x.orders),
+    EUR(x.rev,0)
+  ]);
+  if (campRows.length) {
+    const camps = r.campaignRows || [];
+    const cg = camps.reduce((s,x)=>s+(x.googleSpend||0),0);
+    const cm = camps.reduce((s,x)=>s+(x.metaSpend||0),0);
+    const cs = camps.reduce((s,x)=>s+(x.spend||0),0);
+    const cl = camps.reduce((s,x)=>s+(x.leads||0),0);
+    const co = camps.reduce((s,x)=>s+(x.orders||0),0);
+    const crv = camps.reduce((s,x)=>s+(x.rev||0),0);
+    campRows.push({
+      className: 'row-total',
+      cells: ['Total', EUR(cg,0), EUR(cm,0), EUR(cs,0), NUM(cl), NUM(co), EUR(crv,0)]
+    });
+  }
   const ig = (mix.declared_social||{}).instagram || {};
   const fb = (mix.declared_social||{}).facebook || {};
   el.innerHTML = `
@@ -1841,24 +1885,16 @@ function renderPlanResults() {
       <div class="stat"><strong>${NUM(r.totLeads)}</strong><span>Leads/mes</span></div>
       <div class="stat"><strong>${NUM(r.totOrders)}</strong><span>Pedidos WC/mes</span></div>
       <div class="stat"><strong>${EUR(r.totRev,0)}</strong><span>Ingresos/mes</span></div>
-      <div class="stat"><strong>${r.totCost?(r.totRev/r.totCost).toFixed(2)+'×':'—'}</strong><span>ROAS</span></div>
+      <div class="stat"><strong>${r.totCost?(r.totRev/r.totCost).toFixed(2)+'×':'—'}</strong><span>ROAS conjunto</span></div>
     </div>
     <h3 style="font-size:.95rem;margin:12px 0 6px">Qué aporta cada canal (simulación)</h3>
     ${tableHtml(['Canal','Inversión','Impr.','Clics','CPC','CTR','Leads','Pedidos WC','CAC','ROAS','Ingresos'], chCompare)}
     <h3 style="font-size:.95rem;margin:16px 0 6px">Estimación por campaña</h3>
-    ${tableHtml(['Campaña','Google','Meta','Total','Leads','Pedidos','Ingresos'],
-      (r.campaignRows||[]).map(x=>[
-        x.label,
-        EUR(x.googleSpend,0),
-        EUR(x.metaSpend,0),
-        EUR(x.spend,0),
-        NUM(x.leads),
-        NUM(x.orders),
-        EUR(x.rev,0)
-      ]))}
+    ${tableHtml(['Campaña','Google','Meta','Total','Leads','Pedidos','Ingresos'], campRows)}
     <p style="font-size:.85rem;color:var(--muted);margin-top:8px">
       Mix ppto ~${Math.round(googleShareFrac()*100)}% Google / ~${Math.round((1-googleShareFrac())*100)}% Meta.
       Ratios Google ${planState.googleCvrLeadPct}%→${planState.googleLeadToSalePct}% · Meta ${planState.metaCvrLeadPct}%→${planState.metaLeadToSalePct}% · AOV ${EUR(planState.aov,0)}.
+      ROAS por canal en la tabla; la fila Total (y el KPI «ROAS conjunto») mezclan Google+Meta.
     </p>`;
   renderPlanMonthlyChart();
 }
@@ -1947,6 +1983,13 @@ def inject(payload: dict):
             ".roadmap-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}"
             ".persona-box{background:linear-gradient(135deg,var(--sky),#fff);border:1px solid var(--line);border-radius:14px;padding:18px;margin:0}"
             "@media(max-width:900px){.profile-grid,.roadmap-grid{grid-template-columns:1fr}}",
+        )
+    if "table.data tr.row-total" not in html:
+        html = html.replace(
+            "table.data tbody tr:hover td{background:#f8fbfe}",
+            "table.data tbody tr:hover td{background:#f8fbfe}"
+            "table.data tr.row-total td{background:var(--bg-soft);font-weight:800;border-top:2px solid var(--line)}"
+            "table.data tr.row-total td:first-child{background:var(--bg-soft)}",
         )
 
     # Geo lead (short)
