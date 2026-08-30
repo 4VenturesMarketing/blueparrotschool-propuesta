@@ -226,6 +226,24 @@ def _split_prev_cur(avg: float, yoy_pct: float | None) -> tuple[int, int, float 
     return prev, cur, round(float(yoy_pct), 1)
 
 
+def _campaign_group(pid: str, brand: bool = False) -> dict:
+    """Map estimator product → campaña genérica del simulador."""
+    pid = (pid or "").strip().lower()
+    if brand or pid in {"bps home", "bps", "marca"}:
+        return {"id": "marca", "label": "Marca"}
+    if pid in {"cambridge", "aptis", "ielts", "trinity", "delf"}:
+        return {"id": "certificaciones", "label": "Certificaciones"}
+    if pid in {"ingles", "español", "espanol", "frances", "italiano", "aleman", "chino", "portugues", "japones"}:
+        return {"id": "idiomas", "label": "Otros idiomas"}
+    if pid in {"kids"}:
+        return {"id": "academias", "label": "Academias / Kids"}
+    if pid in {"empresas"}:
+        return {"id": "b2b", "label": "B2B / Empresas"}
+    if pid in {"plataforma"}:
+        return {"id": "online", "label": "Plataforma online"}
+    return {"id": "otros", "label": "Otros"}
+
+
 def _sync_plan_from_estimator(yoy: dict) -> None:
     """Align plan products + rates with estimador-google-ads-bps (all KW products)."""
     slim_path = DATA / "ads-estimator-slim.json"
@@ -240,9 +258,7 @@ def _sync_plan_from_estimator(yoy: dict) -> None:
     defaults_meta = (slim.get("meta") or {}).get("defaults") or {}
     plan = yoy.setdefault("plan", {})
     d = plan.setdefault("defaults", {})
-    # Controles del simulador: ppto base €1.000 (sin mínimos de campaña)
-    d["monthlyBudget"] = 1000
-    # IS ~20% ⇒ Google cabe en ~1.000 €/mes con max_conv (APTIS/Cambridge/IELTS/marca)
+    # Controles del simulador: IS ~20% y ppto total = Google(IS)/share (Google+Meta)
     d["isrPct"] = 20
     d["ctrPct"] = float(preset.get("ctr_pct") or defaults_meta.get("ctr_pct") or 5)
     d["cvrLeadPct"] = float(preset.get("cvr_lead_pct") or defaults_meta.get("cvr_lead_pct") or 4.2)
@@ -250,6 +266,8 @@ def _sync_plan_from_estimator(yoy: dict) -> None:
     d["aov"] = float(d.get("aov") or defaults_meta.get("aov") or 230)
     d["estimatorPreset"] = "max_conv"
     d["intents"] = list(preset.get("intents") or ["comercial", "informacional", "marca"])
+    d["googleShare"] = 0.65
+    d["metaShare"] = 0.35
     plan["productIs"] = dict(preset.get("product_is") or {})
     # Alinear IS de genéricas al default del simulador (marca se queda ~90)
     for pid in list(plan["productIs"].keys()):
@@ -332,6 +350,7 @@ def _sync_plan_from_estimator(yoy: dict) -> None:
                 "label": label,
                 "enabled": enabled,
                 "brand": bool(sp.get("brand")),
+                "campaignGroup": _campaign_group(pid, bool(sp.get("brand"))),
                 "budgetShare": 0.25,
                 "monthlySearches": int(searches or searches_all),
                 "searches_comercial": int(com_avg),
@@ -366,8 +385,46 @@ def _sync_plan_from_estimator(yoy: dict) -> None:
         # orden: activos primero, luego por búsquedas
         products.sort(key=lambda p: (0 if p["enabled"] else 1, -p["searches_total"]))
         plan["products"] = products
+        # Campañas genéricas para el simulador (UI + estimación agregada)
+        groups = {}
+        for p in products:
+            g = p.get("campaignGroup") or _campaign_group(p["id"], bool(p.get("brand")))
+            gid = g["id"]
+            if gid not in groups:
+                groups[gid] = {
+                    "id": gid,
+                    "label": g["label"],
+                    "products": [],
+                    "enabled": False,
+                }
+            groups[gid]["products"].append(p["id"])
+            if p.get("enabled"):
+                groups[gid]["enabled"] = True
+        order = ["certificaciones", "marca", "idiomas", "academias", "b2b", "online", "otros"]
+        plan["campaignGroups"] = sorted(
+            groups.values(),
+            key=lambda g: order.index(g["id"]) if g["id"] in order else 99,
+        )
+        # Ppto total real a IS default: Google(enabled)/googleShare (ej. 15%→~1370, 20%→~1680)
+        g_share = float(d.get("googleShare") or 0.55)
+        google_needed = 0.0
+        for p in products:
+            if not p.get("enabled"):
+                continue
+            searches = float(p.get("monthlySearches") or 0)
+            cpc = float(p.get("cpc") or 0.48)
+            ctr = float(p.get("ctrPct") or d.get("ctrPct") or 5) / 100.0
+            is_brand = bool(p.get("brand") or p["id"] == "bps home")
+            is_pct = float((plan.get("productIs") or {}).get(p["id"]) or (90 if is_brand else d["isrPct"]))
+            google_needed += searches * (is_pct / 100.0) * ctr * cpc
+        d["monthlyBudget"] = max(100, int(round(google_needed / g_share))) if g_share else max(100, int(round(google_needed)))
+        d["googleNeededAtDefaultIs"] = round(google_needed, 2)
 
-    # Canales = Meta Ads + Google Ads (no campañas)
+    # Canales = Meta Ads + Google Ads (shares por eficiencia WC 25–26, no 50/50)
+    g_share = float(d.get("googleShare") or 0.65)
+    m_share = float(d.get("metaShare") or 0.35)
+    d["googleShare"] = g_share
+    d["metaShare"] = m_share
     plan["channels"] = [
         {
             "id": "google",
@@ -375,7 +432,7 @@ def _sync_plan_from_estimator(yoy: dict) -> None:
             "type": "google",
             "enabled": True,
             "minBudget": 0,
-            "budgetShare": 0.55,
+            "budgetShare": g_share,
             "products": [p["id"] for p in products],
         },
         {
@@ -384,10 +441,128 @@ def _sync_plan_from_estimator(yoy: dict) -> None:
             "type": "meta",
             "enabled": True,
             "minBudget": 0,
-            "budgetShare": 0.45,
+            "budgetShare": m_share,
             "products": [p["id"] for p in products if not p.get("brand")],
         },
     ]
+
+
+def _safe_div(a, b, default=0.0):
+    try:
+        if b in (0, None) or a is None:
+            return default
+        return float(a) / float(b)
+    except Exception:
+        return default
+
+
+def _attach_media_mix(yoy: dict, periods: dict) -> None:
+    """Benchmarks reales por canal + recomendación de mix (no tratar Meta=Google)."""
+    cur = periods.get("sy-2025-26") or {}
+    prev = periods.get("sy-2024-25") or {}
+    meta = (cur.get("paid") or {}).get("meta") or {}
+    gads = (cur.get("paid") or {}).get("google_ads") or {}
+
+    def rates(ch: dict, lead_key: str) -> dict:
+        spend = float(ch.get("spend") or 0)
+        clicks = float(ch.get("clicks") or 0)
+        imps = float(ch.get("impressions") or 0)
+        leads = float(ch.get(lead_key) or ch.get("platform_leads") or ch.get("platform_lead_convs") or 0)
+        orders = float(ch.get("wc_orders_verified") or 0)
+        rev = float(ch.get("wc_revenue_verified") or 0)
+        return {
+            "spend": round(spend, 2),
+            "clicks": int(clicks),
+            "impressions": int(imps),
+            "leads": int(leads),
+            "orders": int(orders),
+            "rev": round(rev, 2),
+            "cpc": round(_safe_div(spend, clicks), 2),
+            "ctrPct": round(100 * _safe_div(clicks, imps), 2),
+            "cvrLeadPct": round(100 * _safe_div(leads, clicks), 2),
+            "leadToSalePct": round(100 * _safe_div(orders, leads), 2),
+            "cac": round(_safe_div(spend, orders), 0) if orders else None,
+            "roas": round(_safe_div(rev, spend), 2) if spend else None,
+        }
+
+    g_r = rates(gads, "platform_lead_convs")
+    m_r = rates(meta, "platform_leads")
+
+    # Pedidos declarados IG/FB (no = Meta Ads verificado)
+    declared = {"instagram": {"orders": 0, "rev": 0}, "facebook": {"orders": 0, "rev": 0}}
+    for row in cur.get("channels") or []:
+        name = (row.get("canal") or "").lower()
+        if name == "instagram":
+            declared["instagram"] = {"orders": int(row.get("orders") or 0), "rev": float(row.get("rev") or 0)}
+        elif name == "facebook":
+            declared["facebook"] = {"orders": int(row.get("orders") or 0), "rev": float(row.get("rev") or 0)}
+
+    # Mix recomendado por eficiencia (peso ~ 1/CAC), acotado
+    g_cac = g_r["cac"] or 120
+    m_cac = m_r["cac"] or 300
+    inv_g, inv_m = 1 / g_cac, 1 / m_cac
+    g_share = inv_g / (inv_g + inv_m)
+    g_share = max(0.55, min(0.75, g_share))  # Google mayoría, Meta no desaparece
+    m_share = round(1 - g_share, 2)
+    g_share = round(g_share, 2)
+
+    verdict = "ambos"
+    if g_r["roas"] and m_r["roas"] and g_r["roas"] >= 1.5 and m_r["roas"] < 1.0:
+        verdict = "ambos_google_first"
+    elif not g_r["spend"] and m_r["spend"]:
+        verdict = "meta_only_hist"
+    elif g_r["roas"] and g_r["roas"] >= 1.5 and (not m_r["roas"] or m_r["roas"] < 0.8):
+        verdict = "ambos_google_first"
+
+    plan = yoy.setdefault("plan", {})
+    d = plan.setdefault("defaults", {})
+    d["googleShare"] = g_share
+    d["metaShare"] = m_share
+    d["googleCvrLeadPct"] = g_r["cvrLeadPct"] or d.get("cvrLeadPct") or 3.7
+    d["googleLeadToSalePct"] = g_r["leadToSalePct"] or d.get("leadToSalePct") or 13
+    d["metaCvrLeadPct"] = m_r["cvrLeadPct"] or 8.4
+    d["metaLeadToSalePct"] = m_r["leadToSalePct"] or 2.0
+    d["metaCpc"] = m_r["cpc"] or 0.48
+    d["metaCtrPct"] = m_r["ctrPct"] or 1.2
+    # CR globales del simulador = Google (demanda) por defecto; Meta usa las suyas
+    d["cvrLeadPct"] = d["googleCvrLeadPct"]
+    d["leadToSalePct"] = d["googleLeadToSalePct"]
+
+    for ch in plan.get("channels") or []:
+        if ch.get("id") == "google":
+            ch["budgetShare"] = g_share
+        elif ch.get("id") == "meta":
+            ch["budgetShare"] = m_share
+
+    # Recalcular ppto default con nuevo share
+    google_needed = float(d.get("googleNeededAtDefaultIs") or 0)
+    if google_needed > 0 and g_share > 0:
+        d["monthlyBudget"] = max(100, int(round(google_needed / g_share)))
+
+    plan["mediaMix"] = {
+        "period": "2025–26",
+        "verdict": verdict,
+        "recommended": {"googleShare": g_share, "metaShare": m_share},
+        "google": g_r,
+        "meta": m_r,
+        "declared_social": declared,
+        "headline": "Sí a los dos canales, con Google como motor de eficiencia y Meta como apoyo de volumen/remarketing.",
+        "bullets": [
+            f"Google Ads 25–26: CAC pedido WC ~{g_r['cac']:.0f} € · ROAS {g_r['roas']}× · CTR {g_r['ctrPct']}% · CR clic→lead {g_r['cvrLeadPct']}% · lead→pedido WC {g_r['leadToSalePct']}%.",
+            f"Meta Ads 25–26: CAC pedido WC ~{m_r['cac']:.0f} € · ROAS {m_r['roas']}× · mucho lead ({m_r['leads']}) pero lead→pedido WC solo {m_r['leadToSalePct']}% — cara si se escala fría.",
+            f"Instagram/Facebook declarados en checkout: {declared['instagram']['orders']+declared['facebook']['orders']} pedidos (IG {declared['instagram']['orders']} · FB {declared['facebook']['orders']}). Eso es influencia social, no equivale a ROAS de Meta Ads verificado ({m_r['orders']} pedidos WC).",
+            f"Mix recomendado: ~{int(g_share*100)}% Google / ~{int(m_share*100)}% Meta. Google captura demanda de certificaciones; Meta para remarketing y creatividades cualificadas, no para sustituir Search.",
+        ],
+        "do": [
+            "Google: certificaciones + brand search always-on (mejor CAC/ROAS WC).",
+            "Meta: remarketing leads sin compra + lookalikes de compradores WC; cortar frío sin lead→pedido.",
+            "No igualar presupuesto Meta=Google: la eficiencia WC no lo soporta.",
+        ],
+        "dont": [
+            "No leer pixel purchases Meta (373) como pedidos WC (152 verificados).",
+            "No confundir «me conocí por Instagram» con atribución paid Meta.",
+        ],
+    }
 
 
 def export_payload() -> dict:
@@ -529,6 +704,7 @@ def export_payload() -> dict:
     yoy = json.loads((DATA / "proposal-yoy-plan.json").read_text())
     wc_buyer = _load_wc_buyer()
     _enrich_buyer_profile(yoy, wc_buyer, periods)
+    _attach_media_mix(yoy, periods)
 
     wc_monthly = q(
         """SELECT substr(order_date,1,7) AS month, COUNT(*) AS orders, SUM(total) AS rev
@@ -1142,18 +1318,27 @@ function renderDiagDemo() {
 
 function initPlanState() {
   const d = YOY_PLAN.plan.defaults;
-  const cvrLead = d.cvrLeadPct != null ? d.cvrLeadPct : 4.2;
-  const leadSale = d.leadToSalePct != null ? d.leadToSalePct : 16;
+  const gLead = d.googleCvrLeadPct != null ? d.googleCvrLeadPct : (d.cvrLeadPct != null ? d.cvrLeadPct : 3.7);
+  const gSale = d.googleLeadToSalePct != null ? d.googleLeadToSalePct : (d.leadToSalePct != null ? d.leadToSalePct : 13);
+  const mLead = d.metaCvrLeadPct != null ? d.metaCvrLeadPct : 8.4;
+  const mSale = d.metaLeadToSalePct != null ? d.metaLeadToSalePct : 2.0;
+  const groups = YOY_PLAN.plan.campaignGroups || [];
   planState = {
     monthlyBudget: d.monthlyBudget || 1000,
     isrPct: d.isrPct || 50,
     aov: d.aov || 230,
-    cvrLeadPct: cvrLead,
-    leadToSalePct: leadSale,
-    // Bases a presupuesto de referencia; el volumen ajusta la CR efectiva
-    cvrLeadBase: cvrLead,
-    leadSaleBase: leadSale,
+    cvrLeadPct: gLead,
+    leadToSalePct: gSale,
+    cvrLeadBase: gLead,
+    leadSaleBase: gSale,
+    googleCvrLeadPct: gLead,
+    googleLeadToSalePct: gSale,
+    metaCvrLeadPct: mLead,
+    metaLeadToSalePct: mSale,
+    metaCvrLeadBase: mLead,
+    metaLeadSaleBase: mSale,
     products: Object.fromEntries(YOY_PLAN.plan.products.map(p=>[p.id,{enabled:p.enabled!==false}])),
+    campaigns: Object.fromEntries(groups.map(g=>[g.id,{enabled:g.enabled!==false}])),
     channels: Object.fromEntries((YOY_PLAN.plan.channels||[]).filter(c=>c.type!=='organic').map(c=>[c.id,{enabled:c.enabled!==false}])),
     productIs: Object.assign({}, YOY_PLAN.plan.productIs || {}),
   };
@@ -1187,26 +1372,25 @@ function estimateGoogleProduct(p, monthIdx=null) {
   const stored = (planState.productIs || {})[p.id];
   const isPct = stored != null ? stored : (isBrand ? 90 : (planState.isrPct || 50));
   const ctrPct = p.ctrPct != null ? p.ctrPct : ((YOY_PLAN.plan.defaults||{}).ctrPct || 5);
-  const leadCvr = planState.cvrLeadPct != null
-    ? planState.cvrLeadPct
-    : ((YOY_PLAN.plan.productLeadCvr || {})[p.id] != null
-      ? (YOY_PLAN.plan.productLeadCvr || {})[p.id]
-      : ((YOY_PLAN.plan.defaults||{}).cvrLeadPct || 4.2));
-  const l2s = planState.leadToSalePct != null
-    ? planState.leadToSalePct
-    : ((YOY_PLAN.plan.defaults||{}).leadToSalePct || 16);
+  const leadCvr = planState.googleCvrLeadPct != null
+    ? planState.googleCvrLeadPct
+    : (planState.cvrLeadPct != null ? planState.cvrLeadPct : ((YOY_PLAN.plan.defaults||{}).googleCvrLeadPct || 3.7));
+  const l2s = planState.googleLeadToSalePct != null
+    ? planState.googleLeadToSalePct
+    : (planState.leadToSalePct != null ? planState.leadToSalePct : ((YOY_PLAN.plan.defaults||{}).googleLeadToSalePct || 13));
+  const aov = planState.aov || ((YOY_PLAN.plan.defaults||{}).aov) || 230;
   const impressions = searches * (isPct / 100);
   const clicks = impressions * (ctrPct / 100);
   const spend = clicks * cpc;
   const leads = clicks * (leadCvr / 100);
   const orders = leads * (l2s / 100);
-  const rev = orders * (p.aov || planState.aov || 230);
+  const rev = orders * aov;
   return {searches, impressions, clicks, spend, leads, orders, rev, cpc, ctr: ctrPct/100, is: isPct, leadCvr, season};
 }
 function calcPlan(monthIdx=null) {
   if (!planState) initPlanState();
   const {monthlyBudget,isrPct,aov,products,channels} = planState;
-  const empty = {rows:[],totImp:0,totClk:0,totCost:0,totLeads:0,totOrders:0,totRev:0,isrPct,active:[],unlocked:0,monthIdx,googleNeeded:0,scale:1,overBudget:false,productRows:[],googleOnly:{},metaOnly:{}};
+  const empty = {rows:[],totImp:0,totClk:0,totCost:0,totLeads:0,totOrders:0,totRev:0,isrPct,active:[],unlocked:0,monthIdx,googleNeeded:0,scale:1,overBudget:false,productRows:[],campaignRows:[],googleOnly:{},metaOnly:{}};
   if (!isFinite(monthlyBudget) || monthlyBudget <= 0) return empty;
 
   const byId = Object.fromEntries((YOY_PLAN.plan.channels||[]).map(c=>[c.id,c]));
@@ -1214,14 +1398,14 @@ function calcPlan(monthIdx=null) {
   const metaOn = channels.meta?.enabled !== false;
 
   const metaPaid = (P(CUR).paid||{}).meta || {};
-  const metaCpc = (metaPaid.clicks>0) ? (metaPaid.spend/metaPaid.clicks) : 0.55;
-  const metaCtr = (metaPaid.impressions>0) ? (metaPaid.clicks/metaPaid.impressions) : 0.01;
-  const metaLeadRate = planState.cvrLeadPct != null
-    ? (planState.cvrLeadPct / 100)
-    : ((metaPaid.clicks>0 && metaPaid.platform_leads) ? Math.min(0.25, metaPaid.platform_leads/metaPaid.clicks) : 0.12);
-  const metaL2O = planState.leadToSalePct != null
-    ? (planState.leadToSalePct / 100)
-    : ((metaPaid.platform_leads>0 && metaPaid.wc_orders_verified) ? Math.min(0.08, metaPaid.wc_orders_verified/metaPaid.platform_leads) : 0.022);
+  const dflt = YOY_PLAN.plan.defaults || {};
+  const metaCpc = planState.metaCpc != null ? planState.metaCpc
+    : ((metaPaid.clicks>0) ? (metaPaid.spend/metaPaid.clicks) : (dflt.metaCpc || 0.48));
+  const metaCtr = planState.metaCtrPct != null ? (planState.metaCtrPct/100)
+    : ((metaPaid.impressions>0) ? (metaPaid.clicks/metaPaid.impressions) : ((dflt.metaCtrPct||1.2)/100));
+  // Ratios PROPIOS de Meta (no los de Google)
+  const metaLeadRate = (planState.metaCvrLeadPct != null ? planState.metaCvrLeadPct : (dflt.metaCvrLeadPct || 8.4)) / 100;
+  const metaL2O = (planState.metaLeadToSalePct != null ? planState.metaLeadToSalePct : (dflt.metaLeadToSalePct || 2.0)) / 100;
 
   let g = {imp:0,clk:0,cost:0,leads:0,orders:0,rev:0};
   const gRows=[];
@@ -1247,12 +1431,10 @@ function calcPlan(monthIdx=null) {
 
   let meta = {imp:0,clk:0,cost:0,leads:0,orders:0,rev:0};
   if (metaOn && byId.meta) {
-    const share = byId.meta.budgetShare || 0.45;
-    const metaTarget = monthlyBudget * share;
-    // Meta no rellena el hueco de Google: IS mueve la inversión total
-    const metaPool = Math.min(metaTarget, Math.max(0, monthlyBudget - g.cost));
-    if (metaPool >= 50) {
-      const cost = metaPool;
+    const share = (byId.meta.budgetShare != null ? byId.meta.budgetShare : (dflt.metaShare || 0.35));
+    // Meta siempre recibe su % del ppto total (no el sobrante tras Google)
+    const cost = googleOn ? (monthlyBudget * share) : monthlyBudget;
+    if (cost >= 50) {
       const clk = Math.round(cost / Math.max(metaCpc,0.05));
       const imp = Math.round(clk / Math.max(metaCtr,0.001));
       const leads = Math.round(clk * metaLeadRate);
@@ -1270,14 +1452,77 @@ function calcPlan(monthIdx=null) {
   const totOrders = rows.reduce((s,r)=>s+r.orders,0);
   const totRev = rows.reduce((s,r)=>s+r.rev,0);
 
+  // Agregar por campaña genérica (Google detallado + Meta prorrateada)
+  const groupMeta = Object.fromEntries((YOY_PLAN.plan.campaignGroups||[]).map(g=>[g.id,g]));
+  const byCamp = {};
+  for (const {p,e} of gRows) {
+    const ginfo = p.campaignGroup || {id:'otros', label:'Otros'};
+    const gid = ginfo.id || 'otros';
+    if (!byCamp[gid]) {
+      byCamp[gid] = {
+        id: gid,
+        label: (groupMeta[gid]||{}).label || ginfo.label || gid,
+        searches:0, clicks:0, leads:0, orders:0, googleSpend:0, googleRev:0, metaSpend:0, metaLeads:0, metaOrders:0, metaRev:0
+      };
+    }
+    const row = byCamp[gid];
+    row.searches += e.searches||0;
+    row.clicks += e.clicks||0;
+    row.leads += e.leads||0;
+    row.orders += e.orders||0;
+    row.googleSpend += e.spend||0;
+    row.googleRev += e.rev||0;
+  }
+  // Meta no es keyword: se reparte por peso de Google entre campañas no-marca
+  let metaEligible = Object.values(byCamp).filter(c => c.id !== 'marca');
+  if (!metaEligible.length && meta.cost > 0) {
+    // Solo marca en Google: asignar Meta a campañas activas no-marca
+    for (const g of (YOY_PLAN.plan.campaignGroups || [])) {
+      if (g.id === 'marca') continue;
+      const campOn = planState.campaigns?.[g.id]?.enabled !== false;
+      const anyOn = (g.products || []).some(pid => planState.products[pid]?.enabled !== false);
+      if (!campOn && !anyOn) continue;
+      byCamp[g.id] = byCamp[g.id] || {
+        id: g.id, label: g.label,
+        searches:0, clicks:0, leads:0, orders:0, googleSpend:0, googleRev:0,
+        metaSpend:0, metaLeads:0, metaOrders:0, metaRev:0
+      };
+    }
+    metaEligible = Object.values(byCamp).filter(c => c.id !== 'marca');
+  }
+  const weightBase = metaEligible.reduce((s,c)=>s+(c.googleSpend||0),0);
+  if (meta.cost > 0 && metaEligible.length) {
+    for (const c of metaEligible) {
+      const w = weightBase > 0 ? (c.googleSpend / weightBase) : (1 / metaEligible.length);
+      c.metaSpend = meta.cost * w;
+      c.metaLeads = meta.leads * w;
+      c.metaOrders = meta.orders * w;
+      c.metaRev = meta.rev * w;
+    }
+  }
+  const campaignRows = Object.values(byCamp).map(c => ({
+    id: c.id,
+    label: c.label,
+    spend: c.googleSpend + c.metaSpend,
+    googleSpend: c.googleSpend,
+    metaSpend: c.metaSpend,
+    leads: c.leads + c.metaLeads,
+    orders: c.orders + c.metaOrders,
+    rev: c.googleRev + c.metaRev,
+  })).filter(c => c.spend > 0.5 || c.leads > 0 || c.orders > 0).sort((a,b)=>b.spend-a.spend);
+
+  const gShare = googleShareFrac();
+  const googleCap = gShare ? monthlyBudget * gShare : monthlyBudget;
+
   return {
     rows,
     totImp, totClk, totCost, totLeads, totOrders, totRev,
     isrPct, active: rows.map(r=>r.ch.label), unlocked: rows.length, monthIdx,
-    googleNeeded: g.cost, scale: 1, overBudget: g.cost > monthlyBudget + 1,
+    googleNeeded: g.cost, scale: 1, overBudget: g.cost > googleCap + 1,
     googleOnly: {spend: g.cost, clicks: Math.round(g.clk), leads: Math.round(g.leads), orders: Math.round(g.orders), rev: g.rev},
     metaOnly: {spend: meta.cost, clicks: meta.clk, leads: meta.leads, orders: meta.orders, rev: meta.rev},
-    productRows: gRows.map(({p,e})=>({id:p.id,label:p.label, ...e}))
+    productRows: gRows.map(({p,e})=>({id:p.id,label:p.label, ...e})),
+    campaignRows
   };
 }
 function calcPlanYear() {
@@ -1346,21 +1591,42 @@ function volumeCrFactor(budget) {
 function applyVolumeCrs(budget) {
   const f = volumeCrFactor(budget);
   const d = YOY_PLAN.plan.defaults || {};
-  const baseL = planState.cvrLeadBase != null ? planState.cvrLeadBase : (d.cvrLeadPct != null ? d.cvrLeadPct : 4.2);
-  const baseS = planState.leadSaleBase != null ? planState.leadSaleBase : (d.leadToSalePct != null ? d.leadToSalePct : 16);
-  planState.cvrLeadPct = Math.max(0.5, Math.min(25, Math.round(baseL * f * 10) / 10));
-  planState.leadToSalePct = Math.max(2, Math.min(50, Math.round(baseS * f * 10) / 10));
+  const baseL = planState.cvrLeadBase != null ? planState.cvrLeadBase : (d.googleCvrLeadPct != null ? d.googleCvrLeadPct : 3.7);
+  const baseS = planState.leadSaleBase != null ? planState.leadSaleBase : (d.googleLeadToSalePct != null ? d.googleLeadToSalePct : 13);
+  const baseML = planState.metaCvrLeadBase != null ? planState.metaCvrLeadBase : (d.metaCvrLeadPct != null ? d.metaCvrLeadPct : 8.4);
+  const baseMS = planState.metaLeadSaleBase != null ? planState.metaLeadSaleBase : (d.metaLeadToSalePct != null ? d.metaLeadToSalePct : 2.0);
+  planState.googleCvrLeadPct = Math.max(0.5, Math.min(25, Math.round(baseL * f * 10) / 10));
+  planState.googleLeadToSalePct = Math.max(2, Math.min(50, Math.round(baseS * f * 10) / 10));
+  planState.cvrLeadPct = planState.googleCvrLeadPct;
+  planState.leadToSalePct = planState.googleLeadToSalePct;
+  // Meta: escala más suave (ya parte de lead→venta bajo)
+  const fm = Math.max(0.7, Math.min(1.25, f));
+  planState.metaCvrLeadPct = Math.max(1, Math.min(20, Math.round(baseML * fm * 10) / 10));
+  planState.metaLeadToSalePct = Math.max(0.5, Math.min(15, Math.round(baseMS * fm * 10) / 10));
   const elL = document.getElementById('planCvrLead');
   const elS = document.getElementById('planLeadSale');
-  if (elL) elL.value = planState.cvrLeadPct;
-  if (elS) elS.value = planState.leadToSalePct;
+  if (elL) elL.value = planState.googleCvrLeadPct;
+  if (elS) elS.value = planState.googleLeadToSalePct;
+  const elML = document.getElementById('planMetaCvrLead');
+  const elMS = document.getElementById('planMetaLeadSale');
+  if (elML) elML.value = planState.metaCvrLeadPct;
+  if (elMS) elMS.value = planState.metaLeadToSalePct;
 }
 function setCrsFromUser(cvrLead, leadSale, budget) {
   const f = volumeCrFactor(budget);
+  planState.googleCvrLeadPct = cvrLead;
+  planState.googleLeadToSalePct = leadSale;
   planState.cvrLeadPct = cvrLead;
   planState.leadToSalePct = leadSale;
   planState.cvrLeadBase = f ? (cvrLead / f) : cvrLead;
   planState.leadSaleBase = f ? (leadSale / f) : leadSale;
+}
+function setMetaCrsFromUser(cvrLead, leadSale, budget) {
+  const f = Math.max(0.7, Math.min(1.25, volumeCrFactor(budget)));
+  planState.metaCvrLeadPct = cvrLead;
+  planState.metaLeadToSalePct = leadSale;
+  planState.metaCvrLeadBase = f ? (cvrLead / f) : cvrLead;
+  planState.metaLeadSaleBase = f ? (leadSale / f) : leadSale;
 }
 function isrFromBudget(budget) {
   const share = googleShareFrac();
@@ -1395,13 +1661,34 @@ function bindPlanControls() {
     const src = ev && ev.target ? ev.target.id : '';
     planState.aov = readNum('planAov', planState.aov);
     document.querySelectorAll('[data-ch]').forEach(el=>{ planState.channels[el.dataset.ch]={enabled:el.checked}; });
-    document.querySelectorAll('[data-prod]').forEach(el=>{ planState.products[el.dataset.prod]={enabled:el.checked}; });
+    // Campañas genéricas: solo al togglear una campaña se activan/desactivan sus productos
+    const groups = YOY_PLAN.plan.campaignGroups || [];
+    if (src && ev?.target?.dataset?.camp) {
+      const gid = ev.target.dataset.camp;
+      const on = !!ev.target.checked;
+      planState.campaigns[gid] = {enabled: on};
+      const g = groups.find(x => x.id === gid);
+      (g?.products||[]).forEach(pid => { planState.products[pid] = {enabled: on}; });
+    } else if (groups.length && document.querySelector('[data-camp]')) {
+      document.querySelectorAll('[data-camp]').forEach(el=>{
+        planState.campaigns[el.dataset.camp] = {enabled: el.checked};
+      });
+    } else {
+      document.querySelectorAll('[data-prod]').forEach(el=>{ planState.products[el.dataset.prod]={enabled:el.checked}; });
+    }
 
     if (src === 'planCvrLead' || src === 'planLeadSale') {
       planState.monthlyBudget = readNum('planBudget', planState.monthlyBudget);
       setCrsFromUser(
-        readNum('planCvrLead', planState.cvrLeadPct),
-        readNum('planLeadSale', planState.leadToSalePct),
+        readNum('planCvrLead', planState.googleCvrLeadPct),
+        readNum('planLeadSale', planState.googleLeadToSalePct),
+        planState.monthlyBudget
+      );
+    } else if (src === 'planMetaCvrLead' || src === 'planMetaLeadSale') {
+      planState.monthlyBudget = readNum('planBudget', planState.monthlyBudget);
+      setMetaCrsFromUser(
+        readNum('planMetaCvrLead', planState.metaCvrLeadPct),
+        readNum('planMetaLeadSale', planState.metaLeadToSalePct),
         planState.monthlyBudget
       );
     } else if (src === 'planIsr') {
@@ -1417,6 +1704,16 @@ function bindPlanControls() {
       const isrEl = document.getElementById('planIsr');
       if (isrEl) isrEl.value = planState.isrPct;
       applyVolumeCrs(planState.monthlyBudget);
+    } else if (ev?.target?.dataset?.ch) {
+      // Al activar/desactivar Meta/Google, recalibrar ppto total a la IS actual
+      applyPlanIsr(planState.isrPct);
+      planState.monthlyBudget = budgetFromIsr();
+      const budEl = document.getElementById('planBudget');
+      if (budEl) budEl.value = planState.monthlyBudget;
+      applyVolumeCrs(planState.monthlyBudget);
+    } else if (src === 'planAov') {
+      planState.monthlyBudget = readNum('planBudget', planState.monthlyBudget);
+      // AOV global: ya se lee arriba; fuerza recálculo coherente KPIs ↔ campañas
     } else {
       planState.monthlyBudget = readNum('planBudget', planState.monthlyBudget);
       const prevIs = planState.isrPct;
@@ -1424,6 +1721,10 @@ function bindPlanControls() {
       if (planState.isrPct !== prevIs) applyPlanIsr(planState.isrPct);
       planState.cvrLeadPct = readNum('planCvrLead', planState.cvrLeadPct);
       planState.leadToSalePct = readNum('planLeadSale', planState.leadToSalePct);
+      planState.googleCvrLeadPct = planState.cvrLeadPct;
+      planState.googleLeadToSalePct = planState.leadToSalePct;
+      planState.metaCvrLeadPct = readNum('planMetaCvrLead', planState.metaCvrLeadPct);
+      planState.metaLeadToSalePct = readNum('planMetaLeadSale', planState.metaLeadToSalePct);
     }
 
     const isrVal = document.getElementById('planIsrVal');
@@ -1431,13 +1732,13 @@ function bindPlanControls() {
     renderPlanResults();
     renderRoadmap();
   };
-  ['planBudget','planIsr','planAov','planCvrLead','planLeadSale'].forEach(id=>{
+  ['planBudget','planIsr','planAov','planCvrLead','planLeadSale','planMetaCvrLead','planMetaLeadSale'].forEach(id=>{
     const el=document.getElementById(id);
     if (!el) return;
     el.addEventListener('input', sync);
     el.addEventListener('change', sync);
   });
-  document.querySelectorAll('[data-ch],[data-prod]').forEach(el=>el.addEventListener('change', sync));
+  document.querySelectorAll('[data-ch],[data-prod],[data-camp]').forEach(el=>el.addEventListener('change', sync));
 }
 function renderPlan() {
   if (!planState) initPlanState();
@@ -1448,16 +1749,21 @@ function renderPlan() {
         <div><label>Presupuesto paid / mes (€)</label><input type="number" id="planBudget" value="${planState.monthlyBudget}" min="100" step="50"/></div>
         <div><label>Impression share Google (%)</label><input type="range" id="planIsr" min="5" max="100" step="5" value="${planState.isrPct}"/><span id="planIsrVal">${planState.isrPct}%</span></div>
         <div><label>AOV (€)</label><input type="number" id="planAov" value="${planState.aov}" min="50" step="5"/></div>
-        <div><label>CR clic → lead (%)</label><input type="number" id="planCvrLead" value="${planState.cvrLeadPct}" min="0.1" max="40" step="0.1"/></div>
-        <div><label>CR lead → venta (%)</label><input type="number" id="planLeadSale" value="${planState.leadToSalePct}" min="0.1" max="80" step="0.5"/></div>
+        <div><label>Google · CR clic → lead (%)</label><input type="number" id="planCvrLead" value="${planState.googleCvrLeadPct}" min="0.1" max="40" step="0.1"/></div>
+        <div><label>Google · CR lead → pedido WC (%)</label><input type="number" id="planLeadSale" value="${planState.googleLeadToSalePct}" min="0.1" max="80" step="0.5"/></div>
+        <div><label>Meta · CR clic → lead (%)</label><input type="number" id="planMetaCvrLead" value="${planState.metaCvrLeadPct}" min="0.1" max="40" step="0.1"/></div>
+        <div><label>Meta · CR lead → pedido WC (%)</label><input type="number" id="planMetaLeadSale" value="${planState.metaLeadToSalePct}" min="0.1" max="40" step="0.1"/></div>
       </div>
       <div class="grid-2" style="margin:12px 0">
         <div><h3 style="font-size:.95rem;margin-bottom:8px">Canales</h3>
           ${(YOY_PLAN.plan.channels||[]).filter(c=>c.type!=='organic').map(c=>`<label class="plan-toggle"><input type="checkbox" data-ch="${c.id}" ${planState.channels[c.id]?.enabled!==false?'checked':''}/> ${c.label}</label>`).join('')}
         </div>
-        <div><h3 style="font-size:.95rem;margin-bottom:8px">Productos</h3>
+        <div><h3 style="font-size:.95rem;margin-bottom:8px">Campañas</h3>
           <div style="display:flex;flex-wrap:wrap;gap:6px 14px">
-            ${YOY_PLAN.plan.products.map(p=>`<label class="plan-toggle" style="margin:0"><input type="checkbox" data-prod="${p.id}" ${planState.products[p.id]?.enabled!==false?'checked':''}/> ${p.label}</label>`).join('')}
+            ${(YOY_PLAN.plan.campaignGroups||[]).map(g=>{
+              const checked = planState.campaigns?.[g.id]?.enabled !== false;
+              return `<label class="plan-toggle" style="margin:0"><input type="checkbox" data-camp="${g.id}" ${checked?'checked':''}/> ${g.label}</label>`;
+            }).join('')}
           </div>
         </div>
       </div>
@@ -1475,26 +1781,84 @@ function renderPlanResults() {
   if (!el) return;
   const g = r.googleOnly || {};
   const m = r.metaOnly || {};
+  const mix = YOY_PLAN.plan.mediaMix || {};
+  const gRow = (r.rows||[]).find(x=>x.ch.id==='google');
+  const mRow = (r.rows||[]).find(x=>x.ch.id==='meta');
+  const chCompare = [];
+  if (gRow) {
+    chCompare.push([
+      'Google Ads',
+      EUR(gRow.cost,0),
+      NUM(gRow.imp),
+      NUM(gRow.clk),
+      EUR(gRow.cpc,2),
+      ((gRow.ctr||0)*100).toFixed(2)+'%',
+      NUM(gRow.leads),
+      NUM(gRow.orders),
+      gRow.orders ? EUR(gRow.cost/gRow.orders,0) : '—',
+      gRow.cost ? (gRow.rev/gRow.cost).toFixed(2)+'×' : '—',
+      EUR(gRow.rev,0)
+    ]);
+  }
+  if (mRow) {
+    chCompare.push([
+      'Meta Ads',
+      EUR(mRow.cost,0),
+      NUM(mRow.imp),
+      NUM(mRow.clk),
+      EUR(mRow.cpc,2),
+      ((mRow.ctr||0)*100).toFixed(2)+'%',
+      NUM(mRow.leads),
+      NUM(mRow.orders),
+      mRow.orders ? EUR(mRow.cost/mRow.orders,0) : '—',
+      mRow.cost ? (mRow.rev/mRow.cost).toFixed(2)+'×' : '—',
+      EUR(mRow.rev,0)
+    ]);
+  }
+  const ig = (mix.declared_social||{}).instagram || {};
+  const fb = (mix.declared_social||{}).facebook || {};
   el.innerHTML = `
+    <div class="persona-box" style="margin:12px 0">
+      <h3 style="margin:0 0 6px">Mix de medios · recomendación</h3>
+      <p style="margin:0 0 8px"><strong>${mix.headline || 'Google + Meta con roles distintos.'}</strong></p>
+      <ul style="margin:0;padding-left:18px;font-size:.9rem">
+        ${(mix.bullets||[]).map(b=>`<li style="margin-bottom:4px">${b}</li>`).join('') || '<li>Sin benchmarks cargados.</li>'}
+      </ul>
+      <p style="font-size:.85rem;color:var(--muted);margin:10px 0 0">
+        Hacer Google: sí (eficiencia WC). Hacer Meta: sí, pero acotada (volumen/remarketing). ¿Los dos? Sí — mix ~${Math.round((mix.recommended||{}).googleShare*100||65)}/${Math.round((mix.recommended||{}).metaShare*100||35)}.
+        IG+FB declarados ${NUM((ig.orders||0)+(fb.orders||0))} pedidos ≠ Meta Ads verificado.
+      </p>
+    </div>
     <p style="font-size:.9rem;color:var(--muted);margin:8px 0">
       Canales: <strong>${(r.active||[]).join(' · ')||'ninguno'}</strong>
-      · Google = búsquedas × IS × CTR × CPC
-      · CR se ajustan al volumen de ppto (rendimientos decrecientes)
-      ${r.overBudget?` · <span style="color:#E25B4C">Google ${EUR(r.googleNeeded,0)} &gt; presupuesto ${EUR(planState.monthlyBudget,0)} — baja IS% o sube ppto</span>`:''}
+      · Google = demanda KW × IS × CTR × CPC (ratios Search)
+      · Meta = ppto × sus propios CPC/CTR/CR (benchmark 25–26)
+      ${r.overBudget?` · <span style="color:#E25B4C">Google ${EUR(r.googleNeeded,0)} &gt; cupo Google ${EUR(planState.monthlyBudget * googleShareFrac(),0)} — baja IS% o sube ppto</span>`:''}
     </p>
     <div class="plan-kpi-row">
       <div class="stat"><strong>${EUR(r.totCost,0)}</strong><span>Inversión/mes</span></div>
       <div class="stat"><strong>${NUM(r.totClk)}</strong><span>Clics/mes</span></div>
       <div class="stat"><strong>${NUM(r.totLeads)}</strong><span>Leads/mes</span></div>
-      <div class="stat"><strong>${NUM(r.totOrders)}</strong><span>Pedidos/mes</span></div>
+      <div class="stat"><strong>${NUM(r.totOrders)}</strong><span>Pedidos WC/mes</span></div>
       <div class="stat"><strong>${EUR(r.totRev,0)}</strong><span>Ingresos/mes</span></div>
       <div class="stat"><strong>${r.totCost?(r.totRev/r.totCost).toFixed(2)+'×':'—'}</strong><span>ROAS</span></div>
     </div>
-    <h3 style="font-size:.95rem;margin:12px 0 6px">Estimación por producto (Google)</h3>
-    ${tableHtml(['Producto','Búsq.','IS%','Clics','Leads','Pedidos','Inversión','Ingresos'],
-      (r.productRows||[]).map(x=>[x.label,NUM(x.searches),NUM(x.is)+'%', NUM(x.clicks), NUM(x.leads), NUM(x.orders), EUR(x.spend,0), EUR(x.rev,0)]))}
+    <h3 style="font-size:.95rem;margin:12px 0 6px">Qué aporta cada canal (simulación)</h3>
+    ${tableHtml(['Canal','Inversión','Impr.','Clics','CPC','CTR','Leads','Pedidos WC','CAC','ROAS','Ingresos'], chCompare)}
+    <h3 style="font-size:.95rem;margin:16px 0 6px">Estimación por campaña</h3>
+    ${tableHtml(['Campaña','Google','Meta','Total','Leads','Pedidos','Ingresos'],
+      (r.campaignRows||[]).map(x=>[
+        x.label,
+        EUR(x.googleSpend,0),
+        EUR(x.metaSpend,0),
+        EUR(x.spend,0),
+        NUM(x.leads),
+        NUM(x.orders),
+        EUR(x.rev,0)
+      ]))}
     <p style="font-size:.85rem;color:var(--muted);margin-top:8px">
-      Google ${EUR(g.spend||0,0)} · Meta ${EUR(m.spend||0,0)} · CR lead ${planState.cvrLeadPct}% · CR venta ${planState.leadToSalePct}%
+      Mix ppto ~${Math.round(googleShareFrac()*100)}% Google / ~${Math.round((1-googleShareFrac())*100)}% Meta.
+      Ratios Google ${planState.googleCvrLeadPct}%→${planState.googleLeadToSalePct}% · Meta ${planState.metaCvrLeadPct}%→${planState.metaLeadToSalePct}% · AOV ${EUR(planState.aov,0)}.
     </p>`;
   renderPlanMonthlyChart();
 }
