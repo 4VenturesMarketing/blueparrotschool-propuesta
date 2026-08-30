@@ -456,10 +456,28 @@ def _safe_div(a, b, default=0.0):
         return default
 
 
+def _weighted_google_cpc(plan: dict, isr_pct: float) -> float:
+    """CPC medio ponderado del estimador KW (suele ser > CPC real Ads)."""
+    products = plan.get("products") or []
+    product_is = plan.get("productIs") or {}
+    spend = clicks = 0.0
+    for p in products:
+        if p.get("enabled") is False:
+            continue
+        searches = float(p.get("monthlySearches") or 0)
+        ctr = float(p.get("ctrPct") or 5) / 100.0
+        cpc = float(p.get("cpc") or 0.48)
+        is_brand = bool(p.get("brand") or p.get("id") == "bps home")
+        is_pct = float(product_is.get(p["id"]) or (90 if is_brand else isr_pct))
+        clk = searches * (is_pct / 100.0) * ctr
+        spend += clk * cpc
+        clicks += clk
+    return round(spend / clicks, 4) if clicks else 0.48
+
+
 def _attach_media_mix(yoy: dict, periods: dict) -> None:
     """Benchmarks reales por canal + recomendación de mix (no tratar Meta=Google)."""
     cur = periods.get("sy-2025-26") or {}
-    prev = periods.get("sy-2024-25") or {}
     meta = (cur.get("paid") or {}).get("meta") or {}
     gads = (cur.get("paid") or {}).get("google_ads") or {}
 
@@ -516,17 +534,47 @@ def _attach_media_mix(yoy: dict, periods: dict) -> None:
 
     plan = yoy.setdefault("plan", {})
     d = plan.setdefault("defaults", {})
+    aov = float(d.get("aov") or 235)
+    isr_pct = float(d.get("isrPct") or 20)
+    model_cpc = _weighted_google_cpc(plan, isr_pct)
+
+    # Baseline 25–26 (WC verificado)
+    g_base_roas = float(g_r["roas"] or 2.34)
+    m_base_roas = float(m_r["roas"] or 0.77)
+    # Objetivos plan 26–27: mejora operativa (Search+brand + Meta remarketing)
+    g_target_roas = round(max(g_base_roas * 1.2, g_base_roas + 0.4), 2)  # ~2.81
+    m_target_roas = round(max(1.15, m_base_roas * 1.5), 2)  # ~1.15
+
+    g_lead = float(g_r["cvrLeadPct"] or 3.7)
+    m_lead = float(m_r["cvrLeadPct"] or 8.4)
+    m_cpc = float(m_r["cpc"] or 0.48)
+
+    # ROAS ≈ (CR lead × CR venta × AOV) / CPC  → despejamos CR venta del objetivo
+    # El CPC KW del estimador (~0,67) es > CPC real Ads (~0,48); sin calibrar el ROAS
+    # simulado cae a ~1,7× aunque el histórico sea 2,34×.
+    g_sale = _safe_div(g_target_roas * model_cpc * 100, aov * (g_lead / 100.0), g_r["leadToSalePct"] or 13)
+    g_sale = round(min(28.0, max(float(g_r["leadToSalePct"] or 13), g_sale)), 2)
+    m_sale = _safe_div(m_target_roas * m_cpc * 100, aov * (m_lead / 100.0), m_r["leadToSalePct"] or 2)
+    m_sale = round(min(4.5, max(float(m_r["leadToSalePct"] or 2), m_sale)), 2)
+
+    g_plan_roas = round(_safe_div((g_lead / 100.0) * (g_sale / 100.0) * aov, model_cpc), 2)
+    m_plan_roas = round(_safe_div((m_lead / 100.0) * (m_sale / 100.0) * aov, m_cpc), 2)
+    blend_plan = round(g_share * g_plan_roas + m_share * m_plan_roas, 2)
+    blend_base = round(g_share * g_base_roas + m_share * m_base_roas, 2)
+
     d["googleShare"] = g_share
     d["metaShare"] = m_share
-    d["googleCvrLeadPct"] = g_r["cvrLeadPct"] or d.get("cvrLeadPct") or 3.7
-    d["googleLeadToSalePct"] = g_r["leadToSalePct"] or d.get("leadToSalePct") or 13
-    d["metaCvrLeadPct"] = m_r["cvrLeadPct"] or 8.4
-    d["metaLeadToSalePct"] = m_r["leadToSalePct"] or 2.0
-    d["metaCpc"] = m_r["cpc"] or 0.48
+    d["googleCvrLeadPct"] = g_lead
+    d["googleLeadToSalePct"] = g_sale
+    d["metaCvrLeadPct"] = m_lead
+    d["metaLeadToSalePct"] = m_sale
+    d["metaCpc"] = m_cpc
     d["metaCtrPct"] = m_r["ctrPct"] or 1.2
-    # CR globales del simulador = Google (demanda) por defecto; Meta usa las suyas
     d["cvrLeadPct"] = d["googleCvrLeadPct"]
     d["leadToSalePct"] = d["googleLeadToSalePct"]
+    d["googleModelCpc"] = model_cpc
+    d["planGoogleRoas"] = g_plan_roas
+    d["planMetaRoas"] = m_plan_roas
 
     for ch in plan.get("channels") or []:
         if ch.get("id") == "google":
@@ -545,13 +593,24 @@ def _attach_media_mix(yoy: dict, periods: dict) -> None:
         "recommended": {"googleShare": g_share, "metaShare": m_share},
         "google": g_r,
         "meta": m_r,
+        "baseline": {"googleRoas": g_base_roas, "metaRoas": m_base_roas, "blendRoas": blend_base},
+        "planTargets": {
+            "googleRoas": g_plan_roas,
+            "metaRoas": m_plan_roas,
+            "blendRoas": blend_plan,
+            "googleLeadToSalePct": g_sale,
+            "metaLeadToSalePct": m_sale,
+            "googleModelCpc": model_cpc,
+            "note": "Simulador 26–27 usa CRs de plan (mejora vs 25–26), no los CRs crudos del curso actual.",
+        },
         "declared_social": declared,
         "headline": "Sí a los dos canales, con Google como motor de eficiencia y Meta como apoyo de volumen/remarketing.",
         "bullets": [
-            f"Google Ads 25–26: CAC pedido WC ~{g_r['cac']:.0f} € · ROAS {g_r['roas']}× · CTR {g_r['ctrPct']}% · CR clic→lead {g_r['cvrLeadPct']}% · lead→pedido WC {g_r['leadToSalePct']}%.",
-            f"Meta Ads 25–26: CAC pedido WC ~{m_r['cac']:.0f} € · ROAS {m_r['roas']}× · mucho lead ({m_r['leads']}) pero lead→pedido WC solo {m_r['leadToSalePct']}% — cara si se escala fría.",
-            f"Instagram/Facebook declarados en checkout: {declared['instagram']['orders']+declared['facebook']['orders']} pedidos (IG {declared['instagram']['orders']} · FB {declared['facebook']['orders']}). Eso es influencia social, no equivale a ROAS de Meta Ads verificado ({m_r['orders']} pedidos WC).",
-            f"Mix recomendado: ~{int(g_share*100)}% Google / ~{int(m_share*100)}% Meta. Google captura demanda de certificaciones; Meta para remarketing y creatividades cualificadas, no para sustituir Search.",
+            f"Baseline 25–26 (WC): Google ROAS {g_base_roas}× · Meta {m_base_roas}× · blend mix ~{int(g_share*100)}/{int(m_share*100)} ≈ {blend_base}×.",
+            f"Objetivo plan 26–27: Google ~{g_plan_roas}× (+{round((g_plan_roas/g_base_roas-1)*100)}% vs actual) · Meta ~{m_plan_roas}× (lead→pedido {m_sale}% vs {m_r['leadToSalePct']}%) · blend ≈ {blend_plan}×.",
+            f"Por qué el estimador no puede pegar el 2,34× con los CR crudos: CPC KW del plan ~{model_cpc:.2f} € vs CPC real Ads {g_r['cpc']} €. Calibramos subiendo lead→pedido Google a {g_sale}% (vs {g_r['leadToSalePct']}%) para reflejar eficiencia real + mejora Search/brand.",
+            f"Meta: más remarketing/lookalikes de compradores WC (menos frío) para acercar ROAS a ~{m_plan_roas}×.",
+            f"Instagram/Facebook declarados: {declared['instagram']['orders']+declared['facebook']['orders']} pedidos ≠ Meta Ads verificado ({m_r['orders']} WC).",
         ],
         "do": [
             "Google: certificaciones + brand search always-on (mejor CAC/ROAS WC).",
@@ -559,7 +618,7 @@ def _attach_media_mix(yoy: dict, periods: dict) -> None:
             "No igualar presupuesto Meta=Google: la eficiencia WC no lo soporta.",
         ],
         "dont": [
-            "No leer pixel purchases Meta (373) como pedidos WC (152 verificados).",
+            "No leer pixel purchases Meta como pedidos WC verificados.",
             "No confundir «me conocí por Instagram» con atribución paid Meta.",
         ],
     }
@@ -1865,12 +1924,21 @@ function renderPlanResults() {
     <div class="persona-box" style="margin:12px 0">
       <h3 style="margin:0 0 6px">Mix de medios · recomendación</h3>
       <p style="margin:0 0 8px"><strong>${mix.headline || 'Google + Meta con roles distintos.'}</strong></p>
+      <p style="margin:0 0 10px;font-size:.9rem">
+        Baseline 25–26: Google <strong>${(mix.baseline||{}).googleRoas ?? mix.google?.roas ?? '—'}×</strong>
+        · Meta <strong>${(mix.baseline||{}).metaRoas ?? mix.meta?.roas ?? '—'}×</strong>
+        · blend <strong>${(mix.baseline||{}).blendRoas ?? '—'}×</strong>
+        &nbsp;→&nbsp; Objetivo plan 26–27: Google <strong>${(mix.planTargets||{}).googleRoas ?? '—'}×</strong>
+        · Meta <strong>${(mix.planTargets||{}).metaRoas ?? '—'}×</strong>
+        · blend <strong>${(mix.planTargets||{}).blendRoas ?? '—'}×</strong>
+      </p>
       <ul style="margin:0;padding-left:18px;font-size:.9rem">
         ${(mix.bullets||[]).map(b=>`<li style="margin-bottom:4px">${b}</li>`).join('') || '<li>Sin benchmarks cargados.</li>'}
       </ul>
       <p style="font-size:.85rem;color:var(--muted);margin:10px 0 0">
         Hacer Google: sí (eficiencia WC). Hacer Meta: sí, pero acotada (volumen/remarketing). ¿Los dos? Sí — mix ~${Math.round((mix.recommended||{}).googleShare*100||65)}/${Math.round((mix.recommended||{}).metaShare*100||35)}.
         IG+FB declarados ${NUM((ig.orders||0)+(fb.orders||0))} pedidos ≠ Meta Ads verificado.
+        El simulador usa CRs de <em>plan</em> (mejora), no los CRs crudos 25–26.
       </p>
     </div>
     <p style="font-size:.9rem;color:var(--muted);margin:8px 0">
@@ -1894,7 +1962,7 @@ function renderPlanResults() {
     <p style="font-size:.85rem;color:var(--muted);margin-top:8px">
       Mix ppto ~${Math.round(googleShareFrac()*100)}% Google / ~${Math.round((1-googleShareFrac())*100)}% Meta.
       Ratios Google ${planState.googleCvrLeadPct}%→${planState.googleLeadToSalePct}% · Meta ${planState.metaCvrLeadPct}%→${planState.metaLeadToSalePct}% · AOV ${EUR(planState.aov,0)}.
-      ROAS por canal en la tabla; la fila Total (y el KPI «ROAS conjunto») mezclan Google+Meta.
+      ROAS por canal = plan 26–27 (mejora vs baseline ${(mix.baseline||{}).googleRoas ?? '—'}× / ${(mix.baseline||{}).metaRoas ?? '—'}×). La fila Total es el blend.
     </p>`;
   renderPlanMonthlyChart();
 }
