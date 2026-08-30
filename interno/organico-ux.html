@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<meta name="robots" content="noindex,nofollow"/>
+<title>Orgánico · UX / rendimiento · BPS interno</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<style>
+:root{--navy:#0B1F3A;--blue:#0080E0;--gold:#D4AF37;--bg:#f4f7fb;--line:#d9e3ef;--muted:#5a6b7d;--green:#1FA97A;--coral:#E25B4C;--purple:#5B54C9}
+*{box-sizing:border-box}body{margin:0;font-family:"Raleway",system-ui,sans-serif;background:var(--bg);color:var(--navy);line-height:1.5}
+h1,h2,h3{font-family:"Poppins",sans-serif}a{color:var(--blue);text-decoration:none}
+.wrap{max-width:1100px;margin:0 auto;padding:24px 18px 60px}
+.top{background:linear-gradient(135deg,#0B1F3A,#0d3a66);color:#fff;padding:22px 18px}
+.top .wrap{padding:0}.eyebrow{font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--gold)}
+.top h1{margin:6px 0 4px;font-size:clamp(1.4rem,3vw,2rem)}.top p{margin:0;opacity:.9;font-size:.95rem}
+.nav{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.nav a{background:rgba(255,255,255,.12);color:#fff;padding:7px 12px;border-radius:8px;font-size:12px;font-weight:700}
+.nav a.on{outline:2px solid var(--gold)}
+.note{background:#fff6d6;border:1px solid #e8d48a;border-radius:10px;padding:10px 12px;font-size:.85rem;margin:14px 0;color:#6a5a10}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin:16px 0}
+.stat{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px;color:inherit}
+.stat strong{display:block;font-family:"Poppins",sans-serif;font-size:1.35rem;font-weight:800}
+.stat span{font-size:.78rem;color:var(--muted)}
+.card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px;margin:14px 0}
+.card h2{font-size:1.1rem;margin:0 0 8px}.card h3{font-size:.95rem;margin:14px 0 6px}
+.card p,.card li{font-size:.9rem;color:#334}
+ul{padding-left:18px}table{width:100%;border-collapse:collapse;font-size:.8rem;margin-top:8px}
+th,td{padding:7px 8px;border-bottom:1px solid var(--line);text-align:right}th:first-child,td:first-child{text-align:left}
+th{font-size:.65rem;text-transform:uppercase;color:var(--muted);background:#f7fafc}
+.bad{color:var(--coral);font-weight:700}.good{color:var(--green);font-weight:700}
+.footer{font-size:.8rem;color:var(--muted);margin-top:28px}
+</style>
+</head><body>
+<header class="top"><div class="wrap">
+  <div class="eyebrow">Uso interno · no compartir con cliente</div>
+  <h1>Orgánico · UX / rendimiento</h1>
+  <p>Blue Parrot School · WC / Meta / Google / CrUX · 2026-08-30 20:41</p>
+  <nav class="nav"><a href="index.html">Hub</a><a href="redes.html">Redes / social</a><a href="organico-ux.html" class="on">Orgánico · UX</a><a href="paid.html">Paid real</a><a href="../">← Propuesta</a></nav>
+</div></header>
+<main class="wrap">
+<div class="note">CrUX = usuarios Chrome reales. LCP móvil actual es crítico para paid y orgánico.</div>
+<div class="grid">
+  <div class="stat"><strong>47.744</strong><span>GSC clics 25–26</span></div>
+  <div class="stat"><strong>2.904.709</strong><span>GSC impresiones</span></div>
+  <div class="stat"><strong>8.430 ms</strong><span>LCP móvil (2026-07)</span></div>
+  <div class="stat"><strong>77.0%</strong><span>% LCP pobre (móvil)</span></div>
+</div>
+<div class="card">
+  <h2>CrUX · última ventana</h2>
+  <table>
+    <tr><th>Métrica</th><th>Móvil</th><th>Desktop</th><th>Bueno</th></tr>
+    <tr><td>LCP</td><td class="bad">8.430 ms</td><td class="bad">5.839 ms</td><td>≤2500 ms</td></tr>
+    <tr><td>INP</td><td>187 ms</td><td>72 ms</td><td>≤200 ms</td></tr>
+    <tr><td>CLS</td><td>0.06</td><td>0.16</td><td>≤0.1</td></tr>
+    <tr><td>TTFB</td><td class="bad">1.706 ms</td><td class="bad">754 ms</td><td>≤800 ms</td></tr>
+  </table>
+  <p class="bad">LCP y TTFB altos frenan conversión. Prioridad técnica antes de escalar ppto.</p>
+</div>
+<div class="card">
+  <h2>Landings orgánicas con compra (GA4 25–26)</h2>
+  <table>
+    <tr><th>Landing</th><th>Sesiones</th><th>Purchases</th><th>Revenue</th><th>CR</th></tr>
+    <tr><td>/</td><td>8.580</td><td>146</td><td>26.282 €</td><td>1.7%</td></tr><tr><td>/product/aptis-general-b1-b2-c1-28h</td><td>1.132</td><td>33</td><td>4.866 €</td><td>2.9%</td></tr><tr><td>/carrito</td><td>233</td><td>29</td><td>5.082 €</td><td>12.4%</td></tr><tr><td>/centro-malaga-teatinos-escuela-blue-parrot-school</td><td>1.128</td><td>17</td><td>3.497 €</td><td>1.5%</td></tr><tr><td>/product/cambridge-advanced-c1-intensivo-online-o-presencial-36h</td><td>1.113</td><td>17</td><td>3.993 €</td><td>1.5%</td></tr><tr><td>/cursos-intensivos-idiomas</td><td>455</td><td>14</td><td>2.491 €</td><td>3.1%</td></tr><tr><td>/pago</td><td>43</td><td>14</td><td>2.278 €</td><td>32.6%</td></tr><tr><td>/product/frances-delf-b2-intensivo</td><td>812</td><td>13</td><td>2.089 €</td><td>1.6%</td></tr><tr><td>/product/aptis-advanced-intensivo-28h</td><td>702</td><td>13</td><td>2.106 €</td><td>1.9%</td></tr><tr><td>/pago/pedido-recibido/17898</td><td>10</td><td>11</td><td>9 €</td><td>110.0%</td></tr><tr><td>/product/aleman-a1-a2-intensivo-28h</td><td>527</td><td>10</td><td>1.670 €</td><td>1.9%</td></tr><tr><td>/product/cambridge-first-b2-intensivo-online-o-presencial-36h</td><td>676</td><td>9</td><td>2.086 €</td><td>1.3%</td></tr>
+  </table>
+  <h3>Acciones</h3>
+  <ul>
+    <li>Arreglar LCP/TTFB en home y landings APTIS/Cambridge.</li>
+    <li>SEO solo en URLs que ya convierten.</li>
+    <li>Paid a las mismas URLs rápidas y congruentes.</li>
+  </ul>
+</div>
+
+<p class="footer">Fuente: dashboard/db + exports. ROAS/CAC paid = pedidos WC verificados, no pixel.</p>
+</main></body></html>

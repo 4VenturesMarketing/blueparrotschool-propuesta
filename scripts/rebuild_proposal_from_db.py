@@ -187,10 +187,43 @@ def _enrich_buyer_profile(yoy: dict, wc_buyer: dict, periods: dict) -> None:
     ]
 
     yoy.setdefault("plan", {})["roadmap"] = [
-        {"q": "Q1 · Sep–Nov", "items": ["Escalar APTIS/Cambridge en Google + Meta", "Remarketing leads sin compra", "Brand Search always-on"]},
-        {"q": "Q2 · Dic–Feb", "items": ["Empuje convocatorias", "Cortar audiencias frías sin pedido", "SEO landings top"]},
-        {"q": "Q3 · Mar–May", "items": ["Intensivos primavera", "Optimizar CAC/ROAS WC", "Test creatividades cualificadas"]},
-        {"q": "Q4 · Jun–Ago", "items": ["Verano: retarget + brand", "Preparar ramp-up septiembre"]},
+        {
+            "q": "Q1 · Sep–Nov",
+            "items": [
+                "Ramp-up curso: APTIS/Cambridge Search + PMax",
+                "Brand Search always-on + remarketing leads sin compra",
+                "Meta: lookalikes compradores WC (cortar frío sin pedido)",
+                "UTM obligatorio + SLA contacto <1 h",
+            ],
+        },
+        {
+            "q": "Q2 · Dic–Feb",
+            "items": [
+                "Convocatorias invierno: landings por certificado",
+                "Recortar audiencias Meta con lead→pedido <1%",
+                "SEO/GSC: reforzar queries comerciales top",
+                "Test extensiones call/WhatsApp en Search",
+            ],
+        },
+        {
+            "q": "Q3 · Mar–May",
+            "items": [
+                "Intensivos primavera + creatividades cualificadas Meta",
+                "Optimizar CAC/ROAS WC por campaña (no por pixel)",
+                "Ampliar brand + remarketing pre-verano",
+                "Revisar CrUX/móvil en landings de conversión",
+            ],
+        },
+        {
+            "q": "Q4 · Jun–Ago",
+            "items": [
+                "Jun–Jul = pico demanda certs (Cambridge/APTIS): subir IS y ppto Google",
+                "Campañas convocatoria verano + intensivos (no hibernar)",
+                "Meta remarketing agresivo a leads Q3 sin compra",
+                "Agosto: sostener brand + retarget; preparar creatividades septiembre",
+                "No congelar tests: validar ofertas/plazas en el pico real de búsquedas",
+            ],
+        },
     ]
 
     _sync_plan_from_estimator(yoy)
@@ -2094,10 +2127,10 @@ function renderRoadmap() {
   const gYear = ((y.byCampaign||{}).google?.cost || []).reduce((s,v)=>s+(v||0),0);
   const mYear = ((y.byCampaign||{}).meta?.cost || []).reduce((s,v)=>s+(v||0),0);
   const quarters = YOY_PLAN.plan.roadmap || [
-    {q:'Q1 · Sep–Nov', items:['Escalar certificados (APTIS/Cambridge) en Google + Meta','Remarketing leads sin compra','Brand Search always-on']},
-    {q:'Q2 · Dic–Feb', items:['Empuje convocatorias invierno','Recortar audiencias frías sin lead→pedido','SEO landings top']},
-    {q:'Q3 · Mar–May', items:['Intensivos primavera','Test creatividades Meta cualificadas','Revisar CAC vs ROAS WC']},
-    {q:'Q4 · Jun–Ago', items:['Verano: retarget + brand','Preparar ramp-up septiembre','Congelar tests flojos']},
+    {q:'Q1 · Sep–Nov', items:['Ramp-up APTIS/Cambridge','Remarketing leads','Brand Search always-on','SLA <1 h']},
+    {q:'Q2 · Dic–Feb', items:['Convocatorias invierno','Cortar Meta fría','SEO queries top','Extensiones call/WA']},
+    {q:'Q3 · Mar–May', items:['Intensivos primavera','Optimizar CAC/ROAS WC','Brand + remarketing','CrUX landings']},
+    {q:'Q4 · Jun–Ago', items:['Jun–Jul pico certs: subir IS/ppto Google','Convocatoria verano + intensivos','Meta remarketing leads Q3','Agosto: brand + prep septiembre','No hibernar en pico de búsquedas']},
   ];
   document.getElementById('panelRoadmap').innerHTML = `
     <div class="stat-row" style="margin-bottom:14px">
