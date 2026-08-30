@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+from collections import defaultdict
 from datetime import datetime
 from pathlib import Path
 
@@ -30,6 +31,70 @@ def pct(n, d=1):
     return f"{float(n):.{d}f}%"
 
 
+def _crux_by_ym(rows):
+    """Keep last sample per ym (API returns overlapping windows)."""
+    out = {}
+    for r in rows or []:
+        ym = r.get("ym")
+        if ym:
+            out[ym] = r
+    return [out[k] for k in sorted(out)]
+
+
+def _pos(v):
+    if v is None:
+        return "—"
+    return f"{float(v):.1f}".replace(".", ",")
+
+
+def _ctr(v):
+    if v is None:
+        return "—"
+    return pct(100 * float(v), 2)
+
+
+def _short_url(u: str, n: int = 72) -> str:
+    u = (u or "").replace("https://blueparrotschool.com", "")
+    return (u[: n - 1] + "…") if len(u) > n else u
+
+
+def _norm_landing(p: str) -> str:
+    """Normalize landing path for YoY matching (trailing slash, query, host)."""
+    p = (p or "").strip()
+    p = p.replace("https://blueparrotschool.com", "").replace("http://blueparrotschool.com", "")
+    p = p.split("?")[0].split("#")[0].strip() or "/"
+    if p != "/" and p.endswith("/"):
+        p = p.rstrip("/")
+    return p or "/"
+
+
+def _cr(sessions, purchases):
+    if not sessions:
+        return None
+    return 100.0 * float(purchases or 0) / float(sessions)
+
+
+def _meta_demo_sy(rows):
+    """Aggregate Meta age/gender for school year Sep 2025 – Aug 2026."""
+    age = defaultdict(lambda: {"spend": 0.0, "leads": 0.0, "purchases": 0.0, "clicks": 0.0})
+    gender = defaultdict(lambda: {"spend": 0.0, "leads": 0.0, "purchases": 0.0, "clicks": 0.0})
+
+    def in_sy(m: str) -> bool:
+        y, mo = map(int, m.split("-"))
+        return (y == 2025 and mo >= 9) or (y == 2026 and mo <= 8)
+
+    for r in rows or []:
+        if not in_sy(r.get("month") or ""):
+            continue
+        a, g = r.get("age") or "Unknown", r.get("gender") or "unknown"
+        for bucket, key in ((age, a), (gender, g)):
+            bucket[key]["spend"] += float(r.get("spend") or 0)
+            bucket[key]["leads"] += float(r.get("leads") or 0)
+            bucket[key]["purchases"] += float(r.get("purchases") or 0)
+            bucket[key]["clicks"] += float(r.get("clicks") or 0)
+    return age, gender
+
+
 CSS = """
 :root{--navy:#0B1F3A;--blue:#0080E0;--gold:#D4AF37;--bg:#f4f7fb;--line:#d9e3ef;--muted:#5a6b7d;--green:#1FA97A;--coral:#E25B4C;--purple:#5B54C9}
 *{box-sizing:border-box}body{margin:0;font-family:"Raleway",system-ui,sans-serif;background:var(--bg);color:var(--navy);line-height:1.5}
@@ -53,6 +118,8 @@ ul{padding-left:18px}table{width:100%;border-collapse:collapse;font-size:.8rem;m
 th,td{padding:7px 8px;border-bottom:1px solid var(--line);text-align:right}th:first-child,td:first-child{text-align:left}
 th{font-size:.65rem;text-transform:uppercase;color:var(--muted);background:#f7fafc}
 .bad{color:var(--coral);font-weight:700}.good{color:var(--green);font-weight:700}
+.tag{display:inline-block;font-size:.65rem;font-weight:700;text-transform:uppercase;letter-spacing:.04em;background:#e8f4ff;color:var(--blue);padding:2px 6px;border-radius:4px;margin-left:6px;vertical-align:middle}
+.scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
 .footer{font-size:.8rem;color:var(--muted);margin-top:28px}
 """
 
@@ -84,7 +151,7 @@ def page(title: str, body: str, active: str = "") -> str:
   <nav class="nav">{"".join(links)}</nav>
 </div></header>
 <main class="wrap">{body}
-<p class="footer">Fuente: dashboard/db + exports. ROAS/CAC paid = pedidos WC verificados, no pixel.</p>
+<p class="footer">Fuente: dashboard/db + exports + GSC live. ROAS/CAC paid = pedidos WC verificados, no pixel.</p>
 </main></body></html>"""
 
 
@@ -95,11 +162,17 @@ def main():
     organic = json.loads((DATA / "organic-purchase-landings.json").read_text())
     meta_x = json.loads((DATA / "meta-wc-cross-summary.json").read_text())
     gsc = json.loads((DATA / "ga4-gsc-crosscheck.json").read_text())
+    gsc_d = json.loads((DATA / "gsc-yoy-detail.json").read_text()) if (DATA / "gsc-yoy-detail.json").exists() else {}
+    meta_demo = json.loads((DATA / "meta-demo.json").read_text()) if (DATA / "meta-demo.json").exists() else {}
 
     cur = prop["periods"]["sy-2025-26"]
     g = cur["paid"]["google_ads"]
     m = cur["paid"]["meta"]
     mix = prop["YOY_PLAN"]["plan"]["mediaMix"]
+    bp = prop.get("YOY_PLAN", {}).get("buyerProfile") or {}
+    demo_wc = (prop.get("demo") or {}).get("wc_buyer") or {}
+    cur_demo = demo_wc.get("cur") or {}
+    persona = bp.get("persona") or {}
 
     decl_ig = next((c for c in cur["channels"] if c["canal"] == "Instagram"), {})
     decl_fb = next((c for c in cur["channels"] if c["canal"] == "Facebook"), {})
@@ -108,23 +181,98 @@ def main():
     hub = f"""
 <div class="note">Informes <strong>internos</strong>. Propuesta cliente: <a href="../">/propuestas/blueparrotschool/</a>.</div>
 <div class="grid">
-  <a class="stat" href="redes.html"><strong>Redes</strong><span>Meta Ads + IG/FB declarado + cruce leads</span></a>
-  <a class="stat" href="organico-ux.html"><strong>Orgánico · UX</strong><span>Landings GA4 + CrUX (LCP/INP/CLS)</span></a>
+  <a class="stat" href="redes.html"><strong>Redes</strong><span>Perfil comprador + Meta Ads + IG/FB</span></a>
+  <a class="stat" href="organico-ux.html"><strong>Orgánico · UX</strong><span>GSC YoY · CrUX · landings</span></a>
   <a class="stat" href="paid.html"><strong>Paid real</strong><span>Google + Meta vs WooCommerce</span></a>
 </div>
 <div class="card">
   <h2>Por qué Jun–Ago no es “verano flojo”</h2>
-  <p>Keyword Planner: Cambridge <strong>Jun ~1,56× / Jul ~1,78×</strong> vs media. Pedidos WC 2025: Jun 141 · Jul <strong>178</strong> · Ago 98. Q4 debe ser pico comercial, no hibernación.</p>
+  <p>Keyword Planner: Cambridge <strong>Jun ~1,56× / Jul ~1,78×</strong> vs media. Pedidos WC 2025: jun 141 · Jul <strong>178</strong> · Ago 98. Q4 debe ser pico comercial, no hibernación.</p>
 </div>
 """
 
+    age_rows = ""
+    for b in (cur_demo.get("age") or {}).get("bands") or bp.get("age_primary") or []:
+        band = b.get("band")
+        orders = b.get("orders")
+        rev = b.get("rev")
+        share = b.get("share_pct")
+        known = (cur_demo.get("age") or {}).get("known_orders")
+        if share is None and known and orders:
+            share = 100 * orders / known
+        age_rows += (
+            f"<tr><td>{band}</td><td>{num(orders)}</td>"
+            f"<td>{eur(rev, 0) if rev is not None else '—'}</td><td>{pct(share)}</td></tr>"
+        )
+    gen = (cur_demo.get("gender") or {}).get("gender") or {}
+    gen_rows = "".join(
+        f"<tr><td>{lab}</td><td>{num((gen.get(k) or {}).get('orders'))}</td>"
+        f"<td>{eur((gen.get(k) or {}).get('rev'), 0)}</td>"
+        f"<td>{pct((gen.get(k) or {}).get('pct_all'))}</td></tr>"
+        for lab, k in (("Mujer", "mujer"), ("Hombre", "hombre"), ("Desconocido", "desconocido"))
+    )
+    city_rows = "".join(
+        f"<tr><td>{c.get('name')}</td><td>{num(c.get('orders'))}</td><td>{eur(c.get('rev'), 0)}</td></tr>"
+        for c in (cur_demo.get("cities") or [])[:10]
+    )
+    prod_rows = "".join(
+        f"<tr><td>{p.get('family')}</td><td>{num(p.get('orders'))}</td><td>{eur(p.get('rev'), 0)}</td></tr>"
+        for p in bp.get("product_mix") or []
+    )
+    motiv = "".join(f"<li>{x}</li>" for x in persona.get("motivations") or [])
+    chans = "".join(f"<li>{x}</li>" for x in persona.get("channels") or [])
+
+    meta_age, meta_gen = _meta_demo_sy(meta_demo.get("rows"))
+    meta_age_rows = "".join(
+        f"<tr><td>{k}</td><td>{eur(v['spend'], 0)}</td><td>{num(v['leads'])}</td>"
+        f"<td>{num(v['purchases'])}</td>"
+        f"<td>{eur(v['spend'] / v['leads'], 2) if v['leads'] else '—'}</td></tr>"
+        for k, v in sorted(meta_age.items(), key=lambda x: -x[1]["spend"])
+        if k != "Unknown"
+    )
+    meta_gen_rows = "".join(
+        f"<tr><td>{k}</td><td>{eur(v['spend'], 0)}</td><td>{num(v['leads'])}</td>"
+        f"<td>{num(v['purchases'])}</td></tr>"
+        for k, v in sorted(meta_gen.items(), key=lambda x: -x[1]["spend"])
+    )
+
     redes = f"""
-<div class="note">IG/FB en checkout ≠ Meta Ads verificado. Pixel purchase ≠ pedido WC.</div>
+<div class="note">IG/FB en checkout ≠ Meta Ads verificado. Pixel purchase ≠ pedido WC. Perfil = WC billing (edad/geo) + género inferido por nombre.</div>
 <div class="grid">
   <div class="stat"><strong>{eur(m.get("spend"), 0)}</strong><span>Meta Ads spend 25–26</span></div>
   <div class="stat"><strong>{num(m.get("wc_orders_verified"))}</strong><span>Pedidos WC verificados Meta</span></div>
   <div class="stat"><strong>{eur(m.get("cac"), 0)}</strong><span>CAC Meta→WC</span></div>
   <div class="stat"><strong>{f"{float(m['roas']):.2f}×" if m.get("roas") else "—"}</strong><span>ROAS Meta WC</span></div>
+</div>
+<div class="card">
+  <h2>Perfil completo del comprador (WC 25–26)</h2>
+  <p><strong>{persona.get("title") or "—"}</strong> — {persona.get("summary") or ""}</p>
+  <div class="grid">
+    <div class="stat"><strong>{num(bp.get("n_orders"))}</strong><span>Pedidos perfilados</span></div>
+    <div class="stat"><strong>{eur(bp.get("aov"), 0)}</strong><span>AOV</span></div>
+    <div class="stat"><strong>{bp.get("top_product") or "—"}</strong><span>Producto #1</span></div>
+    <div class="stat"><strong>{bp.get("geo_primary") or "—"}</strong><span>Geo primaria</span></div>
+  </div>
+  <h3>Edad (cobertura {pct((cur_demo.get("age") or {}).get("parsed_pct") or bp.get("age_coverage_pct"))})</h3>
+  <table><tr><th>Banda</th><th>Pedidos</th><th>Ingresos</th><th>% conocidos</th></tr>{age_rows}</table>
+  <h3>Género (cobertura {pct((cur_demo.get("gender") or {}).get("coverage_pct") or bp.get("gender_coverage_pct"))})</h3>
+  <table><tr><th>Género</th><th>Pedidos</th><th>Ingresos</th><th>% del total</th></tr>{gen_rows}</table>
+  <p>De conocidos: <strong>{pct((cur_demo.get("gender") or {}).get("mujer_of_known_pct"))} mujeres</strong> · {pct((cur_demo.get("gender") or {}).get("hombre_of_known_pct"))} hombres.</p>
+  <h3>Top ciudades</h3>
+  <table><tr><th>Ciudad</th><th>Pedidos</th><th>Ingresos</th></tr>{city_rows}</table>
+  <h3>Mix de producto</h3>
+  <table><tr><th>Familia</th><th>Pedidos</th><th>Ingresos</th></tr>{prod_rows}</table>
+  <h3>Motivaciones / canales de descubrimiento</h3>
+  <div class="grid"><div><ul>{motiv}</ul></div><div><ul>{chans}</ul></div></div>
+  <p>Meta lead→buyer (cruce): conv {pct(bp.get("meta_lead_buyer", {}).get("conv_pct"))} · CAC {eur((bp.get("meta_lead_buyer") or {}).get("cac"), 0)} · lag mediano {(bp.get("meta_lead_buyer") or {}).get("median_lag_days")} d.</p>
+</div>
+<div class="card">
+  <h2>Audiencia Meta Ads (spend/leads por demo · SY 25–26)</h2>
+  <p>Inversión Meta se concentra en 25–44; el comprador WC es más joven (18–34). Alinear creatividades y lookalikes al perfil WC, no solo al que hace lead.</p>
+  <h3>Por edad</h3>
+  <table><tr><th>Edad</th><th>Spend</th><th>Leads</th><th>Purch. pixel</th><th>CPL</th></tr>{meta_age_rows}</table>
+  <h3>Por género</h3>
+  <table><tr><th>Género</th><th>Spend</th><th>Leads</th><th>Purch. pixel</th></tr>{meta_gen_rows}</table>
 </div>
 <div class="card">
   <h2>Declarado en checkout vs paid</h2>
@@ -146,59 +294,273 @@ def main():
   <p>Lag p90 ~{(ma.get("lag") or {}).get("p90")} días → nurture 7–30 días obligatorio.</p>
   <h3>Acciones</h3>
   <ul>
-    <li>Remarketing a leads sin compra &lt;30 días.</li>
+    <li>Remarketing a leads sin compra &lt;30 días · creatividades mujer 18–34 Madrid/Málaga + APTIS/Cambridge.</li>
     <li>Cortar campañas con lead→pedido &lt;1%.</li>
     <li>No optimizar a pixel purchase.</li>
-    <li>Creatividades con certificado + fecha de convocatoria.</li>
+    <li>Rebalancear spend Meta hacia 18–34 (hoy pesa más 25–44).</li>
   </ul>
 </div>
 """
 
     org25 = organic.get("25-26") or []
+    org24 = organic.get("24-25") or []
+    prev_by = {}
+    for r in org24:
+        key = _norm_landing(r.get("landingPage") or "")
+        # Keep highest-purchase row if duplicates after normalize
+        if key not in prev_by or (r.get("purchases") or 0) > (prev_by[key].get("purchases") or 0):
+            prev_by[key] = r
     top_org = sorted(org25, key=lambda x: -(x.get("purchases") or 0))[:12]
     org_rows = []
+    org_new_n = 0
     for r in top_org:
-        cr = "—"
-        if r.get("sessions"):
-            cr = pct(100 * (r.get("purchases") or 0) / r["sessions"])
+        path = r.get("landingPage") or ""
+        key = _norm_landing(path)
+        prev = prev_by.get(key)
+        is_new = prev is None
+        if is_new:
+            org_new_n += 1
+        s24 = (prev or {}).get("sessions")
+        s25 = r.get("sessions")
+        p24 = (prev or {}).get("purchases") if prev else None
+        p25 = r.get("purchases")
+        rev24 = (prev or {}).get("revenue") if prev else None
+        rev25 = r.get("revenue")
+        cr24 = _cr(s24, p24) if prev else None
+        cr25 = _cr(s25, p25)
+        # Deltas vs prior course (None if landing was new)
+        if prev:
+            dp = (p25 or 0) - (p24 or 0)
+            drev = (rev25 or 0) - (rev24 or 0)
+            dcr = (cr25 - cr24) if cr25 is not None and cr24 is not None else None
+            dp_lab = ("+" + num(dp)) if dp >= 0 else num(dp)
+            dp_cls = "good" if dp >= 0 else "bad"
+            drev_lab = ("+" + eur(drev, 0)) if drev >= 0 else eur(drev, 0)
+            drev_cls = "good" if drev >= 0 else "bad"
+            if dcr is None:
+                dcr_lab, dcr_cls = "—", ""
+            else:
+                dcr_lab = f"{'+' if dcr >= 0 else ''}{dcr:.1f} pp".replace(".", ",")
+                dcr_cls = "good" if dcr >= 0 else "bad"
+        else:
+            dp_lab = drev_lab = dcr_lab = "nueva"
+            dp_cls = drev_cls = dcr_cls = ""
+        tag = ' <span class="tag">nueva</span>' if is_new else ""
         org_rows.append(
-            f"<tr><td>{r.get('landingPage')}</td><td>{num(r.get('sessions'))}</td>"
-            f"<td>{num(r.get('purchases'))}</td><td>{eur(r.get('revenue'), 0)}</td><td>{cr}</td></tr>"
+            f"<tr><td>{path}{tag}</td>"
+            f"<td>{num(s24) if prev else '—'}</td><td>{num(s25)}</td>"
+            f"<td>{num(p24) if prev else '—'}</td><td>{num(p25)}</td>"
+            f"<td class=\"{dp_cls}\">{dp_lab}</td>"
+            f"<td>{eur(rev24, 0) if prev else '—'}</td><td>{eur(rev25, 0)}</td>"
+            f"<td class=\"{drev_cls}\">{drev_lab}</td>"
+            f"<td>{pct(cr24) if cr24 is not None else '—'}</td><td>{pct(cr25) if cr25 is not None else '—'}</td>"
+            f"<td class=\"{dcr_cls}\">{dcr_lab}</td></tr>"
         )
-    phone = (crux.get("phone") or [{}])[-1]
-    desk = (crux.get("desktop") or [{}])[-1]
-    gsc2526 = (gsc.get("gsc") or {}).get("25-26") or {}
+    phone_series = _crux_by_ym(crux.get("phone"))
+    desk_series = _crux_by_ym(crux.get("desktop"))
+    phone = phone_series[-1] if phone_series else {}
+    desk = desk_series[-1] if desk_series else {}
+    gsc2526 = (gsc_d.get("totals") or {}).get("sy-2025-26") or (gsc.get("gsc") or {}).get("25-26") or {}
+    gsc2425 = (gsc_d.get("totals") or {}).get("sy-2024-25") or (gsc.get("gsc") or {}).get("24-25") or {}
+
+    def delta_n(a, b):
+        if a is None or b is None:
+            return "—"
+        d = float(a) - float(b)
+        sign = "+" if d >= 0 else ""
+        return f"{sign}{num(d)}"
+
+    def delta_pct(a, b):
+        if not b:
+            return "—"
+        d = 100 * (float(a) - float(b)) / float(b)
+        sign = "+" if d >= 0 else ""
+        return f"{sign}{d:.0f}%".replace(".", ",")
+
+    clk_d = delta_n(gsc2526.get("clicks"), gsc2425.get("clicks"))
+    clk_p = delta_pct(gsc2526.get("clicks"), gsc2425.get("clicks"))
+    impr_d = delta_n(gsc2526.get("impressions"), gsc2425.get("impressions"))
+    pos_prev, pos_cur = gsc2425.get("position"), gsc2526.get("position")
+    pos_improve = abs(float(pos_prev or 0) - float(pos_cur or 0))
+
+    def device_map(rows):
+        return {(r.get("keys") or ["?"])[0]: r for r in (rows or [])}
+
+    d_prev = device_map((gsc_d.get("by_device") or {}).get("sy-2024-25"))
+    d_cur = device_map((gsc_d.get("by_device") or {}).get("sy-2025-26"))
+    device_rows = ""
+    for dev in ("MOBILE", "DESKTOP", "TABLET"):
+        p, c = d_prev.get(dev, {}), d_cur.get(dev, {})
+        dclk = (c.get("clicks") or 0) - (p.get("clicks") or 0)
+        cls = "good" if dclk >= 0 else "bad"
+        device_rows += (
+            f"<tr><td>{dev.title()}</td>"
+            f"<td>{num(p.get('clicks'))}</td><td>{num(c.get('clicks'))}</td>"
+            f"<td class=\"{cls}\">{delta_n(c.get('clicks'), p.get('clicks'))}</td>"
+            f"<td>{_pos(p.get('position'))}</td><td>{_pos(c.get('position'))}</td>"
+            f"<td>{_ctr(c.get('ctr'))}</td></tr>"
+        )
+
+    m25 = {(r.get("month") or "")[5:]: r for r in gsc_d.get("monthly_2526") or []}
+    m24 = {(r.get("month") or "")[5:]: r for r in gsc_d.get("monthly_2425") or []}
+    month_labels = [
+        ("09", "Sep"),
+        ("10", "Oct"),
+        ("11", "Nov"),
+        ("12", "Dic"),
+        ("01", "Ene"),
+        ("02", "Feb"),
+        ("03", "Mar"),
+        ("04", "Abr"),
+        ("05", "May"),
+        ("06", "Jun"),
+        ("07", "Jul"),
+        ("08", "Ago"),
+    ]
+    month_rows = ""
+    for mm, lab in month_labels:
+        a, b = m24.get(mm, {}), m25.get(mm, {})
+        dclk = (b.get("clicks") or 0) - (a.get("clicks") or 0)
+        cls = "good" if dclk >= 0 else "bad"
+        dlab = ("+" + num(dclk)) if dclk >= 0 else num(dclk)
+        month_rows += (
+            f"<tr><td>{lab}</td><td>{num(a.get('clicks'))}</td><td>{num(b.get('clicks'))}</td>"
+            f"<td class=\"{cls}\">{dlab}</td>"
+            f"<td>{_pos(a.get('position'))}</td><td>{_pos(b.get('position'))}</td>"
+            f"<td>{num(b.get('impressions'))}</td></tr>"
+        )
+
+    def q_rows(items, n=15):
+        rows_h = ""
+        for r in (items or [])[:n]:
+            d = r.get("delta_clicks") or 0
+            cls = "good" if d >= 0 else "bad"
+            dlab = ("+" + num(d)) if d >= 0 else num(d)
+            rows_h += (
+                f"<tr><td>{r.get('query')}</td>"
+                f"<td>{num(r.get('clicks_prev'))}</td><td>{num(r.get('clicks_cur'))}</td>"
+                f"<td class=\"{cls}\">{dlab}</td>"
+                f"<td>{_pos(r.get('pos_prev'))}</td><td>{_pos(r.get('pos_cur'))}</td></tr>"
+            )
+        return rows_h
+
+    def page_rows(items, n=12):
+        rows_h = ""
+        for r in (items or [])[:n]:
+            d = r.get("delta") or 0
+            cls = "good" if d >= 0 else "bad"
+            dlab = ("+" + num(d)) if d >= 0 else num(d)
+            rows_h += (
+                f"<tr><td>{_short_url(r.get('page'))}</td>"
+                f"<td>{num(r.get('clicks_prev'))}</td><td>{num(r.get('clicks_cur'))}</td>"
+                f"<td class=\"{cls}\">{dlab}</td>"
+                f"<td>{_pos(r.get('pos_prev'))}</td><td>{_pos(r.get('pos_cur'))}</td></tr>"
+            )
+        return rows_h
+
+    crux_hist_rows = ""
+    desk_by = {r["ym"]: r for r in desk_series}
+    for r in phone_series:
+        ym = r["ym"]
+        dsk = desk_by.get(ym, {})
+        lcp = r.get("largest_contentful_paint") or 0
+        cls_lcp = "bad" if lcp > 2500 else "good"
+        crux_hist_rows += (
+            f"<tr><td>{ym}</td>"
+            f"<td class=\"{cls_lcp}\">{num(lcp)}</td><td>{pct(100 * (r.get('lcp_poor_share') or 0))}</td>"
+            f"<td>{num(r.get('experimental_time_to_first_byte'))}</td>"
+            f"<td>{num(r.get('interaction_to_next_paint'))}</td>"
+            f"<td>{num(dsk.get('largest_contentful_paint'))}</td>"
+            f"<td>{num(dsk.get('experimental_time_to_first_byte'))}</td></tr>"
+        )
 
     organico = f"""
-<div class="note">CrUX = usuarios Chrome reales. LCP móvil actual es crítico para paid y orgánico.</div>
+<div class="note">GSC live · cursos 24–25 vs 25–26 (hasta 2026-08-27). CrUX = Chrome UX reales. Posición media ↓ = mejora.</div>
 <div class="grid">
-  <div class="stat"><strong>{num(gsc2526.get("clicks"))}</strong><span>GSC clics 25–26</span></div>
-  <div class="stat"><strong>{num(gsc2526.get("impressions"))}</strong><span>GSC impresiones</span></div>
+  <div class="stat"><strong>{num(gsc2526.get("clicks"))}</strong><span>Clics GSC 25–26 ({clk_p} YoY)</span></div>
+  <div class="stat"><strong>{num(gsc2526.get("impressions"))}</strong><span>Impresiones ({delta_pct(gsc2526.get("impressions"), gsc2425.get("impressions"))} YoY)</span></div>
+  <div class="stat"><strong>{_pos(pos_cur)}</strong><span>Posición media (antes {_pos(pos_prev)})</span></div>
   <div class="stat"><strong>{num(phone.get("largest_contentful_paint"))} ms</strong><span>LCP móvil ({phone.get("ym")})</span></div>
-  <div class="stat"><strong>{pct(100 * (phone.get("lcp_poor_share") or 0))}</strong><span>% LCP pobre (móvil)</span></div>
 </div>
 <div class="card">
-  <h2>CrUX · última ventana</h2>
+  <h2>Search Console · resumen YoY</h2>
   <table>
-    <tr><th>Métrica</th><th>Móvil</th><th>Desktop</th><th>Bueno</th></tr>
-    <tr><td>LCP</td><td class="bad">{num(phone.get("largest_contentful_paint"))} ms</td><td class="bad">{num(desk.get("largest_contentful_paint"))} ms</td><td>≤2500 ms</td></tr>
+    <tr><th>Métrica</th><th>24–25</th><th>25–26</th><th>Δ</th></tr>
+    <tr><td>Clics</td><td>{num(gsc2425.get("clicks"))}</td><td>{num(gsc2526.get("clicks"))}</td><td class="good">{clk_d} ({clk_p})</td></tr>
+    <tr><td>Impresiones</td><td>{num(gsc2425.get("impressions"))}</td><td>{num(gsc2526.get("impressions"))}</td><td class="good">{impr_d}</td></tr>
+    <tr><td>CTR</td><td>{_ctr(gsc2425.get("ctr"))}</td><td>{_ctr(gsc2526.get("ctr"))}</td><td>—</td></tr>
+    <tr><td>Posición media</td><td>{_pos(pos_prev)}</td><td class="good">{_pos(pos_cur)}</td><td class="good">mejora ~{pos_improve:.0f} puestos</td></tr>
+  </table>
+  <p>El curso 25–26 <strong>duplicó clics</strong> (~{clk_p}) y mejoró posición de ~{_pos(pos_prev)} a ~{_pos(pos_cur)}. El CTR se mantiene ~1,6% — el volumen viene de más impresiones + mejor ranking, no de mejor CTR.</p>
+</div>
+<div class="card">
+  <h2>Por dispositivo</h2>
+  <table>
+    <tr><th>Device</th><th>Clics 24–25</th><th>Clics 25–26</th><th>Δ</th><th>Pos 24–25</th><th>Pos 25–26</th><th>CTR 25–26</th></tr>
+    {device_rows}
+  </table>
+  <p>Móvil: más impresiones y mejor posición (~8,5), pero <strong>CTR más bajo</strong> que desktop — coherente con LCP/TTFB pobres en phone.</p>
+</div>
+<div class="card">
+  <h2>Evolución mensual (clics y posición)</h2>
+  <table>
+    <tr><th>Mes</th><th>Clics 24–25</th><th>Clics 25–26</th><th>Δ clics</th><th>Pos 24–25</th><th>Pos 25–26</th><th>Imp. 25–26</th></tr>
+    {month_rows}
+  </table>
+  <p>Pico de clics orgánicos en sep–oct 25; caída hacia verano. Posición estable ~9–11 desde feb 26.</p>
+</div>
+<div class="card">
+  <h2>Queries · tráfico ganado (top)</h2>
+  <table><tr><th>Query</th><th>Clics 24–25</th><th>25–26</th><th>Δ</th><th>Pos ant.</th><th>Pos act.</th></tr>
+  {q_rows(gsc_d.get("query_gains"), 15)}</table>
+  <h2>Queries · tráfico perdido (top)</h2>
+  <table><tr><th>Query</th><th>Clics 24–25</th><th>25–26</th><th>Δ</th><th>Pos ant.</th><th>Pos act.</th></tr>
+  {q_rows(gsc_d.get("query_losses"), 15)}</table>
+  <p>Ganancias = marca (blue parrot*) + APTIS practice. Pérdidas = long-tail WhatsApp/frases e intensivos APTIS que cayeron de ranking o salieron del top.</p>
+</div>
+<div class="card">
+  <h2>Páginas · ganadas / perdidas</h2>
+  <h3>Más clics YoY</h3>
+  <table><tr><th>URL</th><th>24–25</th><th>25–26</th><th>Δ</th><th>Pos ant.</th><th>Pos act.</th></tr>
+  {page_rows(gsc_d.get("page_gains"), 12)}</table>
+  <h3>Menos clics YoY</h3>
+  <table><tr><th>URL</th><th>24–25</th><th>25–26</th><th>Δ</th><th>Pos ant.</th><th>Pos act.</th></tr>
+  {page_rows(gsc_d.get("page_losses"), 12)}</table>
+</div>
+<div class="card">
+  <h2>CrUX · tiempos de carga (histórico móvil)</h2>
+  <table>
+    <tr><th>Ventana</th><th>LCP móvil ms</th><th>% LCP pobre</th><th>TTFB móvil</th><th>INP</th><th>LCP desk</th><th>TTFB desk</th></tr>
+    {crux_hist_rows}
+  </table>
+  <table>
+    <tr><th>Métrica</th><th>Móvil ahora</th><th>Desktop ahora</th><th>Bueno</th></tr>
+    <tr><td>LCP</td><td class="bad">{num(phone.get("largest_contentful_paint"))} ms</td><td class="bad">{num(desk.get("largest_contentful_paint"))} ms</td><td>≤2.500 ms</td></tr>
     <tr><td>INP</td><td>{num(phone.get("interaction_to_next_paint"))} ms</td><td>{num(desk.get("interaction_to_next_paint"))} ms</td><td>≤200 ms</td></tr>
-    <tr><td>CLS</td><td>{phone.get("cumulative_layout_shift")}</td><td>{desk.get("cumulative_layout_shift")}</td><td>≤0.1</td></tr>
+    <tr><td>CLS</td><td>{phone.get("cumulative_layout_shift")}</td><td>{desk.get("cumulative_layout_shift")}</td><td>≤0,1</td></tr>
     <tr><td>TTFB</td><td class="bad">{num(phone.get("experimental_time_to_first_byte"))} ms</td><td class="bad">{num(desk.get("experimental_time_to_first_byte"))} ms</td><td>≤800 ms</td></tr>
   </table>
-  <p class="bad">LCP y TTFB altos frenan conversión. Prioridad técnica antes de escalar ppto.</p>
+  <p class="bad">LCP móvil ~8–10 s y TTFB &gt;1,5 s: Google puede limitar CTR/conversión aunque la posición mejore. El tráfico orgánico creció por ranking/brand; la conversión orgánico→pedido sigue lastrada por UX. Prioridad: TTFB+LCP home y landings APTIS antes de escalar SEO/paid a las mismas URLs.</p>
 </div>
 <div class="card">
-  <h2>Landings orgánicas con compra (GA4 25–26)</h2>
-  <table>
-    <tr><th>Landing</th><th>Sesiones</th><th>Purchases</th><th>Revenue</th><th>CR</th></tr>
+  <h2>Landings orgánicas con compra (GA4 · YoY 24–25 vs 25–26)</h2>
+  <p>Top conversores del curso actual (por purchases). Valores del curso anterior emparejados por URL (barra final normalizada).{f' · {org_new_n} nuevas en el top.' if org_new_n else ''}</p>
+  <div class="scroll"><table>
+    <tr>
+      <th>Landing</th>
+      <th>Ses. 24–25</th><th>Ses. 25–26</th>
+      <th>Purch. 24–25</th><th>Purch. 25–26</th><th>Δ purch</th>
+      <th>Rev. 24–25</th><th>Rev. 25–26</th><th>Δ rev</th>
+      <th>CR 24–25</th><th>CR 25–26</th><th>Δ CR</th>
+    </tr>
     {"".join(org_rows)}
-  </table>
+  </table></div>
   <h3>Acciones</h3>
   <ul>
-    <li>Arreglar LCP/TTFB en home y landings APTIS/Cambridge.</li>
-    <li>SEO solo en URLs que ya convierten.</li>
-    <li>Paid a las mismas URLs rápidas y congruentes.</li>
+    <li>Arreglar LCP/TTFB en home, test APTIS y landings que ganan clics GSC.</li>
+    <li>Recuperar URLs con pérdida (WhatsApp frases, intensivo APTIS) o consolidar en hubs que sí ranquean.</li>
+    <li>SEO prioritario en URLs que ya convierten en GA4.</li>
+    <li>Paid solo a URLs rápidas y alineadas con query intent.</li>
   </ul>
 </div>
 """

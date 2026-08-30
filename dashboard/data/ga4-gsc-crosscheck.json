@@ -1,70 +1,16 @@
 {
   "gsc": {
     "24-25": {
-      "clicks": 24196,
-      "impressions": 1436219,
-      "by_device": [
-        {
-          "keys": [
-            "MOBILE"
-          ],
-          "clicks": 12690,
-          "impressions": 677903,
-          "ctr": 0.018719492316747383,
-          "position": 15.12790472973272
-        },
-        {
-          "keys": [
-            "DESKTOP"
-          ],
-          "clicks": 11071,
-          "impressions": 744927,
-          "ctr": 0.01486185894725255,
-          "position": 26.98165592064726
-        },
-        {
-          "keys": [
-            "TABLET"
-          ],
-          "clicks": 435,
-          "impressions": 13389,
-          "ctr": 0.03248935693479722,
-          "position": 7.143401299574277
-        }
-      ]
+      "clicks": 23970,
+      "impressions": 1422696,
+      "ctr": 0.01684829366217379,
+      "position": 21.203277439452982
     },
     "25-26": {
-      "clicks": 47744,
-      "impressions": 2904709,
-      "by_device": [
-        {
-          "keys": [
-            "DESKTOP"
-          ],
-          "clicks": 24554,
-          "impressions": 1233190,
-          "ctr": 0.019910962625386195,
-          "position": 13.793388691118157
-        },
-        {
-          "keys": [
-            "MOBILE"
-          ],
-          "clicks": 22145,
-          "impressions": 1624552,
-          "ctr": 0.013631450393708543,
-          "position": 8.453722626299434
-        },
-        {
-          "keys": [
-            "TABLET"
-          ],
-          "clicks": 1045,
-          "impressions": 46967,
-          "ctr": 0.022249664658164244,
-          "position": 7.663423254625588
-        }
-      ]
+      "clicks": 47845,
+      "impressions": 2910844,
+      "ctr": 0.016436813515255368,
+      "position": 10.705888738798782
     },
     "top_queries_2526": [
       {

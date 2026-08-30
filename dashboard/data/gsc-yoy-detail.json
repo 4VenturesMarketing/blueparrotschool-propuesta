@@ -1,0 +1,1179 @@
+{
+  "fetchedAt": "2026-08-30T20:46:45",
+  "site": "https://blueparrotschool.com/",
+  "totals": {
+    "sy-2024-25": {
+      "clicks": 23970,
+      "impressions": 1422696,
+      "ctr": 0.01684829366217379,
+      "position": 21.203277439452982
+    },
+    "sy-2025-26": {
+      "clicks": 47845,
+      "impressions": 2910844,
+      "ctr": 0.016436813515255368,
+      "position": 10.705888738798782
+    }
+  },
+  "by_device": {
+    "sy-2024-25": [
+      {
+        "keys": [
+          "MOBILE"
+        ],
+        "clicks": 12572,
+        "impressions": 670889,
+        "ctr": 0.01873931455128941,
+        "position": 15.126463543149463
+      },
+      {
+        "keys": [
+          "DESKTOP"
+        ],
+        "clicks": 10968,
+        "impressions": 738557,
+        "ctr": 0.014850580253115196,
+        "position": 26.97551441527194
+      },
+      {
+        "keys": [
+          "TABLET"
+        ],
+        "clicks": 430,
+        "impressions": 13250,
+        "ctr": 0.03245283018867925,
+        "position": 7.146037735849057
+      }
+    ],
+    "sy-2025-26": [
+      {
+        "keys": [
+          "DESKTOP"
+        ],
+        "clicks": 24613,
+        "impressions": 1235813,
+        "ctr": 0.019916443669066437,
+        "position": 13.788330435106282
+      },
+      {
+        "keys": [
+          "MOBILE"
+        ],
+        "clicks": 22186,
+        "impressions": 1627982,
+        "ctr": 0.013627914804954845,
+        "position": 8.453901824467348
+      },
+      {
+        "keys": [
+          "TABLET"
+        ],
+        "clicks": 1046,
+        "impressions": 47049,
+        "ctr": 0.02223214095942528,
+        "position": 7.663797317690068
+      }
+    ]
+  },
+  "query_losses": [
+    {
+      "query": "frutas en frances",
+      "clicks_prev": 243,
+      "clicks_cur": 139,
+      "delta_clicks": -104,
+      "impr_prev": 5659,
+      "impr_cur": 11177,
+      "pos_prev": 4.726630146669023,
+      "pos_cur": 5.642211684709672,
+      "ctr_prev": 0.04294044884255169,
+      "ctr_cur": 0.012436253019593809
+    },
+    {
+      "query": "frases en ingles para info de whatsapp",
+      "clicks_prev": 28,
+      "clicks_cur": 0,
+      "delta_clicks": -28,
+      "impr_prev": 5293,
+      "impr_cur": 0,
+      "pos_prev": 8.318344983941055,
+      "pos_cur": null,
+      "ctr_prev": 0.005290005667863216,
+      "ctr_cur": null
+    },
+    {
+      "query": "aptis ejercicios",
+      "clicks_prev": 46,
+      "clicks_cur": 18,
+      "delta_clicks": -28,
+      "impr_prev": 181,
+      "impr_cur": 414,
+      "pos_prev": 1.8839779005524862,
+      "pos_cur": 5.103864734299517,
+      "ctr_prev": 0.2541436464088398,
+      "ctr_cur": 0.043478260869565216
+    },
+    {
+      "query": "frases en italiano",
+      "clicks_prev": 117,
+      "clicks_cur": 92,
+      "delta_clicks": -25,
+      "impr_prev": 3981,
+      "impr_cur": 9285,
+      "pos_prev": 10.753579502637528,
+      "pos_cur": 7.3835218093699515,
+      "ctr_prev": 0.0293896006028636,
+      "ctr_cur": 0.00990845449649973
+    },
+    {
+      "query": "language cert vs cambridge",
+      "clicks_prev": 41,
+      "clicks_cur": 16,
+      "delta_clicks": -25,
+      "impr_prev": 147,
+      "impr_cur": 151,
+      "pos_prev": 4.829931972789115,
+      "pos_cur": 4.483443708609272,
+      "ctr_prev": 0.2789115646258503,
+      "ctr_cur": 0.10596026490066225
+    },
+    {
+      "query": "frases para info de whatsapp en inglés",
+      "clicks_prev": 24,
+      "clicks_cur": 0,
+      "delta_clicks": -24,
+      "impr_prev": 2534,
+      "impr_cur": 0,
+      "pos_prev": 7.43646408839779,
+      "pos_cur": null,
+      "ctr_prev": 0.009471191791633781,
+      "ctr_cur": null
+    },
+    {
+      "query": "aptis b2",
+      "clicks_prev": 21,
+      "clicks_cur": 0,
+      "delta_clicks": -21,
+      "impr_prev": 2416,
+      "impr_cur": 0,
+      "pos_prev": 8.295529801324502,
+      "pos_cur": null,
+      "ctr_prev": 0.00869205298013245,
+      "ctr_cur": null
+    },
+    {
+      "query": "curso intensivo aptis b2",
+      "clicks_prev": 18,
+      "clicks_cur": 0,
+      "delta_clicks": -18,
+      "impr_prev": 148,
+      "impr_cur": 0,
+      "pos_prev": 3.5472972972972974,
+      "pos_cur": null,
+      "ctr_prev": 0.12162162162162163,
+      "ctr_cur": null
+    },
+    {
+      "query": "aptis ejercicios online",
+      "clicks_prev": 17,
+      "clicks_cur": 0,
+      "delta_clicks": -17,
+      "impr_prev": 81,
+      "impr_cur": 0,
+      "pos_prev": 2.4567901234567904,
+      "pos_cur": null,
+      "ctr_prev": 0.20987654320987653,
+      "ctr_cur": null
+    },
+    {
+      "query": "estados en ingles para whatsapp",
+      "clicks_prev": 16,
+      "clicks_cur": 0,
+      "delta_clicks": -16,
+      "impr_prev": 252,
+      "impr_cur": 0,
+      "pos_prev": 4.031746031746032,
+      "pos_cur": null,
+      "ctr_prev": 0.06349206349206349,
+      "ctr_cur": null
+    },
+    {
+      "query": "gestos italianos significado",
+      "clicks_prev": 15,
+      "clicks_cur": 0,
+      "delta_clicks": -15,
+      "impr_prev": 170,
+      "impr_cur": 0,
+      "pos_prev": 3.3117647058823527,
+      "pos_cur": null,
+      "ctr_prev": 0.08823529411764706,
+      "ctr_cur": null
+    },
+    {
+      "query": "frases en ingles para whatsapp",
+      "clicks_prev": 15,
+      "clicks_cur": 0,
+      "delta_clicks": -15,
+      "impr_prev": 2136,
+      "impr_cur": 0,
+      "pos_prev": 9.416198501872659,
+      "pos_cur": null,
+      "ctr_prev": 0.007022471910112359,
+      "ctr_cur": null
+    },
+    {
+      "query": "expresiones en ingles b2",
+      "clicks_prev": 14,
+      "clicks_cur": 0,
+      "delta_clicks": -14,
+      "impr_prev": 136,
+      "impr_cur": 0,
+      "pos_prev": 3.764705882352941,
+      "pos_cur": null,
+      "ctr_prev": 0.10294117647058823,
+      "ctr_cur": null
+    },
+    {
+      "query": "curso intensivo frances",
+      "clicks_prev": 14,
+      "clicks_cur": 0,
+      "delta_clicks": -14,
+      "impr_prev": 1405,
+      "impr_cur": 0,
+      "pos_prev": 36.56085409252669,
+      "pos_cur": null,
+      "ctr_prev": 0.0099644128113879,
+      "ctr_cur": null
+    },
+    {
+      "query": "ejercicios aptis gratis",
+      "clicks_prev": 13,
+      "clicks_cur": 0,
+      "delta_clicks": -13,
+      "impr_prev": 93,
+      "impr_cur": 0,
+      "pos_prev": 3.5806451612903225,
+      "pos_cur": null,
+      "ctr_prev": 0.13978494623655913,
+      "ctr_cur": null
+    },
+    {
+      "query": "intensivo frances b2",
+      "clicks_prev": 13,
+      "clicks_cur": 0,
+      "delta_clicks": -13,
+      "impr_prev": 77,
+      "impr_cur": 0,
+      "pos_prev": 1.935064935064935,
+      "pos_cur": null,
+      "ctr_prev": 0.16883116883116883,
+      "ctr_cur": null
+    },
+    {
+      "query": "infos para whatsapp en inglés",
+      "clicks_prev": 13,
+      "clicks_cur": 0,
+      "delta_clicks": -13,
+      "impr_prev": 3192,
+      "impr_cur": 0,
+      "pos_prev": 4.901942355889725,
+      "pos_cur": null,
+      "ctr_prev": 0.004072681704260651,
+      "ctr_cur": null
+    },
+    {
+      "query": "curso intensivo ingles b2",
+      "clicks_prev": 13,
+      "clicks_cur": 0,
+      "delta_clicks": -13,
+      "impr_prev": 873,
+      "impr_cur": 0,
+      "pos_prev": 17.63917525773196,
+      "pos_cur": null,
+      "ctr_prev": 0.014891179839633447,
+      "ctr_cur": null
+    },
+    {
+      "query": "languagecert o cambridge",
+      "clicks_prev": 13,
+      "clicks_cur": 0,
+      "delta_clicks": -13,
+      "impr_prev": 64,
+      "impr_cur": 0,
+      "pos_prev": 1.125,
+      "pos_cur": null,
+      "ctr_prev": 0.203125,
+      "ctr_cur": null
+    },
+    {
+      "query": "vocabulario de frutas en frances",
+      "clicks_prev": 13,
+      "clicks_cur": 0,
+      "delta_clicks": -13,
+      "impr_prev": 79,
+      "impr_cur": 0,
+      "pos_prev": 2.8607594936708862,
+      "pos_cur": null,
+      "ctr_prev": 0.16455696202531644,
+      "ctr_cur": null
+    },
+    {
+      "query": "ejercicios aptis",
+      "clicks_prev": 77,
+      "clicks_cur": 65,
+      "delta_clicks": -12,
+      "impr_prev": 280,
+      "impr_cur": 573,
+      "pos_prev": 1.4428571428571428,
+      "pos_cur": 4.897033158813263,
+      "ctr_prev": 0.275,
+      "ctr_cur": 0.11343804537521815
+    },
+    {
+      "query": "es dificil el b2 de ingles",
+      "clicks_prev": 20,
+      "clicks_cur": 8,
+      "delta_clicks": -12,
+      "impr_prev": 129,
+      "impr_cur": 136,
+      "pos_prev": 1.178294573643411,
+      "pos_cur": 2.0441176470588234,
+      "ctr_prev": 0.15503875968992248,
+      "ctr_cur": 0.058823529411764705
+    },
+    {
+      "query": "ejercicios aptis para practicar",
+      "clicks_prev": 12,
+      "clicks_cur": 0,
+      "delta_clicks": -12,
+      "impr_prev": 45,
+      "impr_cur": 0,
+      "pos_prev": 1.2888888888888888,
+      "pos_cur": null,
+      "ctr_prev": 0.26666666666666666,
+      "ctr_cur": null
+    },
+    {
+      "query": "practicar reading aptis",
+      "clicks_prev": 11,
+      "clicks_cur": 0,
+      "delta_clicks": -11,
+      "impr_prev": 65,
+      "impr_cur": 0,
+      "pos_prev": 4.476923076923077,
+      "pos_cur": null,
+      "ctr_prev": 0.16923076923076924,
+      "ctr_cur": null
+    },
+    {
+      "query": "ejercicios reading aptis",
+      "clicks_prev": 11,
+      "clicks_cur": 0,
+      "delta_clicks": -11,
+      "impr_prev": 59,
+      "impr_cur": 0,
+      "pos_prev": 5.322033898305085,
+      "pos_cur": null,
+      "ctr_prev": 0.1864406779661017,
+      "ctr_cur": null
+    }
+  ],
+  "query_gains": [
+    {
+      "query": "blue parrot school",
+      "clicks_prev": 1352,
+      "clicks_cur": 2288,
+      "delta_clicks": 936,
+      "impr_prev": 3091,
+      "impr_cur": 5603,
+      "pos_prev": 1.9608540925266904,
+      "pos_cur": 1.6241299303944317,
+      "ctr_prev": 0.437398900032352,
+      "ctr_cur": 0.40835266821345706
+    },
+    {
+      "query": "blue parrot",
+      "clicks_prev": 402,
+      "clicks_cur": 871,
+      "delta_clicks": 469,
+      "impr_prev": 2671,
+      "impr_cur": 5957,
+      "pos_prev": 12.730438038187945,
+      "pos_cur": 4.409098539533322,
+      "ctr_prev": 0.1505054286783976,
+      "ctr_cur": 0.14621453751888536
+    },
+    {
+      "query": "blueparrot",
+      "clicks_prev": 202,
+      "clicks_cur": 444,
+      "delta_clicks": 242,
+      "impr_prev": 714,
+      "impr_cur": 1535,
+      "pos_prev": 4.852941176470589,
+      "pos_cur": 2.779153094462541,
+      "ctr_prev": 0.28291316526610644,
+      "ctr_cur": 0.28925081433224753
+    },
+    {
+      "query": "listening aptis",
+      "clicks_prev": 0,
+      "clicks_cur": 187,
+      "delta_clicks": 187,
+      "impr_prev": 0,
+      "impr_cur": 3220,
+      "pos_prev": null,
+      "pos_cur": 7.2959627329192545,
+      "ctr_prev": null,
+      "ctr_cur": 0.058074534161490686
+    },
+    {
+      "query": "blueparrotschool",
+      "clicks_prev": 39,
+      "clicks_cur": 204,
+      "delta_clicks": 165,
+      "impr_prev": 55,
+      "impr_cur": 421,
+      "pos_prev": 1,
+      "pos_cur": 1.484560570071259,
+      "ctr_prev": 0.7090909090909091,
+      "ctr_cur": 0.4845605700712589
+    },
+    {
+      "query": "aptis simulator",
+      "clicks_prev": 36,
+      "clicks_cur": 187,
+      "delta_clicks": 151,
+      "impr_prev": 2496,
+      "impr_cur": 6779,
+      "pos_prev": 8.431490384615385,
+      "pos_cur": 5.844519840684467,
+      "ctr_prev": 0.014423076923076924,
+      "ctr_cur": 0.027585189555981708
+    },
+    {
+      "query": "blue parrot malaga",
+      "clicks_prev": 74,
+      "clicks_cur": 221,
+      "delta_clicks": 147,
+      "impr_prev": 243,
+      "impr_cur": 1049,
+      "pos_prev": 2.3209876543209877,
+      "pos_cur": 1.854146806482364,
+      "ctr_prev": 0.3045267489711934,
+      "ctr_cur": 0.21067683508102955
+    },
+    {
+      "query": "aptis prueba de nivel",
+      "clicks_prev": 35,
+      "clicks_cur": 158,
+      "delta_clicks": 123,
+      "impr_prev": 241,
+      "impr_cur": 921,
+      "pos_prev": 2.0912863070539416,
+      "pos_cur": 2.3713355048859937,
+      "ctr_prev": 0.14522821576763487,
+      "ctr_cur": 0.17155266015200868
+    },
+    {
+      "query": "examenes aptis practicar",
+      "clicks_prev": 34,
+      "clicks_cur": 135,
+      "delta_clicks": 101,
+      "impr_prev": 864,
+      "impr_cur": 3092,
+      "pos_prev": 8.822916666666668,
+      "pos_cur": 7.01261319534282,
+      "ctr_prev": 0.03935185185185185,
+      "ctr_cur": 0.043661060802069857
+    },
+    {
+      "query": "ejercicios c1 ingles",
+      "clicks_prev": 22,
+      "clicks_cur": 115,
+      "delta_clicks": 93,
+      "impr_prev": 678,
+      "impr_cur": 1896,
+      "pos_prev": 7.290560471976401,
+      "pos_cur": 6.822257383966245,
+      "ctr_prev": 0.032448377581120944,
+      "ctr_cur": 0.06065400843881857
+    },
+    {
+      "query": "blue parrot school madrid",
+      "clicks_prev": 437,
+      "clicks_cur": 529,
+      "delta_clicks": 92,
+      "impr_prev": 1377,
+      "impr_cur": 1971,
+      "pos_prev": 1.933914306463326,
+      "pos_cur": 1.9700659563673262,
+      "ctr_prev": 0.31735657225853303,
+      "ctr_cur": 0.26839167935058345
+    },
+    {
+      "query": "aptis examen practicar",
+      "clicks_prev": 21,
+      "clicks_cur": 101,
+      "delta_clicks": 80,
+      "impr_prev": 742,
+      "impr_cur": 2529,
+      "pos_prev": 8.766846361185983,
+      "pos_cur": 6.312771846579675,
+      "ctr_prev": 0.02830188679245283,
+      "ctr_cur": 0.039936733886911824
+    },
+    {
+      "query": "listening aptis con soluciones",
+      "clicks_prev": 0,
+      "clicks_cur": 78,
+      "delta_clicks": 78,
+      "impr_prev": 0,
+      "impr_cur": 460,
+      "pos_prev": null,
+      "pos_cur": 4.476086956521739,
+      "ctr_prev": null,
+      "ctr_cur": 0.16956521739130434
+    },
+    {
+      "query": "aptis test simulator",
+      "clicks_prev": 0,
+      "clicks_cur": 74,
+      "delta_clicks": 74,
+      "impr_prev": 0,
+      "impr_cur": 1121,
+      "pos_prev": null,
+      "pos_cur": 6.003568242640499,
+      "ctr_prev": null,
+      "ctr_cur": 0.06601248884924175
+    },
+    {
+      "query": "blue parrot school malaga",
+      "clicks_prev": 75,
+      "clicks_cur": 147,
+      "delta_clicks": 72,
+      "impr_prev": 474,
+      "impr_cur": 881,
+      "pos_prev": 1.8586497890295357,
+      "pos_cur": 1.8115777525539158,
+      "ctr_prev": 0.15822784810126583,
+      "ctr_cur": 0.16685584562996594
+    },
+    {
+      "query": "examen aptis online",
+      "clicks_prev": 31,
+      "clicks_cur": 102,
+      "delta_clicks": 71,
+      "impr_prev": 917,
+      "impr_cur": 2240,
+      "pos_prev": 5.6401308615049075,
+      "pos_cur": 4.535714285714286,
+      "ctr_prev": 0.03380588876772083,
+      "ctr_cur": 0.045535714285714284
+    },
+    {
+      "query": "prueba de nivel aptis",
+      "clicks_prev": 37,
+      "clicks_cur": 106,
+      "delta_clicks": 69,
+      "impr_prev": 147,
+      "impr_cur": 460,
+      "pos_prev": 1.9727891156462585,
+      "pos_cur": 2.247826086956522,
+      "ctr_prev": 0.25170068027210885,
+      "ctr_cur": 0.23043478260869565
+    },
+    {
+      "query": "informal email b2",
+      "clicks_prev": 17,
+      "clicks_cur": 82,
+      "delta_clicks": 65,
+      "impr_prev": 1445,
+      "impr_cur": 3418,
+      "pos_prev": 7.049134948096886,
+      "pos_cur": 5.947630193095377,
+      "ctr_prev": 0.011764705882352941,
+      "ctr_cur": 0.02399063779988297
+    },
+    {
+      "query": "blue parrot school málaga - escuela de idiomas",
+      "clicks_prev": 23,
+      "clicks_cur": 84,
+      "delta_clicks": 61,
+      "impr_prev": 368,
+      "impr_cur": 731,
+      "pos_prev": 2.2010869565217392,
+      "pos_cur": 2.119015047879617,
+      "ctr_prev": 0.0625,
+      "ctr_cur": 0.11491108071135431
+    },
+    {
+      "query": "blue parrot madrid",
+      "clicks_prev": 50,
+      "clicks_cur": 110,
+      "delta_clicks": 60,
+      "impr_prev": 131,
+      "impr_cur": 385,
+      "pos_prev": 2.0534351145038165,
+      "pos_cur": 1.7506493506493506,
+      "ctr_prev": 0.3816793893129771,
+      "ctr_cur": 0.2857142857142857
+    },
+    {
+      "query": "ejercicios ingles c1",
+      "clicks_prev": 12,
+      "clicks_cur": 69,
+      "delta_clicks": 57,
+      "impr_prev": 355,
+      "impr_cur": 835,
+      "pos_prev": 6.909859154929578,
+      "pos_cur": 5.652694610778443,
+      "ctr_prev": 0.03380281690140845,
+      "ctr_cur": 0.08263473053892216
+    },
+    {
+      "query": "listening b1 aptis",
+      "clicks_prev": 6,
+      "clicks_cur": 62,
+      "delta_clicks": 56,
+      "impr_prev": 95,
+      "impr_cur": 538,
+      "pos_prev": 7.978947368421053,
+      "pos_cur": 4.9684014869888475,
+      "ctr_prev": 0.06315789473684211,
+      "ctr_cur": 0.11524163568773234
+    },
+    {
+      "query": "examen aptis practicar",
+      "clicks_prev": 12,
+      "clicks_cur": 68,
+      "delta_clicks": 56,
+      "impr_prev": 327,
+      "impr_cur": 1372,
+      "pos_prev": 8.198776758409785,
+      "pos_cur": 6.8615160349854225,
+      "ctr_prev": 0.03669724770642202,
+      "ctr_cur": 0.04956268221574344
+    },
+    {
+      "query": "listening aptis general con respuestas",
+      "clicks_prev": 0,
+      "clicks_cur": 55,
+      "delta_clicks": 55,
+      "impr_prev": 0,
+      "impr_cur": 407,
+      "pos_prev": null,
+      "pos_cur": 5.621621621621622,
+      "ctr_prev": null,
+      "ctr_cur": 0.13513513513513514
+    },
+    {
+      "query": "reading aptis",
+      "clicks_prev": 41,
+      "clicks_cur": 95,
+      "delta_clicks": 54,
+      "impr_prev": 323,
+      "impr_cur": 1291,
+      "pos_prev": 6.442724458204334,
+      "pos_cur": 6.994577846630519,
+      "ctr_prev": 0.12693498452012383,
+      "ctr_cur": 0.07358636715724244
+    }
+  ],
+  "page_losses": [
+    {
+      "page": "https://blueparrotschool.com/frases-estado-whatsapp-ingles/",
+      "clicks_prev": 736,
+      "clicks_cur": 424,
+      "delta": -312,
+      "pos_prev": 15.050103061431372,
+      "pos_cur": 6.463644535988898
+    },
+    {
+      "page": "https://blueparrotschool.com/aptis-ahora-es-aptis-esol/",
+      "clicks_prev": 56,
+      "clicks_cur": 0,
+      "delta": -56,
+      "pos_prev": 15.901685002088845,
+      "pos_cur": null
+    },
+    {
+      "page": "https://blueparrotschool.com/clases-online-presencial/clases-ingles/intensivo/aptis/",
+      "clicks_prev": 534,
+      "clicks_cur": 481,
+      "delta": -53,
+      "pos_prev": 11.457894285959052,
+      "pos_cur": 14.379704396278981
+    },
+    {
+      "page": "https://blueparrotschool.com/guia-basica-de-gestos-italianos/",
+      "clicks_prev": 558,
+      "clicks_cur": 522,
+      "delta": -36,
+      "pos_prev": 7.784731366868581,
+      "pos_cur": 5.427574663356654
+    },
+    {
+      "page": "https://blueparrotschool.com/prueba-nivel-ingles/",
+      "clicks_prev": 34,
+      "clicks_cur": 0,
+      "delta": -34,
+      "pos_prev": 45.870769230769234,
+      "pos_cur": null
+    },
+    {
+      "page": "https://blueparrotschool.com/examen-goethe-institut/",
+      "clicks_prev": 30,
+      "clicks_cur": 0,
+      "delta": -30,
+      "pos_prev": 19.294216496289035,
+      "pos_cur": null
+    },
+    {
+      "page": "https://blueparrotschool.com/robotica-y-programacion/",
+      "clicks_prev": 27,
+      "clicks_cur": 0,
+      "delta": -27,
+      "pos_prev": 44.11449925261584,
+      "pos_cur": null
+    },
+    {
+      "page": "https://blueparrotschool.com/mail-formal-ingles/",
+      "clicks_prev": 25,
+      "clicks_cur": 0,
+      "delta": -25,
+      "pos_prev": 43.708859801770444,
+      "pos_cur": null
+    },
+    {
+      "page": "https://blueparrotschool.com/aptis-advanced-malaga/",
+      "clicks_prev": 23,
+      "clicks_cur": 0,
+      "delta": -23,
+      "pos_prev": 15.711719802424787,
+      "pos_cur": null
+    },
+    {
+      "page": "https://blueparrotschool.com/ingles-profesional-por-que-es-importante/",
+      "clicks_prev": 22,
+      "clicks_cur": 0,
+      "delta": -22,
+      "pos_prev": 21.93841090738129,
+      "pos_cur": null
+    },
+    {
+      "page": "https://blueparrotschool.com/clases-online-presencial/clases-ingles/intensivo/cambridge/",
+      "clicks_prev": 22,
+      "clicks_cur": 0,
+      "delta": -22,
+      "pos_prev": 31.019319390287134,
+      "pos_cur": null
+    },
+    {
+      "page": "https://blueparrotschool.com/la-casa-de-papel-idiomas-madrid/",
+      "clicks_prev": 21,
+      "clicks_cur": 0,
+      "delta": -21,
+      "pos_prev": 24.709373097991477,
+      "pos_cur": null
+    },
+    {
+      "page": "https://blueparrotschool.com/mejores-refranes-ingles/",
+      "clicks_prev": 21,
+      "clicks_cur": 0,
+      "delta": -21,
+      "pos_prev": 26.92349514563107,
+      "pos_cur": null
+    },
+    {
+      "page": "https://blueparrotschool.com/product/reserva-plaza-madrid/",
+      "clicks_prev": 20,
+      "clicks_cur": 0,
+      "delta": -20,
+      "pos_prev": 10.445425867507886,
+      "pos_cur": null
+    },
+    {
+      "page": "https://blueparrotschool.com/certificados-ingles-oposiciones/",
+      "clicks_prev": 412,
+      "clicks_cur": 392,
+      "delta": -20,
+      "pos_prev": 12.41917441656431,
+      "pos_cur": 8.746020844422315
+    },
+    {
+      "page": "https://blueparrotschool.com/frutas-frances-ninos/",
+      "clicks_prev": 629,
+      "clicks_cur": 609,
+      "delta": -20,
+      "pos_prev": 13.373670746388443,
+      "pos_cur": 5.9982830645270315
+    },
+    {
+      "page": "https://blueparrotschool.com/sacar-c-aptis-general/",
+      "clicks_prev": 243,
+      "clicks_cur": 225,
+      "delta": -18,
+      "pos_prev": 12.242167412627369,
+      "pos_cur": 9.213257142857143
+    },
+    {
+      "page": "https://blueparrotschool.com/vocabulario-chino-alimentos/",
+      "clicks_prev": 101,
+      "clicks_cur": 90,
+      "delta": -11,
+      "pos_prev": 10.540774719673802,
+      "pos_cur": 7.471089212295243
+    },
+    {
+      "page": "https://blueparrotschool.com/participa-y-gana-un-viaje-por-europa/",
+      "clicks_prev": 73,
+      "clicks_cur": 63,
+      "delta": -10,
+      "pos_prev": 24.527367920038078,
+      "pos_cur": 11.994883456509381
+    },
+    {
+      "page": "https://blueparrotschool.com/preguntas-respuestas-entrevista-trabajo-ingles/",
+      "clicks_prev": 141,
+      "clicks_cur": 131,
+      "delta": -10,
+      "pos_prev": 29.898361134075767,
+      "pos_cur": 15.551341244705613
+    }
+  ],
+  "page_gains": [
+    {
+      "page": "https://blueparrotschool.com/test-aptis-online-conoce-tu-nivel/",
+      "clicks_prev": 1136,
+      "clicks_cur": 3843,
+      "delta": 2707,
+      "pos_prev": 22.170105225821708,
+      "pos_cur": 17.559241789265112
+    },
+    {
+      "page": "https://blueparrotschool.com/",
+      "clicks_prev": 2675,
+      "clicks_cur": 5341,
+      "delta": 2666,
+      "pos_prev": 38.65127366207058,
+      "pos_cur": 15.142411451642504
+    },
+    {
+      "page": "https://blueparrotschool.com/practicar-gramatica-aptis-online/",
+      "clicks_prev": 1190,
+      "clicks_cur": 2836,
+      "delta": 1646,
+      "pos_prev": 14.211687306501547,
+      "pos_cur": 10.284431332566866
+    },
+    {
+      "page": "https://blueparrotschool.com/ejercicio-listening-aptis/",
+      "clicks_prev": 200,
+      "clicks_cur": 1659,
+      "delta": 1459,
+      "pos_prev": 15.830026207412955,
+      "pos_cur": 7.6230533072843984
+    },
+    {
+      "page": "https://blueparrotschool.com/vocabulario-ingles-c1/",
+      "clicks_prev": 343,
+      "clicks_cur": 1622,
+      "delta": 1279,
+      "pos_prev": 13.312372708757637,
+      "pos_cur": 8.952479408873675
+    },
+    {
+      "page": "https://blueparrotschool.com/ejemplos-email-informal-b2/",
+      "clicks_prev": 1494,
+      "clicks_cur": 2529,
+      "delta": 1035,
+      "pos_prev": 16.726919979500696,
+      "pos_cur": 8.935469775663623
+    },
+    {
+      "page": "https://blueparrotschool.com/frases-cotidianas-italiano/",
+      "clicks_prev": 791,
+      "clicks_cur": 1773,
+      "delta": 982,
+      "pos_prev": 10.602997612143954,
+      "pos_cur": 6.825490226401088
+    },
+    {
+      "page": "https://blueparrotschool.com/product/cambridge-advanced-c1-intensivo-online-o-presencial-36h/",
+      "clicks_prev": 434,
+      "clicks_cur": 1135,
+      "delta": 701,
+      "pos_prev": 21.36422624877571,
+      "pos_cur": 12.516072652501714
+    },
+    {
+      "page": "https://blueparrotschool.com/leyenda-ano-nuevo-chino/",
+      "clicks_prev": 135,
+      "clicks_cur": 830,
+      "delta": 695,
+      "pos_prev": 23.62515545263519,
+      "pos_cur": 8.612026070502488
+    },
+    {
+      "page": "https://blueparrotschool.com/centro-malaga-teatinos-escuela-blue-parrot-school/",
+      "clicks_prev": 703,
+      "clicks_cur": 1377,
+      "delta": 674,
+      "pos_prev": 17.105604508655006,
+      "pos_cur": 7.727295918367347
+    },
+    {
+      "page": "https://blueparrotschool.com/practicar-reading-aptis/",
+      "clicks_prev": 315,
+      "clicks_cur": 874,
+      "delta": 559,
+      "pos_prev": 14.037783375314861,
+      "pos_cur": 8.290005402485143
+    },
+    {
+      "page": "https://blueparrotschool.com/preparar-aptis-advanced/",
+      "clicks_prev": 152,
+      "clicks_cur": 624,
+      "delta": 472,
+      "pos_prev": 15.275591694496878,
+      "pos_cur": 7.332566076672752
+    },
+    {
+      "page": "https://blueparrotschool.com/product/aptis-advanced-intensivo-28h/",
+      "clicks_prev": 161,
+      "clicks_cur": 631,
+      "delta": 470,
+      "pos_prev": 13.718621320725942,
+      "pos_cur": 12.53272741768317
+    },
+    {
+      "page": "https://blueparrotschool.com/product/aptis-general-b1-b2-c1-28h/",
+      "clicks_prev": 522,
+      "clicks_cur": 927,
+      "delta": 405,
+      "pos_prev": 12.256763301736664,
+      "pos_cur": 10.703235865385885
+    },
+    {
+      "page": "https://blueparrotschool.com/frases-traducir-ingles-b2/",
+      "clicks_prev": 275,
+      "clicks_cur": 668,
+      "delta": 393,
+      "pos_prev": 22.258545680546924,
+      "pos_cur": 10.31891202719932
+    },
+    {
+      "page": "https://blueparrotschool.com/product/aleman-a1-a2-intensivo-28h/",
+      "clicks_prev": 192,
+      "clicks_cur": 510,
+      "delta": 318,
+      "pos_prev": 33.92855667974396,
+      "pos_cur": 16.250566457184387
+    },
+    {
+      "page": "https://blueparrotschool.com/product/frances-delf-b1-intensivo-online-o-presencial-36h-copia/",
+      "clicks_prev": 195,
+      "clicks_cur": 502,
+      "delta": 307,
+      "pos_prev": 14.388765939508906,
+      "pos_cur": 7.040460282108389
+    },
+    {
+      "page": "https://blueparrotschool.com/ejercicio-reading-ingles-b2-c1-halloween/",
+      "clicks_prev": 29,
+      "clicks_cur": 307,
+      "delta": 278,
+      "pos_prev": 25.960635881907645,
+      "pos_cur": 8.185041072200605
+    },
+    {
+      "page": "https://blueparrotschool.com/frases-basicas-aleman/",
+      "clicks_prev": 325,
+      "clicks_cur": 590,
+      "delta": 265,
+      "pos_prev": 11.003942181340342,
+      "pos_cur": 6.651867657266254
+    },
+    {
+      "page": "https://blueparrotschool.com/centro-madrid-retiro-escuela-blue-parrot-school/",
+      "clicks_prev": 102,
+      "clicks_cur": 364,
+      "delta": 262,
+      "pos_prev": 10.131312529776084,
+      "pos_cur": 5.774153221080596
+    }
+  ],
+  "monthly_2526": [
+    {
+      "month": "2025-09",
+      "clicks": 6006,
+      "impressions": 286203,
+      "ctr": 0.02098510497793524,
+      "position": 14.564630699189037
+    },
+    {
+      "month": "2025-10",
+      "clicks": 5686,
+      "impressions": 266492,
+      "ctr": 0.021336475391381355,
+      "position": 10.452655239181665
+    },
+    {
+      "month": "2025-11",
+      "clicks": 4538,
+      "impressions": 255757,
+      "ctr": 0.017743404872593908,
+      "position": 10.437634160550836
+    },
+    {
+      "month": "2025-12",
+      "clicks": 3297,
+      "impressions": 235805,
+      "ctr": 0.01398189181739149,
+      "position": 12.597167150823774
+    },
+    {
+      "month": "2026-01",
+      "clicks": 4543,
+      "impressions": 314312,
+      "ctr": 0.014453791137468502,
+      "position": 11.597043701799485
+    },
+    {
+      "month": "2026-02",
+      "clicks": 4558,
+      "impressions": 353030,
+      "ctr": 0.012911084043848964,
+      "position": 9.979769424694785
+    },
+    {
+      "month": "2026-03",
+      "clicks": 3851,
+      "impressions": 263932,
+      "ctr": 0.014590879468954125,
+      "position": 8.56020869011715
+    },
+    {
+      "month": "2026-04",
+      "clicks": 3168,
+      "impressions": 198650,
+      "ctr": 0.01594764661464888,
+      "position": 9.657160835640575
+    },
+    {
+      "month": "2026-05",
+      "clicks": 3359,
+      "impressions": 198657,
+      "ctr": 0.016908540851819972,
+      "position": 10.791842220510729
+    },
+    {
+      "month": "2026-06",
+      "clicks": 3613,
+      "impressions": 214587,
+      "ctr": 0.016836993853308915,
+      "position": 9.364672603652597
+    },
+    {
+      "month": "2026-07",
+      "clicks": 3042,
+      "impressions": 181567,
+      "ctr": 0.016754145852495222,
+      "position": 9.335589617055962
+    },
+    {
+      "month": "2026-08",
+      "clicks": 2184,
+      "impressions": 141852,
+      "ctr": 0.015396328567803062,
+      "position": 9.691833742210191
+    }
+  ],
+  "monthly_2425": [
+    {
+      "month": "2024-09",
+      "clicks": 0,
+      "impressions": 0,
+      "ctr": null,
+      "position": null
+    },
+    {
+      "month": "2024-10",
+      "clicks": 0,
+      "impressions": 0,
+      "ctr": null,
+      "position": null
+    },
+    {
+      "month": "2024-11",
+      "clicks": 0,
+      "impressions": 0,
+      "ctr": null,
+      "position": null
+    },
+    {
+      "month": "2024-12",
+      "clicks": 0,
+      "impressions": 0,
+      "ctr": null,
+      "position": null
+    },
+    {
+      "month": "2025-01",
+      "clicks": 0,
+      "impressions": 0,
+      "ctr": null,
+      "position": null
+    },
+    {
+      "month": "2025-02",
+      "clicks": 0,
+      "impressions": 0,
+      "ctr": null,
+      "position": null
+    },
+    {
+      "month": "2025-03",
+      "clicks": 0,
+      "impressions": 0,
+      "ctr": null,
+      "position": null
+    },
+    {
+      "month": "2025-04",
+      "clicks": 2180,
+      "impressions": 121302,
+      "ctr": 0.017971674003726238,
+      "position": 20.34963149824405
+    },
+    {
+      "month": "2025-05",
+      "clicks": 6399,
+      "impressions": 346246,
+      "ctr": 0.018481079925833078,
+      "position": 19.296465518735236
+    },
+    {
+      "month": "2025-06",
+      "clicks": 6012,
+      "impressions": 350425,
+      "ctr": 0.0171563101947635,
+      "position": 20.65695084540201
+    },
+    {
+      "month": "2025-07",
+      "clicks": 5111,
+      "impressions": 335307,
+      "ctr": 0.01524274769092205,
+      "position": 23.46983510633539
+    },
+    {
+      "month": "2025-08",
+      "clicks": 4268,
+      "impressions": 269416,
+      "ctr": 0.015841672357989132,
+      "position": 21.927914451999882
+    }
+  ],
+  "meta_note": "see build script"
+}
