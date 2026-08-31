@@ -305,6 +305,45 @@ def main():
 
     org25 = organic.get("25-26") or []
     org24 = organic.get("24-25") or []
+    org_tot24 = {
+        "sessions": sum((r.get("sessions") or 0) for r in org24),
+        "purchases": sum((r.get("purchases") or 0) for r in org24),
+        "revenue": sum((r.get("revenue") or 0) for r in org24),
+        "n": len(org24),
+    }
+    org_tot25 = {
+        "sessions": sum((r.get("sessions") or 0) for r in org25),
+        "purchases": sum((r.get("purchases") or 0) for r in org25),
+        "revenue": sum((r.get("revenue") or 0) for r in org25),
+        "n": len(org25),
+    }
+    org_purch_pct = None
+    if org_tot24["purchases"]:
+        org_purch_pct = 100.0 * (org_tot25["purchases"] - org_tot24["purchases"]) / org_tot24["purchases"]
+    org_sess_pct = None
+    if org_tot24["sessions"]:
+        org_sess_pct = 100.0 * (org_tot25["sessions"] - org_tot24["sessions"]) / org_tot24["sessions"]
+    wc_org24 = next(
+        (c for c in (prop["periods"]["sy-2024-25"].get("channels") or []) if c.get("canal") == "Google Orgánico"),
+        {},
+    )
+    wc_org25 = next(
+        (c for c in (prop["periods"]["sy-2025-26"].get("channels") or []) if c.get("canal") == "Google Orgánico"),
+        {},
+    )
+    wc_org_orders_pct = None
+    if wc_org24.get("orders"):
+        wc_org_orders_pct = 100.0 * ((wc_org25.get("orders") or 0) - wc_org24["orders"]) / wc_org24["orders"]
+    wc_org_rev_pct = None
+    if wc_org24.get("rev"):
+        wc_org_rev_pct = 100.0 * ((wc_org25.get("rev") or 0) - wc_org24["rev"]) / wc_org24["rev"]
+
+    def _yoy_lab(pct_v):
+        if pct_v is None:
+            return "—"
+        sign = "+" if pct_v >= 0 else ""
+        return f"{sign}{pct_v:.1f}%".replace(".", ",")
+
     prev_by = {}
     for r in org24:
         key = _norm_landing(r.get("landingPage") or "")
@@ -314,6 +353,8 @@ def main():
     top_org = sorted(org25, key=lambda x: -(x.get("purchases") or 0))[:12]
     org_rows = []
     org_new_n = 0
+    org_top_up = org_top_down = org_top_flat = 0
+    top_p24 = top_p25 = 0.0
     for r in top_org:
         path = r.get("landingPage") or ""
         key = _norm_landing(path)
@@ -329,20 +370,32 @@ def main():
         rev25 = r.get("revenue")
         cr24 = _cr(s24, p24) if prev else None
         cr25 = _cr(s25, p25)
+        top_p25 += p25 or 0
         # Deltas vs prior course (None if landing was new)
         if prev:
+            top_p24 += p24 or 0
             dp = (p25 or 0) - (p24 or 0)
             drev = (rev25 or 0) - (rev24 or 0)
             dcr = (cr25 - cr24) if cr25 is not None and cr24 is not None else None
             dp_lab = ("+" + num(dp)) if dp >= 0 else num(dp)
-            dp_cls = "good" if dp >= 0 else "bad"
-            drev_lab = ("+" + eur(drev, 0)) if drev >= 0 else eur(drev, 0)
-            drev_cls = "good" if drev >= 0 else "bad"
+            dp_cls = "good" if dp > 0 else ("bad" if dp < 0 else "")
+            if dp > 0:
+                org_top_up += 1
+            elif dp < 0:
+                org_top_down += 1
+            else:
+                org_top_flat += 1
+            # Revenue 24–25 is 0 in this GA4 export → Δ rev is not a real YoY gain
+            if (rev24 or 0) == 0:
+                drev_lab, drev_cls = "n/c", ""
+            else:
+                drev_lab = ("+" + eur(drev, 0)) if drev >= 0 else eur(drev, 0)
+                drev_cls = "good" if drev >= 0 else "bad"
             if dcr is None:
                 dcr_lab, dcr_cls = "—", ""
             else:
                 dcr_lab = f"{'+' if dcr >= 0 else ''}{dcr:.1f} pp".replace(".", ",")
-                dcr_cls = "good" if dcr >= 0 else "bad"
+                dcr_cls = "good" if dcr > 0 else ("bad" if dcr < 0 else "")
         else:
             dp_lab = drev_lab = dcr_lab = "nueva"
             dp_cls = drev_cls = dcr_cls = ""
@@ -357,6 +410,29 @@ def main():
             f"<td>{pct(cr24) if cr24 is not None else '—'}</td><td>{pct(cr25) if cr25 is not None else '—'}</td>"
             f"<td class=\"{dcr_cls}\">{dcr_lab}</td></tr>"
         )
+    top_purch_pct = None
+    if top_p24:
+        top_purch_pct = 100.0 * (top_p25 - top_p24) / top_p24
+    org_purch_cls = "bad" if (org_purch_pct or 0) < 0 else ("good" if (org_purch_pct or 0) > 0 else "")
+    wc_org_cls = "bad" if (wc_org_orders_pct or 0) < 0 else ("good" if (wc_org_orders_pct or 0) > 0 else "")
+    org_tot_blurb = (
+        f"<p class=\"{org_purch_cls}\"><strong>Total GA4 (todas las landings del export, n={org_tot24['n']}/{org_tot25['n']}):</strong> "
+        f"purchases {num(org_tot24['purchases'])} → {num(org_tot25['purchases'])} "
+        f"({_yoy_lab(org_purch_pct)} YoY) · sesiones {num(org_tot24['sessions'])} → {num(org_tot25['sessions'])} "
+        f"({_yoy_lab(org_sess_pct)} YoY). "
+        f"No hay subida neta de conversiones orgánicas en GA4.</p>"
+        f"<p class=\"{wc_org_cls}\"><strong>WC «Google Orgánico»</strong> (pedidos atribuidos): "
+        f"{num(wc_org24.get('orders'))} → {num(wc_org25.get('orders'))} "
+        f"({_yoy_lab(wc_org_orders_pct)} YoY) · "
+        f"{eur(wc_org24.get('rev'), 0)} → {eur(wc_org25.get('rev'), 0)} "
+        f"({_yoy_lab(wc_org_rev_pct)} YoY). Coherente con la caída &gt;30% de pedidos orgánicos.</p>"
+        f"<p>La tabla siguiente es un <strong>top-12 por purchases del curso actual</strong> "
+        f"(sesgo de selección: prioriza URLs que aún convierten ahora y puede ocultar la caída global). "
+        f"En ese top: {org_top_up} suben · {org_top_down} bajan · {org_top_flat} iguales · "
+        f"{org_new_n} nuevas; suma purchases top-12 {num(top_p24)} → {num(top_p25)} "
+        f"({_yoy_lab(top_purch_pct)}). Home, APTIS General y carrito bajan. "
+        f"Revenue 24–25 = 0 en el export → columna Δ rev = n/c (no es ganancia YoY).</p>"
+    )
     phone_series = _crux_by_ym(crux.get("phone"))
     desk_series = _crux_by_ym(crux.get("desktop"))
     phone = phone_series[-1] if phone_series else {}
@@ -418,17 +494,28 @@ def main():
         ("07", "Jul"),
         ("08", "Ago"),
     ]
+    def _gsc_cell(r, key):
+        """Show em dash when GSC has no rows for that month (not the same as 0 traffic)."""
+        if not r or ((r.get("impressions") or 0) == 0 and (r.get("clicks") or 0) == 0):
+            return "—"
+        return num(r.get(key)) if key != "position" else _pos(r.get("position"))
+
     month_rows = ""
     for mm, lab in month_labels:
         a, b = m24.get(mm, {}), m25.get(mm, {})
-        dclk = (b.get("clicks") or 0) - (a.get("clicks") or 0)
-        cls = "good" if dclk >= 0 else "bad"
-        dlab = ("+" + num(dclk)) if dclk >= 0 else num(dclk)
+        a_empty = not a or ((a.get("impressions") or 0) == 0 and (a.get("clicks") or 0) == 0)
+        b_empty = not b or ((b.get("impressions") or 0) == 0 and (b.get("clicks") or 0) == 0)
+        if a_empty or b_empty:
+            dlab, cls = "—", ""
+        else:
+            dclk = (b.get("clicks") or 0) - (a.get("clicks") or 0)
+            cls = "good" if dclk >= 0 else "bad"
+            dlab = ("+" + num(dclk)) if dclk >= 0 else num(dclk)
         month_rows += (
-            f"<tr><td>{lab}</td><td>{num(a.get('clicks'))}</td><td>{num(b.get('clicks'))}</td>"
+            f"<tr><td>{lab}</td><td>{_gsc_cell(a, 'clicks')}</td><td>{_gsc_cell(b, 'clicks')}</td>"
             f"<td class=\"{cls}\">{dlab}</td>"
-            f"<td>{_pos(a.get('position'))}</td><td>{_pos(b.get('position'))}</td>"
-            f"<td>{num(b.get('impressions'))}</td></tr>"
+            f"<td>{_gsc_cell(a, 'position')}</td><td>{_gsc_cell(b, 'position')}</td>"
+            f"<td>{_gsc_cell(b, 'impressions')}</td></tr>"
         )
 
     def q_rows(items, n=15):
@@ -492,7 +579,7 @@ def main():
     <tr><td>CTR</td><td>{_ctr(gsc2425.get("ctr"))}</td><td>{_ctr(gsc2526.get("ctr"))}</td><td>—</td></tr>
     <tr><td>Posición media</td><td>{_pos(pos_prev)}</td><td class="good">{_pos(pos_cur)}</td><td class="good">mejora ~{pos_improve:.0f} puestos</td></tr>
   </table>
-  <p>El curso 25–26 <strong>duplicó clics</strong> (~{clk_p}) y mejoró posición de ~{_pos(pos_prev)} a ~{_pos(pos_cur)}. El CTR se mantiene ~1,6% — el volumen viene de más impresiones + mejor ranking, no de mejor CTR.</p>
+  <p>El curso 25–26 muestra ~{clk_p} más clics y mejor posición (~{_pos(pos_prev)} → ~{_pos(pos_cur)}). <strong>Ojo:</strong> el total 24–25 de GSC solo cubre desde el <strong>18 abr 2025</strong> (propiedad verificada tarde); no es un curso completo comparable. El CTR ~1,6% se mantiene — el volumen 25–26 viene de más impresiones + mejor ranking.</p>
 </div>
 <div class="card">
   <h2>Por dispositivo</h2>
@@ -504,11 +591,12 @@ def main():
 </div>
 <div class="card">
   <h2>Evolución mensual (clics y posición)</h2>
+  <div class="note">GSC propiedad <code>https://blueparrotschool.com/</code>: sin datos antes del <strong>18 abr 2025</strong> (sep 24–mar 25 = vacío real en Search Console, no un fallo del informe). Abril 24–25 es parcial. GA4 sí registra Organic Search desde dic 2024; GSC no retrotrae historial tras verificar la propiedad. No hay propiedad <code>sc-domain:</code> alternativa con datos previos.</div>
   <table>
     <tr><th>Mes</th><th>Clics 24–25</th><th>Clics 25–26</th><th>Δ clics</th><th>Pos 24–25</th><th>Pos 25–26</th><th>Imp. 25–26</th></tr>
     {month_rows}
   </table>
-  <p>Pico de clics orgánicos en sep–oct 25; caída hacia verano. Posición estable ~9–11 desde feb 26.</p>
+  <p>Pico de clics orgánicos en sep–oct 25; caída hacia verano. Posición estable ~9–11 desde feb 26. Comparar Δ YoY solo tiene sentido desde abr (y con abril 24–25 parcial).</p>
 </div>
 <div class="card">
   <h2>Queries · tráfico ganado (top)</h2>
@@ -545,7 +633,7 @@ def main():
 </div>
 <div class="card">
   <h2>Landings orgánicas con compra (GA4 · YoY 24–25 vs 25–26)</h2>
-  <p>Top conversores del curso actual (por purchases). Valores del curso anterior emparejados por URL (barra final normalizada).{f' · {org_new_n} nuevas en el top.' if org_new_n else ''} Revenue 24–25 = 0 en el export GA4 (solo sessions/purchases comparables YoY; Δ rev refleja el alta de revenue en 25–26).</p>
+  {org_tot_blurb}
   <div class="scroll"><table>
     <tr>
       <th>Landing</th>
@@ -558,9 +646,9 @@ def main():
   </table></div>
   <h3>Acciones</h3>
   <ul>
-    <li>Arreglar LCP/TTFB en home, test APTIS y landings que ganan clics GSC.</li>
-    <li>Recuperar URLs con pérdida (WhatsApp frases, intensivo APTIS) o consolidar en hubs que sí ranquean.</li>
-    <li>SEO prioritario en URLs que ya convierten en GA4.</li>
+    <li>Prioridad: recuperar conversión en home, APTIS y carrito (bajan purchases YoY), no solo URLs que suben clics GSC.</li>
+    <li>Arreglar LCP/TTFB en home, test APTIS y landings con tráfico orgánico real.</li>
+    <li>Recuperar URLs con pérdida de clics (WhatsApp frases, intensivo APTIS) o consolidar en hubs que sí ranquean.</li>
     <li>Paid solo a URLs rápidas y alineadas con query intent.</li>
   </ul>
 </div>
