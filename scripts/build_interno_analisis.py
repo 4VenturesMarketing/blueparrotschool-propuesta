@@ -163,6 +163,7 @@ def main():
     organic = json.loads((DATA / "organic-purchase-landings.json").read_text())
     meta_x = json.loads((DATA / "meta-wc-cross-summary.json").read_text())
     gsc = json.loads((DATA / "ga4-gsc-crosscheck.json").read_text())
+    ga4 = json.loads((DATA / "ga4-bps-raw.json").read_text()) if (DATA / "ga4-bps-raw.json").exists() else {}
     gsc_d = json.loads((DATA / "gsc-yoy-detail.json").read_text()) if (DATA / "gsc-yoy-detail.json").exists() else {}
     meta_demo = json.loads((DATA / "meta-demo.json").read_text()) if (DATA / "meta-demo.json").exists() else {}
 
@@ -562,13 +563,43 @@ def main():
             f"<td>{num(dsk.get('experimental_time_to_first_byte'))}</td></tr>"
         )
 
+    def _ga4_os_purchases(sy_key):
+        for r in ((ga4.get(sy_key) or {}).get("channels") or []):
+            if (r.get("sessionDefaultChannelGroup") or "") == "Organic Search":
+                return float(r.get("ecommercePurchases") or 0)
+        return None
+
+    ga4_os_purch_24 = _ga4_os_purchases("sy-2024-25")
+    ga4_os_purch_25 = _ga4_os_purchases("sy-2025-26")
+    ga4_os_pct = None
+    if ga4_os_purch_24:
+        ga4_os_pct = 100.0 * ((ga4_os_purch_25 or 0) - ga4_os_purch_24) / ga4_os_purch_24
+
     organico = f"""
-<div class="note">GSC live · cursos 24–25 vs 25–26 (hasta 2026-08-27). CrUX = Chrome UX reales. Posición media ↓ = mejora.</div>
+<div class="note">GSC = demanda/visibilidad en Google. <strong>No es el mismo KPI que pedidos WC ni purchases GA4.</strong> Cursos 24–25 vs 25–26 (hasta 2026-08-27). CrUX = Chrome UX reales. Posición media ↓ = mejora.</div>
 <div class="grid">
   <div class="stat"><strong>{num(gsc2526.get("clicks"))}</strong><span>Clics GSC 25–26 ({clk_p} YoY)</span></div>
   <div class="stat"><strong>{num(gsc2526.get("impressions"))}</strong><span>Impresiones ({delta_pct(gsc2526.get("impressions"), gsc2425.get("impressions"))} YoY)</span></div>
   <div class="stat"><strong>{_pos(pos_cur)}</strong><span>Posición media (antes {_pos(pos_prev)})</span></div>
   <div class="stat"><strong>{num(phone.get("largest_contentful_paint"))} ms</strong><span>LCP móvil ({phone.get("ym")})</span></div>
+</div>
+<div class="card">
+  <h2>GSC ≠ conversión orgánica</h2>
+  <p><strong>Lectura correcta:</strong> desde abr 2025+ GSC muestra más clics/impresiones y mejor posición — eso <em>no</em> significa que el orgánico esté “ganando” en negocio.</p>
+  <table>
+    <tr><th>Señal</th><th>24–25</th><th>25–26</th><th>Δ</th></tr>
+    <tr><td>GSC clics (visibilidad)</td><td>{num(gsc2425.get("clicks"))}</td><td>{num(gsc2526.get("clicks"))}</td><td class="good">{clk_p}</td></tr>
+    <tr><td>WC «Google Orgánico» pedidos</td><td>{num(wc_org24.get("orders"))}</td><td>{num(wc_org25.get("orders"))}</td><td class="bad">{_yoy_lab(wc_org_orders_pct)}</td></tr>
+    <tr><td>GA4 Organic Search purchases</td><td>{num(ga4_os_purch_24)}</td><td>{num(ga4_os_purch_25)}</td><td class="bad">{_yoy_lab(ga4_os_pct)}</td></tr>
+  </table>
+  <p><strong>Por qué puede subir GSC y bajar la conversión:</strong></p>
+  <ul>
+    <li><strong>UX / CrUX:</strong> LCP móvil ~8–10&nbsp;s y TTFB alto — más clics que no llegan a pedido.</li>
+    <li><strong>Calidad / mix del tráfico:</strong> mucho volumen es marca o informativo; las landings comerciales (APTIS intensivo/A2) pierden ranking y CR.</li>
+    <li><strong>Precio / AOV:</strong> ticket medio WC sube (~+8%); puede filtrar compra aunque no tengamos historial de list-price por SKU.</li>
+    <li><strong>GSC incompleto pre-abr 2025:</strong> el YoY de clics sobreestima el “crecimiento” (propiedad verificada el 18 abr 2025).</li>
+    <li><strong>CR de landings:</strong> home, APTIS y carrito bajan purchases YoY en GA4.</li>
+  </ul>
 </div>
 <div class="card">
   <h2>Search Console · resumen YoY</h2>
@@ -579,7 +610,7 @@ def main():
     <tr><td>CTR</td><td>{_ctr(gsc2425.get("ctr"))}</td><td>{_ctr(gsc2526.get("ctr"))}</td><td>—</td></tr>
     <tr><td>Posición media</td><td>{_pos(pos_prev)}</td><td class="good">{_pos(pos_cur)}</td><td class="good">mejora ~{pos_improve:.0f} puestos</td></tr>
   </table>
-  <p>El curso 25–26 muestra ~{clk_p} más clics y mejor posición (~{_pos(pos_prev)} → ~{_pos(pos_cur)}). <strong>Ojo:</strong> el total 24–25 de GSC solo cubre desde el <strong>18 abr 2025</strong> (propiedad verificada tarde); no es un curso completo comparable. El CTR ~1,6% se mantiene — el volumen 25–26 viene de más impresiones + mejor ranking.</p>
+  <p>Más clics y mejor posición media (~{_pos(pos_prev)} → ~{_pos(pos_cur)}) desde que hay datos GSC. Eso mide <strong>visibilidad</strong>, no pedidos. El CTR ~1,6% se mantiene; el volumen viene de más impresiones + mejor ranking (y de un 24–25 parcial). Ver card «GSC ≠ conversión» arriba.</p>
 </div>
 <div class="card">
   <h2>Por dispositivo</h2>
@@ -629,7 +660,7 @@ def main():
     <tr><td>CLS</td><td>{phone.get("cumulative_layout_shift")}</td><td>{desk.get("cumulative_layout_shift")}</td><td>≤0,1</td></tr>
     <tr><td>TTFB</td><td class="bad">{num(phone.get("experimental_time_to_first_byte"))} ms</td><td class="bad">{num(desk.get("experimental_time_to_first_byte"))} ms</td><td>≤800 ms</td></tr>
   </table>
-  <p class="bad">LCP móvil ~8–10 s y TTFB &gt;1,5 s: Google puede limitar CTR/conversión aunque la posición mejore. El tráfico orgánico creció por ranking/brand; la conversión orgánico→pedido sigue lastrada por UX. Prioridad: TTFB+LCP home y landings APTIS antes de escalar SEO/paid a las mismas URLs.</p>
+  <p class="bad">LCP móvil ~8–10 s y TTFB &gt;1,5 s: Google puede limitar CTR/conversión aunque la posición mejore. GSC puede subir (marca + ranking) mientras WC/GA4 orgánico bajan — la UX es un puente roto entre clic y pedido. Prioridad: TTFB+LCP home y landings APTIS antes de escalar SEO/paid a las mismas URLs.</p>
 </div>
 <div class="card">
   <h2>Landings orgánicas con compra (GA4 · YoY 24–25 vs 25–26)</h2>
@@ -646,7 +677,8 @@ def main():
   </table></div>
   <h3>Acciones</h3>
   <ul>
-    <li>Prioridad: recuperar conversión en home, APTIS y carrito (bajan purchases YoY), no solo URLs que suben clics GSC.</li>
+    <li>No leer el +GSC como victoria comercial: priorizar pedidos WC / purchases GA4 Organic Search.</li>
+    <li>Recuperar conversión en home, APTIS y carrito (bajan purchases YoY), no solo URLs que suben clics GSC.</li>
     <li>Arreglar LCP/TTFB en home, test APTIS y landings con tráfico orgánico real.</li>
     <li>Recuperar URLs con pérdida de clics (WhatsApp frases, intensivo APTIS) o consolidar en hubs que sí ranquean.</li>
     <li>Paid solo a URLs rápidas y alineadas con query intent.</li>

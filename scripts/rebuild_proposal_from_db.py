@@ -872,6 +872,106 @@ def export_payload() -> dict:
         cell = prod_monthly.setdefault(g, {})
         cell[r["month"]] = {"qty": float(r["qty"] or 0), "rev": float(r["rev"] or 0)}
 
+    # Price / AOV insight (no SKU list-price history in warehouse)
+    prev_p = periods.get("sy-2024-25") or {}
+    cur_p = periods.get("sy-2025-26") or {}
+    aov_prev = float(prev_p.get("aov") or 0)
+    aov_cur = float(cur_p.get("aov") or 0)
+    aov_pct = (100.0 * (aov_cur - aov_prev) / aov_prev) if aov_prev else None
+    ord_prev = int(prev_p.get("orders") or 0)
+    ord_cur = int(cur_p.get("orders") or 0)
+    # Mix share APTIS vs Cambridge from order items
+    mix_rows = q(
+        """SELECT o.period_id, i.family,
+                  COUNT(DISTINCT o.order_id) AS n
+           FROM fact_wc_order o
+           JOIN fact_wc_order_item i ON i.order_id=o.order_id
+           WHERE o.period_id IN ('sy-2024-25','sy-2025-26')
+             AND i.family IN ('APTIS','Cambridge')
+           GROUP BY 1, 2"""
+    )
+    mix = {(r["period_id"], r["family"]): int(r["n"] or 0) for r in mix_rows}
+    aptis_share = (
+        100.0 * mix.get(("sy-2024-25", "APTIS"), 0) / ord_prev if ord_prev else 0,
+        100.0 * mix.get(("sy-2025-26", "APTIS"), 0) / ord_cur if ord_cur else 0,
+    )
+    cam_share = (
+        100.0 * mix.get(("sy-2024-25", "Cambridge"), 0) / ord_prev if ord_prev else 0,
+        100.0 * mix.get(("sy-2025-26", "Cambridge"), 0) / ord_cur if ord_cur else 0,
+    )
+    # Realized unit prices on comparable intensivos (line_total/qty) — mixed, not blanket hike
+    unit_cmp = q(
+        """SELECT
+             ROUND(SUM(CASE WHEN o.period_id='sy-2024-25' THEN i.line_total END)
+                   / NULLIF(SUM(CASE WHEN o.period_id='sy-2024-25' THEN i.qty END),0), 2) AS u24,
+             ROUND(SUM(CASE WHEN o.period_id='sy-2025-26' THEN i.line_total END)
+                   / NULLIF(SUM(CASE WHEN o.period_id='sy-2025-26' THEN i.qty END),0), 2) AS u25
+           FROM fact_wc_order o
+           JOIN fact_wc_order_item i ON i.order_id=o.order_id
+           WHERE o.period_id IN ('sy-2024-25','sy-2025-26')
+             AND i.qty > 0
+             AND (
+               i.product_name LIKE 'APTIS ESOL General%' OR i.product_name LIKE 'APTIS General B1%'
+               OR i.product_name LIKE 'APTIS ESOL Advanced%' OR i.product_name LIKE 'APTIS Advanced Intensivo%'
+               OR i.product_name LIKE 'Cambridge Advanced%' OR i.product_name LIKE 'Cambridge First%'
+               OR i.product_name LIKE 'Italiano B1-B2%' OR i.product_name LIKE 'Alemán B1-B2%'
+             )"""
+    )
+    u24 = float((unit_cmp[0]["u24"] if unit_cmp else 0) or 0)
+    u25 = float((unit_cmp[0]["u25"] if unit_cmp else 0) or 0)
+    unit_pct = (100.0 * (u25 - u24) / u24) if u24 else None
+    aov_lab = f"{aov_pct:+.1f}%".replace(".", ",") if aov_pct is not None else "—"
+    unit_lab = f"{unit_pct:+.1f}%".replace(".", ",") if unit_pct is not None else "—"
+    price_note = (
+        f"AOV {aov_prev:.0f} € → {aov_cur:.0f} € ({aov_lab}) con pedidos {ord_prev}→{ord_cur}. "
+        f"No hay historial de list-price por SKU en el warehouse. "
+        f"Precio realizado medio en intensivos comparables ~{unit_lab} (mixto ±5–7% según familia). "
+        f"El alza de AOV encaja sobre todo con mix: APTIS {aptis_share[0]:.0f}%→{aptis_share[1]:.0f}% de pedidos, "
+        f"Cambridge {cam_share[0]:.0f}%→{cam_share[1]:.0f}% (ticket más alto) y menos pedidos low-ticket — "
+        f"no una subida homogénea de catálogo demostrable."
+    )
+
+    # Competition: Keyword Planner competition labels only (no named rivals)
+    comp_alta = comp_media = comp_baja = 0
+    ads_est = DATA / "ads-estimator.json"
+    if ads_est.exists():
+        try:
+            est = json.loads(ads_est.read_text())
+
+            def _walk(o):
+                nonlocal comp_alta, comp_media, comp_baja
+                if isinstance(o, dict):
+                    c = o.get("competition")
+                    if c == "Alta":
+                        comp_alta += 1
+                    elif c == "Media":
+                        comp_media += 1
+                    elif c == "Baja":
+                        comp_baja += 1
+                    for v in o.values():
+                        _walk(v)
+                elif isinstance(o, list):
+                    for x in o:
+                        _walk(x)
+
+            _walk(est)
+        except Exception:
+            pass
+    comp_tot = comp_alta + comp_media + comp_baja
+    if comp_tot:
+        competition_note = (
+            f"Keyword Planner ({comp_tot} KW del set): "
+            f"~{100*comp_alta/comp_tot:.0f}% Alta · ~{100*comp_media/comp_tot:.0f}% Media · ~{100*comp_baja/comp_tot:.0f}% Baja. "
+            "Landings APTIS comerciales pierden posición/impresiones vs contenido de práctica — "
+            "SERP de intent compra más dura. No hay estudio de rivales nombrados en el repo; no inventamos cuotas."
+        )
+    else:
+        competition_note = (
+            "Señales de SERP comercial más dura (pérdida de posición en landings APTIS de curso) "
+            "y KW Planner con competencia Media/Alta en genéricos de certificación. "
+            "Sin estudio de rivales nombrados en el repo."
+        )
+
     payload = {
         "builtAt": datetime.now().isoformat(timespec="seconds"),
         "sourceDb": "dashboard/db/bps.db",
@@ -893,6 +993,13 @@ def export_payload() -> dict:
         },
         "YOY_PLAN": yoy,
         "meta_platform_monthly": bundle.get("meta_platform_monthly") or [],
+        "insights": {
+            "priceNote": price_note,
+            "competitionNote": competition_note,
+            "aovPrev": aov_prev,
+            "aovCur": aov_cur,
+            "aovPct": round(aov_pct, 1) if aov_pct is not None else None,
+        },
     }
     conn.close()
     OUT_JSON.write_text(json.dumps(payload, ensure_ascii=False))
@@ -937,6 +1044,16 @@ function renderDiagnostico() {
   const p = P(PREV), c = P(CUR);
   const metaP = p.paid?.meta||{}, metaC = c.paid?.meta||{};
   const gP = p.paid?.google_ads||{}, gC = c.paid?.google_ads||{};
+  const orgPch = (p.channels||[]).find(x=>x.canal==='Google Orgánico')||{};
+  const orgCch = (c.channels||[]).find(x=>x.canal==='Google Orgánico')||{};
+  const aovDelta = (p.aov && c.aov) ? (100*(c.aov-p.aov)/p.aov) : null;
+  const ordersDelta = (p.orders && c.orders!=null) ? (100*(c.orders-p.orders)/p.orders) : null;
+  const revDelta = (p.rev && c.rev!=null) ? (100*(c.rev-p.rev)/p.rev) : null;
+  const orgOrdDelta = (orgPch.orders) ? (100*((orgCch.orders||0)-orgPch.orders)/orgPch.orders) : null;
+  const gscDelta = (p.gsc?.clicks) ? (100*((c.gsc?.clicks||0)-p.gsc.clicks)/p.gsc.clicks) : null;
+  const metaRoasP = metaP.roas!=null ? Number(metaP.roas).toFixed(2)+'×' : '—';
+  const metaRoasC = metaC.roas!=null ? Number(metaC.roas).toFixed(2)+'×' : '—';
+  const insights = PAYLOAD.insights || {};
 
   document.getElementById('diagKpis').innerHTML = `
     <div class="period-grid">
@@ -954,16 +1071,23 @@ function renderDiagnostico() {
         <div class="stat-row">
           <div class="stat"><strong>${NUM(c.orders)}</strong><span>Pedidos WC ${deltaHtml(c.orders,p.orders)}</span></div>
           <div class="stat"><strong>${EUR(c.rev,0)}</strong><span>Ingresos WC ${deltaHtml(c.rev,p.rev)}</span></div>
-          <div class="stat"><strong>${EUR(c.aov,0)}</strong><span>AOV</span></div>
+          <div class="stat"><strong>${EUR(c.aov,0)}</strong><span>AOV ${aovDelta!=null?deltaHtml(c.aov,p.aov):''}</span></div>
           <div class="stat"><strong>${EUR((metaC.spend||0)+(gC.spend||0),0)}</strong><span>Inversión paid ${deltaHtml((metaC.spend||0)+(gC.spend||0),(metaP.spend||0)+(gP.spend||0))}</span></div>
         </div>
       </div>
     </div>
-    <div class="stat-row" style="margin-top:12px">
-      <div class="stat"><strong>${NUM(c.gsc?.clicks)}</strong><span>GSC clics 25–26</span><div class="delta">24–25: ${NUM(p.gsc?.clicks)} ${deltaHtml(c.gsc?.clicks,p.gsc?.clicks)}</div></div>
-      <div class="stat"><strong>${NUM(c.ga4?.purchases)}</strong><span>GA4 purchases 25–26</span><div class="delta">WC pedidos: ${NUM(c.orders)}</div></div>
-      <div class="stat"><strong>${NUM(metaC.wc_orders_verified)}</strong><span>Meta→WC</span><div class="delta">CAC ${EUR(metaC.cac,0)} · ROAS ${metaC.roas?Number(metaC.roas).toFixed(2)+'×':'—'}</div></div>
-      <div class="stat"><strong>${NUM(gC.wc_orders_verified)}</strong><span>Google Ads → WC</span><div class="delta">Ads compra ${NUM(gC.platform_purchases)} · leads ${NUM(gC.platform_lead_convs)}</div></div>
+    <div class="note" style="margin-top:14px">
+      <strong>Resumen de principales causas del cambio YoY</strong>
+      <p style="margin:8px 0 6px">Pedidos WC ${ordersDelta!=null?(ordersDelta>0?'+':'')+ordersDelta.toFixed(1)+'%':'—'} · ingresos ${revDelta!=null?(revDelta>0?'+':'')+revDelta.toFixed(1)+'%':'—'} · AOV ${aovDelta!=null?(aovDelta>0?'+':'')+aovDelta.toFixed(1)+'%':'—'}. Menos pedidos con ticket medio más alto: la caída de volumen no se compensa del todo con AOV.</p>
+      <ul style="margin:0;padding-left:1.15rem;line-height:1.55;font-size:.9rem">
+        <li><strong>Orgánico vs GSC:</strong> clics GSC ${gscDelta!=null?(gscDelta>0?'+':'')+gscDelta.toFixed(0)+'%':'—'} (visibilidad; 24–25 parcial desde abr 2025), pero pedidos WC «Google Orgánico» ${orgOrdDelta!=null?(orgOrdDelta>0?'+':'')+orgOrdDelta.toFixed(1)+'%':'—'} (${NUM(orgPch.orders)}→${NUM(orgCch.orders)}). Más clics ≠ más ventas.</li>
+        <li><strong>Meta:</strong> gasto ${deltaHtml(metaC.spend,metaP.spend)} con pedidos verificados planos (${NUM(metaP.wc_orders_verified)}→${NUM(metaC.wc_orders_verified)}); ROAS WC ${metaRoasP}→${metaRoasC}. Paid social no tapó el hueco orgánico.</li>
+        <li><strong>Google Ads:</strong> solo parte del curso 25–26 (~may–ago); ${NUM(gC.wc_orders_verified)} pedidos WC · ROAS ${gC.roas?Number(gC.roas).toFixed(2)+'×':'—'} · CAC ${EUR(gC.cac,0)}. No existía como canal comparable en 24–25.</li>
+        <li><strong>Precio / AOV:</strong> ${insights.priceNote || 'AOV sube ~8%; no hay historial de list-price por SKU en el warehouse — el alza refleja mix (más Cambridge, menos APTIS barato) y menos pedidos low-ticket, no una subida homogénea demostrable.'}</li>
+        <li><strong>UX:</strong> CrUX LCP/TTFB móviles pobres en home y landings APTIS — puente roto clic→pedido.</li>
+        <li><strong>Estacionalidad / producto:</strong> el hueco se abre sobre todo en H2 (mar–ago) y concentra en APTIS comercial; Cambridge casi plano.</li>
+        <li><strong>Competencia (señales, sin nombres inventados):</strong> ${insights.competitionNote || 'Keyword Planner: muchas KW comerciales en competencia Media/Alta; landings APTIS comerciales pierden posición/impresiones — SERP más dura en intent de compra, sin estudio de rivales nombrados en el repo.'}</li>
+      </ul>
     </div>
     <div class="chart-card" style="margin-top:16px"><h4>Pedidos WC por mes · 24–25 vs 25–26</h4><div class="chart-wrap" style="height:260px"><canvas id="chartWcMonthly"></canvas></div></div>`;
   renderWcMonthlyChart();
@@ -2173,6 +2297,12 @@ def inject(payload: dict):
     html = re.sub(
         r'(<section id="diag-geo"[\s\S]*?<p class="section-lead">)[\s\S]*?(</p>)',
         r"\1Mapa y tablas 24–25 vs 25–26 (billing WC).\2",
+        html,
+        count=1,
+    )
+    html = re.sub(
+        r'(<section id="diag-kpis"[\s\S]*?<p class="section-lead">)[\s\S]*?(</p>)',
+        r"\1Pedidos e ingresos WooCommerce + inversión paid por curso. Debajo: lectura de causas del cambio YoY (orgánico vs GSC, Meta ROAS, Google Ads parcial, precio/AOV, UX, estacionalidad, competencia) — no un eco de los mismos KPIs.\2",
         html,
         count=1,
     )
