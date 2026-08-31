@@ -1,6 +1,6 @@
 # BPS Marketing Data Dictionary
 
-Built: `2026-08-29T16:59:03`  
+Built: `2026-08-31T11:37:35`  
 Database: `dashboard/db/bps.db`
 
 ## Trust layers
@@ -42,11 +42,7 @@ Use purchase for ROAS/CPA compra; lead for CPL; WC `utm_medium=cpc` for business
 ## Rebuild
 
 ```bash
-python3 scripts/refresh_google_sources.py   # GA4 + GSC + Google Ads
-python3 scripts/build_bps_db.py             # SQLite warehouse
-python3 scripts/rebuild_proposal_from_db.py # propuesta-marketing-bps.html
+python3 scripts/build_bps_db.py
 ```
 
 Requires local JSON under `dashboard/data/` (WC, Meta, matches, GA4, GSC, google-ads-conversions-raw).
-
-La propuesta HTML se genera **solo** desde `bps.db` (+ demo/YOY_PLAN auxiliares). Cap. I no mezcla estimaciones.

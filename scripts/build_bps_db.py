@@ -28,7 +28,7 @@ NOW = datetime.now().isoformat(timespec="seconds")
 
 PERIODS = [
     ("sy-2024-25", "2024–25", "2024-09-01", "2025-08-31"),
-    ("sy-2025-26", "2025–26", "2025-09-01", "2026-08-27"),
+    ("sy-2025-26", "2025–26", "2025-09-01", "2026-08-31"),
     ("sy-2026-27", "2026–27", "2026-09-01", "2027-08-31"),
 ]
 
@@ -390,7 +390,7 @@ def seed_dims(conn: sqlite3.Connection):
 
     sources = [
         ("wc_orders", "woocommerce", "gold", "high", "Pedidos WooCommerce con atribución UTM/checkout", "2021-02-04", "2026-08-27", "blueparrotschool.com"),
-        ("meta_ads_api", "meta", "silver", "high", "Spend/imp/clics/leads/purchases pixel Meta Ads", "2025-01-01", "2026-08-27", "act_414283212550847"),
+        ("meta_ads_api", "meta", "silver", "high", "Spend/imp/clics/leads/purchases pixel Meta Ads", "2024-09-01", "2026-08-31", "act_414283212550847"),
         ("meta_wc_match", "meta+wc", "gold", "high", "Cruce leads Meta (CSV+Clientify) → pedido WC por email/tel/nombre", "2021-10-14", "2026-08-28", "11.287 leads unificados"),
         ("google_ads_api", "google_ads", "silver", "high", "Campaign daily + conversiones por categoría (PURCHASE vs LEAD)", "2026-04-30", "2026-08-28", "CID 1064441284 / MCC 5963150101"),
         ("ga4", "ga4", "silver", "medium", "Sesiones/compras ecommerce por canal y source/medium", "2024-09-01", "2026-08-27", "properties/469240570"),
@@ -405,7 +405,7 @@ def seed_dims(conn: sqlite3.Connection):
         ("wc_orders", "Pedidos WC", "gold", "high", "Pedidos WooCommerce en periodo académico", "KPIs de negocio / AOV", "No confundir con conversiones Ads ni pixel Meta"),
         ("meta_orders_verified", "Pedidos Meta verificados", "gold", "high", "Match lead Meta → pedido WC", "CAC/ROAS Meta de negocio", "≠ Meta Ads checkout UTM (casi siempre 1); ≠ purchases pixel"),
         ("meta_orders_utm", "Pedidos Meta checkout UTM", "silver", "low", "UTM paid social / «Anuncio…» en checkout", "Diagnóstico de tracking UTM", "Subregistro — no usar para CAC"),
-        ("meta_spend", "Inversión Meta", "silver", "high", "Spend Ads Manager (API)", "Paid media", "Cobertura desde 2025-01; 24–25 incompleto (falta sep–dic 2024)"),
+        ("meta_spend", "Inversión Meta", "silver", "high", "Spend Ads Manager (API)", "Paid media", "Cobertura completa SY 24–25 y 25–26 (2024-09-01 → 2026-08-31)"),
         ("meta_leads_platform", "Leads Meta plataforma", "silver", "high", "Resultados lead en insights Meta", "CPL plataforma", "≠ leads del universo de cruce CSV+Clientify"),
         ("meta_purchases_pixel", "Purchases Meta pixel", "silver", "medium", "Evento purchase reportado por Meta", "Optimización campañas", "≠ pedidos WC verificados"),
         ("gads_spend", "Inversión Google Ads", "silver", "high", "Cost micros campañas CID BPS", "Paid media", "Histórico local desde 2026-04-30"),
@@ -729,8 +729,8 @@ def build_paid_kpis(conn: sqlite3.Connection):
             (pid,),
         ).fetchone()
         match = periods.get(pid) or {}
-        # Prefer match spend if present else meta sum
-        m_spend = float(match.get("spend") or meta[0] or 0)
+        # Spend always from Ads Manager daily (fact_meta_daily). Cross-summary only for WC match orders/rev/leads.
+        m_spend = float(meta[0] or 0)
         m_orders = float(match.get("orders") or 0)
         m_rev = float(match.get("rev") or 0)
         m_leads = float(match.get("leads") or meta[4] or 0)

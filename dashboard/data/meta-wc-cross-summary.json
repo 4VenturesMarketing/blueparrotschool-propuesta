@@ -85,10 +85,10 @@
       "orders": 306,
       "rev": 65400.7,
       "buyers": 300,
-      "spend": 74047.49,
-      "cac": 241.99,
-      "roas": 0.88,
-      "conv_pct": 2.63,
+      "spend": 84570.68,
+      "cac": 276.37,
+      "roas": 0.77,
+      "conv_pct": 2.71,
       "methods": {
         "email": 288,
         "phone": 12,
@@ -100,10 +100,10 @@
       "orders": 154,
       "rev": 31529.8,
       "buyers": 153,
-      "spend": 29846.78,
-      "cac": 193.81,
-      "roas": 1.06,
-      "conv_pct": 3.46,
+      "spend": 39893.81,
+      "cac": 259.05,
+      "roas": 0.79,
+      "conv_pct": 3.48,
       "methods": {
         "email": 151,
         "phone": 3
@@ -114,10 +114,10 @@
       "orders": 152,
       "rev": 33870.9,
       "buyers": 149,
-      "spend": 44200.71,
-      "cac": 290.79,
-      "roas": 0.77,
-      "conv_pct": 2.15,
+      "spend": 44676.87,
+      "cac": 293.93,
+      "roas": 0.76,
+      "conv_pct": 2.22,
       "methods": {
         "name": 6,
         "email": 137,
@@ -129,10 +129,10 @@
       "orders": 100,
       "rev": 22387.25,
       "buyers": 99,
-      "spend": 25408.04,
-      "cac": 254.08,
-      "roas": 0.88,
-      "conv_pct": 2.83,
+      "spend": 25884.2,
+      "cac": 258.84,
+      "roas": 0.86,
+      "conv_pct": 2.89,
       "methods": {
         "email": 90,
         "phone": 7,
@@ -147,7 +147,7 @@
       "spend": 48639.45,
       "cac": 237.27,
       "roas": 0.88,
-      "conv_pct": 2.61,
+      "conv_pct": 2.63,
       "methods": {
         "email": 197,
         "phone": 5,
@@ -253,7 +253,7 @@
       "leads_cf": 1,
       "orders": 0,
       "rev": 0.0,
-      "spend": 0
+      "spend": 2644.01
     },
     {
       "month": "2024-10",
@@ -262,7 +262,7 @@
       "leads_cf": 8,
       "orders": 0,
       "rev": 0.0,
-      "spend": 0
+      "spend": 1665.84
     },
     {
       "month": "2024-11",
@@ -271,7 +271,7 @@
       "leads_cf": 2,
       "orders": 1,
       "rev": 199.0,
-      "spend": 0
+      "spend": 2639.56
     },
     {
       "month": "2024-12",
@@ -280,7 +280,7 @@
       "leads_cf": 3,
       "orders": 0,
       "rev": 0.0,
-      "spend": 0
+      "spend": 3097.62
     },
     {
       "month": "2025-01",
@@ -460,7 +460,7 @@
       "leads_cf": 2,
       "orders": 10,
       "rev": 1771.2,
-      "spend": 3143.92
+      "spend": 3620.08
     }
   ],
   "by_form": [
@@ -557,5 +557,8 @@
       "rev": 0.0,
       "conv_pct": 0.0
     }
-  ]
+  ],
+  "meta_spend_insights": 84570.68,
+  "spend_source": "meta-daily.json (Ads Manager API, includes 2024-09+)",
+  "updated_at": "2026-08-31T11:36:45"
 }

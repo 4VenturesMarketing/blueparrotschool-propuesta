@@ -850,6 +850,26 @@ def export_payload() -> dict:
     _enrich_buyer_profile(yoy, wc_buyer, periods)
     _attach_media_mix(yoy, periods, conn)
 
+    # Account-level Meta monthly from warehouse (canonical Ads Manager spend)
+    meta_account_monthly = q(
+        """SELECT substr(date,1,7) AS month,
+                  ROUND(SUM(spend),2) AS spend,
+                  SUM(impressions) AS impressions,
+                  SUM(clicks) AS clicks,
+                  SUM(reach) AS reach,
+                  SUM(leads) AS leads,
+                  SUM(purchases) AS purchases
+           FROM fact_meta_daily
+           WHERE date >= '2024-09-01' AND date <= '2026-08-31'
+           GROUP BY 1 ORDER BY 1"""
+    )
+    # Prefer full-bundle platform×device monthly when present; else empty
+    full_bundle_path = DATA / "proposal-bundle-full.json"
+    meta_platform_monthly = bundle.get("meta_platform_monthly") or []
+    if full_bundle_path.exists():
+        full_b = json.loads(full_bundle_path.read_text())
+        meta_platform_monthly = full_b.get("meta_platform_monthly") or meta_platform_monthly
+
     wc_monthly = q(
         """SELECT substr(order_date,1,7) AS month, COUNT(*) AS orders, SUM(total) AS rev
            FROM fact_wc_order
@@ -977,7 +997,7 @@ def export_payload() -> dict:
         "sourceDb": "dashboard/db/bps.db",
         "SY": {
             "prev": {"id": "sy-2024-25", "label": "2024–25", "start": "2024-09-01", "end": "2025-08-31"},
-            "cur": {"id": "sy-2025-26", "label": "2025–26", "start": "2025-09-01", "end": "2026-08-27"},
+            "cur": {"id": "sy-2025-26", "label": "2025–26", "start": "2025-09-01", "end": "2026-08-31"},
             "next": {"id": "sy-2026-27", "label": "2026–27", "start": "2026-09-01", "end": "2027-08-31"},
         },
         "periods": periods,
@@ -992,7 +1012,8 @@ def export_payload() -> dict:
             "wc_buyer": wc_buyer,
         },
         "YOY_PLAN": yoy,
-        "meta_platform_monthly": bundle.get("meta_platform_monthly") or [],
+        "meta_account_monthly": meta_account_monthly,
+        "meta_platform_monthly": meta_platform_monthly,
         "insights": {
             "priceNote": price_note,
             "competitionNote": competition_note,
