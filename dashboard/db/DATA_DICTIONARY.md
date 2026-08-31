@@ -1,6 +1,6 @@
 # BPS Marketing Data Dictionary
 
-Built: `2026-08-31T11:37:35`  
+Built: `2026-08-31T12:25:24`  
 Database: `dashboard/db/bps.db`
 
 ## Trust layers
