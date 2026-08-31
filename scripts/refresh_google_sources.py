@@ -55,7 +55,7 @@ def ga4():
     out = {"fetchedAt": NOW, "property": GA4_PROPERTY}
     for label, start, end in [
         ("sy-2024-25", "2024-09-01", "2025-08-31"),
-        ("sy-2025-26", "2025-09-01", "2026-08-27"),
+        ("sy-2025-26", "2025-09-01", "2026-08-30"),
     ]:
         tot = report(
             start,
@@ -89,7 +89,7 @@ def gsc():
     out = {"fetchedAt": NOW, "site": GSC_SITE, "gsc": {}}
     for label, start, end in [
         ("24-25", "2024-09-01", "2025-08-31"),
-        ("25-26", "2025-09-01", "2026-08-27"),
+        ("25-26", "2025-09-01", "2026-08-30"),
     ]:
         resp = (
             sc.searchanalytics()
@@ -108,7 +108,7 @@ def gsc():
             siteUrl=GSC_SITE,
             body={
                 "startDate": "2025-09-01",
-                "endDate": "2026-08-27",
+                "endDate": "2026-08-30",
                 "dimensions": ["query"],
                 "rowLimit": 50,
             },
@@ -154,7 +154,7 @@ def google_ads():
                segments.conversion_action_category, campaign.id, campaign.name,
                metrics.conversions, metrics.conversions_value, metrics.all_conversions, metrics.all_conversions_value
         FROM campaign
-        WHERE segments.date BETWEEN '2025-01-01' AND '2026-08-28'
+        WHERE segments.date BETWEEN '2025-01-01' AND '2026-08-30'
         """,
     ):
         cat = row.segments.conversion_action_category
@@ -181,7 +181,7 @@ def google_ads():
                metrics.cost_micros, metrics.clicks, metrics.impressions, metrics.conversions, metrics.conversions_value,
                metrics.ctr, metrics.average_cpc
         FROM campaign
-        WHERE segments.date BETWEEN '2025-01-01' AND '2026-08-28'
+        WHERE segments.date BETWEEN '2025-01-01' AND '2026-08-30'
         """,
     ):
         camp_daily.append(

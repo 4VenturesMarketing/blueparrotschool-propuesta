@@ -576,7 +576,7 @@ def main():
         ga4_os_pct = 100.0 * ((ga4_os_purch_25 or 0) - ga4_os_purch_24) / ga4_os_purch_24
 
     organico = f"""
-<div class="note">GSC = demanda/visibilidad en Google. <strong>No es el mismo KPI que pedidos WC ni purchases GA4.</strong> Cursos 24–25 vs 25–26 (hasta 2026-08-27). CrUX = Chrome UX reales. Posición media ↓ = mejora.</div>
+<div class="note">GSC = demanda/visibilidad en Google. <strong>No es el mismo KPI que pedidos WC ni purchases GA4.</strong> Cursos 24–25 vs 25–26 (hasta 2026-08-30). CrUX = Chrome UX reales. Posición media ↓ = mejora.</div>
 <div class="grid">
   <div class="stat"><strong>{num(gsc2526.get("clicks"))}</strong><span>Clics GSC 25–26 ({clk_p} YoY)</span></div>
   <div class="stat"><strong>{num(gsc2526.get("impressions"))}</strong><span>Impresiones ({delta_pct(gsc2526.get("impressions"), gsc2425.get("impressions"))} YoY)</span></div>

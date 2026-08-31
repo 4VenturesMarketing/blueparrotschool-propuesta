@@ -1,4 +1,6 @@
 {
+  "fetchedAt": "2026-08-31T12:31:11",
+  "site": "https://blueparrotschool.com/",
   "gsc": {
     "24-25": {
       "clicks": 23970,
@@ -7,192 +9,463 @@
       "position": 21.203277439452982
     },
     "25-26": {
-      "clicks": 47845,
-      "impressions": 2910844,
-      "ctr": 0.016436813515255368,
-      "position": 10.705888738798782
+      "clicks": 47988,
+      "impressions": 2920632,
+      "ctr": 0.01643069034373382,
+      "position": 10.705183672574977
     },
     "top_queries_2526": [
       {
         "keys": [
           "blue parrot school"
         ],
-        "clicks": 2280,
-        "impressions": 5580,
-        "ctr": 0.40860215053763443,
-        "position": 1.6261648745519715
+        "clicks": 2294,
+        "impressions": 5629,
+        "ctr": 0.40753242138923435,
+        "position": 1.6292414283176408
       },
       {
         "keys": [
           "blue parrot"
         ],
-        "clicks": 871,
-        "impressions": 5945,
-        "ctr": 0.14650967199327167,
-        "position": 4.4053826745164
+        "clicks": 874,
+        "impressions": 5991,
+        "ctr": 0.14588549490903022,
+        "position": 4.398764813887498
       },
       {
         "keys": [
           "blue parrot school madrid"
         ],
-        "clicks": 529,
-        "impressions": 1970,
-        "ctr": 0.2685279187817259,
-        "position": 1.9705583756345177
+        "clicks": 531,
+        "impressions": 1981,
+        "ctr": 0.26804644119131754,
+        "position": 1.967693084300858
       },
       {
         "keys": [
           "blueparrot"
         ],
-        "clicks": 441,
-        "impressions": 1531,
-        "ctr": 0.2880470280862182,
-        "position": 2.78314826910516
+        "clicks": 446,
+        "impressions": 1542,
+        "ctr": 0.2892347600518807,
+        "position": 2.7736705577172502
       },
       {
         "keys": [
           "blue parrot malaga"
         ],
-        "clicks": 219,
-        "impressions": 1036,
-        "ctr": 0.21138996138996138,
-        "position": 1.8542471042471043
+        "clicks": 222,
+        "impressions": 1058,
+        "ctr": 0.20982986767485823,
+        "position": 1.8544423440453688
       },
       {
         "keys": [
           "blueparrotschool"
         ],
         "clicks": 204,
-        "impressions": 416,
-        "ctr": 0.49038461538461536,
-        "position": 1.4855769230769231
+        "impressions": 423,
+        "ctr": 0.48226950354609927,
+        "position": 1.4822695035460993
+      },
+      {
+        "keys": [
+          "listening aptis"
+        ],
+        "clicks": 188,
+        "impressions": 3226,
+        "ctr": 0.05827650340979541,
+        "position": 7.2941723496590205
       },
       {
         "keys": [
           "aptis simulator"
         ],
         "clicks": 187,
-        "impressions": 6704,
-        "ctr": 0.02789379474940334,
-        "position": 5.8408412887828165
-      },
-      {
-        "keys": [
-          "listening aptis"
-        ],
-        "clicks": 187,
-        "impressions": 3215,
-        "ctr": 0.05816485225505443,
-        "position": 7.296423017107309
+        "impressions": 6830,
+        "ctr": 0.0273792093704246,
+        "position": 5.849780380673499
       },
       {
         "keys": [
           "aptis prueba de nivel"
         ],
         "clicks": 158,
-        "impressions": 920,
-        "ctr": 0.17173913043478262,
-        "position": 2.3706521739130437
+        "impressions": 926,
+        "ctr": 0.17062634989200864,
+        "position": 2.3682505399568035
       },
       {
         "keys": [
           "blue parrot school malaga"
         ],
         "clicks": 147,
-        "impressions": 872,
-        "ctr": 0.16857798165137614,
-        "position": 1.81651376146789
+        "impressions": 884,
+        "ctr": 0.166289592760181,
+        "position": 1.8099547511312217
       },
       {
         "keys": [
           "frutas en frances"
         ],
         "clicks": 139,
-        "impressions": 11141,
-        "ctr": 0.012476438380755767,
-        "position": 5.656763306704963
+        "impressions": 11208,
+        "ctr": 0.012401855817273376,
+        "position": 5.629817987152034
       },
       {
         "keys": [
           "examenes aptis practicar"
         ],
         "clicks": 135,
-        "impressions": 3082,
-        "ctr": 0.04380272550292018,
-        "position": 6.990590525632706
+        "impressions": 3100,
+        "ctr": 0.043548387096774194,
+        "position": 7.016451612903226
       },
       {
         "keys": [
           "ejercicios c1 ingles"
         ],
-        "clicks": 115,
-        "impressions": 1894,
-        "ctr": 0.06071805702217529,
-        "position": 6.8231256599788805
+        "clicks": 116,
+        "impressions": 1907,
+        "ctr": 0.06082852648138437,
+        "position": 6.8122705820660725
       },
       {
         "keys": [
           "blue parrot madrid"
         ],
-        "clicks": 110,
-        "impressions": 382,
-        "ctr": 0.2879581151832461,
-        "position": 1.7486910994764397
+        "clicks": 111,
+        "impressions": 388,
+        "ctr": 0.2860824742268041,
+        "position": 1.75
       },
       {
         "keys": [
           "prueba de nivel aptis"
         ],
-        "clicks": 105,
-        "impressions": 457,
-        "ctr": 0.22975929978118162,
-        "position": 2.24945295404814
+        "clicks": 107,
+        "impressions": 462,
+        "ctr": 0.23160173160173161,
+        "position": 2.2467532467532467
+      },
+      {
+        "keys": [
+          "aptis examen practicar"
+        ],
+        "clicks": 102,
+        "impressions": 2537,
+        "ctr": 0.04020496649586126,
+        "position": 6.3208513992905
       },
       {
         "keys": [
           "examen aptis online"
         ],
         "clicks": 102,
-        "impressions": 2234,
-        "ctr": 0.045658012533572066,
-        "position": 4.5353625783348255
-      },
-      {
-        "keys": [
-          "aptis examen practicar"
-        ],
-        "clicks": 101,
-        "impressions": 2520,
-        "ctr": 0.04007936507936508,
-        "position": 6.305952380952381
+        "impressions": 2251,
+        "ctr": 0.04531319413593958,
+        "position": 4.541092847623279
       },
       {
         "keys": [
           "reading aptis"
         ],
-        "clicks": 94,
-        "impressions": 1288,
-        "ctr": 0.07298136645962733,
-        "position": 6.991459627329193
+        "clicks": 95,
+        "impressions": 1294,
+        "ctr": 0.07341576506955177,
+        "position": 6.9992272024729525
       },
       {
         "keys": [
           "frases en italiano"
         ],
-        "clicks": 92,
-        "impressions": 9270,
-        "ctr": 0.009924487594390506,
-        "position": 7.378532901833872
+        "clicks": 93,
+        "impressions": 9315,
+        "ctr": 0.00998389694041868,
+        "position": 7.395383789586688
       },
       {
         "keys": [
           "gestos italianos"
         ],
         "clicks": 92,
-        "impressions": 2307,
-        "ctr": 0.03987863025574339,
-        "position": 4.557867360208062
+        "impressions": 2316,
+        "ctr": 0.039723661485319514,
+        "position": 4.565630397236615
+      },
+      {
+        "keys": [
+          "blue parrot school málaga - escuela de idiomas"
+        ],
+        "clicks": 85,
+        "impressions": 734,
+        "ctr": 0.11580381471389646,
+        "position": 2.1185286103542236
+      },
+      {
+        "keys": [
+          "informal email b2"
+        ],
+        "clicks": 82,
+        "impressions": 3421,
+        "ctr": 0.023969599532300497,
+        "position": 5.946799181525869
+      },
+      {
+        "keys": [
+          "email informal en inglés b2 ejemplos"
+        ],
+        "clicks": 79,
+        "impressions": 634,
+        "ctr": 0.12460567823343849,
+        "position": 2.746056782334385
+      },
+      {
+        "keys": [
+          "listening aptis con soluciones"
+        ],
+        "clicks": 78,
+        "impressions": 461,
+        "ctr": 0.16919739696312364,
+        "position": 4.477223427331888
+      },
+      {
+        "keys": [
+          "aptis test simulator"
+        ],
+        "clicks": 74,
+        "impressions": 1124,
+        "ctr": 0.06583629893238434,
+        "position": 6.00355871886121
+      },
+      {
+        "keys": [
+          "prueba de nivel aptis gratis"
+        ],
+        "clicks": 74,
+        "impressions": 479,
+        "ctr": 0.1544885177453027,
+        "position": 3.1795407098121085
+      },
+      {
+        "keys": [
+          "ejercicios ingles c1"
+        ],
+        "clicks": 69,
+        "impressions": 837,
+        "ctr": 0.08243727598566308,
+        "position": 5.65352449223417
+      },
+      {
+        "keys": [
+          "examen aptis practicar"
+        ],
+        "clicks": 68,
+        "impressions": 1376,
+        "ctr": 0.04941860465116279,
+        "position": 6.866279069767442
+      },
+      {
+        "keys": [
+          "ejercicios aptis"
+        ],
+        "clicks": 66,
+        "impressions": 578,
+        "ctr": 0.11418685121107267,
+        "position": 4.8944636678200695
+      },
+      {
+        "keys": [
+          "aptis online"
+        ],
+        "clicks": 62,
+        "impressions": 4330,
+        "ctr": 0.014318706697459584,
+        "position": 7.595612009237875
+      },
+      {
+        "keys": [
+          "listening b1 aptis"
+        ],
+        "clicks": 62,
+        "impressions": 538,
+        "ctr": 0.11524163568773234,
+        "position": 4.9684014869888475
+      },
+      {
+        "keys": [
+          "aptis test online"
+        ],
+        "clicks": 61,
+        "impressions": 958,
+        "ctr": 0.06367432150313153,
+        "position": 11.362212943632567
+      },
+      {
+        "keys": [
+          "blue parrot school opiniones"
+        ],
+        "clicks": 60,
+        "impressions": 332,
+        "ctr": 0.18072289156626506,
+        "position": 2.177710843373494
+      },
+      {
+        "keys": [
+          "parrot school"
+        ],
+        "clicks": 58,
+        "impressions": 152,
+        "ctr": 0.3815789473684211,
+        "position": 4.644736842105264
+      },
+      {
+        "keys": [
+          "listening aptis general con respuestas"
+        ],
+        "clicks": 55,
+        "impressions": 407,
+        "ctr": 0.13513513513513514,
+        "position": 5.621621621621622
+      },
+      {
+        "keys": [
+          "ejercicios c1 inglés online gratis"
+        ],
+        "clicks": 54,
+        "impressions": 705,
+        "ctr": 0.07659574468085106,
+        "position": 5.573049645390071
+      },
+      {
+        "keys": [
+          "examen aptis para practicar"
+        ],
+        "clicks": 54,
+        "impressions": 1514,
+        "ctr": 0.035667107001321,
+        "position": 6.887714663143989
+      },
+      {
+        "keys": [
+          "test aptis"
+        ],
+        "clicks": 54,
+        "impressions": 657,
+        "ctr": 0.0821917808219178,
+        "position": 6.58599695585997
+      },
+      {
+        "keys": [
+          "blue parrot school madrid - escuela de idiomas"
+        ],
+        "clicks": 49,
+        "impressions": 297,
+        "ctr": 0.16498316498316498,
+        "position": 1.6868686868686869
+      },
+      {
+        "keys": [
+          "curso intensivo c1 cambridge online"
+        ],
+        "clicks": 47,
+        "impressions": 1069,
+        "ctr": 0.04396632366697849,
+        "position": 3.5949485500467726
+      },
+      {
+        "keys": [
+          "ejercicios c1"
+        ],
+        "clicks": 46,
+        "impressions": 803,
+        "ctr": 0.057285180572851806,
+        "position": 6.88293897882939
+      },
+      {
+        "keys": [
+          "frases en aleman"
+        ],
+        "clicks": 46,
+        "impressions": 12455,
+        "ctr": 0.003693295865114412,
+        "position": 6.577438779606584
+      },
+      {
+        "keys": [
+          "prueba nivel aptis"
+        ],
+        "clicks": 46,
+        "impressions": 228,
+        "ctr": 0.20175438596491227,
+        "position": 2.5087719298245617
+      },
+      {
+        "keys": [
+          "frases italianas"
+        ],
+        "clicks": 45,
+        "impressions": 3764,
+        "ctr": 0.011955366631243358,
+        "position": 6.851222104144527
+      },
+      {
+        "keys": [
+          "listening aptis general"
+        ],
+        "clicks": 44,
+        "impressions": 801,
+        "ctr": 0.05493133583021224,
+        "position": 8.322097378277153
+      },
+      {
+        "keys": [
+          "aptis examen online"
+        ],
+        "clicks": 42,
+        "impressions": 1015,
+        "ctr": 0.041379310344827586,
+        "position": 5.156650246305419
+      },
+      {
+        "keys": [
+          "aptis advanced"
+        ],
+        "clicks": 41,
+        "impressions": 3239,
+        "ctr": 0.012658227848101266,
+        "position": 11.13985798085829
+      },
+      {
+        "keys": [
+          "listening aptis b1"
+        ],
+        "clicks": 41,
+        "impressions": 337,
+        "ctr": 0.12166172106824925,
+        "position": 5.735905044510385
+      },
+      {
+        "keys": [
+          "listening aptis b2"
+        ],
+        "clicks": 41,
+        "impressions": 342,
+        "ctr": 0.11988304093567251,
+        "position": 4.926900584795321
+      },
+      {
+        "keys": [
+          "ejercicios aptis general"
+        ],
+        "clicks": 39,
+        "impressions": 386,
+        "ctr": 0.10103626943005181,
+        "position": 5.308290155440415
       }
     ]
-  }
+  },
+  "coverageUntil": "2026-08-30"
 }

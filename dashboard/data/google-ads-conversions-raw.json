@@ -1,7 +1,7 @@
 {
   "customer_id": "1064441284",
   "login_customer_id": "5963150101",
-  "fetchedAt": "2026-08-29T16:55:39",
+  "fetchedAt": "2026-08-31T12:31:11",
   "actions": [
     {
       "id": 7590012617,
@@ -78,23 +78,23 @@
   ],
   "by_category": {
     "PURCHASE": {
-      "conversions": 48.0,
-      "value": 10907.649999999994
+      "conversions": 51.0,
+      "value": 11430.549999999994
     },
     "SUBMIT_LEAD_FORM": {
-      "conversions": 291.0,
-      "value": 291.0
+      "conversions": 299.0,
+      "value": 299.0
     }
   },
   "by_name": {
     "Compra (Evento de Google Analytics purchase)": {
-      "conversions": 48.0,
-      "value": 10907.649999999994,
+      "conversions": 51.0,
+      "value": 11430.549999999994,
       "category": "PURCHASE"
     },
     "Env\u00edo de formulario para clientes potenciales (Evento de Google Analytics form_submit)": {
-      "conversions": 240.0,
-      "value": 240.0,
+      "conversions": 247.0,
+      "value": 247.0,
       "category": "SUBMIT_LEAD_FORM"
     },
     "Env\u00edo de formulario para clientes potenciales (Evento de Google Analytics submit_lead_form)": {
@@ -103,15 +103,15 @@
       "category": "SUBMIT_LEAD_FORM"
     },
     "Lead form - Submit": {
-      "conversions": 13.0,
-      "value": 13.0,
+      "conversions": 14.0,
+      "value": 14.0,
       "category": "SUBMIT_LEAD_FORM"
     }
   },
   "summary": {
-    "purchase_conversions": 48.0,
-    "lead_conversions": 291.0,
-    "spend": 3844.6422340000004
+    "purchase_conversions": 51.0,
+    "lead_conversions": 299.0,
+    "spend": 3962.0954720000004
   },
   "conv_rows": [
     {
@@ -1039,6 +1039,18 @@
       "all_value": 2.0
     },
     {
+      "date": "2026-08-30",
+      "conv_action_resource": "customers/1064441284/conversionActions/7601006530",
+      "conv_name": "Lead form - Submit",
+      "conv_category": "SUBMIT_LEAD_FORM",
+      "campaign_id": "23794484335",
+      "campaign": "BPS_CERTIFICADOS_PMAX",
+      "conversions": 1.0,
+      "value": 1.0,
+      "all_conversions": 1.0,
+      "all_value": 1.0
+    },
+    {
       "date": "2026-05-30",
       "conv_action_resource": "customers/1064441284/conversionActions/7590012617",
       "conv_name": "Compra (Evento de Google Analytics purchase)",
@@ -1757,6 +1769,54 @@
       "value": 2.0,
       "all_conversions": 2.0,
       "all_value": 2.0
+    },
+    {
+      "date": "2026-08-29",
+      "conv_action_resource": "customers/1064441284/conversionActions/7590012617",
+      "conv_name": "Compra (Evento de Google Analytics purchase)",
+      "conv_category": "PURCHASE",
+      "campaign_id": "23993702612",
+      "campaign": "BPS_BRAND_SEARCH",
+      "conversions": 1.0,
+      "value": 174.3,
+      "all_conversions": 1.0,
+      "all_value": 174.3
+    },
+    {
+      "date": "2026-08-29",
+      "conv_action_resource": "customers/1064441284/conversionActions/7590014324",
+      "conv_name": "Env\u00edo de formulario para clientes potenciales (Evento de Google Analytics form_submit)",
+      "conv_category": "SUBMIT_LEAD_FORM",
+      "campaign_id": "23993702612",
+      "campaign": "BPS_BRAND_SEARCH",
+      "conversions": 3.0,
+      "value": 3.0,
+      "all_conversions": 3.0,
+      "all_value": 3.0
+    },
+    {
+      "date": "2026-08-30",
+      "conv_action_resource": "customers/1064441284/conversionActions/7590012617",
+      "conv_name": "Compra (Evento de Google Analytics purchase)",
+      "conv_category": "PURCHASE",
+      "campaign_id": "23993702612",
+      "campaign": "BPS_BRAND_SEARCH",
+      "conversions": 2.0,
+      "value": 348.6,
+      "all_conversions": 2.0,
+      "all_value": 348.6
+    },
+    {
+      "date": "2026-08-30",
+      "conv_action_resource": "customers/1064441284/conversionActions/7590014324",
+      "conv_name": "Env\u00edo de formulario para clientes potenciales (Evento de Google Analytics form_submit)",
+      "conv_category": "SUBMIT_LEAD_FORM",
+      "campaign_id": "23993702612",
+      "campaign": "BPS_BRAND_SEARCH",
+      "conversions": 4.0,
+      "value": 4.0,
+      "all_conversions": 4.0,
+      "all_value": 4.0
     }
   ],
   "campaign_daily": [
@@ -3441,6 +3501,34 @@
       "cpc": 2.1886081818181817
     },
     {
+      "date": "2026-08-29",
+      "campaign_id": "23794484335",
+      "campaign": "BPS_CERTIFICADOS_PMAX",
+      "channel": "PERFORMANCE_MAX",
+      "status": "ENABLED",
+      "spend": 27.251191,
+      "clicks": 12,
+      "impressions": 485,
+      "conversions": 0.0,
+      "value": 0.0,
+      "ctr": 0.024742268041237112,
+      "cpc": 2.2709325833333334
+    },
+    {
+      "date": "2026-08-30",
+      "campaign_id": "23794484335",
+      "campaign": "BPS_CERTIFICADOS_PMAX",
+      "channel": "PERFORMANCE_MAX",
+      "status": "ENABLED",
+      "spend": 49.953828,
+      "clicks": 17,
+      "impressions": 382,
+      "conversions": 1.0,
+      "value": 1.0,
+      "ctr": 0.04450261780104712,
+      "cpc": 2.938460470588235
+    },
+    {
       "date": "2026-05-29",
       "campaign_id": "23883119752",
       "campaign": "BPS_EMPRESAS_PMAX",
@@ -4715,6 +4803,34 @@
       "cpc": 0.1347228108108108
     },
     {
+      "date": "2026-08-29",
+      "campaign_id": "23883119752",
+      "campaign": "BPS_EMPRESAS_PMAX",
+      "channel": "PERFORMANCE_MAX",
+      "status": "ENABLED",
+      "spend": 5.279407,
+      "clicks": 7,
+      "impressions": 126,
+      "conversions": 0.0,
+      "value": 0.0,
+      "ctr": 0.05555555555555555,
+      "cpc": 0.754201
+    },
+    {
+      "date": "2026-08-30",
+      "campaign_id": "23883119752",
+      "campaign": "BPS_EMPRESAS_PMAX",
+      "channel": "PERFORMANCE_MAX",
+      "status": "ENABLED",
+      "spend": 5.078812,
+      "clicks": 15,
+      "impressions": 307,
+      "conversions": 0.0,
+      "value": 0.0,
+      "ctr": 0.048859934853420196,
+      "cpc": 0.33858746666666667
+    },
+    {
       "date": "2026-07-02",
       "campaign_id": "23993702612",
       "campaign": "BPS_BRAND_SEARCH",
@@ -5525,6 +5641,34 @@
       "value": 0.0,
       "ctr": 0.32608695652173914,
       "cpc": 0.928
+    },
+    {
+      "date": "2026-08-29",
+      "campaign_id": "23993702612",
+      "campaign": "BPS_BRAND_SEARCH",
+      "channel": "SEARCH",
+      "status": "ENABLED",
+      "spend": 9.9,
+      "clicks": 19,
+      "impressions": 48,
+      "conversions": 4.0,
+      "value": 177.3,
+      "ctr": 0.3958333333333333,
+      "cpc": 0.5210526315789473
+    },
+    {
+      "date": "2026-08-30",
+      "campaign_id": "23993702612",
+      "campaign": "BPS_BRAND_SEARCH",
+      "channel": "SEARCH",
+      "status": "ENABLED",
+      "spend": 19.99,
+      "clicks": 24,
+      "impressions": 62,
+      "conversions": 6.0,
+      "value": 352.6,
+      "ctr": 0.3870967741935484,
+      "cpc": 0.8329166666666666
     }
   ]
 }

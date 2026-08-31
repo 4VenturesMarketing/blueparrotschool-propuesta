@@ -860,7 +860,7 @@ def export_payload() -> dict:
                   SUM(leads) AS leads,
                   SUM(purchases) AS purchases
            FROM fact_meta_daily
-           WHERE date >= '2024-09-01' AND date <= '2026-08-31'
+           WHERE date >= '2024-09-01' AND date <= '2026-08-30'
            GROUP BY 1 ORDER BY 1"""
     )
     # Prefer full-bundle platform×device monthly when present; else empty
@@ -997,7 +997,7 @@ def export_payload() -> dict:
         "sourceDb": "dashboard/db/bps.db",
         "SY": {
             "prev": {"id": "sy-2024-25", "label": "2024–25", "start": "2024-09-01", "end": "2025-08-31"},
-            "cur": {"id": "sy-2025-26", "label": "2025–26", "start": "2025-09-01", "end": "2026-08-31"},
+            "cur": {"id": "sy-2025-26", "label": "2025–26", "start": "2025-09-01", "end": "2026-08-30"},
             "next": {"id": "sy-2026-27", "label": "2026–27", "start": "2026-09-01", "end": "2027-08-31"},
         },
         "periods": periods,

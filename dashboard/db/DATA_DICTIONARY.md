@@ -1,6 +1,6 @@
 # BPS Marketing Data Dictionary
 
-Built: `2026-08-31T12:25:24`  
+Built: `2026-08-31T12:32:02`  
 Database: `dashboard/db/bps.db`
 
 ## Trust layers
@@ -36,7 +36,7 @@ Use purchase for ROAS/CPA compra; lead for CPL; WC `utm_medium=cpc` for business
 | ID | Range |
 |----|-------|
 | sy-2024-25 | 2024-09-01 → 2025-08-31 |
-| sy-2025-26 | 2025-09-01 → 2026-08-27 |
+| sy-2025-26 | 2025-09-01 → 2026-08-30 |
 | sy-2026-27 | 2026-09-01 → 2027-08-31 |
 
 ## Rebuild
